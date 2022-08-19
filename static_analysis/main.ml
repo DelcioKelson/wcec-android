@@ -11,9 +11,6 @@ exception Error of string
 
 type ctx_abs = (ident, val_abs) Hashtbl.t
 
-let aenv_conc = Hashtbl.create 16 
-
-
 
 let filename = Sys.argv.(1)
 
@@ -43,21 +40,21 @@ let print_abs a =
   (*let n = ai_com (1, Cseq ((0,Cassign (0,Esct 4)),(1, Cwhile((Cinfeq, 4, 0 ), (3,(Cassign (0, Esct 4 ))))))) aenv
 *)
 
-
+(*
 let rec stmt_print s = 
   match s with
   | Sblock(Sassign(x1,x2)::l) -> printf "Sassign"; stmt_print (Sblock l)
   | Sblock(Sgoto(x1,x2)::l) -> printf "Sgoto"; stmt_print (Sblock l)
   | _ -> printf ""
-
+*)
 let result =
   let inx = open_in filename in
   let lexbuf = Lexing.from_channel inx in
   let blocks = parse_with_error lexbuf in
-  let r = ai_stmt blocks aenv_conc in 
+  let r = get_bounds blocks in 
   let () = close_in inx in
   r
 
 
 let () = 
-Hashtbl.iter  (fun x a0 -> print_abs a0) result
+Hashtbl.iter  (fun x a0 ->print_string x; print_int a0) result

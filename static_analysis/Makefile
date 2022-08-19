@@ -4,7 +4,6 @@ FLAGS=-annot -g
 
 all: analyse
 
-
 clean:
 	rm -f *.cm[io] *.o *.annot *~ analyse $(GENERATED)
 	rm -f parser.output parser.automaton

@@ -18,6 +18,6 @@ type cond =
 
 
 and stmt =
-  | Sgoto of cond * stmt
+  | Sgoto of ident * cond * stmt
   | Sassign of ident * expr
   | Sblock of stmt list

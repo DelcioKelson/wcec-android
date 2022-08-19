@@ -3,7 +3,7 @@
 ** Token involved: GOTO
 ** This state is reached from file after reading:
 
-CST ident COLON IF expr BEQ ident
+ident COLON IF expr BEQ ident
 
 ** The derivations that appear below have the following common factor:
 ** (The question mark symbol (?) represents the spot where the derivations begin to differ.)
@@ -11,8 +11,8 @@ CST ident COLON IF expr BEQ ident
 file 
 nonempty_list(stmt) EOF 
 stmt 
-CST ident COLON IF cond GOTO ident SEMICOLON stmt CST GOTO ident SEMICOLON // lookahead token appears
-                   (?)
+ident COLON IF cond GOTO ident nonempty_list(stmt) GOTO ident // lookahead token appears
+               (?)
 
 ** In state 46, looking ahead at GOTO, reducing production
 ** cond -> expr BEQ ident
@@ -30,7 +30,7 @@ expr BEQ ident .
 ** Token involved: GOTO
 ** This state is reached from file after reading:
 
-CST ident COLON IF ident BEQ expr
+ident COLON IF ident BEQ expr
 
 ** The derivations that appear below have the following common factor:
 ** (The question mark symbol (?) represents the spot where the derivations begin to differ.)
@@ -38,8 +38,8 @@ CST ident COLON IF ident BEQ expr
 file 
 nonempty_list(stmt) EOF 
 stmt 
-CST ident COLON IF cond GOTO ident SEMICOLON stmt CST GOTO ident SEMICOLON // lookahead token appears
-                   (?)
+ident COLON IF cond GOTO ident nonempty_list(stmt) GOTO ident // lookahead token appears
+               (?)
 
 ** In state 33, looking ahead at GOTO, reducing production
 ** cond -> ident BEQ expr
@@ -58,7 +58,7 @@ ident BEQ expr .
 ** The following explanations concentrate on token BNEQ.
 ** This state is reached from file after reading:
 
-CST ident COLON IF ident
+ident COLON IF ident
 
 ** The derivations that appear below have the following common factor:
 ** (The question mark symbol (?) represents the spot where the derivations begin to differ.)
@@ -66,8 +66,8 @@ CST ident COLON IF ident
 file 
 nonempty_list(stmt) EOF 
 stmt 
-CST ident COLON IF cond GOTO ident SEMICOLON stmt CST GOTO ident SEMICOLON 
-                   (?)
+ident COLON IF cond GOTO ident nonempty_list(stmt) GOTO ident 
+               (?)
 
 ** In state 21, looking ahead at BNEQ, shifting is permitted
 ** because of the following sub-derivation:

@@ -3,8 +3,8 @@
 
 type token = 
   | TIMES
-  | SEMICOLON
   | PLUS
+  | NEWLINE
   | MOD
   | MINUS
   | IF

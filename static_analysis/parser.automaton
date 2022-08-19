@@ -4,141 +4,147 @@ State 0:
 ## LR(1) items:
 file' -> . file [ # ]
 ## Transitions:
--- On CST shift to state 1
--- On stmt shift to state 56
--- On nonempty_list(stmt) shift to state 58
--- On file shift to state 60
+-- On IDENT shift to state 1
+-- On stmt shift to state 2
+-- On nonempty_list(stmt) shift to state 53
+-- On ident shift to state 4
+-- On file shift to state 55
 ## Reductions:
 
 State 1:
 ## Known stack suffix:
-## CST
+## IDENT
 ## LR(1) items:
-stmt -> CST . ident EQUAL expr SEMICOLON [ EOF CST ]
-stmt -> CST . ident COLON IF cond GOTO ident SEMICOLON stmt CST GOTO ident SEMICOLON [ EOF CST ]
+ident -> IDENT . [ TIMES PLUS MOD MINUS IDENT GOTO EQUAL EOF DIV COLON BNEQ BLT BLE BGT BGE BEQ ]
 ## Transitions:
--- On IDENT shift to state 2
--- On ident shift to state 3
 ## Reductions:
+-- On TIMES PLUS MOD MINUS IDENT GOTO EQUAL EOF DIV COLON BNEQ BLT BLE BGT BGE BEQ
+--   reduce production ident -> IDENT
 
 State 2:
 ## Known stack suffix:
-## IDENT
+## stmt
 ## LR(1) items:
-ident -> IDENT . [ TIMES SEMICOLON PLUS MOD MINUS GOTO EQUAL DIV COLON BNEQ BLT BLE BGT BGE BEQ ]
+nonempty_list(stmt) -> stmt . [ GOTO EOF ]
+nonempty_list(stmt) -> stmt . nonempty_list(stmt) [ GOTO EOF ]
 ## Transitions:
+-- On IDENT shift to state 1
+-- On stmt shift to state 2
+-- On nonempty_list(stmt) shift to state 3
+-- On ident shift to state 4
 ## Reductions:
--- On TIMES SEMICOLON PLUS MOD MINUS GOTO EQUAL DIV COLON BNEQ BLT BLE BGT BGE BEQ
---   reduce production ident -> IDENT
+-- On GOTO EOF
+--   reduce production nonempty_list(stmt) -> stmt
 
 State 3:
 ## Known stack suffix:
-## CST ident
+## stmt nonempty_list(stmt)
 ## LR(1) items:
-stmt -> CST ident . EQUAL expr SEMICOLON [ EOF CST ]
-stmt -> CST ident . COLON IF cond GOTO ident SEMICOLON stmt CST GOTO ident SEMICOLON [ EOF CST ]
+nonempty_list(stmt) -> stmt nonempty_list(stmt) . [ GOTO EOF ]
 ## Transitions:
--- On EQUAL shift to state 4
--- On COLON shift to state 19
 ## Reductions:
+-- On GOTO EOF
+--   reduce production nonempty_list(stmt) -> stmt nonempty_list(stmt)
 
 State 4:
 ## Known stack suffix:
-## CST ident EQUAL
+## ident
 ## LR(1) items:
-stmt -> CST ident EQUAL . expr SEMICOLON [ EOF CST ]
+stmt -> ident . EQUAL expr [ IDENT GOTO EOF ]
+stmt -> ident . COLON IF cond GOTO ident nonempty_list(stmt) GOTO ident [ IDENT GOTO EOF ]
 ## Transitions:
--- On IDENT shift to state 2
--- On CST shift to state 5
--- On ident shift to state 6
--- On expr shift to state 7
+-- On EQUAL shift to state 5
+-- On COLON shift to state 19
 ## Reductions:
 
 State 5:
 ## Known stack suffix:
-## CST
+## ident EQUAL
 ## LR(1) items:
-expr -> CST . [ TIMES SEMICOLON PLUS MOD MINUS GOTO DIV BNEQ BLT BLE BGT BGE BEQ ]
+stmt -> ident EQUAL . expr [ IDENT GOTO EOF ]
 ## Transitions:
+-- On IDENT shift to state 1
+-- On CST shift to state 6
+-- On ident shift to state 7
+-- On expr shift to state 8
 ## Reductions:
--- On TIMES SEMICOLON PLUS MOD MINUS GOTO DIV BNEQ BLT BLE BGT BGE BEQ
---   reduce production expr -> CST
 
 State 6:
 ## Known stack suffix:
-## ident
+## CST
 ## LR(1) items:
-expr -> ident . [ TIMES SEMICOLON PLUS MOD MINUS GOTO DIV BNEQ BLT BLE BGT BGE BEQ ]
+expr -> CST . [ TIMES PLUS MOD MINUS IDENT GOTO EOF DIV BNEQ BLT BLE BGT BGE BEQ ]
 ## Transitions:
 ## Reductions:
--- On TIMES SEMICOLON PLUS MOD MINUS GOTO DIV BNEQ BLT BLE BGT BGE BEQ
---   reduce production expr -> ident
+-- On TIMES PLUS MOD MINUS IDENT GOTO EOF DIV BNEQ BLT BLE BGT BGE BEQ
+--   reduce production expr -> CST
 
 State 7:
 ## Known stack suffix:
-## CST ident EQUAL expr
+## ident
 ## LR(1) items:
-expr -> expr . PLUS expr [ TIMES SEMICOLON PLUS MOD MINUS DIV ]
-expr -> expr . MINUS expr [ TIMES SEMICOLON PLUS MOD MINUS DIV ]
-expr -> expr . TIMES expr [ TIMES SEMICOLON PLUS MOD MINUS DIV ]
-expr -> expr . DIV expr [ TIMES SEMICOLON PLUS MOD MINUS DIV ]
-expr -> expr . MOD expr [ TIMES SEMICOLON PLUS MOD MINUS DIV ]
-stmt -> CST ident EQUAL expr . SEMICOLON [ EOF CST ]
+expr -> ident . [ TIMES PLUS MOD MINUS IDENT GOTO EOF DIV BNEQ BLT BLE BGT BGE BEQ ]
 ## Transitions:
--- On TIMES shift to state 8
--- On SEMICOLON shift to state 10
+## Reductions:
+-- On TIMES PLUS MOD MINUS IDENT GOTO EOF DIV BNEQ BLT BLE BGT BGE BEQ
+--   reduce production expr -> ident
+
+State 8:
+## Known stack suffix:
+## ident EQUAL expr
+## LR(1) items:
+expr -> expr . PLUS expr [ TIMES PLUS MOD MINUS IDENT GOTO EOF DIV ]
+expr -> expr . MINUS expr [ TIMES PLUS MOD MINUS IDENT GOTO EOF DIV ]
+expr -> expr . TIMES expr [ TIMES PLUS MOD MINUS IDENT GOTO EOF DIV ]
+expr -> expr . DIV expr [ TIMES PLUS MOD MINUS IDENT GOTO EOF DIV ]
+expr -> expr . MOD expr [ TIMES PLUS MOD MINUS IDENT GOTO EOF DIV ]
+stmt -> ident EQUAL expr . [ IDENT GOTO EOF ]
+## Transitions:
+-- On TIMES shift to state 9
 -- On PLUS shift to state 11
 -- On MOD shift to state 13
 -- On MINUS shift to state 17
 -- On DIV shift to state 15
 ## Reductions:
-
-State 8:
-## Known stack suffix:
-## expr TIMES
-## LR(1) items:
-expr -> expr TIMES . expr [ TIMES SEMICOLON PLUS MOD MINUS GOTO DIV BNEQ BLT BLE BGT BGE BEQ ]
-## Transitions:
--- On IDENT shift to state 2
--- On CST shift to state 5
--- On ident shift to state 6
--- On expr shift to state 9
-## Reductions:
+-- On IDENT GOTO EOF
+--   reduce production stmt -> ident EQUAL expr
 
 State 9:
 ## Known stack suffix:
-## expr TIMES expr
+## expr TIMES
 ## LR(1) items:
-expr -> expr . PLUS expr [ TIMES SEMICOLON PLUS MOD MINUS GOTO DIV BNEQ BLT BLE BGT BGE BEQ ]
-expr -> expr . MINUS expr [ TIMES SEMICOLON PLUS MOD MINUS GOTO DIV BNEQ BLT BLE BGT BGE BEQ ]
-expr -> expr . TIMES expr [ TIMES SEMICOLON PLUS MOD MINUS GOTO DIV BNEQ BLT BLE BGT BGE BEQ ]
-expr -> expr TIMES expr . [ TIMES SEMICOLON PLUS MOD MINUS GOTO DIV BNEQ BLT BLE BGT BGE BEQ ]
-expr -> expr . DIV expr [ TIMES SEMICOLON PLUS MOD MINUS GOTO DIV BNEQ BLT BLE BGT BGE BEQ ]
-expr -> expr . MOD expr [ TIMES SEMICOLON PLUS MOD MINUS GOTO DIV BNEQ BLT BLE BGT BGE BEQ ]
+expr -> expr TIMES . expr [ TIMES PLUS MOD MINUS IDENT GOTO EOF DIV BNEQ BLT BLE BGT BGE BEQ ]
 ## Transitions:
+-- On IDENT shift to state 1
+-- On CST shift to state 6
+-- On ident shift to state 7
+-- On expr shift to state 10
 ## Reductions:
--- On TIMES SEMICOLON PLUS MOD MINUS GOTO DIV BNEQ BLT BLE BGT BGE BEQ
---   reduce production expr -> expr TIMES expr
 
 State 10:
 ## Known stack suffix:
-## CST ident EQUAL expr SEMICOLON
+## expr TIMES expr
 ## LR(1) items:
-stmt -> CST ident EQUAL expr SEMICOLON . [ EOF CST ]
+expr -> expr . PLUS expr [ TIMES PLUS MOD MINUS IDENT GOTO EOF DIV BNEQ BLT BLE BGT BGE BEQ ]
+expr -> expr . MINUS expr [ TIMES PLUS MOD MINUS IDENT GOTO EOF DIV BNEQ BLT BLE BGT BGE BEQ ]
+expr -> expr . TIMES expr [ TIMES PLUS MOD MINUS IDENT GOTO EOF DIV BNEQ BLT BLE BGT BGE BEQ ]
+expr -> expr TIMES expr . [ TIMES PLUS MOD MINUS IDENT GOTO EOF DIV BNEQ BLT BLE BGT BGE BEQ ]
+expr -> expr . DIV expr [ TIMES PLUS MOD MINUS IDENT GOTO EOF DIV BNEQ BLT BLE BGT BGE BEQ ]
+expr -> expr . MOD expr [ TIMES PLUS MOD MINUS IDENT GOTO EOF DIV BNEQ BLT BLE BGT BGE BEQ ]
 ## Transitions:
 ## Reductions:
--- On EOF CST
---   reduce production stmt -> CST ident EQUAL expr SEMICOLON
+-- On TIMES PLUS MOD MINUS IDENT GOTO EOF DIV BNEQ BLT BLE BGT BGE BEQ
+--   reduce production expr -> expr TIMES expr
 
 State 11:
 ## Known stack suffix:
 ## expr PLUS
 ## LR(1) items:
-expr -> expr PLUS . expr [ TIMES SEMICOLON PLUS MOD MINUS GOTO DIV BNEQ BLT BLE BGT BGE BEQ ]
+expr -> expr PLUS . expr [ TIMES PLUS MOD MINUS IDENT GOTO EOF DIV BNEQ BLT BLE BGT BGE BEQ ]
 ## Transitions:
--- On IDENT shift to state 2
--- On CST shift to state 5
--- On ident shift to state 6
+-- On IDENT shift to state 1
+-- On CST shift to state 6
+-- On ident shift to state 7
 -- On expr shift to state 12
 ## Reductions:
 
@@ -146,29 +152,29 @@ State 12:
 ## Known stack suffix:
 ## expr PLUS expr
 ## LR(1) items:
-expr -> expr . PLUS expr [ TIMES SEMICOLON PLUS MOD MINUS GOTO DIV BNEQ BLT BLE BGT BGE BEQ ]
-expr -> expr PLUS expr . [ TIMES SEMICOLON PLUS MOD MINUS GOTO DIV BNEQ BLT BLE BGT BGE BEQ ]
-expr -> expr . MINUS expr [ TIMES SEMICOLON PLUS MOD MINUS GOTO DIV BNEQ BLT BLE BGT BGE BEQ ]
-expr -> expr . TIMES expr [ TIMES SEMICOLON PLUS MOD MINUS GOTO DIV BNEQ BLT BLE BGT BGE BEQ ]
-expr -> expr . DIV expr [ TIMES SEMICOLON PLUS MOD MINUS GOTO DIV BNEQ BLT BLE BGT BGE BEQ ]
-expr -> expr . MOD expr [ TIMES SEMICOLON PLUS MOD MINUS GOTO DIV BNEQ BLT BLE BGT BGE BEQ ]
+expr -> expr . PLUS expr [ TIMES PLUS MOD MINUS IDENT GOTO EOF DIV BNEQ BLT BLE BGT BGE BEQ ]
+expr -> expr PLUS expr . [ TIMES PLUS MOD MINUS IDENT GOTO EOF DIV BNEQ BLT BLE BGT BGE BEQ ]
+expr -> expr . MINUS expr [ TIMES PLUS MOD MINUS IDENT GOTO EOF DIV BNEQ BLT BLE BGT BGE BEQ ]
+expr -> expr . TIMES expr [ TIMES PLUS MOD MINUS IDENT GOTO EOF DIV BNEQ BLT BLE BGT BGE BEQ ]
+expr -> expr . DIV expr [ TIMES PLUS MOD MINUS IDENT GOTO EOF DIV BNEQ BLT BLE BGT BGE BEQ ]
+expr -> expr . MOD expr [ TIMES PLUS MOD MINUS IDENT GOTO EOF DIV BNEQ BLT BLE BGT BGE BEQ ]
 ## Transitions:
--- On TIMES shift to state 8
+-- On TIMES shift to state 9
 -- On MOD shift to state 13
 -- On DIV shift to state 15
 ## Reductions:
--- On SEMICOLON PLUS MINUS GOTO BNEQ BLT BLE BGT BGE BEQ
+-- On PLUS MINUS IDENT GOTO EOF BNEQ BLT BLE BGT BGE BEQ
 --   reduce production expr -> expr PLUS expr
 
 State 13:
 ## Known stack suffix:
 ## expr MOD
 ## LR(1) items:
-expr -> expr MOD . expr [ TIMES SEMICOLON PLUS MOD MINUS GOTO DIV BNEQ BLT BLE BGT BGE BEQ ]
+expr -> expr MOD . expr [ TIMES PLUS MOD MINUS IDENT GOTO EOF DIV BNEQ BLT BLE BGT BGE BEQ ]
 ## Transitions:
--- On IDENT shift to state 2
--- On CST shift to state 5
--- On ident shift to state 6
+-- On IDENT shift to state 1
+-- On CST shift to state 6
+-- On ident shift to state 7
 -- On expr shift to state 14
 ## Reductions:
 
@@ -176,26 +182,26 @@ State 14:
 ## Known stack suffix:
 ## expr MOD expr
 ## LR(1) items:
-expr -> expr . PLUS expr [ TIMES SEMICOLON PLUS MOD MINUS GOTO DIV BNEQ BLT BLE BGT BGE BEQ ]
-expr -> expr . MINUS expr [ TIMES SEMICOLON PLUS MOD MINUS GOTO DIV BNEQ BLT BLE BGT BGE BEQ ]
-expr -> expr . TIMES expr [ TIMES SEMICOLON PLUS MOD MINUS GOTO DIV BNEQ BLT BLE BGT BGE BEQ ]
-expr -> expr . DIV expr [ TIMES SEMICOLON PLUS MOD MINUS GOTO DIV BNEQ BLT BLE BGT BGE BEQ ]
-expr -> expr . MOD expr [ TIMES SEMICOLON PLUS MOD MINUS GOTO DIV BNEQ BLT BLE BGT BGE BEQ ]
-expr -> expr MOD expr . [ TIMES SEMICOLON PLUS MOD MINUS GOTO DIV BNEQ BLT BLE BGT BGE BEQ ]
+expr -> expr . PLUS expr [ TIMES PLUS MOD MINUS IDENT GOTO EOF DIV BNEQ BLT BLE BGT BGE BEQ ]
+expr -> expr . MINUS expr [ TIMES PLUS MOD MINUS IDENT GOTO EOF DIV BNEQ BLT BLE BGT BGE BEQ ]
+expr -> expr . TIMES expr [ TIMES PLUS MOD MINUS IDENT GOTO EOF DIV BNEQ BLT BLE BGT BGE BEQ ]
+expr -> expr . DIV expr [ TIMES PLUS MOD MINUS IDENT GOTO EOF DIV BNEQ BLT BLE BGT BGE BEQ ]
+expr -> expr . MOD expr [ TIMES PLUS MOD MINUS IDENT GOTO EOF DIV BNEQ BLT BLE BGT BGE BEQ ]
+expr -> expr MOD expr . [ TIMES PLUS MOD MINUS IDENT GOTO EOF DIV BNEQ BLT BLE BGT BGE BEQ ]
 ## Transitions:
 ## Reductions:
--- On TIMES SEMICOLON PLUS MOD MINUS GOTO DIV BNEQ BLT BLE BGT BGE BEQ
+-- On TIMES PLUS MOD MINUS IDENT GOTO EOF DIV BNEQ BLT BLE BGT BGE BEQ
 --   reduce production expr -> expr MOD expr
 
 State 15:
 ## Known stack suffix:
 ## expr DIV
 ## LR(1) items:
-expr -> expr DIV . expr [ TIMES SEMICOLON PLUS MOD MINUS GOTO DIV BNEQ BLT BLE BGT BGE BEQ ]
+expr -> expr DIV . expr [ TIMES PLUS MOD MINUS IDENT GOTO EOF DIV BNEQ BLT BLE BGT BGE BEQ ]
 ## Transitions:
--- On IDENT shift to state 2
--- On CST shift to state 5
--- On ident shift to state 6
+-- On IDENT shift to state 1
+-- On CST shift to state 6
+-- On ident shift to state 7
 -- On expr shift to state 16
 ## Reductions:
 
@@ -203,26 +209,26 @@ State 16:
 ## Known stack suffix:
 ## expr DIV expr
 ## LR(1) items:
-expr -> expr . PLUS expr [ TIMES SEMICOLON PLUS MOD MINUS GOTO DIV BNEQ BLT BLE BGT BGE BEQ ]
-expr -> expr . MINUS expr [ TIMES SEMICOLON PLUS MOD MINUS GOTO DIV BNEQ BLT BLE BGT BGE BEQ ]
-expr -> expr . TIMES expr [ TIMES SEMICOLON PLUS MOD MINUS GOTO DIV BNEQ BLT BLE BGT BGE BEQ ]
-expr -> expr . DIV expr [ TIMES SEMICOLON PLUS MOD MINUS GOTO DIV BNEQ BLT BLE BGT BGE BEQ ]
-expr -> expr DIV expr . [ TIMES SEMICOLON PLUS MOD MINUS GOTO DIV BNEQ BLT BLE BGT BGE BEQ ]
-expr -> expr . MOD expr [ TIMES SEMICOLON PLUS MOD MINUS GOTO DIV BNEQ BLT BLE BGT BGE BEQ ]
+expr -> expr . PLUS expr [ TIMES PLUS MOD MINUS IDENT GOTO EOF DIV BNEQ BLT BLE BGT BGE BEQ ]
+expr -> expr . MINUS expr [ TIMES PLUS MOD MINUS IDENT GOTO EOF DIV BNEQ BLT BLE BGT BGE BEQ ]
+expr -> expr . TIMES expr [ TIMES PLUS MOD MINUS IDENT GOTO EOF DIV BNEQ BLT BLE BGT BGE BEQ ]
+expr -> expr . DIV expr [ TIMES PLUS MOD MINUS IDENT GOTO EOF DIV BNEQ BLT BLE BGT BGE BEQ ]
+expr -> expr DIV expr . [ TIMES PLUS MOD MINUS IDENT GOTO EOF DIV BNEQ BLT BLE BGT BGE BEQ ]
+expr -> expr . MOD expr [ TIMES PLUS MOD MINUS IDENT GOTO EOF DIV BNEQ BLT BLE BGT BGE BEQ ]
 ## Transitions:
 ## Reductions:
--- On TIMES SEMICOLON PLUS MOD MINUS GOTO DIV BNEQ BLT BLE BGT BGE BEQ
+-- On TIMES PLUS MOD MINUS IDENT GOTO EOF DIV BNEQ BLT BLE BGT BGE BEQ
 --   reduce production expr -> expr DIV expr
 
 State 17:
 ## Known stack suffix:
 ## expr MINUS
 ## LR(1) items:
-expr -> expr MINUS . expr [ TIMES SEMICOLON PLUS MOD MINUS GOTO DIV BNEQ BLT BLE BGT BGE BEQ ]
+expr -> expr MINUS . expr [ TIMES PLUS MOD MINUS IDENT GOTO EOF DIV BNEQ BLT BLE BGT BGE BEQ ]
 ## Transitions:
--- On IDENT shift to state 2
--- On CST shift to state 5
--- On ident shift to state 6
+-- On IDENT shift to state 1
+-- On CST shift to state 6
+-- On ident shift to state 7
 -- On expr shift to state 18
 ## Reductions:
 
@@ -230,37 +236,37 @@ State 18:
 ## Known stack suffix:
 ## expr MINUS expr
 ## LR(1) items:
-expr -> expr . PLUS expr [ TIMES SEMICOLON PLUS MOD MINUS GOTO DIV BNEQ BLT BLE BGT BGE BEQ ]
-expr -> expr . MINUS expr [ TIMES SEMICOLON PLUS MOD MINUS GOTO DIV BNEQ BLT BLE BGT BGE BEQ ]
-expr -> expr MINUS expr . [ TIMES SEMICOLON PLUS MOD MINUS GOTO DIV BNEQ BLT BLE BGT BGE BEQ ]
-expr -> expr . TIMES expr [ TIMES SEMICOLON PLUS MOD MINUS GOTO DIV BNEQ BLT BLE BGT BGE BEQ ]
-expr -> expr . DIV expr [ TIMES SEMICOLON PLUS MOD MINUS GOTO DIV BNEQ BLT BLE BGT BGE BEQ ]
-expr -> expr . MOD expr [ TIMES SEMICOLON PLUS MOD MINUS GOTO DIV BNEQ BLT BLE BGT BGE BEQ ]
+expr -> expr . PLUS expr [ TIMES PLUS MOD MINUS IDENT GOTO EOF DIV BNEQ BLT BLE BGT BGE BEQ ]
+expr -> expr . MINUS expr [ TIMES PLUS MOD MINUS IDENT GOTO EOF DIV BNEQ BLT BLE BGT BGE BEQ ]
+expr -> expr MINUS expr . [ TIMES PLUS MOD MINUS IDENT GOTO EOF DIV BNEQ BLT BLE BGT BGE BEQ ]
+expr -> expr . TIMES expr [ TIMES PLUS MOD MINUS IDENT GOTO EOF DIV BNEQ BLT BLE BGT BGE BEQ ]
+expr -> expr . DIV expr [ TIMES PLUS MOD MINUS IDENT GOTO EOF DIV BNEQ BLT BLE BGT BGE BEQ ]
+expr -> expr . MOD expr [ TIMES PLUS MOD MINUS IDENT GOTO EOF DIV BNEQ BLT BLE BGT BGE BEQ ]
 ## Transitions:
--- On TIMES shift to state 8
+-- On TIMES shift to state 9
 -- On MOD shift to state 13
 -- On DIV shift to state 15
 ## Reductions:
--- On SEMICOLON PLUS MINUS GOTO BNEQ BLT BLE BGT BGE BEQ
+-- On PLUS MINUS IDENT GOTO EOF BNEQ BLT BLE BGT BGE BEQ
 --   reduce production expr -> expr MINUS expr
 
 State 19:
 ## Known stack suffix:
-## CST ident COLON
+## ident COLON
 ## LR(1) items:
-stmt -> CST ident COLON . IF cond GOTO ident SEMICOLON stmt CST GOTO ident SEMICOLON [ EOF CST ]
+stmt -> ident COLON . IF cond GOTO ident nonempty_list(stmt) GOTO ident [ IDENT GOTO EOF ]
 ## Transitions:
 -- On IF shift to state 20
 ## Reductions:
 
 State 20:
 ## Known stack suffix:
-## CST ident COLON IF
+## ident COLON IF
 ## LR(1) items:
-stmt -> CST ident COLON IF . cond GOTO ident SEMICOLON stmt CST GOTO ident SEMICOLON [ EOF CST ]
+stmt -> ident COLON IF . cond GOTO ident nonempty_list(stmt) GOTO ident [ IDENT GOTO EOF ]
 ## Transitions:
--- On IDENT shift to state 2
--- On CST shift to state 5
+-- On IDENT shift to state 1
+-- On CST shift to state 6
 -- On ident shift to state 21
 -- On expr shift to state 34
 -- On cond shift to state 47
@@ -296,9 +302,9 @@ State 22:
 ## LR(1) items:
 cond -> ident BNEQ . expr [ GOTO ]
 ## Transitions:
--- On IDENT shift to state 2
--- On CST shift to state 5
--- On ident shift to state 6
+-- On IDENT shift to state 1
+-- On CST shift to state 6
+-- On ident shift to state 7
 -- On expr shift to state 23
 ## Reductions:
 
@@ -313,7 +319,7 @@ expr -> expr . TIMES expr [ TIMES PLUS MOD MINUS GOTO DIV ]
 expr -> expr . DIV expr [ TIMES PLUS MOD MINUS GOTO DIV ]
 expr -> expr . MOD expr [ TIMES PLUS MOD MINUS GOTO DIV ]
 ## Transitions:
--- On TIMES shift to state 8
+-- On TIMES shift to state 9
 -- On PLUS shift to state 11
 -- On MOD shift to state 13
 -- On MINUS shift to state 17
@@ -328,9 +334,9 @@ State 24:
 ## LR(1) items:
 cond -> ident BLT . expr [ GOTO ]
 ## Transitions:
--- On IDENT shift to state 2
--- On CST shift to state 5
--- On ident shift to state 6
+-- On IDENT shift to state 1
+-- On CST shift to state 6
+-- On ident shift to state 7
 -- On expr shift to state 25
 ## Reductions:
 
@@ -345,7 +351,7 @@ expr -> expr . TIMES expr [ TIMES PLUS MOD MINUS GOTO DIV ]
 expr -> expr . DIV expr [ TIMES PLUS MOD MINUS GOTO DIV ]
 expr -> expr . MOD expr [ TIMES PLUS MOD MINUS GOTO DIV ]
 ## Transitions:
--- On TIMES shift to state 8
+-- On TIMES shift to state 9
 -- On PLUS shift to state 11
 -- On MOD shift to state 13
 -- On MINUS shift to state 17
@@ -360,9 +366,9 @@ State 26:
 ## LR(1) items:
 cond -> ident BLE . expr [ GOTO ]
 ## Transitions:
--- On IDENT shift to state 2
--- On CST shift to state 5
--- On ident shift to state 6
+-- On IDENT shift to state 1
+-- On CST shift to state 6
+-- On ident shift to state 7
 -- On expr shift to state 27
 ## Reductions:
 
@@ -377,7 +383,7 @@ expr -> expr . TIMES expr [ TIMES PLUS MOD MINUS GOTO DIV ]
 expr -> expr . DIV expr [ TIMES PLUS MOD MINUS GOTO DIV ]
 expr -> expr . MOD expr [ TIMES PLUS MOD MINUS GOTO DIV ]
 ## Transitions:
--- On TIMES shift to state 8
+-- On TIMES shift to state 9
 -- On PLUS shift to state 11
 -- On MOD shift to state 13
 -- On MINUS shift to state 17
@@ -392,9 +398,9 @@ State 28:
 ## LR(1) items:
 cond -> ident BGT . expr [ GOTO ]
 ## Transitions:
--- On IDENT shift to state 2
--- On CST shift to state 5
--- On ident shift to state 6
+-- On IDENT shift to state 1
+-- On CST shift to state 6
+-- On ident shift to state 7
 -- On expr shift to state 29
 ## Reductions:
 
@@ -409,7 +415,7 @@ expr -> expr . TIMES expr [ TIMES PLUS MOD MINUS GOTO DIV ]
 expr -> expr . DIV expr [ TIMES PLUS MOD MINUS GOTO DIV ]
 expr -> expr . MOD expr [ TIMES PLUS MOD MINUS GOTO DIV ]
 ## Transitions:
--- On TIMES shift to state 8
+-- On TIMES shift to state 9
 -- On PLUS shift to state 11
 -- On MOD shift to state 13
 -- On MINUS shift to state 17
@@ -424,9 +430,9 @@ State 30:
 ## LR(1) items:
 cond -> ident BGE . expr [ GOTO ]
 ## Transitions:
--- On IDENT shift to state 2
--- On CST shift to state 5
--- On ident shift to state 6
+-- On IDENT shift to state 1
+-- On CST shift to state 6
+-- On ident shift to state 7
 -- On expr shift to state 31
 ## Reductions:
 
@@ -441,7 +447,7 @@ expr -> expr . TIMES expr [ TIMES PLUS MOD MINUS GOTO DIV ]
 expr -> expr . DIV expr [ TIMES PLUS MOD MINUS GOTO DIV ]
 expr -> expr . MOD expr [ TIMES PLUS MOD MINUS GOTO DIV ]
 ## Transitions:
--- On TIMES shift to state 8
+-- On TIMES shift to state 9
 -- On PLUS shift to state 11
 -- On MOD shift to state 13
 -- On MINUS shift to state 17
@@ -457,9 +463,9 @@ State 32:
 cond -> ident BEQ . expr [ GOTO ]
 cond -> ident BEQ . expr [ GOTO ]
 ## Transitions:
--- On IDENT shift to state 2
--- On CST shift to state 5
--- On ident shift to state 6
+-- On IDENT shift to state 1
+-- On CST shift to state 6
+-- On ident shift to state 7
 -- On expr shift to state 33
 ## Reductions:
 
@@ -475,7 +481,7 @@ expr -> expr . TIMES expr [ TIMES PLUS MOD MINUS GOTO DIV ]
 expr -> expr . DIV expr [ TIMES PLUS MOD MINUS GOTO DIV ]
 expr -> expr . MOD expr [ TIMES PLUS MOD MINUS GOTO DIV ]
 ## Transitions:
--- On TIMES shift to state 8
+-- On TIMES shift to state 9
 -- On PLUS shift to state 11
 -- On MOD shift to state 13
 -- On MINUS shift to state 17
@@ -504,7 +510,7 @@ expr -> expr . TIMES expr [ TIMES PLUS MOD MINUS DIV BNEQ BLT BLE BGT BGE BEQ ]
 expr -> expr . DIV expr [ TIMES PLUS MOD MINUS DIV BNEQ BLT BLE BGT BGE BEQ ]
 expr -> expr . MOD expr [ TIMES PLUS MOD MINUS DIV BNEQ BLT BLE BGT BGE BEQ ]
 ## Transitions:
--- On TIMES shift to state 8
+-- On TIMES shift to state 9
 -- On PLUS shift to state 11
 -- On MOD shift to state 13
 -- On MINUS shift to state 17
@@ -523,7 +529,7 @@ State 35:
 ## LR(1) items:
 cond -> expr BNEQ . ident [ GOTO ]
 ## Transitions:
--- On IDENT shift to state 2
+-- On IDENT shift to state 1
 -- On ident shift to state 36
 ## Reductions:
 
@@ -543,7 +549,7 @@ State 37:
 ## LR(1) items:
 cond -> expr BLT . ident [ GOTO ]
 ## Transitions:
--- On IDENT shift to state 2
+-- On IDENT shift to state 1
 -- On ident shift to state 38
 ## Reductions:
 
@@ -563,7 +569,7 @@ State 39:
 ## LR(1) items:
 cond -> expr BLE . ident [ GOTO ]
 ## Transitions:
--- On IDENT shift to state 2
+-- On IDENT shift to state 1
 -- On ident shift to state 40
 ## Reductions:
 
@@ -583,7 +589,7 @@ State 41:
 ## LR(1) items:
 cond -> expr BGT . ident [ GOTO ]
 ## Transitions:
--- On IDENT shift to state 2
+-- On IDENT shift to state 1
 -- On ident shift to state 42
 ## Reductions:
 
@@ -603,7 +609,7 @@ State 43:
 ## LR(1) items:
 cond -> expr BGE . ident [ GOTO ]
 ## Transitions:
--- On IDENT shift to state 2
+-- On IDENT shift to state 1
 -- On ident shift to state 44
 ## Reductions:
 
@@ -624,7 +630,7 @@ State 45:
 cond -> expr BEQ . ident [ GOTO ]
 cond -> expr BEQ . ident [ GOTO ]
 ## Transitions:
--- On IDENT shift to state 2
+-- On IDENT shift to state 1
 -- On ident shift to state 46
 ## Reductions:
 
@@ -644,123 +650,74 @@ cond -> expr BEQ ident . [ GOTO ]
 
 State 47:
 ## Known stack suffix:
-## CST ident COLON IF cond
+## ident COLON IF cond
 ## LR(1) items:
-stmt -> CST ident COLON IF cond . GOTO ident SEMICOLON stmt CST GOTO ident SEMICOLON [ EOF CST ]
+stmt -> ident COLON IF cond . GOTO ident nonempty_list(stmt) GOTO ident [ IDENT GOTO EOF ]
 ## Transitions:
 -- On GOTO shift to state 48
 ## Reductions:
 
 State 48:
 ## Known stack suffix:
-## CST ident COLON IF cond GOTO
+## ident COLON IF cond GOTO
 ## LR(1) items:
-stmt -> CST ident COLON IF cond GOTO . ident SEMICOLON stmt CST GOTO ident SEMICOLON [ EOF CST ]
+stmt -> ident COLON IF cond GOTO . ident nonempty_list(stmt) GOTO ident [ IDENT GOTO EOF ]
 ## Transitions:
--- On IDENT shift to state 2
+-- On IDENT shift to state 1
 -- On ident shift to state 49
 ## Reductions:
 
 State 49:
 ## Known stack suffix:
-## CST ident COLON IF cond GOTO ident
+## ident COLON IF cond GOTO ident
 ## LR(1) items:
-stmt -> CST ident COLON IF cond GOTO ident . SEMICOLON stmt CST GOTO ident SEMICOLON [ EOF CST ]
+stmt -> ident COLON IF cond GOTO ident . nonempty_list(stmt) GOTO ident [ IDENT GOTO EOF ]
 ## Transitions:
--- On SEMICOLON shift to state 50
+-- On IDENT shift to state 1
+-- On stmt shift to state 2
+-- On nonempty_list(stmt) shift to state 50
+-- On ident shift to state 4
 ## Reductions:
 
 State 50:
 ## Known stack suffix:
-## CST ident COLON IF cond GOTO ident SEMICOLON
+## ident COLON IF cond GOTO ident nonempty_list(stmt)
 ## LR(1) items:
-stmt -> CST ident COLON IF cond GOTO ident SEMICOLON . stmt CST GOTO ident SEMICOLON [ EOF CST ]
+stmt -> ident COLON IF cond GOTO ident nonempty_list(stmt) . GOTO ident [ IDENT GOTO EOF ]
 ## Transitions:
--- On CST shift to state 1
--- On stmt shift to state 51
+-- On GOTO shift to state 51
 ## Reductions:
 
 State 51:
 ## Known stack suffix:
-## CST ident COLON IF cond GOTO ident SEMICOLON stmt
+## ident COLON IF cond GOTO ident nonempty_list(stmt) GOTO
 ## LR(1) items:
-stmt -> CST ident COLON IF cond GOTO ident SEMICOLON stmt . CST GOTO ident SEMICOLON [ EOF CST ]
+stmt -> ident COLON IF cond GOTO ident nonempty_list(stmt) GOTO . ident [ IDENT GOTO EOF ]
 ## Transitions:
--- On CST shift to state 52
+-- On IDENT shift to state 1
+-- On ident shift to state 52
 ## Reductions:
 
 State 52:
 ## Known stack suffix:
-## CST ident COLON IF cond GOTO ident SEMICOLON stmt CST
+## ident COLON IF cond GOTO ident nonempty_list(stmt) GOTO ident
 ## LR(1) items:
-stmt -> CST ident COLON IF cond GOTO ident SEMICOLON stmt CST . GOTO ident SEMICOLON [ EOF CST ]
+stmt -> ident COLON IF cond GOTO ident nonempty_list(stmt) GOTO ident . [ IDENT GOTO EOF ]
 ## Transitions:
--- On GOTO shift to state 53
 ## Reductions:
+-- On IDENT GOTO EOF
+--   reduce production stmt -> ident COLON IF cond GOTO ident nonempty_list(stmt) GOTO ident
 
 State 53:
-## Known stack suffix:
-## CST ident COLON IF cond GOTO ident SEMICOLON stmt CST GOTO
-## LR(1) items:
-stmt -> CST ident COLON IF cond GOTO ident SEMICOLON stmt CST GOTO . ident SEMICOLON [ EOF CST ]
-## Transitions:
--- On IDENT shift to state 2
--- On ident shift to state 54
-## Reductions:
-
-State 54:
-## Known stack suffix:
-## CST ident COLON IF cond GOTO ident SEMICOLON stmt CST GOTO ident
-## LR(1) items:
-stmt -> CST ident COLON IF cond GOTO ident SEMICOLON stmt CST GOTO ident . SEMICOLON [ EOF CST ]
-## Transitions:
--- On SEMICOLON shift to state 55
-## Reductions:
-
-State 55:
-## Known stack suffix:
-## CST ident COLON IF cond GOTO ident SEMICOLON stmt CST GOTO ident SEMICOLON
-## LR(1) items:
-stmt -> CST ident COLON IF cond GOTO ident SEMICOLON stmt CST GOTO ident SEMICOLON . [ EOF CST ]
-## Transitions:
-## Reductions:
--- On EOF CST
---   reduce production stmt -> CST ident COLON IF cond GOTO ident SEMICOLON stmt CST GOTO ident SEMICOLON
-
-State 56:
-## Known stack suffix:
-## stmt
-## LR(1) items:
-nonempty_list(stmt) -> stmt . [ EOF ]
-nonempty_list(stmt) -> stmt . nonempty_list(stmt) [ EOF ]
-## Transitions:
--- On CST shift to state 1
--- On stmt shift to state 56
--- On nonempty_list(stmt) shift to state 57
-## Reductions:
--- On EOF
---   reduce production nonempty_list(stmt) -> stmt
-
-State 57:
-## Known stack suffix:
-## stmt nonempty_list(stmt)
-## LR(1) items:
-nonempty_list(stmt) -> stmt nonempty_list(stmt) . [ EOF ]
-## Transitions:
-## Reductions:
--- On EOF
---   reduce production nonempty_list(stmt) -> stmt nonempty_list(stmt)
-
-State 58:
 ## Known stack suffix:
 ## nonempty_list(stmt)
 ## LR(1) items:
 file -> nonempty_list(stmt) . EOF [ # ]
 ## Transitions:
--- On EOF shift to state 59
+-- On EOF shift to state 54
 ## Reductions:
 
-State 59:
+State 54:
 ## Known stack suffix:
 ## nonempty_list(stmt) EOF
 ## LR(1) items:
@@ -770,7 +727,7 @@ file -> nonempty_list(stmt) EOF . [ # ]
 -- On #
 --   reduce production file -> nonempty_list(stmt) EOF
 
-State 60:
+State 55:
 ## Known stack suffix:
 ## file
 ## LR(1) items:

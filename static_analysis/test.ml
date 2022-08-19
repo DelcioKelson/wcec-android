@@ -5,10 +5,7 @@ open Parser
 open Printf
 open List
 exception Error of string
-open Core
-
-let args = Sys.get_argv()
-let filename = args.(1)
+let filename = Sys.argv.(1)
 
 let print_position outx lexbuf =
   let pos = lexbuf.lex_curr_p in
@@ -31,8 +28,8 @@ let rec stmt_print s =
 
 
 let () =
-  let inx = In_channel.create filename in
+  let inx = open_in filename in
   let lexbuf = Lexing.from_channel inx in
   lexbuf.lex_curr_p <- { lexbuf.lex_curr_p with pos_fname = filename };
   stmt_print (parse_with_error lexbuf);
-  In_channel.close inx
+  close_in inx

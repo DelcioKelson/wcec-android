@@ -7,7 +7,7 @@
 
 %token IF GOTO
 %token EOF
-%token SEMICOLON COLON EQUAL
+%token COLON EQUAL NEWLINE
 %token PLUS MINUS TIMES DIV MOD BEQ BNEQ BLT BLE BGT BGE
 
 %left PLUS MINUS
@@ -39,7 +39,6 @@ expr:
 | e1 = expr MOD e2 = expr
     { Ebinop (Bmod, e1, e2) }  
 ;                                  
-
 
 cond:
 | id = ident BEQ e = expr   
@@ -74,10 +73,12 @@ cond:
 ;      
 
 stmt:
-|  c = CST id = ident EQUAL e2 = expr SEMICOLON
-        {Sassign (id,e2) }
-|  c1 = CST id1 = ident COLON IF c = cond GOTO id2 = ident SEMICOLON s = stmt c2 = CST GOTO id3 = ident SEMICOLON
-        {Sgoto (c,s) }
+|  id = ident EQUAL e2 = expr
+    {Sassign (id,e2) }
+|  golabel = ident COLON IF c = cond GOTO id2 = ident
+        s= nonempty_list(stmt)
+    GOTO id3 = ident
+        {Sgoto (golabel,c,Sblock s) }
 ;
 
 ident:
