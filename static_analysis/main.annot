@@ -1,0 +1,985 @@
+"main.ml" 14 147 151 "main.ml" 14 147 160
+type(
+  (Ast.ident, Abs.val_abs) Hashtbl.t
+)
+ident(
+  def aenv_conc "main.ml" 18 185 185 "main.ml" 0 0 -1
+)
+"main.ml" 14 147 163 "main.ml" 14 147 177
+type(
+  ?random:bool -> int -> (Ast.ident, Abs.val_abs) Hashtbl.t
+)
+ident(
+  int_ref Stdlib.Hashtbl.create "hashtbl.mli" 31 1451 1451 "hashtbl.mli" 32 1517 1547
+)
+"main.ml" 14 147 178 "main.ml" 14 147 180
+type(
+  int
+)
+"main.ml" 14 147 163 "main.ml" 14 147 180
+type(
+  (Ast.ident, Abs.val_abs) Hashtbl.t
+)
+"main.ml" 18 185 189 "main.ml" 18 185 197
+type(
+  string
+)
+ident(
+  def filename "main.ml" 20 214 214 "main.ml" 0 0 -1
+)
+"main.ml" 18 185 200 "main.ml" 18 185 208
+type(
+  string array
+)
+ident(
+  int_ref Stdlib.Sys.argv "sys.mli" 23 1238 1238 "sys.mli" 23 1238 1280
+)
+"main.ml" 18 185 210 "main.ml" 18 185 211
+type(
+  int
+)
+"main.ml" 18 185 200 "main.ml" 18 185 212
+type(
+  string
+)
+"main.ml" 20 214 218 "main.ml" 20 214 232
+type(
+  out_channel -> Lexing.lexbuf -> unit
+)
+ident(
+  def print_position "main.ml" 24 367 367 "main.ml" 0 0 -1
+)
+"main.ml" 20 214 233 "main.ml" 20 214 237
+type(
+  out_channel
+)
+ident(
+  def outx "main.ml" 20 214 238 "main.ml" 22 280 365
+)
+"main.ml" 20 214 238 "main.ml" 20 214 244
+type(
+  Lexing.lexbuf
+)
+ident(
+  def lexbuf "main.ml" 21 247 249 "main.ml" 22 280 365
+)
+"main.ml" 21 247 253 "main.ml" 21 247 256
+type(
+  Lexing.position
+)
+ident(
+  def pos "main.ml" 22 280 282 "main.ml" 22 280 365
+)
+"main.ml" 21 247 259 "main.ml" 21 247 265
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "main.ml" 20 214 238 "main.ml" 20 214 244
+)
+"main.ml" 21 247 259 "main.ml" 21 247 276
+type(
+  Lexing.position
+)
+"main.ml" 22 280 282 "main.ml" 22 280 289
+type(
+  out_channel ->
+  (string -> int -> int -> unit, out_channel, unit) format ->
+  string -> int -> int -> unit
+)
+ident(
+  int_ref Stdlib.Printf.fprintf "printf.mli" 18 1115 1115 "printf.mli" 18 1115 1180
+)
+"main.ml" 22 280 290 "main.ml" 22 280 294
+type(
+  out_channel
+)
+ident(
+  int_ref outx "main.ml" 20 214 233 "main.ml" 20 214 237
+)
+"main.ml" 22 280 295 "main.ml" 22 280 305
+type(
+  (string -> int -> int -> unit, out_channel, unit) format
+)
+"main.ml" 22 280 306 "main.ml" 22 280 309
+type(
+  Lexing.position
+)
+ident(
+  int_ref pos "main.ml" 21 247 253 "main.ml" 21 247 256
+)
+"main.ml" 22 280 306 "main.ml" 22 280 319
+type(
+  string
+)
+"main.ml" 22 280 320 "main.ml" 22 280 323
+type(
+  Lexing.position
+)
+ident(
+  int_ref pos "main.ml" 21 247 253 "main.ml" 21 247 256
+)
+"main.ml" 22 280 320 "main.ml" 22 280 332
+type(
+  int
+)
+"main.ml" 22 280 334 "main.ml" 22 280 337
+type(
+  Lexing.position
+)
+ident(
+  int_ref pos "main.ml" 21 247 253 "main.ml" 21 247 256
+)
+"main.ml" 22 280 334 "main.ml" 22 280 346
+type(
+  int
+)
+"main.ml" 22 280 347 "main.ml" 22 280 348
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Stdlib.( - ) "stdlib.mli" 352 13775 13775 "stdlib.mli" 352 13775 13821
+)
+"main.ml" 22 280 349 "main.ml" 22 280 352
+type(
+  Lexing.position
+)
+ident(
+  int_ref pos "main.ml" 21 247 253 "main.ml" 21 247 256
+)
+"main.ml" 22 280 349 "main.ml" 22 280 360
+type(
+  int
+)
+"main.ml" 22 280 334 "main.ml" 22 280 360
+type(
+  int
+)
+"main.ml" 22 280 361 "main.ml" 22 280 362
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Stdlib.( + ) "stdlib.mli" 347 13626 13626 "stdlib.mli" 347 13626 13672
+)
+"main.ml" 22 280 363 "main.ml" 22 280 364
+type(
+  int
+)
+"main.ml" 22 280 333 "main.ml" 22 280 365
+type(
+  int
+)
+"main.ml" 22 280 282 "main.ml" 22 280 365
+type(
+  unit
+)
+"main.ml" 21 247 249 "main.ml" 22 280 365
+type(
+  unit
+)
+"main.ml" 24 367 371 "main.ml" 24 367 387
+type(
+  Lexing.lexbuf -> Ast.stmt
+)
+ident(
+  def parse_with_error "main.ml" 34 632 632 "main.ml" 0 0 -1
+)
+"main.ml" 24 367 388 "main.ml" 24 367 394
+type(
+  Lexing.lexbuf
+)
+ident(
+  def lexbuf "main.ml" 25 397 399 "main.ml" 31 616 629
+)
+"main.ml" 25 397 403 "main.ml" 25 397 414
+type(
+  (Lexing.lexbuf -> Parser.token) -> Lexing.lexbuf -> Ast.stmt
+)
+ident(
+  int_ref Parser.file "parser.mli" 31 343 343 "parser.mli" 31 343 408
+)
+"main.ml" 25 397 415 "main.ml" 25 397 426
+type(
+  Lexing.lexbuf -> Parser.token
+)
+ident(
+  int_ref Lexer.token "lexer.ml" 131 7177 7185 "lexer.ml" 131 7177 7190
+)
+"main.ml" 25 397 427 "main.ml" 25 397 433
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "main.ml" 24 367 388 "main.ml" 24 367 394
+)
+"main.ml" 25 397 403 "main.ml" 25 397 433
+type(
+  Ast.stmt
+)
+"main.ml" 26 439 455 "main.ml" 26 439 458
+type(
+  string
+)
+ident(
+  def msg "main.ml" 27 462 466 "main.ml" 28 519 532
+)
+"main.ml" 26 439 443 "main.ml" 26 439 458
+type(
+  exn
+)
+"main.ml" 27 462 466 "main.ml" 27 462 473
+type(
+  out_channel ->
+  ((out_channel -> Lexing.lexbuf -> unit) -> Lexing.lexbuf -> string -> unit,
+   out_channel, unit)
+  format ->
+  (out_channel -> Lexing.lexbuf -> unit) -> Lexing.lexbuf -> string -> unit
+)
+ident(
+  int_ref Stdlib.Printf.fprintf "printf.mli" 18 1115 1115 "printf.mli" 18 1115 1180
+)
+"main.ml" 27 462 474 "main.ml" 27 462 480
+type(
+  out_channel
+)
+ident(
+  int_ref Stdlib.stderr "stdlib.mli" 844 31049 31049 "stdlib.mli" 844 31049 31073
+)
+"main.ml" 27 462 481 "main.ml" 27 462 491
+type(
+  ((out_channel -> Lexing.lexbuf -> unit) -> Lexing.lexbuf -> string -> unit,
+   out_channel, unit)
+  format
+)
+"main.ml" 27 462 492 "main.ml" 27 462 506
+type(
+  out_channel -> Lexing.lexbuf -> unit
+)
+ident(
+  int_ref print_position "main.ml" 20 214 218 "main.ml" 20 214 232
+)
+"main.ml" 27 462 507 "main.ml" 27 462 513
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "main.ml" 24 367 388 "main.ml" 24 367 394
+)
+"main.ml" 27 462 514 "main.ml" 27 462 517
+type(
+  string
+)
+ident(
+  int_ref msg "main.ml" 26 439 455 "main.ml" 26 439 458
+)
+"main.ml" 27 462 466 "main.ml" 27 462 517
+type(
+  unit
+)
+"main.ml" 28 519 523 "main.ml" 28 519 527
+type(
+  int -> Ast.stmt
+)
+ident(
+  int_ref Stdlib.exit "stdlib.mli" 1344 51645 51645 "stdlib.mli" 1344 51645 51665
+)
+"main.ml" 28 519 528 "main.ml" 28 519 532
+type(
+  int
+)
+"main.ml" 28 519 523 "main.ml" 28 519 532
+type(
+  Ast.stmt
+)
+"main.ml" 27 462 466 "main.ml" 28 519 532
+type(
+  Ast.stmt
+)
+"main.ml" 29 533 537 "main.ml" 29 533 549
+type(
+  exn
+)
+"main.ml" 30 553 557 "main.ml" 30 553 564
+type(
+  out_channel ->
+  ((out_channel -> Lexing.lexbuf -> unit) -> Lexing.lexbuf -> unit,
+   out_channel, unit)
+  format -> (out_channel -> Lexing.lexbuf -> unit) -> Lexing.lexbuf -> unit
+)
+ident(
+  int_ref Stdlib.Printf.fprintf "printf.mli" 18 1115 1115 "printf.mli" 18 1115 1180
+)
+"main.ml" 30 553 565 "main.ml" 30 553 571
+type(
+  out_channel
+)
+ident(
+  int_ref Stdlib.stderr "stdlib.mli" 844 31049 31049 "stdlib.mli" 844 31049 31073
+)
+"main.ml" 30 553 572 "main.ml" 30 553 592
+type(
+  ((out_channel -> Lexing.lexbuf -> unit) -> Lexing.lexbuf -> unit,
+   out_channel, unit)
+  format
+)
+"main.ml" 30 553 593 "main.ml" 30 553 607
+type(
+  out_channel -> Lexing.lexbuf -> unit
+)
+ident(
+  int_ref print_position "main.ml" 20 214 218 "main.ml" 20 214 232
+)
+"main.ml" 30 553 608 "main.ml" 30 553 614
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "main.ml" 24 367 388 "main.ml" 24 367 394
+)
+"main.ml" 30 553 557 "main.ml" 30 553 614
+type(
+  unit
+)
+"main.ml" 31 616 620 "main.ml" 31 616 624
+type(
+  int -> Ast.stmt
+)
+ident(
+  int_ref Stdlib.exit "stdlib.mli" 1344 51645 51645 "stdlib.mli" 1344 51645 51665
+)
+"main.ml" 31 616 625 "main.ml" 31 616 629
+type(
+  int
+)
+"main.ml" 31 616 620 "main.ml" 31 616 629
+type(
+  Ast.stmt
+)
+"main.ml" 30 553 557 "main.ml" 31 616 629
+type(
+  Ast.stmt
+)
+"main.ml" 25 397 399 "main.ml" 31 616 629
+type(
+  Ast.stmt
+)
+"main.ml" 34 632 636 "main.ml" 34 632 645
+type(
+  Abs.val_abs -> unit
+)
+ident(
+  def print_abs "main.ml" 47 1030 1030 "main.ml" 0 0 -1
+)
+"main.ml" 34 632 646 "main.ml" 34 632 647
+type(
+  Abs.val_abs
+)
+ident(
+  def a "main.ml" 35 651 653 "main.ml" 40 860 906
+)
+"main.ml" 35 651 659 "main.ml" 35 651 660
+type(
+  Abs.val_abs
+)
+ident(
+  int_ref a "main.ml" 34 632 646 "main.ml" 34 632 647
+)
+"main.ml" 36 666 670 "main.ml" 36 666 674
+type(
+  Abs.val_abs
+)
+type(
+  Abs.val_abs
+)
+"main.ml" 36 666 678 "main.ml" 36 666 690
+type(
+  string -> unit
+)
+ident(
+  int_ref Stdlib.print_string "stdlib.mli" 853 31250 31250 "stdlib.mli" 853 31250 31283
+)
+"main.ml" 36 666 691 "main.ml" 36 666 697
+type(
+  string
+)
+"main.ml" 36 666 678 "main.ml" 36 666 697
+type(
+  unit
+)
+"main.ml" 37 698 710 "main.ml" 37 698 712
+type(
+  int
+)
+ident(
+  def x1 "main.ml" 37 698 722 "main.ml" 37 698 762
+)
+"main.ml" 37 698 713 "main.ml" 37 698 715
+type(
+  int
+)
+ident(
+  def x2 "main.ml" 37 698 722 "main.ml" 37 698 762
+)
+"main.ml" 37 698 702 "main.ml" 37 698 716
+type(
+  Abs.val_abs
+)
+type(
+  Abs.val_abs
+)
+"main.ml" 37 698 722 "main.ml" 37 698 735
+type(
+  (int -> int -> unit, out_channel, unit) format -> int -> int -> unit
+)
+ident(
+  int_ref Stdlib.Printf.printf "printf.mli" 129 6889 6889 "printf.mli" 129 6889 6938
+)
+"main.ml" 37 698 736 "main.ml" 37 698 756
+type(
+  (int -> int -> unit, out_channel, unit) format
+)
+"main.ml" 37 698 757 "main.ml" 37 698 759
+type(
+  int
+)
+ident(
+  int_ref x1 "main.ml" 37 698 710 "main.ml" 37 698 712
+)
+"main.ml" 37 698 760 "main.ml" 37 698 762
+type(
+  int
+)
+ident(
+  int_ref x2 "main.ml" 37 698 713 "main.ml" 37 698 715
+)
+"main.ml" 37 698 722 "main.ml" 37 698 762
+type(
+  unit
+)
+"main.ml" 38 763 775 "main.ml" 38 763 776
+type(
+  int
+)
+ident(
+  def x "main.ml" 38 763 782 "main.ml" 38 763 811
+)
+"main.ml" 38 763 767 "main.ml" 38 763 776
+type(
+  Abs.val_abs
+)
+type(
+  Abs.val_abs
+)
+"main.ml" 38 763 782 "main.ml" 38 763 795
+type(
+  (int -> unit, out_channel, unit) format -> int -> unit
+)
+ident(
+  int_ref Stdlib.Printf.printf "printf.mli" 129 6889 6889 "printf.mli" 129 6889 6938
+)
+"main.ml" 38 763 796 "main.ml" 38 763 809
+type(
+  (int -> unit, out_channel, unit) format
+)
+"main.ml" 38 763 810 "main.ml" 38 763 811
+type(
+  int
+)
+ident(
+  int_ref x "main.ml" 38 763 775 "main.ml" 38 763 776
+)
+"main.ml" 38 763 782 "main.ml" 38 763 811
+type(
+  unit
+)
+"main.ml" 39 812 824 "main.ml" 39 812 825
+type(
+  int
+)
+ident(
+  def x "main.ml" 39 812 831 "main.ml" 39 812 859
+)
+"main.ml" 39 812 816 "main.ml" 39 812 825
+type(
+  Abs.val_abs
+)
+type(
+  Abs.val_abs
+)
+"main.ml" 39 812 831 "main.ml" 39 812 844
+type(
+  (int -> unit, out_channel, unit) format -> int -> unit
+)
+ident(
+  int_ref Stdlib.Printf.printf "printf.mli" 129 6889 6889 "printf.mli" 129 6889 6938
+)
+"main.ml" 39 812 845 "main.ml" 39 812 857
+type(
+  (int -> unit, out_channel, unit) format
+)
+"main.ml" 39 812 858 "main.ml" 39 812 859
+type(
+  int
+)
+ident(
+  int_ref x "main.ml" 39 812 824 "main.ml" 39 812 825
+)
+"main.ml" 39 812 831 "main.ml" 39 812 859
+type(
+  unit
+)
+"main.ml" 40 860 864 "main.ml" 40 860 874
+type(
+  Abs.val_abs
+)
+type(
+  Abs.val_abs
+)
+"main.ml" 40 860 880 "main.ml" 40 860 893
+type(
+  (unit, out_channel, unit) format -> unit
+)
+ident(
+  int_ref Stdlib.Printf.printf "printf.mli" 129 6889 6889 "printf.mli" 129 6889 6938
+)
+"main.ml" 40 860 894 "main.ml" 40 860 906
+type(
+  (unit, out_channel, unit) format
+)
+"main.ml" 40 860 880 "main.ml" 40 860 906
+type(
+  unit
+)
+"main.ml" 35 651 653 "main.ml" 40 860 906
+type(
+  unit
+)
+"main.ml" 47 1030 1038 "main.ml" 47 1030 1048
+type(
+  Ast.stmt -> unit
+)
+ident(
+  def stmt_print "main.ml" 47 1030 1030 "main.ml" 0 0 -1
+)
+"main.ml" 47 1030 1049 "main.ml" 47 1030 1050
+type(
+  Ast.stmt
+)
+ident(
+  def s "main.ml" 48 1054 1056 "main.ml" 51 1211 1229
+)
+"main.ml" 48 1054 1062 "main.ml" 48 1054 1063
+type(
+  Ast.stmt
+)
+ident(
+  int_ref s "main.ml" 47 1030 1049 "main.ml" 47 1030 1050
+)
+"main.ml" 49 1069 1088 "main.ml" 49 1069 1090
+type(
+  Ast.ident
+)
+ident(
+  def x1 "main.ml" 49 1069 1102 "main.ml" 49 1069 1141
+)
+"main.ml" 49 1069 1091 "main.ml" 49 1069 1093
+type(
+  Ast.expr
+)
+ident(
+  def x2 "main.ml" 49 1069 1102 "main.ml" 49 1069 1141
+)
+"main.ml" 49 1069 1080 "main.ml" 49 1069 1094
+type(
+  Ast.stmt
+)
+"main.ml" 49 1069 1096 "main.ml" 49 1069 1097
+type(
+  Ast.stmt list
+)
+ident(
+  def l "main.ml" 49 1069 1102 "main.ml" 49 1069 1141
+)
+"main.ml" 49 1069 1079 "main.ml" 49 1069 1098
+type(
+  Ast.stmt list
+)
+"main.ml" 49 1069 1073 "main.ml" 49 1069 1098
+type(
+  Ast.stmt
+)
+type(
+  Ast.stmt
+)
+"main.ml" 49 1069 1102 "main.ml" 49 1069 1108
+type(
+  (unit, out_channel, unit) format -> unit
+)
+ident(
+  int_ref Stdlib.Printf.printf "printf.mli" 129 6889 6889 "printf.mli" 129 6889 6938
+)
+"main.ml" 49 1069 1109 "main.ml" 49 1069 1118
+type(
+  (unit, out_channel, unit) format
+)
+"main.ml" 49 1069 1102 "main.ml" 49 1069 1118
+type(
+  unit
+)
+"main.ml" 49 1069 1120 "main.ml" 49 1069 1130
+type(
+  Ast.stmt -> unit
+)
+ident(
+  int_ref stmt_print "main.ml" 47 1030 1038 "main.ml" 47 1030 1048
+)
+"main.ml" 49 1069 1139 "main.ml" 49 1069 1140
+type(
+  Ast.stmt list
+)
+ident(
+  int_ref l "main.ml" 49 1069 1096 "main.ml" 49 1069 1097
+)
+"main.ml" 49 1069 1131 "main.ml" 49 1069 1141
+type(
+  Ast.stmt
+)
+"main.ml" 49 1069 1120 "main.ml" 49 1069 1141
+type(
+  unit
+)
+"main.ml" 49 1069 1102 "main.ml" 49 1069 1141
+type(
+  unit
+)
+"main.ml" 50 1142 1159 "main.ml" 50 1142 1161
+type(
+  Ast.cond
+)
+ident(
+  def x1 "main.ml" 50 1142 1173 "main.ml" 50 1142 1210
+)
+"main.ml" 50 1142 1162 "main.ml" 50 1142 1164
+type(
+  Ast.stmt
+)
+ident(
+  def x2 "main.ml" 50 1142 1173 "main.ml" 50 1142 1210
+)
+"main.ml" 50 1142 1153 "main.ml" 50 1142 1165
+type(
+  Ast.stmt
+)
+"main.ml" 50 1142 1167 "main.ml" 50 1142 1168
+type(
+  Ast.stmt list
+)
+ident(
+  def l "main.ml" 50 1142 1173 "main.ml" 50 1142 1210
+)
+"main.ml" 50 1142 1152 "main.ml" 50 1142 1169
+type(
+  Ast.stmt list
+)
+"main.ml" 50 1142 1146 "main.ml" 50 1142 1169
+type(
+  Ast.stmt
+)
+type(
+  Ast.stmt
+)
+"main.ml" 50 1142 1173 "main.ml" 50 1142 1179
+type(
+  (unit, out_channel, unit) format -> unit
+)
+ident(
+  int_ref Stdlib.Printf.printf "printf.mli" 129 6889 6889 "printf.mli" 129 6889 6938
+)
+"main.ml" 50 1142 1180 "main.ml" 50 1142 1187
+type(
+  (unit, out_channel, unit) format
+)
+"main.ml" 50 1142 1173 "main.ml" 50 1142 1187
+type(
+  unit
+)
+"main.ml" 50 1142 1189 "main.ml" 50 1142 1199
+type(
+  Ast.stmt -> unit
+)
+ident(
+  int_ref stmt_print "main.ml" 47 1030 1038 "main.ml" 47 1030 1048
+)
+"main.ml" 50 1142 1208 "main.ml" 50 1142 1209
+type(
+  Ast.stmt list
+)
+ident(
+  int_ref l "main.ml" 50 1142 1167 "main.ml" 50 1142 1168
+)
+"main.ml" 50 1142 1200 "main.ml" 50 1142 1210
+type(
+  Ast.stmt
+)
+"main.ml" 50 1142 1189 "main.ml" 50 1142 1210
+type(
+  unit
+)
+"main.ml" 50 1142 1173 "main.ml" 50 1142 1210
+type(
+  unit
+)
+"main.ml" 51 1211 1215 "main.ml" 51 1211 1216
+type(
+  Ast.stmt
+)
+type(
+  Ast.stmt
+)
+"main.ml" 51 1211 1220 "main.ml" 51 1211 1226
+type(
+  (unit, out_channel, unit) format -> unit
+)
+ident(
+  int_ref Stdlib.Printf.printf "printf.mli" 129 6889 6889 "printf.mli" 129 6889 6938
+)
+"main.ml" 51 1211 1227 "main.ml" 51 1211 1229
+type(
+  (unit, out_channel, unit) format
+)
+"main.ml" 51 1211 1220 "main.ml" 51 1211 1229
+type(
+  unit
+)
+"main.ml" 48 1054 1056 "main.ml" 51 1211 1229
+type(
+  unit
+)
+"main.ml" 53 1231 1235 "main.ml" 53 1231 1241
+type(
+  (Ast.ident, Abs.val_abs) Hashtbl.t
+)
+ident(
+  def result "main.ml" 62 1432 1432 "main.ml" 0 0 -1
+)
+"main.ml" 54 1244 1250 "main.ml" 54 1244 1253
+type(
+  in_channel
+)
+ident(
+  def inx "main.ml" 55 1276 1278 "main.ml" 59 1426 1429
+)
+"main.ml" 54 1244 1256 "main.ml" 54 1244 1263
+type(
+  string -> in_channel
+)
+ident(
+  int_ref Stdlib.open_in "stdlib.mli" 1068 39735 39735 "stdlib.mli" 1068 39735 39769
+)
+"main.ml" 54 1244 1264 "main.ml" 54 1244 1272
+type(
+  string
+)
+ident(
+  int_ref filename "main.ml" 18 185 189 "main.ml" 18 185 197
+)
+"main.ml" 54 1244 1256 "main.ml" 54 1244 1272
+type(
+  in_channel
+)
+"main.ml" 55 1276 1282 "main.ml" 55 1276 1288
+type(
+  Lexing.lexbuf
+)
+ident(
+  def lexbuf "main.ml" 56 1318 1320 "main.ml" 59 1426 1429
+)
+"main.ml" 55 1276 1291 "main.ml" 55 1276 1310
+type(
+  ?with_positions:bool -> in_channel -> Lexing.lexbuf
+)
+ident(
+  int_ref Stdlib.Lexing.from_channel "lexing.mli" 92 4163 4163 "lexing.mli" 92 4163 4226
+)
+"main.ml" 55 1276 1311 "main.ml" 55 1276 1314
+type(
+  in_channel
+)
+ident(
+  int_ref inx "main.ml" 54 1244 1250 "main.ml" 54 1244 1253
+)
+"main.ml" 55 1276 1291 "main.ml" 55 1276 1314
+type(
+  Lexing.lexbuf
+)
+"main.ml" 56 1318 1324 "main.ml" 56 1318 1330
+type(
+  Ast.stmt
+)
+ident(
+  def blocks "main.ml" 57 1360 1362 "main.ml" 59 1426 1429
+)
+"main.ml" 56 1318 1333 "main.ml" 56 1318 1349
+type(
+  Lexing.lexbuf -> Ast.stmt
+)
+ident(
+  int_ref parse_with_error "main.ml" 24 367 371 "main.ml" 24 367 387
+)
+"main.ml" 56 1318 1350 "main.ml" 56 1318 1356
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "main.ml" 55 1276 1282 "main.ml" 55 1276 1288
+)
+"main.ml" 56 1318 1333 "main.ml" 56 1318 1356
+type(
+  Ast.stmt
+)
+"main.ml" 57 1360 1366 "main.ml" 57 1360 1367
+type(
+  (Ast.ident, Abs.val_abs) Hashtbl.t
+)
+ident(
+  def r "main.ml" 58 1399 1401 "main.ml" 59 1426 1429
+)
+"main.ml" 57 1360 1370 "main.ml" 57 1360 1377
+type(
+  Ast.stmt ->
+  (Ast.ident, Abs.val_abs) Hashtbl.t -> (Ast.ident, Abs.val_abs) Hashtbl.t
+)
+ident(
+  int_ref Abs.ai_stmt "abs.ml" 214 7095 7103 "abs.ml" 214 7095 7110
+)
+"main.ml" 57 1360 1378 "main.ml" 57 1360 1384
+type(
+  Ast.stmt
+)
+ident(
+  int_ref blocks "main.ml" 56 1318 1324 "main.ml" 56 1318 1330
+)
+"main.ml" 57 1360 1385 "main.ml" 57 1360 1394
+type(
+  (Ast.ident, Abs.val_abs) Hashtbl.t
+)
+ident(
+  int_ref aenv_conc "main.ml" 14 147 151 "main.ml" 14 147 160
+)
+"main.ml" 57 1360 1370 "main.ml" 57 1360 1394
+type(
+  (Ast.ident, Abs.val_abs) Hashtbl.t
+)
+"main.ml" 58 1399 1405 "main.ml" 58 1399 1407
+type(
+  unit
+)
+type(
+  unit
+)
+"main.ml" 58 1399 1410 "main.ml" 58 1399 1418
+type(
+  in_channel -> unit
+)
+ident(
+  int_ref Stdlib.close_in "stdlib.mli" 1168 44452 44452 "stdlib.mli" 1168 44452 44485
+)
+"main.ml" 58 1399 1419 "main.ml" 58 1399 1422
+type(
+  in_channel
+)
+ident(
+  int_ref inx "main.ml" 54 1244 1250 "main.ml" 54 1244 1253
+)
+"main.ml" 58 1399 1410 "main.ml" 58 1399 1422
+type(
+  unit
+)
+"main.ml" 59 1426 1428 "main.ml" 59 1426 1429
+type(
+  (Ast.ident, Abs.val_abs) Hashtbl.t
+)
+ident(
+  int_ref r "main.ml" 57 1360 1366 "main.ml" 57 1360 1367
+)
+"main.ml" 58 1399 1401 "main.ml" 59 1426 1429
+type(
+  (Ast.ident, Abs.val_abs) Hashtbl.t
+)
+"main.ml" 57 1360 1362 "main.ml" 59 1426 1429
+type(
+  (Ast.ident, Abs.val_abs) Hashtbl.t
+)
+"main.ml" 56 1318 1320 "main.ml" 59 1426 1429
+type(
+  (Ast.ident, Abs.val_abs) Hashtbl.t
+)
+"main.ml" 55 1276 1278 "main.ml" 59 1426 1429
+type(
+  (Ast.ident, Abs.val_abs) Hashtbl.t
+)
+"main.ml" 54 1244 1246 "main.ml" 59 1426 1429
+type(
+  (Ast.ident, Abs.val_abs) Hashtbl.t
+)
+"main.ml" 62 1432 1436 "main.ml" 62 1432 1438
+type(
+  unit
+)
+"main.ml" 63 1442 1442 "main.ml" 63 1442 1454
+type(
+  (Ast.ident -> Abs.val_abs -> unit) ->
+  (Ast.ident, Abs.val_abs) Hashtbl.t -> unit
+)
+ident(
+  int_ref Stdlib.Hashtbl.iter "hashtbl.mli" 120 5516 5516 "hashtbl.mli" 120 5516 5567
+)
+"main.ml" 63 1442 1461 "main.ml" 63 1442 1462
+type(
+  Ast.ident
+)
+ident(
+  def x "main.ml" 63 1442 1463 "main.ml" 63 1442 1481
+)
+"main.ml" 63 1442 1463 "main.ml" 63 1442 1465
+type(
+  Abs.val_abs
+)
+ident(
+  def a0 "main.ml" 63 1442 1469 "main.ml" 63 1442 1481
+)
+"main.ml" 63 1442 1469 "main.ml" 63 1442 1478
+type(
+  Abs.val_abs -> unit
+)
+ident(
+  int_ref print_abs "main.ml" 34 632 636 "main.ml" 34 632 645
+)
+"main.ml" 63 1442 1479 "main.ml" 63 1442 1481
+type(
+  Abs.val_abs
+)
+ident(
+  int_ref a0 "main.ml" 63 1442 1463 "main.ml" 63 1442 1465
+)
+"main.ml" 63 1442 1469 "main.ml" 63 1442 1481
+type(
+  unit
+)
+"main.ml" 63 1442 1456 "main.ml" 63 1442 1482
+type(
+  Ast.ident -> Abs.val_abs -> unit
+)
+"main.ml" 63 1442 1483 "main.ml" 63 1442 1489
+type(
+  (Ast.ident, Abs.val_abs) Hashtbl.t
+)
+ident(
+  int_ref result "main.ml" 53 1231 1235 "main.ml" 53 1231 1241
+)
+"main.ml" 63 1442 1442 "main.ml" 63 1442 1489
+type(
+  unit
+)

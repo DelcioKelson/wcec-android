@@ -1,0 +1,8428 @@
+"abs.ml" 22 391 395 "abs.ml" 22 391 404
+type(
+  (Ast.ident, Ast.const) Hashtbl.t
+)
+ident(
+  def aenv_conc "abs.ml" 24 427 427 "abs.ml" 0 0 -1
+)
+"abs.ml" 22 391 407 "abs.ml" 22 391 421
+type(
+  ?random:bool -> int -> (Ast.ident, Ast.const) Hashtbl.t
+)
+ident(
+  int_ref Stdlib.Hashtbl.create "hashtbl.mli" 31 1451 1451 "hashtbl.mli" 32 1517 1547
+)
+"abs.ml" 22 391 422 "abs.ml" 22 391 424
+type(
+  int
+)
+"abs.ml" 22 391 407 "abs.ml" 22 391 424
+type(
+  (Ast.ident, Ast.const) Hashtbl.t
+)
+"abs.ml" 24 427 431 "abs.ml" 24 427 435
+type(
+  'a -> ('a, 'b) Hashtbl.t -> 'b
+)
+ident(
+  def read "abs.ml" 26 464 464 "abs.ml" 0 0 -1
+)
+"abs.ml" 24 427 436 "abs.ml" 24 427 439
+type(
+  'a
+)
+ident(
+  def var "abs.ml" 24 427 440 "abs.ml" 24 427 462
+)
+"abs.ml" 24 427 440 "abs.ml" 24 427 441
+type(
+  ('a, 'b) Hashtbl.t
+)
+ident(
+  def m "abs.ml" 24 427 444 "abs.ml" 24 427 462
+)
+"abs.ml" 24 427 444 "abs.ml" 24 427 456
+type(
+  ('a, 'b) Hashtbl.t -> 'a -> 'b
+)
+ident(
+  int_ref Stdlib.Hashtbl.find "hashtbl.mli" 90 4266 4266 "hashtbl.mli" 90 4266 4299
+)
+"abs.ml" 24 427 457 "abs.ml" 24 427 458
+type(
+  ('a, 'b) Hashtbl.t
+)
+ident(
+  int_ref m "abs.ml" 24 427 440 "abs.ml" 24 427 441
+)
+"abs.ml" 24 427 459 "abs.ml" 24 427 462
+type(
+  'a
+)
+ident(
+  int_ref var "abs.ml" 24 427 436 "abs.ml" 24 427 439
+)
+"abs.ml" 24 427 444 "abs.ml" 24 427 462
+type(
+  'b
+)
+"abs.ml" 26 464 468 "abs.ml" 26 464 473
+type(
+  'a -> 'b -> 'c -> ('a, 'b) Hashtbl.t
+)
+ident(
+  def write "abs.ml" 34 612 612 "abs.ml" 0 0 -1
+)
+"abs.ml" 26 464 474 "abs.ml" 26 464 477
+type(
+  'a
+)
+ident(
+  def var "abs.ml" 26 464 478 "abs.ml" 29 574 582
+)
+"abs.ml" 26 464 478 "abs.ml" 26 464 487
+type(
+  'b
+)
+ident(
+  def abs_value "abs.ml" 26 464 488 "abs.ml" 29 574 582
+)
+"abs.ml" 26 464 488 "abs.ml" 26 464 489
+type(
+  'c
+)
+ident(
+  def m "abs.ml" 27 493 495 "abs.ml" 29 574 582
+)
+"abs.ml" 27 493 499 "abs.ml" 27 493 503
+type(
+  ('a, 'b) Hashtbl.t
+)
+ident(
+  def ctx' "abs.ml" 28 527 531 "abs.ml" 29 574 582
+)
+"abs.ml" 27 493 506 "abs.ml" 27 493 520
+type(
+  ?random:bool -> int -> ('a, 'b) Hashtbl.t
+)
+ident(
+  int_ref Stdlib.Hashtbl.create "hashtbl.mli" 31 1451 1451 "hashtbl.mli" 32 1517 1547
+)
+"abs.ml" 27 493 521 "abs.ml" 27 493 523
+type(
+  int
+)
+"abs.ml" 27 493 506 "abs.ml" 27 493 523
+type(
+  ('a, 'b) Hashtbl.t
+)
+"abs.ml" 28 527 535 "abs.ml" 28 527 537
+type(
+  unit
+)
+type(
+  unit
+)
+"abs.ml" 28 527 540 "abs.ml" 28 527 551
+type(
+  ('a, 'b) Hashtbl.t -> 'a -> 'b -> unit
+)
+ident(
+  int_ref Stdlib.Hashtbl.add "hashtbl.mli" 82 3918 3918 "hashtbl.mli" 82 3918 3958
+)
+"abs.ml" 28 527 552 "abs.ml" 28 527 556
+type(
+  ('a, 'b) Hashtbl.t
+)
+ident(
+  int_ref ctx' "abs.ml" 27 493 499 "abs.ml" 27 493 503
+)
+"abs.ml" 28 527 557 "abs.ml" 28 527 560
+type(
+  'a
+)
+ident(
+  int_ref var "abs.ml" 26 464 474 "abs.ml" 26 464 477
+)
+"abs.ml" 28 527 561 "abs.ml" 28 527 570
+type(
+  'b
+)
+ident(
+  int_ref abs_value "abs.ml" 26 464 478 "abs.ml" 26 464 487
+)
+"abs.ml" 28 527 540 "abs.ml" 28 527 570
+type(
+  unit
+)
+"abs.ml" 29 574 578 "abs.ml" 29 574 582
+type(
+  ('a, 'b) Hashtbl.t
+)
+ident(
+  int_ref ctx' "abs.ml" 27 493 499 "abs.ml" 27 493 503
+)
+"abs.ml" 28 527 531 "abs.ml" 29 574 582
+type(
+  ('a, 'b) Hashtbl.t
+)
+"abs.ml" 27 493 495 "abs.ml" 29 574 582
+type(
+  ('a, 'b) Hashtbl.t
+)
+"abs.ml" 34 612 616 "abs.ml" 34 612 621
+type(
+  Ast.baop -> int -> int -> int
+)
+ident(
+  def binop "abs.ml" 43 743 743 "abs.ml" 0 0 -1
+)
+"abs.ml" 34 612 622 "abs.ml" 34 612 623
+type(
+  Ast.baop
+)
+ident(
+  def o "abs.ml" 34 612 624 "abs.ml" 40 729 739
+)
+"abs.ml" 34 612 624 "abs.ml" 34 612 626
+type(
+  int
+)
+ident(
+  def v1 "abs.ml" 34 612 627 "abs.ml" 40 729 739
+)
+"abs.ml" 34 612 627 "abs.ml" 34 612 629
+type(
+  int
+)
+ident(
+  def v2 "abs.ml" 35 633 635 "abs.ml" 40 729 739
+)
+"abs.ml" 35 633 641 "abs.ml" 35 633 642
+type(
+  Ast.baop
+)
+ident(
+  int_ref o "abs.ml" 34 612 622 "abs.ml" 34 612 623
+)
+"abs.ml" 36 648 652 "abs.ml" 36 648 656
+type(
+  Ast.baop
+)
+type(
+  Ast.baop
+)
+"abs.ml" 36 648 660 "abs.ml" 36 648 662
+type(
+  int
+)
+ident(
+  int_ref v1 "abs.ml" 34 612 624 "abs.ml" 34 612 626
+)
+"abs.ml" 36 648 663 "abs.ml" 36 648 664
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Stdlib.( + ) "stdlib.mli" 347 13626 13626 "stdlib.mli" 347 13626 13672
+)
+"abs.ml" 36 648 665 "abs.ml" 36 648 667
+type(
+  int
+)
+ident(
+  int_ref v2 "abs.ml" 34 612 627 "abs.ml" 34 612 629
+)
+"abs.ml" 36 648 660 "abs.ml" 36 648 667
+type(
+  int
+)
+"abs.ml" 37 668 672 "abs.ml" 37 668 676
+type(
+  Ast.baop
+)
+type(
+  Ast.baop
+)
+"abs.ml" 37 668 680 "abs.ml" 37 668 682
+type(
+  int
+)
+ident(
+  int_ref v1 "abs.ml" 34 612 624 "abs.ml" 34 612 626
+)
+"abs.ml" 37 668 683 "abs.ml" 37 668 684
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Stdlib.( - ) "stdlib.mli" 352 13775 13775 "stdlib.mli" 352 13775 13821
+)
+"abs.ml" 37 668 685 "abs.ml" 37 668 687
+type(
+  int
+)
+ident(
+  int_ref v2 "abs.ml" 34 612 627 "abs.ml" 34 612 629
+)
+"abs.ml" 37 668 680 "abs.ml" 37 668 687
+type(
+  int
+)
+"abs.ml" 38 689 693 "abs.ml" 38 689 697
+type(
+  Ast.baop
+)
+type(
+  Ast.baop
+)
+"abs.ml" 38 689 700 "abs.ml" 38 689 702
+type(
+  int
+)
+ident(
+  int_ref v1 "abs.ml" 34 612 624 "abs.ml" 34 612 626
+)
+"abs.ml" 38 689 703 "abs.ml" 38 689 704
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Stdlib.( * ) "stdlib.mli" 357 13929 13929 "stdlib.mli" 357 13929 13975
+)
+"abs.ml" 38 689 705 "abs.ml" 38 689 707
+type(
+  int
+)
+ident(
+  int_ref v2 "abs.ml" 34 612 627 "abs.ml" 34 612 629
+)
+"abs.ml" 38 689 700 "abs.ml" 38 689 707
+type(
+  int
+)
+"abs.ml" 39 709 713 "abs.ml" 39 709 717
+type(
+  Ast.baop
+)
+type(
+  Ast.baop
+)
+"abs.ml" 39 709 721 "abs.ml" 39 709 723
+type(
+  int
+)
+ident(
+  int_ref v1 "abs.ml" 34 612 624 "abs.ml" 34 612 626
+)
+"abs.ml" 39 709 724 "abs.ml" 39 709 725
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Stdlib.( / ) "stdlib.mli" 362 14084 14084 "stdlib.mli" 362 14084 14130
+)
+"abs.ml" 39 709 726 "abs.ml" 39 709 728
+type(
+  int
+)
+ident(
+  int_ref v2 "abs.ml" 34 612 627 "abs.ml" 34 612 629
+)
+"abs.ml" 39 709 721 "abs.ml" 39 709 728
+type(
+  int
+)
+"abs.ml" 40 729 733 "abs.ml" 40 729 734
+type(
+  Ast.baop
+)
+type(
+  Ast.baop
+)
+"abs.ml" 40 729 738 "abs.ml" 40 729 739
+type(
+  int
+)
+"abs.ml" 35 633 635 "abs.ml" 40 729 739
+type(
+  int
+)
+"abs.ml" 43 743 751 "abs.ml" 43 743 759
+type(
+  Ast.expr -> (Ast.ident, Ast.const) Hashtbl.t -> Ast.const
+)
+ident(
+  def sem_expr "abs.ml" 43 743 743 "abs.ml" 0 0 -1
+)
+"abs.ml" 43 743 760 "abs.ml" 43 743 761
+type(
+  Ast.expr
+)
+ident(
+  def e "abs.ml" 43 743 762 "abs.ml" 50 886 909
+)
+"abs.ml" 43 743 762 "abs.ml" 43 743 763
+type(
+  (Ast.ident, Ast.const) Hashtbl.t
+)
+ident(
+  def m "abs.ml" 44 767 769 "abs.ml" 50 886 909
+)
+"abs.ml" 44 767 775 "abs.ml" 44 767 776
+type(
+  Ast.expr
+)
+ident(
+  int_ref e "abs.ml" 43 743 760 "abs.ml" 43 743 761
+)
+"abs.ml" 45 782 791 "abs.ml" 45 782 792
+type(
+  Ast.const
+)
+ident(
+  def n "abs.ml" 45 782 796 "abs.ml" 45 782 797
+)
+"abs.ml" 45 782 786 "abs.ml" 45 782 792
+type(
+  Ast.expr
+)
+type(
+  Ast.expr
+)
+"abs.ml" 45 782 796 "abs.ml" 45 782 797
+type(
+  Ast.const
+)
+ident(
+  int_ref n "abs.ml" 45 782 791 "abs.ml" 45 782 792
+)
+"abs.ml" 46 798 809 "abs.ml" 46 798 810
+type(
+  Ast.ident
+)
+ident(
+  def x "abs.ml" 46 798 814 "abs.ml" 46 798 822
+)
+"abs.ml" 46 798 802 "abs.ml" 46 798 810
+type(
+  Ast.expr
+)
+type(
+  Ast.expr
+)
+"abs.ml" 46 798 814 "abs.ml" 46 798 818
+type(
+  Ast.ident -> (Ast.ident, Ast.const) Hashtbl.t -> Ast.const
+)
+ident(
+  int_ref read "abs.ml" 24 427 431 "abs.ml" 24 427 435
+)
+"abs.ml" 46 798 819 "abs.ml" 46 798 820
+type(
+  Ast.ident
+)
+ident(
+  int_ref x "abs.ml" 46 798 809 "abs.ml" 46 798 810
+)
+"abs.ml" 46 798 821 "abs.ml" 46 798 822
+type(
+  (Ast.ident, Ast.const) Hashtbl.t
+)
+ident(
+  int_ref m "abs.ml" 43 743 762 "abs.ml" 43 743 763
+)
+"abs.ml" 46 798 814 "abs.ml" 46 798 822
+type(
+  Ast.const
+)
+"abs.ml" 47 823 835 "abs.ml" 47 823 836
+type(
+  Ast.baop
+)
+ident(
+  def o "abs.ml" 48 849 853 "abs.ml" 50 886 909
+)
+"abs.ml" 47 823 838 "abs.ml" 47 823 840
+type(
+  Ast.expr
+)
+ident(
+  def e0 "abs.ml" 48 849 853 "abs.ml" 50 886 909
+)
+"abs.ml" 47 823 842 "abs.ml" 47 823 844
+type(
+  Ast.expr
+)
+ident(
+  def e1 "abs.ml" 48 849 853 "abs.ml" 50 886 909
+)
+"abs.ml" 47 823 827 "abs.ml" 47 823 845
+type(
+  Ast.expr
+)
+type(
+  Ast.expr
+)
+"abs.ml" 48 849 853 "abs.ml" 48 849 858
+type(
+  Ast.baop -> Ast.const -> Ast.const -> Ast.const
+)
+ident(
+  int_ref binop "abs.ml" 34 612 616 "abs.ml" 34 612 621
+)
+"abs.ml" 48 849 859 "abs.ml" 48 849 860
+type(
+  Ast.baop
+)
+ident(
+  int_ref o "abs.ml" 47 823 835 "abs.ml" 47 823 836
+)
+"abs.ml" 49 862 871 "abs.ml" 49 862 879
+type(
+  Ast.expr -> (Ast.ident, Ast.const) Hashtbl.t -> Ast.const
+)
+ident(
+  int_ref sem_expr "abs.ml" 43 743 751 "abs.ml" 43 743 759
+)
+"abs.ml" 49 862 880 "abs.ml" 49 862 882
+type(
+  Ast.expr
+)
+ident(
+  int_ref e0 "abs.ml" 47 823 838 "abs.ml" 47 823 840
+)
+"abs.ml" 49 862 883 "abs.ml" 49 862 884
+type(
+  (Ast.ident, Ast.const) Hashtbl.t
+)
+ident(
+  int_ref m "abs.ml" 43 743 762 "abs.ml" 43 743 763
+)
+"abs.ml" 49 862 870 "abs.ml" 49 862 885
+type(
+  Ast.const
+)
+"abs.ml" 50 886 895 "abs.ml" 50 886 903
+type(
+  Ast.expr -> (Ast.ident, Ast.const) Hashtbl.t -> Ast.const
+)
+ident(
+  int_ref sem_expr "abs.ml" 43 743 751 "abs.ml" 43 743 759
+)
+"abs.ml" 50 886 904 "abs.ml" 50 886 906
+type(
+  Ast.expr
+)
+ident(
+  int_ref e1 "abs.ml" 47 823 842 "abs.ml" 47 823 844
+)
+"abs.ml" 50 886 907 "abs.ml" 50 886 908
+type(
+  (Ast.ident, Ast.const) Hashtbl.t
+)
+ident(
+  int_ref m "abs.ml" 43 743 762 "abs.ml" 43 743 763
+)
+"abs.ml" 50 886 894 "abs.ml" 50 886 909
+type(
+  Ast.const
+)
+"abs.ml" 48 849 853 "abs.ml" 50 886 909
+type(
+  Ast.const
+)
+"abs.ml" 44 767 769 "abs.ml" 50 886 909
+type(
+  Ast.const
+)
+"abs.ml" 53 912 916 "abs.ml" 53 912 926
+type(
+  Ast.ident -> Ast.expr -> (Ast.ident, Ast.const) Hashtbl.t -> unit
+)
+ident(
+  def write_conc "abs.ml" 58 1011 1011 "abs.ml" 0 0 -1
+)
+"abs.ml" 53 912 927 "abs.ml" 53 912 930
+type(
+  Ast.ident
+)
+ident(
+  def var "abs.ml" 53 912 931 "abs.ml" 54 942 984
+)
+"abs.ml" 53 912 931 "abs.ml" 53 912 936
+type(
+  Ast.expr
+)
+ident(
+  def value "abs.ml" 53 912 937 "abs.ml" 54 942 984
+)
+"abs.ml" 53 912 937 "abs.ml" 53 912 938
+type(
+  (Ast.ident, Ast.const) Hashtbl.t
+)
+ident(
+  def m "abs.ml" 54 942 944 "abs.ml" 54 942 984
+)
+"abs.ml" 54 942 944 "abs.ml" 54 942 959
+type(
+  (Ast.ident, Ast.const) Hashtbl.t -> Ast.ident -> Ast.const -> unit
+)
+ident(
+  int_ref Stdlib.Hashtbl.replace "hashtbl.mli" 113 5171 5171 "hashtbl.mli" 113 5171 5215
+)
+"abs.ml" 54 942 960 "abs.ml" 54 942 961
+type(
+  (Ast.ident, Ast.const) Hashtbl.t
+)
+ident(
+  int_ref m "abs.ml" 53 912 937 "abs.ml" 53 912 938
+)
+"abs.ml" 54 942 962 "abs.ml" 54 942 965
+type(
+  Ast.ident
+)
+ident(
+  int_ref var "abs.ml" 53 912 927 "abs.ml" 53 912 930
+)
+"abs.ml" 54 942 967 "abs.ml" 54 942 975
+type(
+  Ast.expr -> (Ast.ident, Ast.const) Hashtbl.t -> Ast.const
+)
+ident(
+  int_ref sem_expr "abs.ml" 43 743 751 "abs.ml" 43 743 759
+)
+"abs.ml" 54 942 976 "abs.ml" 54 942 981
+type(
+  Ast.expr
+)
+ident(
+  int_ref value "abs.ml" 53 912 931 "abs.ml" 53 912 936
+)
+"abs.ml" 54 942 982 "abs.ml" 54 942 983
+type(
+  (Ast.ident, Ast.const) Hashtbl.t
+)
+ident(
+  int_ref m "abs.ml" 53 912 937 "abs.ml" 53 912 938
+)
+"abs.ml" 54 942 966 "abs.ml" 54 942 984
+type(
+  Ast.const
+)
+"abs.ml" 54 942 944 "abs.ml" 54 942 984
+type(
+  unit
+)
+"abs.ml" 60 1040 1044 "abs.ml" 60 1040 1051
+type(
+  val_abs
+)
+ident(
+  def val_bot "abs.ml" 62 1060 1060 "abs.ml" 0 0 -1
+)
+"abs.ml" 60 1040 1054 "abs.ml" 60 1040 1058
+type(
+  val_abs
+)
+"abs.ml" 62 1060 1064 "abs.ml" 62 1060 1071
+type(
+  int -> val_abs
+)
+ident(
+  def val_cst "abs.ml" 64 1090 1090 "abs.ml" 0 0 -1
+)
+"abs.ml" 62 1060 1072 "abs.ml" 62 1060 1073
+type(
+  int
+)
+ident(
+  def n "abs.ml" 62 1060 1076 "abs.ml" 62 1060 1088
+)
+"abs.ml" 62 1060 1084 "abs.ml" 62 1060 1085
+type(
+  int
+)
+ident(
+  int_ref n "abs.ml" 62 1060 1072 "abs.ml" 62 1060 1073
+)
+"abs.ml" 62 1060 1086 "abs.ml" 62 1060 1087
+type(
+  int
+)
+ident(
+  int_ref n "abs.ml" 62 1060 1072 "abs.ml" 62 1060 1073
+)
+"abs.ml" 62 1060 1076 "abs.ml" 62 1060 1088
+type(
+  val_abs
+)
+"abs.ml" 64 1090 1094 "abs.ml" 64 1090 1107
+type(
+  val_abs -> val_abs -> bool
+)
+ident(
+  def incl_interval "abs.ml" 72 1272 1272 "abs.ml" 0 0 -1
+)
+"abs.ml" 64 1090 1108 "abs.ml" 64 1090 1110
+type(
+  val_abs
+)
+ident(
+  def a0 "abs.ml" 64 1090 1111 "abs.ml" 69 1252 1269
+)
+"abs.ml" 64 1090 1111 "abs.ml" 64 1090 1113
+type(
+  val_abs
+)
+ident(
+  def a1 "abs.ml" 65 1116 1118 "abs.ml" 69 1252 1269
+)
+"abs.ml" 65 1116 1124 "abs.ml" 65 1116 1126
+type(
+  val_abs
+)
+ident(
+  int_ref a0 "abs.ml" 64 1090 1108 "abs.ml" 64 1090 1110
+)
+"abs.ml" 65 1116 1127 "abs.ml" 65 1116 1129
+type(
+  val_abs
+)
+ident(
+  int_ref a1 "abs.ml" 64 1090 1111 "abs.ml" 64 1090 1113
+)
+"abs.ml" 65 1116 1124 "abs.ml" 65 1116 1129
+type(
+  val_abs * val_abs
+)
+"abs.ml" 66 1135 1147 "abs.ml" 66 1135 1149
+type(
+  int
+)
+ident(
+  def x1 "abs.ml" 66 1135 1172 "abs.ml" 66 1135 1186
+)
+"abs.ml" 66 1135 1150 "abs.ml" 66 1135 1152
+type(
+  int
+)
+ident(
+  def x2 "abs.ml" 66 1135 1172 "abs.ml" 66 1135 1186
+)
+"abs.ml" 66 1135 1139 "abs.ml" 66 1135 1153
+type(
+  val_abs
+)
+"abs.ml" 66 1135 1162 "abs.ml" 66 1135 1164
+type(
+  int
+)
+ident(
+  def y1 "abs.ml" 66 1135 1172 "abs.ml" 66 1135 1186
+)
+"abs.ml" 66 1135 1165 "abs.ml" 66 1135 1167
+type(
+  int
+)
+ident(
+  def y2 "abs.ml" 66 1135 1172 "abs.ml" 66 1135 1186
+)
+"abs.ml" 66 1135 1154 "abs.ml" 66 1135 1168
+type(
+  val_abs
+)
+"abs.ml" 66 1135 1139 "abs.ml" 66 1135 1168
+type(
+  val_abs * val_abs
+)
+type(
+  val_abs * val_abs
+)
+"abs.ml" 66 1135 1172 "abs.ml" 66 1135 1174
+type(
+  int
+)
+ident(
+  int_ref x1 "abs.ml" 66 1135 1147 "abs.ml" 66 1135 1149
+)
+"abs.ml" 66 1135 1174 "abs.ml" 66 1135 1175
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( > ) "stdlib.mli" 140 5875 5875 "stdlib.mli" 140 5875 5925
+)
+"abs.ml" 66 1135 1175 "abs.ml" 66 1135 1177
+type(
+  int
+)
+ident(
+  int_ref y1 "abs.ml" 66 1135 1162 "abs.ml" 66 1135 1164
+)
+"abs.ml" 66 1135 1172 "abs.ml" 66 1135 1177
+type(
+  bool
+)
+"abs.ml" 66 1135 1178 "abs.ml" 66 1135 1180
+type(
+  bool -> bool -> bool
+)
+ident(
+  int_ref Stdlib.( && ) "stdlib.mli" 214 8960 8960 "stdlib.mli" 214 8960 9011
+)
+"abs.ml" 66 1135 1181 "abs.ml" 66 1135 1183
+type(
+  int
+)
+ident(
+  int_ref x2 "abs.ml" 66 1135 1150 "abs.ml" 66 1135 1152
+)
+"abs.ml" 66 1135 1183 "abs.ml" 66 1135 1184
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( < ) "stdlib.mli" 135 5721 5721 "stdlib.mli" 135 5721 5768
+)
+"abs.ml" 66 1135 1184 "abs.ml" 66 1135 1186
+type(
+  int
+)
+ident(
+  int_ref y2 "abs.ml" 66 1135 1165 "abs.ml" 66 1135 1167
+)
+"abs.ml" 66 1135 1181 "abs.ml" 66 1135 1186
+type(
+  bool
+)
+"abs.ml" 66 1135 1172 "abs.ml" 66 1135 1186
+type(
+  bool
+)
+"abs.ml" 67 1188 1200 "abs.ml" 67 1188 1201
+type(
+  int
+)
+ident(
+  def x "abs.ml" 67 1188 1216 "abs.ml" 67 1188 1219
+)
+"abs.ml" 67 1188 1192 "abs.ml" 67 1188 1201
+type(
+  val_abs
+)
+"abs.ml" 67 1188 1211 "abs.ml" 67 1188 1212
+type(
+  int
+)
+ident(
+  def y "abs.ml" 67 1188 1216 "abs.ml" 67 1188 1219
+)
+"abs.ml" 67 1188 1203 "abs.ml" 67 1188 1212
+type(
+  val_abs
+)
+"abs.ml" 67 1188 1192 "abs.ml" 67 1188 1212
+type(
+  val_abs * val_abs
+)
+type(
+  val_abs * val_abs
+)
+"abs.ml" 67 1188 1216 "abs.ml" 67 1188 1217
+type(
+  int
+)
+ident(
+  int_ref x "abs.ml" 67 1188 1200 "abs.ml" 67 1188 1201
+)
+"abs.ml" 67 1188 1217 "abs.ml" 67 1188 1218
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( < ) "stdlib.mli" 135 5721 5721 "stdlib.mli" 135 5721 5768
+)
+"abs.ml" 67 1188 1218 "abs.ml" 67 1188 1219
+type(
+  int
+)
+ident(
+  int_ref y "abs.ml" 67 1188 1211 "abs.ml" 67 1188 1212
+)
+"abs.ml" 67 1188 1216 "abs.ml" 67 1188 1219
+type(
+  bool
+)
+"abs.ml" 68 1220 1232 "abs.ml" 68 1220 1233
+type(
+  int
+)
+ident(
+  def x "abs.ml" 68 1220 1248 "abs.ml" 68 1220 1251
+)
+"abs.ml" 68 1220 1224 "abs.ml" 68 1220 1233
+type(
+  val_abs
+)
+"abs.ml" 68 1220 1243 "abs.ml" 68 1220 1244
+type(
+  int
+)
+ident(
+  def y "abs.ml" 68 1220 1248 "abs.ml" 68 1220 1251
+)
+"abs.ml" 68 1220 1235 "abs.ml" 68 1220 1244
+type(
+  val_abs
+)
+"abs.ml" 68 1220 1224 "abs.ml" 68 1220 1244
+type(
+  val_abs * val_abs
+)
+type(
+  val_abs * val_abs
+)
+"abs.ml" 68 1220 1248 "abs.ml" 68 1220 1249
+type(
+  int
+)
+ident(
+  int_ref x "abs.ml" 68 1220 1232 "abs.ml" 68 1220 1233
+)
+"abs.ml" 68 1220 1249 "abs.ml" 68 1220 1250
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( > ) "stdlib.mli" 140 5875 5875 "stdlib.mli" 140 5875 5925
+)
+"abs.ml" 68 1220 1250 "abs.ml" 68 1220 1251
+type(
+  int
+)
+ident(
+  int_ref y "abs.ml" 68 1220 1243 "abs.ml" 68 1220 1244
+)
+"abs.ml" 68 1220 1248 "abs.ml" 68 1220 1251
+type(
+  bool
+)
+"abs.ml" 69 1252 1256 "abs.ml" 69 1252 1257
+type(
+  val_abs
+)
+"abs.ml" 69 1252 1259 "abs.ml" 69 1252 1260
+type(
+  val_abs
+)
+"abs.ml" 69 1252 1256 "abs.ml" 69 1252 1260
+type(
+  val_abs * val_abs
+)
+type(
+  val_abs * val_abs
+)
+"abs.ml" 69 1252 1264 "abs.ml" 69 1252 1269
+type(
+  bool
+)
+"abs.ml" 65 1116 1118 "abs.ml" 69 1252 1269
+type(
+  bool
+)
+"abs.ml" 72 1272 1276 "abs.ml" 72 1272 1284
+type(
+  val_abs -> val_abs -> bool
+)
+ident(
+  def val_incl "abs.ml" 76 1405 1405 "abs.ml" 0 0 -1
+)
+"abs.ml" 72 1272 1285 "abs.ml" 72 1272 1287
+type(
+  val_abs
+)
+ident(
+  def a0 "abs.ml" 72 1272 1288 "abs.ml" 73 1299 1356
+)
+"abs.ml" 72 1272 1288 "abs.ml" 72 1272 1290
+type(
+  val_abs
+)
+ident(
+  def a1 "abs.ml" 72 1272 1293 "abs.ml" 73 1299 1356
+)
+"abs.ml" 72 1272 1293 "abs.ml" 72 1272 1295
+type(
+  val_abs
+)
+ident(
+  int_ref a0 "abs.ml" 72 1272 1285 "abs.ml" 72 1272 1287
+)
+"abs.ml" 72 1272 1296 "abs.ml" 72 1272 1297
+type(
+  val_abs -> val_abs -> bool
+)
+ident(
+  int_ref Stdlib.( = ) "stdlib.mli" 121 5051 5051 "stdlib.mli" 121 5051 5095
+)
+"abs.ml" 73 1299 1301 "abs.ml" 73 1299 1305
+type(
+  val_abs
+)
+"abs.ml" 72 1272 1293 "abs.ml" 73 1299 1305
+type(
+  bool
+)
+"abs.ml" 73 1299 1306 "abs.ml" 73 1299 1308
+type(
+  bool -> bool -> bool
+)
+ident(
+  int_ref Stdlib.( || ) "stdlib.mli" 227 9492 9492 "stdlib.mli" 227 9492 9542
+)
+"abs.ml" 73 1299 1309 "abs.ml" 73 1299 1311
+type(
+  val_abs
+)
+ident(
+  int_ref a1 "abs.ml" 72 1272 1288 "abs.ml" 72 1272 1290
+)
+"abs.ml" 73 1299 1311 "abs.ml" 73 1299 1312
+type(
+  val_abs -> val_abs -> bool
+)
+ident(
+  int_ref Stdlib.( = ) "stdlib.mli" 121 5051 5051 "stdlib.mli" 121 5051 5095
+)
+"abs.ml" 73 1299 1312 "abs.ml" 73 1299 1322
+type(
+  val_abs
+)
+"abs.ml" 73 1299 1309 "abs.ml" 73 1299 1322
+type(
+  bool
+)
+"abs.ml" 73 1299 1323 "abs.ml" 73 1299 1325
+type(
+  bool -> bool -> bool
+)
+ident(
+  int_ref Stdlib.( || ) "stdlib.mli" 227 9492 9492 "stdlib.mli" 227 9492 9542
+)
+"abs.ml" 73 1299 1326 "abs.ml" 73 1299 1339
+type(
+  val_abs -> val_abs -> bool
+)
+ident(
+  int_ref incl_interval "abs.ml" 64 1090 1094 "abs.ml" 64 1090 1107
+)
+"abs.ml" 73 1299 1340 "abs.ml" 73 1299 1342
+type(
+  val_abs
+)
+ident(
+  int_ref a0 "abs.ml" 72 1272 1285 "abs.ml" 72 1272 1287
+)
+"abs.ml" 73 1299 1343 "abs.ml" 73 1299 1345
+type(
+  val_abs
+)
+ident(
+  int_ref a1 "abs.ml" 72 1272 1288 "abs.ml" 72 1272 1290
+)
+"abs.ml" 73 1299 1326 "abs.ml" 73 1299 1345
+type(
+  bool
+)
+"abs.ml" 73 1299 1346 "abs.ml" 73 1299 1348
+type(
+  bool -> bool -> bool
+)
+ident(
+  int_ref Stdlib.( || ) "stdlib.mli" 227 9492 9492 "stdlib.mli" 227 9492 9542
+)
+"abs.ml" 73 1299 1349 "abs.ml" 73 1299 1351
+type(
+  val_abs
+)
+ident(
+  int_ref a0 "abs.ml" 72 1272 1285 "abs.ml" 72 1272 1287
+)
+"abs.ml" 73 1299 1352 "abs.ml" 73 1299 1353
+type(
+  val_abs -> val_abs -> bool
+)
+ident(
+  int_ref Stdlib.( = ) "stdlib.mli" 121 5051 5051 "stdlib.mli" 121 5051 5095
+)
+"abs.ml" 73 1299 1354 "abs.ml" 73 1299 1356
+type(
+  val_abs
+)
+ident(
+  int_ref a1 "abs.ml" 72 1272 1288 "abs.ml" 72 1272 1290
+)
+"abs.ml" 73 1299 1349 "abs.ml" 73 1299 1356
+type(
+  bool
+)
+"abs.ml" 73 1299 1326 "abs.ml" 73 1299 1356
+type(
+  bool
+)
+"abs.ml" 73 1299 1309 "abs.ml" 73 1299 1356
+type(
+  bool
+)
+"abs.ml" 72 1272 1293 "abs.ml" 73 1299 1356
+type(
+  bool
+)
+"abs.ml" 76 1405 1409 "abs.ml" 76 1405 1416
+type(
+  side -> Ast.cmp -> int -> val_abs -> val_abs
+)
+ident(
+  def val_sat "abs.ml" 109 3122 3122 "abs.ml" 0 0 -1
+)
+"abs.ml" 76 1405 1417 "abs.ml" 76 1405 1421
+type(
+  side
+)
+ident(
+  def side "abs.ml" 76 1405 1422 "abs.ml" 107 3061 3118
+)
+"abs.ml" 76 1405 1422 "abs.ml" 76 1405 1423
+type(
+  Ast.cmp
+)
+ident(
+  def o "abs.ml" 76 1405 1424 "abs.ml" 107 3061 3118
+)
+"abs.ml" 76 1405 1424 "abs.ml" 76 1405 1425
+type(
+  int
+)
+ident(
+  def n "abs.ml" 76 1405 1426 "abs.ml" 107 3061 3118
+)
+"abs.ml" 76 1405 1426 "abs.ml" 76 1405 1427
+type(
+  val_abs
+)
+ident(
+  def v "abs.ml" 77 1431 1433 "abs.ml" 107 3061 3118
+)
+"abs.ml" 77 1431 1439 "abs.ml" 77 1431 1443
+type(
+  side
+)
+ident(
+  int_ref side "abs.ml" 76 1405 1417 "abs.ml" 76 1405 1421
+)
+"abs.ml" 77 1431 1445 "abs.ml" 77 1431 1446
+type(
+  Ast.cmp
+)
+ident(
+  int_ref o "abs.ml" 76 1405 1422 "abs.ml" 76 1405 1423
+)
+"abs.ml" 77 1431 1448 "abs.ml" 77 1431 1449
+type(
+  val_abs
+)
+ident(
+  int_ref v "abs.ml" 76 1405 1426 "abs.ml" 76 1405 1427
+)
+"abs.ml" 77 1431 1439 "abs.ml" 77 1431 1449
+type(
+  side * Ast.cmp * val_abs
+)
+"abs.ml" 78 1455 1458 "abs.ml" 78 1455 1459
+type(
+  side
+)
+"abs.ml" 78 1455 1460 "abs.ml" 78 1455 1461
+type(
+  Ast.cmp
+)
+"abs.ml" 78 1455 1462 "abs.ml" 78 1455 1466
+type(
+  val_abs
+)
+"abs.ml" 78 1455 1458 "abs.ml" 78 1455 1466
+type(
+  side * Ast.cmp * val_abs
+)
+type(
+  side * Ast.cmp * val_abs
+)
+"abs.ml" 78 1455 1470 "abs.ml" 78 1455 1474
+type(
+  val_abs
+)
+"abs.ml" 79 1475 1478 "abs.ml" 79 1475 1479
+type(
+  side
+)
+"abs.ml" 79 1475 1481 "abs.ml" 79 1475 1484
+type(
+  Ast.cmp
+)
+"abs.ml" 79 1475 1485 "abs.ml" 79 1475 1486
+type(
+  val_abs
+)
+"abs.ml" 79 1475 1478 "abs.ml" 79 1475 1486
+type(
+  side * Ast.cmp * val_abs
+)
+type(
+  side * Ast.cmp * val_abs
+)
+"abs.ml" 79 1475 1498 "abs.ml" 79 1475 1499
+type(
+  int
+)
+ident(
+  int_ref n "abs.ml" 76 1405 1424 "abs.ml" 76 1405 1425
+)
+"abs.ml" 79 1475 1500 "abs.ml" 79 1475 1501
+type(
+  int
+)
+ident(
+  int_ref n "abs.ml" 76 1405 1424 "abs.ml" 76 1405 1425
+)
+"abs.ml" 79 1475 1490 "abs.ml" 79 1475 1502
+type(
+  val_abs
+)
+"abs.ml" 80 1503 1506 "abs.ml" 80 1503 1507
+type(
+  side
+)
+"abs.ml" 80 1503 1509 "abs.ml" 80 1503 1513
+type(
+  Ast.cmp
+)
+"abs.ml" 80 1503 1523 "abs.ml" 80 1503 1525
+type(
+  int
+)
+ident(
+  def x1 "abs.ml" 80 1503 1533 "abs.ml" 80 1503 1579
+)
+"abs.ml" 80 1503 1526 "abs.ml" 80 1503 1528
+type(
+  int
+)
+ident(
+  def x2 "abs.ml" 80 1503 1533 "abs.ml" 80 1503 1579
+)
+"abs.ml" 80 1503 1515 "abs.ml" 80 1503 1529
+type(
+  val_abs
+)
+"abs.ml" 80 1503 1506 "abs.ml" 80 1503 1529
+type(
+  side * Ast.cmp * val_abs
+)
+type(
+  side * Ast.cmp * val_abs
+)
+"abs.ml" 80 1503 1536 "abs.ml" 80 1503 1538
+type(
+  int
+)
+ident(
+  int_ref x1 "abs.ml" 80 1503 1523 "abs.ml" 80 1503 1525
+)
+"abs.ml" 80 1503 1538 "abs.ml" 80 1503 1540
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( <= ) "stdlib.mli" 145 6033 6033 "stdlib.mli" 145 6033 6082
+)
+"abs.ml" 80 1503 1540 "abs.ml" 80 1503 1541
+type(
+  int
+)
+ident(
+  int_ref n "abs.ml" 76 1405 1424 "abs.ml" 76 1405 1425
+)
+"abs.ml" 80 1503 1536 "abs.ml" 80 1503 1541
+type(
+  bool
+)
+"abs.ml" 80 1503 1542 "abs.ml" 80 1503 1544
+type(
+  bool -> bool -> bool
+)
+ident(
+  int_ref Stdlib.( && ) "stdlib.mli" 214 8960 8960 "stdlib.mli" 214 8960 9011
+)
+"abs.ml" 80 1503 1545 "abs.ml" 80 1503 1547
+type(
+  int
+)
+ident(
+  int_ref x2 "abs.ml" 80 1503 1526 "abs.ml" 80 1503 1528
+)
+"abs.ml" 80 1503 1547 "abs.ml" 80 1503 1549
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( >= ) "stdlib.mli" 150 6190 6190 "stdlib.mli" 150 6190 6242
+)
+"abs.ml" 80 1503 1549 "abs.ml" 80 1503 1550
+type(
+  int
+)
+ident(
+  int_ref n "abs.ml" 76 1405 1424 "abs.ml" 76 1405 1425
+)
+"abs.ml" 80 1503 1545 "abs.ml" 80 1503 1550
+type(
+  bool
+)
+"abs.ml" 80 1503 1536 "abs.ml" 80 1503 1550
+type(
+  bool
+)
+"abs.ml" 80 1503 1556 "abs.ml" 80 1503 1560
+type(
+  val_abs
+)
+"abs.ml" 80 1503 1573 "abs.ml" 80 1503 1575
+type(
+  int
+)
+ident(
+  int_ref x1 "abs.ml" 80 1503 1523 "abs.ml" 80 1503 1525
+)
+"abs.ml" 80 1503 1576 "abs.ml" 80 1503 1578
+type(
+  int
+)
+ident(
+  int_ref x2 "abs.ml" 80 1503 1526 "abs.ml" 80 1503 1528
+)
+"abs.ml" 80 1503 1566 "abs.ml" 80 1503 1579
+type(
+  val_abs
+)
+"abs.ml" 80 1503 1533 "abs.ml" 80 1503 1579
+type(
+  val_abs
+)
+"abs.ml" 81 1581 1584 "abs.ml" 81 1581 1585
+type(
+  side
+)
+"abs.ml" 81 1581 1587 "abs.ml" 81 1581 1591
+type(
+  Ast.cmp
+)
+"abs.ml" 81 1581 1601 "abs.ml" 81 1581 1602
+type(
+  int
+)
+ident(
+  def x "abs.ml" 81 1581 1606 "abs.ml" 81 1581 1638
+)
+"abs.ml" 81 1581 1593 "abs.ml" 81 1581 1602
+type(
+  val_abs
+)
+"abs.ml" 81 1581 1584 "abs.ml" 81 1581 1602
+type(
+  side * Ast.cmp * val_abs
+)
+type(
+  side * Ast.cmp * val_abs
+)
+"abs.ml" 81 1581 1609 "abs.ml" 81 1581 1610
+type(
+  int
+)
+ident(
+  int_ref x "abs.ml" 81 1581 1601 "abs.ml" 81 1581 1602
+)
+"abs.ml" 81 1581 1610 "abs.ml" 81 1581 1612
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( >= ) "stdlib.mli" 150 6190 6190 "stdlib.mli" 150 6190 6242
+)
+"abs.ml" 81 1581 1612 "abs.ml" 81 1581 1613
+type(
+  int
+)
+ident(
+  int_ref n "abs.ml" 76 1405 1424 "abs.ml" 76 1405 1425
+)
+"abs.ml" 81 1581 1609 "abs.ml" 81 1581 1613
+type(
+  bool
+)
+"abs.ml" 81 1581 1619 "abs.ml" 81 1581 1623
+type(
+  val_abs
+)
+"abs.ml" 81 1581 1637 "abs.ml" 81 1581 1638
+type(
+  int
+)
+ident(
+  int_ref x "abs.ml" 81 1581 1601 "abs.ml" 81 1581 1602
+)
+"abs.ml" 81 1581 1629 "abs.ml" 81 1581 1638
+type(
+  val_abs
+)
+"abs.ml" 81 1581 1606 "abs.ml" 81 1581 1638
+type(
+  val_abs
+)
+"abs.ml" 82 1639 1642 "abs.ml" 82 1639 1643
+type(
+  side
+)
+"abs.ml" 82 1639 1645 "abs.ml" 82 1639 1649
+type(
+  Ast.cmp
+)
+"abs.ml" 82 1639 1659 "abs.ml" 82 1639 1660
+type(
+  int
+)
+ident(
+  def x "abs.ml" 82 1639 1664 "abs.ml" 82 1639 1696
+)
+"abs.ml" 82 1639 1651 "abs.ml" 82 1639 1660
+type(
+  val_abs
+)
+"abs.ml" 82 1639 1642 "abs.ml" 82 1639 1660
+type(
+  side * Ast.cmp * val_abs
+)
+type(
+  side * Ast.cmp * val_abs
+)
+"abs.ml" 82 1639 1667 "abs.ml" 82 1639 1668
+type(
+  int
+)
+ident(
+  int_ref x "abs.ml" 82 1639 1659 "abs.ml" 82 1639 1660
+)
+"abs.ml" 82 1639 1668 "abs.ml" 82 1639 1670
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( <= ) "stdlib.mli" 145 6033 6033 "stdlib.mli" 145 6033 6082
+)
+"abs.ml" 82 1639 1670 "abs.ml" 82 1639 1671
+type(
+  int
+)
+ident(
+  int_ref n "abs.ml" 76 1405 1424 "abs.ml" 76 1405 1425
+)
+"abs.ml" 82 1639 1667 "abs.ml" 82 1639 1671
+type(
+  bool
+)
+"abs.ml" 82 1639 1677 "abs.ml" 82 1639 1681
+type(
+  val_abs
+)
+"abs.ml" 82 1639 1695 "abs.ml" 82 1639 1696
+type(
+  int
+)
+ident(
+  int_ref x "abs.ml" 82 1639 1659 "abs.ml" 82 1639 1660
+)
+"abs.ml" 82 1639 1687 "abs.ml" 82 1639 1696
+type(
+  val_abs
+)
+"abs.ml" 82 1639 1664 "abs.ml" 82 1639 1696
+type(
+  val_abs
+)
+"abs.ml" 83 1697 1700 "abs.ml" 83 1697 1701
+type(
+  side
+)
+"abs.ml" 83 1697 1703 "abs.ml" 83 1697 1707
+type(
+  Ast.cmp
+)
+"abs.ml" 83 1697 1709 "abs.ml" 83 1697 1719
+type(
+  val_abs
+)
+"abs.ml" 83 1697 1700 "abs.ml" 83 1697 1719
+type(
+  side * Ast.cmp * val_abs
+)
+type(
+  side * Ast.cmp * val_abs
+)
+"abs.ml" 83 1697 1724 "abs.ml" 83 1697 1728
+type(
+  val_abs
+)
+"abs.ml" 85 1730 1733 "abs.ml" 85 1730 1734
+type(
+  side
+)
+"abs.ml" 85 1730 1736 "abs.ml" 85 1730 1739
+type(
+  Ast.cmp
+)
+"abs.ml" 85 1730 1749 "abs.ml" 85 1730 1751
+type(
+  int
+)
+ident(
+  def x1 "abs.ml" 85 1730 1783 "abs.ml" 86 1802 1855
+)
+"abs.ml" 85 1730 1752 "abs.ml" 85 1730 1754
+type(
+  int
+)
+ident(
+  def x2 "abs.ml" 85 1730 1783 "abs.ml" 86 1802 1855
+)
+"abs.ml" 85 1730 1741 "abs.ml" 85 1730 1755
+type(
+  val_abs
+)
+"abs.ml" 85 1730 1733 "abs.ml" 85 1730 1755
+type(
+  side * Ast.cmp * val_abs
+)
+type(
+  side * Ast.cmp * val_abs
+)
+"abs.ml" 85 1730 1757 "abs.ml" 85 1730 1758
+type(
+  side
+)
+"abs.ml" 85 1730 1760 "abs.ml" 85 1730 1763
+type(
+  Ast.cmp
+)
+"abs.ml" 85 1730 1773 "abs.ml" 85 1730 1775
+type(
+  int
+)
+ident(
+  def x1 "abs.ml" 85 1730 1783 "abs.ml" 86 1802 1855
+)
+"abs.ml" 85 1730 1776 "abs.ml" 85 1730 1778
+type(
+  int
+)
+ident(
+  def x2 "abs.ml" 85 1730 1783 "abs.ml" 86 1802 1855
+)
+"abs.ml" 85 1730 1765 "abs.ml" 85 1730 1779
+type(
+  val_abs
+)
+"abs.ml" 85 1730 1757 "abs.ml" 85 1730 1779
+type(
+  side * Ast.cmp * val_abs
+)
+type(
+  side * Ast.cmp * val_abs
+)
+"abs.ml" 85 1730 1733 "abs.ml" 85 1730 1779
+type(
+  side * Ast.cmp * val_abs
+)
+"abs.ml" 85 1730 1786 "abs.ml" 85 1730 1788
+type(
+  int
+)
+ident(
+  int_ref x2 "abs.ml" 85 1730 1752 "abs.ml" 85 1730 1754
+)
+"abs.ml" 85 1730 1788 "abs.ml" 85 1730 1789
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( < ) "stdlib.mli" 135 5721 5721 "stdlib.mli" 135 5721 5768
+)
+"abs.ml" 85 1730 1789 "abs.ml" 85 1730 1790
+type(
+  int
+)
+ident(
+  int_ref n "abs.ml" 76 1405 1424 "abs.ml" 76 1405 1425
+)
+"abs.ml" 85 1730 1786 "abs.ml" 85 1730 1790
+type(
+  bool
+)
+"abs.ml" 85 1730 1796 "abs.ml" 85 1730 1800
+type(
+  val_abs
+)
+"abs.ml" 86 1802 1814 "abs.ml" 86 1802 1816
+type(
+  int
+)
+ident(
+  int_ref x1 "abs.ml" 85 1730 1749 "abs.ml" 85 1730 1751
+)
+"abs.ml" 86 1802 1817 "abs.ml" 86 1802 1819
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( <= ) "stdlib.mli" 145 6033 6033 "stdlib.mli" 145 6033 6082
+)
+"abs.ml" 86 1802 1820 "abs.ml" 86 1802 1821
+type(
+  int
+)
+ident(
+  int_ref n "abs.ml" 76 1405 1424 "abs.ml" 76 1405 1425
+)
+"abs.ml" 86 1802 1814 "abs.ml" 86 1802 1821
+type(
+  bool
+)
+"abs.ml" 86 1802 1822 "abs.ml" 86 1802 1824
+type(
+  bool -> bool -> bool
+)
+ident(
+  int_ref Stdlib.( && ) "stdlib.mli" 214 8960 8960 "stdlib.mli" 214 8960 9011
+)
+"abs.ml" 86 1802 1825 "abs.ml" 86 1802 1826
+type(
+  int
+)
+ident(
+  int_ref n "abs.ml" 76 1405 1424 "abs.ml" 76 1405 1425
+)
+"abs.ml" 86 1802 1826 "abs.ml" 86 1802 1828
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( <= ) "stdlib.mli" 145 6033 6033 "stdlib.mli" 145 6033 6082
+)
+"abs.ml" 86 1802 1828 "abs.ml" 86 1802 1830
+type(
+  int
+)
+ident(
+  int_ref x2 "abs.ml" 85 1730 1752 "abs.ml" 85 1730 1754
+)
+"abs.ml" 86 1802 1825 "abs.ml" 86 1802 1830
+type(
+  bool
+)
+"abs.ml" 86 1802 1814 "abs.ml" 86 1802 1830
+type(
+  bool
+)
+"abs.ml" 86 1802 1843 "abs.ml" 86 1802 1844
+type(
+  int
+)
+ident(
+  int_ref n "abs.ml" 76 1405 1424 "abs.ml" 76 1405 1425
+)
+"abs.ml" 86 1802 1845 "abs.ml" 86 1802 1847
+type(
+  int
+)
+ident(
+  int_ref x2 "abs.ml" 85 1730 1752 "abs.ml" 85 1730 1754
+)
+"abs.ml" 86 1802 1836 "abs.ml" 86 1802 1848
+type(
+  val_abs
+)
+"abs.ml" 86 1802 1854 "abs.ml" 86 1802 1855
+type(
+  val_abs
+)
+ident(
+  int_ref v "abs.ml" 76 1405 1426 "abs.ml" 76 1405 1427
+)
+"abs.ml" 86 1802 1811 "abs.ml" 86 1802 1855
+type(
+  val_abs
+)
+"abs.ml" 85 1730 1783 "abs.ml" 86 1802 1855
+type(
+  val_abs
+)
+"abs.ml" 87 1856 1859 "abs.ml" 87 1856 1860
+type(
+  side
+)
+"abs.ml" 87 1856 1862 "abs.ml" 87 1856 1865
+type(
+  Ast.cmp
+)
+"abs.ml" 87 1856 1875 "abs.ml" 87 1856 1876
+type(
+  int
+)
+ident(
+  def x "abs.ml" 87 1856 1900 "abs.ml" 87 1856 1933
+)
+"abs.ml" 87 1856 1867 "abs.ml" 87 1856 1876
+type(
+  val_abs
+)
+"abs.ml" 87 1856 1859 "abs.ml" 87 1856 1876
+type(
+  side * Ast.cmp * val_abs
+)
+type(
+  side * Ast.cmp * val_abs
+)
+"abs.ml" 87 1856 1879 "abs.ml" 87 1856 1880
+type(
+  side
+)
+"abs.ml" 87 1856 1882 "abs.ml" 87 1856 1885
+type(
+  Ast.cmp
+)
+"abs.ml" 87 1856 1895 "abs.ml" 87 1856 1896
+type(
+  int
+)
+ident(
+  def x "abs.ml" 87 1856 1900 "abs.ml" 87 1856 1933
+)
+"abs.ml" 87 1856 1887 "abs.ml" 87 1856 1896
+type(
+  val_abs
+)
+"abs.ml" 87 1856 1879 "abs.ml" 87 1856 1896
+type(
+  side * Ast.cmp * val_abs
+)
+type(
+  side * Ast.cmp * val_abs
+)
+"abs.ml" 87 1856 1859 "abs.ml" 87 1856 1896
+type(
+  side * Ast.cmp * val_abs
+)
+"abs.ml" 87 1856 1903 "abs.ml" 87 1856 1904
+type(
+  int
+)
+ident(
+  int_ref x "abs.ml" 87 1856 1875 "abs.ml" 87 1856 1876
+)
+"abs.ml" 87 1856 1904 "abs.ml" 87 1856 1905
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( < ) "stdlib.mli" 135 5721 5721 "stdlib.mli" 135 5721 5768
+)
+"abs.ml" 87 1856 1905 "abs.ml" 87 1856 1906
+type(
+  int
+)
+ident(
+  int_ref n "abs.ml" 76 1405 1424 "abs.ml" 76 1405 1425
+)
+"abs.ml" 87 1856 1903 "abs.ml" 87 1856 1906
+type(
+  bool
+)
+"abs.ml" 87 1856 1912 "abs.ml" 87 1856 1916
+type(
+  val_abs
+)
+"abs.ml" 87 1856 1929 "abs.ml" 87 1856 1930
+type(
+  int
+)
+ident(
+  int_ref x "abs.ml" 87 1856 1875 "abs.ml" 87 1856 1876
+)
+"abs.ml" 87 1856 1931 "abs.ml" 87 1856 1932
+type(
+  int
+)
+ident(
+  int_ref n "abs.ml" 76 1405 1424 "abs.ml" 76 1405 1425
+)
+"abs.ml" 87 1856 1922 "abs.ml" 87 1856 1933
+type(
+  val_abs
+)
+"abs.ml" 87 1856 1900 "abs.ml" 87 1856 1933
+type(
+  val_abs
+)
+"abs.ml" 88 1934 1937 "abs.ml" 88 1934 1938
+type(
+  side
+)
+"abs.ml" 88 1934 1940 "abs.ml" 88 1934 1943
+type(
+  Ast.cmp
+)
+"abs.ml" 88 1934 1953 "abs.ml" 88 1934 1954
+type(
+  int
+)
+ident(
+  def x "abs.ml" 88 1934 1978 "abs.ml" 88 1934 2011
+)
+"abs.ml" 88 1934 1945 "abs.ml" 88 1934 1954
+type(
+  val_abs
+)
+"abs.ml" 88 1934 1937 "abs.ml" 88 1934 1954
+type(
+  side * Ast.cmp * val_abs
+)
+type(
+  side * Ast.cmp * val_abs
+)
+"abs.ml" 88 1934 1957 "abs.ml" 88 1934 1958
+type(
+  side
+)
+"abs.ml" 88 1934 1960 "abs.ml" 88 1934 1963
+type(
+  Ast.cmp
+)
+"abs.ml" 88 1934 1973 "abs.ml" 88 1934 1974
+type(
+  int
+)
+ident(
+  def x "abs.ml" 88 1934 1978 "abs.ml" 88 1934 2011
+)
+"abs.ml" 88 1934 1965 "abs.ml" 88 1934 1974
+type(
+  val_abs
+)
+"abs.ml" 88 1934 1957 "abs.ml" 88 1934 1974
+type(
+  side * Ast.cmp * val_abs
+)
+type(
+  side * Ast.cmp * val_abs
+)
+"abs.ml" 88 1934 1937 "abs.ml" 88 1934 1974
+type(
+  side * Ast.cmp * val_abs
+)
+"abs.ml" 88 1934 1981 "abs.ml" 88 1934 1982
+type(
+  int
+)
+ident(
+  int_ref x "abs.ml" 88 1934 1953 "abs.ml" 88 1934 1954
+)
+"abs.ml" 88 1934 1982 "abs.ml" 88 1934 1983
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( > ) "stdlib.mli" 140 5875 5875 "stdlib.mli" 140 5875 5925
+)
+"abs.ml" 88 1934 1983 "abs.ml" 88 1934 1984
+type(
+  int
+)
+ident(
+  int_ref n "abs.ml" 76 1405 1424 "abs.ml" 76 1405 1425
+)
+"abs.ml" 88 1934 1981 "abs.ml" 88 1934 1984
+type(
+  bool
+)
+"abs.ml" 88 1934 1990 "abs.ml" 88 1934 1994
+type(
+  val_abs
+)
+"abs.ml" 88 1934 2007 "abs.ml" 88 1934 2008
+type(
+  int
+)
+ident(
+  int_ref n "abs.ml" 76 1405 1424 "abs.ml" 76 1405 1425
+)
+"abs.ml" 88 1934 2009 "abs.ml" 88 1934 2010
+type(
+  int
+)
+ident(
+  int_ref x "abs.ml" 88 1934 1953 "abs.ml" 88 1934 1954
+)
+"abs.ml" 88 1934 2000 "abs.ml" 88 1934 2011
+type(
+  val_abs
+)
+"abs.ml" 88 1934 1978 "abs.ml" 88 1934 2011
+type(
+  val_abs
+)
+"abs.ml" 89 2012 2015 "abs.ml" 89 2012 2016
+type(
+  side
+)
+"abs.ml" 89 2012 2018 "abs.ml" 89 2012 2021
+type(
+  Ast.cmp
+)
+"abs.ml" 89 2012 2023 "abs.ml" 89 2012 2033
+type(
+  val_abs
+)
+"abs.ml" 89 2012 2015 "abs.ml" 89 2012 2033
+type(
+  side * Ast.cmp * val_abs
+)
+type(
+  side * Ast.cmp * val_abs
+)
+"abs.ml" 89 2012 2035 "abs.ml" 89 2012 2036
+type(
+  side
+)
+"abs.ml" 89 2012 2038 "abs.ml" 89 2012 2041
+type(
+  Ast.cmp
+)
+"abs.ml" 89 2012 2043 "abs.ml" 89 2012 2053
+type(
+  val_abs
+)
+"abs.ml" 89 2012 2035 "abs.ml" 89 2012 2053
+type(
+  side * Ast.cmp * val_abs
+)
+type(
+  side * Ast.cmp * val_abs
+)
+"abs.ml" 89 2012 2015 "abs.ml" 89 2012 2053
+type(
+  side * Ast.cmp * val_abs
+)
+"abs.ml" 89 2012 2065 "abs.ml" 89 2012 2066
+type(
+  int
+)
+ident(
+  int_ref n "abs.ml" 76 1405 1424 "abs.ml" 76 1405 1425
+)
+"abs.ml" 89 2012 2057 "abs.ml" 89 2012 2066
+type(
+  val_abs
+)
+"abs.ml" 91 2068 2071 "abs.ml" 91 2068 2072
+type(
+  side
+)
+"abs.ml" 91 2068 2074 "abs.ml" 91 2068 2077
+type(
+  Ast.cmp
+)
+"abs.ml" 91 2068 2087 "abs.ml" 91 2068 2089
+type(
+  int
+)
+ident(
+  def x1 "abs.ml" 91 2068 2122 "abs.ml" 92 2142 2197
+)
+"abs.ml" 91 2068 2090 "abs.ml" 91 2068 2092
+type(
+  int
+)
+ident(
+  def x2 "abs.ml" 91 2068 2122 "abs.ml" 92 2142 2197
+)
+"abs.ml" 91 2068 2079 "abs.ml" 91 2068 2093
+type(
+  val_abs
+)
+"abs.ml" 91 2068 2071 "abs.ml" 91 2068 2093
+type(
+  side * Ast.cmp * val_abs
+)
+type(
+  side * Ast.cmp * val_abs
+)
+"abs.ml" 91 2068 2095 "abs.ml" 91 2068 2096
+type(
+  side
+)
+"abs.ml" 91 2068 2098 "abs.ml" 91 2068 2101
+type(
+  Ast.cmp
+)
+"abs.ml" 91 2068 2112 "abs.ml" 91 2068 2114
+type(
+  int
+)
+ident(
+  def x1 "abs.ml" 91 2068 2122 "abs.ml" 92 2142 2197
+)
+"abs.ml" 91 2068 2115 "abs.ml" 91 2068 2117
+type(
+  int
+)
+ident(
+  def x2 "abs.ml" 91 2068 2122 "abs.ml" 92 2142 2197
+)
+"abs.ml" 91 2068 2104 "abs.ml" 91 2068 2118
+type(
+  val_abs
+)
+"abs.ml" 91 2068 2095 "abs.ml" 91 2068 2118
+type(
+  side * Ast.cmp * val_abs
+)
+type(
+  side * Ast.cmp * val_abs
+)
+"abs.ml" 91 2068 2071 "abs.ml" 91 2068 2118
+type(
+  side * Ast.cmp * val_abs
+)
+"abs.ml" 91 2068 2125 "abs.ml" 91 2068 2127
+type(
+  int
+)
+ident(
+  int_ref x1 "abs.ml" 91 2068 2087 "abs.ml" 91 2068 2089
+)
+"abs.ml" 91 2068 2127 "abs.ml" 91 2068 2128
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( > ) "stdlib.mli" 140 5875 5875 "stdlib.mli" 140 5875 5925
+)
+"abs.ml" 91 2068 2128 "abs.ml" 91 2068 2129
+type(
+  int
+)
+ident(
+  int_ref n "abs.ml" 76 1405 1424 "abs.ml" 76 1405 1425
+)
+"abs.ml" 91 2068 2125 "abs.ml" 91 2068 2129
+type(
+  bool
+)
+"abs.ml" 91 2068 2136 "abs.ml" 91 2068 2140
+type(
+  val_abs
+)
+"abs.ml" 92 2142 2156 "abs.ml" 92 2142 2158
+type(
+  int
+)
+ident(
+  int_ref x1 "abs.ml" 91 2068 2087 "abs.ml" 91 2068 2089
+)
+"abs.ml" 92 2142 2159 "abs.ml" 92 2142 2161
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( <= ) "stdlib.mli" 145 6033 6033 "stdlib.mli" 145 6033 6082
+)
+"abs.ml" 92 2142 2162 "abs.ml" 92 2142 2163
+type(
+  int
+)
+ident(
+  int_ref n "abs.ml" 76 1405 1424 "abs.ml" 76 1405 1425
+)
+"abs.ml" 92 2142 2156 "abs.ml" 92 2142 2163
+type(
+  bool
+)
+"abs.ml" 92 2142 2164 "abs.ml" 92 2142 2166
+type(
+  bool -> bool -> bool
+)
+ident(
+  int_ref Stdlib.( && ) "stdlib.mli" 214 8960 8960 "stdlib.mli" 214 8960 9011
+)
+"abs.ml" 92 2142 2167 "abs.ml" 92 2142 2168
+type(
+  int
+)
+ident(
+  int_ref n "abs.ml" 76 1405 1424 "abs.ml" 76 1405 1425
+)
+"abs.ml" 92 2142 2168 "abs.ml" 92 2142 2170
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( <= ) "stdlib.mli" 145 6033 6033 "stdlib.mli" 145 6033 6082
+)
+"abs.ml" 92 2142 2170 "abs.ml" 92 2142 2172
+type(
+  int
+)
+ident(
+  int_ref x2 "abs.ml" 91 2068 2090 "abs.ml" 91 2068 2092
+)
+"abs.ml" 92 2142 2167 "abs.ml" 92 2142 2172
+type(
+  bool
+)
+"abs.ml" 92 2142 2156 "abs.ml" 92 2142 2172
+type(
+  bool
+)
+"abs.ml" 92 2142 2185 "abs.ml" 92 2142 2187
+type(
+  int
+)
+ident(
+  int_ref x1 "abs.ml" 91 2068 2087 "abs.ml" 91 2068 2089
+)
+"abs.ml" 92 2142 2188 "abs.ml" 92 2142 2189
+type(
+  int
+)
+ident(
+  int_ref n "abs.ml" 76 1405 1424 "abs.ml" 76 1405 1425
+)
+"abs.ml" 92 2142 2178 "abs.ml" 92 2142 2190
+type(
+  val_abs
+)
+"abs.ml" 92 2142 2196 "abs.ml" 92 2142 2197
+type(
+  val_abs
+)
+ident(
+  int_ref v "abs.ml" 76 1405 1426 "abs.ml" 76 1405 1427
+)
+"abs.ml" 92 2142 2153 "abs.ml" 92 2142 2197
+type(
+  val_abs
+)
+"abs.ml" 91 2068 2122 "abs.ml" 92 2142 2197
+type(
+  val_abs
+)
+"abs.ml" 93 2198 2201 "abs.ml" 93 2198 2202
+type(
+  side
+)
+"abs.ml" 93 2198 2204 "abs.ml" 93 2198 2207
+type(
+  Ast.cmp
+)
+"abs.ml" 93 2198 2217 "abs.ml" 93 2198 2218
+type(
+  int
+)
+ident(
+  def x "abs.ml" 93 2198 2245 "abs.ml" 93 2198 2278
+)
+"abs.ml" 93 2198 2209 "abs.ml" 93 2198 2218
+type(
+  val_abs
+)
+"abs.ml" 93 2198 2201 "abs.ml" 93 2198 2218
+type(
+  side * Ast.cmp * val_abs
+)
+type(
+  side * Ast.cmp * val_abs
+)
+"abs.ml" 93 2198 2225 "abs.ml" 93 2198 2226
+type(
+  side
+)
+"abs.ml" 93 2198 2228 "abs.ml" 93 2198 2231
+type(
+  Ast.cmp
+)
+"abs.ml" 93 2198 2241 "abs.ml" 93 2198 2242
+type(
+  int
+)
+ident(
+  def x "abs.ml" 93 2198 2245 "abs.ml" 93 2198 2278
+)
+"abs.ml" 93 2198 2233 "abs.ml" 93 2198 2242
+type(
+  val_abs
+)
+"abs.ml" 93 2198 2225 "abs.ml" 93 2198 2242
+type(
+  side * Ast.cmp * val_abs
+)
+type(
+  side * Ast.cmp * val_abs
+)
+"abs.ml" 93 2198 2201 "abs.ml" 93 2198 2242
+type(
+  side * Ast.cmp * val_abs
+)
+"abs.ml" 93 2198 2248 "abs.ml" 93 2198 2249
+type(
+  int
+)
+ident(
+  int_ref x "abs.ml" 93 2198 2217 "abs.ml" 93 2198 2218
+)
+"abs.ml" 93 2198 2249 "abs.ml" 93 2198 2250
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( > ) "stdlib.mli" 140 5875 5875 "stdlib.mli" 140 5875 5925
+)
+"abs.ml" 93 2198 2250 "abs.ml" 93 2198 2251
+type(
+  int
+)
+ident(
+  int_ref n "abs.ml" 76 1405 1424 "abs.ml" 76 1405 1425
+)
+"abs.ml" 93 2198 2248 "abs.ml" 93 2198 2251
+type(
+  bool
+)
+"abs.ml" 93 2198 2257 "abs.ml" 93 2198 2261
+type(
+  val_abs
+)
+"abs.ml" 93 2198 2274 "abs.ml" 93 2198 2275
+type(
+  int
+)
+ident(
+  int_ref x "abs.ml" 93 2198 2217 "abs.ml" 93 2198 2218
+)
+"abs.ml" 93 2198 2276 "abs.ml" 93 2198 2277
+type(
+  int
+)
+ident(
+  int_ref n "abs.ml" 76 1405 1424 "abs.ml" 76 1405 1425
+)
+"abs.ml" 93 2198 2267 "abs.ml" 93 2198 2278
+type(
+  val_abs
+)
+"abs.ml" 93 2198 2245 "abs.ml" 93 2198 2278
+type(
+  val_abs
+)
+"abs.ml" 94 2279 2282 "abs.ml" 94 2279 2283
+type(
+  side
+)
+"abs.ml" 94 2279 2285 "abs.ml" 94 2279 2288
+type(
+  Ast.cmp
+)
+"abs.ml" 94 2279 2298 "abs.ml" 94 2279 2299
+type(
+  int
+)
+ident(
+  def x "abs.ml" 94 2279 2327 "abs.ml" 94 2279 2360
+)
+"abs.ml" 94 2279 2290 "abs.ml" 94 2279 2299
+type(
+  val_abs
+)
+"abs.ml" 94 2279 2282 "abs.ml" 94 2279 2299
+type(
+  side * Ast.cmp * val_abs
+)
+type(
+  side * Ast.cmp * val_abs
+)
+"abs.ml" 94 2279 2306 "abs.ml" 94 2279 2307
+type(
+  side
+)
+"abs.ml" 94 2279 2309 "abs.ml" 94 2279 2312
+type(
+  Ast.cmp
+)
+"abs.ml" 94 2279 2322 "abs.ml" 94 2279 2323
+type(
+  int
+)
+ident(
+  def x "abs.ml" 94 2279 2327 "abs.ml" 94 2279 2360
+)
+"abs.ml" 94 2279 2314 "abs.ml" 94 2279 2323
+type(
+  val_abs
+)
+"abs.ml" 94 2279 2306 "abs.ml" 94 2279 2323
+type(
+  side * Ast.cmp * val_abs
+)
+type(
+  side * Ast.cmp * val_abs
+)
+"abs.ml" 94 2279 2282 "abs.ml" 94 2279 2323
+type(
+  side * Ast.cmp * val_abs
+)
+"abs.ml" 94 2279 2330 "abs.ml" 94 2279 2331
+type(
+  int
+)
+ident(
+  int_ref x "abs.ml" 94 2279 2298 "abs.ml" 94 2279 2299
+)
+"abs.ml" 94 2279 2331 "abs.ml" 94 2279 2332
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( < ) "stdlib.mli" 135 5721 5721 "stdlib.mli" 135 5721 5768
+)
+"abs.ml" 94 2279 2332 "abs.ml" 94 2279 2333
+type(
+  int
+)
+ident(
+  int_ref n "abs.ml" 76 1405 1424 "abs.ml" 76 1405 1425
+)
+"abs.ml" 94 2279 2330 "abs.ml" 94 2279 2333
+type(
+  bool
+)
+"abs.ml" 94 2279 2339 "abs.ml" 94 2279 2343
+type(
+  val_abs
+)
+"abs.ml" 94 2279 2356 "abs.ml" 94 2279 2357
+type(
+  int
+)
+ident(
+  int_ref n "abs.ml" 76 1405 1424 "abs.ml" 76 1405 1425
+)
+"abs.ml" 94 2279 2358 "abs.ml" 94 2279 2359
+type(
+  int
+)
+ident(
+  int_ref x "abs.ml" 94 2279 2298 "abs.ml" 94 2279 2299
+)
+"abs.ml" 94 2279 2349 "abs.ml" 94 2279 2360
+type(
+  val_abs
+)
+"abs.ml" 94 2279 2327 "abs.ml" 94 2279 2360
+type(
+  val_abs
+)
+"abs.ml" 95 2361 2364 "abs.ml" 95 2361 2365
+type(
+  side
+)
+"abs.ml" 95 2361 2367 "abs.ml" 95 2361 2370
+type(
+  Ast.cmp
+)
+"abs.ml" 95 2361 2372 "abs.ml" 95 2361 2382
+type(
+  val_abs
+)
+"abs.ml" 95 2361 2364 "abs.ml" 95 2361 2382
+type(
+  side * Ast.cmp * val_abs
+)
+type(
+  side * Ast.cmp * val_abs
+)
+"abs.ml" 95 2361 2388 "abs.ml" 95 2361 2389
+type(
+  side
+)
+"abs.ml" 95 2361 2391 "abs.ml" 95 2361 2394
+type(
+  Ast.cmp
+)
+"abs.ml" 95 2361 2396 "abs.ml" 95 2361 2406
+type(
+  val_abs
+)
+"abs.ml" 95 2361 2388 "abs.ml" 95 2361 2406
+type(
+  side * Ast.cmp * val_abs
+)
+type(
+  side * Ast.cmp * val_abs
+)
+"abs.ml" 95 2361 2364 "abs.ml" 95 2361 2406
+type(
+  side * Ast.cmp * val_abs
+)
+"abs.ml" 95 2361 2419 "abs.ml" 95 2361 2422
+type(
+  int
+)
+ident(
+  int_ref n "abs.ml" 76 1405 1424 "abs.ml" 76 1405 1425
+)
+"abs.ml" 95 2361 2411 "abs.ml" 95 2361 2422
+type(
+  val_abs
+)
+"abs.ml" 97 2424 2427 "abs.ml" 97 2424 2428
+type(
+  side
+)
+"abs.ml" 97 2424 2430 "abs.ml" 97 2424 2433
+type(
+  Ast.cmp
+)
+"abs.ml" 97 2424 2444 "abs.ml" 97 2424 2446
+type(
+  int
+)
+ident(
+  def x1 "abs.ml" 97 2424 2478 "abs.ml" 98 2497 2550
+)
+"abs.ml" 97 2424 2447 "abs.ml" 97 2424 2449
+type(
+  int
+)
+ident(
+  def x2 "abs.ml" 97 2424 2478 "abs.ml" 98 2497 2550
+)
+"abs.ml" 97 2424 2436 "abs.ml" 97 2424 2450
+type(
+  val_abs
+)
+"abs.ml" 97 2424 2427 "abs.ml" 97 2424 2450
+type(
+  side * Ast.cmp * val_abs
+)
+type(
+  side * Ast.cmp * val_abs
+)
+"abs.ml" 97 2424 2452 "abs.ml" 97 2424 2453
+type(
+  side
+)
+"abs.ml" 97 2424 2455 "abs.ml" 97 2424 2458
+type(
+  Ast.cmp
+)
+"abs.ml" 97 2424 2468 "abs.ml" 97 2424 2470
+type(
+  int
+)
+ident(
+  def x1 "abs.ml" 97 2424 2478 "abs.ml" 98 2497 2550
+)
+"abs.ml" 97 2424 2471 "abs.ml" 97 2424 2473
+type(
+  int
+)
+ident(
+  def x2 "abs.ml" 97 2424 2478 "abs.ml" 98 2497 2550
+)
+"abs.ml" 97 2424 2460 "abs.ml" 97 2424 2474
+type(
+  val_abs
+)
+"abs.ml" 97 2424 2452 "abs.ml" 97 2424 2474
+type(
+  side * Ast.cmp * val_abs
+)
+type(
+  side * Ast.cmp * val_abs
+)
+"abs.ml" 97 2424 2427 "abs.ml" 97 2424 2474
+type(
+  side * Ast.cmp * val_abs
+)
+"abs.ml" 97 2424 2481 "abs.ml" 97 2424 2483
+type(
+  int
+)
+ident(
+  int_ref x2 "abs.ml" 97 2424 2447 "abs.ml" 97 2424 2449
+)
+"abs.ml" 97 2424 2483 "abs.ml" 97 2424 2484
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( < ) "stdlib.mli" 135 5721 5721 "stdlib.mli" 135 5721 5768
+)
+"abs.ml" 97 2424 2484 "abs.ml" 97 2424 2485
+type(
+  int
+)
+ident(
+  int_ref n "abs.ml" 76 1405 1424 "abs.ml" 76 1405 1425
+)
+"abs.ml" 97 2424 2481 "abs.ml" 97 2424 2485
+type(
+  bool
+)
+"abs.ml" 97 2424 2491 "abs.ml" 97 2424 2495
+type(
+  val_abs
+)
+"abs.ml" 98 2497 2509 "abs.ml" 98 2497 2511
+type(
+  int
+)
+ident(
+  int_ref x1 "abs.ml" 97 2424 2444 "abs.ml" 97 2424 2446
+)
+"abs.ml" 98 2497 2512 "abs.ml" 98 2497 2514
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( <= ) "stdlib.mli" 145 6033 6033 "stdlib.mli" 145 6033 6082
+)
+"abs.ml" 98 2497 2515 "abs.ml" 98 2497 2516
+type(
+  int
+)
+ident(
+  int_ref n "abs.ml" 76 1405 1424 "abs.ml" 76 1405 1425
+)
+"abs.ml" 98 2497 2509 "abs.ml" 98 2497 2516
+type(
+  bool
+)
+"abs.ml" 98 2497 2517 "abs.ml" 98 2497 2519
+type(
+  bool -> bool -> bool
+)
+ident(
+  int_ref Stdlib.( && ) "stdlib.mli" 214 8960 8960 "stdlib.mli" 214 8960 9011
+)
+"abs.ml" 98 2497 2520 "abs.ml" 98 2497 2521
+type(
+  int
+)
+ident(
+  int_ref n "abs.ml" 76 1405 1424 "abs.ml" 76 1405 1425
+)
+"abs.ml" 98 2497 2521 "abs.ml" 98 2497 2523
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( <= ) "stdlib.mli" 145 6033 6033 "stdlib.mli" 145 6033 6082
+)
+"abs.ml" 98 2497 2523 "abs.ml" 98 2497 2525
+type(
+  int
+)
+ident(
+  int_ref x2 "abs.ml" 97 2424 2447 "abs.ml" 97 2424 2449
+)
+"abs.ml" 98 2497 2520 "abs.ml" 98 2497 2525
+type(
+  bool
+)
+"abs.ml" 98 2497 2509 "abs.ml" 98 2497 2525
+type(
+  bool
+)
+"abs.ml" 98 2497 2538 "abs.ml" 98 2497 2539
+type(
+  int
+)
+ident(
+  int_ref n "abs.ml" 76 1405 1424 "abs.ml" 76 1405 1425
+)
+"abs.ml" 98 2497 2540 "abs.ml" 98 2497 2542
+type(
+  int
+)
+ident(
+  int_ref x2 "abs.ml" 97 2424 2447 "abs.ml" 97 2424 2449
+)
+"abs.ml" 98 2497 2531 "abs.ml" 98 2497 2543
+type(
+  val_abs
+)
+"abs.ml" 98 2497 2549 "abs.ml" 98 2497 2550
+type(
+  val_abs
+)
+ident(
+  int_ref v "abs.ml" 76 1405 1426 "abs.ml" 76 1405 1427
+)
+"abs.ml" 98 2497 2506 "abs.ml" 98 2497 2550
+type(
+  val_abs
+)
+"abs.ml" 97 2424 2478 "abs.ml" 98 2497 2550
+type(
+  val_abs
+)
+"abs.ml" 99 2551 2554 "abs.ml" 99 2551 2555
+type(
+  side
+)
+"abs.ml" 99 2551 2557 "abs.ml" 99 2551 2560
+type(
+  Ast.cmp
+)
+"abs.ml" 99 2551 2570 "abs.ml" 99 2551 2571
+type(
+  int
+)
+ident(
+  def x "abs.ml" 99 2551 2599 "abs.ml" 99 2551 2632
+)
+"abs.ml" 99 2551 2562 "abs.ml" 99 2551 2571
+type(
+  val_abs
+)
+"abs.ml" 99 2551 2554 "abs.ml" 99 2551 2571
+type(
+  side * Ast.cmp * val_abs
+)
+type(
+  side * Ast.cmp * val_abs
+)
+"abs.ml" 99 2551 2578 "abs.ml" 99 2551 2579
+type(
+  side
+)
+"abs.ml" 99 2551 2581 "abs.ml" 99 2551 2584
+type(
+  Ast.cmp
+)
+"abs.ml" 99 2551 2594 "abs.ml" 99 2551 2595
+type(
+  int
+)
+ident(
+  def x "abs.ml" 99 2551 2599 "abs.ml" 99 2551 2632
+)
+"abs.ml" 99 2551 2586 "abs.ml" 99 2551 2595
+type(
+  val_abs
+)
+"abs.ml" 99 2551 2578 "abs.ml" 99 2551 2595
+type(
+  side * Ast.cmp * val_abs
+)
+type(
+  side * Ast.cmp * val_abs
+)
+"abs.ml" 99 2551 2554 "abs.ml" 99 2551 2595
+type(
+  side * Ast.cmp * val_abs
+)
+"abs.ml" 99 2551 2602 "abs.ml" 99 2551 2603
+type(
+  int
+)
+ident(
+  int_ref x "abs.ml" 99 2551 2570 "abs.ml" 99 2551 2571
+)
+"abs.ml" 99 2551 2603 "abs.ml" 99 2551 2604
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( < ) "stdlib.mli" 135 5721 5721 "stdlib.mli" 135 5721 5768
+)
+"abs.ml" 99 2551 2604 "abs.ml" 99 2551 2605
+type(
+  int
+)
+ident(
+  int_ref n "abs.ml" 76 1405 1424 "abs.ml" 76 1405 1425
+)
+"abs.ml" 99 2551 2602 "abs.ml" 99 2551 2605
+type(
+  bool
+)
+"abs.ml" 99 2551 2611 "abs.ml" 99 2551 2615
+type(
+  val_abs
+)
+"abs.ml" 99 2551 2628 "abs.ml" 99 2551 2629
+type(
+  int
+)
+ident(
+  int_ref x "abs.ml" 99 2551 2570 "abs.ml" 99 2551 2571
+)
+"abs.ml" 99 2551 2630 "abs.ml" 99 2551 2631
+type(
+  int
+)
+ident(
+  int_ref n "abs.ml" 76 1405 1424 "abs.ml" 76 1405 1425
+)
+"abs.ml" 99 2551 2621 "abs.ml" 99 2551 2632
+type(
+  val_abs
+)
+"abs.ml" 99 2551 2599 "abs.ml" 99 2551 2632
+type(
+  val_abs
+)
+"abs.ml" 100 2633 2636 "abs.ml" 100 2633 2637
+type(
+  side
+)
+"abs.ml" 100 2633 2639 "abs.ml" 100 2633 2642
+type(
+  Ast.cmp
+)
+"abs.ml" 100 2633 2652 "abs.ml" 100 2633 2653
+type(
+  int
+)
+ident(
+  def x "abs.ml" 100 2633 2681 "abs.ml" 100 2633 2714
+)
+"abs.ml" 100 2633 2644 "abs.ml" 100 2633 2653
+type(
+  val_abs
+)
+"abs.ml" 100 2633 2636 "abs.ml" 100 2633 2653
+type(
+  side * Ast.cmp * val_abs
+)
+type(
+  side * Ast.cmp * val_abs
+)
+"abs.ml" 100 2633 2660 "abs.ml" 100 2633 2661
+type(
+  side
+)
+"abs.ml" 100 2633 2663 "abs.ml" 100 2633 2666
+type(
+  Ast.cmp
+)
+"abs.ml" 100 2633 2676 "abs.ml" 100 2633 2677
+type(
+  int
+)
+ident(
+  def x "abs.ml" 100 2633 2681 "abs.ml" 100 2633 2714
+)
+"abs.ml" 100 2633 2668 "abs.ml" 100 2633 2677
+type(
+  val_abs
+)
+"abs.ml" 100 2633 2660 "abs.ml" 100 2633 2677
+type(
+  side * Ast.cmp * val_abs
+)
+type(
+  side * Ast.cmp * val_abs
+)
+"abs.ml" 100 2633 2636 "abs.ml" 100 2633 2677
+type(
+  side * Ast.cmp * val_abs
+)
+"abs.ml" 100 2633 2684 "abs.ml" 100 2633 2685
+type(
+  int
+)
+ident(
+  int_ref x "abs.ml" 100 2633 2652 "abs.ml" 100 2633 2653
+)
+"abs.ml" 100 2633 2685 "abs.ml" 100 2633 2686
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( > ) "stdlib.mli" 140 5875 5875 "stdlib.mli" 140 5875 5925
+)
+"abs.ml" 100 2633 2686 "abs.ml" 100 2633 2687
+type(
+  int
+)
+ident(
+  int_ref n "abs.ml" 76 1405 1424 "abs.ml" 76 1405 1425
+)
+"abs.ml" 100 2633 2684 "abs.ml" 100 2633 2687
+type(
+  bool
+)
+"abs.ml" 100 2633 2693 "abs.ml" 100 2633 2697
+type(
+  val_abs
+)
+"abs.ml" 100 2633 2710 "abs.ml" 100 2633 2711
+type(
+  int
+)
+ident(
+  int_ref n "abs.ml" 76 1405 1424 "abs.ml" 76 1405 1425
+)
+"abs.ml" 100 2633 2712 "abs.ml" 100 2633 2713
+type(
+  int
+)
+ident(
+  int_ref x "abs.ml" 100 2633 2652 "abs.ml" 100 2633 2653
+)
+"abs.ml" 100 2633 2703 "abs.ml" 100 2633 2714
+type(
+  val_abs
+)
+"abs.ml" 100 2633 2681 "abs.ml" 100 2633 2714
+type(
+  val_abs
+)
+"abs.ml" 101 2715 2718 "abs.ml" 101 2715 2719
+type(
+  side
+)
+"abs.ml" 101 2715 2721 "abs.ml" 101 2715 2724
+type(
+  Ast.cmp
+)
+"abs.ml" 101 2715 2726 "abs.ml" 101 2715 2736
+type(
+  val_abs
+)
+"abs.ml" 101 2715 2718 "abs.ml" 101 2715 2736
+type(
+  side * Ast.cmp * val_abs
+)
+type(
+  side * Ast.cmp * val_abs
+)
+"abs.ml" 101 2715 2742 "abs.ml" 101 2715 2743
+type(
+  side
+)
+"abs.ml" 101 2715 2745 "abs.ml" 101 2715 2748
+type(
+  Ast.cmp
+)
+"abs.ml" 101 2715 2751 "abs.ml" 101 2715 2761
+type(
+  val_abs
+)
+"abs.ml" 101 2715 2742 "abs.ml" 101 2715 2761
+type(
+  side * Ast.cmp * val_abs
+)
+type(
+  side * Ast.cmp * val_abs
+)
+"abs.ml" 101 2715 2718 "abs.ml" 101 2715 2761
+type(
+  side * Ast.cmp * val_abs
+)
+"abs.ml" 101 2715 2773 "abs.ml" 101 2715 2774
+type(
+  int
+)
+ident(
+  int_ref n "abs.ml" 76 1405 1424 "abs.ml" 76 1405 1425
+)
+"abs.ml" 101 2715 2765 "abs.ml" 101 2715 2774
+type(
+  val_abs
+)
+"abs.ml" 103 2776 2779 "abs.ml" 103 2776 2780
+type(
+  side
+)
+"abs.ml" 103 2776 2782 "abs.ml" 103 2776 2785
+type(
+  Ast.cmp
+)
+"abs.ml" 103 2776 2795 "abs.ml" 103 2776 2797
+type(
+  int
+)
+ident(
+  def x1 "abs.ml" 103 2776 2830 "abs.ml" 104 2850 2905
+)
+"abs.ml" 103 2776 2798 "abs.ml" 103 2776 2800
+type(
+  int
+)
+ident(
+  def x2 "abs.ml" 103 2776 2830 "abs.ml" 104 2850 2905
+)
+"abs.ml" 103 2776 2787 "abs.ml" 103 2776 2801
+type(
+  val_abs
+)
+"abs.ml" 103 2776 2779 "abs.ml" 103 2776 2801
+type(
+  side * Ast.cmp * val_abs
+)
+type(
+  side * Ast.cmp * val_abs
+)
+"abs.ml" 103 2776 2803 "abs.ml" 103 2776 2804
+type(
+  side
+)
+"abs.ml" 103 2776 2806 "abs.ml" 103 2776 2809
+type(
+  Ast.cmp
+)
+"abs.ml" 103 2776 2820 "abs.ml" 103 2776 2822
+type(
+  int
+)
+ident(
+  def x1 "abs.ml" 103 2776 2830 "abs.ml" 104 2850 2905
+)
+"abs.ml" 103 2776 2823 "abs.ml" 103 2776 2825
+type(
+  int
+)
+ident(
+  def x2 "abs.ml" 103 2776 2830 "abs.ml" 104 2850 2905
+)
+"abs.ml" 103 2776 2812 "abs.ml" 103 2776 2826
+type(
+  val_abs
+)
+"abs.ml" 103 2776 2803 "abs.ml" 103 2776 2826
+type(
+  side * Ast.cmp * val_abs
+)
+type(
+  side * Ast.cmp * val_abs
+)
+"abs.ml" 103 2776 2779 "abs.ml" 103 2776 2826
+type(
+  side * Ast.cmp * val_abs
+)
+"abs.ml" 103 2776 2833 "abs.ml" 103 2776 2835
+type(
+  int
+)
+ident(
+  int_ref x1 "abs.ml" 103 2776 2795 "abs.ml" 103 2776 2797
+)
+"abs.ml" 103 2776 2835 "abs.ml" 103 2776 2836
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( > ) "stdlib.mli" 140 5875 5875 "stdlib.mli" 140 5875 5925
+)
+"abs.ml" 103 2776 2836 "abs.ml" 103 2776 2837
+type(
+  int
+)
+ident(
+  int_ref n "abs.ml" 76 1405 1424 "abs.ml" 76 1405 1425
+)
+"abs.ml" 103 2776 2833 "abs.ml" 103 2776 2837
+type(
+  bool
+)
+"abs.ml" 103 2776 2844 "abs.ml" 103 2776 2848
+type(
+  val_abs
+)
+"abs.ml" 104 2850 2864 "abs.ml" 104 2850 2866
+type(
+  int
+)
+ident(
+  int_ref x1 "abs.ml" 103 2776 2795 "abs.ml" 103 2776 2797
+)
+"abs.ml" 104 2850 2867 "abs.ml" 104 2850 2869
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( <= ) "stdlib.mli" 145 6033 6033 "stdlib.mli" 145 6033 6082
+)
+"abs.ml" 104 2850 2870 "abs.ml" 104 2850 2871
+type(
+  int
+)
+ident(
+  int_ref n "abs.ml" 76 1405 1424 "abs.ml" 76 1405 1425
+)
+"abs.ml" 104 2850 2864 "abs.ml" 104 2850 2871
+type(
+  bool
+)
+"abs.ml" 104 2850 2872 "abs.ml" 104 2850 2874
+type(
+  bool -> bool -> bool
+)
+ident(
+  int_ref Stdlib.( && ) "stdlib.mli" 214 8960 8960 "stdlib.mli" 214 8960 9011
+)
+"abs.ml" 104 2850 2875 "abs.ml" 104 2850 2876
+type(
+  int
+)
+ident(
+  int_ref n "abs.ml" 76 1405 1424 "abs.ml" 76 1405 1425
+)
+"abs.ml" 104 2850 2876 "abs.ml" 104 2850 2878
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( <= ) "stdlib.mli" 145 6033 6033 "stdlib.mli" 145 6033 6082
+)
+"abs.ml" 104 2850 2878 "abs.ml" 104 2850 2880
+type(
+  int
+)
+ident(
+  int_ref x2 "abs.ml" 103 2776 2798 "abs.ml" 103 2776 2800
+)
+"abs.ml" 104 2850 2875 "abs.ml" 104 2850 2880
+type(
+  bool
+)
+"abs.ml" 104 2850 2864 "abs.ml" 104 2850 2880
+type(
+  bool
+)
+"abs.ml" 104 2850 2893 "abs.ml" 104 2850 2895
+type(
+  int
+)
+ident(
+  int_ref x1 "abs.ml" 103 2776 2795 "abs.ml" 103 2776 2797
+)
+"abs.ml" 104 2850 2896 "abs.ml" 104 2850 2897
+type(
+  int
+)
+ident(
+  int_ref n "abs.ml" 76 1405 1424 "abs.ml" 76 1405 1425
+)
+"abs.ml" 104 2850 2886 "abs.ml" 104 2850 2898
+type(
+  val_abs
+)
+"abs.ml" 104 2850 2904 "abs.ml" 104 2850 2905
+type(
+  val_abs
+)
+ident(
+  int_ref v "abs.ml" 76 1405 1426 "abs.ml" 76 1405 1427
+)
+"abs.ml" 104 2850 2861 "abs.ml" 104 2850 2905
+type(
+  val_abs
+)
+"abs.ml" 103 2776 2830 "abs.ml" 104 2850 2905
+type(
+  val_abs
+)
+"abs.ml" 105 2906 2909 "abs.ml" 105 2906 2910
+type(
+  side
+)
+"abs.ml" 105 2906 2912 "abs.ml" 105 2906 2915
+type(
+  Ast.cmp
+)
+"abs.ml" 105 2906 2925 "abs.ml" 105 2906 2926
+type(
+  int
+)
+ident(
+  def x "abs.ml" 105 2906 2949 "abs.ml" 105 2906 2982
+)
+"abs.ml" 105 2906 2917 "abs.ml" 105 2906 2926
+type(
+  val_abs
+)
+"abs.ml" 105 2906 2909 "abs.ml" 105 2906 2926
+type(
+  side * Ast.cmp * val_abs
+)
+type(
+  side * Ast.cmp * val_abs
+)
+"abs.ml" 105 2906 2929 "abs.ml" 105 2906 2930
+type(
+  side
+)
+"abs.ml" 105 2906 2932 "abs.ml" 105 2906 2935
+type(
+  Ast.cmp
+)
+"abs.ml" 105 2906 2945 "abs.ml" 105 2906 2946
+type(
+  int
+)
+ident(
+  def x "abs.ml" 105 2906 2949 "abs.ml" 105 2906 2982
+)
+"abs.ml" 105 2906 2937 "abs.ml" 105 2906 2946
+type(
+  val_abs
+)
+"abs.ml" 105 2906 2929 "abs.ml" 105 2906 2946
+type(
+  side * Ast.cmp * val_abs
+)
+type(
+  side * Ast.cmp * val_abs
+)
+"abs.ml" 105 2906 2909 "abs.ml" 105 2906 2946
+type(
+  side * Ast.cmp * val_abs
+)
+"abs.ml" 105 2906 2952 "abs.ml" 105 2906 2953
+type(
+  int
+)
+ident(
+  int_ref x "abs.ml" 105 2906 2925 "abs.ml" 105 2906 2926
+)
+"abs.ml" 105 2906 2953 "abs.ml" 105 2906 2954
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( > ) "stdlib.mli" 140 5875 5875 "stdlib.mli" 140 5875 5925
+)
+"abs.ml" 105 2906 2954 "abs.ml" 105 2906 2955
+type(
+  int
+)
+ident(
+  int_ref n "abs.ml" 76 1405 1424 "abs.ml" 76 1405 1425
+)
+"abs.ml" 105 2906 2952 "abs.ml" 105 2906 2955
+type(
+  bool
+)
+"abs.ml" 105 2906 2961 "abs.ml" 105 2906 2965
+type(
+  val_abs
+)
+"abs.ml" 105 2906 2978 "abs.ml" 105 2906 2979
+type(
+  int
+)
+ident(
+  int_ref x "abs.ml" 105 2906 2925 "abs.ml" 105 2906 2926
+)
+"abs.ml" 105 2906 2980 "abs.ml" 105 2906 2981
+type(
+  int
+)
+ident(
+  int_ref n "abs.ml" 76 1405 1424 "abs.ml" 76 1405 1425
+)
+"abs.ml" 105 2906 2971 "abs.ml" 105 2906 2982
+type(
+  val_abs
+)
+"abs.ml" 105 2906 2949 "abs.ml" 105 2906 2982
+type(
+  val_abs
+)
+"abs.ml" 106 2983 2986 "abs.ml" 106 2983 2987
+type(
+  side
+)
+"abs.ml" 106 2983 2989 "abs.ml" 106 2983 2992
+type(
+  Ast.cmp
+)
+"abs.ml" 106 2983 3002 "abs.ml" 106 2983 3003
+type(
+  int
+)
+ident(
+  def x "abs.ml" 106 2983 3027 "abs.ml" 106 2983 3060
+)
+"abs.ml" 106 2983 2994 "abs.ml" 106 2983 3003
+type(
+  val_abs
+)
+"abs.ml" 106 2983 2986 "abs.ml" 106 2983 3003
+type(
+  side * Ast.cmp * val_abs
+)
+type(
+  side * Ast.cmp * val_abs
+)
+"abs.ml" 106 2983 3006 "abs.ml" 106 2983 3007
+type(
+  side
+)
+"abs.ml" 106 2983 3009 "abs.ml" 106 2983 3012
+type(
+  Ast.cmp
+)
+"abs.ml" 106 2983 3022 "abs.ml" 106 2983 3023
+type(
+  int
+)
+ident(
+  def x "abs.ml" 106 2983 3027 "abs.ml" 106 2983 3060
+)
+"abs.ml" 106 2983 3014 "abs.ml" 106 2983 3023
+type(
+  val_abs
+)
+"abs.ml" 106 2983 3006 "abs.ml" 106 2983 3023
+type(
+  side * Ast.cmp * val_abs
+)
+type(
+  side * Ast.cmp * val_abs
+)
+"abs.ml" 106 2983 2986 "abs.ml" 106 2983 3023
+type(
+  side * Ast.cmp * val_abs
+)
+"abs.ml" 106 2983 3030 "abs.ml" 106 2983 3031
+type(
+  int
+)
+ident(
+  int_ref x "abs.ml" 106 2983 3002 "abs.ml" 106 2983 3003
+)
+"abs.ml" 106 2983 3031 "abs.ml" 106 2983 3032
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( < ) "stdlib.mli" 135 5721 5721 "stdlib.mli" 135 5721 5768
+)
+"abs.ml" 106 2983 3032 "abs.ml" 106 2983 3033
+type(
+  int
+)
+ident(
+  int_ref n "abs.ml" 76 1405 1424 "abs.ml" 76 1405 1425
+)
+"abs.ml" 106 2983 3030 "abs.ml" 106 2983 3033
+type(
+  bool
+)
+"abs.ml" 106 2983 3039 "abs.ml" 106 2983 3043
+type(
+  val_abs
+)
+"abs.ml" 106 2983 3056 "abs.ml" 106 2983 3057
+type(
+  int
+)
+ident(
+  int_ref n "abs.ml" 76 1405 1424 "abs.ml" 76 1405 1425
+)
+"abs.ml" 106 2983 3058 "abs.ml" 106 2983 3059
+type(
+  int
+)
+ident(
+  int_ref x "abs.ml" 106 2983 3002 "abs.ml" 106 2983 3003
+)
+"abs.ml" 106 2983 3049 "abs.ml" 106 2983 3060
+type(
+  val_abs
+)
+"abs.ml" 106 2983 3027 "abs.ml" 106 2983 3060
+type(
+  val_abs
+)
+"abs.ml" 107 3061 3064 "abs.ml" 107 3061 3065
+type(
+  side
+)
+"abs.ml" 107 3061 3067 "abs.ml" 107 3061 3070
+type(
+  Ast.cmp
+)
+"abs.ml" 107 3061 3072 "abs.ml" 107 3061 3082
+type(
+  val_abs
+)
+"abs.ml" 107 3061 3064 "abs.ml" 107 3061 3082
+type(
+  side * Ast.cmp * val_abs
+)
+type(
+  side * Ast.cmp * val_abs
+)
+"abs.ml" 107 3061 3084 "abs.ml" 107 3061 3085
+type(
+  side
+)
+"abs.ml" 107 3061 3087 "abs.ml" 107 3061 3090
+type(
+  Ast.cmp
+)
+"abs.ml" 107 3061 3092 "abs.ml" 107 3061 3102
+type(
+  val_abs
+)
+"abs.ml" 107 3061 3084 "abs.ml" 107 3061 3102
+type(
+  side * Ast.cmp * val_abs
+)
+type(
+  side * Ast.cmp * val_abs
+)
+"abs.ml" 107 3061 3064 "abs.ml" 107 3061 3102
+type(
+  side * Ast.cmp * val_abs
+)
+"abs.ml" 107 3061 3115 "abs.ml" 107 3061 3118
+type(
+  int
+)
+ident(
+  int_ref n "abs.ml" 76 1405 1424 "abs.ml" 76 1405 1425
+)
+"abs.ml" 107 3061 3107 "abs.ml" 107 3061 3118
+type(
+  val_abs
+)
+"abs.ml" 77 1431 1433 "abs.ml" 107 3061 3118
+type(
+  val_abs
+)
+"abs.ml" 109 3122 3126 "abs.ml" 109 3122 3134
+type(
+  val_abs -> val_abs -> val_abs
+)
+ident(
+  def val_join "abs.ml" 121 3752 3752 "abs.ml" 0 0 -1
+)
+"abs.ml" 109 3122 3135 "abs.ml" 109 3122 3137
+type(
+  val_abs
+)
+ident(
+  def a0 "abs.ml" 109 3122 3138 "abs.ml" 118 3683 3747
+)
+"abs.ml" 109 3122 3138 "abs.ml" 109 3122 3140
+type(
+  val_abs
+)
+ident(
+  def a1 "abs.ml" 110 3144 3146 "abs.ml" 118 3683 3747
+)
+"abs.ml" 110 3144 3152 "abs.ml" 110 3144 3154
+type(
+  val_abs
+)
+ident(
+  int_ref a0 "abs.ml" 109 3122 3135 "abs.ml" 109 3122 3137
+)
+"abs.ml" 110 3144 3155 "abs.ml" 110 3144 3157
+type(
+  val_abs
+)
+ident(
+  int_ref a1 "abs.ml" 109 3122 3138 "abs.ml" 109 3122 3140
+)
+"abs.ml" 110 3144 3152 "abs.ml" 110 3144 3157
+type(
+  val_abs * val_abs
+)
+"abs.ml" 111 3163 3167 "abs.ml" 111 3163 3171
+type(
+  val_abs
+)
+"abs.ml" 111 3163 3173 "abs.ml" 111 3163 3174
+type(
+  val_abs
+)
+ident(
+  def a "abs.ml" 111 3163 3188 "abs.ml" 111 3163 3189
+)
+"abs.ml" 111 3163 3167 "abs.ml" 111 3163 3174
+type(
+  val_abs * val_abs
+)
+type(
+  val_abs * val_abs
+)
+"abs.ml" 111 3163 3177 "abs.ml" 111 3163 3178
+type(
+  val_abs
+)
+ident(
+  def a "abs.ml" 111 3163 3188 "abs.ml" 111 3163 3189
+)
+"abs.ml" 111 3163 3180 "abs.ml" 111 3163 3184
+type(
+  val_abs
+)
+"abs.ml" 111 3163 3177 "abs.ml" 111 3163 3184
+type(
+  val_abs * val_abs
+)
+type(
+  val_abs * val_abs
+)
+"abs.ml" 111 3163 3167 "abs.ml" 111 3163 3184
+type(
+  val_abs * val_abs
+)
+"abs.ml" 111 3163 3188 "abs.ml" 111 3163 3189
+type(
+  val_abs
+)
+ident(
+  int_ref a "abs.ml" 111 3163 3173 "abs.ml" 111 3163 3174
+)
+"abs.ml" 112 3190 3194 "abs.ml" 112 3190 3204
+type(
+  val_abs
+)
+"abs.ml" 112 3190 3206 "abs.ml" 112 3190 3207
+type(
+  val_abs
+)
+"abs.ml" 112 3190 3194 "abs.ml" 112 3190 3207
+type(
+  val_abs * val_abs
+)
+type(
+  val_abs * val_abs
+)
+"abs.ml" 112 3190 3210 "abs.ml" 112 3190 3211
+type(
+  val_abs
+)
+"abs.ml" 112 3190 3213 "abs.ml" 112 3190 3223
+type(
+  val_abs
+)
+"abs.ml" 112 3190 3210 "abs.ml" 112 3190 3223
+type(
+  val_abs * val_abs
+)
+type(
+  val_abs * val_abs
+)
+"abs.ml" 112 3190 3194 "abs.ml" 112 3190 3223
+type(
+  val_abs * val_abs
+)
+"abs.ml" 112 3190 3234 "abs.ml" 112 3190 3235
+type(
+  int
+)
+"abs.ml" 112 3190 3226 "abs.ml" 112 3190 3235
+type(
+  val_abs
+)
+"abs.ml" 112 3190 3245 "abs.ml" 112 3190 3246
+type(
+  int
+)
+"abs.ml" 112 3190 3237 "abs.ml" 112 3190 3246
+type(
+  val_abs
+)
+"abs.ml" 112 3190 3226 "abs.ml" 112 3190 3246
+type(
+  val_abs * val_abs
+)
+type(
+  val_abs * val_abs
+)
+"abs.ml" 112 3190 3194 "abs.ml" 112 3190 3246
+type(
+  val_abs * val_abs
+)
+"abs.ml" 112 3190 3257 "abs.ml" 112 3190 3258
+type(
+  int
+)
+"abs.ml" 112 3190 3249 "abs.ml" 112 3190 3258
+type(
+  val_abs
+)
+"abs.ml" 112 3190 3268 "abs.ml" 112 3190 3269
+type(
+  int
+)
+"abs.ml" 112 3190 3260 "abs.ml" 112 3190 3269
+type(
+  val_abs
+)
+"abs.ml" 112 3190 3249 "abs.ml" 112 3190 3269
+type(
+  val_abs * val_abs
+)
+type(
+  val_abs * val_abs
+)
+"abs.ml" 112 3190 3194 "abs.ml" 112 3190 3269
+type(
+  val_abs * val_abs
+)
+"abs.ml" 112 3190 3272 "abs.ml" 112 3190 3282
+type(
+  val_abs
+)
+"abs.ml" 113 3283 3296 "abs.ml" 113 3283 3297
+type(
+  int
+)
+ident(
+  def x "abs.ml" 113 3283 3356 "abs.ml" 113 3283 3394
+)
+"abs.ml" 113 3283 3287 "abs.ml" 113 3283 3298
+type(
+  val_abs
+)
+"abs.ml" 113 3283 3309 "abs.ml" 113 3283 3311
+type(
+  int
+)
+ident(
+  def y1 "abs.ml" 113 3283 3356 "abs.ml" 113 3283 3394
+)
+"abs.ml" 113 3283 3314 "abs.ml" 113 3283 3316
+type(
+  int
+)
+ident(
+  def y2 "abs.ml" 113 3283 3356 "abs.ml" 113 3283 3394
+)
+"abs.ml" 113 3283 3300 "abs.ml" 113 3283 3318
+type(
+  val_abs
+)
+"abs.ml" 113 3283 3287 "abs.ml" 113 3283 3318
+type(
+  val_abs * val_abs
+)
+type(
+  val_abs * val_abs
+)
+"abs.ml" 113 3283 3330 "abs.ml" 113 3283 3332
+type(
+  int
+)
+ident(
+  def y1 "abs.ml" 113 3283 3356 "abs.ml" 113 3283 3394
+)
+"abs.ml" 113 3283 3335 "abs.ml" 113 3283 3337
+type(
+  int
+)
+ident(
+  def y2 "abs.ml" 113 3283 3356 "abs.ml" 113 3283 3394
+)
+"abs.ml" 113 3283 3321 "abs.ml" 113 3283 3339
+type(
+  val_abs
+)
+"abs.ml" 113 3283 3349 "abs.ml" 113 3283 3350
+type(
+  int
+)
+ident(
+  def x "abs.ml" 113 3283 3356 "abs.ml" 113 3283 3394
+)
+"abs.ml" 113 3283 3340 "abs.ml" 113 3283 3351
+type(
+  val_abs
+)
+"abs.ml" 113 3283 3321 "abs.ml" 113 3283 3351
+type(
+  val_abs * val_abs
+)
+type(
+  val_abs * val_abs
+)
+"abs.ml" 113 3283 3287 "abs.ml" 113 3283 3351
+type(
+  val_abs * val_abs
+)
+"abs.ml" 113 3283 3359 "abs.ml" 113 3283 3360
+type(
+  int
+)
+ident(
+  int_ref x "abs.ml" 113 3283 3296 "abs.ml" 113 3283 3297
+)
+"abs.ml" 113 3283 3360 "abs.ml" 113 3283 3361
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( > ) "stdlib.mli" 140 5875 5875 "stdlib.mli" 140 5875 5925
+)
+"abs.ml" 113 3283 3361 "abs.ml" 113 3283 3363
+type(
+  int
+)
+ident(
+  int_ref y1 "abs.ml" 113 3283 3309 "abs.ml" 113 3283 3311
+)
+"abs.ml" 113 3283 3359 "abs.ml" 113 3283 3363
+type(
+  bool
+)
+"abs.ml" 113 3283 3377 "abs.ml" 113 3283 3379
+type(
+  int
+)
+ident(
+  int_ref y1 "abs.ml" 113 3283 3309 "abs.ml" 113 3283 3311
+)
+"abs.ml" 113 3283 3369 "abs.ml" 113 3283 3379
+type(
+  val_abs
+)
+"abs.ml" 113 3283 3393 "abs.ml" 113 3283 3394
+type(
+  int
+)
+ident(
+  int_ref x "abs.ml" 113 3283 3296 "abs.ml" 113 3283 3297
+)
+"abs.ml" 113 3283 3385 "abs.ml" 113 3283 3394
+type(
+  val_abs
+)
+"abs.ml" 113 3283 3356 "abs.ml" 113 3283 3394
+type(
+  val_abs
+)
+"abs.ml" 114 3395 3408 "abs.ml" 114 3395 3409
+type(
+  int
+)
+ident(
+  def x "abs.ml" 114 3395 3468 "abs.ml" 114 3395 3506
+)
+"abs.ml" 114 3395 3399 "abs.ml" 114 3395 3410
+type(
+  val_abs
+)
+"abs.ml" 114 3395 3421 "abs.ml" 114 3395 3423
+type(
+  int
+)
+ident(
+  def y1 "abs.ml" 114 3395 3468 "abs.ml" 114 3395 3506
+)
+"abs.ml" 114 3395 3426 "abs.ml" 114 3395 3428
+type(
+  int
+)
+ident(
+  def y2 "abs.ml" 114 3395 3468 "abs.ml" 114 3395 3506
+)
+"abs.ml" 114 3395 3412 "abs.ml" 114 3395 3430
+type(
+  val_abs
+)
+"abs.ml" 114 3395 3399 "abs.ml" 114 3395 3430
+type(
+  val_abs * val_abs
+)
+type(
+  val_abs * val_abs
+)
+"abs.ml" 114 3395 3442 "abs.ml" 114 3395 3444
+type(
+  int
+)
+ident(
+  def y1 "abs.ml" 114 3395 3468 "abs.ml" 114 3395 3506
+)
+"abs.ml" 114 3395 3447 "abs.ml" 114 3395 3449
+type(
+  int
+)
+ident(
+  def y2 "abs.ml" 114 3395 3468 "abs.ml" 114 3395 3506
+)
+"abs.ml" 114 3395 3433 "abs.ml" 114 3395 3451
+type(
+  val_abs
+)
+"abs.ml" 114 3395 3461 "abs.ml" 114 3395 3462
+type(
+  int
+)
+ident(
+  def x "abs.ml" 114 3395 3468 "abs.ml" 114 3395 3506
+)
+"abs.ml" 114 3395 3452 "abs.ml" 114 3395 3463
+type(
+  val_abs
+)
+"abs.ml" 114 3395 3433 "abs.ml" 114 3395 3463
+type(
+  val_abs * val_abs
+)
+type(
+  val_abs * val_abs
+)
+"abs.ml" 114 3395 3399 "abs.ml" 114 3395 3463
+type(
+  val_abs * val_abs
+)
+"abs.ml" 114 3395 3471 "abs.ml" 114 3395 3472
+type(
+  int
+)
+ident(
+  int_ref x "abs.ml" 114 3395 3408 "abs.ml" 114 3395 3409
+)
+"abs.ml" 114 3395 3472 "abs.ml" 114 3395 3473
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( < ) "stdlib.mli" 135 5721 5721 "stdlib.mli" 135 5721 5768
+)
+"abs.ml" 114 3395 3473 "abs.ml" 114 3395 3475
+type(
+  int
+)
+ident(
+  int_ref y1 "abs.ml" 114 3395 3421 "abs.ml" 114 3395 3423
+)
+"abs.ml" 114 3395 3471 "abs.ml" 114 3395 3475
+type(
+  bool
+)
+"abs.ml" 114 3395 3489 "abs.ml" 114 3395 3491
+type(
+  int
+)
+ident(
+  int_ref y1 "abs.ml" 114 3395 3421 "abs.ml" 114 3395 3423
+)
+"abs.ml" 114 3395 3481 "abs.ml" 114 3395 3491
+type(
+  val_abs
+)
+"abs.ml" 114 3395 3505 "abs.ml" 114 3395 3506
+type(
+  int
+)
+ident(
+  int_ref x "abs.ml" 114 3395 3408 "abs.ml" 114 3395 3409
+)
+"abs.ml" 114 3395 3497 "abs.ml" 114 3395 3506
+type(
+  val_abs
+)
+"abs.ml" 114 3395 3468 "abs.ml" 114 3395 3506
+type(
+  val_abs
+)
+"abs.ml" 115 3507 3520 "abs.ml" 115 3507 3522
+type(
+  int
+)
+ident(
+  def x1 "abs.ml" 116 3552 3558 "abs.ml" 116 3552 3617
+)
+"abs.ml" 115 3507 3523 "abs.ml" 115 3507 3525
+type(
+  int
+)
+ident(
+  def x2 "abs.ml" 116 3552 3558 "abs.ml" 116 3552 3617
+)
+"abs.ml" 115 3507 3511 "abs.ml" 115 3507 3527
+type(
+  val_abs
+)
+"abs.ml" 115 3507 3538 "abs.ml" 115 3507 3540
+type(
+  int
+)
+ident(
+  def y1 "abs.ml" 116 3552 3558 "abs.ml" 116 3552 3617
+)
+"abs.ml" 115 3507 3543 "abs.ml" 115 3507 3545
+type(
+  int
+)
+ident(
+  def y2 "abs.ml" 116 3552 3558 "abs.ml" 116 3552 3617
+)
+"abs.ml" 115 3507 3529 "abs.ml" 115 3507 3547
+type(
+  val_abs
+)
+"abs.ml" 115 3507 3511 "abs.ml" 115 3507 3547
+type(
+  val_abs * val_abs
+)
+type(
+  val_abs * val_abs
+)
+"abs.ml" 116 3552 3561 "abs.ml" 116 3552 3563
+type(
+  int
+)
+ident(
+  int_ref x1 "abs.ml" 115 3507 3520 "abs.ml" 115 3507 3522
+)
+"abs.ml" 116 3552 3563 "abs.ml" 116 3552 3565
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( <= ) "stdlib.mli" 145 6033 6033 "stdlib.mli" 145 6033 6082
+)
+"abs.ml" 116 3552 3565 "abs.ml" 116 3552 3567
+type(
+  int
+)
+ident(
+  int_ref y1 "abs.ml" 115 3507 3538 "abs.ml" 115 3507 3540
+)
+"abs.ml" 116 3552 3561 "abs.ml" 116 3552 3567
+type(
+  bool
+)
+"abs.ml" 116 3552 3568 "abs.ml" 116 3552 3570
+type(
+  bool -> bool -> bool
+)
+ident(
+  int_ref Stdlib.( && ) "stdlib.mli" 214 8960 8960 "stdlib.mli" 214 8960 9011
+)
+"abs.ml" 116 3552 3571 "abs.ml" 116 3552 3573
+type(
+  int
+)
+ident(
+  int_ref x2 "abs.ml" 115 3507 3523 "abs.ml" 115 3507 3525
+)
+"abs.ml" 116 3552 3574 "abs.ml" 116 3552 3576
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( >= ) "stdlib.mli" 150 6190 6190 "stdlib.mli" 150 6190 6242
+)
+"abs.ml" 116 3552 3577 "abs.ml" 116 3552 3579
+type(
+  int
+)
+ident(
+  int_ref y2 "abs.ml" 115 3507 3543 "abs.ml" 115 3507 3545
+)
+"abs.ml" 116 3552 3571 "abs.ml" 116 3552 3579
+type(
+  bool
+)
+"abs.ml" 116 3552 3561 "abs.ml" 116 3552 3579
+type(
+  bool
+)
+"abs.ml" 116 3552 3592 "abs.ml" 116 3552 3594
+type(
+  int
+)
+ident(
+  int_ref x1 "abs.ml" 115 3507 3520 "abs.ml" 115 3507 3522
+)
+"abs.ml" 116 3552 3595 "abs.ml" 116 3552 3597
+type(
+  int
+)
+ident(
+  int_ref x2 "abs.ml" 115 3507 3523 "abs.ml" 115 3507 3525
+)
+"abs.ml" 116 3552 3585 "abs.ml" 116 3552 3598
+type(
+  val_abs
+)
+"abs.ml" 116 3552 3611 "abs.ml" 116 3552 3613
+type(
+  int
+)
+ident(
+  int_ref y1 "abs.ml" 115 3507 3538 "abs.ml" 115 3507 3540
+)
+"abs.ml" 116 3552 3614 "abs.ml" 116 3552 3616
+type(
+  int
+)
+ident(
+  int_ref y2 "abs.ml" 115 3507 3543 "abs.ml" 115 3507 3545
+)
+"abs.ml" 116 3552 3604 "abs.ml" 116 3552 3617
+type(
+  val_abs
+)
+"abs.ml" 116 3552 3558 "abs.ml" 116 3552 3617
+type(
+  val_abs
+)
+"abs.ml" 117 3618 3630 "abs.ml" 117 3618 3631
+type(
+  int
+)
+ident(
+  def x "abs.ml" 117 3618 3646 "abs.ml" 117 3618 3682
+)
+"abs.ml" 117 3618 3622 "abs.ml" 117 3618 3631
+type(
+  val_abs
+)
+"abs.ml" 117 3618 3641 "abs.ml" 117 3618 3642
+type(
+  int
+)
+ident(
+  def y "abs.ml" 117 3618 3646 "abs.ml" 117 3618 3682
+)
+"abs.ml" 117 3618 3633 "abs.ml" 117 3618 3642
+type(
+  val_abs
+)
+"abs.ml" 117 3618 3622 "abs.ml" 117 3618 3642
+type(
+  val_abs * val_abs
+)
+type(
+  val_abs * val_abs
+)
+"abs.ml" 117 3618 3649 "abs.ml" 117 3618 3650
+type(
+  int
+)
+ident(
+  int_ref x "abs.ml" 117 3618 3630 "abs.ml" 117 3618 3631
+)
+"abs.ml" 117 3618 3650 "abs.ml" 117 3618 3651
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( < ) "stdlib.mli" 135 5721 5721 "stdlib.mli" 135 5721 5768
+)
+"abs.ml" 117 3618 3651 "abs.ml" 117 3618 3652
+type(
+  int
+)
+ident(
+  int_ref y "abs.ml" 117 3618 3641 "abs.ml" 117 3618 3642
+)
+"abs.ml" 117 3618 3649 "abs.ml" 117 3618 3652
+type(
+  bool
+)
+"abs.ml" 117 3618 3666 "abs.ml" 117 3618 3667
+type(
+  int
+)
+ident(
+  int_ref y "abs.ml" 117 3618 3641 "abs.ml" 117 3618 3642
+)
+"abs.ml" 117 3618 3658 "abs.ml" 117 3618 3667
+type(
+  val_abs
+)
+"abs.ml" 117 3618 3681 "abs.ml" 117 3618 3682
+type(
+  int
+)
+ident(
+  int_ref x "abs.ml" 117 3618 3630 "abs.ml" 117 3618 3631
+)
+"abs.ml" 117 3618 3673 "abs.ml" 117 3618 3682
+type(
+  val_abs
+)
+"abs.ml" 117 3618 3646 "abs.ml" 117 3618 3682
+type(
+  val_abs
+)
+"abs.ml" 118 3683 3695 "abs.ml" 118 3683 3696
+type(
+  int
+)
+ident(
+  def x "abs.ml" 118 3683 3711 "abs.ml" 118 3683 3747
+)
+"abs.ml" 118 3683 3687 "abs.ml" 118 3683 3696
+type(
+  val_abs
+)
+"abs.ml" 118 3683 3706 "abs.ml" 118 3683 3707
+type(
+  int
+)
+ident(
+  def y "abs.ml" 118 3683 3711 "abs.ml" 118 3683 3747
+)
+"abs.ml" 118 3683 3698 "abs.ml" 118 3683 3707
+type(
+  val_abs
+)
+"abs.ml" 118 3683 3687 "abs.ml" 118 3683 3707
+type(
+  val_abs * val_abs
+)
+type(
+  val_abs * val_abs
+)
+"abs.ml" 118 3683 3714 "abs.ml" 118 3683 3715
+type(
+  int
+)
+ident(
+  int_ref x "abs.ml" 118 3683 3695 "abs.ml" 118 3683 3696
+)
+"abs.ml" 118 3683 3715 "abs.ml" 118 3683 3716
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( > ) "stdlib.mli" 140 5875 5875 "stdlib.mli" 140 5875 5925
+)
+"abs.ml" 118 3683 3716 "abs.ml" 118 3683 3717
+type(
+  int
+)
+ident(
+  int_ref y "abs.ml" 118 3683 3706 "abs.ml" 118 3683 3707
+)
+"abs.ml" 118 3683 3714 "abs.ml" 118 3683 3717
+type(
+  bool
+)
+"abs.ml" 118 3683 3731 "abs.ml" 118 3683 3732
+type(
+  int
+)
+ident(
+  int_ref y "abs.ml" 118 3683 3706 "abs.ml" 118 3683 3707
+)
+"abs.ml" 118 3683 3723 "abs.ml" 118 3683 3732
+type(
+  val_abs
+)
+"abs.ml" 118 3683 3746 "abs.ml" 118 3683 3747
+type(
+  int
+)
+ident(
+  int_ref x "abs.ml" 118 3683 3695 "abs.ml" 118 3683 3696
+)
+"abs.ml" 118 3683 3738 "abs.ml" 118 3683 3747
+type(
+  val_abs
+)
+"abs.ml" 118 3683 3711 "abs.ml" 118 3683 3747
+type(
+  val_abs
+)
+"abs.ml" 110 3144 3146 "abs.ml" 118 3683 3747
+type(
+  val_abs
+)
+"abs.ml" 121 3752 3756 "abs.ml" 121 3752 3765
+type(
+  'a -> val_abs -> val_abs -> val_abs
+)
+ident(
+  def val_binop "abs.ml" 135 4525 4525 "abs.ml" 0 0 -1
+)
+"abs.ml" 121 3752 3766 "abs.ml" 121 3752 3767
+type(
+  'a
+)
+ident(
+  def o "abs.ml" 121 3752 3768 "abs.ml" 133 4499 4523
+)
+"abs.ml" 121 3752 3768 "abs.ml" 121 3752 3770
+type(
+  val_abs
+)
+ident(
+  def v0 "abs.ml" 121 3752 3771 "abs.ml" 133 4499 4523
+)
+"abs.ml" 121 3752 3771 "abs.ml" 121 3752 3773
+type(
+  val_abs
+)
+ident(
+  def v1 "abs.ml" 122 3776 3778 "abs.ml" 133 4499 4523
+)
+"abs.ml" 122 3776 3784 "abs.ml" 122 3776 3785
+type(
+  'a
+)
+ident(
+  int_ref o "abs.ml" 121 3752 3766 "abs.ml" 121 3752 3767
+)
+"abs.ml" 122 3776 3786 "abs.ml" 122 3776 3788
+type(
+  val_abs
+)
+ident(
+  int_ref v0 "abs.ml" 121 3752 3768 "abs.ml" 121 3752 3770
+)
+"abs.ml" 122 3776 3789 "abs.ml" 122 3776 3791
+type(
+  val_abs
+)
+ident(
+  int_ref v1 "abs.ml" 121 3752 3771 "abs.ml" 121 3752 3773
+)
+"abs.ml" 122 3776 3784 "abs.ml" 122 3776 3791
+type(
+  'a * val_abs * val_abs
+)
+"abs.ml" 123 3797 3801 "abs.ml" 123 3797 3802
+type(
+  'a
+)
+"abs.ml" 123 3797 3804 "abs.ml" 123 3797 3808
+type(
+  val_abs
+)
+"abs.ml" 123 3797 3809 "abs.ml" 123 3797 3810
+type(
+  val_abs
+)
+"abs.ml" 123 3797 3801 "abs.ml" 123 3797 3810
+type(
+  'a * val_abs * val_abs
+)
+type(
+  'a * val_abs * val_abs
+)
+"abs.ml" 123 3797 3813 "abs.ml" 123 3797 3814
+type(
+  'a
+)
+"abs.ml" 123 3797 3815 "abs.ml" 123 3797 3816
+type(
+  val_abs
+)
+"abs.ml" 123 3797 3817 "abs.ml" 123 3797 3821
+type(
+  val_abs
+)
+"abs.ml" 123 3797 3813 "abs.ml" 123 3797 3821
+type(
+  'a * val_abs * val_abs
+)
+type(
+  'a * val_abs * val_abs
+)
+"abs.ml" 123 3797 3801 "abs.ml" 123 3797 3821
+type(
+  'a * val_abs * val_abs
+)
+"abs.ml" 123 3797 3825 "abs.ml" 123 3797 3829
+type(
+  val_abs
+)
+"abs.ml" 124 3830 3834 "abs.ml" 124 3830 3835
+type(
+  'a
+)
+"abs.ml" 124 3830 3845 "abs.ml" 124 3830 3846
+type(
+  int
+)
+ident(
+  def x "abs.ml" 124 3830 3861 "abs.ml" 124 3830 3898
+)
+"abs.ml" 124 3830 3837 "abs.ml" 124 3830 3846
+type(
+  val_abs
+)
+"abs.ml" 124 3830 3856 "abs.ml" 124 3830 3857
+type(
+  int
+)
+ident(
+  def y "abs.ml" 124 3830 3861 "abs.ml" 124 3830 3898
+)
+"abs.ml" 124 3830 3848 "abs.ml" 124 3830 3857
+type(
+  val_abs
+)
+"abs.ml" 124 3830 3834 "abs.ml" 124 3830 3857
+type(
+  'a * val_abs * val_abs
+)
+type(
+  'a * val_abs * val_abs
+)
+"abs.ml" 124 3830 3864 "abs.ml" 124 3830 3865
+type(
+  int
+)
+ident(
+  int_ref x "abs.ml" 124 3830 3845 "abs.ml" 124 3830 3846
+)
+"abs.ml" 124 3830 3865 "abs.ml" 124 3830 3867
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( >= ) "stdlib.mli" 150 6190 6190 "stdlib.mli" 150 6190 6242
+)
+"abs.ml" 124 3830 3867 "abs.ml" 124 3830 3868
+type(
+  int
+)
+ident(
+  int_ref y "abs.ml" 124 3830 3856 "abs.ml" 124 3830 3857
+)
+"abs.ml" 124 3830 3864 "abs.ml" 124 3830 3868
+type(
+  bool
+)
+"abs.ml" 124 3830 3882 "abs.ml" 124 3830 3883
+type(
+  int
+)
+ident(
+  int_ref y "abs.ml" 124 3830 3856 "abs.ml" 124 3830 3857
+)
+"abs.ml" 124 3830 3874 "abs.ml" 124 3830 3883
+type(
+  val_abs
+)
+"abs.ml" 124 3830 3897 "abs.ml" 124 3830 3898
+type(
+  int
+)
+ident(
+  int_ref x "abs.ml" 124 3830 3845 "abs.ml" 124 3830 3846
+)
+"abs.ml" 124 3830 3889 "abs.ml" 124 3830 3898
+type(
+  val_abs
+)
+"abs.ml" 124 3830 3861 "abs.ml" 124 3830 3898
+type(
+  val_abs
+)
+"abs.ml" 125 3899 3903 "abs.ml" 125 3899 3904
+type(
+  'a
+)
+"abs.ml" 125 3899 3914 "abs.ml" 125 3899 3915
+type(
+  int
+)
+ident(
+  def x "abs.ml" 125 3899 3930 "abs.ml" 125 3899 3967
+)
+"abs.ml" 125 3899 3906 "abs.ml" 125 3899 3915
+type(
+  val_abs
+)
+"abs.ml" 125 3899 3925 "abs.ml" 125 3899 3926
+type(
+  int
+)
+ident(
+  def y "abs.ml" 125 3899 3930 "abs.ml" 125 3899 3967
+)
+"abs.ml" 125 3899 3917 "abs.ml" 125 3899 3926
+type(
+  val_abs
+)
+"abs.ml" 125 3899 3903 "abs.ml" 125 3899 3926
+type(
+  'a * val_abs * val_abs
+)
+type(
+  'a * val_abs * val_abs
+)
+"abs.ml" 125 3899 3933 "abs.ml" 125 3899 3934
+type(
+  int
+)
+ident(
+  int_ref x "abs.ml" 125 3899 3914 "abs.ml" 125 3899 3915
+)
+"abs.ml" 125 3899 3934 "abs.ml" 125 3899 3936
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( >= ) "stdlib.mli" 150 6190 6190 "stdlib.mli" 150 6190 6242
+)
+"abs.ml" 125 3899 3936 "abs.ml" 125 3899 3937
+type(
+  int
+)
+ident(
+  int_ref y "abs.ml" 125 3899 3925 "abs.ml" 125 3899 3926
+)
+"abs.ml" 125 3899 3933 "abs.ml" 125 3899 3937
+type(
+  bool
+)
+"abs.ml" 125 3899 3951 "abs.ml" 125 3899 3952
+type(
+  int
+)
+ident(
+  int_ref x "abs.ml" 125 3899 3914 "abs.ml" 125 3899 3915
+)
+"abs.ml" 125 3899 3943 "abs.ml" 125 3899 3952
+type(
+  val_abs
+)
+"abs.ml" 125 3899 3966 "abs.ml" 125 3899 3967
+type(
+  int
+)
+ident(
+  int_ref y "abs.ml" 125 3899 3925 "abs.ml" 125 3899 3926
+)
+"abs.ml" 125 3899 3958 "abs.ml" 125 3899 3967
+type(
+  val_abs
+)
+"abs.ml" 125 3899 3930 "abs.ml" 125 3899 3967
+type(
+  val_abs
+)
+"abs.ml" 126 3968 3972 "abs.ml" 126 3968 3973
+type(
+  'a
+)
+"abs.ml" 126 3968 3975 "abs.ml" 126 3968 3985
+type(
+  val_abs
+)
+"abs.ml" 126 3968 3987 "abs.ml" 126 3968 3988
+type(
+  val_abs
+)
+"abs.ml" 126 3968 3972 "abs.ml" 126 3968 3988
+type(
+  'a * val_abs * val_abs
+)
+type(
+  'a * val_abs * val_abs
+)
+"abs.ml" 126 3968 3991 "abs.ml" 126 3968 3992
+type(
+  'a
+)
+"abs.ml" 126 3968 3994 "abs.ml" 126 3968 3995
+type(
+  val_abs
+)
+"abs.ml" 126 3968 3997 "abs.ml" 126 3968 4007
+type(
+  val_abs
+)
+"abs.ml" 126 3968 3991 "abs.ml" 126 3968 4007
+type(
+  'a * val_abs * val_abs
+)
+type(
+  'a * val_abs * val_abs
+)
+"abs.ml" 126 3968 3972 "abs.ml" 126 3968 4007
+type(
+  'a * val_abs * val_abs
+)
+"abs.ml" 126 3968 4010 "abs.ml" 126 3968 4011
+type(
+  'a
+)
+"abs.ml" 126 3968 4021 "abs.ml" 126 3968 4022
+type(
+  int
+)
+"abs.ml" 126 3968 4013 "abs.ml" 126 3968 4022
+type(
+  val_abs
+)
+"abs.ml" 126 3968 4031 "abs.ml" 126 3968 4032
+type(
+  int
+)
+"abs.ml" 126 3968 4023 "abs.ml" 126 3968 4032
+type(
+  val_abs
+)
+"abs.ml" 126 3968 4010 "abs.ml" 126 3968 4032
+type(
+  'a * val_abs * val_abs
+)
+type(
+  'a * val_abs * val_abs
+)
+"abs.ml" 126 3968 3972 "abs.ml" 126 3968 4032
+type(
+  'a * val_abs * val_abs
+)
+"abs.ml" 126 3968 4034 "abs.ml" 126 3968 4035
+type(
+  'a
+)
+"abs.ml" 126 3968 4045 "abs.ml" 126 3968 4046
+type(
+  int
+)
+"abs.ml" 126 3968 4037 "abs.ml" 126 3968 4046
+type(
+  val_abs
+)
+"abs.ml" 126 3968 4057 "abs.ml" 126 3968 4058
+type(
+  int
+)
+"abs.ml" 126 3968 4049 "abs.ml" 126 3968 4058
+type(
+  val_abs
+)
+"abs.ml" 126 3968 4034 "abs.ml" 126 3968 4058
+type(
+  'a * val_abs * val_abs
+)
+type(
+  'a * val_abs * val_abs
+)
+"abs.ml" 126 3968 3972 "abs.ml" 126 3968 4058
+type(
+  'a * val_abs * val_abs
+)
+"abs.ml" 126 3968 4061 "abs.ml" 126 3968 4071
+type(
+  val_abs
+)
+"abs.ml" 127 4072 4076 "abs.ml" 127 4072 4077
+type(
+  'a
+)
+"abs.ml" 127 4072 4089 "abs.ml" 127 4072 4091
+type(
+  int
+)
+ident(
+  def x1 "abs.ml" 127 4072 4146 "abs.ml" 127 4072 4185
+)
+"abs.ml" 127 4072 4093 "abs.ml" 127 4072 4095
+type(
+  int
+)
+ident(
+  def x2 "abs.ml" 127 4072 4146 "abs.ml" 127 4072 4185
+)
+"abs.ml" 127 4072 4080 "abs.ml" 127 4072 4096
+type(
+  val_abs
+)
+"abs.ml" 127 4072 4106 "abs.ml" 127 4072 4107
+type(
+  int
+)
+ident(
+  def y "abs.ml" 127 4072 4146 "abs.ml" 127 4072 4185
+)
+"abs.ml" 127 4072 4098 "abs.ml" 127 4072 4107
+type(
+  val_abs
+)
+"abs.ml" 127 4072 4076 "abs.ml" 127 4072 4107
+type(
+  'a * val_abs * val_abs
+)
+type(
+  'a * val_abs * val_abs
+)
+"abs.ml" 127 4072 4109 "abs.ml" 127 4072 4110
+type(
+  'a
+)
+"abs.ml" 127 4072 4120 "abs.ml" 127 4072 4121
+type(
+  int
+)
+ident(
+  def y "abs.ml" 127 4072 4146 "abs.ml" 127 4072 4185
+)
+"abs.ml" 127 4072 4112 "abs.ml" 127 4072 4121
+type(
+  val_abs
+)
+"abs.ml" 127 4072 4133 "abs.ml" 127 4072 4135
+type(
+  int
+)
+ident(
+  def x1 "abs.ml" 127 4072 4146 "abs.ml" 127 4072 4185
+)
+"abs.ml" 127 4072 4137 "abs.ml" 127 4072 4139
+type(
+  int
+)
+ident(
+  def x2 "abs.ml" 127 4072 4146 "abs.ml" 127 4072 4185
+)
+"abs.ml" 127 4072 4124 "abs.ml" 127 4072 4140
+type(
+  val_abs
+)
+"abs.ml" 127 4072 4109 "abs.ml" 127 4072 4140
+type(
+  'a * val_abs * val_abs
+)
+type(
+  'a * val_abs * val_abs
+)
+"abs.ml" 127 4072 4076 "abs.ml" 127 4072 4140
+type(
+  'a * val_abs * val_abs
+)
+"abs.ml" 127 4072 4149 "abs.ml" 127 4072 4151
+type(
+  int
+)
+ident(
+  int_ref x1 "abs.ml" 127 4072 4089 "abs.ml" 127 4072 4091
+)
+"abs.ml" 127 4072 4151 "abs.ml" 127 4072 4153
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( <= ) "stdlib.mli" 145 6033 6033 "stdlib.mli" 145 6033 6082
+)
+"abs.ml" 127 4072 4153 "abs.ml" 127 4072 4154
+type(
+  int
+)
+ident(
+  int_ref y "abs.ml" 127 4072 4106 "abs.ml" 127 4072 4107
+)
+"abs.ml" 127 4072 4149 "abs.ml" 127 4072 4154
+type(
+  bool
+)
+"abs.ml" 127 4072 4168 "abs.ml" 127 4072 4169
+type(
+  int
+)
+ident(
+  int_ref y "abs.ml" 127 4072 4106 "abs.ml" 127 4072 4107
+)
+"abs.ml" 127 4072 4160 "abs.ml" 127 4072 4169
+type(
+  val_abs
+)
+"abs.ml" 127 4072 4183 "abs.ml" 127 4072 4185
+type(
+  int
+)
+ident(
+  int_ref x2 "abs.ml" 127 4072 4093 "abs.ml" 127 4072 4095
+)
+"abs.ml" 127 4072 4175 "abs.ml" 127 4072 4185
+type(
+  val_abs
+)
+"abs.ml" 127 4072 4146 "abs.ml" 127 4072 4185
+type(
+  val_abs
+)
+"abs.ml" 128 4186 4190 "abs.ml" 128 4186 4191
+type(
+  'a
+)
+"abs.ml" 128 4186 4203 "abs.ml" 128 4186 4205
+type(
+  int
+)
+ident(
+  def x1 "abs.ml" 128 4186 4260 "abs.ml" 128 4186 4299
+)
+"abs.ml" 128 4186 4207 "abs.ml" 128 4186 4209
+type(
+  int
+)
+ident(
+  def x2 "abs.ml" 128 4186 4260 "abs.ml" 128 4186 4299
+)
+"abs.ml" 128 4186 4194 "abs.ml" 128 4186 4210
+type(
+  val_abs
+)
+"abs.ml" 128 4186 4220 "abs.ml" 128 4186 4221
+type(
+  int
+)
+ident(
+  def y "abs.ml" 128 4186 4260 "abs.ml" 128 4186 4299
+)
+"abs.ml" 128 4186 4212 "abs.ml" 128 4186 4221
+type(
+  val_abs
+)
+"abs.ml" 128 4186 4190 "abs.ml" 128 4186 4221
+type(
+  'a * val_abs * val_abs
+)
+type(
+  'a * val_abs * val_abs
+)
+"abs.ml" 128 4186 4223 "abs.ml" 128 4186 4224
+type(
+  'a
+)
+"abs.ml" 128 4186 4234 "abs.ml" 128 4186 4235
+type(
+  int
+)
+ident(
+  def y "abs.ml" 128 4186 4260 "abs.ml" 128 4186 4299
+)
+"abs.ml" 128 4186 4226 "abs.ml" 128 4186 4235
+type(
+  val_abs
+)
+"abs.ml" 128 4186 4247 "abs.ml" 128 4186 4249
+type(
+  int
+)
+ident(
+  def x1 "abs.ml" 128 4186 4260 "abs.ml" 128 4186 4299
+)
+"abs.ml" 128 4186 4251 "abs.ml" 128 4186 4253
+type(
+  int
+)
+ident(
+  def x2 "abs.ml" 128 4186 4260 "abs.ml" 128 4186 4299
+)
+"abs.ml" 128 4186 4238 "abs.ml" 128 4186 4254
+type(
+  val_abs
+)
+"abs.ml" 128 4186 4223 "abs.ml" 128 4186 4254
+type(
+  'a * val_abs * val_abs
+)
+type(
+  'a * val_abs * val_abs
+)
+"abs.ml" 128 4186 4190 "abs.ml" 128 4186 4254
+type(
+  'a * val_abs * val_abs
+)
+"abs.ml" 128 4186 4263 "abs.ml" 128 4186 4265
+type(
+  int
+)
+ident(
+  int_ref x1 "abs.ml" 128 4186 4203 "abs.ml" 128 4186 4205
+)
+"abs.ml" 128 4186 4265 "abs.ml" 128 4186 4267
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( >= ) "stdlib.mli" 150 6190 6190 "stdlib.mli" 150 6190 6242
+)
+"abs.ml" 128 4186 4267 "abs.ml" 128 4186 4268
+type(
+  int
+)
+ident(
+  int_ref y "abs.ml" 128 4186 4220 "abs.ml" 128 4186 4221
+)
+"abs.ml" 128 4186 4263 "abs.ml" 128 4186 4268
+type(
+  bool
+)
+"abs.ml" 128 4186 4282 "abs.ml" 128 4186 4283
+type(
+  int
+)
+ident(
+  int_ref y "abs.ml" 128 4186 4220 "abs.ml" 128 4186 4221
+)
+"abs.ml" 128 4186 4274 "abs.ml" 128 4186 4283
+type(
+  val_abs
+)
+"abs.ml" 128 4186 4297 "abs.ml" 128 4186 4299
+type(
+  int
+)
+ident(
+  int_ref x1 "abs.ml" 128 4186 4203 "abs.ml" 128 4186 4205
+)
+"abs.ml" 128 4186 4289 "abs.ml" 128 4186 4299
+type(
+  val_abs
+)
+"abs.ml" 128 4186 4260 "abs.ml" 128 4186 4299
+type(
+  val_abs
+)
+"abs.ml" 129 4300 4304 "abs.ml" 129 4300 4305
+type(
+  'a
+)
+"abs.ml" 129 4300 4317 "abs.ml" 129 4300 4319
+type(
+  int
+)
+ident(
+  def x1 "abs.ml" 130 4348 4352 "abs.ml" 133 4499 4523
+)
+"abs.ml" 129 4300 4321 "abs.ml" 129 4300 4323
+type(
+  int
+)
+ident(
+  def x2 "abs.ml" 130 4348 4352 "abs.ml" 133 4499 4523
+)
+"abs.ml" 129 4300 4308 "abs.ml" 129 4300 4324
+type(
+  val_abs
+)
+"abs.ml" 129 4300 4335 "abs.ml" 129 4300 4337
+type(
+  int
+)
+ident(
+  def y1 "abs.ml" 130 4348 4352 "abs.ml" 133 4499 4523
+)
+"abs.ml" 129 4300 4339 "abs.ml" 129 4300 4341
+type(
+  int
+)
+ident(
+  def y2 "abs.ml" 130 4348 4352 "abs.ml" 133 4499 4523
+)
+"abs.ml" 129 4300 4326 "abs.ml" 129 4300 4342
+type(
+  val_abs
+)
+"abs.ml" 129 4300 4304 "abs.ml" 129 4300 4342
+type(
+  'a * val_abs * val_abs
+)
+type(
+  'a * val_abs * val_abs
+)
+"abs.ml" 130 4348 4355 "abs.ml" 130 4348 4357
+type(
+  int
+)
+ident(
+  int_ref x1 "abs.ml" 129 4300 4317 "abs.ml" 129 4300 4319
+)
+"abs.ml" 130 4348 4357 "abs.ml" 130 4348 4359
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( <= ) "stdlib.mli" 145 6033 6033 "stdlib.mli" 145 6033 6082
+)
+"abs.ml" 130 4348 4359 "abs.ml" 130 4348 4361
+type(
+  int
+)
+ident(
+  int_ref y1 "abs.ml" 129 4300 4335 "abs.ml" 129 4300 4337
+)
+"abs.ml" 130 4348 4355 "abs.ml" 130 4348 4361
+type(
+  bool
+)
+"abs.ml" 130 4348 4362 "abs.ml" 130 4348 4364
+type(
+  bool -> bool -> bool
+)
+ident(
+  int_ref Stdlib.( && ) "stdlib.mli" 214 8960 8960 "stdlib.mli" 214 8960 9011
+)
+"abs.ml" 130 4348 4365 "abs.ml" 130 4348 4367
+type(
+  int
+)
+ident(
+  int_ref x2 "abs.ml" 129 4300 4321 "abs.ml" 129 4300 4323
+)
+"abs.ml" 130 4348 4368 "abs.ml" 130 4348 4369
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( > ) "stdlib.mli" 140 5875 5875 "stdlib.mli" 140 5875 5925
+)
+"abs.ml" 130 4348 4370 "abs.ml" 130 4348 4372
+type(
+  int
+)
+ident(
+  int_ref y2 "abs.ml" 129 4300 4339 "abs.ml" 129 4300 4341
+)
+"abs.ml" 130 4348 4365 "abs.ml" 130 4348 4372
+type(
+  bool
+)
+"abs.ml" 130 4348 4355 "abs.ml" 130 4348 4372
+type(
+  bool
+)
+"abs.ml" 130 4348 4385 "abs.ml" 130 4348 4387
+type(
+  int
+)
+ident(
+  int_ref x1 "abs.ml" 129 4300 4317 "abs.ml" 129 4300 4319
+)
+"abs.ml" 130 4348 4388 "abs.ml" 130 4348 4390
+type(
+  int
+)
+ident(
+  int_ref x2 "abs.ml" 129 4300 4321 "abs.ml" 129 4300 4323
+)
+"abs.ml" 130 4348 4378 "abs.ml" 130 4348 4391
+type(
+  val_abs
+)
+"abs.ml" 131 4393 4408 "abs.ml" 131 4393 4410
+type(
+  int
+)
+ident(
+  int_ref x1 "abs.ml" 129 4300 4317 "abs.ml" 129 4300 4319
+)
+"abs.ml" 131 4393 4410 "abs.ml" 131 4393 4412
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( >= ) "stdlib.mli" 150 6190 6190 "stdlib.mli" 150 6190 6242
+)
+"abs.ml" 131 4393 4412 "abs.ml" 131 4393 4414
+type(
+  int
+)
+ident(
+  int_ref y1 "abs.ml" 129 4300 4335 "abs.ml" 129 4300 4337
+)
+"abs.ml" 131 4393 4408 "abs.ml" 131 4393 4414
+type(
+  bool
+)
+"abs.ml" 131 4393 4415 "abs.ml" 131 4393 4417
+type(
+  bool -> bool -> bool
+)
+ident(
+  int_ref Stdlib.( && ) "stdlib.mli" 214 8960 8960 "stdlib.mli" 214 8960 9011
+)
+"abs.ml" 131 4393 4418 "abs.ml" 131 4393 4420
+type(
+  int
+)
+ident(
+  int_ref x2 "abs.ml" 129 4300 4321 "abs.ml" 129 4300 4323
+)
+"abs.ml" 131 4393 4421 "abs.ml" 131 4393 4422
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( < ) "stdlib.mli" 135 5721 5721 "stdlib.mli" 135 5721 5768
+)
+"abs.ml" 131 4393 4423 "abs.ml" 131 4393 4425
+type(
+  int
+)
+ident(
+  int_ref y2 "abs.ml" 129 4300 4339 "abs.ml" 129 4300 4341
+)
+"abs.ml" 131 4393 4418 "abs.ml" 131 4393 4425
+type(
+  bool
+)
+"abs.ml" 131 4393 4407 "abs.ml" 131 4393 4426
+type(
+  bool
+)
+"abs.ml" 131 4393 4439 "abs.ml" 131 4393 4441
+type(
+  int
+)
+ident(
+  int_ref y1 "abs.ml" 129 4300 4335 "abs.ml" 129 4300 4337
+)
+"abs.ml" 131 4393 4442 "abs.ml" 131 4393 4444
+type(
+  int
+)
+ident(
+  int_ref y2 "abs.ml" 129 4300 4339 "abs.ml" 129 4300 4341
+)
+"abs.ml" 131 4393 4432 "abs.ml" 131 4393 4445
+type(
+  val_abs
+)
+"abs.ml" 132 4446 4461 "abs.ml" 132 4446 4463
+type(
+  int
+)
+ident(
+  int_ref x1 "abs.ml" 129 4300 4317 "abs.ml" 129 4300 4319
+)
+"abs.ml" 132 4446 4463 "abs.ml" 132 4446 4465
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( <= ) "stdlib.mli" 145 6033 6033 "stdlib.mli" 145 6033 6082
+)
+"abs.ml" 132 4446 4465 "abs.ml" 132 4446 4467
+type(
+  int
+)
+ident(
+  int_ref y1 "abs.ml" 129 4300 4335 "abs.ml" 129 4300 4337
+)
+"abs.ml" 132 4446 4461 "abs.ml" 132 4446 4467
+type(
+  bool
+)
+"abs.ml" 132 4446 4468 "abs.ml" 132 4446 4470
+type(
+  bool -> bool -> bool
+)
+ident(
+  int_ref Stdlib.( && ) "stdlib.mli" 214 8960 8960 "stdlib.mli" 214 8960 9011
+)
+"abs.ml" 132 4446 4471 "abs.ml" 132 4446 4473
+type(
+  int
+)
+ident(
+  int_ref x2 "abs.ml" 129 4300 4321 "abs.ml" 129 4300 4323
+)
+"abs.ml" 132 4446 4474 "abs.ml" 132 4446 4475
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( < ) "stdlib.mli" 135 5721 5721 "stdlib.mli" 135 5721 5768
+)
+"abs.ml" 132 4446 4476 "abs.ml" 132 4446 4478
+type(
+  int
+)
+ident(
+  int_ref y2 "abs.ml" 129 4300 4339 "abs.ml" 129 4300 4341
+)
+"abs.ml" 132 4446 4471 "abs.ml" 132 4446 4478
+type(
+  bool
+)
+"abs.ml" 132 4446 4460 "abs.ml" 132 4446 4479
+type(
+  bool
+)
+"abs.ml" 132 4446 4492 "abs.ml" 132 4446 4494
+type(
+  int
+)
+ident(
+  int_ref x1 "abs.ml" 129 4300 4317 "abs.ml" 129 4300 4319
+)
+"abs.ml" 132 4446 4495 "abs.ml" 132 4446 4497
+type(
+  int
+)
+ident(
+  int_ref y2 "abs.ml" 129 4300 4339 "abs.ml" 129 4300 4341
+)
+"abs.ml" 132 4446 4485 "abs.ml" 132 4446 4498
+type(
+  val_abs
+)
+"abs.ml" 133 4499 4517 "abs.ml" 133 4499 4519
+type(
+  int
+)
+ident(
+  int_ref y1 "abs.ml" 129 4300 4335 "abs.ml" 129 4300 4337
+)
+"abs.ml" 133 4499 4520 "abs.ml" 133 4499 4522
+type(
+  int
+)
+ident(
+  int_ref x2 "abs.ml" 129 4300 4321 "abs.ml" 129 4300 4323
+)
+"abs.ml" 133 4499 4510 "abs.ml" 133 4499 4523
+type(
+  val_abs
+)
+"abs.ml" 132 4446 4457 "abs.ml" 133 4499 4523
+type(
+  val_abs
+)
+"abs.ml" 131 4393 4404 "abs.ml" 133 4499 4523
+type(
+  val_abs
+)
+"abs.ml" 130 4348 4352 "abs.ml" 133 4499 4523
+type(
+  val_abs
+)
+"abs.ml" 122 3776 3778 "abs.ml" 133 4499 4523
+type(
+  val_abs
+)
+"abs.ml" 135 4525 4529 "abs.ml" 135 4525 4535
+type(
+  ('a, val_abs) Hashtbl.t -> ('a, val_abs) Hashtbl.t
+)
+ident(
+  def nr_bot "abs.ml" 140 4630 4630 "abs.ml" 0 0 -1
+)
+"abs.ml" 135 4525 4536 "abs.ml" 135 4525 4540
+type(
+  ('a, val_abs) Hashtbl.t
+)
+ident(
+  def aenv "abs.ml" 136 4544 4544 "abs.ml" 138 4622 4628
+)
+"abs.ml" 136 4544 4544 "abs.ml" 136 4544 4556
+type(
+  ('a -> val_abs -> unit) -> ('a, val_abs) Hashtbl.t -> unit
+)
+ident(
+  int_ref Stdlib.Hashtbl.iter "hashtbl.mli" 120 5516 5516 "hashtbl.mli" 120 5516 5567
+)
+"abs.ml" 136 4544 4563 "abs.ml" 136 4544 4564
+type(
+  'a
+)
+ident(
+  def x "abs.ml" 136 4544 4565 "abs.ml" 137 4571 4614
+)
+"abs.ml" 136 4544 4565 "abs.ml" 136 4544 4567
+type(
+  val_abs
+)
+ident(
+  def a0 "abs.ml" 137 4571 4573 "abs.ml" 137 4571 4614
+)
+"abs.ml" 137 4571 4573 "abs.ml" 137 4571 4588
+type(
+  ('a, val_abs) Hashtbl.t -> 'a -> val_abs -> unit
+)
+ident(
+  int_ref Stdlib.Hashtbl.replace "hashtbl.mli" 113 5171 5171 "hashtbl.mli" 113 5171 5215
+)
+"abs.ml" 137 4571 4589 "abs.ml" 137 4571 4593
+type(
+  ('a, val_abs) Hashtbl.t
+)
+ident(
+  int_ref aenv "abs.ml" 135 4525 4536 "abs.ml" 135 4525 4540
+)
+"abs.ml" 137 4571 4594 "abs.ml" 137 4571 4595
+type(
+  'a
+)
+ident(
+  int_ref x "abs.ml" 136 4544 4563 "abs.ml" 136 4544 4564
+)
+"abs.ml" 137 4571 4597 "abs.ml" 137 4571 4605
+type(
+  val_abs -> val_abs -> val_abs
+)
+ident(
+  int_ref val_join "abs.ml" 109 3122 3126 "abs.ml" 109 3122 3134
+)
+"abs.ml" 137 4571 4606 "abs.ml" 137 4571 4608
+type(
+  val_abs
+)
+ident(
+  int_ref a0 "abs.ml" 136 4544 4565 "abs.ml" 136 4544 4567
+)
+"abs.ml" 137 4571 4609 "abs.ml" 137 4571 4613
+type(
+  val_abs
+)
+"abs.ml" 137 4571 4596 "abs.ml" 137 4571 4614
+type(
+  val_abs
+)
+"abs.ml" 137 4571 4573 "abs.ml" 137 4571 4614
+type(
+  unit
+)
+"abs.ml" 136 4544 4558 "abs.ml" 137 4571 4615
+type(
+  'a -> val_abs -> unit
+)
+"abs.ml" 137 4571 4616 "abs.ml" 137 4571 4620
+type(
+  ('a, val_abs) Hashtbl.t
+)
+ident(
+  int_ref aenv "abs.ml" 135 4525 4536 "abs.ml" 135 4525 4540
+)
+"abs.ml" 136 4544 4544 "abs.ml" 137 4571 4620
+type(
+  unit
+)
+"abs.ml" 138 4622 4624 "abs.ml" 138 4622 4628
+type(
+  ('a, val_abs) Hashtbl.t
+)
+ident(
+  int_ref aenv "abs.ml" 135 4525 4536 "abs.ml" 135 4525 4540
+)
+"abs.ml" 136 4544 4544 "abs.ml" 138 4622 4628
+type(
+  ('a, val_abs) Hashtbl.t
+)
+"abs.ml" 140 4630 4634 "abs.ml" 140 4630 4643
+type(
+  ('a, val_abs) Hashtbl.t -> bool
+)
+ident(
+  def nr_is_bot "abs.ml" 145 4740 4740 "abs.ml" 0 0 -1
+)
+"abs.ml" 140 4630 4644 "abs.ml" 140 4630 4648
+type(
+  ('a, val_abs) Hashtbl.t
+)
+ident(
+  def aenv "abs.ml" 141 4652 4654 "abs.ml" 143 4732 4738
+)
+"abs.ml" 141 4652 4658 "abs.ml" 141 4652 4659
+type(
+  bool ref
+)
+ident(
+  def r "abs.ml" 142 4676 4678 "abs.ml" 143 4732 4738
+)
+"abs.ml" 141 4652 4662 "abs.ml" 141 4652 4665
+type(
+  bool -> bool ref
+)
+ident(
+  int_ref Stdlib.ref "stdlib.mli" 1212 46183 46183 "stdlib.mli" 1212 46183 46227
+)
+"abs.ml" 141 4652 4666 "abs.ml" 141 4652 4671
+type(
+  bool
+)
+"abs.ml" 141 4652 4662 "abs.ml" 141 4652 4671
+type(
+  bool ref
+)
+"abs.ml" 142 4676 4678 "abs.ml" 142 4676 4690
+type(
+  ('a -> val_abs -> unit) -> ('a, val_abs) Hashtbl.t -> unit
+)
+ident(
+  int_ref Stdlib.Hashtbl.iter "hashtbl.mli" 120 5516 5516 "hashtbl.mli" 120 5516 5567
+)
+"abs.ml" 142 4676 4696 "abs.ml" 142 4676 4697
+type(
+  'a
+)
+ident(
+  def x "abs.ml" 142 4676 4698 "abs.ml" 142 4676 4724
+)
+"abs.ml" 142 4676 4698 "abs.ml" 142 4676 4699
+type(
+  val_abs
+)
+ident(
+  def a "abs.ml" 142 4676 4703 "abs.ml" 142 4676 4724
+)
+"abs.ml" 142 4676 4703 "abs.ml" 142 4676 4704
+type(
+  bool ref
+)
+ident(
+  int_ref r "abs.ml" 141 4652 4658 "abs.ml" 141 4652 4659
+)
+"abs.ml" 142 4676 4704 "abs.ml" 142 4676 4706
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  int_ref Stdlib.( := ) "stdlib.mli" 1221 46495 46495 "stdlib.mli" 1221 46495 46548
+)
+"abs.ml" 142 4676 4707 "abs.ml" 142 4676 4708
+type(
+  bool ref -> bool
+)
+ident(
+  int_ref Stdlib.( ! ) "stdlib.mli" 1215 46289 46289 "stdlib.mli" 1215 46289 46330
+)
+"abs.ml" 142 4676 4708 "abs.ml" 142 4676 4709
+type(
+  bool ref
+)
+ident(
+  int_ref r "abs.ml" 141 4652 4658 "abs.ml" 141 4652 4659
+)
+"abs.ml" 142 4676 4707 "abs.ml" 142 4676 4709
+type(
+  bool
+)
+"abs.ml" 142 4676 4710 "abs.ml" 142 4676 4712
+type(
+  bool -> bool -> bool
+)
+ident(
+  int_ref Stdlib.( && ) "stdlib.mli" 214 8960 8960 "stdlib.mli" 214 8960 9011
+)
+"abs.ml" 142 4676 4713 "abs.ml" 142 4676 4714
+type(
+  val_abs
+)
+ident(
+  int_ref a "abs.ml" 142 4676 4698 "abs.ml" 142 4676 4699
+)
+"abs.ml" 142 4676 4715 "abs.ml" 142 4676 4716
+type(
+  val_abs -> val_abs -> bool
+)
+ident(
+  int_ref Stdlib.( = ) "stdlib.mli" 121 5051 5051 "stdlib.mli" 121 5051 5095
+)
+"abs.ml" 142 4676 4717 "abs.ml" 142 4676 4724
+type(
+  val_abs
+)
+ident(
+  int_ref val_bot "abs.ml" 60 1040 1044 "abs.ml" 60 1040 1051
+)
+"abs.ml" 142 4676 4713 "abs.ml" 142 4676 4724
+type(
+  bool
+)
+"abs.ml" 142 4676 4707 "abs.ml" 142 4676 4724
+type(
+  bool
+)
+"abs.ml" 142 4676 4703 "abs.ml" 142 4676 4724
+type(
+  unit
+)
+"abs.ml" 142 4676 4691 "abs.ml" 142 4676 4725
+type(
+  'a -> val_abs -> unit
+)
+"abs.ml" 142 4676 4726 "abs.ml" 142 4676 4730
+type(
+  ('a, val_abs) Hashtbl.t
+)
+ident(
+  int_ref aenv "abs.ml" 140 4630 4644 "abs.ml" 140 4630 4648
+)
+"abs.ml" 142 4676 4678 "abs.ml" 142 4676 4730
+type(
+  unit
+)
+"abs.ml" 143 4732 4736 "abs.ml" 143 4732 4737
+type(
+  bool ref -> bool
+)
+ident(
+  int_ref Stdlib.( ! ) "stdlib.mli" 1215 46289 46289 "stdlib.mli" 1215 46289 46330
+)
+"abs.ml" 143 4732 4737 "abs.ml" 143 4732 4738
+type(
+  bool ref
+)
+ident(
+  int_ref r "abs.ml" 141 4652 4658 "abs.ml" 141 4652 4659
+)
+"abs.ml" 143 4732 4736 "abs.ml" 143 4732 4738
+type(
+  bool
+)
+"abs.ml" 142 4676 4678 "abs.ml" 143 4732 4738
+type(
+  bool
+)
+"abs.ml" 141 4652 4654 "abs.ml" 143 4732 4738
+type(
+  bool
+)
+"abs.ml" 145 4740 4744 "abs.ml" 145 4740 4752
+type(
+  ('a, val_abs) Hashtbl.t -> ('a, val_abs) Hashtbl.t -> bool
+)
+ident(
+  def nr_is_le "abs.ml" 151 4875 4875 "abs.ml" 0 0 -1
+)
+"abs.ml" 145 4740 4753 "abs.ml" 145 4740 4758
+type(
+  ('a, val_abs) Hashtbl.t
+)
+ident(
+  def aenv0 "abs.ml" 145 4740 4759 "abs.ml" 149 4867 4873
+)
+"abs.ml" 145 4740 4759 "abs.ml" 145 4740 4764
+type(
+  ('a, val_abs) Hashtbl.t
+)
+ident(
+  def aenv1 "abs.ml" 146 4767 4769 "abs.ml" 149 4867 4873
+)
+"abs.ml" 146 4767 4773 "abs.ml" 146 4767 4774
+type(
+  bool ref
+)
+ident(
+  def r "abs.ml" 147 4790 4792 "abs.ml" 149 4867 4873
+)
+"abs.ml" 146 4767 4777 "abs.ml" 146 4767 4780
+type(
+  bool -> bool ref
+)
+ident(
+  int_ref Stdlib.ref "stdlib.mli" 1212 46183 46183 "stdlib.mli" 1212 46183 46227
+)
+"abs.ml" 146 4767 4781 "abs.ml" 146 4767 4785
+type(
+  bool
+)
+"abs.ml" 146 4767 4777 "abs.ml" 146 4767 4785
+type(
+  bool ref
+)
+"abs.ml" 147 4790 4792 "abs.ml" 147 4790 4804
+type(
+  ('a -> val_abs -> unit) -> ('a, val_abs) Hashtbl.t -> unit
+)
+ident(
+  int_ref Stdlib.Hashtbl.iter "hashtbl.mli" 120 5516 5516 "hashtbl.mli" 120 5516 5567
+)
+"abs.ml" 148 4805 4814 "abs.ml" 148 4805 4815
+type(
+  'a
+)
+ident(
+  def x "abs.ml" 148 4805 4816 "abs.ml" 148 4805 4858
+)
+"abs.ml" 148 4805 4816 "abs.ml" 148 4805 4818
+type(
+  val_abs
+)
+ident(
+  def a0 "abs.ml" 148 4805 4822 "abs.ml" 148 4805 4858
+)
+"abs.ml" 148 4805 4822 "abs.ml" 148 4805 4823
+type(
+  bool ref
+)
+ident(
+  int_ref r "abs.ml" 146 4767 4773 "abs.ml" 146 4767 4774
+)
+"abs.ml" 148 4805 4823 "abs.ml" 148 4805 4825
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  int_ref Stdlib.( := ) "stdlib.mli" 1221 46495 46495 "stdlib.mli" 1221 46495 46548
+)
+"abs.ml" 148 4805 4826 "abs.ml" 148 4805 4827
+type(
+  bool ref -> bool
+)
+ident(
+  int_ref Stdlib.( ! ) "stdlib.mli" 1215 46289 46289 "stdlib.mli" 1215 46289 46330
+)
+"abs.ml" 148 4805 4827 "abs.ml" 148 4805 4828
+type(
+  bool ref
+)
+ident(
+  int_ref r "abs.ml" 146 4767 4773 "abs.ml" 146 4767 4774
+)
+"abs.ml" 148 4805 4826 "abs.ml" 148 4805 4828
+type(
+  bool
+)
+"abs.ml" 148 4805 4829 "abs.ml" 148 4805 4831
+type(
+  bool -> bool -> bool
+)
+ident(
+  int_ref Stdlib.( && ) "stdlib.mli" 214 8960 8960 "stdlib.mli" 214 8960 9011
+)
+"abs.ml" 148 4805 4832 "abs.ml" 148 4805 4840
+type(
+  val_abs -> val_abs -> bool
+)
+ident(
+  int_ref val_incl "abs.ml" 72 1272 1276 "abs.ml" 72 1272 1284
+)
+"abs.ml" 148 4805 4841 "abs.ml" 148 4805 4843
+type(
+  val_abs
+)
+ident(
+  int_ref a0 "abs.ml" 148 4805 4816 "abs.ml" 148 4805 4818
+)
+"abs.ml" 148 4805 4845 "abs.ml" 148 4805 4849
+type(
+  'a -> ('a, val_abs) Hashtbl.t -> val_abs
+)
+ident(
+  int_ref read "abs.ml" 24 427 431 "abs.ml" 24 427 435
+)
+"abs.ml" 148 4805 4850 "abs.ml" 148 4805 4851
+type(
+  'a
+)
+ident(
+  int_ref x "abs.ml" 148 4805 4814 "abs.ml" 148 4805 4815
+)
+"abs.ml" 148 4805 4852 "abs.ml" 148 4805 4857
+type(
+  ('a, val_abs) Hashtbl.t
+)
+ident(
+  int_ref aenv1 "abs.ml" 145 4740 4759 "abs.ml" 145 4740 4764
+)
+"abs.ml" 148 4805 4844 "abs.ml" 148 4805 4858
+type(
+  val_abs
+)
+"abs.ml" 148 4805 4832 "abs.ml" 148 4805 4858
+type(
+  bool
+)
+"abs.ml" 148 4805 4826 "abs.ml" 148 4805 4858
+type(
+  bool
+)
+"abs.ml" 148 4805 4822 "abs.ml" 148 4805 4858
+type(
+  unit
+)
+"abs.ml" 148 4805 4809 "abs.ml" 148 4805 4859
+type(
+  'a -> val_abs -> unit
+)
+"abs.ml" 148 4805 4860 "abs.ml" 148 4805 4865
+type(
+  ('a, val_abs) Hashtbl.t
+)
+ident(
+  int_ref aenv0 "abs.ml" 145 4740 4753 "abs.ml" 145 4740 4758
+)
+"abs.ml" 147 4790 4792 "abs.ml" 148 4805 4865
+type(
+  unit
+)
+"abs.ml" 149 4867 4871 "abs.ml" 149 4867 4872
+type(
+  bool ref -> bool
+)
+ident(
+  int_ref Stdlib.( ! ) "stdlib.mli" 1215 46289 46289 "stdlib.mli" 1215 46289 46330
+)
+"abs.ml" 149 4867 4872 "abs.ml" 149 4867 4873
+type(
+  bool ref
+)
+ident(
+  int_ref r "abs.ml" 146 4767 4773 "abs.ml" 146 4767 4774
+)
+"abs.ml" 149 4867 4871 "abs.ml" 149 4867 4873
+type(
+  bool
+)
+"abs.ml" 147 4790 4792 "abs.ml" 149 4867 4873
+type(
+  bool
+)
+"abs.ml" 146 4767 4769 "abs.ml" 149 4867 4873
+type(
+  bool
+)
+"abs.ml" 151 4875 4879 "abs.ml" 151 4875 4886
+type(
+  ('a, val_abs) Hashtbl.t -> ('a, val_abs) Hashtbl.t -> unit
+)
+ident(
+  def nr_join "abs.ml" 155 4995 4995 "abs.ml" 0 0 -1
+)
+"abs.ml" 151 4875 4887 "abs.ml" 151 4875 4892
+type(
+  ('a, val_abs) Hashtbl.t
+)
+ident(
+  def aenv0 "abs.ml" 151 4875 4893 "abs.ml" 153 4930 4993
+)
+"abs.ml" 151 4875 4893 "abs.ml" 151 4875 4898
+type(
+  ('a, val_abs) Hashtbl.t
+)
+ident(
+  def aenv1 "abs.ml" 152 4901 4903 "abs.ml" 153 4930 4993
+)
+"abs.ml" 152 4901 4903 "abs.ml" 152 4901 4915
+type(
+  ('a -> val_abs -> unit) -> ('a, val_abs) Hashtbl.t -> unit
+)
+ident(
+  int_ref Stdlib.Hashtbl.iter "hashtbl.mli" 120 5516 5516 "hashtbl.mli" 120 5516 5567
+)
+"abs.ml" 152 4901 4922 "abs.ml" 152 4901 4923
+type(
+  'a
+)
+ident(
+  def x "abs.ml" 152 4901 4924 "abs.ml" 153 4930 4986
+)
+"abs.ml" 152 4901 4924 "abs.ml" 152 4901 4926
+type(
+  val_abs
+)
+ident(
+  def a0 "abs.ml" 153 4930 4934 "abs.ml" 153 4930 4986
+)
+"abs.ml" 153 4930 4934 "abs.ml" 153 4930 4949
+type(
+  ('a, val_abs) Hashtbl.t -> 'a -> val_abs -> unit
+)
+ident(
+  int_ref Stdlib.Hashtbl.replace "hashtbl.mli" 113 5171 5171 "hashtbl.mli" 113 5171 5215
+)
+"abs.ml" 153 4930 4950 "abs.ml" 153 4930 4955
+type(
+  ('a, val_abs) Hashtbl.t
+)
+ident(
+  int_ref aenv0 "abs.ml" 151 4875 4887 "abs.ml" 151 4875 4892
+)
+"abs.ml" 153 4930 4956 "abs.ml" 153 4930 4957
+type(
+  'a
+)
+ident(
+  int_ref x "abs.ml" 152 4901 4922 "abs.ml" 152 4901 4923
+)
+"abs.ml" 153 4930 4959 "abs.ml" 153 4930 4967
+type(
+  val_abs -> val_abs -> val_abs
+)
+ident(
+  int_ref val_join "abs.ml" 109 3122 3126 "abs.ml" 109 3122 3134
+)
+"abs.ml" 153 4930 4968 "abs.ml" 153 4930 4970
+type(
+  val_abs
+)
+ident(
+  int_ref a0 "abs.ml" 152 4901 4924 "abs.ml" 152 4901 4926
+)
+"abs.ml" 153 4930 4972 "abs.ml" 153 4930 4976
+type(
+  'a -> ('a, val_abs) Hashtbl.t -> val_abs
+)
+ident(
+  int_ref read "abs.ml" 24 427 431 "abs.ml" 24 427 435
+)
+"abs.ml" 153 4930 4977 "abs.ml" 153 4930 4978
+type(
+  'a
+)
+ident(
+  int_ref x "abs.ml" 152 4901 4922 "abs.ml" 152 4901 4923
+)
+"abs.ml" 153 4930 4979 "abs.ml" 153 4930 4984
+type(
+  ('a, val_abs) Hashtbl.t
+)
+ident(
+  int_ref aenv1 "abs.ml" 151 4875 4893 "abs.ml" 151 4875 4898
+)
+"abs.ml" 153 4930 4971 "abs.ml" 153 4930 4985
+type(
+  val_abs
+)
+"abs.ml" 153 4930 4958 "abs.ml" 153 4930 4986
+type(
+  val_abs
+)
+"abs.ml" 153 4930 4934 "abs.ml" 153 4930 4986
+type(
+  unit
+)
+"abs.ml" 152 4901 4917 "abs.ml" 153 4930 4987
+type(
+  'a -> val_abs -> unit
+)
+"abs.ml" 153 4930 4988 "abs.ml" 153 4930 4993
+type(
+  ('a, val_abs) Hashtbl.t
+)
+ident(
+  int_ref aenv0 "abs.ml" 151 4875 4887 "abs.ml" 151 4875 4892
+)
+"abs.ml" 152 4901 4903 "abs.ml" 153 4930 4993
+type(
+  unit
+)
+"abs.ml" 155 4995 5003 "abs.ml" 155 4995 5010
+type(
+  Ast.expr -> (Ast.ident, val_abs) Hashtbl.t -> val_abs
+)
+ident(
+  def ai_expr "abs.ml" 155 4995 4995 "abs.ml" 0 0 -1
+)
+"abs.ml" 155 4995 5011 "abs.ml" 155 4995 5012
+type(
+  Ast.expr
+)
+ident(
+  def e "abs.ml" 155 4995 5013 "abs.ml" 160 5115 5168
+)
+"abs.ml" 155 4995 5013 "abs.ml" 155 4995 5017
+type(
+  (Ast.ident, val_abs) Hashtbl.t
+)
+ident(
+  def aenv "abs.ml" 156 5021 5023 "abs.ml" 160 5115 5168
+)
+"abs.ml" 156 5021 5029 "abs.ml" 156 5021 5030
+type(
+  Ast.expr
+)
+ident(
+  int_ref e "abs.ml" 155 4995 5011 "abs.ml" 155 4995 5012
+)
+"abs.ml" 157 5036 5045 "abs.ml" 157 5036 5046
+type(
+  Ast.const
+)
+ident(
+  def n "abs.ml" 157 5036 5050 "abs.ml" 157 5036 5059
+)
+"abs.ml" 157 5036 5040 "abs.ml" 157 5036 5046
+type(
+  Ast.expr
+)
+type(
+  Ast.expr
+)
+"abs.ml" 157 5036 5050 "abs.ml" 157 5036 5057
+type(
+  Ast.const -> val_abs
+)
+ident(
+  int_ref val_cst "abs.ml" 62 1060 1064 "abs.ml" 62 1060 1071
+)
+"abs.ml" 157 5036 5058 "abs.ml" 157 5036 5059
+type(
+  Ast.const
+)
+ident(
+  int_ref n "abs.ml" 157 5036 5045 "abs.ml" 157 5036 5046
+)
+"abs.ml" 157 5036 5050 "abs.ml" 157 5036 5059
+type(
+  val_abs
+)
+"abs.ml" 158 5061 5072 "abs.ml" 158 5061 5073
+type(
+  Ast.ident
+)
+ident(
+  def x "abs.ml" 158 5061 5077 "abs.ml" 158 5061 5088
+)
+"abs.ml" 158 5061 5065 "abs.ml" 158 5061 5073
+type(
+  Ast.expr
+)
+type(
+  Ast.expr
+)
+"abs.ml" 158 5061 5077 "abs.ml" 158 5061 5081
+type(
+  Ast.ident -> (Ast.ident, val_abs) Hashtbl.t -> val_abs
+)
+ident(
+  int_ref read "abs.ml" 24 427 431 "abs.ml" 24 427 435
+)
+"abs.ml" 158 5061 5082 "abs.ml" 158 5061 5083
+type(
+  Ast.ident
+)
+ident(
+  int_ref x "abs.ml" 158 5061 5072 "abs.ml" 158 5061 5073
+)
+"abs.ml" 158 5061 5084 "abs.ml" 158 5061 5088
+type(
+  (Ast.ident, val_abs) Hashtbl.t
+)
+ident(
+  int_ref aenv "abs.ml" 155 4995 5013 "abs.ml" 155 4995 5017
+)
+"abs.ml" 158 5061 5077 "abs.ml" 158 5061 5088
+type(
+  val_abs
+)
+"abs.ml" 159 5089 5101 "abs.ml" 159 5089 5102
+type(
+  Ast.baop
+)
+ident(
+  def o "abs.ml" 160 5115 5121 "abs.ml" 160 5115 5168
+)
+"abs.ml" 159 5089 5104 "abs.ml" 159 5089 5106
+type(
+  Ast.expr
+)
+ident(
+  def e0 "abs.ml" 160 5115 5121 "abs.ml" 160 5115 5168
+)
+"abs.ml" 159 5089 5108 "abs.ml" 159 5089 5110
+type(
+  Ast.expr
+)
+ident(
+  def e1 "abs.ml" 160 5115 5121 "abs.ml" 160 5115 5168
+)
+"abs.ml" 159 5089 5093 "abs.ml" 159 5089 5111
+type(
+  Ast.expr
+)
+type(
+  Ast.expr
+)
+"abs.ml" 160 5115 5121 "abs.ml" 160 5115 5130
+type(
+  Ast.baop -> val_abs -> val_abs -> val_abs
+)
+ident(
+  int_ref val_binop "abs.ml" 121 3752 3756 "abs.ml" 121 3752 3765
+)
+"abs.ml" 160 5115 5131 "abs.ml" 160 5115 5132
+type(
+  Ast.baop
+)
+ident(
+  int_ref o "abs.ml" 159 5089 5101 "abs.ml" 159 5089 5102
+)
+"abs.ml" 160 5115 5134 "abs.ml" 160 5115 5141
+type(
+  Ast.expr -> (Ast.ident, val_abs) Hashtbl.t -> val_abs
+)
+ident(
+  int_ref ai_expr "abs.ml" 155 4995 5003 "abs.ml" 155 4995 5010
+)
+"abs.ml" 160 5115 5142 "abs.ml" 160 5115 5144
+type(
+  Ast.expr
+)
+ident(
+  int_ref e0 "abs.ml" 159 5089 5104 "abs.ml" 159 5089 5106
+)
+"abs.ml" 160 5115 5145 "abs.ml" 160 5115 5149
+type(
+  (Ast.ident, val_abs) Hashtbl.t
+)
+ident(
+  int_ref aenv "abs.ml" 155 4995 5013 "abs.ml" 155 4995 5017
+)
+"abs.ml" 160 5115 5133 "abs.ml" 160 5115 5150
+type(
+  val_abs
+)
+"abs.ml" 160 5115 5152 "abs.ml" 160 5115 5159
+type(
+  Ast.expr -> (Ast.ident, val_abs) Hashtbl.t -> val_abs
+)
+ident(
+  int_ref ai_expr "abs.ml" 155 4995 5003 "abs.ml" 155 4995 5010
+)
+"abs.ml" 160 5115 5160 "abs.ml" 160 5115 5162
+type(
+  Ast.expr
+)
+ident(
+  int_ref e1 "abs.ml" 159 5089 5108 "abs.ml" 159 5089 5110
+)
+"abs.ml" 160 5115 5163 "abs.ml" 160 5115 5167
+type(
+  (Ast.ident, val_abs) Hashtbl.t
+)
+ident(
+  int_ref aenv "abs.ml" 155 4995 5013 "abs.ml" 155 4995 5017
+)
+"abs.ml" 160 5115 5151 "abs.ml" 160 5115 5168
+type(
+  val_abs
+)
+"abs.ml" 160 5115 5121 "abs.ml" 160 5115 5168
+type(
+  val_abs
+)
+"abs.ml" 156 5021 5023 "abs.ml" 160 5115 5168
+type(
+  val_abs
+)
+"abs.ml" 162 5170 5174 "abs.ml" 162 5170 5181
+type(
+  Ast.cond ->
+  (Ast.ident, val_abs) Hashtbl.t -> (Ast.ident, val_abs) Hashtbl.t
+)
+ident(
+  def ai_cond "abs.ml" 171 5509 5509 "abs.ml" 0 0 -1
+)
+"abs.ml" 162 5170 5182 "abs.ml" 162 5170 5186
+type(
+  Ast.cond
+)
+ident(
+  def cond "abs.ml" 162 5170 5187 "abs.ml" 169 5480 5505
+)
+"abs.ml" 162 5170 5187 "abs.ml" 162 5170 5191
+type(
+  (Ast.ident, val_abs) Hashtbl.t
+)
+ident(
+  def aenv "abs.ml" 163 5194 5196 "abs.ml" 169 5480 5505
+)
+"abs.ml" 163 5194 5202 "abs.ml" 163 5194 5206
+type(
+  Ast.cond
+)
+ident(
+  int_ref cond "abs.ml" 162 5170 5182 "abs.ml" 162 5170 5186
+)
+"abs.ml" 164 5212 5222 "abs.ml" 164 5212 5223
+type(
+  Ast.cmp
+)
+ident(
+  def c "abs.ml" 164 5212 5235 "abs.ml" 166 5334 5359
+)
+"abs.ml" 164 5212 5225 "abs.ml" 164 5212 5227
+type(
+  Ast.ident
+)
+ident(
+  def id "abs.ml" 164 5212 5235 "abs.ml" 166 5334 5359
+)
+"abs.ml" 164 5212 5228 "abs.ml" 164 5212 5229
+type(
+  Ast.expr
+)
+ident(
+  def e "abs.ml" 164 5212 5235 "abs.ml" 166 5334 5359
+)
+"abs.ml" 164 5212 5216 "abs.ml" 164 5212 5230
+type(
+  Ast.cond
+)
+type(
+  Ast.cond
+)
+"abs.ml" 164 5212 5239 "abs.ml" 164 5212 5241
+type(
+  val_abs
+)
+ident(
+  def av "abs.ml" 165 5297 5301 "abs.ml" 166 5334 5359
+)
+"abs.ml" 164 5212 5244 "abs.ml" 164 5212 5251
+type(
+  side -> Ast.cmp -> Ast.const -> val_abs -> val_abs
+)
+ident(
+  int_ref val_sat "abs.ml" 76 1405 1409 "abs.ml" 76 1405 1416
+)
+"abs.ml" 164 5212 5252 "abs.ml" 164 5212 5253
+type(
+  side
+)
+"abs.ml" 164 5212 5254 "abs.ml" 164 5212 5255
+type(
+  Ast.cmp
+)
+ident(
+  int_ref c "abs.ml" 164 5212 5222 "abs.ml" 164 5212 5223
+)
+"abs.ml" 164 5212 5257 "abs.ml" 164 5212 5265
+type(
+  Ast.expr -> (Ast.ident, Ast.const) Hashtbl.t -> Ast.const
+)
+ident(
+  int_ref sem_expr "abs.ml" 43 743 751 "abs.ml" 43 743 759
+)
+"abs.ml" 164 5212 5266 "abs.ml" 164 5212 5267
+type(
+  Ast.expr
+)
+ident(
+  int_ref e "abs.ml" 164 5212 5228 "abs.ml" 164 5212 5229
+)
+"abs.ml" 164 5212 5268 "abs.ml" 164 5212 5277
+type(
+  (Ast.ident, Ast.const) Hashtbl.t
+)
+ident(
+  int_ref aenv_conc "abs.ml" 22 391 395 "abs.ml" 22 391 404
+)
+"abs.ml" 164 5212 5256 "abs.ml" 164 5212 5278
+type(
+  Ast.const
+)
+"abs.ml" 164 5212 5280 "abs.ml" 164 5212 5284
+type(
+  Ast.ident -> (Ast.ident, val_abs) Hashtbl.t -> val_abs
+)
+ident(
+  int_ref read "abs.ml" 24 427 431 "abs.ml" 24 427 435
+)
+"abs.ml" 164 5212 5285 "abs.ml" 164 5212 5287
+type(
+  Ast.ident
+)
+ident(
+  int_ref id "abs.ml" 164 5212 5225 "abs.ml" 164 5212 5227
+)
+"abs.ml" 164 5212 5288 "abs.ml" 164 5212 5292
+type(
+  (Ast.ident, val_abs) Hashtbl.t
+)
+ident(
+  int_ref aenv "abs.ml" 162 5170 5187 "abs.ml" 162 5170 5191
+)
+"abs.ml" 164 5212 5279 "abs.ml" 164 5212 5293
+type(
+  val_abs
+)
+"abs.ml" 164 5212 5244 "abs.ml" 164 5212 5293
+type(
+  val_abs
+)
+"abs.ml" 165 5297 5304 "abs.ml" 165 5297 5306
+type(
+  val_abs
+)
+ident(
+  int_ref av "abs.ml" 164 5212 5239 "abs.ml" 164 5212 5241
+)
+"abs.ml" 165 5297 5307 "abs.ml" 165 5297 5308
+type(
+  val_abs -> val_abs -> bool
+)
+ident(
+  int_ref Stdlib.( = ) "stdlib.mli" 121 5051 5051 "stdlib.mli" 121 5051 5095
+)
+"abs.ml" 165 5297 5309 "abs.ml" 165 5297 5316
+type(
+  val_abs
+)
+ident(
+  int_ref val_bot "abs.ml" 60 1040 1044 "abs.ml" 60 1040 1051
+)
+"abs.ml" 165 5297 5304 "abs.ml" 165 5297 5316
+type(
+  bool
+)
+"abs.ml" 165 5297 5322 "abs.ml" 165 5297 5328
+type(
+  (Ast.ident, val_abs) Hashtbl.t -> (Ast.ident, val_abs) Hashtbl.t
+)
+ident(
+  int_ref nr_bot "abs.ml" 135 4525 4529 "abs.ml" 135 4525 4535
+)
+"abs.ml" 165 5297 5329 "abs.ml" 165 5297 5333
+type(
+  (Ast.ident, val_abs) Hashtbl.t
+)
+ident(
+  int_ref aenv "abs.ml" 162 5170 5187 "abs.ml" 162 5170 5191
+)
+"abs.ml" 165 5297 5322 "abs.ml" 165 5297 5333
+type(
+  (Ast.ident, val_abs) Hashtbl.t
+)
+"abs.ml" 166 5334 5343 "abs.ml" 166 5334 5348
+type(
+  Ast.ident ->
+  val_abs -> (Ast.ident, val_abs) Hashtbl.t -> (Ast.ident, val_abs) Hashtbl.t
+)
+ident(
+  int_ref write "abs.ml" 26 464 468 "abs.ml" 26 464 473
+)
+"abs.ml" 166 5334 5349 "abs.ml" 166 5334 5351
+type(
+  Ast.ident
+)
+ident(
+  int_ref id "abs.ml" 164 5212 5225 "abs.ml" 164 5212 5227
+)
+"abs.ml" 166 5334 5352 "abs.ml" 166 5334 5354
+type(
+  val_abs
+)
+ident(
+  int_ref av "abs.ml" 164 5212 5239 "abs.ml" 164 5212 5241
+)
+"abs.ml" 166 5334 5355 "abs.ml" 166 5334 5359
+type(
+  (Ast.ident, val_abs) Hashtbl.t
+)
+ident(
+  int_ref aenv "abs.ml" 162 5170 5187 "abs.ml" 162 5170 5191
+)
+"abs.ml" 166 5334 5343 "abs.ml" 166 5334 5359
+type(
+  (Ast.ident, val_abs) Hashtbl.t
+)
+"abs.ml" 165 5297 5301 "abs.ml" 166 5334 5359
+type(
+  (Ast.ident, val_abs) Hashtbl.t
+)
+"abs.ml" 164 5212 5235 "abs.ml" 166 5334 5359
+type(
+  (Ast.ident, val_abs) Hashtbl.t
+)
+"abs.ml" 167 5360 5370 "abs.ml" 167 5360 5371
+type(
+  Ast.cmp
+)
+ident(
+  def c "abs.ml" 167 5360 5381 "abs.ml" 169 5480 5505
+)
+"abs.ml" 167 5360 5372 "abs.ml" 167 5360 5373
+type(
+  Ast.expr
+)
+ident(
+  def e "abs.ml" 167 5360 5381 "abs.ml" 169 5480 5505
+)
+"abs.ml" 167 5360 5374 "abs.ml" 167 5360 5376
+type(
+  Ast.ident
+)
+ident(
+  def id "abs.ml" 167 5360 5381 "abs.ml" 169 5480 5505
+)
+"abs.ml" 167 5360 5364 "abs.ml" 167 5360 5377
+type(
+  Ast.cond
+)
+type(
+  Ast.cond
+)
+"abs.ml" 167 5360 5385 "abs.ml" 167 5360 5387
+type(
+  val_abs
+)
+ident(
+  def av "abs.ml" 168 5443 5447 "abs.ml" 169 5480 5505
+)
+"abs.ml" 167 5360 5390 "abs.ml" 167 5360 5397
+type(
+  side -> Ast.cmp -> Ast.const -> val_abs -> val_abs
+)
+ident(
+  int_ref val_sat "abs.ml" 76 1405 1409 "abs.ml" 76 1405 1416
+)
+"abs.ml" 167 5360 5398 "abs.ml" 167 5360 5399
+type(
+  side
+)
+"abs.ml" 167 5360 5400 "abs.ml" 167 5360 5401
+type(
+  Ast.cmp
+)
+ident(
+  int_ref c "abs.ml" 167 5360 5370 "abs.ml" 167 5360 5371
+)
+"abs.ml" 167 5360 5403 "abs.ml" 167 5360 5411
+type(
+  Ast.expr -> (Ast.ident, Ast.const) Hashtbl.t -> Ast.const
+)
+ident(
+  int_ref sem_expr "abs.ml" 43 743 751 "abs.ml" 43 743 759
+)
+"abs.ml" 167 5360 5412 "abs.ml" 167 5360 5413
+type(
+  Ast.expr
+)
+ident(
+  int_ref e "abs.ml" 167 5360 5372 "abs.ml" 167 5360 5373
+)
+"abs.ml" 167 5360 5414 "abs.ml" 167 5360 5423
+type(
+  (Ast.ident, Ast.const) Hashtbl.t
+)
+ident(
+  int_ref aenv_conc "abs.ml" 22 391 395 "abs.ml" 22 391 404
+)
+"abs.ml" 167 5360 5402 "abs.ml" 167 5360 5424
+type(
+  Ast.const
+)
+"abs.ml" 167 5360 5426 "abs.ml" 167 5360 5430
+type(
+  Ast.ident -> (Ast.ident, val_abs) Hashtbl.t -> val_abs
+)
+ident(
+  int_ref read "abs.ml" 24 427 431 "abs.ml" 24 427 435
+)
+"abs.ml" 167 5360 5431 "abs.ml" 167 5360 5433
+type(
+  Ast.ident
+)
+ident(
+  int_ref id "abs.ml" 167 5360 5374 "abs.ml" 167 5360 5376
+)
+"abs.ml" 167 5360 5434 "abs.ml" 167 5360 5438
+type(
+  (Ast.ident, val_abs) Hashtbl.t
+)
+ident(
+  int_ref aenv "abs.ml" 162 5170 5187 "abs.ml" 162 5170 5191
+)
+"abs.ml" 167 5360 5425 "abs.ml" 167 5360 5439
+type(
+  val_abs
+)
+"abs.ml" 167 5360 5390 "abs.ml" 167 5360 5439
+type(
+  val_abs
+)
+"abs.ml" 168 5443 5450 "abs.ml" 168 5443 5452
+type(
+  val_abs
+)
+ident(
+  int_ref av "abs.ml" 167 5360 5385 "abs.ml" 167 5360 5387
+)
+"abs.ml" 168 5443 5453 "abs.ml" 168 5443 5454
+type(
+  val_abs -> val_abs -> bool
+)
+ident(
+  int_ref Stdlib.( = ) "stdlib.mli" 121 5051 5051 "stdlib.mli" 121 5051 5095
+)
+"abs.ml" 168 5443 5455 "abs.ml" 168 5443 5462
+type(
+  val_abs
+)
+ident(
+  int_ref val_bot "abs.ml" 60 1040 1044 "abs.ml" 60 1040 1051
+)
+"abs.ml" 168 5443 5450 "abs.ml" 168 5443 5462
+type(
+  bool
+)
+"abs.ml" 168 5443 5468 "abs.ml" 168 5443 5474
+type(
+  (Ast.ident, val_abs) Hashtbl.t -> (Ast.ident, val_abs) Hashtbl.t
+)
+ident(
+  int_ref nr_bot "abs.ml" 135 4525 4529 "abs.ml" 135 4525 4535
+)
+"abs.ml" 168 5443 5475 "abs.ml" 168 5443 5479
+type(
+  (Ast.ident, val_abs) Hashtbl.t
+)
+ident(
+  int_ref aenv "abs.ml" 162 5170 5187 "abs.ml" 162 5170 5191
+)
+"abs.ml" 168 5443 5468 "abs.ml" 168 5443 5479
+type(
+  (Ast.ident, val_abs) Hashtbl.t
+)
+"abs.ml" 169 5480 5489 "abs.ml" 169 5480 5494
+type(
+  Ast.ident ->
+  val_abs -> (Ast.ident, val_abs) Hashtbl.t -> (Ast.ident, val_abs) Hashtbl.t
+)
+ident(
+  int_ref write "abs.ml" 26 464 468 "abs.ml" 26 464 473
+)
+"abs.ml" 169 5480 5495 "abs.ml" 169 5480 5497
+type(
+  Ast.ident
+)
+ident(
+  int_ref id "abs.ml" 167 5360 5374 "abs.ml" 167 5360 5376
+)
+"abs.ml" 169 5480 5498 "abs.ml" 169 5480 5500
+type(
+  val_abs
+)
+ident(
+  int_ref av "abs.ml" 167 5360 5385 "abs.ml" 167 5360 5387
+)
+"abs.ml" 169 5480 5501 "abs.ml" 169 5480 5505
+type(
+  (Ast.ident, val_abs) Hashtbl.t
+)
+ident(
+  int_ref aenv "abs.ml" 162 5170 5187 "abs.ml" 162 5170 5191
+)
+"abs.ml" 169 5480 5489 "abs.ml" 169 5480 5505
+type(
+  (Ast.ident, val_abs) Hashtbl.t
+)
+"abs.ml" 168 5443 5447 "abs.ml" 169 5480 5505
+type(
+  (Ast.ident, val_abs) Hashtbl.t
+)
+"abs.ml" 167 5360 5381 "abs.ml" 169 5480 5505
+type(
+  (Ast.ident, val_abs) Hashtbl.t
+)
+"abs.ml" 163 5194 5196 "abs.ml" 169 5480 5505
+type(
+  (Ast.ident, val_abs) Hashtbl.t
+)
+"abs.ml" 171 5509 5513 "abs.ml" 171 5509 5517
+type(
+  Ast.cond -> Ast.cond
+)
+ident(
+  def cneg "abs.ml" 187 6041 6041 "abs.ml" 0 0 -1
+)
+"abs.ml" 171 5509 5518 "abs.ml" 171 5509 5522
+type(
+  Ast.cond
+)
+ident(
+  def cond "abs.ml" 172 5526 5528 "abs.ml" 185 5999 6039
+)
+"abs.ml" 172 5526 5534 "abs.ml" 172 5526 5538
+type(
+  Ast.cond
+)
+ident(
+  int_ref cond "abs.ml" 171 5509 5518 "abs.ml" 171 5509 5522
+)
+"abs.ml" 173 5544 5554 "abs.ml" 173 5544 5557
+type(
+  Ast.cmp
+)
+"abs.ml" 173 5544 5559 "abs.ml" 173 5544 5561
+type(
+  Ast.ident
+)
+ident(
+  def id "abs.ml" 173 5544 5568 "abs.ml" 173 5544 5585
+)
+"abs.ml" 173 5544 5562 "abs.ml" 173 5544 5563
+type(
+  Ast.expr
+)
+ident(
+  def e "abs.ml" 173 5544 5568 "abs.ml" 173 5544 5585
+)
+"abs.ml" 173 5544 5548 "abs.ml" 173 5544 5564
+type(
+  Ast.cond
+)
+type(
+  Ast.cond
+)
+"abs.ml" 173 5544 5574 "abs.ml" 173 5544 5578
+type(
+  Ast.cmp
+)
+"abs.ml" 173 5544 5580 "abs.ml" 173 5544 5582
+type(
+  Ast.ident
+)
+ident(
+  int_ref id "abs.ml" 173 5544 5559 "abs.ml" 173 5544 5561
+)
+"abs.ml" 173 5544 5583 "abs.ml" 173 5544 5584
+type(
+  Ast.expr
+)
+ident(
+  int_ref e "abs.ml" 173 5544 5562 "abs.ml" 173 5544 5563
+)
+"abs.ml" 173 5544 5568 "abs.ml" 173 5544 5585
+type(
+  Ast.cond
+)
+"abs.ml" 174 5586 5596 "abs.ml" 174 5586 5600
+type(
+  Ast.cmp
+)
+"abs.ml" 174 5586 5602 "abs.ml" 174 5586 5604
+type(
+  Ast.ident
+)
+ident(
+  def id "abs.ml" 174 5586 5611 "abs.ml" 174 5586 5627
+)
+"abs.ml" 174 5586 5605 "abs.ml" 174 5586 5606
+type(
+  Ast.expr
+)
+ident(
+  def e "abs.ml" 174 5586 5611 "abs.ml" 174 5586 5627
+)
+"abs.ml" 174 5586 5590 "abs.ml" 174 5586 5607
+type(
+  Ast.cond
+)
+type(
+  Ast.cond
+)
+"abs.ml" 174 5586 5617 "abs.ml" 174 5586 5620
+type(
+  Ast.cmp
+)
+"abs.ml" 174 5586 5622 "abs.ml" 174 5586 5624
+type(
+  Ast.ident
+)
+ident(
+  int_ref id "abs.ml" 174 5586 5602 "abs.ml" 174 5586 5604
+)
+"abs.ml" 174 5586 5625 "abs.ml" 174 5586 5626
+type(
+  Ast.expr
+)
+ident(
+  int_ref e "abs.ml" 174 5586 5605 "abs.ml" 174 5586 5606
+)
+"abs.ml" 174 5586 5611 "abs.ml" 174 5586 5627
+type(
+  Ast.cond
+)
+"abs.ml" 175 5628 5638 "abs.ml" 175 5628 5641
+type(
+  Ast.cmp
+)
+"abs.ml" 175 5628 5643 "abs.ml" 175 5628 5645
+type(
+  Ast.ident
+)
+ident(
+  def id "abs.ml" 175 5628 5652 "abs.ml" 175 5628 5668
+)
+"abs.ml" 175 5628 5646 "abs.ml" 175 5628 5647
+type(
+  Ast.expr
+)
+ident(
+  def e "abs.ml" 175 5628 5652 "abs.ml" 175 5628 5668
+)
+"abs.ml" 175 5628 5632 "abs.ml" 175 5628 5648
+type(
+  Ast.cond
+)
+type(
+  Ast.cond
+)
+"abs.ml" 175 5628 5658 "abs.ml" 175 5628 5661
+type(
+  Ast.cmp
+)
+"abs.ml" 175 5628 5663 "abs.ml" 175 5628 5665
+type(
+  Ast.ident
+)
+ident(
+  int_ref id "abs.ml" 175 5628 5643 "abs.ml" 175 5628 5645
+)
+"abs.ml" 175 5628 5666 "abs.ml" 175 5628 5667
+type(
+  Ast.expr
+)
+ident(
+  int_ref e "abs.ml" 175 5628 5646 "abs.ml" 175 5628 5647
+)
+"abs.ml" 175 5628 5652 "abs.ml" 175 5628 5668
+type(
+  Ast.cond
+)
+"abs.ml" 176 5669 5679 "abs.ml" 176 5669 5682
+type(
+  Ast.cmp
+)
+"abs.ml" 176 5669 5684 "abs.ml" 176 5669 5686
+type(
+  Ast.ident
+)
+ident(
+  def id "abs.ml" 176 5669 5693 "abs.ml" 176 5669 5709
+)
+"abs.ml" 176 5669 5687 "abs.ml" 176 5669 5688
+type(
+  Ast.expr
+)
+ident(
+  def e "abs.ml" 176 5669 5693 "abs.ml" 176 5669 5709
+)
+"abs.ml" 176 5669 5673 "abs.ml" 176 5669 5689
+type(
+  Ast.cond
+)
+type(
+  Ast.cond
+)
+"abs.ml" 176 5669 5699 "abs.ml" 176 5669 5702
+type(
+  Ast.cmp
+)
+"abs.ml" 176 5669 5704 "abs.ml" 176 5669 5706
+type(
+  Ast.ident
+)
+ident(
+  int_ref id "abs.ml" 176 5669 5684 "abs.ml" 176 5669 5686
+)
+"abs.ml" 176 5669 5707 "abs.ml" 176 5669 5708
+type(
+  Ast.expr
+)
+ident(
+  int_ref e "abs.ml" 176 5669 5687 "abs.ml" 176 5669 5688
+)
+"abs.ml" 176 5669 5693 "abs.ml" 176 5669 5709
+type(
+  Ast.cond
+)
+"abs.ml" 177 5710 5720 "abs.ml" 177 5710 5723
+type(
+  Ast.cmp
+)
+"abs.ml" 177 5710 5725 "abs.ml" 177 5710 5727
+type(
+  Ast.ident
+)
+ident(
+  def id "abs.ml" 177 5710 5734 "abs.ml" 177 5710 5750
+)
+"abs.ml" 177 5710 5728 "abs.ml" 177 5710 5729
+type(
+  Ast.expr
+)
+ident(
+  def e "abs.ml" 177 5710 5734 "abs.ml" 177 5710 5750
+)
+"abs.ml" 177 5710 5714 "abs.ml" 177 5710 5730
+type(
+  Ast.cond
+)
+type(
+  Ast.cond
+)
+"abs.ml" 177 5710 5740 "abs.ml" 177 5710 5743
+type(
+  Ast.cmp
+)
+"abs.ml" 177 5710 5745 "abs.ml" 177 5710 5747
+type(
+  Ast.ident
+)
+ident(
+  int_ref id "abs.ml" 177 5710 5725 "abs.ml" 177 5710 5727
+)
+"abs.ml" 177 5710 5748 "abs.ml" 177 5710 5749
+type(
+  Ast.expr
+)
+ident(
+  int_ref e "abs.ml" 177 5710 5728 "abs.ml" 177 5710 5729
+)
+"abs.ml" 177 5710 5734 "abs.ml" 177 5710 5750
+type(
+  Ast.cond
+)
+"abs.ml" 178 5751 5761 "abs.ml" 178 5751 5764
+type(
+  Ast.cmp
+)
+"abs.ml" 178 5751 5766 "abs.ml" 178 5751 5768
+type(
+  Ast.ident
+)
+ident(
+  def id "abs.ml" 178 5751 5775 "abs.ml" 178 5751 5791
+)
+"abs.ml" 178 5751 5769 "abs.ml" 178 5751 5770
+type(
+  Ast.expr
+)
+ident(
+  def e "abs.ml" 178 5751 5775 "abs.ml" 178 5751 5791
+)
+"abs.ml" 178 5751 5755 "abs.ml" 178 5751 5771
+type(
+  Ast.cond
+)
+type(
+  Ast.cond
+)
+"abs.ml" 178 5751 5781 "abs.ml" 178 5751 5784
+type(
+  Ast.cmp
+)
+"abs.ml" 178 5751 5786 "abs.ml" 178 5751 5788
+type(
+  Ast.ident
+)
+ident(
+  int_ref id "abs.ml" 178 5751 5766 "abs.ml" 178 5751 5768
+)
+"abs.ml" 178 5751 5789 "abs.ml" 178 5751 5790
+type(
+  Ast.expr
+)
+ident(
+  int_ref e "abs.ml" 178 5751 5769 "abs.ml" 178 5751 5770
+)
+"abs.ml" 178 5751 5775 "abs.ml" 178 5751 5791
+type(
+  Ast.cond
+)
+"abs.ml" 180 5793 5803 "abs.ml" 180 5793 5806
+type(
+  Ast.cmp
+)
+"abs.ml" 180 5793 5808 "abs.ml" 180 5793 5810
+type(
+  Ast.expr
+)
+ident(
+  def id "abs.ml" 180 5793 5817 "abs.ml" 180 5793 5834
+)
+"abs.ml" 180 5793 5811 "abs.ml" 180 5793 5812
+type(
+  Ast.ident
+)
+ident(
+  def e "abs.ml" 180 5793 5817 "abs.ml" 180 5793 5834
+)
+"abs.ml" 180 5793 5797 "abs.ml" 180 5793 5813
+type(
+  Ast.cond
+)
+type(
+  Ast.cond
+)
+"abs.ml" 180 5793 5823 "abs.ml" 180 5793 5827
+type(
+  Ast.cmp
+)
+"abs.ml" 180 5793 5829 "abs.ml" 180 5793 5831
+type(
+  Ast.expr
+)
+ident(
+  int_ref id "abs.ml" 180 5793 5808 "abs.ml" 180 5793 5810
+)
+"abs.ml" 180 5793 5832 "abs.ml" 180 5793 5833
+type(
+  Ast.ident
+)
+ident(
+  int_ref e "abs.ml" 180 5793 5811 "abs.ml" 180 5793 5812
+)
+"abs.ml" 180 5793 5817 "abs.ml" 180 5793 5834
+type(
+  Ast.cond
+)
+"abs.ml" 181 5835 5845 "abs.ml" 181 5835 5849
+type(
+  Ast.cmp
+)
+"abs.ml" 181 5835 5851 "abs.ml" 181 5835 5853
+type(
+  Ast.expr
+)
+ident(
+  def id "abs.ml" 181 5835 5859 "abs.ml" 181 5835 5875
+)
+"abs.ml" 181 5835 5854 "abs.ml" 181 5835 5855
+type(
+  Ast.ident
+)
+ident(
+  def e "abs.ml" 181 5835 5859 "abs.ml" 181 5835 5875
+)
+"abs.ml" 181 5835 5839 "abs.ml" 181 5835 5856
+type(
+  Ast.cond
+)
+type(
+  Ast.cond
+)
+"abs.ml" 181 5835 5865 "abs.ml" 181 5835 5868
+type(
+  Ast.cmp
+)
+"abs.ml" 181 5835 5870 "abs.ml" 181 5835 5872
+type(
+  Ast.expr
+)
+ident(
+  int_ref id "abs.ml" 181 5835 5851 "abs.ml" 181 5835 5853
+)
+"abs.ml" 181 5835 5873 "abs.ml" 181 5835 5874
+type(
+  Ast.ident
+)
+ident(
+  int_ref e "abs.ml" 181 5835 5854 "abs.ml" 181 5835 5855
+)
+"abs.ml" 181 5835 5859 "abs.ml" 181 5835 5875
+type(
+  Ast.cond
+)
+"abs.ml" 182 5876 5886 "abs.ml" 182 5876 5889
+type(
+  Ast.cmp
+)
+"abs.ml" 182 5876 5891 "abs.ml" 182 5876 5893
+type(
+  Ast.expr
+)
+ident(
+  def id "abs.ml" 182 5876 5900 "abs.ml" 182 5876 5916
+)
+"abs.ml" 182 5876 5894 "abs.ml" 182 5876 5895
+type(
+  Ast.ident
+)
+ident(
+  def e "abs.ml" 182 5876 5900 "abs.ml" 182 5876 5916
+)
+"abs.ml" 182 5876 5880 "abs.ml" 182 5876 5896
+type(
+  Ast.cond
+)
+type(
+  Ast.cond
+)
+"abs.ml" 182 5876 5906 "abs.ml" 182 5876 5909
+type(
+  Ast.cmp
+)
+"abs.ml" 182 5876 5911 "abs.ml" 182 5876 5913
+type(
+  Ast.expr
+)
+ident(
+  int_ref id "abs.ml" 182 5876 5891 "abs.ml" 182 5876 5893
+)
+"abs.ml" 182 5876 5914 "abs.ml" 182 5876 5915
+type(
+  Ast.ident
+)
+ident(
+  int_ref e "abs.ml" 182 5876 5894 "abs.ml" 182 5876 5895
+)
+"abs.ml" 182 5876 5900 "abs.ml" 182 5876 5916
+type(
+  Ast.cond
+)
+"abs.ml" 183 5917 5927 "abs.ml" 183 5917 5930
+type(
+  Ast.cmp
+)
+"abs.ml" 183 5917 5932 "abs.ml" 183 5917 5934
+type(
+  Ast.expr
+)
+ident(
+  def id "abs.ml" 183 5917 5941 "abs.ml" 183 5917 5957
+)
+"abs.ml" 183 5917 5935 "abs.ml" 183 5917 5936
+type(
+  Ast.ident
+)
+ident(
+  def e "abs.ml" 183 5917 5941 "abs.ml" 183 5917 5957
+)
+"abs.ml" 183 5917 5921 "abs.ml" 183 5917 5937
+type(
+  Ast.cond
+)
+type(
+  Ast.cond
+)
+"abs.ml" 183 5917 5947 "abs.ml" 183 5917 5950
+type(
+  Ast.cmp
+)
+"abs.ml" 183 5917 5952 "abs.ml" 183 5917 5954
+type(
+  Ast.expr
+)
+ident(
+  int_ref id "abs.ml" 183 5917 5932 "abs.ml" 183 5917 5934
+)
+"abs.ml" 183 5917 5955 "abs.ml" 183 5917 5956
+type(
+  Ast.ident
+)
+ident(
+  int_ref e "abs.ml" 183 5917 5935 "abs.ml" 183 5917 5936
+)
+"abs.ml" 183 5917 5941 "abs.ml" 183 5917 5957
+type(
+  Ast.cond
+)
+"abs.ml" 184 5958 5968 "abs.ml" 184 5958 5971
+type(
+  Ast.cmp
+)
+"abs.ml" 184 5958 5973 "abs.ml" 184 5958 5975
+type(
+  Ast.expr
+)
+ident(
+  def id "abs.ml" 184 5958 5982 "abs.ml" 184 5958 5998
+)
+"abs.ml" 184 5958 5976 "abs.ml" 184 5958 5977
+type(
+  Ast.ident
+)
+ident(
+  def e "abs.ml" 184 5958 5982 "abs.ml" 184 5958 5998
+)
+"abs.ml" 184 5958 5962 "abs.ml" 184 5958 5978
+type(
+  Ast.cond
+)
+type(
+  Ast.cond
+)
+"abs.ml" 184 5958 5988 "abs.ml" 184 5958 5991
+type(
+  Ast.cmp
+)
+"abs.ml" 184 5958 5993 "abs.ml" 184 5958 5995
+type(
+  Ast.expr
+)
+ident(
+  int_ref id "abs.ml" 184 5958 5973 "abs.ml" 184 5958 5975
+)
+"abs.ml" 184 5958 5996 "abs.ml" 184 5958 5997
+type(
+  Ast.ident
+)
+ident(
+  int_ref e "abs.ml" 184 5958 5976 "abs.ml" 184 5958 5977
+)
+"abs.ml" 184 5958 5982 "abs.ml" 184 5958 5998
+type(
+  Ast.cond
+)
+"abs.ml" 185 5999 6009 "abs.ml" 185 5999 6012
+type(
+  Ast.cmp
+)
+"abs.ml" 185 5999 6014 "abs.ml" 185 5999 6016
+type(
+  Ast.expr
+)
+ident(
+  def id "abs.ml" 185 5999 6023 "abs.ml" 185 5999 6039
+)
+"abs.ml" 185 5999 6017 "abs.ml" 185 5999 6018
+type(
+  Ast.ident
+)
+ident(
+  def e "abs.ml" 185 5999 6023 "abs.ml" 185 5999 6039
+)
+"abs.ml" 185 5999 6003 "abs.ml" 185 5999 6019
+type(
+  Ast.cond
+)
+type(
+  Ast.cond
+)
+"abs.ml" 185 5999 6029 "abs.ml" 185 5999 6032
+type(
+  Ast.cmp
+)
+"abs.ml" 185 5999 6034 "abs.ml" 185 5999 6036
+type(
+  Ast.expr
+)
+ident(
+  int_ref id "abs.ml" 185 5999 6014 "abs.ml" 185 5999 6016
+)
+"abs.ml" 185 5999 6037 "abs.ml" 185 5999 6038
+type(
+  Ast.ident
+)
+ident(
+  int_ref e "abs.ml" 185 5999 6017 "abs.ml" 185 5999 6018
+)
+"abs.ml" 185 5999 6023 "abs.ml" 185 5999 6039
+type(
+  Ast.cond
+)
+"abs.ml" 172 5526 5528 "abs.ml" 185 5999 6039
+type(
+  Ast.cond
+)
+"abs.ml" 187 6041 6045 "abs.ml" 187 6041 6053
+type(
+  val_abs -> val_abs -> val_abs
+)
+ident(
+  def widening "abs.ml" 203 6830 6832 "abs.ml" 0 0 -1
+)
+"abs.ml" 187 6041 6054 "abs.ml" 187 6041 6056
+type(
+  val_abs
+)
+ident(
+  def a0 "abs.ml" 187 6041 6057 "abs.ml" 201 6760 6826
+)
+"abs.ml" 187 6041 6057 "abs.ml" 187 6041 6059
+type(
+  val_abs
+)
+ident(
+  def a1 "abs.ml" 188 6063 6065 "abs.ml" 201 6760 6826
+)
+"abs.ml" 188 6063 6071 "abs.ml" 188 6063 6073
+type(
+  val_abs
+)
+ident(
+  int_ref a0 "abs.ml" 187 6041 6054 "abs.ml" 187 6041 6056
+)
+"abs.ml" 188 6063 6074 "abs.ml" 188 6063 6076
+type(
+  val_abs
+)
+ident(
+  int_ref a1 "abs.ml" 187 6041 6057 "abs.ml" 187 6041 6059
+)
+"abs.ml" 188 6063 6071 "abs.ml" 188 6063 6076
+type(
+  val_abs * val_abs
+)
+"abs.ml" 189 6082 6094 "abs.ml" 189 6082 6096
+type(
+  int
+)
+ident(
+  def x1 "abs.ml" 190 6120 6124 "abs.ml" 193 6253 6272
+)
+"abs.ml" 189 6082 6097 "abs.ml" 189 6082 6099
+type(
+  int
+)
+ident(
+  def x2 "abs.ml" 190 6120 6124 "abs.ml" 193 6253 6272
+)
+"abs.ml" 189 6082 6086 "abs.ml" 189 6082 6100
+type(
+  val_abs
+)
+"abs.ml" 189 6082 6108 "abs.ml" 189 6082 6110
+type(
+  int
+)
+ident(
+  def y1 "abs.ml" 190 6120 6124 "abs.ml" 193 6253 6272
+)
+"abs.ml" 189 6082 6111 "abs.ml" 189 6082 6113
+type(
+  int
+)
+ident(
+  def y2 "abs.ml" 190 6120 6124 "abs.ml" 193 6253 6272
+)
+"abs.ml" 189 6082 6101 "abs.ml" 189 6082 6114
+type(
+  val_abs
+)
+"abs.ml" 189 6082 6086 "abs.ml" 189 6082 6114
+type(
+  val_abs * val_abs
+)
+type(
+  val_abs * val_abs
+)
+"abs.ml" 190 6120 6128 "abs.ml" 190 6120 6130
+type(
+  int
+)
+ident(
+  int_ref x1 "abs.ml" 189 6082 6094 "abs.ml" 189 6082 6096
+)
+"abs.ml" 190 6120 6130 "abs.ml" 190 6120 6132
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( <= ) "stdlib.mli" 145 6033 6033 "stdlib.mli" 145 6033 6082
+)
+"abs.ml" 190 6120 6132 "abs.ml" 190 6120 6134
+type(
+  int
+)
+ident(
+  int_ref y1 "abs.ml" 189 6082 6108 "abs.ml" 189 6082 6110
+)
+"abs.ml" 190 6120 6128 "abs.ml" 190 6120 6134
+type(
+  bool
+)
+"abs.ml" 190 6120 6135 "abs.ml" 190 6120 6137
+type(
+  bool -> bool -> bool
+)
+ident(
+  int_ref Stdlib.( && ) "stdlib.mli" 214 8960 8960 "stdlib.mli" 214 8960 9011
+)
+"abs.ml" 190 6120 6138 "abs.ml" 190 6120 6140
+type(
+  int
+)
+ident(
+  int_ref x2 "abs.ml" 189 6082 6097 "abs.ml" 189 6082 6099
+)
+"abs.ml" 190 6120 6140 "abs.ml" 190 6120 6142
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( >= ) "stdlib.mli" 150 6190 6190 "stdlib.mli" 150 6190 6242
+)
+"abs.ml" 190 6120 6142 "abs.ml" 190 6120 6144
+type(
+  int
+)
+ident(
+  int_ref y2 "abs.ml" 189 6082 6111 "abs.ml" 189 6082 6113
+)
+"abs.ml" 190 6120 6138 "abs.ml" 190 6120 6144
+type(
+  bool
+)
+"abs.ml" 190 6120 6128 "abs.ml" 190 6120 6144
+type(
+  bool
+)
+"abs.ml" 190 6120 6157 "abs.ml" 190 6120 6159
+type(
+  int
+)
+ident(
+  int_ref x1 "abs.ml" 189 6082 6094 "abs.ml" 189 6082 6096
+)
+"abs.ml" 190 6120 6160 "abs.ml" 190 6120 6162
+type(
+  int
+)
+ident(
+  int_ref x2 "abs.ml" 189 6082 6097 "abs.ml" 189 6082 6099
+)
+"abs.ml" 190 6120 6150 "abs.ml" 190 6120 6163
+type(
+  val_abs
+)
+"abs.ml" 191 6164 6176 "abs.ml" 191 6164 6178
+type(
+  int
+)
+ident(
+  int_ref x1 "abs.ml" 189 6082 6094 "abs.ml" 189 6082 6096
+)
+"abs.ml" 191 6164 6178 "abs.ml" 191 6164 6180
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( <= ) "stdlib.mli" 145 6033 6033 "stdlib.mli" 145 6033 6082
+)
+"abs.ml" 191 6164 6180 "abs.ml" 191 6164 6182
+type(
+  int
+)
+ident(
+  int_ref y1 "abs.ml" 189 6082 6108 "abs.ml" 189 6082 6110
+)
+"abs.ml" 191 6164 6176 "abs.ml" 191 6164 6182
+type(
+  bool
+)
+"abs.ml" 191 6164 6183 "abs.ml" 191 6164 6185
+type(
+  bool -> bool -> bool
+)
+ident(
+  int_ref Stdlib.( && ) "stdlib.mli" 214 8960 8960 "stdlib.mli" 214 8960 9011
+)
+"abs.ml" 191 6164 6186 "abs.ml" 191 6164 6188
+type(
+  int
+)
+ident(
+  int_ref x2 "abs.ml" 189 6082 6097 "abs.ml" 189 6082 6099
+)
+"abs.ml" 191 6164 6188 "abs.ml" 191 6164 6189
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( < ) "stdlib.mli" 135 5721 5721 "stdlib.mli" 135 5721 5768
+)
+"abs.ml" 191 6164 6189 "abs.ml" 191 6164 6191
+type(
+  int
+)
+ident(
+  int_ref y2 "abs.ml" 189 6082 6111 "abs.ml" 189 6082 6113
+)
+"abs.ml" 191 6164 6186 "abs.ml" 191 6164 6191
+type(
+  bool
+)
+"abs.ml" 191 6164 6176 "abs.ml" 191 6164 6191
+type(
+  bool
+)
+"abs.ml" 191 6164 6205 "abs.ml" 191 6164 6207
+type(
+  int
+)
+ident(
+  int_ref x1 "abs.ml" 189 6082 6094 "abs.ml" 189 6082 6096
+)
+"abs.ml" 191 6164 6197 "abs.ml" 191 6164 6207
+type(
+  val_abs
+)
+"abs.ml" 192 6208 6220 "abs.ml" 192 6208 6222
+type(
+  int
+)
+ident(
+  int_ref x1 "abs.ml" 189 6082 6094 "abs.ml" 189 6082 6096
+)
+"abs.ml" 192 6208 6222 "abs.ml" 192 6208 6223
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( < ) "stdlib.mli" 135 5721 5721 "stdlib.mli" 135 5721 5768
+)
+"abs.ml" 192 6208 6223 "abs.ml" 192 6208 6225
+type(
+  int
+)
+ident(
+  int_ref y1 "abs.ml" 189 6082 6108 "abs.ml" 189 6082 6110
+)
+"abs.ml" 192 6208 6220 "abs.ml" 192 6208 6225
+type(
+  bool
+)
+"abs.ml" 192 6208 6226 "abs.ml" 192 6208 6228
+type(
+  bool -> bool -> bool
+)
+ident(
+  int_ref Stdlib.( && ) "stdlib.mli" 214 8960 8960 "stdlib.mli" 214 8960 9011
+)
+"abs.ml" 192 6208 6229 "abs.ml" 192 6208 6231
+type(
+  int
+)
+ident(
+  int_ref x2 "abs.ml" 189 6082 6097 "abs.ml" 189 6082 6099
+)
+"abs.ml" 192 6208 6231 "abs.ml" 192 6208 6233
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( >= ) "stdlib.mli" 150 6190 6190 "stdlib.mli" 150 6190 6242
+)
+"abs.ml" 192 6208 6233 "abs.ml" 192 6208 6235
+type(
+  int
+)
+ident(
+  int_ref y2 "abs.ml" 189 6082 6111 "abs.ml" 189 6082 6113
+)
+"abs.ml" 192 6208 6229 "abs.ml" 192 6208 6235
+type(
+  bool
+)
+"abs.ml" 192 6208 6220 "abs.ml" 192 6208 6235
+type(
+  bool
+)
+"abs.ml" 192 6208 6250 "abs.ml" 192 6208 6252
+type(
+  int
+)
+ident(
+  int_ref x2 "abs.ml" 189 6082 6097 "abs.ml" 189 6082 6099
+)
+"abs.ml" 192 6208 6242 "abs.ml" 192 6208 6252
+type(
+  val_abs
+)
+"abs.ml" 193 6253 6262 "abs.ml" 193 6253 6272
+type(
+  val_abs
+)
+"abs.ml" 192 6208 6217 "abs.ml" 193 6253 6272
+type(
+  val_abs
+)
+"abs.ml" 191 6164 6173 "abs.ml" 193 6253 6272
+type(
+  val_abs
+)
+"abs.ml" 190 6120 6124 "abs.ml" 193 6253 6272
+type(
+  val_abs
+)
+"abs.ml" 194 6273 6285 "abs.ml" 194 6273 6287
+type(
+  int
+)
+ident(
+  def x1 "abs.ml" 194 6273 6308 "abs.ml" 194 6273 6347
+)
+"abs.ml" 194 6273 6289 "abs.ml" 194 6273 6291
+type(
+  int
+)
+ident(
+  def x2 "abs.ml" 194 6273 6308 "abs.ml" 194 6273 6347
+)
+"abs.ml" 194 6273 6277 "abs.ml" 194 6273 6292
+type(
+  val_abs
+)
+"abs.ml" 194 6273 6303 "abs.ml" 194 6273 6304
+type(
+  int
+)
+ident(
+  def y "abs.ml" 194 6273 6308 "abs.ml" 194 6273 6347
+)
+"abs.ml" 194 6273 6295 "abs.ml" 194 6273 6304
+type(
+  val_abs
+)
+"abs.ml" 194 6273 6277 "abs.ml" 194 6273 6304
+type(
+  val_abs * val_abs
+)
+type(
+  val_abs * val_abs
+)
+"abs.ml" 194 6273 6311 "abs.ml" 194 6273 6312
+type(
+  int
+)
+ident(
+  int_ref y "abs.ml" 194 6273 6303 "abs.ml" 194 6273 6304
+)
+"abs.ml" 194 6273 6312 "abs.ml" 194 6273 6313
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( > ) "stdlib.mli" 140 5875 5875 "stdlib.mli" 140 5875 5925
+)
+"abs.ml" 194 6273 6313 "abs.ml" 194 6273 6315
+type(
+  int
+)
+ident(
+  int_ref x1 "abs.ml" 194 6273 6285 "abs.ml" 194 6273 6287
+)
+"abs.ml" 194 6273 6311 "abs.ml" 194 6273 6315
+type(
+  bool
+)
+"abs.ml" 194 6273 6329 "abs.ml" 194 6273 6331
+type(
+  int
+)
+ident(
+  int_ref x1 "abs.ml" 194 6273 6285 "abs.ml" 194 6273 6287
+)
+"abs.ml" 194 6273 6321 "abs.ml" 194 6273 6331
+type(
+  val_abs
+)
+"abs.ml" 194 6273 6337 "abs.ml" 194 6273 6347
+type(
+  val_abs
+)
+"abs.ml" 194 6273 6308 "abs.ml" 194 6273 6347
+type(
+  val_abs
+)
+"abs.ml" 195 6348 6360 "abs.ml" 195 6348 6362
+type(
+  int
+)
+ident(
+  def x1 "abs.ml" 195 6348 6383 "abs.ml" 195 6348 6422
+)
+"abs.ml" 195 6348 6364 "abs.ml" 195 6348 6366
+type(
+  int
+)
+ident(
+  def x2 "abs.ml" 195 6348 6383 "abs.ml" 195 6348 6422
+)
+"abs.ml" 195 6348 6352 "abs.ml" 195 6348 6367
+type(
+  val_abs
+)
+"abs.ml" 195 6348 6378 "abs.ml" 195 6348 6379
+type(
+  int
+)
+ident(
+  def y "abs.ml" 195 6348 6383 "abs.ml" 195 6348 6422
+)
+"abs.ml" 195 6348 6370 "abs.ml" 195 6348 6379
+type(
+  val_abs
+)
+"abs.ml" 195 6348 6352 "abs.ml" 195 6348 6379
+type(
+  val_abs * val_abs
+)
+type(
+  val_abs * val_abs
+)
+"abs.ml" 195 6348 6386 "abs.ml" 195 6348 6387
+type(
+  int
+)
+ident(
+  int_ref y "abs.ml" 195 6348 6378 "abs.ml" 195 6348 6379
+)
+"abs.ml" 195 6348 6387 "abs.ml" 195 6348 6388
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( < ) "stdlib.mli" 135 5721 5721 "stdlib.mli" 135 5721 5768
+)
+"abs.ml" 195 6348 6388 "abs.ml" 195 6348 6390
+type(
+  int
+)
+ident(
+  int_ref x1 "abs.ml" 195 6348 6360 "abs.ml" 195 6348 6362
+)
+"abs.ml" 195 6348 6386 "abs.ml" 195 6348 6390
+type(
+  bool
+)
+"abs.ml" 195 6348 6404 "abs.ml" 195 6348 6406
+type(
+  int
+)
+ident(
+  int_ref x1 "abs.ml" 195 6348 6360 "abs.ml" 195 6348 6362
+)
+"abs.ml" 195 6348 6396 "abs.ml" 195 6348 6406
+type(
+  val_abs
+)
+"abs.ml" 195 6348 6412 "abs.ml" 195 6348 6422
+type(
+  val_abs
+)
+"abs.ml" 195 6348 6383 "abs.ml" 195 6348 6422
+type(
+  val_abs
+)
+"abs.ml" 196 6423 6435 "abs.ml" 196 6423 6436
+type(
+  int
+)
+ident(
+  def y "abs.ml" 196 6423 6457 "abs.ml" 196 6423 6495
+)
+"abs.ml" 196 6423 6427 "abs.ml" 196 6423 6436
+type(
+  val_abs
+)
+"abs.ml" 196 6423 6446 "abs.ml" 196 6423 6448
+type(
+  int
+)
+ident(
+  def x1 "abs.ml" 196 6423 6457 "abs.ml" 196 6423 6495
+)
+"abs.ml" 196 6423 6450 "abs.ml" 196 6423 6452
+type(
+  int
+)
+ident(
+  def x2 "abs.ml" 196 6423 6457 "abs.ml" 196 6423 6495
+)
+"abs.ml" 196 6423 6438 "abs.ml" 196 6423 6453
+type(
+  val_abs
+)
+"abs.ml" 196 6423 6427 "abs.ml" 196 6423 6453
+type(
+  val_abs * val_abs
+)
+type(
+  val_abs * val_abs
+)
+"abs.ml" 196 6423 6460 "abs.ml" 196 6423 6461
+type(
+  int
+)
+ident(
+  int_ref y "abs.ml" 196 6423 6435 "abs.ml" 196 6423 6436
+)
+"abs.ml" 196 6423 6461 "abs.ml" 196 6423 6462
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( > ) "stdlib.mli" 140 5875 5875 "stdlib.mli" 140 5875 5925
+)
+"abs.ml" 196 6423 6462 "abs.ml" 196 6423 6464
+type(
+  int
+)
+ident(
+  int_ref x1 "abs.ml" 196 6423 6446 "abs.ml" 196 6423 6448
+)
+"abs.ml" 196 6423 6460 "abs.ml" 196 6423 6464
+type(
+  bool
+)
+"abs.ml" 196 6423 6478 "abs.ml" 196 6423 6479
+type(
+  int
+)
+ident(
+  int_ref y "abs.ml" 196 6423 6435 "abs.ml" 196 6423 6436
+)
+"abs.ml" 196 6423 6470 "abs.ml" 196 6423 6479
+type(
+  val_abs
+)
+"abs.ml" 196 6423 6485 "abs.ml" 196 6423 6495
+type(
+  val_abs
+)
+"abs.ml" 196 6423 6457 "abs.ml" 196 6423 6495
+type(
+  val_abs
+)
+"abs.ml" 197 6496 6508 "abs.ml" 197 6496 6509
+type(
+  int
+)
+ident(
+  def y "abs.ml" 197 6496 6530 "abs.ml" 197 6496 6568
+)
+"abs.ml" 197 6496 6500 "abs.ml" 197 6496 6509
+type(
+  val_abs
+)
+"abs.ml" 197 6496 6519 "abs.ml" 197 6496 6521
+type(
+  int
+)
+ident(
+  def x1 "abs.ml" 197 6496 6530 "abs.ml" 197 6496 6568
+)
+"abs.ml" 197 6496 6523 "abs.ml" 197 6496 6525
+type(
+  int
+)
+ident(
+  def x2 "abs.ml" 197 6496 6530 "abs.ml" 197 6496 6568
+)
+"abs.ml" 197 6496 6511 "abs.ml" 197 6496 6526
+type(
+  val_abs
+)
+"abs.ml" 197 6496 6500 "abs.ml" 197 6496 6526
+type(
+  val_abs * val_abs
+)
+type(
+  val_abs * val_abs
+)
+"abs.ml" 197 6496 6533 "abs.ml" 197 6496 6534
+type(
+  int
+)
+ident(
+  int_ref y "abs.ml" 197 6496 6508 "abs.ml" 197 6496 6509
+)
+"abs.ml" 197 6496 6534 "abs.ml" 197 6496 6535
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( < ) "stdlib.mli" 135 5721 5721 "stdlib.mli" 135 5721 5768
+)
+"abs.ml" 197 6496 6535 "abs.ml" 197 6496 6537
+type(
+  int
+)
+ident(
+  int_ref x1 "abs.ml" 197 6496 6519 "abs.ml" 197 6496 6521
+)
+"abs.ml" 197 6496 6533 "abs.ml" 197 6496 6537
+type(
+  bool
+)
+"abs.ml" 197 6496 6551 "abs.ml" 197 6496 6552
+type(
+  int
+)
+ident(
+  int_ref y "abs.ml" 197 6496 6508 "abs.ml" 197 6496 6509
+)
+"abs.ml" 197 6496 6543 "abs.ml" 197 6496 6552
+type(
+  val_abs
+)
+"abs.ml" 197 6496 6558 "abs.ml" 197 6496 6568
+type(
+  val_abs
+)
+"abs.ml" 197 6496 6530 "abs.ml" 197 6496 6568
+type(
+  val_abs
+)
+"abs.ml" 198 6569 6573 "abs.ml" 198 6569 6574
+type(
+  val_abs
+)
+"abs.ml" 198 6569 6576 "abs.ml" 198 6569 6586
+type(
+  val_abs
+)
+"abs.ml" 198 6569 6573 "abs.ml" 198 6569 6586
+type(
+  val_abs * val_abs
+)
+type(
+  val_abs * val_abs
+)
+"abs.ml" 198 6569 6589 "abs.ml" 198 6569 6599
+type(
+  val_abs
+)
+"abs.ml" 198 6569 6601 "abs.ml" 198 6569 6602
+type(
+  val_abs
+)
+"abs.ml" 198 6569 6589 "abs.ml" 198 6569 6602
+type(
+  val_abs * val_abs
+)
+type(
+  val_abs * val_abs
+)
+"abs.ml" 198 6569 6573 "abs.ml" 198 6569 6602
+type(
+  val_abs * val_abs
+)
+"abs.ml" 198 6569 6614 "abs.ml" 198 6569 6615
+type(
+  int
+)
+"abs.ml" 198 6569 6606 "abs.ml" 198 6569 6615
+type(
+  val_abs
+)
+"abs.ml" 198 6569 6626 "abs.ml" 198 6569 6627
+type(
+  int
+)
+"abs.ml" 198 6569 6618 "abs.ml" 198 6569 6627
+type(
+  val_abs
+)
+"abs.ml" 198 6569 6606 "abs.ml" 198 6569 6627
+type(
+  val_abs * val_abs
+)
+type(
+  val_abs * val_abs
+)
+"abs.ml" 198 6569 6573 "abs.ml" 198 6569 6627
+type(
+  val_abs * val_abs
+)
+"abs.ml" 198 6569 6638 "abs.ml" 198 6569 6639
+type(
+  int
+)
+"abs.ml" 198 6569 6630 "abs.ml" 198 6569 6639
+type(
+  val_abs
+)
+"abs.ml" 198 6569 6648 "abs.ml" 198 6569 6649
+type(
+  int
+)
+"abs.ml" 198 6569 6640 "abs.ml" 198 6569 6649
+type(
+  val_abs
+)
+"abs.ml" 198 6569 6630 "abs.ml" 198 6569 6649
+type(
+  val_abs * val_abs
+)
+type(
+  val_abs * val_abs
+)
+"abs.ml" 198 6569 6573 "abs.ml" 198 6569 6649
+type(
+  val_abs * val_abs
+)
+"abs.ml" 198 6569 6653 "abs.ml" 198 6569 6663
+type(
+  val_abs
+)
+"abs.ml" 199 6664 6668 "abs.ml" 199 6664 6672
+type(
+  val_abs
+)
+"abs.ml" 199 6664 6674 "abs.ml" 199 6664 6675
+type(
+  val_abs
+)
+"abs.ml" 199 6664 6668 "abs.ml" 199 6664 6675
+type(
+  val_abs * val_abs
+)
+type(
+  val_abs * val_abs
+)
+"abs.ml" 199 6664 6678 "abs.ml" 199 6664 6679
+type(
+  val_abs
+)
+"abs.ml" 199 6664 6681 "abs.ml" 199 6664 6685
+type(
+  val_abs
+)
+"abs.ml" 199 6664 6678 "abs.ml" 199 6664 6685
+type(
+  val_abs * val_abs
+)
+type(
+  val_abs * val_abs
+)
+"abs.ml" 199 6664 6668 "abs.ml" 199 6664 6685
+type(
+  val_abs * val_abs
+)
+"abs.ml" 199 6664 6689 "abs.ml" 199 6664 6693
+type(
+  val_abs
+)
+"abs.ml" 200 6694 6706 "abs.ml" 200 6694 6707
+type(
+  int
+)
+ident(
+  def x "abs.ml" 200 6694 6722 "abs.ml" 200 6694 6759
+)
+"abs.ml" 200 6694 6698 "abs.ml" 200 6694 6707
+type(
+  val_abs
+)
+"abs.ml" 200 6694 6717 "abs.ml" 200 6694 6718
+type(
+  int
+)
+ident(
+  def y "abs.ml" 200 6694 6722 "abs.ml" 200 6694 6759
+)
+"abs.ml" 200 6694 6709 "abs.ml" 200 6694 6718
+type(
+  val_abs
+)
+"abs.ml" 200 6694 6698 "abs.ml" 200 6694 6718
+type(
+  val_abs * val_abs
+)
+type(
+  val_abs * val_abs
+)
+"abs.ml" 200 6694 6725 "abs.ml" 200 6694 6726
+type(
+  int
+)
+ident(
+  int_ref x "abs.ml" 200 6694 6706 "abs.ml" 200 6694 6707
+)
+"abs.ml" 200 6694 6726 "abs.ml" 200 6694 6727
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( > ) "stdlib.mli" 140 5875 5875 "stdlib.mli" 140 5875 5925
+)
+"abs.ml" 200 6694 6727 "abs.ml" 200 6694 6728
+type(
+  int
+)
+ident(
+  int_ref y "abs.ml" 200 6694 6717 "abs.ml" 200 6694 6718
+)
+"abs.ml" 200 6694 6725 "abs.ml" 200 6694 6728
+type(
+  bool
+)
+"abs.ml" 200 6694 6742 "abs.ml" 200 6694 6743
+type(
+  int
+)
+ident(
+  int_ref x "abs.ml" 200 6694 6706 "abs.ml" 200 6694 6707
+)
+"abs.ml" 200 6694 6734 "abs.ml" 200 6694 6743
+type(
+  val_abs
+)
+"abs.ml" 200 6694 6749 "abs.ml" 200 6694 6759
+type(
+  val_abs
+)
+"abs.ml" 200 6694 6722 "abs.ml" 200 6694 6759
+type(
+  val_abs
+)
+"abs.ml" 201 6760 6772 "abs.ml" 201 6760 6773
+type(
+  int
+)
+ident(
+  def x "abs.ml" 201 6760 6788 "abs.ml" 201 6760 6826
+)
+"abs.ml" 201 6760 6764 "abs.ml" 201 6760 6773
+type(
+  val_abs
+)
+"abs.ml" 201 6760 6783 "abs.ml" 201 6760 6784
+type(
+  int
+)
+ident(
+  def y "abs.ml" 201 6760 6788 "abs.ml" 201 6760 6826
+)
+"abs.ml" 201 6760 6775 "abs.ml" 201 6760 6784
+type(
+  val_abs
+)
+"abs.ml" 201 6760 6764 "abs.ml" 201 6760 6784
+type(
+  val_abs * val_abs
+)
+type(
+  val_abs * val_abs
+)
+"abs.ml" 201 6760 6791 "abs.ml" 201 6760 6792
+type(
+  int
+)
+ident(
+  int_ref x "abs.ml" 201 6760 6772 "abs.ml" 201 6760 6773
+)
+"abs.ml" 201 6760 6793 "abs.ml" 201 6760 6794
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( < ) "stdlib.mli" 135 5721 5721 "stdlib.mli" 135 5721 5768
+)
+"abs.ml" 201 6760 6794 "abs.ml" 201 6760 6795
+type(
+  int
+)
+ident(
+  int_ref y "abs.ml" 201 6760 6783 "abs.ml" 201 6760 6784
+)
+"abs.ml" 201 6760 6791 "abs.ml" 201 6760 6795
+type(
+  bool
+)
+"abs.ml" 201 6760 6809 "abs.ml" 201 6760 6810
+type(
+  int
+)
+ident(
+  int_ref x "abs.ml" 201 6760 6772 "abs.ml" 201 6760 6773
+)
+"abs.ml" 201 6760 6801 "abs.ml" 201 6760 6810
+type(
+  val_abs
+)
+"abs.ml" 201 6760 6816 "abs.ml" 201 6760 6826
+type(
+  val_abs
+)
+"abs.ml" 201 6760 6788 "abs.ml" 201 6760 6826
+type(
+  val_abs
+)
+"abs.ml" 188 6063 6065 "abs.ml" 201 6760 6826
+type(
+  val_abs
+)
+"abs.ml" 203 6830 6836 "abs.ml" 203 6830 6848
+type(
+  ('a, val_abs) Hashtbl.t ->
+  ('a, val_abs) Hashtbl.t -> ('a, val_abs) Hashtbl.t
+)
+ident(
+  def widening_all "abs.ml" 208 6977 6977 "abs.ml" 0 0 -1
+)
+"abs.ml" 203 6830 6849 "abs.ml" 203 6830 6854
+type(
+  ('a, val_abs) Hashtbl.t
+)
+ident(
+  def aenv0 "abs.ml" 203 6830 6855 "abs.ml" 206 6962 6973
+)
+"abs.ml" 203 6830 6855 "abs.ml" 203 6830 6860
+type(
+  ('a, val_abs) Hashtbl.t
+)
+ident(
+  def aenv1 "abs.ml" 204 6864 6868 "abs.ml" 206 6962 6973
+)
+"abs.ml" 204 6864 6868 "abs.ml" 204 6864 6880
+type(
+  ('a -> val_abs -> unit) -> ('a, val_abs) Hashtbl.t -> unit
+)
+ident(
+  int_ref Stdlib.Hashtbl.iter "hashtbl.mli" 120 5516 5516 "hashtbl.mli" 120 5516 5567
+)
+"abs.ml" 204 6864 6887 "abs.ml" 204 6864 6888
+type(
+  'a
+)
+ident(
+  def x "abs.ml" 204 6864 6889 "abs.ml" 205 6895 6953
+)
+"abs.ml" 204 6864 6889 "abs.ml" 204 6864 6891
+type(
+  val_abs
+)
+ident(
+  def a0 "abs.ml" 205 6895 6901 "abs.ml" 205 6895 6953
+)
+"abs.ml" 205 6895 6901 "abs.ml" 205 6895 6916
+type(
+  ('a, val_abs) Hashtbl.t -> 'a -> val_abs -> unit
+)
+ident(
+  int_ref Stdlib.Hashtbl.replace "hashtbl.mli" 113 5171 5171 "hashtbl.mli" 113 5171 5215
+)
+"abs.ml" 205 6895 6917 "abs.ml" 205 6895 6922
+type(
+  ('a, val_abs) Hashtbl.t
+)
+ident(
+  int_ref aenv0 "abs.ml" 203 6830 6849 "abs.ml" 203 6830 6854
+)
+"abs.ml" 205 6895 6923 "abs.ml" 205 6895 6924
+type(
+  'a
+)
+ident(
+  int_ref x "abs.ml" 204 6864 6887 "abs.ml" 204 6864 6888
+)
+"abs.ml" 205 6895 6926 "abs.ml" 205 6895 6934
+type(
+  val_abs -> val_abs -> val_abs
+)
+ident(
+  int_ref widening "abs.ml" 187 6041 6045 "abs.ml" 187 6041 6053
+)
+"abs.ml" 205 6895 6935 "abs.ml" 205 6895 6937
+type(
+  val_abs
+)
+ident(
+  int_ref a0 "abs.ml" 204 6864 6889 "abs.ml" 204 6864 6891
+)
+"abs.ml" 205 6895 6939 "abs.ml" 205 6895 6943
+type(
+  'a -> ('a, val_abs) Hashtbl.t -> val_abs
+)
+ident(
+  int_ref read "abs.ml" 24 427 431 "abs.ml" 24 427 435
+)
+"abs.ml" 205 6895 6944 "abs.ml" 205 6895 6945
+type(
+  'a
+)
+ident(
+  int_ref x "abs.ml" 204 6864 6887 "abs.ml" 204 6864 6888
+)
+"abs.ml" 205 6895 6946 "abs.ml" 205 6895 6951
+type(
+  ('a, val_abs) Hashtbl.t
+)
+ident(
+  int_ref aenv1 "abs.ml" 203 6830 6855 "abs.ml" 203 6830 6860
+)
+"abs.ml" 205 6895 6938 "abs.ml" 205 6895 6952
+type(
+  val_abs
+)
+"abs.ml" 205 6895 6925 "abs.ml" 205 6895 6953
+type(
+  val_abs
+)
+"abs.ml" 205 6895 6901 "abs.ml" 205 6895 6953
+type(
+  unit
+)
+"abs.ml" 204 6864 6882 "abs.ml" 205 6895 6954
+type(
+  'a -> val_abs -> unit
+)
+"abs.ml" 205 6895 6955 "abs.ml" 205 6895 6960
+type(
+  ('a, val_abs) Hashtbl.t
+)
+ident(
+  int_ref aenv0 "abs.ml" 203 6830 6849 "abs.ml" 203 6830 6854
+)
+"abs.ml" 204 6864 6868 "abs.ml" 205 6895 6960
+type(
+  unit
+)
+"abs.ml" 206 6962 6968 "abs.ml" 206 6962 6973
+type(
+  ('a, val_abs) Hashtbl.t
+)
+ident(
+  int_ref aenv0 "abs.ml" 203 6830 6849 "abs.ml" 203 6830 6854
+)
+"abs.ml" 204 6864 6868 "abs.ml" 206 6962 6973
+type(
+  ('a, val_abs) Hashtbl.t
+)
+"abs.ml" 208 6977 6985 "abs.ml" 208 6977 6993
+type(
+  (('a, val_abs) Hashtbl.t -> ('a, val_abs) Hashtbl.t) ->
+  ('a, val_abs) Hashtbl.t -> ('a, val_abs) Hashtbl.t
+)
+ident(
+  def abs_iter "abs.ml" 208 6977 6977 "abs.ml" 0 0 -1
+)
+"abs.ml" 208 6977 6994 "abs.ml" 208 6977 6995
+type(
+  ('a, val_abs) Hashtbl.t -> ('a, val_abs) Hashtbl.t
+)
+ident(
+  def f "abs.ml" 208 6977 6996 "abs.ml" 211 7052 7092
+)
+"abs.ml" 208 6977 6996 "abs.ml" 208 6977 6997
+type(
+  ('a, val_abs) Hashtbl.t
+)
+ident(
+  def a "abs.ml" 209 7001 7003 "abs.ml" 211 7052 7092
+)
+"abs.ml" 209 7001 7007 "abs.ml" 209 7001 7012
+type(
+  ('a, val_abs) Hashtbl.t
+)
+ident(
+  def anext "abs.ml" 210 7023 7025 "abs.ml" 211 7052 7092
+)
+"abs.ml" 209 7001 7015 "abs.ml" 209 7001 7016
+type(
+  ('a, val_abs) Hashtbl.t -> ('a, val_abs) Hashtbl.t
+)
+ident(
+  int_ref f "abs.ml" 208 6977 6994 "abs.ml" 208 6977 6995
+)
+"abs.ml" 209 7001 7017 "abs.ml" 209 7001 7018
+type(
+  ('a, val_abs) Hashtbl.t
+)
+ident(
+  int_ref a "abs.ml" 208 6977 6996 "abs.ml" 208 6977 6997
+)
+"abs.ml" 209 7001 7015 "abs.ml" 209 7001 7018
+type(
+  ('a, val_abs) Hashtbl.t
+)
+"abs.ml" 210 7023 7028 "abs.ml" 210 7023 7036
+type(
+  ('a, val_abs) Hashtbl.t -> ('a, val_abs) Hashtbl.t -> bool
+)
+ident(
+  int_ref nr_is_le "abs.ml" 145 4740 4744 "abs.ml" 145 4740 4752
+)
+"abs.ml" 210 7023 7037 "abs.ml" 210 7023 7042
+type(
+  ('a, val_abs) Hashtbl.t
+)
+ident(
+  int_ref anext "abs.ml" 209 7001 7007 "abs.ml" 209 7001 7012
+)
+"abs.ml" 210 7023 7043 "abs.ml" 210 7023 7044
+type(
+  ('a, val_abs) Hashtbl.t
+)
+ident(
+  int_ref a "abs.ml" 208 6977 6996 "abs.ml" 208 6977 6997
+)
+"abs.ml" 210 7023 7028 "abs.ml" 210 7023 7044
+type(
+  bool
+)
+"abs.ml" 210 7023 7050 "abs.ml" 210 7023 7051
+type(
+  ('a, val_abs) Hashtbl.t
+)
+ident(
+  int_ref a "abs.ml" 208 6977 6996 "abs.ml" 208 6977 6997
+)
+"abs.ml" 211 7052 7059 "abs.ml" 211 7052 7067
+type(
+  (('a, val_abs) Hashtbl.t -> ('a, val_abs) Hashtbl.t) ->
+  ('a, val_abs) Hashtbl.t -> ('a, val_abs) Hashtbl.t
+)
+ident(
+  int_ref abs_iter "abs.ml" 208 6977 6985 "abs.ml" 208 6977 6993
+)
+"abs.ml" 211 7052 7068 "abs.ml" 211 7052 7069
+type(
+  ('a, val_abs) Hashtbl.t -> ('a, val_abs) Hashtbl.t
+)
+ident(
+  int_ref f "abs.ml" 208 6977 6994 "abs.ml" 208 6977 6995
+)
+"abs.ml" 211 7052 7071 "abs.ml" 211 7052 7083
+type(
+  ('a, val_abs) Hashtbl.t ->
+  ('a, val_abs) Hashtbl.t -> ('a, val_abs) Hashtbl.t
+)
+ident(
+  int_ref widening_all "abs.ml" 203 6830 6836 "abs.ml" 203 6830 6848
+)
+"abs.ml" 211 7052 7084 "abs.ml" 211 7052 7085
+type(
+  ('a, val_abs) Hashtbl.t
+)
+ident(
+  int_ref a "abs.ml" 208 6977 6996 "abs.ml" 208 6977 6997
+)
+"abs.ml" 211 7052 7086 "abs.ml" 211 7052 7091
+type(
+  ('a, val_abs) Hashtbl.t
+)
+ident(
+  int_ref anext "abs.ml" 209 7001 7007 "abs.ml" 209 7001 7012
+)
+"abs.ml" 211 7052 7070 "abs.ml" 211 7052 7092
+type(
+  ('a, val_abs) Hashtbl.t
+)
+"abs.ml" 211 7052 7059 "abs.ml" 211 7052 7092
+type(
+  ('a, val_abs) Hashtbl.t
+)
+"abs.ml" 210 7023 7025 "abs.ml" 211 7052 7092
+type(
+  ('a, val_abs) Hashtbl.t
+)
+"abs.ml" 209 7001 7003 "abs.ml" 211 7052 7092
+type(
+  ('a, val_abs) Hashtbl.t
+)
+"abs.ml" 214 7095 7103 "abs.ml" 214 7095 7110
+type(
+  Ast.stmt ->
+  (Ast.ident, val_abs) Hashtbl.t -> (Ast.ident, val_abs) Hashtbl.t
+)
+ident(
+  def ai_stmt "abs.ml" 214 7095 7095 "abs.ml" 0 0 -1
+)
+"abs.ml" 214 7095 7112 "abs.ml" 214 7095 7113
+type(
+  Ast.stmt
+)
+ident(
+  def s "abs.ml" 214 7095 7114 "abs.ml" 223 7460 7502
+)
+"abs.ml" 214 7095 7114 "abs.ml" 214 7095 7122
+type(
+  (Ast.ident, val_abs) Hashtbl.t
+)
+ident(
+  def aenv_abs "abs.ml" 215 7126 7128 "abs.ml" 223 7460 7502
+)
+"abs.ml" 215 7126 7131 "abs.ml" 215 7126 7140
+type(
+  (Ast.ident, val_abs) Hashtbl.t -> bool
+)
+ident(
+  int_ref nr_is_bot "abs.ml" 140 4630 4634 "abs.ml" 140 4630 4643
+)
+"abs.ml" 215 7126 7141 "abs.ml" 215 7126 7149
+type(
+  (Ast.ident, val_abs) Hashtbl.t
+)
+ident(
+  int_ref aenv_abs "abs.ml" 214 7095 7114 "abs.ml" 214 7095 7122
+)
+"abs.ml" 215 7126 7131 "abs.ml" 215 7126 7149
+type(
+  bool
+)
+"abs.ml" 215 7126 7155 "abs.ml" 215 7126 7163
+type(
+  (Ast.ident, val_abs) Hashtbl.t
+)
+ident(
+  int_ref aenv_abs "abs.ml" 214 7095 7114 "abs.ml" 214 7095 7122
+)
+"abs.ml" 217 7172 7182 "abs.ml" 217 7172 7183
+type(
+  Ast.stmt
+)
+ident(
+  int_ref s "abs.ml" 214 7095 7112 "abs.ml" 214 7095 7113
+)
+"abs.ml" 218 7189 7204 "abs.ml" 218 7189 7205
+type(
+  Ast.ident
+)
+ident(
+  def x "abs.ml" 218 7189 7213 "abs.ml" 218 7189 7279
+)
+"abs.ml" 218 7189 7206 "abs.ml" 218 7189 7207
+type(
+  Ast.expr
+)
+ident(
+  def e "abs.ml" 218 7189 7213 "abs.ml" 218 7189 7279
+)
+"abs.ml" 218 7189 7195 "abs.ml" 218 7189 7208
+type(
+  Ast.stmt
+)
+type(
+  Ast.stmt
+)
+"abs.ml" 218 7189 7214 "abs.ml" 218 7189 7224
+type(
+  Ast.ident -> Ast.expr -> (Ast.ident, Ast.const) Hashtbl.t -> unit
+)
+ident(
+  int_ref write_conc "abs.ml" 53 912 916 "abs.ml" 53 912 926
+)
+"abs.ml" 218 7189 7225 "abs.ml" 218 7189 7226
+type(
+  Ast.ident
+)
+ident(
+  int_ref x "abs.ml" 218 7189 7204 "abs.ml" 218 7189 7205
+)
+"abs.ml" 218 7189 7228 "abs.ml" 218 7189 7229
+type(
+  Ast.expr
+)
+ident(
+  int_ref e "abs.ml" 218 7189 7206 "abs.ml" 218 7189 7207
+)
+"abs.ml" 218 7189 7230 "abs.ml" 218 7189 7239
+type(
+  (Ast.ident, Ast.const) Hashtbl.t
+)
+ident(
+  int_ref aenv_conc "abs.ml" 22 391 395 "abs.ml" 22 391 404
+)
+"abs.ml" 218 7189 7213 "abs.ml" 218 7189 7240
+type(
+  unit
+)
+"abs.ml" 218 7189 7242 "abs.ml" 218 7189 7247
+type(
+  Ast.ident ->
+  val_abs -> (Ast.ident, val_abs) Hashtbl.t -> (Ast.ident, val_abs) Hashtbl.t
+)
+ident(
+  int_ref write "abs.ml" 26 464 468 "abs.ml" 26 464 473
+)
+"abs.ml" 218 7189 7248 "abs.ml" 218 7189 7249
+type(
+  Ast.ident
+)
+ident(
+  int_ref x "abs.ml" 218 7189 7204 "abs.ml" 218 7189 7205
+)
+"abs.ml" 218 7189 7251 "abs.ml" 218 7189 7258
+type(
+  Ast.expr -> (Ast.ident, val_abs) Hashtbl.t -> val_abs
+)
+ident(
+  int_ref ai_expr "abs.ml" 155 4995 5003 "abs.ml" 155 4995 5010
+)
+"abs.ml" 218 7189 7259 "abs.ml" 218 7189 7260
+type(
+  Ast.expr
+)
+ident(
+  int_ref e "abs.ml" 218 7189 7206 "abs.ml" 218 7189 7207
+)
+"abs.ml" 218 7189 7261 "abs.ml" 218 7189 7269
+type(
+  (Ast.ident, val_abs) Hashtbl.t
+)
+ident(
+  int_ref aenv_abs "abs.ml" 214 7095 7114 "abs.ml" 214 7095 7122
+)
+"abs.ml" 218 7189 7250 "abs.ml" 218 7189 7270
+type(
+  val_abs
+)
+"abs.ml" 218 7189 7271 "abs.ml" 218 7189 7279
+type(
+  (Ast.ident, val_abs) Hashtbl.t
+)
+ident(
+  int_ref aenv_abs "abs.ml" 214 7095 7114 "abs.ml" 214 7095 7122
+)
+"abs.ml" 218 7189 7242 "abs.ml" 218 7189 7279
+type(
+  (Ast.ident, val_abs) Hashtbl.t
+)
+"abs.ml" 218 7189 7213 "abs.ml" 218 7189 7279
+type(
+  (Ast.ident, val_abs) Hashtbl.t
+)
+"abs.ml" 219 7280 7292 "abs.ml" 219 7280 7296
+type(
+  Ast.stmt list
+)
+"abs.ml" 219 7280 7286 "abs.ml" 219 7280 7296
+type(
+  Ast.stmt
+)
+type(
+  Ast.stmt
+)
+"abs.ml" 219 7280 7300 "abs.ml" 219 7280 7308
+type(
+  (Ast.ident, val_abs) Hashtbl.t
+)
+ident(
+  int_ref aenv_abs "abs.ml" 214 7095 7114 "abs.ml" 214 7095 7122
+)
+"abs.ml" 220 7309 7323 "abs.ml" 220 7309 7325
+type(
+  Ast.stmt
+)
+ident(
+  def s1 "abs.ml" 220 7309 7334 "abs.ml" 220 7309 7375
+)
+"abs.ml" 220 7309 7327 "abs.ml" 220 7309 7329
+type(
+  Ast.stmt list
+)
+ident(
+  def sl "abs.ml" 220 7309 7334 "abs.ml" 220 7309 7375
+)
+"abs.ml" 220 7309 7322 "abs.ml" 220 7309 7330
+type(
+  Ast.stmt list
+)
+"abs.ml" 220 7309 7315 "abs.ml" 220 7309 7330
+type(
+  Ast.stmt
+)
+type(
+  Ast.stmt
+)
+"abs.ml" 220 7309 7334 "abs.ml" 220 7309 7341
+type(
+  Ast.stmt ->
+  (Ast.ident, val_abs) Hashtbl.t -> (Ast.ident, val_abs) Hashtbl.t
+)
+ident(
+  int_ref ai_stmt "abs.ml" 214 7095 7103 "abs.ml" 214 7095 7110
+)
+"abs.ml" 220 7309 7350 "abs.ml" 220 7309 7352
+type(
+  Ast.stmt list
+)
+ident(
+  int_ref sl "abs.ml" 220 7309 7327 "abs.ml" 220 7309 7329
+)
+"abs.ml" 220 7309 7342 "abs.ml" 220 7309 7353
+type(
+  Ast.stmt
+)
+"abs.ml" 220 7309 7355 "abs.ml" 220 7309 7362
+type(
+  Ast.stmt ->
+  (Ast.ident, val_abs) Hashtbl.t -> (Ast.ident, val_abs) Hashtbl.t
+)
+ident(
+  int_ref ai_stmt "abs.ml" 214 7095 7103 "abs.ml" 214 7095 7110
+)
+"abs.ml" 220 7309 7363 "abs.ml" 220 7309 7365
+type(
+  Ast.stmt
+)
+ident(
+  int_ref s1 "abs.ml" 220 7309 7323 "abs.ml" 220 7309 7325
+)
+"abs.ml" 220 7309 7366 "abs.ml" 220 7309 7374
+type(
+  (Ast.ident, val_abs) Hashtbl.t
+)
+ident(
+  int_ref aenv_abs "abs.ml" 214 7095 7114 "abs.ml" 214 7095 7122
+)
+"abs.ml" 220 7309 7354 "abs.ml" 220 7309 7375
+type(
+  (Ast.ident, val_abs) Hashtbl.t
+)
+"abs.ml" 220 7309 7334 "abs.ml" 220 7309 7375
+type(
+  (Ast.ident, val_abs) Hashtbl.t
+)
+"abs.ml" 221 7376 7389 "abs.ml" 221 7376 7390
+type(
+  Ast.cond
+)
+ident(
+  def b "abs.ml" 222 7398 7404 "abs.ml" 223 7460 7502
+)
+"abs.ml" 221 7376 7392 "abs.ml" 221 7376 7393
+type(
+  Ast.stmt
+)
+ident(
+  def s "abs.ml" 222 7398 7404 "abs.ml" 223 7460 7502
+)
+"abs.ml" 221 7376 7382 "abs.ml" 221 7376 7394
+type(
+  Ast.stmt
+)
+type(
+  Ast.stmt
+)
+"abs.ml" 222 7398 7408 "abs.ml" 222 7398 7414
+type(
+  (Ast.ident, val_abs) Hashtbl.t -> (Ast.ident, val_abs) Hashtbl.t
+)
+ident(
+  def f_loop "abs.ml" 223 7460 7466 "abs.ml" 223 7460 7502
+)
+"abs.ml" 222 7398 7421 "abs.ml" 222 7398 7422
+type(
+  (Ast.ident, val_abs) Hashtbl.t
+)
+ident(
+  def a "abs.ml" 222 7398 7426 "abs.ml" 222 7398 7456
+)
+"abs.ml" 222 7398 7426 "abs.ml" 222 7398 7433
+type(
+  Ast.stmt ->
+  (Ast.ident, val_abs) Hashtbl.t -> (Ast.ident, val_abs) Hashtbl.t
+)
+ident(
+  int_ref ai_stmt "abs.ml" 214 7095 7103 "abs.ml" 214 7095 7110
+)
+"abs.ml" 222 7398 7434 "abs.ml" 222 7398 7435
+type(
+  Ast.stmt
+)
+ident(
+  int_ref s "abs.ml" 221 7376 7392 "abs.ml" 221 7376 7393
+)
+"abs.ml" 222 7398 7437 "abs.ml" 222 7398 7444
+type(
+  Ast.cond ->
+  (Ast.ident, val_abs) Hashtbl.t -> (Ast.ident, val_abs) Hashtbl.t
+)
+ident(
+  int_ref ai_cond "abs.ml" 162 5170 5174 "abs.ml" 162 5170 5181
+)
+"abs.ml" 222 7398 7446 "abs.ml" 222 7398 7450
+type(
+  Ast.cond -> Ast.cond
+)
+ident(
+  int_ref cneg "abs.ml" 171 5509 5513 "abs.ml" 171 5509 5517
+)
+"abs.ml" 222 7398 7451 "abs.ml" 222 7398 7452
+type(
+  Ast.cond
+)
+ident(
+  int_ref b "abs.ml" 221 7376 7389 "abs.ml" 221 7376 7390
+)
+"abs.ml" 222 7398 7445 "abs.ml" 222 7398 7453
+type(
+  Ast.cond
+)
+"abs.ml" 222 7398 7454 "abs.ml" 222 7398 7455
+type(
+  (Ast.ident, val_abs) Hashtbl.t
+)
+ident(
+  int_ref a "abs.ml" 222 7398 7421 "abs.ml" 222 7398 7422
+)
+"abs.ml" 222 7398 7436 "abs.ml" 222 7398 7456
+type(
+  (Ast.ident, val_abs) Hashtbl.t
+)
+"abs.ml" 222 7398 7426 "abs.ml" 222 7398 7456
+type(
+  (Ast.ident, val_abs) Hashtbl.t
+)
+"abs.ml" 222 7398 7417 "abs.ml" 222 7398 7456
+type(
+  (Ast.ident, val_abs) Hashtbl.t -> (Ast.ident, val_abs) Hashtbl.t
+)
+"abs.ml" 223 7460 7466 "abs.ml" 223 7460 7473
+type(
+  Ast.cond ->
+  (Ast.ident, val_abs) Hashtbl.t -> (Ast.ident, val_abs) Hashtbl.t
+)
+ident(
+  int_ref ai_cond "abs.ml" 162 5170 5174 "abs.ml" 162 5170 5181
+)
+"abs.ml" 223 7460 7474 "abs.ml" 223 7460 7475
+type(
+  Ast.cond
+)
+ident(
+  int_ref b "abs.ml" 221 7376 7389 "abs.ml" 221 7376 7390
+)
+"abs.ml" 223 7460 7477 "abs.ml" 223 7460 7485
+type(
+  ((Ast.ident, val_abs) Hashtbl.t -> (Ast.ident, val_abs) Hashtbl.t) ->
+  (Ast.ident, val_abs) Hashtbl.t -> (Ast.ident, val_abs) Hashtbl.t
+)
+ident(
+  int_ref abs_iter "abs.ml" 208 6977 6985 "abs.ml" 208 6977 6993
+)
+"abs.ml" 223 7460 7486 "abs.ml" 223 7460 7492
+type(
+  (Ast.ident, val_abs) Hashtbl.t -> (Ast.ident, val_abs) Hashtbl.t
+)
+ident(
+  int_ref f_loop "abs.ml" 222 7398 7408 "abs.ml" 222 7398 7414
+)
+"abs.ml" 223 7460 7493 "abs.ml" 223 7460 7501
+type(
+  (Ast.ident, val_abs) Hashtbl.t
+)
+ident(
+  int_ref aenv_abs "abs.ml" 214 7095 7114 "abs.ml" 214 7095 7122
+)
+"abs.ml" 223 7460 7476 "abs.ml" 223 7460 7502
+type(
+  (Ast.ident, val_abs) Hashtbl.t
+)
+"abs.ml" 223 7460 7466 "abs.ml" 223 7460 7502
+type(
+  (Ast.ident, val_abs) Hashtbl.t
+)
+"abs.ml" 222 7398 7404 "abs.ml" 223 7460 7502
+type(
+  (Ast.ident, val_abs) Hashtbl.t
+)
+"abs.ml" 217 7172 7176 "abs.ml" 223 7460 7502
+type(
+  (Ast.ident, val_abs) Hashtbl.t
+)
+"abs.ml" 215 7126 7128 "abs.ml" 223 7460 7502
+type(
+  (Ast.ident, val_abs) Hashtbl.t
+)

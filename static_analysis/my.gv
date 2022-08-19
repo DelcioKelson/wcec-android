@@ -1,0 +1,8 @@
+    "19" "i0 = 0";
+    "20" "label1: if 5 <= i0 goto label2";
+    "22" "i0 = i0 + 1";
+    "23" "goto label1";
+    "25" "i0 = 0";
+    "26" "label3: if i0 > 6 goto label4";
+    "28" "i0 = i0 + 1";
+    "29" "goto label3";

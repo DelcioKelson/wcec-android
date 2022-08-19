@@ -1,0 +1,161 @@
+### merge dot files
+digraph main {
+subgraph "void <clinit>()" {
+    label="void <clinit>()";
+    node [shape=box];
+    "0" [style=filled,fillcolor=gray,label="$z0 = java.lang.Boolean.parseBoolean(\"true\")",];
+    "1" [label="com.greenstamp.epi.BuildConfig.DEBUG = $z0",];
+    "2" [style=filled,fillcolor=lightgray,label="return",];
+}
+subgraph "void <init>()" {
+    label="void <init>()";
+    node [shape=box];
+    "0" [style=filled,fillcolor=gray,label="r0 := @this",];
+    "1" [label="specialinvoke r0.<init>()",];
+    "2" [style=filled,fillcolor=lightgray,label="return",];
+}
+subgraph "void <init>(com.greenstamp.epi.MainActivity)" {
+    label="void <init>(com.greenstamp.epi.MainActivity)";
+    node [shape=box];
+    "0" [style=filled,fillcolor=gray,label="r0 := @this",];
+    "1" [label="$r1 := @parameter0",];
+    "2" [label="r0.this$0 = $r1",];
+    "3" [label="specialinvoke r0.<init>()",];
+    "4" [style=filled,fillcolor=lightgray,label="return",];
+}
+subgraph "void run()" {
+    label="void run()";
+    node [shape=box];
+    "0" [style=filled,fillcolor=gray,label="r0 := @this",];
+    "1" [label="$r1 = r0.this$0",];
+    "2" [label="$r1.timeout()",];
+    "3" [label="$l0 = java.lang.System.currentTimeMillis()",];
+    "4" [label="$r2 = java.lang.Long.valueOf($l0)",];
+    "5" [label="r0.timeMillis = $r2",];
+    "6" [label="$r3 = new java.lang.StringBuilder",];
+    "7" [label="specialinvoke $r3.<init>()",];
+    "8" [label="$r3 = $r3.append(\"\")",];
+    "9" [label="$l0 = java.lang.System.currentTimeMillis()",];
+    "10" [label="$r2 = r0.timeMillis",];
+    "11" [label="$l1 = $r2.longValue()",];
+    "12" [label="$l0 = $l0 - $l1",];
+    "13" [label="$r3 = $r3.append($l0)",];
+    "14" [label="$r4 = $r3.toString()",];
+    "15" [label="android.util.Log.i(\"executionTime\", $r4)",];
+    "16" [style=filled,fillcolor=lightgray,label="return",];
+}
+subgraph "void <init>(com.greenstamp.epi.MainActivity,android.os.BatteryManager)" {
+    label="void <init>(com.greenstamp.epi.MainActivity,android.os.BatteryManager)";
+    node [shape=box];
+    "0" [style=filled,fillcolor=gray,label="r0 := @this",];
+    "1" [label="$r1 := @parameter0",];
+    "2" [label="$r2 := @parameter1",];
+    "3" [label="specialinvoke r0.<init>()",];
+    "4" [label="r0.f$0 = $r1",];
+    "5" [label="r0.f$1 = $r2",];
+    "6" [style=filled,fillcolor=lightgray,label="return",];
+}
+subgraph "void run()" {
+    label="void run()";
+    node [shape=box];
+    "0" [style=filled,fillcolor=gray,label="r0 := @this",];
+    "1" [label="$r1 = r0.f$0",];
+    "2" [label="$r2 = r0.f$1",];
+    "3" [label="$r1.lambda$onCreate$0$com-greenstamp-epi-MainActivity($r2)",];
+    "4" [style=filled,fillcolor=lightgray,label="return",];
+}
+subgraph "void <init>()" {
+    label="void <init>()";
+    node [shape=box];
+    "0" [style=filled,fillcolor=gray,label="r0 := @this",];
+    "1" [label="specialinvoke r0.<init>()",];
+    "2" [style=filled,fillcolor=lightgray,label="return",];
+}
+subgraph "void lambda$onCreate$0$com-greenstamp-epi-MainActivity(android.os.BatteryManager)" {
+    label="void lambda$onCreate$0$com-greenstamp-epi-MainActivity(android.os.BatteryManager)";
+    node [shape=box];
+    "0" [style=filled,fillcolor=gray,label="r0 := @this",];
+    "1" [label="$r1 := @parameter0",];
+    "2" [label="$l0 = $r1.getLongProperty(2)",];
+    "3" [label="r0.current = $l0",];
+    "4" [label="$r2 = new java.lang.StringBuilder",];
+    "5" [label="specialinvoke $r2.<init>()",];
+    "6" [label="$r2 = $r2.append(\"\")",];
+    "7" [label="$l0 = r0.current",];
+    "8" [label="$r2 = $r2.append($l0)",];
+    "9" [label="$r3 = $r2.toString()",];
+    "10" [label="android.util.Log.i(\"currentEPI\", $r3)",];
+    "11" [style=filled,fillcolor=lightgray,label="return",];
+}
+subgraph "void onCreate(android.os.Bundle)" {
+    label="void onCreate(android.os.Bundle)";
+    node [shape=box];
+    "0" [style=filled,fillcolor=gray,label="r0 := @this",];
+    "1" [label="$r1 := @parameter0",];
+    "2" [label="specialinvoke r0.onCreate($r1)",];
+    "3" [label="$r3 = r0.getWindow()",];
+    "4" [label="$r3.addFlags(128)",];
+    "5" [label="r0.setTurnScreenOn(1)",];
+    "6" [label="r0.setContentView(2131427376)",];
+    "7" [label="$r4 = r0.getSystemService(\"vibrator\")",];
+    "8" [label="r5 = (android.os.Vibrator) $r4",];
+    "9" [label="r0.v = r5",];
+    "10" [label="$r4 = r0.getSystemService(\"batterymanager\")",];
+    "11" [label="r6 = (android.os.BatteryManager) $r4",];
+    "12" [label="r0.myActivity = r0",];
+    "13" [label="$r7 = java.util.concurrent.Executors.newScheduledThreadPool(1)",];
+    "14" [label="r0.executorService = $r7",];
+    "15" [label="$r8 = new com.greenstamp.epi.MainActivity$$ExternalSyntheticLambda0",];
+    "16" [label="specialinvoke $r8.<init>(r0, r6)",];
+    "17" [label="$r2 = java.util.concurrent.TimeUnit.MILLISECONDS",];
+    "18" [label="$r7.scheduleAtFixedRate($r8, 1000L, 100L, $r2)",];
+    "19" [label="i0 = 0",];
+    "20" [label="label1: if i0 <= 5 goto label2",];
+    "21" [label="android.util.Log.i(\"jlbfs\", \"\")",];
+    "24" [label="label2: i0 = 0",];
+    "22" [label="i0 = i0 + 1",];
+    "23" [label="goto label1",];
+    "25" [label="label3: if i0 <= 5 goto label4",];
+    "26" [label="android.util.Log.i(\"jlbfs\", \"\")",];
+    "29" [label="label4: $r9 = new java.util.Timer",];
+    "27" [label="i0 = i0 + 1",];
+    "28" [label="goto label3",];
+    "30" [label="specialinvoke $r9.<init>()",];
+    "31" [label="r0.timerLoop = $r9",];
+    "32" [label="$l1 = java.lang.System.currentTimeMillis()",];
+    "33" [label="$r10 = java.lang.Long.valueOf($l1)",];
+    "34" [label="r0.startTime = $r10",];
+    "35" [label="$r9 = r0.timerLoop",];
+    "36" [label="$r11 = new com.greenstamp.epi.MainActivity$1",];
+    "37" [label="specialinvoke $r11.<init>(r0)",];
+    "38" [label="$r9.schedule($r11, 1000L, 1L)",];
+    "39" [style=filled,fillcolor=lightgray,label="return",];
+}
+subgraph "void timeout()" {
+    label="void timeout()";
+    node [shape=box];
+    "0" [style=filled,fillcolor=gray,label="r0 := @this",];
+    "1" [label="$l0 = java.lang.System.currentTimeMillis()",];
+    "2" [label="$r1 = r0.startTime",];
+    "3" [label="$l1 = $r1.longValue()",];
+    "4" [label="$l0 = $l0 - $l1",];
+    "5" [label="$b2 = $l0 cmp 61000L",];
+    "6" [label="if $b2 <= 0 goto label1",];
+    "7" [label="$r2 = r0.timerLoop",];
+    "15" [style=filled,fillcolor=lightgray,label="label1: return",];
+    "8" [label="$r2.cancel()",];
+    "9" [label="$r3 = r0.executorService",];
+    "10" [label="$r3.shutdown()",];
+    "11" [label="android.util.Log.i(\"currentEPI\", \"stop\")",];
+    "12" [label="$r4 = r0.v",];
+    "13" [label="$r5 = android.os.VibrationEffect.createOneShot(500L, 5)",];
+    "14" [label="$r4.vibrate($r5)",];
+}
+subgraph "void <init>()" {
+    label="void <init>()";
+    node [shape=box];
+    "0" [style=filled,fillcolor=gray,label="r0 := @this",];
+    "1" [label="specialinvoke r0.<init>()",];
+    "2" [style=filled,fillcolor=lightgray,label="return",];
+}
+}
