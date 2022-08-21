@@ -1,0 +1,27 @@
+abs.cmo : \
+    ast.cmi
+abs.cmx : \
+    ast.cmi
+ast.cmi :
+get_bounds.cmo : \
+    parser.cmi \
+    lexer.cmo \
+    ast.cmi \
+    abs.cmo
+get_bounds.cmx : \
+    parser.cmx \
+    lexer.cmx \
+    ast.cmi \
+    abs.cmx
+lexer.cmo : \
+    parser.cmi
+lexer.cmx : \
+    parser.cmx
+parser.cmo : \
+    ast.cmi \
+    parser.cmi
+parser.cmx : \
+    ast.cmi \
+    parser.cmi
+parser.cmi : \
+    ast.cmi

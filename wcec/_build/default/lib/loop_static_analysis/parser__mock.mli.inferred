@@ -1,0 +1,28 @@
+type token =
+    TIMES
+  | PLUS
+  | NEWLINE
+  | MOD
+  | MINUS
+  | IF
+  | IDENT of string
+  | GOTO
+  | EQUAL
+  | EOF
+  | DIV
+  | CST of int
+  | COLON
+  | BNEQ
+  | BLT
+  | BLE
+  | BGT
+  | BGE
+  | BEQ
+val menhir_begin_marker : int
+val xv_stmt : Ast.stmt
+val xv_nonempty_list_stmt_ : Ast.stmt list
+val xv_ident : string
+val xv_file : Ast.stmt
+val xv_expr : Ast.expr
+val xv_cond : Ast.cond
+val menhir_end_marker : int

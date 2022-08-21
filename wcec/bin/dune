@@ -1,0 +1,8 @@
+(executable
+ (public_name wcec)
+ (name main)
+ (libraries bounds load_model str)
+ )
+(env
+  (dev
+    (flags (:standard -warn-error -A))))

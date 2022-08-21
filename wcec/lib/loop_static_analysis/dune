@@ -1,0 +1,13 @@
+(library
+ (name bounds)
+  (modules_without_implementation ast)
+)
+
+(menhir
+ (modules parser))
+
+(ocamllex lexer)
+
+(env
+  (dev
+    (flags (:standard -warn-error -A))))

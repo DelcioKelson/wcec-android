@@ -1,0 +1,5 @@
+# dune init proj wcec
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Workspace root: /home/ferramenta/wcec-android
+# Auto-detected concurrency: 8

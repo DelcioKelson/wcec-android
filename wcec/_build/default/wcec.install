@@ -1,0 +1,8 @@
+lib: [
+  "_build/install/default/lib/wcec/META"
+  "_build/install/default/lib/wcec/dune-package"
+  "_build/install/default/lib/wcec/opam"
+]
+bin: [
+  "_build/install/default/bin/wcec"
+]

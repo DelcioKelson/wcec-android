@@ -1,0 +1,14 @@
+(** @canonical Bounds.Abs *)
+module Abs = Bounds__Abs
+
+
+(** @canonical Bounds.Ast *)
+module Ast = Bounds__Ast
+
+
+(** @canonical Bounds.Lexer *)
+module Lexer = Bounds__Lexer
+
+
+(** @canonical Bounds.Parser *)
+module Parser = Bounds__Parser

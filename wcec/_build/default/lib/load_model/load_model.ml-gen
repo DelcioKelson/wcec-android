@@ -1,0 +1,14 @@
+(** @canonical Load_model.Ast *)
+module Ast = Load_model__Ast
+
+
+(** @canonical Load_model.Lexer *)
+module Lexer = Load_model__Lexer
+
+
+(** @canonical Load_model.Load *)
+module Load = Load_model__Load
+
+
+(** @canonical Load_model.Parser *)
+module Parser = Load_model__Parser

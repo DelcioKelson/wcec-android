@@ -1,0 +1,6 @@
+type token = VERTICALBAR | STRING of string | FLOAT of float | EOF
+val menhir_begin_marker : int
+val xv_stmt : Ast.stmt
+val xv_nonempty_list_stmt_ : Ast.stmt list
+val xv_file : Ast.stmt
+val menhir_end_marker : int
