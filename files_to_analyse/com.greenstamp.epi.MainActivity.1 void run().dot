@@ -1,0 +1,14 @@
+     $r1 = r0.this$0
+     $r1.timeout()
+     $l0 = java.lang.System.currentTimeMillis()
+     $r2 = java.lang.Long.valueOf($l0)
+     r0.timeMillis = $r2
+     $r3 = new java.lang.StringBuilder
+     $r3 = $r3.append(\\)
+     $l0 = java.lang.System.currentTimeMillis()
+     $r2 = r0.timeMillis
+     $l1 = $r2.longValue()
+     $l0 = $l0 - $l1
+     $r3 = $r3.append($l0)
+     $r4 = $r3.toString()
+     android.util.Log.i(\executionTime\ $r4)

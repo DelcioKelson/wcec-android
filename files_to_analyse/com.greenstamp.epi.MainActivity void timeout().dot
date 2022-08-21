@@ -1,0 +1,13 @@
+     $l0 = java.lang.System.currentTimeMillis()
+     $r1 = r0.startTime
+     $l1 = $r1.longValue()
+     $l0 = $l0 - $l1
+     $b2 = $l0 cmp 61000L
+     $r2 = r0.timerLoop
+     $r2.cancel()
+     $r3 = r0.executorService
+     $r3.shutdown()
+     android.util.Log.i(\currentEPI\ \stop\)
+     $r4 = r0.v
+     $r5 = android.os.VibrationEffect.createOneShot(500L 5)
+     $r4.vibrate($r5)

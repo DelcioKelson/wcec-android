@@ -1,0 +1,8 @@
+     $l0 = $r1.getLongProperty(2)
+     r0.current = $l0
+     $r2 = new java.lang.StringBuilder
+     $r2 = $r2.append(\\)
+     $l0 = r0.current
+     $r2 = $r2.append($l0)
+     $r3 = $r2.toString()
+     android.util.Log.i(\currentEPI\ $r3)
