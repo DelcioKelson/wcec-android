@@ -1,19 +1,19 @@
 
 open String
 (*let status = Sys.command "./prepare.sh"*)
-
-
 let model_file = "resources/test_model.txt"
 
-let files_path = "resources/method_files/"
+let method_files = "resources/method_files/"
+
+let cg_file = "resources/cg.txt"
 
 
+(*Loads*)
 let methods_bounds = Bounds.get_bounds()
 
 let model = Load_model.Load.load_model model_file
 
-
-let method_files_list = Sys.readdir files_path
+let method_files_list = Sys.readdir method_files
 
 let energy_per_method = Hashtbl.create (Array.length method_files_list)
 
@@ -50,16 +50,35 @@ let rec apply_model method_name lines times in_loop=
   | [] -> 0.0
 
 
-
 let () =  
    Array.iter (
-    fun method_name -> let file_path = (String.concat files_path [""; method_name]) in
-    
-    Hashtbl.add energy_per_method method_name (apply_model method_name (read_file (open_in file_path)) 1 false)
+    fun method_file_name -> let file_path = (String.concat method_files [""; method_file_name]) in
+    let method_name = Filename.remove_extension method_file_name in
+    Hashtbl.add energy_per_method method_name (apply_model method_file_name (read_file (open_in file_path)) 1 false)
     
     ) method_files_list
 
 
-let () = Hashtbl.iter (fun x a -> print_string x; print_float a) energy_per_method  
+(*let () = Hashtbl.iter (fun x a -> print_string x; print_float a) energy_per_method  
+*)
+
+(*put the weights in the cg*)
+let cg = 
+  let cg_temp = Load_cg.Load.load_cg cg_file in
+  let rec set_cg_weights cg_t = 
+    match cg_t with
+    | edge::l -> 
+      let edge_weight = try Hashtbl.find energy_per_method (fst edge) with Not_found -> 1.0  in
+      ((fst edge),(snd edge),edge_weight)::(set_cg_weights l)
+    | _ -> [] 
+    in
+    set_cg_weights cg_temp  
+    
 
 
+let get_fst (s1,_,_) = s1 
+let get_snd (_,s2,_) = s2 
+let get_trd (_,_,v) = v 
+
+
+let () = List.iter (fun edge ->  print_string (get_fst edge); print_string (get_snd edge); print_float (get_trd edge); print_endline"" )cg  

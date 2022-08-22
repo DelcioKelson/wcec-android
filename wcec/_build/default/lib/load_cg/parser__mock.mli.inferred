@@ -1,0 +1,6 @@
+type token = STRING of string | EQUAL | EOF
+val menhir_begin_marker : int
+val xv_nonempty_list_edge_ : Ast.edge list
+val xv_file : Ast.edge
+val xv_edge : Ast.edge
+val menhir_end_marker : int

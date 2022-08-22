@@ -43,7 +43,6 @@ public class CFG {
         config.setCodeEliminationMode(InfoflowConfiguration.CodeEliminationMode.NoCodeElimination);
         config.setCallgraphAlgorithm(cgAlgorithm);
         
-        
         SetupApplication analyzer = new SetupApplication(config);
         analyzer.setSootConfig(sootConf);
         analyzer.constructCallgraph();

@@ -1,73 +1,73 @@
-STATIC edge: staticinvoke <dummyMainClass: androidx.startup.InitializationProvider dummyMainMethod_androidx_startup_InitializationProvider(android.content.Intent)>(null) in <dummyMainClass: void dummyMainMethod(java.lang.String[])> ==> <dummyMainClass: androidx.startup.InitializationProvider dummyMainMethod_androidx_startup_InitializationProvider(android.content.Intent)>
-STATIC edge: staticinvoke <dummyMainClass: com.greenstamp.epi.MainActivity dummyMainMethod_com_greenstamp_epi_MainActivity(android.content.Intent)>(null) in <dummyMainClass: void dummyMainMethod(java.lang.String[])> ==> <dummyMainClass: com.greenstamp.epi.MainActivity dummyMainMethod_com_greenstamp_epi_MainActivity(android.content.Intent)>
-CLINIT edge: $r1 = newarray (java.lang.String)[1] in <dummyMainClass: androidx.startup.InitializationProvider dummyMainMethod_androidx_startup_InitializationProvider(android.content.Intent)> ==> <java.lang.String: void <clinit>()>
-CLINIT edge: $r7 = newarray (java.lang.String)[1] in <dummyMainClass: androidx.startup.InitializationProvider dummyMainMethod_androidx_startup_InitializationProvider(android.content.Intent)> ==> <java.lang.String: void <clinit>()>
-CLINIT edge: $r4 = newarray (java.lang.String)[1] in <dummyMainClass: androidx.startup.InitializationProvider dummyMainMethod_androidx_startup_InitializationProvider(android.content.Intent)> ==> <java.lang.String: void <clinit>()>
-CLINIT edge: $r0 = new com.greenstamp.epi.MainActivity in <dummyMainClass: com.greenstamp.epi.MainActivity dummyMainMethod_com_greenstamp_epi_MainActivity(android.content.Intent)> ==> <android.app.Activity: void <clinit>()>
-SPECIAL edge: specialinvoke $r0.<com.greenstamp.epi.MainActivity: void <init>()>() in <dummyMainClass: com.greenstamp.epi.MainActivity dummyMainMethod_com_greenstamp_epi_MainActivity(android.content.Intent)> ==> <com.greenstamp.epi.MainActivity: void <init>()>
-VIRTUAL edge: virtualinvoke $r0.<com.greenstamp.epi.MainActivity: void onCreate(android.os.Bundle)>(null) in <dummyMainClass: com.greenstamp.epi.MainActivity dummyMainMethod_com_greenstamp_epi_MainActivity(android.content.Intent)> ==> <com.greenstamp.epi.MainActivity: void onCreate(android.os.Bundle)>
-VIRTUAL edge: virtualinvoke $r0.<androidx.fragment.app.FragmentActivity: void onResume()>() in <dummyMainClass: com.greenstamp.epi.MainActivity dummyMainMethod_com_greenstamp_epi_MainActivity(android.content.Intent)> ==> <androidx.fragment.app.FragmentActivity: void onResume()>
-VIRTUAL edge: virtualinvoke $r0.<androidx.fragment.app.FragmentActivity: void onPause()>() in <dummyMainClass: com.greenstamp.epi.MainActivity dummyMainMethod_com_greenstamp_epi_MainActivity(android.content.Intent)> ==> <androidx.fragment.app.FragmentActivity: void onPause()>
-VIRTUAL edge: virtualinvoke $r0.<androidx.activity.ComponentActivity: void onSaveInstanceState(android.os.Bundle)>(null) in <dummyMainClass: com.greenstamp.epi.MainActivity dummyMainMethod_com_greenstamp_epi_MainActivity(android.content.Intent)> ==> <androidx.activity.ComponentActivity: void onSaveInstanceState(android.os.Bundle)>
-CLINIT edge: $r2 = <java.util.concurrent.TimeUnit: java.util.concurrent.TimeUnit MILLISECONDS> in <com.greenstamp.epi.MainActivity: void onCreate(android.os.Bundle)> ==> <java.util.concurrent.TimeUnit: void <clinit>()>
-STATIC edge: $r10 = staticinvoke <java.lang.Long: java.lang.Long valueOf(long)>($l1) in <com.greenstamp.epi.MainActivity: void onCreate(android.os.Bundle)> ==> <java.lang.Long: java.lang.Long valueOf(long)>
-STATIC edge: $l1 = staticinvoke <java.lang.System: long currentTimeMillis()>() in <com.greenstamp.epi.MainActivity: void onCreate(android.os.Bundle)> ==> <java.lang.System: long currentTimeMillis()>
-STATIC edge: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("jlbfs", "") in <com.greenstamp.epi.MainActivity: void onCreate(android.os.Bundle)> ==> <android.util.Log: int i(java.lang.String,java.lang.String)>
-STATIC edge: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("jlbfs", "") in <com.greenstamp.epi.MainActivity: void onCreate(android.os.Bundle)> ==> <android.util.Log: int i(java.lang.String,java.lang.String)>
-STATIC edge: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("jlbfs", "") in <com.greenstamp.epi.MainActivity: void onCreate(android.os.Bundle)> ==> <android.util.Log: int i(java.lang.String,java.lang.String)>
-STATIC edge: $r7 = staticinvoke <java.util.concurrent.Executors: java.util.concurrent.ScheduledExecutorService newScheduledThreadPool(int)>(1) in <com.greenstamp.epi.MainActivity: void onCreate(android.os.Bundle)> ==> <java.util.concurrent.Executors: java.util.concurrent.ScheduledExecutorService newScheduledThreadPool(int)>
-CLINIT edge: $r10 = staticinvoke <java.lang.Long: java.lang.Long valueOf(long)>($l1) in <com.greenstamp.epi.MainActivity: void onCreate(android.os.Bundle)> ==> <java.lang.Long: void <clinit>()>
-CLINIT edge: $l1 = staticinvoke <java.lang.System: long currentTimeMillis()>() in <com.greenstamp.epi.MainActivity: void onCreate(android.os.Bundle)> ==> <java.lang.System: void <clinit>()>
-SPECIAL edge: specialinvoke $r0.<java.lang.RuntimeException: void <init>(java.lang.String)>("Stub!") in <android.util.Log: int i(java.lang.String,java.lang.String)> ==> <java.lang.RuntimeException: void <init>(java.lang.String)>
-SPECIAL edge: specialinvoke $r1.<java.lang.RuntimeException: void <init>(java.lang.String)>("Stub!") in <java.lang.RuntimeException: void <init>(java.lang.String)> ==> <java.lang.RuntimeException: void <init>(java.lang.String)>
-SPECIAL edge: specialinvoke r0.<java.lang.Exception: void <init>()>() in <java.lang.RuntimeException: void <init>(java.lang.String)> ==> <java.lang.Exception: void <init>()>
-SPECIAL edge: specialinvoke $r1.<java.lang.RuntimeException: void <init>(java.lang.String)>("Stub!") in <java.lang.Exception: void <init>()> ==> <java.lang.RuntimeException: void <init>(java.lang.String)>
-SPECIAL edge: specialinvoke r0.<java.lang.Throwable: void <init>()>() in <java.lang.Exception: void <init>()> ==> <java.lang.Throwable: void <init>()>
-SPECIAL edge: specialinvoke $r1.<java.lang.RuntimeException: void <init>(java.lang.String)>("Stub!") in <java.lang.Throwable: void <init>()> ==> <java.lang.RuntimeException: void <init>(java.lang.String)>
-SPECIAL edge: specialinvoke r0.<java.lang.Object: void <init>()>() in <java.lang.Throwable: void <init>()> ==> <java.lang.Object: void <init>()>
-FINALIZE edge: null in <java.lang.Object: void <init>()> ==> <java.lang.Object: void finalize()>
-SPECIAL edge: specialinvoke $r0.<java.lang.RuntimeException: void <init>(java.lang.String)>("Stub!") in <java.lang.Object: void finalize()> ==> <java.lang.RuntimeException: void <init>(java.lang.String)>
-SPECIAL edge: specialinvoke $r0.<java.lang.RuntimeException: void <init>(java.lang.String)>("Stub!") in <java.lang.Object: void <init>()> ==> <java.lang.RuntimeException: void <init>(java.lang.String)>
-SPECIAL edge: specialinvoke $r0.<java.lang.RuntimeException: void <init>(java.lang.String)>("Stub!") in <java.lang.Long: java.lang.Long valueOf(long)> ==> <java.lang.RuntimeException: void <init>(java.lang.String)>
-SPECIAL edge: specialinvoke $r11.<com.greenstamp.epi.MainActivity$1: void <init>(com.greenstamp.epi.MainActivity)>(r0) in <com.greenstamp.epi.MainActivity: void onCreate(android.os.Bundle)> ==> <com.greenstamp.epi.MainActivity$1: void <init>(com.greenstamp.epi.MainActivity)>
-SPECIAL edge: specialinvoke r0.<java.util.TimerTask: void <init>()>() in <com.greenstamp.epi.MainActivity$1: void <init>(com.greenstamp.epi.MainActivity)> ==> <java.util.TimerTask: void <init>()>
-SPECIAL edge: specialinvoke $r9.<java.util.Timer: void <init>()>() in <com.greenstamp.epi.MainActivity: void onCreate(android.os.Bundle)> ==> <java.util.Timer: void <init>()>
-VIRTUAL edge: virtualinvoke $r9.<java.util.Timer: void schedule(java.util.TimerTask,long,long)>($r11, 1000L, 1L) in <com.greenstamp.epi.MainActivity: void onCreate(android.os.Bundle)> ==> <java.util.Timer: void schedule(java.util.TimerTask,long,long)>
-VIRTUAL edge: virtualinvoke param0.<java.util.TimerTask: void run()>() in <java.util.Timer: void schedule(java.util.TimerTask,long,long)> ==> <com.greenstamp.epi.MainActivity$1: void run()>
-CLINIT edge: $l0 = staticinvoke <java.lang.System: long currentTimeMillis()>() in <com.greenstamp.epi.MainActivity$1: void run()> ==> <java.lang.System: void <clinit>()>
-STATIC edge: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("executionTime", $r4) in <com.greenstamp.epi.MainActivity$1: void run()> ==> <android.util.Log: int i(java.lang.String,java.lang.String)>
-STATIC edge: $l0 = staticinvoke <java.lang.System: long currentTimeMillis()>() in <com.greenstamp.epi.MainActivity$1: void run()> ==> <java.lang.System: long currentTimeMillis()>
-STATIC edge: $r2 = staticinvoke <java.lang.Long: java.lang.Long valueOf(long)>($l0) in <com.greenstamp.epi.MainActivity$1: void run()> ==> <java.lang.Long: java.lang.Long valueOf(long)>
-STATIC edge: $l0 = staticinvoke <java.lang.System: long currentTimeMillis()>() in <com.greenstamp.epi.MainActivity$1: void run()> ==> <java.lang.System: long currentTimeMillis()>
-CLINIT edge: $r2 = staticinvoke <java.lang.Long: java.lang.Long valueOf(long)>($l0) in <com.greenstamp.epi.MainActivity$1: void run()> ==> <java.lang.Long: void <clinit>()>
-SPECIAL edge: specialinvoke $r3.<java.lang.StringBuilder: void <init>()>() in <com.greenstamp.epi.MainActivity$1: void run()> ==> <java.lang.StringBuilder: void <init>()>
-VIRTUAL edge: $r3 = virtualinvoke $r3.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("") in <com.greenstamp.epi.MainActivity$1: void run()> ==> <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>
-VIRTUAL edge: $r3 = virtualinvoke $r3.<java.lang.StringBuilder: java.lang.StringBuilder append(long)>($l0) in <com.greenstamp.epi.MainActivity$1: void run()> ==> <java.lang.StringBuilder: java.lang.StringBuilder append(long)>
-VIRTUAL edge: $r4 = virtualinvoke $r3.<java.lang.StringBuilder: java.lang.String toString()>() in <com.greenstamp.epi.MainActivity$1: void run()> ==> <java.lang.StringBuilder: java.lang.String toString()>
-SPECIAL edge: specialinvoke $r8.<com.greenstamp.epi.MainActivity$$ExternalSyntheticLambda0: void <init>(com.greenstamp.epi.MainActivity,android.os.BatteryManager)>(r0, r6) in <com.greenstamp.epi.MainActivity: void onCreate(android.os.Bundle)> ==> <com.greenstamp.epi.MainActivity$$ExternalSyntheticLambda0: void <init>(com.greenstamp.epi.MainActivity,android.os.BatteryManager)>
-SPECIAL edge: specialinvoke r0.<java.lang.Object: void <init>()>() in <com.greenstamp.epi.MainActivity$$ExternalSyntheticLambda0: void <init>(com.greenstamp.epi.MainActivity,android.os.BatteryManager)> ==> <java.lang.Object: void <init>()>
-SPECIAL edge: specialinvoke r0.<androidx.appcompat.app.AppCompatActivity: void onCreate(android.os.Bundle)>($r1) in <com.greenstamp.epi.MainActivity: void onCreate(android.os.Bundle)> ==> <androidx.fragment.app.FragmentActivity: void onCreate(android.os.Bundle)>
-VIRTUAL edge: $r3 = virtualinvoke r0.<com.greenstamp.epi.MainActivity: android.view.Window getWindow()>() in <com.greenstamp.epi.MainActivity: void onCreate(android.os.Bundle)> ==> <android.app.Activity: android.view.Window getWindow()>
-VIRTUAL edge: virtualinvoke r0.<com.greenstamp.epi.MainActivity: void setTurnScreenOn(boolean)>(1) in <com.greenstamp.epi.MainActivity: void onCreate(android.os.Bundle)> ==> <android.app.Activity: void setTurnScreenOn(boolean)>
-VIRTUAL edge: virtualinvoke r0.<com.greenstamp.epi.MainActivity: void setContentView(int)>(2131427376) in <com.greenstamp.epi.MainActivity: void onCreate(android.os.Bundle)> ==> <androidx.appcompat.app.AppCompatActivity: void setContentView(int)>
-VIRTUAL edge: $r4 = virtualinvoke r0.<com.greenstamp.epi.MainActivity: java.lang.Object getSystemService(java.lang.String)>("vibrator") in <com.greenstamp.epi.MainActivity: void onCreate(android.os.Bundle)> ==> <android.app.Activity: java.lang.Object getSystemService(java.lang.String)>
-VIRTUAL edge: $r4 = virtualinvoke r0.<com.greenstamp.epi.MainActivity: java.lang.Object getSystemService(java.lang.String)>("batterymanager") in <com.greenstamp.epi.MainActivity: void onCreate(android.os.Bundle)> ==> <android.app.Activity: java.lang.Object getSystemService(java.lang.String)>
-SPECIAL edge: specialinvoke $r0.<java.lang.RuntimeException: void <init>(java.lang.String)>("Stub!") in <android.app.Activity: java.lang.Object getSystemService(java.lang.String)> ==> <java.lang.RuntimeException: void <init>(java.lang.String)>
-SPECIAL edge: specialinvoke $r0.<java.lang.RuntimeException: void <init>(java.lang.String)>("Stub!") in <android.app.Activity: void setTurnScreenOn(boolean)> ==> <java.lang.RuntimeException: void <init>(java.lang.String)>
-SPECIAL edge: specialinvoke $r0.<java.lang.RuntimeException: void <init>(java.lang.String)>("Stub!") in <android.app.Activity: android.view.Window getWindow()> ==> <java.lang.RuntimeException: void <init>(java.lang.String)>
-SPECIAL edge: specialinvoke r0.<androidx.appcompat.app.AppCompatActivity: void <init>()>() in <com.greenstamp.epi.MainActivity: void <init>()> ==> <androidx.appcompat.app.AppCompatActivity: void <init>()>
-SPECIAL edge: specialinvoke $r0.<androidx.startup.InitializationProvider: void <init>()>() in <dummyMainClass: androidx.startup.InitializationProvider dummyMainMethod_androidx_startup_InitializationProvider(android.content.Intent)> ==> <androidx.startup.InitializationProvider: void <init>()>
-VIRTUAL edge: $i1 = virtualinvoke $r0.<androidx.startup.InitializationProvider: int delete(android.net.Uri,java.lang.String,java.lang.String[])>(null, "", $r1) in <dummyMainClass: androidx.startup.InitializationProvider dummyMainMethod_androidx_startup_InitializationProvider(android.content.Intent)> ==> <androidx.startup.InitializationProvider: int delete(android.net.Uri,java.lang.String,java.lang.String[])>
-VIRTUAL edge: $r2 = virtualinvoke $r0.<androidx.startup.InitializationProvider: java.lang.String getType(android.net.Uri)>(null) in <dummyMainClass: androidx.startup.InitializationProvider dummyMainMethod_androidx_startup_InitializationProvider(android.content.Intent)> ==> <androidx.startup.InitializationProvider: java.lang.String getType(android.net.Uri)>
-VIRTUAL edge: $r3 = virtualinvoke $r0.<androidx.startup.InitializationProvider: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>(null, null) in <dummyMainClass: androidx.startup.InitializationProvider dummyMainMethod_androidx_startup_InitializationProvider(android.content.Intent)> ==> <androidx.startup.InitializationProvider: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>
-VIRTUAL edge: $r6 = virtualinvoke $r0.<androidx.startup.InitializationProvider: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>(null, $r4, "", $r5, "") in <dummyMainClass: androidx.startup.InitializationProvider dummyMainMethod_androidx_startup_InitializationProvider(android.content.Intent)> ==> <androidx.startup.InitializationProvider: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>
-VIRTUAL edge: $i2 = virtualinvoke $r0.<androidx.startup.InitializationProvider: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])>(null, null, "", $r7) in <dummyMainClass: androidx.startup.InitializationProvider dummyMainMethod_androidx_startup_InitializationProvider(android.content.Intent)> ==> <androidx.startup.InitializationProvider: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])>
-VIRTUAL edge: virtualinvoke $r1.<com.greenstamp.epi.MainActivity: void timeout()>() in <com.greenstamp.epi.MainActivity$1: void run()> ==> <com.greenstamp.epi.MainActivity: void timeout()>
-CLINIT edge: $l0 = staticinvoke <java.lang.System: long currentTimeMillis()>() in <com.greenstamp.epi.MainActivity: void timeout()> ==> <java.lang.System: void <clinit>()>
-STATIC edge: $r5 = staticinvoke <android.os.VibrationEffect: android.os.VibrationEffect createOneShot(long,int)>(500L, 5) in <com.greenstamp.epi.MainActivity: void timeout()> ==> <android.os.VibrationEffect: android.os.VibrationEffect createOneShot(long,int)>
-STATIC edge: staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("currentEPI", "stop") in <com.greenstamp.epi.MainActivity: void timeout()> ==> <android.util.Log: int i(java.lang.String,java.lang.String)>
-STATIC edge: $l0 = staticinvoke <java.lang.System: long currentTimeMillis()>() in <com.greenstamp.epi.MainActivity: void timeout()> ==> <java.lang.System: long currentTimeMillis()>
-CLINIT edge: $r5 = staticinvoke <android.os.VibrationEffect: android.os.VibrationEffect createOneShot(long,int)>(500L, 5) in <com.greenstamp.epi.MainActivity: void timeout()> ==> <android.os.VibrationEffect: void <clinit>()>
-SPECIAL edge: specialinvoke $r0.<java.lang.RuntimeException: void <init>(java.lang.String)>("Stub!") in <android.os.VibrationEffect: android.os.VibrationEffect createOneShot(long,int)> ==> <java.lang.RuntimeException: void <init>(java.lang.String)>
-VIRTUAL edge: virtualinvoke $r2.<java.util.Timer: void cancel()>() in <com.greenstamp.epi.MainActivity: void timeout()> ==> <java.util.Timer: void cancel()>
+dummyMainClass void dummyMainMethod(java.lang.String[])=dummyMainClass androidx.startup.InitializationProvider dummyMainMethod_androidx_startup_InitializationProvider(android.content.Intent)
+dummyMainClass void dummyMainMethod(java.lang.String[])=dummyMainClass com.greenstamp.epi.MainActivity dummyMainMethod_com_greenstamp_epi_MainActivity(android.content.Intent)
+dummyMainClass androidx.startup.InitializationProvider dummyMainMethod_androidx_startup_InitializationProvider(android.content.Intent)=java.lang.String void <clinit>()
+dummyMainClass androidx.startup.InitializationProvider dummyMainMethod_androidx_startup_InitializationProvider(android.content.Intent)=java.lang.String void <clinit>()
+dummyMainClass androidx.startup.InitializationProvider dummyMainMethod_androidx_startup_InitializationProvider(android.content.Intent)=java.lang.String void <clinit>()
+dummyMainClass com.greenstamp.epi.MainActivity dummyMainMethod_com_greenstamp_epi_MainActivity(android.content.Intent)=android.app.Activity void <clinit>()
+dummyMainClass com.greenstamp.epi.MainActivity dummyMainMethod_com_greenstamp_epi_MainActivity(android.content.Intent)=com.greenstamp.epi.MainActivity void <init>()
+dummyMainClass com.greenstamp.epi.MainActivity dummyMainMethod_com_greenstamp_epi_MainActivity(android.content.Intent)=com.greenstamp.epi.MainActivity void onCreate(android.os.Bundle)
+dummyMainClass com.greenstamp.epi.MainActivity dummyMainMethod_com_greenstamp_epi_MainActivity(android.content.Intent)=androidx.fragment.app.FragmentActivity void onResume()
+dummyMainClass com.greenstamp.epi.MainActivity dummyMainMethod_com_greenstamp_epi_MainActivity(android.content.Intent)=androidx.fragment.app.FragmentActivity void onPause()
+dummyMainClass com.greenstamp.epi.MainActivity dummyMainMethod_com_greenstamp_epi_MainActivity(android.content.Intent)=androidx.activity.ComponentActivity void onSaveInstanceState(android.os.Bundle)
+com.greenstamp.epi.MainActivity void onCreate(android.os.Bundle)=java.util.concurrent.TimeUnit void <clinit>()
+com.greenstamp.epi.MainActivity void onCreate(android.os.Bundle)=java.lang.Long java.lang.Long valueOf(long)
+com.greenstamp.epi.MainActivity void onCreate(android.os.Bundle)=java.lang.System long currentTimeMillis()
+com.greenstamp.epi.MainActivity void onCreate(android.os.Bundle)=android.util.Log int i(java.lang.String,java.lang.String)
+com.greenstamp.epi.MainActivity void onCreate(android.os.Bundle)=android.util.Log int i(java.lang.String,java.lang.String)
+com.greenstamp.epi.MainActivity void onCreate(android.os.Bundle)=android.util.Log int i(java.lang.String,java.lang.String)
+com.greenstamp.epi.MainActivity void onCreate(android.os.Bundle)=java.util.concurrent.Executors java.util.concurrent.ScheduledExecutorService newScheduledThreadPool(int)
+com.greenstamp.epi.MainActivity void onCreate(android.os.Bundle)=java.lang.Long void <clinit>()
+com.greenstamp.epi.MainActivity void onCreate(android.os.Bundle)=java.lang.System void <clinit>()
+android.util.Log int i(java.lang.String,java.lang.String)=java.lang.RuntimeException void <init>(java.lang.String)
+java.lang.RuntimeException void <init>(java.lang.String)=java.lang.RuntimeException void <init>(java.lang.String)
+java.lang.RuntimeException void <init>(java.lang.String)=java.lang.Exception void <init>()
+java.lang.Exception void <init>()=java.lang.RuntimeException void <init>(java.lang.String)
+java.lang.Exception void <init>()=java.lang.Throwable void <init>()
+java.lang.Throwable void <init>()=java.lang.RuntimeException void <init>(java.lang.String)
+java.lang.Throwable void <init>()=java.lang.Object void <init>()
+java.lang.Object void <init>()=java.lang.Object void finalize()
+java.lang.Object void finalize()=java.lang.RuntimeException void <init>(java.lang.String)
+java.lang.Object void <init>()=java.lang.RuntimeException void <init>(java.lang.String)
+java.lang.Long java.lang.Long valueOf(long)=java.lang.RuntimeException void <init>(java.lang.String)
+com.greenstamp.epi.MainActivity void onCreate(android.os.Bundle)=com.greenstamp.epi.MainActivity.1 void <init>(com.greenstamp.epi.MainActivity)
+com.greenstamp.epi.MainActivity.1 void <init>(com.greenstamp.epi.MainActivity)=java.util.TimerTask void <init>()
+com.greenstamp.epi.MainActivity void onCreate(android.os.Bundle)=java.util.Timer void <init>()
+com.greenstamp.epi.MainActivity void onCreate(android.os.Bundle)=java.util.Timer void schedule(java.util.TimerTask,long,long)
+java.util.Timer void schedule(java.util.TimerTask,long,long)=com.greenstamp.epi.MainActivity.1 void run()
+com.greenstamp.epi.MainActivity.1 void run()=java.lang.System void <clinit>()
+com.greenstamp.epi.MainActivity.1 void run()=android.util.Log int i(java.lang.String,java.lang.String)
+com.greenstamp.epi.MainActivity.1 void run()=java.lang.System long currentTimeMillis()
+com.greenstamp.epi.MainActivity.1 void run()=java.lang.Long java.lang.Long valueOf(long)
+com.greenstamp.epi.MainActivity.1 void run()=java.lang.System long currentTimeMillis()
+com.greenstamp.epi.MainActivity.1 void run()=java.lang.Long void <clinit>()
+com.greenstamp.epi.MainActivity.1 void run()=java.lang.StringBuilder void <init>()
+com.greenstamp.epi.MainActivity.1 void run()=java.lang.StringBuilder java.lang.StringBuilder append(java.lang.String)
+com.greenstamp.epi.MainActivity.1 void run()=java.lang.StringBuilder java.lang.StringBuilder append(long)
+com.greenstamp.epi.MainActivity.1 void run()=java.lang.StringBuilder java.lang.String toString()
+com.greenstamp.epi.MainActivity void onCreate(android.os.Bundle)=com.greenstamp.epi.MainActivity..ExternalSyntheticLambda0 void <init>(com.greenstamp.epi.MainActivity,android.os.BatteryManager)
+com.greenstamp.epi.MainActivity..ExternalSyntheticLambda0 void <init>(com.greenstamp.epi.MainActivity,android.os.BatteryManager)=java.lang.Object void <init>()
+com.greenstamp.epi.MainActivity void onCreate(android.os.Bundle)=androidx.fragment.app.FragmentActivity void onCreate(android.os.Bundle)
+com.greenstamp.epi.MainActivity void onCreate(android.os.Bundle)=android.app.Activity android.view.Window getWindow()
+com.greenstamp.epi.MainActivity void onCreate(android.os.Bundle)=android.app.Activity void setTurnScreenOn(boolean)
+com.greenstamp.epi.MainActivity void onCreate(android.os.Bundle)=androidx.appcompat.app.AppCompatActivity void setContentView(int)
+com.greenstamp.epi.MainActivity void onCreate(android.os.Bundle)=android.app.Activity java.lang.Object getSystemService(java.lang.String)
+com.greenstamp.epi.MainActivity void onCreate(android.os.Bundle)=android.app.Activity java.lang.Object getSystemService(java.lang.String)
+android.app.Activity java.lang.Object getSystemService(java.lang.String)=java.lang.RuntimeException void <init>(java.lang.String)
+android.app.Activity void setTurnScreenOn(boolean)=java.lang.RuntimeException void <init>(java.lang.String)
+android.app.Activity android.view.Window getWindow()=java.lang.RuntimeException void <init>(java.lang.String)
+com.greenstamp.epi.MainActivity void <init>()=androidx.appcompat.app.AppCompatActivity void <init>()
+dummyMainClass androidx.startup.InitializationProvider dummyMainMethod_androidx_startup_InitializationProvider(android.content.Intent)=androidx.startup.InitializationProvider void <init>()
+dummyMainClass androidx.startup.InitializationProvider dummyMainMethod_androidx_startup_InitializationProvider(android.content.Intent)=androidx.startup.InitializationProvider int delete(android.net.Uri,java.lang.String,java.lang.String[])
+dummyMainClass androidx.startup.InitializationProvider dummyMainMethod_androidx_startup_InitializationProvider(android.content.Intent)=androidx.startup.InitializationProvider java.lang.String getType(android.net.Uri)
+dummyMainClass androidx.startup.InitializationProvider dummyMainMethod_androidx_startup_InitializationProvider(android.content.Intent)=androidx.startup.InitializationProvider android.net.Uri insert(android.net.Uri,android.content.ContentValues)
+dummyMainClass androidx.startup.InitializationProvider dummyMainMethod_androidx_startup_InitializationProvider(android.content.Intent)=androidx.startup.InitializationProvider android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)
+dummyMainClass androidx.startup.InitializationProvider dummyMainMethod_androidx_startup_InitializationProvider(android.content.Intent)=androidx.startup.InitializationProvider int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])
+com.greenstamp.epi.MainActivity.1 void run()=com.greenstamp.epi.MainActivity void timeout()
+com.greenstamp.epi.MainActivity void timeout()=java.lang.System void <clinit>()
+com.greenstamp.epi.MainActivity void timeout()=android.os.VibrationEffect android.os.VibrationEffect createOneShot(long,int)
+com.greenstamp.epi.MainActivity void timeout()=android.util.Log int i(java.lang.String,java.lang.String)
+com.greenstamp.epi.MainActivity void timeout()=java.lang.System long currentTimeMillis()
+com.greenstamp.epi.MainActivity void timeout()=android.os.VibrationEffect void <clinit>()
+android.os.VibrationEffect android.os.VibrationEffect createOneShot(long,int)=java.lang.RuntimeException void <init>(java.lang.String)
+com.greenstamp.epi.MainActivity void timeout()=java.util.Timer void cancel()
 

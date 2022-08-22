@@ -1,0 +1,21 @@
+ast.cmi :
+lexer.cmo : \
+    parser.cmi
+lexer.cmx : \
+    parser.cmx
+load.cmo : \
+    parser.cmi \
+    lexer.cmo \
+    ast.cmi
+load.cmx : \
+    parser.cmx \
+    lexer.cmx \
+    ast.cmi
+parser.cmo : \
+    ast.cmi \
+    parser.cmi
+parser.cmx : \
+    ast.cmi \
+    parser.cmi
+parser.cmi : \
+    ast.cmi
