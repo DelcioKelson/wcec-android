@@ -1,7 +1,0 @@
-getUserStyle |4.5575
-getAppTaskThumbnailSize |3.311
-isRequestPinAppWidgetSupported |8.5036
-getConcurrentCameraIds |3.7969
-hasVibrator |9.3821
-cancel |9.3455 
-show |5.9344 

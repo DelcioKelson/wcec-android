@@ -9,6 +9,9 @@ DIR="sootOutput/"
 #done
 java -cp soot-infoflow-cmd-jar-with-dependencies.jar  CFG.java resources/app-debug.apk > resources/cg.txt
 
+######
+sed -i '/Exception/d' resources/cg.txt
+
 # cg refine
 sed -i 's/.*\sin\s//g' resources/cg.txt
 sed -i 's/ ==> /=/g' resources/cg.txt

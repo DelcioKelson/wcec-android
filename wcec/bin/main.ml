@@ -1,12 +1,13 @@
 
 open String
 (*let status = Sys.command "./prepare.sh"*)
-let model_file = "resources/test_model.txt"
+let model_file = "resources/model.txt"
 
 let method_files = "resources/method_files/"
 
 let cg_file = "resources/cg.txt"
 
+exception Cyclic of string
 
 (*Loads*)
 let methods_bounds = Bounds.get_bounds()
@@ -63,22 +64,87 @@ let () =
 *)
 
 (*put the weights in the cg*)
-let cg = 
+let edges = 
   let cg_temp = Load_cg.Load.load_cg cg_file in
   let rec set_cg_weights cg_t = 
     match cg_t with
     | edge::l -> 
-      let edge_weight = try Hashtbl.find energy_per_method (fst edge) with Not_found -> 1.0  in
-      ((fst edge),(snd edge),edge_weight)::(set_cg_weights l)
+      let edge_weight = try Hashtbl.find energy_per_method (snd edge) with Not_found -> 1.0  in
+      ((fst edge),(snd edge), (Float.mul edge_weight (-1.0)))::(set_cg_weights l)
     | _ -> [] 
     in
     set_cg_weights cg_temp  
-    
-
 
 let get_fst (s1,_,_) = s1 
 let get_snd (_,s2,_) = s2 
 let get_trd (_,_,v) = v 
 
-
+(**
 let () = List.iter (fun edge ->  print_string (get_fst edge); print_string (get_snd edge); print_float (get_trd edge); print_endline"" )cg  
+*)
+
+let successors n =
+  let matching (s,_,_) = s = n in
+  List.map get_snd (List.filter matching edges);;
+
+let anteccessors n =
+  let matching (_,s,_) = s = n in
+  List.map get_fst (List.filter matching edges);;
+
+let successors_edges n = 
+  let matching (s,_,_) = s = n in
+  List.filter matching edges;;
+
+let tsort seed =
+  let rec sort path visited = function
+      [] -> visited
+    | n::nodes ->
+      if List.mem n path then raise (Cyclic n) else
+      let v = if List.mem n visited then visited else
+      n :: sort (n::path) visited (successors n)
+      in sort path v nodes
+      in
+      sort [] [] [seed]      
+let entry_node =  get_fst (List.hd edges)
+let topologicalOrder = tsort entry_node
+let cg_paths_weights =  Hashtbl.create (List.length topologicalOrder)
+
+(*shortest path(negative values)*)
+let () = 
+  let () = Hashtbl.add cg_paths_weights entry_node 0.0 in
+  let () = List.iter (fun node -> 
+    (List.iter (fun edge -> 
+      let edge_to = get_snd edge in
+      let new_weight = Float.add (Hashtbl.find cg_paths_weights node)  (get_trd edge) in 
+       try let past = (Hashtbl.find cg_paths_weights edge_to) in 
+      Hashtbl.replace cg_paths_weights edge_to (Float.min past new_weight) with Not_found -> 
+        Hashtbl.add cg_paths_weights edge_to new_weight 
+    ) (successors_edges node)
+  )
+  ) topologicalOrder
+      in
+      Hashtbl.iter  (fun x a0 -> Hashtbl.replace cg_paths_weights x (Float.mul a0 (-1.0))) cg_paths_weights
+
+
+(*
+let () = Hashtbl.iter  (fun x a0 -> print_string x; print_float a0) cg_paths_weights
+*)
+
+let heaviest node_list = 
+  let r = ref 0.0 in
+  let name = ref "" in
+  let () = 
+  List.iter (fun node -> 
+    let max_two = Float.max !r (Hashtbl.find cg_paths_weights node) in
+    if max_two > !r then name := node ; r:=max_two 
+  ) node_list
+  in
+  !name
+
+
+let rec step_back visited = function
+    [] -> visited
+  | n::nodes -> step_back ((heaviest (n::nodes))::visited) (anteccessors n)
+
+
+let () = List.iter (fun name -> print_endline name) (step_back [] [heaviest topologicalOrder])
