@@ -1,6 +1,8 @@
 
 open String
+
 (*let status = Sys.command "./prepare.sh"*)
+   
 let model_file = "resources/model.txt"
 
 let method_files = "resources/method_files/"
@@ -147,4 +149,11 @@ let rec step_back visited = function
   | n::nodes -> step_back ((heaviest (n::nodes))::visited) (anteccessors n)
 
 
-let () = List.iter (fun name -> print_endline name) (step_back [] [heaviest topologicalOrder])
+
+
+let () = 
+let final_node = heaviest topologicalOrder in
+let () = Printf.printf " Initial" in
+let () = List.iter (fun name -> Printf.printf "==> %s\n" name) (step_back [] [final_node]) in 
+Printf.printf "\ntotal path weight : %f\n" (Hashtbl.find cg_paths_weights final_node)  
+

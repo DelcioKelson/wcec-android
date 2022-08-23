@@ -34,6 +34,7 @@ public class CFG {
                 Options.v().set_exclude(excludePackagesList);
                 Options.v().set_allow_phantom_refs(true);
                 Options.v().set_no_bodies_for_excluded(true);
+                Options.v().set_whole_program(true);
             }
         };
         InfoflowAndroidConfiguration config = new InfoflowAndroidConfiguration();

@@ -2,12 +2,14 @@
 
 DIR="sootOutput/"
 
-#while [ ! -d "$DIR" ] && rm -f sootOutput 
-#do
-#    java -cp soot-infoflow-cmd-jar-with-dependencies.jar soot.tools.CFGViewer -w -allow-phantom-refs -android-jars "/home/ferramenta/Android/Sdk/platforms" -process-multiple-dex -output-format jimple -src-prec apk -process-dir resources/*.apk
-#    clear
-#done
-java -cp soot-infoflow-cmd-jar-with-dependencies.jar  CFG.java resources/app-debug.apk > resources/cg.txt
+mv resources/*.apk resources/app.apk
+
+while [ ! -d "$DIR" ] && rm -f sootOutput 
+do
+    java -cp soot-infoflow-cmd-jar-with-dependencies.jar soot.tools.CFGViewer -w -allow-phantom-refs -android-jars "/home/ferramenta/Android/Sdk/platforms" -process-multiple-dex -output-format jimple -src-prec apk -process-dir resources/app.apk
+    clear
+done
+java -cp soot-infoflow-cmd-jar-with-dependencies.jar  CFG.java resources/app.apk > resources/cg.txt
 
 ######
 sed -i '/Exception/d' resources/cg.txt
@@ -73,8 +75,8 @@ sed -i '/\\\"/d' resources/files_to_analyse/*.dot
 sed -i '/new/d' resources/files_to_analyse/*.dot
 sed -i '/\./d' resources/files_to_analyse/*.dot
 sed -i -E '/r[0-9]+/d' resources/files_to_analyse/*.dot
-sed -i '/\$/d' sootOutput/*.dot
-sed -i '/cmp/d' sootOutput/*.dot
+sed -i '/\$/d' resources/files_to_analyse/*.dot
+sed -i '/cmp/d' resources/files_to_analyse/*.dot
 
 
 rm -r sootOutput/

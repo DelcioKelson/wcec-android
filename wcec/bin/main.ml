@@ -1,13 +1,14 @@
 
 open String
+exception Cyclic of string
+
+
 (*let status = Sys.command "./prepare.sh"*)
+   
 let model_file = "resources/model.txt"
-
 let method_files = "resources/method_files/"
-
 let cg_file = "resources/cg.txt"
 
-exception Cyclic of string
 
 (*Loads*)
 let methods_bounds = Bounds.get_bounds()
@@ -146,5 +147,9 @@ let rec step_back visited = function
     [] -> visited
   | n::nodes -> step_back ((heaviest (n::nodes))::visited) (anteccessors n)
 
+let () = 
+let final_node = heaviest topologicalOrder in
+let () = Printf.printf " Initial" in
+let () = List.iter (fun name -> Printf.printf "==> %s\n" name) (step_back [] [final_node]) in 
+Printf.printf "\ntotal path weight : %f\n" (Hashtbl.find cg_paths_weights final_node)  
 
-let () = List.iter (fun name -> print_endline name) (step_back [] [heaviest topologicalOrder])
