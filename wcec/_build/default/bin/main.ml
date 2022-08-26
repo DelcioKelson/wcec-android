@@ -2,7 +2,6 @@
 open String
 exception Cyclic of string
 
-
 let _ = Sys.command "./prepare.sh"
    
 let model_file = "resources/model.txt"
@@ -10,6 +9,13 @@ let method_files = "resources/method_files/"
 let cg_file = "resources/cg.txt"
 (*Loads*)
 let methods_bounds = Bounds.get_bounds()
+
+(**
+let () = Hashtbl.iter (fun x a -> print_string x; 
+Hashtbl.iter ( fun x1 v -> print_endline x1; print_int v) a
+) methods_bounds  
+*)
+
 let model = Load_model.Load.load_model model_file
 
 let method_files_list = Sys.readdir method_files
