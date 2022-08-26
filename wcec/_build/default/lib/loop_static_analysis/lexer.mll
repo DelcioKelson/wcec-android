@@ -18,17 +18,18 @@ let space = ' ' | '\t'
 rule token = parse
   | '\n'   {new_line lexbuf; token lexbuf}
   | space+  { token lexbuf }
+  | '$'  { token lexbuf }
   | ident as id { id_or_kwd id }
   | ':'     { COLON }
   | '+'     { PLUS }
   | '-'     { MINUS }
   | '*'     { TIMES }
-  | "//"    { DIV }
+  | '/'     { DIV }
   | '%'     { MOD }
-  | "="     { EQUAL }
+  | '='     { EQUAL }
   | "=="    { BEQ }
   | "!="    { BNEQ }
-  | "<"     { BLT}
+  | '<'     { BLT}
   | "<="    { BLE}
   | ">"     { BGT}
   | ">="    { BGE}

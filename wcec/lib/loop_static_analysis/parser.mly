@@ -75,10 +75,10 @@ cond:
 stmt:
 |  id = ident EQUAL e2 = expr
     {Sassign (id,e2) }
-|  golabel = ident COLON IF c = cond GOTO id2 = ident
+|  idlabel = ident COLON IF c = cond GOTO id2 = ident
         s= nonempty_list(stmt)
-    GOTO id3 = ident
-        {Sgoto (golabel,c,Sblock s) }
+    GOTO idlabl = ident
+        {Sgoto (idlabel,c,Sblock s) }
 ;
 
 ident:

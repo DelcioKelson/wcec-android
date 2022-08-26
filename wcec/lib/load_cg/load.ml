@@ -15,7 +15,7 @@ let parse_with_error lexbuf =
     printf "%a: %s\n" print_position lexbuf msg;
     exit (-1)
   | Parser.Error ->
-    printf "%a: syntax error\n" print_position lexbuf;
+    printf "%a: cg syntax error\n" print_position lexbuf;
     exit (-1)
 
 

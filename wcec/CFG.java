@@ -22,7 +22,7 @@ public class CFG {
 
     public static void main(String[] args) {
 
-        String packages[] = {"java.*", "androidx.*","javax.*", "com.google.*", "com.android.*","*.BuildConfig*"}; 
+        String packages[] = {"*.sdk.*","java.*", "androidx.*","javax.*", "com.google.*", "com.android.*","*.BuildConfig*"}; 
 
         List<String> excludePackagesList = Arrays.asList(packages);
 

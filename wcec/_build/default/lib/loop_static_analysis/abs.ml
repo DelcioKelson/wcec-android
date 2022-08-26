@@ -25,7 +25,7 @@
  let loop_bounds= Hashtbl.create 16 
  
  
- let read var m = Hashtbl.find m var
+ let read var m = try Hashtbl.find m var with Not_found -> Anegposinf
  
  let write var abs_value m = 
    let ctx' = Hashtbl.create 16 in
@@ -43,11 +43,11 @@
    | Bdiv -> v1 / v2
    | _ -> 0
  
-  
+ let read_conc var m = try Hashtbl.find m var with Not_found -> 30 
  let rec sem_expr e m = 
    match e with
    | Ecst n -> n
-   | Eident x -> read x m
+   | Eident x -> read_conc x m
    | Ebinop (o, e0, e1) ->
      binop o 
          (sem_expr e0 m)
@@ -247,10 +247,10 @@
    else 
      match s with
      | Sassign (x,e) ->  (write_conc x  e aenv_conc); write x (ai_expr e aenv_abs) aenv_abs
-     | Sblock([]) -> aenv_abs
+     | Sblock([]) | Sskip -> aenv_abs
      | Sblock (s1::sl) -> ai_stmt (Sblock sl) (ai_stmt s1 aenv_abs)
      | Sgoto (label,b, s) ->
-       let start_value = read (get_id_cmp b) aenv_conc in
+       let start_value = read_conc (get_id_cmp b) aenv_conc in
        let f_loop = fun a -> ai_stmt s (ai_cond (cneg b) a) in
        let aenv = ai_cond b (abs_iter f_loop aenv_abs) in
        let () = Hashtbl.add loop_bounds label (calc_loop_bound aenv s start_value (get_id_cmp b) ) in
@@ -259,6 +259,6 @@
 
 let get_bounds s = 
   let aenv = Hashtbl.create 16 in
-  let abs_aenv = ai_stmt s aenv in
+  let _ = ai_stmt s aenv in
   loop_bounds
  

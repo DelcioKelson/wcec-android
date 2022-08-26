@@ -19,5 +19,6 @@ type cond =
 
 and stmt =
   | Sgoto of ident * cond * stmt
+  | Sskip
   | Sassign of ident * expr
   | Sblock of stmt list

@@ -17,22 +17,19 @@ let parse_with_error lexbuf =
     printf "%a: %s\n" print_position lexbuf msg;
     exit (-1)
   | Parser.Error ->
-    printf "%a: syntax error\n" print_position lexbuf;
+    printf "%a: model syntax error\n" print_position lexbuf;
     exit (-1)
-
-let model = Hashtbl.create 200;;
 
 let rec load s = 
   match s with
-  | Inst (inst,v) -> Hashtbl.add model inst v
-  | Sline (s1::l) -> load s1; load (Sline (l)) 
-  | Sline ([]) -> ()
+  | Sline (Inst (inst,v)::l) -> (inst,v) ::load (Sline (l)) 
+  | Sline ([]) | _ -> []
   
 
 let load_model model_file =
   let inx = open_in model_file in
   let lexbuf = Lexing.from_channel inx in
   let blocks = parse_with_error lexbuf in
-  let () = load blocks in 
+  let model = load blocks in 
    let () = close_in inx in
    model

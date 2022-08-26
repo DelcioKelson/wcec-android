@@ -395,10 +395,10 @@ let _menhir_action_26 =
      : (Ast.stmt))
 
 let _menhir_action_27 =
-  fun c golabel id2 id3 s ->
+  fun c id2 idlabel idlabl s ->
     (
 # 81 "lib/loop_static_analysis/parser.mly"
-        (Sgoto (golabel,c,Sblock s) )
+        (Sgoto (idlabel,c,Sblock s) )
 # 403 "lib/loop_static_analysis/parser.ml"
      : (Ast.stmt))
 
@@ -1193,9 +1193,9 @@ include struct
               in
               let MenhirCell1_ident (_menhir_stack, _, id2) = _menhir_stack in
               let MenhirCell1_cond (_menhir_stack, _, c) = _menhir_stack in
-              let MenhirCell1_ident (_menhir_stack, _menhir_s, golabel) = _menhir_stack in
-              let (id3, s) = (_v_1, _v) in
-              let _v = _menhir_action_27 c golabel id2 id3 s in
+              let MenhirCell1_ident (_menhir_stack, _menhir_s, idlabel) = _menhir_stack in
+              let (idlabl, s) = (_v_1, _v) in
+              let _v = _menhir_action_27 c id2 idlabel idlabl s in
               _menhir_goto_stmt _menhir_stack _menhir_lexbuf _menhir_lexer _v _menhir_s _tok
           | _ ->
               _eRR ())

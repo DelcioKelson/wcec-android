@@ -8,14 +8,14 @@ let print_position outx lexbuf =
   let pos = lexbuf.lex_curr_p in
   fprintf outx "%s:%d:%d" pos.pos_fname pos.pos_lnum (pos.pos_cnum - pos.pos_bol + 1)
 
-let parse_with_error lexbuf =
+let parse_with_error lexbuf method_file =
   try Parser.file Lexer.token lexbuf with
   | SyntaxError msg ->
     fprintf stderr "%a: %s\n" print_position lexbuf msg;
     exit (-1)
-  | Parser.Error ->
-    fprintf stderr "%a: syntax error\n" print_position lexbuf;
-    exit (-1)
+  | Parser.Error ->(*
+    let() = print_string method_file in
+    fprintf stderr "%a: file_to_analyse syntax error in file\n" print_position lexbuf;*)Sskip
 
 (*
 let print_abs a = 
@@ -30,19 +30,15 @@ let print_abs a =
 let loop_bounds method_file =
   let inx = open_in method_file in
   let lexbuf = Lexing.from_channel inx in
-  let blocks = parse_with_error lexbuf in
+  let blocks = parse_with_error lexbuf method_file in
   let r = get_bounds blocks in 
   let () = close_in inx in
   r
 
-
-let files_path = "resources/files_to_analyse/"
-let method_files_list = Sys.readdir files_path
-
-let method_bounds = Hashtbl.create (Array.length method_files_list)
-
-
-let get_bounds () =  
+let get_bounds () = 
+  let files_path = "resources/files_to_analyse/" in 
+  let method_files_list = Sys.readdir files_path in 
+  let method_bounds = Hashtbl.create (Array.length method_files_list) in
   let () = Array.iter (fun file_name -> let bounds = loop_bounds (String.concat files_path [""; file_name]) in 
   if (Hashtbl.length bounds)!=0 then (Hashtbl.add method_bounds file_name bounds))  method_files_list   in
   method_bounds

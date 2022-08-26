@@ -1,0 +1,3 @@
+     $r1 = r0.f$0
+     $r2 = r0.f$1
+     virtualinvoke $r1.lambda$onCreate$0$com-greenstamp-epi-MainActivity($r2)

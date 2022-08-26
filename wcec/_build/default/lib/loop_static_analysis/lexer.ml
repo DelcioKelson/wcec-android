@@ -12,26 +12,26 @@
 # 13 "lib/loop_static_analysis/lexer.ml"
 let __ocaml_lex_tables = {
   Lexing.lex_base =
-   "\000\000\237\255\238\255\075\000\002\000\003\000\030\000\031\000\
-    \247\255\012\000\249\255\250\255\251\255\252\255\085\000\002\000\
-    \255\255\248\255\245\255\244\255\242\255\240\255";
+   "\000\000\236\255\237\255\075\000\002\000\003\000\030\000\031\000\
+    \246\255\247\255\248\255\249\255\250\255\251\255\085\000\253\255\
+    \002\000\255\255\244\255\243\255\241\255\239\255";
   Lexing.lex_backtrk =
-   "\255\255\255\255\255\255\016\000\014\000\012\000\018\000\009\000\
-    \255\255\018\000\255\255\255\255\255\255\255\255\002\000\001\000\
-    \255\255\255\255\255\255\255\255\255\255\255\255";
+   "\255\255\255\255\255\255\017\000\015\000\013\000\019\000\010\000\
+    \255\255\255\255\255\255\255\255\255\255\255\255\003\000\255\255\
+    \001\000\255\255\255\255\255\255\255\255\255\255";
   Lexing.lex_default =
    "\001\000\000\000\000\000\255\255\255\255\255\255\255\255\255\255\
-    \000\000\255\255\000\000\000\000\000\000\000\000\255\255\255\255\
-    \000\000\000\000\000\000\000\000\000\000\000\000";
+    \000\000\000\000\000\000\000\000\000\000\000\000\255\255\000\000\
+    \255\255\000\000\000\000\000\000\000\000\000\000";
   Lexing.lex_trans =
    "\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\
-    \000\000\015\000\016\000\015\000\000\000\000\000\000\000\000\000\
+    \000\000\016\000\017\000\016\000\000\000\000\000\000\000\000\000\
     \000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\
     \000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\
-    \015\000\006\000\015\000\000\000\000\000\008\000\000\000\000\000\
+    \016\000\006\000\016\000\000\000\015\000\008\000\000\000\000\000\
     \000\000\000\000\010\000\012\000\000\000\011\000\000\000\009\000\
     \003\000\003\000\003\000\003\000\003\000\003\000\003\000\003\000\
-    \003\000\003\000\013\000\017\000\005\000\007\000\004\000\021\000\
+    \003\000\003\000\013\000\000\000\005\000\007\000\004\000\021\000\
     \020\000\014\000\014\000\014\000\014\000\014\000\014\000\014\000\
     \014\000\014\000\014\000\014\000\014\000\014\000\014\000\014\000\
     \014\000\014\000\014\000\014\000\014\000\014\000\014\000\014\000\
@@ -69,13 +69,13 @@ let __ocaml_lex_tables = {
     \000\000\000\000\000\000\000\000\000\000\000\000";
   Lexing.lex_check =
    "\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\
-    \255\255\000\000\000\000\015\000\255\255\255\255\255\255\255\255\
+    \255\255\000\000\000\000\016\000\255\255\255\255\255\255\255\255\
     \255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\
     \255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\
-    \000\000\000\000\015\000\255\255\255\255\000\000\255\255\255\255\
+    \000\000\000\000\016\000\255\255\000\000\000\000\255\255\255\255\
     \255\255\255\255\000\000\000\000\255\255\000\000\255\255\000\000\
     \000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\
-    \000\000\000\000\000\000\009\000\000\000\000\000\000\000\004\000\
+    \000\000\000\000\000\000\255\255\000\000\000\000\000\000\004\000\
     \005\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\
     \000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\
     \000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\
@@ -140,99 +140,104 @@ and __ocaml_lex_token_rec lexbuf __ocaml_lex_state =
 # 141 "lib/loop_static_analysis/lexer.ml"
 
   | 2 ->
-let
 # 21 "lib/loop_static_analysis/lexer.mll"
-             id
-# 147 "lib/loop_static_analysis/lexer.ml"
-= Lexing.sub_lexeme lexbuf lexbuf.Lexing.lex_start_pos lexbuf.Lexing.lex_curr_pos in
-# 21 "lib/loop_static_analysis/lexer.mll"
-                ( id_or_kwd id )
-# 151 "lib/loop_static_analysis/lexer.ml"
+         ( token lexbuf )
+# 146 "lib/loop_static_analysis/lexer.ml"
 
   | 3 ->
+let
 # 22 "lib/loop_static_analysis/lexer.mll"
-            ( COLON )
+             id
+# 152 "lib/loop_static_analysis/lexer.ml"
+= Lexing.sub_lexeme lexbuf lexbuf.Lexing.lex_start_pos lexbuf.Lexing.lex_curr_pos in
+# 22 "lib/loop_static_analysis/lexer.mll"
+                ( id_or_kwd id )
 # 156 "lib/loop_static_analysis/lexer.ml"
 
   | 4 ->
 # 23 "lib/loop_static_analysis/lexer.mll"
-            ( PLUS )
+            ( COLON )
 # 161 "lib/loop_static_analysis/lexer.ml"
 
   | 5 ->
 # 24 "lib/loop_static_analysis/lexer.mll"
-            ( MINUS )
+            ( PLUS )
 # 166 "lib/loop_static_analysis/lexer.ml"
 
   | 6 ->
 # 25 "lib/loop_static_analysis/lexer.mll"
-            ( TIMES )
+            ( MINUS )
 # 171 "lib/loop_static_analysis/lexer.ml"
 
   | 7 ->
 # 26 "lib/loop_static_analysis/lexer.mll"
-            ( DIV )
+            ( TIMES )
 # 176 "lib/loop_static_analysis/lexer.ml"
 
   | 8 ->
 # 27 "lib/loop_static_analysis/lexer.mll"
-            ( MOD )
+            ( DIV )
 # 181 "lib/loop_static_analysis/lexer.ml"
 
   | 9 ->
 # 28 "lib/loop_static_analysis/lexer.mll"
-            ( EQUAL )
+            ( MOD )
 # 186 "lib/loop_static_analysis/lexer.ml"
 
   | 10 ->
 # 29 "lib/loop_static_analysis/lexer.mll"
-            ( BEQ )
+            ( EQUAL )
 # 191 "lib/loop_static_analysis/lexer.ml"
 
   | 11 ->
 # 30 "lib/loop_static_analysis/lexer.mll"
-            ( BNEQ )
+            ( BEQ )
 # 196 "lib/loop_static_analysis/lexer.ml"
 
   | 12 ->
 # 31 "lib/loop_static_analysis/lexer.mll"
-            ( BLT)
+            ( BNEQ )
 # 201 "lib/loop_static_analysis/lexer.ml"
 
   | 13 ->
 # 32 "lib/loop_static_analysis/lexer.mll"
-            ( BLE)
+            ( BLT)
 # 206 "lib/loop_static_analysis/lexer.ml"
 
   | 14 ->
 # 33 "lib/loop_static_analysis/lexer.mll"
-            ( BGT)
+            ( BLE)
 # 211 "lib/loop_static_analysis/lexer.ml"
 
   | 15 ->
 # 34 "lib/loop_static_analysis/lexer.mll"
-            ( BGE)
+            ( BGT)
 # 216 "lib/loop_static_analysis/lexer.ml"
 
   | 16 ->
-let
 # 35 "lib/loop_static_analysis/lexer.mll"
-               s
-# 222 "lib/loop_static_analysis/lexer.ml"
-= Lexing.sub_lexeme lexbuf lexbuf.Lexing.lex_start_pos lexbuf.Lexing.lex_curr_pos in
-# 35 "lib/loop_static_analysis/lexer.mll"
-                 ( CST (int_of_string s))
-# 226 "lib/loop_static_analysis/lexer.ml"
+            ( BGE)
+# 221 "lib/loop_static_analysis/lexer.ml"
 
   | 17 ->
+let
 # 36 "lib/loop_static_analysis/lexer.mll"
-            ( EOF )
+               s
+# 227 "lib/loop_static_analysis/lexer.ml"
+= Lexing.sub_lexeme lexbuf lexbuf.Lexing.lex_start_pos lexbuf.Lexing.lex_curr_pos in
+# 36 "lib/loop_static_analysis/lexer.mll"
+                 ( CST (int_of_string s))
 # 231 "lib/loop_static_analysis/lexer.ml"
 
   | 18 ->
 # 37 "lib/loop_static_analysis/lexer.mll"
-      ( raise (SyntaxError ("Illegal string character: " ^ Lexing.lexeme lexbuf)) )
+            ( EOF )
 # 236 "lib/loop_static_analysis/lexer.ml"
+
+  | 19 ->
+# 38 "lib/loop_static_analysis/lexer.mll"
+      ( raise (SyntaxError ("Illegal string character: " ^ Lexing.lexeme lexbuf)) )
+# 241 "lib/loop_static_analysis/lexer.ml"
 
   | __ocaml_lex_state -> lexbuf.Lexing.refill_buff lexbuf;
       __ocaml_lex_token_rec lexbuf __ocaml_lex_state
