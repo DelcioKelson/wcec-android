@@ -1,7 +1,0 @@
-     $r3 = newarray (java.lang.Object)2
-     $r4 = staticinvoke java.lang.Boolean.valueOf($z0)
-     $r30 = $r4
-     $r4 = staticinvoke java.lang.Boolean.valueOf($z1)
-     $r31 = $r4
-     staticinvoke X.07S.A0I(\SigquitDetectorAcra\ \sigquitDetected inFgV1: %b inFgV2: %b\ $r3)
-     $r5 = new java.lang.NullPointerException

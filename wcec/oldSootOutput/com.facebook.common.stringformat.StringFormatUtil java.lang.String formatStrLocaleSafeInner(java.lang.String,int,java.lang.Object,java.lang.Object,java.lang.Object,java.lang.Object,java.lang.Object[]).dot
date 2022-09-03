@@ -1,8 +1,0 @@
-     $i1 = staticinvoke com.facebook.common.stringformat.StringFormatUtil.doDryRunInternal($r3 $i0 $r4 $r5 $r0 $r1 $r2)
-     $r3 = staticinvoke com.facebook.common.stringformat.StringFormatUtil.fallbackToSystem($r3 $i0 $r4 $r5 $r0 $r1 $r2)
-     label1: if $i1 != -2 goto label2
-     label2: $r7 = new java.lang.StringBuilder
-     staticinvoke com.facebook.common.stringformat.StringFormatUtil.doFormatArray($r7 $r3 $r2)
-     label4: staticinvoke com.facebook.common.stringformat.StringFormatUtil.doFormatArgs($r7 $r3 $i0 $r4 $r5 $r0 $r1)
-     label3: $r3 = virtualinvoke $r7.toString()
-     goto label3

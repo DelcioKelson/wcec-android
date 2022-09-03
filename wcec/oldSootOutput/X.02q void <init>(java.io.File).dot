@@ -1,5 +1,0 @@
-     r0.A00 = $r1
-     $r3 = new java.io.FileInputStream
-     r0.A01 = $r3
-     $r2 = virtualinvoke $r3.getChannel()
-     r0.A02 = $r2

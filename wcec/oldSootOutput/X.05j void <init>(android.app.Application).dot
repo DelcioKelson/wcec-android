@@ -1,2 +1,0 @@
-     $r2 = virtualinvoke $r1.getSharedPreferences(\lacrima\ 0)
-     r0.A00 = $r2

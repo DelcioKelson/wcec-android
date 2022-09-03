@@ -1,3 +1,0 @@
-     $r2 = virtualinvoke r0.A04($r1)
-     $i1 = staticinvoke X.01C.A00(r0 $i1)
-     $r3 = staticinvoke android.app.PendingIntent.getBroadcast($r1 $i0 $r2 $i1)

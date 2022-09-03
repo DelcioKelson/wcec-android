@@ -1,7 +1,0 @@
-     r0.inFile = $r1
-     $r2 = newarray (byte)32768
-     r0.inBuf = $r2
-     $r2 = newarray (byte)32768
-     r0.outBuf = $r2
-     $l0 = staticinvoke com.facebook.xzdecoder.XzInputStream.initializeState()
-     r0.state = $l0

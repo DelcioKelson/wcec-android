@@ -1,7 +1,0 @@
-     $r10 = null
-     $r0 = X.06S.A01
-     $r2 = X.06S.A00
-     $i0 = interfaceinvoke $r2.APs(\/proc/self/cmdline\ null $r0 null $r1)
-     $r3 = $r10
-     $r4 = staticinvoke java.lang.Integer.valueOf($i0)
-     $r5 = new android.util.Pair

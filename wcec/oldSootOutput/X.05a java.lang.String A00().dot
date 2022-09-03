@@ -1,9 +1,0 @@
-     $l0 = staticinvoke java.lang.System.currentTimeMillis()
-     $r1 = staticinvoke java.lang.Long.toString($l0)
-     $r0 = new java.lang.StringBuilder
-     virtualinvoke $r0.append($r1)
-     virtualinvoke $r0.append(\-\)
-     $r1 = staticinvoke X.06R.A00()
-     virtualinvoke $r0.append($r1)
-     $r1 = virtualinvoke $r0.toString()
-     X.05a.A00 = $r1

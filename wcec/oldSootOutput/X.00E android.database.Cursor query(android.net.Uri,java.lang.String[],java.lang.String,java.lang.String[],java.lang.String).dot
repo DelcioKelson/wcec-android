@@ -1,2 +1,0 @@
-     $r6 = staticinvoke X.00E.A00(r0)
-     $r7 = virtualinvoke $r6.A02($r1 $r2 $r3 $r4 $r5)

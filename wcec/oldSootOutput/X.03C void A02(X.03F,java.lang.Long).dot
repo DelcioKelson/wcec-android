@@ -1,4 +1,0 @@
-     $r3 = r0.A06
-     label1: $r3 = r0.A06
-     interfaceinvoke $r3.remove($r1)
-     interfaceinvoke $r3.put($r1 $r2)

@@ -1,3 +1,0 @@
-     staticinvoke X.06Q.A00()
-     label1: $r0 = X.06Q.A00
-     $z0 = virtualinvoke $r0.booleanValue()

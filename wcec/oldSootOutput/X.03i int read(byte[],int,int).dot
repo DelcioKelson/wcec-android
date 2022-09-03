@@ -1,9 +1,0 @@
-     $i2 = r0.A00
-     label1: $i2 = r0.A00
-     $i1 = staticinvoke java.lang.Math.min($i2 $i1)
-     $r2 = r0.A01
-     $r3 = $r2.A01
-     $i0 = virtualinvoke $r3.read($r1 $i0 $i1)
-     $i1 = r0.A00
-     $i1 = $i1 - $i0
-     r0.A00 = $i1

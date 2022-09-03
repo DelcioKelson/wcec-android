@@ -1,5 +1,0 @@
-     label1: interfaceinvoke $r0.close()
-     $r1 = newarray (java.lang.Object)2
-     $r10 = $r2
-     $r11 = $r0
-     staticinvoke X.07B.A04(\DexStore\ \error closing %s\ $r1)

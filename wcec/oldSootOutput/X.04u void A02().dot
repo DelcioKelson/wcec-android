@@ -1,7 +1,0 @@
-     $l0 = r0.A00
-     $r3 = r0.A03
-     $r2 = r0.A01
-     $z0 = staticinvoke com.facebook.systrace.Systrace.A0G($l0)
-     $r1 = $r2.A01
-     $i1 = $r2.A00
-     staticinvoke com.facebook.systrace.Systrace.A0F($r3 $r1 $i1 $l0)

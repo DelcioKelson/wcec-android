@@ -1,3 +1,0 @@
-     $r2 = r0.A01
-     $r3 = staticinvoke java.lang.Integer.toString($i0)
-     virtualinvoke $r2.A00($r1 $r3)

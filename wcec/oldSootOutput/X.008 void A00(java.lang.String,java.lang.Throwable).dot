@@ -1,9 +1,0 @@
-     $r3 = newarray (java.lang.Object)1
-     $r30 = $r0
-     staticinvoke X.07B.A01(\EarlySoftErrorReporting\ \SOFT ERROR %s\ $r1 $r3)
-     label1: staticinvoke android.os.Process.setThreadPriority(10)
-     staticinvoke X.075.A03($r0 $r1 756)
-     label3: $r3 = newarray (java.lang.Object)1
-     $r30 = $r1
-     staticinvoke X.07B.A04(\EarlySoftErrorReporting\ \Unable to report soft error\ $r3)
-     goto label3

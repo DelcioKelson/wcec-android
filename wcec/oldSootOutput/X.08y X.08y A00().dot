@@ -1,9 +1,0 @@
-     label1: $r1 = X.08y.A03
-     label2: $r0 = staticinvoke java.lang.Thread.getDefaultUncaughtExceptionHandler()
-     label5: exitmonitor class \LX/08y\
-     $r1 = new X.08y
-     X.08y.A03 = $r1
-     staticinvoke java.lang.Thread.setDefaultUncaughtExceptionHandler($r1)
-     $r1 = X.08y.A03
-     goto label5
-     exitmonitor class \LX/08y\

@@ -1,4 +1,0 @@
-     $r2 = virtualinvoke $r1.getFilesDir()
-     $r3 = new java.io.File
-     $z0 = virtualinvoke $r3.exists()
-     virtualinvoke $r3.delete()

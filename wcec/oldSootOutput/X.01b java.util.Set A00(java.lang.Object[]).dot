@@ -1,3 +1,0 @@
-     $r1 = staticinvoke java.util.Arrays.asList($r0)
-     $r2 = new java.util.HashSet
-     $r3 = staticinvoke java.util.Collections.unmodifiableSet($r2)

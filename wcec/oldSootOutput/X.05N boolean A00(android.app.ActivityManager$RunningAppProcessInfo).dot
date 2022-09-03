@@ -1,9 +1,0 @@
-     entermonitor $r0
-     label01: staticinvoke android.app.ActivityManager.getMyMemoryState($r0)
-     label02: goto label05
-     label05: $z0 = 1
-     label04: staticinvoke X.07S.A08(\ProcessImportanceProvider\ \Could not get current importance\ $r1)
-     $z0 = 0
-     goto label06
-     label06: exitmonitor $r0
-     label09: exitmonitor $r0

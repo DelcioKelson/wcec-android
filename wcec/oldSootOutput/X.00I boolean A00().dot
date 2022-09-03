@@ -1,5 +1,0 @@
-     $i0 = virtualinvoke r0.ordinal()
-     label1: $r1 = new java.lang.StringBuilder
-     virtualinvoke $r1.append(r0)
-     $r2 = virtualinvoke $r1.toString()
-     $r3 = new java.lang.IllegalStateException

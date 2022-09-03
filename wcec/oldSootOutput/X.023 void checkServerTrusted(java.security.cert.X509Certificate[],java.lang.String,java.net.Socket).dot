@@ -1,5 +1,0 @@
-     $r4 = r0.A00
-     $r5 = $r4.A02
-     $r6 = (javax.net.ssl.X509ExtendedTrustManager) $r5
-     virtualinvoke $r6.checkServerTrusted($r1 $r2 $r3)
-     virtualinvoke $r4.A01($r1)

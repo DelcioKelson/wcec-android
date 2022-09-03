@@ -1,6 +1,0 @@
-     $r3 = $r1.A01
-     staticinvoke X.02y.A01($r3 \Did you call earlyInit()?\)
-     $r2 = $r3.A05
-     staticinvoke X.02y.A01($r2 \Did you call SessionManager.init()?\)
-     $r4 = new java.io.File
-     $r5 = new X.02Z

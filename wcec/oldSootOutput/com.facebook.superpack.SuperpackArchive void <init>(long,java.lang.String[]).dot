@@ -1,4 +1,0 @@
-     r0.mDecompressedFiles = 0
-     $b1 = $l0 cmp 0L
-     r0.mPtr = $l0
-     label1: $r2 = new java.lang.IllegalArgumentException

@@ -1,5 +1,0 @@
-     $r1 = r0.A00
-     $r2 = staticinvoke X.06T.A00($r1)
-     $r3 = virtualinvoke $r2.split(\:\)
-     $i0 = lengthof $r3
-     $r2 = $r31

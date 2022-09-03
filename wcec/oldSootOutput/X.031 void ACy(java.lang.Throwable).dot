@@ -1,9 +1,0 @@
-     $r2 = r0.A00
-     $r3 = $r2.A0Q
-     $r4 = interfaceinvoke $r3.get()
-     $r5 = (java.lang.String) $r4
-     $r3 = $r2.A0P
-     $r4 = interfaceinvoke $r3.get()
-     $r6 = (java.lang.String) $r4
-     $r7 = new java.util.HashMap
-     staticinvoke X.01p.A01($r5 $r6 $r1 $r7)

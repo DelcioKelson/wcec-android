@@ -1,2 +1,0 @@
-     $r1 = staticinvoke java.lang.String.format(null $r1 $r2)
-     staticinvoke android.util.Log.e($r0 $r1)

@@ -1,4 +1,0 @@
-     $r0 = X.01v.A00
-     $z1 = $z0 ^ 1
-     $z0 = virtualinvoke $r0.compareAndSet($z1 $z0)
-     staticinvoke X.00M.A01(4)

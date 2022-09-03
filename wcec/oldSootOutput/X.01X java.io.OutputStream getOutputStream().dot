@@ -1,2 +1,0 @@
-     $r2 = r0.A00
-     $r1 = virtualinvoke $r2.getOutputStream()

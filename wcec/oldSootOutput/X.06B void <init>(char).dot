@@ -1,3 +1,0 @@
-     $r1 = new java.lang.StringBuilder
-     r0.A00 = $r1
-     virtualinvoke $r1.append($c0)

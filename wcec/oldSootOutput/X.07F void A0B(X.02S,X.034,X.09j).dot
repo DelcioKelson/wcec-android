@@ -1,6 +1,0 @@
-     $r4 = r0.A04
-     entermonitor $r4
-     label1: $r6 = r0.A06
-     interfaceinvoke $r5.add($r1)
-     exitmonitor $r4
-     exitmonitor $r4

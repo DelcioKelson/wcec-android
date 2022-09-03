@@ -1,4 +1,0 @@
-     label1: staticinvoke com.facebook.superpack.SuperpackFileLoader.loadFileNative($r0)
-     $z0 = virtualinvoke $r0.endsWith(\.so\)
-     $z0 = $z0 ^ 1
-     staticinvoke java.lang.System.load($r0)

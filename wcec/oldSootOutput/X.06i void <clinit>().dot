@@ -1,5 +1,0 @@
-     $r00 = \mobile\
-     $r01 = \reliability_event_log_upload\
-     $r1 = staticinvoke X.05M.A00($r0)
-     $r2 = virtualinvoke $r1.toString()
-     X.06i.A0U = $r2

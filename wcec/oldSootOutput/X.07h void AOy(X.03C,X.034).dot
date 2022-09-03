@@ -1,9 +1,0 @@
-     $r6 = X.06V.A03
-     $r4 = X.03D.A3b
-     $r3 = $r6.A04
-     entermonitor $r3
-     label1: $r5 = virtualinvoke $r3.toString()
-     exitmonitor $r3
-     label2: goto label5
-     label5: virtualinvoke $r1.A03($r4 $r5)
-     exitmonitor $r3

@@ -1,3 +1,0 @@
-     $r1 = r0.A00
-     $z0 = r0.A01
-     staticinvoke X.01d.A00($r1 $z0)

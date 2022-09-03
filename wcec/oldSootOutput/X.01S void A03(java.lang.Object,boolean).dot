@@ -1,2 +1,0 @@
-     label1: $r0 = staticinvoke java.lang.String.valueOf($r1)
-     $r2 = new java.lang.IllegalArgumentException

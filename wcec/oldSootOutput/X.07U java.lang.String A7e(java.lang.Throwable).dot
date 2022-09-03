@@ -1,5 +1,0 @@
-     $r2 = r0.A00
-     $r3 = virtualinvoke $r2.getPackageName()
-     $r4 = virtualinvoke $r2.getSharedPreferences($r3 0)
-     $l0 = interfaceinvoke $r4.getLong(\client_id\ -1L)
-     $r3 = staticinvoke java.lang.Long.toString($l0)

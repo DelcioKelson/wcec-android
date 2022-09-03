@@ -1,8 +1,0 @@
-     $z0 = X.059.A00
-     $r3 = \webview\
-     $z0 = virtualinvoke $r3.equals($r1)
-     $r4 = virtualinvoke r0.getApplicationInfo()
-     $r1 = $r4.dataDir
-     $r2 = new java.io.File
-     $r5 = new java.io.File
-     virtualinvoke $r5.mkdirs()

@@ -1,7 +1,0 @@
-     entermonitor r0
-     label1: $r2 = r0.A00
-     $r1 = virtualinvoke r0.A00()
-     label2: exitmonitor r0
-     $r2 = $r1
-     r0.A00 = $r1
-     exitmonitor r0

@@ -1,5 +1,0 @@
-     $r2 = virtualinvoke $r1.getApplicationInfo()
-     $i0 = $r2.targetSdkVersion
-     $i0 = android.os.Build$VERSION.SDK_INT
-     label1: $z0 = virtualinvoke $r0.canScheduleExactAlarms()
-     staticinvoke X.07S.A09(\AndroidCompat\ \failed to check canScheduleExactAlarms. Reverting to false\ $r3)

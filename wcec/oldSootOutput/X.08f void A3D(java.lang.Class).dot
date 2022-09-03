@@ -1,2 +1,0 @@
-     $z0 = X.08f.A00
-     staticinvoke com.facebook.common.dextricks.classtracing.logger.ClassTracingLoggerFbLite.classLoaded($r1)

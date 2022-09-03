@@ -1,8 +1,0 @@
-     $r1 = X.01U.A00
-     $r2 = $r1.A02
-     $z0 = virtualinvoke $r2.getAndSet(1)
-     $r3 = $r1.A00
-     virtualinvoke $r3.close()
-     $r4 = $r1.A01
-     $r5 = new X.01W
-     interfaceinvoke $r4.execute($r5)

@@ -1,8 +1,0 @@
-     $l0 = staticinvoke java.lang.System.currentTimeMillis()
-     $z0 = $r0.A01
-     $r1 = $r0.A02
-     entermonitor $r1
-     label1: $r2 = staticinvoke java.lang.Long.toString($l0)
-     virtualinvoke $r0.A03($r2 180 15)
-     exitmonitor $r1
-     exitmonitor $r1

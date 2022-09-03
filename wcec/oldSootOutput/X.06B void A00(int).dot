@@ -1,3 +1,0 @@
-     $r1 = r0.A00
-     virtualinvoke $r1.append(124)
-     virtualinvoke $r1.append($i0)

@@ -1,6 +1,0 @@
-     $r6 = X.06W.A01
-     $r7 = virtualinvoke $r4.getAuthority()
-     label2: $r7 = null
-     label1: staticinvoke X.01l.A00($r6 $r7 $i0)
-     $r8 = virtualinvoke $r3.query($r4 $r1 $r5 $r2 $r0)
-     goto label1

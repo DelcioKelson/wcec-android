@@ -1,3 +1,0 @@
-     $r5 = staticinvoke X.00E.A00(r0)
-     virtualinvoke $r5.A00($r1 $r2 $r3 $r4)
-     $r6 = new java.lang.RuntimeException

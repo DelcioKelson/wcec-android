@@ -1,4 +1,0 @@
-     $r4 = X.07R.A00
-     $z0 = interfaceinvoke $r4.AEW(5)
-     $r1 = staticinvoke java.lang.String.format(null $r1 $r3)
-     staticinvoke X.07R.A02($r0 $r1 $r2)

@@ -1,2 +1,0 @@
-     $z0 = virtualinvoke $r0.booleanValue()
-     label1: $r1 = new java.lang.IllegalArgumentException

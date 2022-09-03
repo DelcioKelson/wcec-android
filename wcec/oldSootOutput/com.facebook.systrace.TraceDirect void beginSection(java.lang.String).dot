@@ -1,9 +1,0 @@
-     $z0 = staticinvoke com.facebook.systrace.TraceDirect.checkNative()
-     staticinvoke com.facebook.systrace.TraceDirect.nativeBeginSection($r0)
-     label1: $r1 = new X.06B
-     $i0 = staticinvoke android.os.Process.myPid()
-     virtualinvoke $r1.A00($i0)
-     virtualinvoke $r1.A02($r0)
-     $r2 = $r1.A00
-     $r0 = virtualinvoke $r2.toString()
-     staticinvoke X.06n.A00($r0)

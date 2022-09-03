@@ -1,7 +1,0 @@
-     $r1 = staticinvoke X.07C.A00($r0)
-     $r2 = interfaceinvoke $r1.edit()
-     $r3 = new java.lang.StringBuilder
-     virtualinvoke $r3.append($i0)
-     $r4 = virtualinvoke $r3.toString()
-     $r2 = interfaceinvoke $r2.putBoolean($r4 $z0)
-     interfaceinvoke $r2.apply()

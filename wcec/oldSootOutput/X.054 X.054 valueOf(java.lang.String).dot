@@ -1,2 +1,0 @@
-     $r1 = staticinvoke java.lang.Enum.valueOf(class \LX/054\ $r0)
-     $r2 = (X.054) $r1

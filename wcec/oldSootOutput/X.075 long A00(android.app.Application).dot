@@ -1,3 +1,0 @@
-     label1: $r2 = virtualinvoke $r0.getPackageName()
-     $r3 = virtualinvoke $r0.getSharedPreferences($r2 0)
-     $l0 = interfaceinvoke $r3.getLong(\current_user_id\ 0L)

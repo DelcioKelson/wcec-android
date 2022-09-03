@@ -1,6 +1,0 @@
-     $r00 = 4096
-     X.06S.A01 = $r0
-     $r1 = staticinvoke X.07c.A00()
-     $r2 = $r1
-     $r2 = staticinvoke X.07b.A01()
-     label1: X.06S.A00 = $r2

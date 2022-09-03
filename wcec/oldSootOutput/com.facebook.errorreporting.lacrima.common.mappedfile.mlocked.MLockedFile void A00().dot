@@ -1,3 +1,0 @@
-     $z0 = com.facebook.errorreporting.lacrima.common.mappedfile.mlocked.MLockedFile.A00
-     $r1 = r0.A00
-     staticinvoke com.facebook.errorreporting.lacrima.common.mappedfile.mlocked.MLockedFile.mlockBuffer($r1)

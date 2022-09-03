@@ -1,8 +1,0 @@
-     $i1 = r0.A00
-     $i1 = $i1 + $i0
-     r0.A00 = $i1
-     $r1 = r0.A03
-     virtualinvoke $r1.skipBytes($i0)
-     label1: r0 = r0.A02
-     virtualinvoke r0.A04($i0)
-     label2: $r2 = new java.lang.NullPointerException

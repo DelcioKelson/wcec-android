@@ -1,6 +1,0 @@
-     $r3 = r0.A00
-     $r2 = r0.A01
-     $r4 = virtualinvoke $r1.A01()
-     $r5 = interfaceinvoke $r4.get()
-     $r6 = (X.02P) $r5
-     $r7 = new X.00V

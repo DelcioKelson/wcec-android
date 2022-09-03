@@ -1,9 +1,0 @@
-     label1: staticinvoke android.system.Os.posix_fallocate($r1 0L $l0)
-     $i1 = $r2.errno
-     $i2 = android.system.OsConstants.EOPNOTSUPP
-     $i1 = $r2.errno
-     $i2 = android.system.OsConstants.ENOSYS
-     $i1 = $r2.errno
-     $i2 = android.system.OsConstants.EINVAL
-     $r3 = new java.io.IOException
-     $r0 = virtualinvoke $r2.toString()

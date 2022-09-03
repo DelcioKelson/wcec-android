@@ -1,3 +1,0 @@
-     $r1 = newarray (java.lang.Integer)$i0
-     $r0 = X.06W.A0g
-     staticinvoke java.lang.System.arraycopy($r0 0 $r1 0 $i0)

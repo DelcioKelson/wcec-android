@@ -1,2 +1,0 @@
-     $i0 = $i0 + 1
-     $r0 = virtualinvoke $r0.substring($i0)

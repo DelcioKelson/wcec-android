@@ -1,8 +1,0 @@
-     $i0 = r0.A00
-     label1: $r1 = r0.A01
-     $r2 = $r1.A01
-     $i0 = virtualinvoke $r2.read()
-     $i1 = r0.A00
-     label2: $r3 = new java.io.IOException
-     $i1 = $i1 + -1
-     r0.A00 = $i1

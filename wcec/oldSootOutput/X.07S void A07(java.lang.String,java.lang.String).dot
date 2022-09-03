@@ -1,4 +1,0 @@
-     $r2 = X.07S.A01
-     $z0 = interfaceinvoke $r2.AEW(6)
-     $r2 = X.07S.A01
-     interfaceinvoke $r2.AW6($r0 $r1)

@@ -1,7 +1,0 @@
-     $r1 = new java.lang.StringBuilder
-     $r2 = r0.A02
-     virtualinvoke $r1.append($r2)
-     virtualinvoke $r1.append(\:\)
-     $i0 = r0.A00
-     virtualinvoke $r1.append($i0)
-     $r2 = virtualinvoke $r1.toString()

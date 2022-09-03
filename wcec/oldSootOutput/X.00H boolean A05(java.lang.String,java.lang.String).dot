@@ -1,4 +1,0 @@
-     $z0 = virtualinvoke $r0.equals(\\)
-     label1: if $r1 == null goto label2
-     $z0 = virtualinvoke $r0.equals($r1)
-     $z0 = virtualinvoke $r1.equals(\\)

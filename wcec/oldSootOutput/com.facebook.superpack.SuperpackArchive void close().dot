@@ -1,8 +1,0 @@
-     entermonitor r0
-     label1: $l0 = r0.mPtr
-     $b1 = $l0 cmp 0L
-     staticinvoke com.facebook.superpack.SuperpackArchive.closeNative($l0)
-     label3: $r1 = new java.lang.IllegalStateException
-     r0.mPtr = 0L
-     label2: exitmonitor r0
-     exitmonitor r0

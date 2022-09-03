@@ -1,4 +1,0 @@
-     $r3 = newarray (java.lang.String)0
-     $r4 = new java.util.HashMap
-     r0.A03 = $r4
-     r0.A04 = $r1

@@ -1,2 +1,0 @@
-     $r3 = r0.A00
-     virtualinvoke $r3.checkServerTrusted($r1 $r2)

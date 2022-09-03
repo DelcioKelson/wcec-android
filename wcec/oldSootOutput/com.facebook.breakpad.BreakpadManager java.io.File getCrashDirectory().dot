@@ -1,2 +1,0 @@
-     $r0 = com.facebook.breakpad.BreakpadManager.mCrashDirectory
-     label1: $r1 = new java.lang.RuntimeException

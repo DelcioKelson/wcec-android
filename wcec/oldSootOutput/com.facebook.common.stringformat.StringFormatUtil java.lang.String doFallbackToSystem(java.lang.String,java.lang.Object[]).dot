@@ -1,8 +1,0 @@
-     label1: $r2 = staticinvoke java.lang.String.format(null $r0 $r1)
-     $r4 = new java.lang.StringBuilder
-     $r2 = virtualinvoke $r3.getMessage()
-     virtualinvoke $r4.append($r2)
-     virtualinvoke $r4.append(\: \)
-     virtualinvoke $r4.append($r0)
-     $r0 = virtualinvoke $r4.toString()
-     $r5 = new java.lang.RuntimeException

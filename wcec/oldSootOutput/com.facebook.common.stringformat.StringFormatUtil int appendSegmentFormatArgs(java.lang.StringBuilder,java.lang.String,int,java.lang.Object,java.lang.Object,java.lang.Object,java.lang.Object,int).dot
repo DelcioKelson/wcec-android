@@ -1,6 +1,0 @@
-     label5: $i0 = staticinvoke com.facebook.common.stringformat.StringFormatUtil.appendSegmentFormat($r0 $r1 $i0 null 0)
-     label4: $i0 = staticinvoke com.facebook.common.stringformat.StringFormatUtil.appendSegmentFormat($r0 $r1 $i0 $r2 1)
-     label3: $i0 = staticinvoke com.facebook.common.stringformat.StringFormatUtil.appendSegmentFormat($r0 $r1 $i0 $r3 1)
-     label2: $i0 = staticinvoke com.facebook.common.stringformat.StringFormatUtil.appendSegmentFormat($r0 $r1 $i0 $r4 1)
-     $i0 = staticinvoke com.facebook.common.stringformat.StringFormatUtil.appendSegmentFormat($r0 $r1 $i0 $r5 1)
-     label1: $r6 = new java.lang.AssertionError

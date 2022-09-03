@@ -1,5 +1,0 @@
-     X.07Y.A0P = $r1
-     $r0 = staticinvoke java.util.regex.Pattern.compile(\^Cmd line: (.*)\ 8)
-     X.07Y.A0R = $r0
-     $r2 = new java.util.concurrent.locks.ReentrantReadWriteLock
-     X.07Y.A0Q = $r2

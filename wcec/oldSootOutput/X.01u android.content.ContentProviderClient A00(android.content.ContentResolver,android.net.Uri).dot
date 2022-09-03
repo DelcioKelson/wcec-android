@@ -1,6 +1,0 @@
-     $r2 = X.06W.A00
-     $r3 = virtualinvoke $r1.getAuthority()
-     label2: $r3 = null
-     label1: staticinvoke X.01l.A00($r2 $r3 1838451259)
-     $r4 = virtualinvoke $r0.acquireUnstableContentProviderClient($r1)
-     goto label1

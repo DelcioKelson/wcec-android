@@ -1,2 +1,0 @@
-     $z0 = com.facebook.common.dextricks.classtracing.logger.ClassTracingLoggerFbLite.sEnabled
-     staticinvoke com.facebook.common.dextricks.classtracing.logger.ClassTracingLoggerFbLite.logClassNameInTrace($r0)

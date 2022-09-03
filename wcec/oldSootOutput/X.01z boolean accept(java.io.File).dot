@@ -1,3 +1,0 @@
-     $r2 = r0.A00
-     $r3 = virtualinvoke $r1.getName()
-     $z0 = virtualinvoke $r3.endsWith($r2)

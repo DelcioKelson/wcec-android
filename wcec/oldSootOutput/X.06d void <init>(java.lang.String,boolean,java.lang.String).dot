@@ -1,4 +1,0 @@
-     r0.A00 = $r1
-     r0.A01 = $r2
-     $r3 = X.06d.A0H
-     interfaceinvoke $r3.add($r1)

@@ -1,5 +1,0 @@
-     $z0 = com.facebook.superpack.SuperpackFileLoader.sLoadedSuperpack
-     staticinvoke com.facebook.superpack.SuperpackFileLoader.loadFile($r1)
-     label1: staticinvoke java.lang.System.load($r1)
-     $z0 = staticinvoke com.facebook.superpack.SuperpackFileLoader.isSuperpackLib($r1)
-     com.facebook.superpack.SuperpackFileLoader.sLoadedSuperpack = 1

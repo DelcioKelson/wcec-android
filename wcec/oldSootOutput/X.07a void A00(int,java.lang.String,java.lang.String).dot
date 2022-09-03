@@ -1,6 +1,0 @@
-     $r2 = new java.lang.StringBuilder
-     virtualinvoke $r2.append(\unknown\)
-     virtualinvoke $r2.append(\:\)
-     virtualinvoke $r2.append($r0)
-     $r0 = virtualinvoke $r2.toString()
-     staticinvoke android.util.Log.println($i0 $r0 $r1)

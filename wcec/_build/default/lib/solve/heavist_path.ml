@@ -54,9 +54,7 @@ let longest_path edges entry_node topologicalOrder =
 (*let () = Hashtbl.iter  (fun x a0 -> print_string x; print_float a0) cg_paths_weights*)
 
 let heaviest node_list cg_paths_weights= 
-  List.fold_left (
-    fun x y ->  if (Hashtbl.find cg_paths_weights x) < (Hashtbl.find cg_paths_weights y) then y else x
-    ) (List.hd node_list) node_list
+  List.fold_left (fun x y ->  if (Hashtbl.find cg_paths_weights x) < (Hashtbl.find cg_paths_weights y) then y else x) (List.hd node_list) node_list
 
 let rec step_back visited edges cg_paths_weights = function
     [] -> visited

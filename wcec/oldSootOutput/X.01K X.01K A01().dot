@@ -1,5 +1,0 @@
-     label1: $r0 = X.01K.A07
-     $r0 = new X.01K
-     label2: exitmonitor class \LX/01K\
-     X.01K.A07 = $r0
-     exitmonitor class \LX/01K\

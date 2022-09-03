@@ -1,9 +1,0 @@
-     label1: $r1 = virtualinvoke $r0.getPackageManager()
-     $r2 = virtualinvoke $r1.getPackagesForUid($i0)
-     label2: if $r2 == null goto label3
-     $i1 = lengthof $r2
-     label3: $r3 = new java.lang.StringBuilder
-     virtualinvoke $r3.append($i0)
-     $r4 = virtualinvoke $r3.toString()
-     $r5 = new X.01J
-     $r7 = new java.lang.SecurityException

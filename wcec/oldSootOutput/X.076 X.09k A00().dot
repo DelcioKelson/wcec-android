@@ -1,4 +1,0 @@
-     label1: $r0 = X.076.A00
-     label2: exitmonitor class \LX/076\
-     label3: $r1 = new java.lang.IllegalStateException
-     exitmonitor class \LX/076\

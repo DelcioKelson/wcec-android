@@ -1,3 +1,0 @@
-     $r2 = X.03D.A09
-     $z0 = virtualinvoke $r0.isDeviceUpgrading()
-     virtualinvoke $r1.A01($r2 $z0)

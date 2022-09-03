@@ -1,9 +1,0 @@
-     $r2 = r0.A00
-     entermonitor $r2
-     label1: $z0 = $r2.A03
-     $r2.A03 = 0
-     label2: exitmonitor $r2
-     $r1 = new X.08m
-     $r3 = new java.lang.Thread
-     virtualinvoke $r3.start()
-     exitmonitor $r2

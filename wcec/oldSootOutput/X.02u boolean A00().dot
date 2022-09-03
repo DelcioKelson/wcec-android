@@ -1,9 +1,0 @@
-     $z0 = X.00K.A03
-     $r1 = X.00K.A01
-     staticinvoke X.02J.A00($r1)
-     $r0 = newarray (java.lang.Object)1
-     $r2 = staticinvoke java.lang.Long.valueOf($l0)
-     $r00 = $r2
-     $r3 = staticinvoke X.00K.A00($r1 $r0)
-     $r4 = (java.lang.Boolean) $r3
-     $z0 = virtualinvoke $r4.booleanValue()

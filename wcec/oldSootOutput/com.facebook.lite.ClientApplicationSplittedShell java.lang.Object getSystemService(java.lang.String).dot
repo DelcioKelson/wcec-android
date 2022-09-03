@@ -1,2 +1,0 @@
-     $r2 = r0.A00
-     $r3 = interfaceinvoke $r2.getSystemService($r1)

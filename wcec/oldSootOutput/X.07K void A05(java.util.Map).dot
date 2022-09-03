@@ -1,9 +1,0 @@
-     $r2 = X.03D.A4C
-     $r4 = new X.04R
-     $r1 = X.07K.A0D
-     entermonitor $r1
-     label1: $r3 = virtualinvoke $r4.get()
-     $r5 = (java.lang.String) $r3
-     staticinvoke X.07K.A02($r2 $r5 $r0)
-     exitmonitor $r1
-     exitmonitor $r1

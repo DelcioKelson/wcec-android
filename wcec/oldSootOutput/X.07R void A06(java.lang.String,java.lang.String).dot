@@ -1,3 +1,0 @@
-     $r2 = X.07R.A00
-     $z0 = interfaceinvoke $r2.AEW(5)
-     interfaceinvoke $r2.AVj($r0 $r1)

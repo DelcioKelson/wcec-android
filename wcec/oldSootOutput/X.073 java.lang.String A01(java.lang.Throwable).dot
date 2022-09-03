@@ -1,5 +1,0 @@
-     $r1 = new java.io.StringWriter
-     $r3 = new java.io.PrintWriter
-     virtualinvoke $r0.printStackTrace($r3)
-     virtualinvoke $r3.close()
-     $r2 = virtualinvoke $r1.toString()

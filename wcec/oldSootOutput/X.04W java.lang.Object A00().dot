@@ -1,8 +1,0 @@
-     staticinvoke X.06o.A01(\GlobalCleanup\)
-     label1: $r3 = r0.A00
-     $r1 = $r3.A0I
-     $r2 = virtualinvoke $r1.getDir(\errorreporting\ 0)
-     $r4 = new X.05K
-     $r5 = new X.06v
-     label2: staticinvoke X.06o.A00()
-     staticinvoke X.06o.A00()

@@ -1,8 +1,0 @@
-     $r6 = $r1.A01
-     staticinvoke X.02y.A01($r6 \Did you call earlyInit()?\)
-     $r2 = $r1.A00
-     staticinvoke X.02y.A01($r2 \Did you call earlyInit()?\)
-     $r3 = r0.A00
-     $r4 = r0.A02
-     $r5 = r0.A01
-     $r7 = new com.facebook.errorreporting.lacrima.detector.javacrash.JavaCrashDetector

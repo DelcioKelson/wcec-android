@@ -1,4 +1,0 @@
-     staticinvoke X.02r.A03($r0 $r1 4 $l0)
-     $i1 = virtualinvoke $r1.getInt()
-     $l0 = (long) $i1
-     $l0 = $l0 & 4294967295L

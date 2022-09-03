@@ -1,7 +1,0 @@
-     $r4 = $r1.A01
-     staticinvoke X.02y.A01($r4 \Did you call earlyInit()?\)
-     $r3 = $r1.A00
-     staticinvoke X.02y.A01($r3 \Did you call earlyInit()?\)
-     $r5 = new java.util.Random
-     $r2 = new X.02j
-     $r6 = new X.02k

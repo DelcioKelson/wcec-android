@@ -1,2 +1,0 @@
-     $r1 = staticinvoke java.lang.Boolean.valueOf(1)
-     $r2 = new com.facebook.superpack.SuperpackFileInputStream

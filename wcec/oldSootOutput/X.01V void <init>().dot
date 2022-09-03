@@ -1,8 +1,0 @@
-     $r1 = staticinvoke java.util.concurrent.Executors.newSingleThreadExecutor()
-     r0.A01 = $r1
-     $r2 = new android.os.ConditionVariable
-     r0.A00 = $r2
-     $r3 = new java.util.concurrent.atomic.AtomicBoolean
-     r0.A02 = $r3
-     $r4 = new java.util.concurrent.atomic.AtomicLong
-     r0.A03 = $r4

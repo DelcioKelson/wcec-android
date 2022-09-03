@@ -1,3 +1,0 @@
-     $r1 = com.facebook.superpack.SuperpackUnloader.HOLDOUT_LIBRARIES
-     $z0 = interfaceinvoke $r1.contains($r0)
-     $z0 = $z0 ^ 1

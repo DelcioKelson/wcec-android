@@ -1,3 +1,0 @@
-     $r2 = r0.A07
-     label1: virtualinvoke $r2.close()
-     staticinvoke android.util.Log.e(\EarlySocket\ \Unable to close dupped fd.\ $r1)

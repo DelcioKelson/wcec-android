@@ -1,3 +1,0 @@
-     $r1 = r0.A00
-     $l0 = staticinvoke X.075.A00($r1)
-     $r2 = staticinvoke java.lang.Long.toString($l0)

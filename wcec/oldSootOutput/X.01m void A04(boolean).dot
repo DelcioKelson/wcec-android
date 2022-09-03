@@ -1,9 +1,0 @@
-     $r2 = r0.A03
-     $r2 = new X.03t
-     r0.A03 = $r2
-     $r3 = r0.A01
-     label1: $r2 = r0.A03
-     virtualinvoke $r3.A01()
-     $r1 = android.os.AsyncTask.THREAD_POOL_EXECUTOR
-     $r4 = newarray (java.lang.Void)0
-     virtualinvoke $r2.executeOnExecutor($r1 $r4)

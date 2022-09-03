@@ -1,5 +1,0 @@
-     r0.A03 = null
-     r0.A02 = null
-     r0.A06 = 0
-     $r1 = new java.util.concurrent.locks.ReentrantLock
-     r0.A01 = $r1

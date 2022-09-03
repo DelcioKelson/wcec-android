@@ -1,2 +1,0 @@
-     staticinvoke X.07S.A05(\ACRA\ \Trying to get ACRA reports but ACRA is not initialized.\)
-     $r4 = new java.lang.NullPointerException

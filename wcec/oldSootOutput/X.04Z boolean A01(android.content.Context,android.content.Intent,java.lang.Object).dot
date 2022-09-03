@@ -1,2 +1,0 @@
-     staticinvoke X.076.A01($r1)
-     $z0 = virtualinvoke r0.A00($r1 $r2 null $r3)

@@ -1,5 +1,0 @@
-     $r2 = r0.A00
-     $z0 = virtualinvoke $r1.isDirectory()
-     $r3 = virtualinvoke $r1.getName()
-     $r4 = $r2.A00
-     $z0 = virtualinvoke $r3.startsWith($r4)

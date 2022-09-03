@@ -1,8 +1,0 @@
-     $r1 = X.06p.A01
-     $r0 = newarray (java.lang.Object)2
-     $r00 = \debug.fbsystrace.tags\
-     $r2 = staticinvoke java.lang.Long.valueOf(0L)
-     $r01 = $r2
-     $r3 = staticinvoke X.06p.A00($r1 $r0)
-     $r4 = (java.lang.Number) $r3
-     $l0 = virtualinvoke $r4.longValue()

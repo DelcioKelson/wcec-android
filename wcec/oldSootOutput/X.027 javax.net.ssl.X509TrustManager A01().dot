@@ -1,6 +1,0 @@
-     $r1 = newarray (java.lang.Class)0
-     label1: $r2 = virtualinvoke $r0.getMethod(\getSystem\ $r1)
-     label2: $r3 = newarray (java.lang.Object)0
-     label3: virtualinvoke $r2.invoke(null $r3)
-     $r4 = staticinvoke X.027.A00()
-     $r6 = new java.lang.IllegalStateException

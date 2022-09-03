@@ -1,3 +1,0 @@
-     $r2 = r0.A03
-     $r3 = \unknown\
-     label1: interfaceinvoke $r2.put($r1 $r3)

@@ -1,8 +1,0 @@
-     $r0 = staticinvoke X.00L.A00()
-     $r1 = $r0.A01
-     X.00K.A01 = $r1
-     $r1 = $r0.A02
-     X.00K.A02 = $r1
-     $l1 = $r0.A00
-     X.00K.A00 = $l1
-     X.00K.A03 = 1

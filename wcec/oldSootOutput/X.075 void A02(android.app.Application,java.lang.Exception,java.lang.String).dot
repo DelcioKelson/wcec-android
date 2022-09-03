@@ -1,6 +1,0 @@
-     label1: $l0 = staticinvoke X.075.A00($r3)
-     $r4 = staticinvoke java.lang.Long.toString($l0)
-     staticinvoke X.079.A01($r1 \275254692598279\ $r4 $r0)
-     $r2 = newarray (java.lang.Object)1
-     $r20 = $r5
-     staticinvoke X.07B.A04(\EarlyErrorReporting\ \Failed sending direct report\ $r2)

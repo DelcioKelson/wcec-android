@@ -1,9 +1,0 @@
-     entermonitor r0
-     label5: $r4 = new java.lang.NullPointerException
-     label4: $r3 = new java.lang.IndexOutOfBoundsException
-     $i2 = $i1 + $i0
-     label1: $i3 = lengthof $r1
-     $i0 = staticinvoke com.facebook.superpack.ObiInputStream.readNative(0L $r1 $i0 $i1)
-     label2: exitmonitor r0
-     label3: exitmonitor r0
-     exitmonitor r0

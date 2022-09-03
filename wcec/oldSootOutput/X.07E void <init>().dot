@@ -1,8 +1,0 @@
-     $r1 = new java.util.HashSet
-     virtualinvoke $r1.add(\activity\)
-     virtualinvoke $r1.add(\activity-alias\)
-     virtualinvoke $r1.add(\receiver\)
-     virtualinvoke $r1.add(\service\)
-     virtualinvoke $r1.add(\provider\)
-     $r2 = staticinvoke java.util.Collections.unmodifiableSet($r1)
-     r0.A00 = $r2

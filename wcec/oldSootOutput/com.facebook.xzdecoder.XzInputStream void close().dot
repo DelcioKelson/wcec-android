@@ -1,6 +1,0 @@
-     $r1 = r0.inFile
-     virtualinvoke $r1.close()
-     $l0 = r0.state
-     $b1 = $l0 cmp 0L
-     staticinvoke com.facebook.xzdecoder.XzInputStream.end($l0)
-     r0.state = 0L

@@ -1,2 +1,0 @@
-     $r2 = virtualinvoke r0.A04($r1)
-     label1: $r1 = virtualinvoke $r2.getCanonicalPath()

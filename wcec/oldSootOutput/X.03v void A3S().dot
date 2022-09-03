@@ -1,8 +1,0 @@
-     $r3 = r0.A01
-     $r2 = $r3.A02
-     entermonitor $r2
-     label1: $r1 = $r3.A00
-     $r4 = r0.A00
-     label2: exitmonitor $r2
-     virtualinvoke $r1.completeWork($r4)
-     exitmonitor $r2

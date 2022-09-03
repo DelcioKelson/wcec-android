@@ -1,1 +1,0 @@
-     $r1 = virtualinvoke $r0.vmInstructionSet()

@@ -1,8 +1,0 @@
-     entermonitor class \Lcom/facebook/superpack/SuperpackFileLoader\
-     label6: $r0 = com.facebook.superpack.SuperpackFileLoader.sInstance
-     label1: $r0 = com.facebook.superpack.SuperpackFileLoader.sInstance
-     $r0 = new com.facebook.superpack.SuperpackFileLoader
-     label2: exitmonitor class \Lcom/facebook/superpack/SuperpackFileLoader\
-     com.facebook.superpack.SuperpackFileLoader.sInstance = $r0
-     label3: goto label6
-     exitmonitor class \Lcom/facebook/superpack/SuperpackFileLoader\

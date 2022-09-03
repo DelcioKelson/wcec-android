@@ -1,3 +1,0 @@
-     $r3 = virtualinvoke $r2.getSimpleName()
-     $r0 = staticinvoke java.lang.String.format(null $r0 $r1)
-     staticinvoke android.util.Log.w($r3 $r0)

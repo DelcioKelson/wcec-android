@@ -1,9 +1,0 @@
-     $r2 = X.00M.A00
-     $r1 = $r2.A01
-     entermonitor $r1
-     label1: $r3 = $r2.A02
-     interfaceinvoke $r3.add($r0)
-     $z0 = $r2.A00
-     interfaceinvoke $r0.ANo()
-     label2: exitmonitor $r1
-     exitmonitor $r1

@@ -1,9 +1,0 @@
-     $r4 = new java.util.ArrayList
-     r0.A04 = $r4
-     r0.A01 = $r2
-     $r3 = $r2.A06
-     r0.A02 = $r3
-     r0.A00 = $r1
-     $r5 = new java.io.File
-     r0.A03 = $r5
-     virtualinvoke $r5.mkdirs()

@@ -1,7 +1,0 @@
-     r0.A02 = 1
-     $r4 = new java.lang.Object
-     r0.A06 = $r4
-     $r3 = $r1.A01
-     $r2 = $r1.A04
-     $r5 = new X.00m
-     r0.A05 = $r5

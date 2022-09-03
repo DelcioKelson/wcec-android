@@ -1,4 +1,0 @@
-     $r1 = r0.A01
-     $r3 = (X.03d) $r2
-     $r4 = $r3.A01
-     $i0 = virtualinvoke $r1.compareTo($r4)

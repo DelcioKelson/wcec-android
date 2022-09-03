@@ -1,6 +1,0 @@
-     $r4 = new java.lang.StringBuilder
-     $r1 = staticinvoke java.lang.String.format(null $r1 $r3)
-     virtualinvoke $r4.append($r1)
-     virtualinvoke $r4.append($r2)
-     $r1 = virtualinvoke $r4.toString()
-     staticinvoke android.util.Log.e($r0 $r1)

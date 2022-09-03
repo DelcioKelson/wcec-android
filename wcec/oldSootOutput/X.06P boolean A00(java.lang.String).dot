@@ -1,6 +1,0 @@
-     entermonitor class \LX/06P\
-     label1: $r1 = X.06P.A00
-     exitmonitor class \LX/06P\
-     label3: $r2 = new java.lang.IllegalStateException
-     label2: $z0 = staticinvoke X.07P.A07($r0)
-     exitmonitor class \LX/06P\

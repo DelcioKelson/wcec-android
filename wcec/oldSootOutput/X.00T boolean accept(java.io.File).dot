@@ -1,4 +1,0 @@
-     $r2 = virtualinvoke $r1.getName()
-     $z0 = virtualinvoke $r2.startsWith(\anr_report_\)
-     $r2 = virtualinvoke $r1.getName()
-     $z0 = virtualinvoke $r2.endsWith(\.dmp\)

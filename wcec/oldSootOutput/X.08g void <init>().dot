@@ -1,3 +1,0 @@
-     $l0 = staticinvoke java.lang.System.nanoTime()
-     $r1 = staticinvoke java.lang.Long.valueOf($l0)
-     r0.A01 = $r1

@@ -1,5 +1,0 @@
-     $z0 = virtualinvoke $r1.isDirectory()
-     $r2 = virtualinvoke $r1.getName()
-     $z0 = virtualinvoke $r2.startsWith(\session_\)
-     $r2 = virtualinvoke $r1.getName()
-     $z0 = virtualinvoke $r2.startsWith(\sess_\)

@@ -1,3 +1,0 @@
-     $r1 = r0.A02
-     $i0 = r0.A00
-     virtualinvoke $r1.stopSelf($i0)

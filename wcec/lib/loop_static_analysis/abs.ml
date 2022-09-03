@@ -139,16 +139,12 @@ Hashtbl.iter  (fun x a0 ->
   Hashtbl.replace aenv x (val_join a0 Abot)) aenv;
   aenv
  
+  (*TODO*)
  let nr_is_bot aenv = 
-   let r = ref false in 
-   Hashtbl.iter (fun x a -> r:= !r && a = val_bot) aenv;
-     !r
+   Hashtbl.fold (fun x a r-> r && a = val_bot) aenv true
  
  let nr_is_le aenv0 aenv1 =
-   let r = ref true in 
-   Hashtbl.iter
-     (fun x a0 -> r:= !r && val_incl a0 (read x aenv1)) aenv0;
-     !r
+   Hashtbl.fold(fun x a0 r-> r && val_incl a0 (read x aenv1)) aenv0 true
  
  let nr_join aenv0 aenv1 =
    Hashtbl.iter  (fun x a0 ->

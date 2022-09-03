@@ -1,5 +1,0 @@
-     r0.name = $r1
-     r0.buildId = $r2
-     r0.startAddress = $l0
-     r0.mappingSize = $l1
-     r0.fileOffset = $l2

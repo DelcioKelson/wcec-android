@@ -1,8 +1,0 @@
-     $r1 = r0.A00
-     $z0 = r0.A01
-     $r2 = virtualinvoke $r1.iterator()
-     label1: $z1 = interfaceinvoke $r2.hasNext()
-     $r3 = interfaceinvoke $r2.next()
-     $r4 = (X.09W) $r3
-     interfaceinvoke $r4.AGj()
-     goto label1

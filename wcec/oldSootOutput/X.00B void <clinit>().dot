@@ -1,5 +1,0 @@
-     $z0 = virtualinvoke $r0.startsWith(\1.\)
-     $z0 = virtualinvoke $r0.startsWith(\0.\)
-     label1: $z1 = 0
-     $z1 = 1
-     label2: X.00B.A00 = $z1

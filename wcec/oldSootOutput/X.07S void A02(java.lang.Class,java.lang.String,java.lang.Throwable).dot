@@ -1,5 +1,0 @@
-     $r3 = X.07S.A01
-     $z0 = interfaceinvoke $r3.AEW(6)
-     $r3 = X.07S.A01
-     $r4 = virtualinvoke $r0.getSimpleName()
-     interfaceinvoke $r3.A55($r4 $r1 $r2)

@@ -1,6 +1,0 @@
-     $r1 = com.facebook.superpack.SuperpackUnloader.COLD_START_LIBS
-     $r2 = $r0.A01
-     $z0 = interfaceinvoke $r1.contains($r2)
-     $l0 = $r0.A00
-     $b1 = $l0 cmp 10000L
-     $i2 = (int) $b1

@@ -1,2 +1,0 @@
-     $i0 = lengthof $r1
-     $i0 = virtualinvoke r0.read($r1 0 $i0)

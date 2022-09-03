@@ -1,2 +1,0 @@
-     $r1 = r0.A00
-     $z0 = virtualinvoke $r1.isConnected()

@@ -1,3 +1,0 @@
-     $r1 = r0.A00
-     $r3 = r0.A04
-     $r2 = staticinvoke X.07G.A04($r3 $r1)

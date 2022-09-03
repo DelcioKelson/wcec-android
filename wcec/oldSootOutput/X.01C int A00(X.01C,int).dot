@@ -1,9 +1,0 @@
-     $i0 = android.os.Build$VERSION.SDK_INT
-     $l2 = $r0.A01
-     $l2 = 8L & $l2
-     $b3 = $l2 cmp 0L
-     $i1 = $i1 & -67108865
-     label2: $i0 = 67108864
-     $i0 = 33554432
-     label1: $i1 = $i1 | $i0
-     goto label1

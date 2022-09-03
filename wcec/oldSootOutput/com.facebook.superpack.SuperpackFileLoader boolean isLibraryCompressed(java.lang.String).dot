@@ -1,2 +1,0 @@
-     $z0 = virtualinvoke $r0.endsWith(\.so\)
-     $z0 = $z0 ^ 1

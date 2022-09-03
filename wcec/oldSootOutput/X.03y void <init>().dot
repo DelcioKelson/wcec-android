@@ -1,2 +1,0 @@
-     $l0 = staticinvoke java.lang.System.nanoTime()
-     r0.A00 = $l0

@@ -1,4 +1,0 @@
-     $r2 = (X.02c) $r1
-     $i1 = r0.A00
-     $i0 = $r2.A00
-     label1: if $i1 <= $i0 goto label2

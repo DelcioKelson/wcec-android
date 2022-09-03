@@ -1,5 +1,0 @@
-     entermonitor r0
-     label1: $i0 = r0.mMarked
-     r0.mOffset = $i0
-     label2: exitmonitor r0
-     exitmonitor r0

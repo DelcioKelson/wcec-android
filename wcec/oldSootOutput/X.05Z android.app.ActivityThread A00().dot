@@ -1,2 +1,0 @@
-     $r0 = staticinvoke android.app.ActivityThread.currentActivityThread()
-     X.05Z.A00 = $r0

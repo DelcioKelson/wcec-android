@@ -1,9 +1,0 @@
-     $r0 = X.06t.A01
-     label6: $r1 = X.06t.A02
-     entermonitor $r0
-     label1: $r1 = X.06t.A02
-     $r1 = new X.06t
-     label2: exitmonitor $r0
-     X.06t.A02 = $r1
-     label3: goto label6
-     exitmonitor $r0

@@ -1,7 +1,0 @@
-     virtualinvoke $r0.init(null)
-     $r1 = virtualinvoke $r0.getTrustManagers()
-     label2: $i0 = lengthof $r1
-     $r2 = $r10
-     label3: $r4 = new java.security.cert.CertificateException
-     $r3 = (javax.net.ssl.X509TrustManager) $r2
-     $r6 = new java.lang.IllegalStateException

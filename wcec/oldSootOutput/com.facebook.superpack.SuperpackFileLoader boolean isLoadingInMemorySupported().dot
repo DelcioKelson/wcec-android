@@ -1,2 +1,0 @@
-     staticinvoke X.07P.A07(\superpack-jni\)
-     label1: $z0 = staticinvoke com.facebook.superpack.SuperpackFileLoader.canLoadInMemoryNative()

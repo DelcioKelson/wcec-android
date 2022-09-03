@@ -10,11 +10,11 @@ let get_trd_4 (_,_,v,_) = v
 let get_fth_4 (_,_,_,d) = d
 
 let edges_lp edges nodes= 
-   List.fold_right (fun edge edge_aux-> 
-                    let i = List.length edge_aux in 
+   List.fold_right (fun edge edge_list-> 
+                    let i = List.length edge_list in 
                     if not (Hashtbl.mem nodes (get_fst_3 edge)) then Hashtbl.add nodes (get_fst_3 edge) ("x" ^ (string_of_int i));
                     if not (Hashtbl.mem nodes (get_snd_3 edge)) then Hashtbl.add nodes (get_snd_3 edge) ("y" ^ (string_of_int i));
-                    (Hashtbl.find nodes (get_fst_3 edge), Hashtbl.find nodes (get_snd_3 edge), get_trd_3 edge, "d" ^ (string_of_int i))::edge_aux) edges []
+                    (Hashtbl.find nodes (get_fst_3 edge), Hashtbl.find nodes (get_snd_3 edge), get_trd_3 edge, "d" ^ (string_of_int i))::edge_list) edges []
 
 let obj_fun edges_lp nodes= 
   Hashtbl.fold (fun _ node obj -> obj ^ "+" ^ string_of_float ( try get_trd_4 

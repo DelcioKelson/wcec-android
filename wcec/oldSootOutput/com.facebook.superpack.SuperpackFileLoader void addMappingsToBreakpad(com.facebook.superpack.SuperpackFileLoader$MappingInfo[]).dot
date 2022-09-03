@@ -1,7 +1,0 @@
-     $i0 = lengthof $r0
-     $i1 = 0
-     label1: if $i1 >= $i0 goto label2
-     $r1 = $r0$i1
-     staticinvoke com.facebook.superpack.SuperpackFileLoader.addMappingToBreakpad($r1)
-     $i1 = $i1 + 1
-     goto label1

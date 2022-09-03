@@ -1,9 +1,0 @@
-     $i0 = staticinvoke android.os.Binder.getCallingPid()
-     $i1 = staticinvoke android.os.Process.myPid()
-     $i0 = staticinvoke android.os.Binder.getCallingUid()
-     label1: $r5 = new java.lang.IllegalStateException
-     $r1 = staticinvoke X.01e.A06($r0 $i0)
-     $r2 = staticinvoke java.util.Arrays.asList($r1)
-     $r2 = staticinvoke java.util.Collections.unmodifiableList($r2)
-     $r3 = staticinvoke X.01e.A04($r0 $r1)
-     $r4 = new X.01k

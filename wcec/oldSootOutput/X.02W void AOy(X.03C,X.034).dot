@@ -1,8 +1,0 @@
-     $r3 = X.03D.A12
-     $l0 = staticinvoke X.06m.A00()
-     $r4 = staticinvoke java.lang.Long.valueOf($l0)
-     virtualinvoke $r1.A02($r3 $r4)
-     $r3 = X.03D.A2D
-     $l0 = staticinvoke X.06m.A01()
-     $r4 = staticinvoke java.lang.Long.valueOf($l0)
-     virtualinvoke $r1.A02($r3 $r4)

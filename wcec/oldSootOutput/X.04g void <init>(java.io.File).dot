@@ -1,9 +1,0 @@
-     $r2 = new java.util.HashMap
-     r0.A01 = $r2
-     $r3 = virtualinvoke $r1.getName()
-     $r4 = $r3
-     $i0 = virtualinvoke $r3.lastIndexOf(46)
-     $r4 = virtualinvoke $r3.substring(0 $i0)
-     label1: $r5 = staticinvoke X.04g.A00($r4)
-     r0.A02 = $r5
-     r0.A00 = $r1

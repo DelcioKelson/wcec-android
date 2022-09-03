@@ -1,5 +1,0 @@
-     $r2 = r0.A02
-     $r3 = $r1.A02
-     $z0 = virtualinvoke $r2.equals($r3)
-     $i0 = r0.A00
-     $i1 = $r1.A00

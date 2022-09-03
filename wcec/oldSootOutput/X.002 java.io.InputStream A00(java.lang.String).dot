@@ -1,6 +1,0 @@
-     $r2 = r0.A01
-     $r3 = virtualinvoke $r2.getAssets()
-     $r4 = new java.lang.StringBuilder
-     virtualinvoke $r4.append($r1)
-     $r1 = virtualinvoke $r4.toString()
-     $r5 = virtualinvoke $r3.open($r1)

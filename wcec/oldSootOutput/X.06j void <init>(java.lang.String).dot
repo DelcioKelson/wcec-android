@@ -1,3 +1,0 @@
-     $z0 = virtualinvoke $r1.contains(\:\)
-     label1: $r2 = new java.lang.IllegalArgumentException
-     r0.A00 = $r1

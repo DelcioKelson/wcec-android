@@ -1,3 +1,0 @@
-     $r2 = X.03D.A5V
-     $r1 = android.os.Build$VERSION.SECURITY_PATCH
-     virtualinvoke $r0.A03($r2 $r1)

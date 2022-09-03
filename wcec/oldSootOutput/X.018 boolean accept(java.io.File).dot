@@ -1,3 +1,0 @@
-     $z0 = virtualinvoke $r1.isDirectory()
-     $r2 = virtualinvoke $r1.getName()
-     $z0 = virtualinvoke $r2.endsWith(\_attach.txt\)

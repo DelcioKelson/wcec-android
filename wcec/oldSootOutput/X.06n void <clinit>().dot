@@ -1,6 +1,0 @@
-     label2: X.06n.A00 = $r1
-     label3: $r0 = virtualinvoke $r1.getChannel()
-     label4: X.06n.A01 = $r0
-     staticinvoke android.util.Log.e(\TraceDirect\ \Failed to open trace_marker file.\ $r2)
-     X.06n.A00 = null
-     X.06n.A01 = null

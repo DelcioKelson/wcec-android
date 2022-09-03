@@ -1,8 +1,0 @@
-     $r1 = java.util.concurrent.TimeUnit.NANOSECONDS
-     $l0 = staticinvoke java.lang.System.nanoTime()
-     $l1 = r0.A00
-     $l0 = $l0 - $l1
-     $l0 = virtualinvoke $r1.toMillis($l0)
-     $r2 = X.006.A03
-     $r3 = staticinvoke java.lang.Long.valueOf($l0)
-     interfaceinvoke $r2.put(\extract_dex\ $r3)

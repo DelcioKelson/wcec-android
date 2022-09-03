@@ -1,2 +1,0 @@
-     label1: $r0 = staticinvoke java.lang.String.valueOf($r2)
-     $r3 = new java.lang.NullPointerException

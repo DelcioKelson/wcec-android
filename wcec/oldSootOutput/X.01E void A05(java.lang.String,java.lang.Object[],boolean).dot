@@ -1,2 +1,0 @@
-     label1: $r0 = staticinvoke X.01E.A00($r0 $r1)
-     $r2 = new java.lang.IllegalArgumentException
