@@ -1,0 +1,4 @@
+     $r1 = X.02v.A00
+     $z0 = virtualinvoke $r1.block(-1L)
+     $r2 = staticinvoke X.00E.A00(r0)
+     r0 = $r2.A00

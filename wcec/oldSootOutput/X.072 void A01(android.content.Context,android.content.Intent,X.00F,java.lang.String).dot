@@ -1,0 +1,42 @@
+     label01: $r9 = virtualinvoke $r0.getClassLoader()
+     virtualinvoke $r1.setExtrasClassLoader($r9)
+     $r10 = virtualinvoke $r1.getExtras()
+     label02: $r11 = $r10
+     $r11 = new android.os.Bundle
+     label04: $r9 = virtualinvoke $r0.getClassLoader()
+     virtualinvoke $r11.setClassLoader($r9)
+     label05: $r12 = null
+     label06: $r13 = virtualinvoke $r0.getPackageManager()
+     label07: if $r13 == null goto label10
+     label08: $r14 = virtualinvoke $r0.getPackageName()
+     label10: $l0 = staticinvoke java.lang.System.currentTimeMillis()
+     $r15 = virtualinvoke $r13.getPackageInfo($r14 0)
+     label09: $r12 = $r15.versionName
+     $l1 = staticinvoke android.os.SystemClock.elapsedRealtime()
+     label11: $r4 = new org.json.JSONObject
+     label13: $r14 = null
+     label14: $r16 = staticinvoke java.lang.Long.toString($l0)
+     virtualinvoke $r4.put(\t\ $r16)
+     $r16 = staticinvoke java.lang.Long.toString($l1)
+     virtualinvoke $r4.put(\r\ $r16)
+     label15: if $r3 == null goto label17
+     label16: virtualinvoke $r4.put(\d\ $r3)
+     label17: if $r12 == null goto label19
+     label18: virtualinvoke $r4.put(\v\ $r12)
+     label19: $r3 = virtualinvoke $r4.toString()
+     $r17 = virtualinvoke $r3.getBytes(\UTF-8\)
+     $r3 = staticinvoke android.util.Base64.encodeToString($r17 11)
+     label20: $r14 = $r3
+     label21: $r18 = new X.01C
+     $r18.A0A = $r14
+     label23: $r19 = new android.content.ComponentName
+     $r18.A03 = $r19
+     $r20 = virtualinvoke $r18.A01($r0 0 1140850688)
+     virtualinvoke $r11.putParcelable(\_ci_\ $r20)
+     virtualinvoke $r1.putExtras($r11)
+     $r22 = new X.058
+     interfaceinvoke $r2.AQe(\CallerInfoHelper\ \Error attaching caller info to Intent.\ $r22)
+     goto label10
+     goto label10
+     goto label21
+     goto label21

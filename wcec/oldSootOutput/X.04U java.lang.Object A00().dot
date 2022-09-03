@@ -1,0 +1,8 @@
+     $r2 = r0.A00
+     $r3 = $r2.A04
+     $r5 = new X.04V
+     label1: $r1 = interfaceinvoke $r3.get()
+     $r3 = $r5
+     $r2.A04 = $r5
+     $r4 = (X.09Y) $r1
+     $r6 = new X.04Y

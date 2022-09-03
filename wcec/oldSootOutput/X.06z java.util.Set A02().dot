@@ -1,0 +1,16 @@
+     $r5 = new java.util.HashSet
+     $r2 = r0.A06
+     $r6 = new X.00t
+     $r3 = virtualinvoke $r2.listFiles($r6)
+     $i0 = lengthof $r3
+     $i1 = 0
+     label1: if $i1 >= $i0 goto label3
+     $r2 = $r3$i1
+     $r4 = virtualinvoke $r2.getName()
+     $r4 = virtualinvoke $r4.replaceFirst(\session_\ \\)
+     $r4 = virtualinvoke $r4.replaceFirst(\sess_\ \\)
+     $i2 = virtualinvoke $r4.indexOf(\_\)
+     $r4 = virtualinvoke $r4.substring(0 $i2)
+     label2: $i1 = $i1 + 1
+     virtualinvoke $r5.add($r4)
+     goto label1

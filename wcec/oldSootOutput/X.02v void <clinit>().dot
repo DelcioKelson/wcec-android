@@ -1,0 +1,3 @@
+     X.02v.A00 = $r0
+     $r1 = new java.util.HashMap
+     X.02v.A01 = $r1

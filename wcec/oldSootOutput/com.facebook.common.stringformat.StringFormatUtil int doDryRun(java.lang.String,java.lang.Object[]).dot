@@ -1,0 +1,1 @@
+     $i0 = staticinvoke com.facebook.common.stringformat.StringFormatUtil.doFormatArray(null $r0 $r1)

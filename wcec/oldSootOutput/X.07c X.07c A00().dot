@@ -1,0 +1,17 @@
+     $z0 = X.07c.A01
+     $r0 = newarray (java.lang.Class)7
+     label1: $r2 = X.07c.A00
+     $r00 = class \B\
+     $r1 = java.lang.Integer.TYPE
+     $r01 = $r1
+     $r02 = $r1
+     $r03 = class \I\
+     $r04 = class \Ljava/lang/String\
+     $r05 = class \J\
+     $r06 = class \F\
+     $r2 = staticinvoke X.07c.A04(\parseProcLine\ $r0)
+     X.07c.A00 = $r2
+     X.07c.A01 = 1
+     $r2 = staticinvoke X.07c.A02()
+     $r2 = staticinvoke X.07c.A03()
+     $r3 = new X.07c

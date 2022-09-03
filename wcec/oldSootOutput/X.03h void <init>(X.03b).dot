@@ -1,0 +1,49 @@
+     r0.A02 = $r1
+     $r2 = $r1.A01
+     $r3 = $r1.A00
+     $r4 = virtualinvoke $r2.getInputStream($r3)
+     label01: $r5 = $r1.A03
+     $r6 = $r5.A00
+     $i0 = virtualinvoke $r6.ordinal()
+     label03: $r22 = new java.lang.IllegalStateException
+     label05: $r8 = staticinvoke java.lang.Class.forName(\com.facebook.zstd.ZstdInputStream\)
+     label16: $r16 = X.053.A05
+     label31: $r24 = new com.facebook.xzdecoder.XzInputStream
+     label06: $r9 = newarray (java.lang.Class)1
+     label07: $r90 = class \Ljava/io/InputStream\
+     label08: $r10 = virtualinvoke $r8.getConstructor($r9)
+     label09: $r11 = newarray (java.lang.Object)1
+     label10: $r110 = $r4
+     label11: $r12 = virtualinvoke $r10.newInstance($r11)
+     $r13 = (java.io.InputStream) $r12
+     label12: goto label34
+     label34: r0.A01 = $r13
+     label14: $r23 = new java.lang.IllegalArgumentException
+     label17: if $r6 != $r16 goto label18
+     $r17 = \spo\
+     label18: $r16 = X.053.A06
+     goto label23
+     label23: $r8 = staticinvoke java.lang.Class.forName(\com.facebook.superpack.SuperpackFileInputStream\)
+     label19: if $r6 != $r16 goto label20
+     $r17 = \xz\
+     label20: $r16 = X.053.A04
+     goto label23
+     label21: if $r6 != $r16 goto label22
+     $r17 = \br\
+     label22: $r17 = \zst\
+     goto label23
+     label24: $r9 = newarray (java.lang.Class)2
+     label25: $r90 = class \Ljava/io/InputStream\
+     $r91 = class \Ljava/lang/String\
+     label26: $r18 = virtualinvoke $r8.getMethod(\createFromSingletonArchiveInputStream\ $r9)
+     label27: $r11 = newarray (java.lang.Object)2
+     label28: $r110 = $r4
+     $r111 = $r17
+     label29: $r12 = virtualinvoke $r18.invoke(null $r11)
+     $r13 = (java.io.InputStream) $r12
+     label30: goto label34
+     label32: $r13 = $r24
+     label35: $z0 = virtualinvoke r0.A01()
+     virtualinvoke r0.close()
+     label37: $r25 = new java.lang.RuntimeException
+     virtualinvoke $r4.close()

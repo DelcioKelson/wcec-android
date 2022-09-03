@@ -1,0 +1,367 @@
+     $i0 = virtualinvoke $r0.hashCode()
+     label002: $r1 = \profilo_async_unwinder\
+     label003: $r1 = \simplejni\
+     label004: $r1 = \rsyspollsjni\
+     label005: $r1 = \fb_sqlite_3370200\
+     label006: $r1 = \litersysjni\
+     label007: $r1 = \fbsystrace\
+     label008: $r1 = \museumutils\
+     label009: $r1 = \plthooks\
+     label010: $r1 = \livestreaming-rtmp-fblite\
+     label011: $r1 = \distract-common-funcs\
+     label012: $z0 = virtualinvoke $r0.equals(\jniperflogger\)
+     label013: $z0 = virtualinvoke $r0.equals(\msysjniinfranosqlite\)
+     label014: $r1 = \rsyscallcontextjni\
+     label015: $r1 = \rstransportproxies\
+     label016: $r1 = \rsysaudiojni\
+     label017: $r1 = \profilo_mmapbuf\
+     label018: $r1 = \rsysmediastatsjni\
+     label019: $r1 = \rsysgroupexpansionjni\
+     label020: $r1 = \c++_streams\
+     label021: $r1 = \rsysturnallocationjni\
+     label022: $r1 = \mailboxtracehandlerjni\
+     label023: $r1 = \rsyscallinfojni\
+     label024: $z0 = virtualinvoke $r0.equals(\mediapipeline-filterlib\)
+     label025: $r1 = \litersysnativemqtt\
+     label026: $r1 = \rsysvideojni\
+     label027: $r1 = \LiteMsysDatabaseSchemaDeployer-jninovt\
+     label028: $r1 = \rsysdominantspeakerjni\
+     label029: $r1 = \mailboxencryptedbackupsjni\
+     label030: $r1 = \jni-mcpintegration-fblite_integrationPluginRegistry\
+     label031: $r1 = \mailboxlitecommonjni\
+     label032: $r1 = \rsysstatejni\
+     label033: $z0 = virtualinvoke $r0.equals(\opus1_3_1\)
+     label034: $r1 = \msysjniinfra\
+     label035: $z0 = virtualinvoke $r0.equals(\msysjniutils\)
+     label036: $r1 = \native_bridge\
+     label037: $r1 = \fbjitdalvikutils\
+     label038: $r1 = \rsyscamerajni\
+     label039: $r1 = \rsysstreamjni\
+     label040: $r1 = \rsysbasejni\
+     label041: $r1 = \rsysfileloggingjni\
+     label042: $r1 = \dalvikdistract\
+     label043: $r1 = \rsysroomtypecallingjni\
+     label044: $r1 = \rsysdolbymodulejni\
+     label045: $r1 = \msssim\
+     label046: $r1 = \mediastreaming-sessionlog\
+     label047: $r1 = \mailboxtypingindicatorjni\
+     label048: $z0 = virtualinvoke $r0.equals(\mnscertificateverifier\)
+     label049: $r1 = \openh264libencoderAndroid\
+     label050: $r1 = \phaser\
+     label051: $r1 = \profilo_mapping_logger\
+     label052: $r1 = \profilo_atrace\
+     label053: $r1 = \mailboxsearchjni\
+     label054: $r1 = \rsysendedjni\
+     label055: $r1 = \rsysvideorenderjni\
+     label056: $r1 = \profilo_config\
+     label057: $r1 = \profilo_configjni\
+     label058: $r1 = \mem_alloc_marker\
+     label059: $r1 = \profilo_mmapbuf_buffer_jni\
+     label060: $r1 = \portalaudiocontrol\
+     label061: $r1 = \rsysdatachanneljni\
+     label062: $r1 = \rsysturnallocationmsysjni\
+     label063: $r1 = \webrtc\
+     label064: $r1 = \xxhash\
+     label065: $r1 = \LiteMsysTableToCqlProcRegistration-jni\
+     label066: $r1 = \mediastreaming\
+     label067: $r1 = \profilo_signal_handler\
+     label068: $r1 = \threadutils-jni\
+     label069: $r1 = \hprofsanitizer\
+     label070: $r1 = \profilo_logger\
+     label071: $r1 = \messengermcppluginregistryintegrationjni\
+     label072: $r1 = \profilo_jmulti_buffer_logger\
+     label073: $r1 = \image_quality_utils_lite\
+     label074: $r1 = \profilo_stacktrace\
+     label075: $r1 = \messengerqpfilterdispatcherjni\
+     label076: $r1 = \mediastreaming-transport\
+     label077: $r1 = \audiograph-native\
+     label078: $r1 = \mailboxreactionjni\
+     label079: $r1 = \LiteMsysDatabaseSchemaDeployer-jni\
+     label080: $r1 = \LiteMsysDatabaseSchemaDeployernovt\
+     label081: $r1 = \rsyscalljni\
+     label082: $r1 = \profilo\
+     label083: $r1 = \rsysvideoescalationjni\
+     label084: $r1 = \classid800\
+     label085: $r1 = \classid810\
+     label086: $r1 = \classid900\
+     label087: $r1 = \profiloextapi\
+     label088: $r1 = \domaininfoutils_jni\
+     label089: $r1 = \profilo_jni_helpers\
+     label090: $r1 = \messengerplatformloggerjni\
+     label091: $r1 = \rsystslogjni\
+     label092: $r1 = \fbgloginit\
+     label093: $r1 = \mailboxqpjni\
+     label094: $r1 = \classid1000\
+     label095: $r1 = \classid1100\
+     label096: $r1 = \rsysdevicestatsjni\
+     label097: $r1 = \messengersynctaskexecutormanagerjni\
+     label098: $r1 = \mailboxglobaldeletejni\
+     label099: $r1 = \rsysaudiomodulejni\
+     label100: $r1 = \profilo_block_logger\
+     label101: $r1 = \mailboxsdkjni\
+     label102: $r1 = \asyncexecutor\
+     label103: $r1 = \distract-common-museum-funcs-500\
+     label104: $r1 = \distract-common-museum-funcs-511\
+     label105: $r1 = \distract-common-museum-funcs-601\
+     label106: $r1 = \distract-common-museum-funcs-700\
+     label107: $r1 = \distract-common-museum-funcs-712\
+     label108: $r1 = \distract-common-museum-funcs-800\
+     label109: $r1 = \distract-common-museum-funcs-810\
+     label110: $r1 = \mailboxtamjni\
+     label111: $r1 = \rsysoutgoingcallconfigjni\
+     label112: $r1 = \rsyslogjni\
+     label113: $r1 = \mediastreaming-config\
+     label114: $r1 = \fmt\
+     label115: $r1 = \glog\
+     label116: $r1 = \quic\
+     label117: $r1 = \ssim\
+     label118: $r1 = \sslx\
+     label119: $r1 = \LiteMsysDatabaseSchemaDeployer\
+     label120: $r1 = \rsysvideoeffectjni\
+     label121: $r1 = \messengerplatformloggerttrclistenerjni\
+     label122: $r1 = \fizzwrapper\
+     label123: $r1 = \mailboxmsyslitejni\
+     label124: $r1 = \LiteE2EEExperimentsMobileConfigPluginjni\
+     label125: $r1 = \mailboxreportingsdkjni\
+     label126: $r1 = \profiloprofilerunwindc500\
+     label127: $r1 = \profiloprofilerunwindc510\
+     label128: $r1 = \profiloprofilerunwindc600\
+     label129: $r1 = \profiloprofilerunwindc700\
+     label130: $r1 = \profiloprofilerunwindc710\
+     label131: $r1 = \profiloprofilerunwindc711\
+     label132: $r1 = \profiloprofilerunwindc712\
+     label133: $r1 = \profiloprofilerunwindc800\
+     label134: $r1 = \profiloprofilerunwindc810\
+     label135: $r1 = \profiloprofilerunwindc900\
+     label136: $r1 = \rsyscallmanagerjni\
+     label137: $r1 = \rsysvideosubscriptionsjni\
+     label138: $r1 = \minscompiler-jni\
+     label139: $r1 = \android-reachability-announcer\
+     label140: $r1 = \mailboxsyncstatesjni\
+     label141: $r1 = \double-conversion\
+     label142: $r1 = \rsyscryptojni\
+     label143: $r1 = \profilo_apiimpl\
+     label144: $r1 = \fbbacktrace\
+     label145: $r1 = \profilo_multi_buffer_logger\
+     label146: $r1 = \artsmartgc\
+     label147: $r1 = \rsysmediajni\
+     label148: $r1 = \mailboxreachabilitysettingsjni\
+     label149: $r1 = \LiteMsysDasmConfigCreator-jni\
+     label150: $r1 = \breakpadabort\
+     label152: $r1 = \classid\
+     label153: $r1 = \fbandroid_libraries_profilo_cpp_providers\
+     label154: $r1 = \reliablemedia\
+     label155: $r1 = \mailboxcorejni\
+     label156: $r1 = \dalviksmartgc\
+     label158: $r1 = \cryptox\
+     label160: $r1 = \rsysmessagequeuejni\
+     label161: $r1 = \mediastreaming_jni\
+     label163: $r1 = \mailboxmessagerequestjni\
+     label164: $z0 = virtualinvoke $r0.equals(\VideoJni\)
+     label165: $r1 = \msystracemetadataproviderjni\
+     label166: $r1 = \mailboxsecureauthplatformvestajni\
+     label167: $r1 = \msysjni\
+     label168: $r1 = \mqttnonbridgednetworksessionplugin\
+     label169: $r1 = \rsyscallintentjni\
+     label170: $r1 = \mailboxstickerstorejni\
+     label171: $r1 = \profilo_dalvik_tracer\
+     label172: $r1 = \rsysaudioeventsjni\
+     label173: $r1 = \rsystransportjni\
+     label174: $r1 = \profilo_util\
+     label175: $r1 = \profilo_stacktrace_artcompat\
+     label176: $r1 = \messengersdkmessagelistchildresultsetutils\
+     label177: $r1 = \jniuserflow\
+     label179: $r1 = \mailboxthreadmembersjni\
+     label180: $z0 = virtualinvoke $r0.equals(\mobilenetwork_jni\)
+     label181: $r1 = \advancedcryptotransport_jni\
+     label182: $r1 = \flexlayout\
+     label184: $r1 = \profilo_mmapbuf_buffer\
+     label185: $r1 = \mailboxadvancedcryptotransportjni\
+     label186: $r1 = \musiceffect-native\
+     label188: $r1 = \profilo_threadmetadata\
+     label190: $r1 = \rsysexecutionjni\
+     label191: $r1 = \evloopmanager_jni\
+     label192: $r1 = \mailboxcutoverjni\
+     label193: $r1 = \mailboxadvancedcryptostagingjni\
+     label194: $r1 = \mailboxexperimentjni\
+     label195: $r1 = \openh264libdecoderAndroid\
+     label197: $r1 = \mailboxshimjni\
+     goto label189
+     label189: $z0 = virtualinvoke $r0.equals($r1)
+     goto label151
+     label151: $z0 = virtualinvoke $r0.equals($r1)
+     goto label196
+     label196: $z0 = virtualinvoke $r0.equals($r1)
+     goto label198
+     label198: $z0 = virtualinvoke $r0.equals($r1)
+     goto label196
+     goto label151
+     goto label157
+     label157: $z0 = virtualinvoke $r0.equals($r1)
+     goto label189
+     goto label162
+     label162: $z0 = virtualinvoke $r0.equals($r1)
+     goto label157
+     goto label196
+     goto label196
+     goto label196
+     goto label189
+     goto label196
+     goto label196
+     goto label151
+     goto label196
+     goto label198
+     goto label196
+     goto label196
+     goto label196
+     goto label198
+     goto label196
+     goto label198
+     goto label198
+     goto label198
+     goto label196
+     goto label198
+     goto label187
+     label187: $z0 = virtualinvoke $r0.equals($r1)
+     goto label157
+     goto label196
+     goto label196
+     goto label196
+     goto label196
+     goto label157
+     goto label196
+     goto label196
+     goto label183
+     label183: $z0 = virtualinvoke $r0.equals($r1)
+     goto label162
+     goto label198
+     goto label196
+     goto label189
+     goto label189
+     goto label189
+     goto label198
+     goto label196
+     goto label196
+     goto label189
+     goto label189
+     goto label189
+     goto label189
+     goto label196
+     goto label196
+     goto label196
+     goto label196
+     goto label178
+     label178: $z0 = virtualinvoke $r0.equals($r1)
+     goto label198
+     goto label162
+     goto label189
+     goto label157
+     goto label183
+     goto label189
+     goto label198
+     goto label189
+     goto label183
+     goto label189
+     goto label198
+     goto label162
+     goto label187
+     goto label198
+     goto label198
+     goto label198
+     goto label196
+     goto label189
+     goto label196
+     goto label189
+     goto label189
+     goto label189
+     goto label151
+     goto label183
+     goto label189
+     goto label198
+     goto label196
+     goto label151
+     goto label198
+     goto label189
+     goto label189
+     goto label196
+     goto label198
+     goto label198
+     goto label196
+     goto label189
+     goto label198
+     goto label162
+     goto label157
+     goto label157
+     goto label157
+     goto label157
+     goto label157
+     goto label157
+     goto label157
+     goto label198
+     goto label196
+     goto label196
+     goto label162
+     goto label151
+     goto label151
+     goto label159
+     label159: $z0 = virtualinvoke $r0.equals($r1)
+     goto label183
+     goto label159
+     goto label198
+     goto label196
+     goto label198
+     goto label159
+     goto label198
+     goto label198
+     goto label198
+     goto label189
+     goto label189
+     goto label189
+     goto label189
+     goto label189
+     goto label189
+     goto label189
+     goto label189
+     goto label189
+     goto label189
+     goto label196
+     goto label196
+     goto label183
+     goto label162
+     goto label198
+     goto label151
+     goto label196
+     goto label189
+     goto label189
+     goto label189
+     goto label157
+     goto label196
+     goto label198
+     goto label198
+     goto label189
+     goto label189
+     goto label198
+     goto label198
+     goto label196
+     goto label198
+     goto label198
+     goto label198
+     goto label198
+     goto label198
+     goto label196
+     goto label198
+     goto label189
+     goto label196
+     goto label196
+     goto label189
+     goto label189
+     goto label198
+     goto label198
+     goto label198
+     goto label189
+     goto label198
+     goto label196
+     goto label198
+     goto label198
+     goto label198
+     goto label198

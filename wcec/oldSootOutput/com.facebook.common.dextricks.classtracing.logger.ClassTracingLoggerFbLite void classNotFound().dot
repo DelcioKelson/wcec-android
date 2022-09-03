@@ -1,0 +1,3 @@
+     $r0 = com.facebook.common.dextricks.classtracing.logger.ClassTracingLoggerFbLite.sClassIds
+     $r1 = staticinvoke java.lang.Long.valueOf(-1L)
+     virtualinvoke $r0.add($r1)

@@ -1,0 +1,24 @@
+     label02: $r4 = newarray (java.lang.Class)1
+     $r40 = class \Ljava/lang/String\
+     label03: $r5 = virtualinvoke $r3.getMethod(\get\ $r4)
+     label04: $r4 = newarray (java.lang.Class)2
+     $r40 = class \Ljava/lang/String\
+     $r6 = java.lang.Boolean.TYPE
+     $r41 = $r6
+     label05: $r7 = virtualinvoke $r3.getMethod(\getBoolean\ $r4)
+     label06: $r4 = newarray (java.lang.Class)2
+     $r40 = class \Ljava/lang/String\
+     $r6 = java.lang.Long.TYPE
+     $r41 = $r6
+     label07: $r8 = virtualinvoke $r3.getMethod(\getLong\ $r4)
+     label08: $r4 = newarray (java.lang.Class)2
+     $r40 = class \Ljava/lang/String\
+     $r41 = class \Ljava/lang/String\
+     label09: $r9 = virtualinvoke $r3.getMethod(\set\ $r4)
+     label10: $i0 = android.os.Build$VERSION.SDK_INT
+     $r4 = newarray (java.lang.Class)1
+     label15: $r10 = null
+     $r40 = class \Ljava/lang/Runnable\
+     label11: $r10 = virtualinvoke $r3.getMethod(\addChangeCallback\ $r4)
+     label12: $r0 = new X.06b
+     goto label12

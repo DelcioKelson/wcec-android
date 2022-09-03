@@ -1,0 +1,56 @@
+     $i0 = virtualinvoke $r0.length()
+     $r4 = new java.lang.StringBuilder
+     $i1 = 0
+     label01: if $i1 >= $i0 goto label14
+     $c2 = virtualinvoke $r0.charAt(0)
+     label14: $r0 = virtualinvoke $r4.toString()
+     $i4 = (int) $c2
+     virtualinvoke $r4.append(\\\ \)
+     label02: $c2 = virtualinvoke $r0.charAt($i1)
+     $i1 = 1
+     $c3 = $c2
+     $i4 = (int) $c2
+     label03: if $z0 == 0 goto label04
+     label09: $r3 = \\\f\
+     label10: $r3 = \\\n\
+     label11: $r3 = \\\t\
+     label12: $r3 = \\\r\
+     $i4 = (int) $c2
+     label04: $i4 = (int) $c2
+     label08: virtualinvoke $r4.append(92)
+     $i4 = (int) $c2
+     $i4 = (int) $c2
+     $i4 = (int) $c2
+     $i4 = (int) $c2
+     $i4 = (int) $c2
+     label07: virtualinvoke $r4.append(\\\u\)
+     label05: virtualinvoke $r4.append($c3)
+     label06: $i1 = $i1 + 1
+     goto label01
+     $r2 = X.06s.A01
+     $i4 = (int) $c2
+     $i4 = $i4 >>> 12
+     $i4 = $i4 & 15
+     $c3 = $r2$i4
+     virtualinvoke $r4.append($c3)
+     $i4 = (int) $c2
+     $i4 = $i4 >>> 8
+     $i4 = $i4 & 15
+     $c3 = $r2$i4
+     virtualinvoke $r4.append($c3)
+     $i4 = (int) $c2
+     $i4 = $i4 >>> 4
+     $i4 = $i4 & 15
+     $c3 = $r2$i4
+     virtualinvoke $r4.append($c3)
+     $i4 = (int) $c2
+     $i4 = $i4 >>> 0
+     $i4 = $i4 & 15
+     $c3 = $r2$i4
+     goto label05
+     goto label05
+     goto label13
+     label13: virtualinvoke $r4.append($r3)
+     goto label13
+     goto label13
+     goto label06

@@ -1,0 +1,7 @@
+     $r1 = X.05d.A00
+     $r2 = interfaceinvoke $r1.iterator()
+     label1: $z1 = interfaceinvoke $r2.hasNext()
+     $r3 = interfaceinvoke $r2.next()
+     $r4 = (X.09X) $r3
+     interfaceinvoke $r4.AJO($z0)
+     goto label1

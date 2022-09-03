@@ -1,0 +1,1 @@
+     $l0 = virtualinvoke $r0.getLongVersionCode()

@@ -1,0 +1,109 @@
+     $z2 = 0
+     label004: $z0 = 0
+     label002: $z0 = 1
+     goto label005
+     goto label003
+     label009: $z1 = 0
+     label013: if $z3 == 0 goto label022
+     label015: if $z3 == 0 goto label020
+     label017: if 21 >= $i0 goto label043
+     label019: goto label010
+     label021: goto label010
+     label023: if $i0 != 3 goto label048
+     label027: if $z3 == 0 goto label036
+     label033: if $z3 != 0 goto label040
+     label035: if $z3 != 0 goto label040
+     goto label010
+     label037: if $z3 == 0 goto label042
+     label042: if $z1 != 0 goto label046
+     label041: goto label010
+     $z1 = 1
+     goto label040
+     label060: if $z1 == 0 goto label306
+     label065: if $z1 != 0 goto label177
+     label069: if $z2 == 0 goto label079
+     label074: if $i0 == -1 goto label077
+     label078: goto label068
+     label080: $i0 = 0
+     label082: goto label097
+     label097: $z2 = 1
+     label084: if $i0 >= $i2 goto label097
+     label086: if $z2 != 0 goto label096
+     label096: $i0 = $i0 + 1
+     label090: if $i3 == -1 goto label093
+     label094: if $z2 != 0 goto label096
+     goto label084
+     label103: if $z1 == 0 goto label107
+     label106: goto label112
+     label109: goto label104
+     label111: if $z1 == 0 goto label104
+     goto label104
+     label115: if $z1 == 0 goto label123
+     label122: goto label124
+     label125: if $z1 == 0 goto label128
+     goto label132
+     label129: if $z1 == 0 goto label133
+     goto label144
+     label134: if $z1 != 0 goto label137
+     label136: if $z1 != 0 goto label137
+     goto label144
+     label142: if $i0 == -1 goto label144
+     label145: if $z1 == 0 goto label156
+     label151: if $z1 == 0 goto label148
+     label153: if $i0 == -1 goto label155
+     label157: if $z1 == 0 goto label288
+     label161: $i0 = 0
+     label162: $i2 = 2147483647 - $i0
+     label164: $i2 = 0
+     label165: if $i2 >= $i3 goto label170
+     $i4 = $i3 - $i2
+     label170: if $i2 == -1 goto label173
+     label167: if $i4 >= 0 goto label168
+     goto label169
+     label168: $i2 = $i2 + $i4
+     label169: if $i4 != -1 goto label170
+     goto label165
+     goto label173
+     label172: $i0 = $i0 + $i2
+     goto label162
+     label176: if $z1 == 0 goto label267
+     goto label179
+     label178: goto label182
+     label180: $l1 = $l1 - $l5
+     label189: if $z1 == 0 goto label192
+     label192: $z4 = 0
+     label191: if $i0 < 21 goto label192
+     $z4 = 1
+     label193: if $z4 == 0 goto label203
+     label195: if $i0 >= 26 goto label198
+     label198: if $i0 >= 29 goto label203
+     label197: goto label200
+     goto label244
+     label209: if $i0 == -1 goto label212
+     label217: if $i0 < 26 goto label218
+     label225: if $i2 == -1 goto label227
+     label243: if $z3 != 0 goto label245
+     label232: if $z1 == 0 goto label243
+     goto label240
+     label239: goto label242
+     goto label245
+     label246: if $z0 == 0 goto label059
+     label248: if $z1 != 0 goto label059
+     label250: if $i0 < 26 goto label255
+     label254: goto label059
+     label256: goto label252
+     goto label293
+     label275: if $i0 < 18 goto label279
+     label278: goto label283
+     label283: $l1 = $l5 * $l1
+     goto label285
+     label284: $l1 = -1L
+     goto label293
+     label299: $l1 = $l1 - $l5
+     label303: if $z0 != 0 goto label305
+     label308: if $z0 == 0 goto label311
+     label310: goto label307
+     goto label319
+     goto label284
+     goto label296
+     goto label315

@@ -1,0 +1,6 @@
+     $z0 = X.07P.A08
+     staticinvoke X.06H.A01(\SoLoader.getElfDependencies\ $r1 \\)
+     label1: $r2 = staticinvoke X.02r.A06($r0 $r1)
+     label2: if $z0 == 0 goto label5
+     staticinvoke X.06H.A00()
+     staticinvoke X.06H.A00()

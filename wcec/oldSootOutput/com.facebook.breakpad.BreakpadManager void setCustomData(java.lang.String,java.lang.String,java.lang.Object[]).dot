@@ -1,0 +1,9 @@
+     $r3 = com.facebook.breakpad.BreakpadManager.mCrashDirectory
+     staticinvoke X.07S.A06(\BreakpadManager\ \Breakpad is not active (setCustomData).\)
+     label1: $i0 = lengthof $r1
+     label2: staticinvoke com.facebook.breakpad.BreakpadManager.nativeSetCustomData($r0 $r2)
+     $r4 = new java.lang.StringBuilder
+     $r5 = new java.util.Formatter
+     virtualinvoke $r5.format($r2 $r1)
+     virtualinvoke $r5.close()
+     $r2 = virtualinvoke $r4.toString()

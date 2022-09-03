@@ -1,0 +1,6 @@
+     $b2 = $l0 cmp 0L
+     r0.mPtr = $l0
+     label1: $r1 = new java.lang.NullPointerException
+     $i1 = staticinvoke com.facebook.superpack.SuperpackFile.getLengthNative($l0)
+     r0.mLength = $i1
+     r0.mFd = -1

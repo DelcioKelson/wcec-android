@@ -1,0 +1,14 @@
+     label1: $r3 = virtualinvoke $r2.getPackageManager()
+     $r4 = virtualinvoke $r3.getPackageInfo($r0 64)
+     label2: if $r4 == null goto label4
+     $r5 = $r4.packageName
+     label4: $r7 = new X.09I
+     $z0 = virtualinvoke $r0.equals($r5)
+     label3: $r6 = new X.09H
+     $r9 = new java.lang.SecurityException
+     label6: $r10 = new java.lang.StringBuilder
+     virtualinvoke $r10.append($r0)
+     virtualinvoke $r10.append(\ not found by PackageManager.\)
+     $r0 = virtualinvoke $r10.toString()
+     $r11 = new X.01J
+     goto label6

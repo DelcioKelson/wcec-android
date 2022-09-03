@@ -1,0 +1,75 @@
+     r0.A01 = $r1
+     $r11 = $r1.A04
+     $r25 = new java.lang.StringBuilder
+     $r13 = virtualinvoke $r11.getPackageName()
+     virtualinvoke $r25.append($r13)
+     virtualinvoke $r25.append(\/native-libs/\)
+     $r13 = virtualinvoke $r25.toString()
+     $r5 = new java.io.File
+     $r8 = $r5
+     $r26 = new java.util.ArrayList
+     $r27 = new java.util.LinkedHashSet
+     $r14 = staticinvoke X.07G.A05()
+     $i0 = lengthof $r14
+     $i1 = 0
+     label01: if $i1 >= $i0 goto label33
+     $r13 = $r14$i1
+     label33: $i0 = virtualinvoke $r27.size()
+     $r15 = new java.io.File
+     $r5 = $r15
+     $z0 = virtualinvoke $r15.isDirectory()
+     virtualinvoke $r27.add($r13)
+     label23: $i1 = $i1 + 1
+     $r28 = new java.io.File
+     $z0 = virtualinvoke $r28.isFile()
+     $r29 = new java.io.FileReader
+     label02: $r30 = new java.io.BufferedReader
+     label04: $r13 = virtualinvoke $r30.readLine()
+     label05: if $r13 == null goto label21
+     label06: $i2 = virtualinvoke $r13.length()
+     label21: virtualinvoke $r30.close()
+     label07: if $i2 == 0 goto label04
+     label08: $i2 = virtualinvoke $r13.indexOf(32)
+     label09: if $i2 == -1 goto label24
+     label10: $r25 = new java.lang.StringBuilder
+     label24: $r25 = new java.lang.StringBuilder
+     $r16 = virtualinvoke $r13.substring(0 $i2)
+     virtualinvoke $r25.append($r16)
+     virtualinvoke $r25.append(\.so\)
+     $r16 = virtualinvoke $r25.toString()
+     $i3 = virtualinvoke $r26.size()
+     label12: $i4 = 0
+     label13: if $i4 >= $i3 goto label16
+     label14: $r17 = virtualinvoke $r26.get($i4)
+     label16: $i2 = $i2 + 1
+     $r18 = (X.04h) $r17
+     $r19 = $r18.A01
+     $z0 = virtualinvoke $r19.equals($r16)
+     label15: if $z0 != 0 goto label04
+     $i4 = $i4 + 1
+     goto label13
+     label17: $r13 = virtualinvoke $r13.substring($i2)
+     $r28 = new java.io.File
+     $r31 = new X.04h
+     virtualinvoke $r26.add($r31)
+     label20: goto label04
+     label22: virtualinvoke $r29.close()
+     goto label01
+     virtualinvoke $r25.append(\illegal line in exopackage metadata: \)
+     virtualinvoke $r25.append($r13)
+     virtualinvoke $r25.append(\\)
+     $r13 = virtualinvoke $r25.toString()
+     $r32 = new java.lang.RuntimeException
+     label28: virtualinvoke $r30.close()
+     label31: virtualinvoke $r29.close()
+     $r14 = newarray (java.lang.String)$i0
+     $r23 = virtualinvoke $r27.toArray($r14)
+     $r14 = (java.lang.String) $r23
+     $r2.A01 = $r14
+     $i0 = virtualinvoke $r26.size()
+     $r24 = newarray (X.04h)$i0
+     $r23 = virtualinvoke $r26.toArray($r24)
+     $r24 = (X.04h) $r23
+     r0.A00 = $r24
+     goto label29
+     goto label32

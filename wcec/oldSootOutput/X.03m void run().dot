@@ -1,0 +1,41 @@
+     label01: $r2 = r0.A03
+     $r1 = new java.io.RandomAccessFile
+     label02: $r5 = r0.A06
+     virtualinvoke $r1.write($r5)
+     $l0 = virtualinvoke $r1.getFilePointer()
+     virtualinvoke $r1.setLength($l0)
+     label03: virtualinvoke $r1.close()
+     $r6 = r0.A02
+     $r2 = $r6.A00
+     $r7 = new java.io.File
+     $r1 = new java.io.RandomAccessFile
+     label04: $r8 = r0.A01
+     virtualinvoke $r1.writeByte(1)
+     $r9 = $r8.A00
+     $i1 = lengthof $r9
+     virtualinvoke $r1.writeInt($i1)
+     label05: $i2 = 0
+     label06: if $i2 >= $i1 goto label09
+     label07: $r10 = $r9$i2
+     label09: virtualinvoke $r1.close()
+     $r11 = $r10.A01
+     virtualinvoke $r1.writeUTF($r11)
+     $r10 = $r9$i2
+     $r11 = $r10.A00
+     virtualinvoke $r1.writeUTF($r11)
+     label08: $i2 = $i2 + 1
+     goto label06
+     staticinvoke X.07G.A02($r2)
+     $r2 = r0.A04
+     staticinvoke X.04r.A00($r2 1)
+     label10: $r12 = r0.A00
+     label11: virtualinvoke $r12.close()
+     label14: virtualinvoke $r1.close()
+     label17: virtualinvoke $r1.close()
+     $r12 = r0.A00
+     label20: virtualinvoke $r12.close()
+     $r17 = r0.A05
+     $z0 = virtualinvoke $r17.booleanValue()
+     $r18 = new java.lang.RuntimeException
+     goto label15
+     goto label18

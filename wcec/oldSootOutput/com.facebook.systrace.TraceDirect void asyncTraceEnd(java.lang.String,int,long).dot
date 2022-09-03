@@ -1,0 +1,15 @@
+     $z0 = staticinvoke com.facebook.systrace.TraceDirect.checkNative()
+     staticinvoke com.facebook.systrace.TraceDirect.nativeAsyncTraceEnd($r0 $i0 $l1)
+     label1: $r1 = new X.06B
+     $i2 = staticinvoke android.os.Process.myPid()
+     virtualinvoke $r1.A00($i2)
+     virtualinvoke $r1.A02($r0)
+     $b3 = $l1 cmp 0L
+     virtualinvoke $r1.A01(\<T\)
+     label2: virtualinvoke $r1.A00($i0)
+     $r0 = staticinvoke java.lang.Long.toString($l1)
+     virtualinvoke $r1.A01($r0)
+     virtualinvoke $r1.A01(\>\)
+     $r2 = $r1.A00
+     $r0 = virtualinvoke $r2.toString()
+     staticinvoke X.06n.A00($r0)

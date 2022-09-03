@@ -1,0 +1,79 @@
+     label01: $r1 = r0.A00
+     $r3 = $r1.A00
+     label02: if $r3 != null goto label10
+     label03: $r4 = $r1.A01
+     label10: $r7 = X.07K.A07
+     $r5 = staticinvoke X.00H.A01($r4)
+     label04: $r4 = \b-www.facebook.com\
+     label05: $z0 = virtualinvoke $r4.equals(\b-www.facebook.com\)
+     label06: if $z0 == 0 goto label13
+     $r27 = new X.012
+     label13: $r29 = new X.07W
+     $r6 = $r27
+     label08: $r28 = new X.013
+     $r1.A00 = $r28
+     label11: $z0 = staticinvoke X.013.A01($r7)
+     label16: $r4 = r0.A01
+     label12: if $z0 != 0 goto label16
+     $r6 = $r29
+     label15: goto label08
+     $r8 = r0.A02
+     label17: $r30 = new java.util.Properties
+     label19: if $r8 == null goto label21
+     label20: virtualinvoke $r30.putAll($r8)
+     label21: $r10 = X.03D.A4G
+     label22: $r11 = $r10.A00
+     virtualinvoke $r30.put($r11 $r4)
+     $r11 = staticinvoke X.06p.A01(\fb.report_source\)
+     label23: $r4 = $r11
+     label24: $z0 = virtualinvoke $r11.equals(\\)
+     label25: if $z0 == 0 goto label28
+     label26: $r11 = staticinvoke java.lang.System.getProperty(\fb.report_source\)
+     label28: $z0 = virtualinvoke $r4.equals(\\)
+     label27: $r4 = $r11
+     label60: $r35 = new java.util.HashMap
+     label29: if $z0 != 0 goto label60
+     label30: virtualinvoke $r30.put(\report_source\ $r4)
+     staticinvoke X.07K.A01()
+     label31: $r12 = X.07K.A08
+     $r13 = X.07K.A0D
+     label57: $r4 = staticinvoke X.06p.A01(\fb.testing.build_target\)
+     label32: entermonitor $r13
+     label33: $r14 = X.07K.A08
+     $r31 = new java.io.File
+     $r12 = $r31
+     exitmonitor $r13
+     label34: $r31 = new java.io.File
+     $z0 = virtualinvoke $r31.exists()
+     label36: if $z0 == 0 goto label57
+     $r32 = new java.lang.StringBuilder
+     label38: $r33 = new java.io.FileReader
+     label40: $r34 = new java.io.BufferedReader
+     label42: $r4 = virtualinvoke $r34.readLine()
+     label43: if $r4 == null goto label46
+     label44: virtualinvoke $r32.append($r4)
+     label46: $r4 = virtualinvoke $r32.toString()
+     virtualinvoke $r32.append(10)
+     label45: goto label42
+     virtualinvoke $r30.put(\report_source_ref\ $r4)
+     label47: virtualinvoke $r34.close()
+     label48: goto label57
+     label50: virtualinvoke $r34.close()
+     label53: exitmonitor $r13
+     label56: staticinvoke X.07S.A0B(\lacrima\ \Failed to read report source ref\ $r20)
+     $z0 = virtualinvoke $r4.equals(\\)
+     label58: if $z0 != 0 goto label60
+     label59: virtualinvoke $r30.put(\mobile_build_target\ $r4)
+     $r3 = $r1.A00
+     virtualinvoke $r3.A02($r35 $r30 1)
+     $r22 = virtualinvoke $r35.values()
+     $r23 = interfaceinvoke $r22.iterator()
+     label62: $z0 = interfaceinvoke $r23.hasNext()
+     label63: if $z0 == 0 goto label68
+     label64: $r13 = interfaceinvoke $r23.next()
+     $r24 = (X.05k) $r13
+     $r25 = $r24.A01
+     virtualinvoke $r25.close()
+     label65: goto label62
+     staticinvoke X.07S.A08(\lacrima\ \Failed to send direct report\ $r26)
+     goto label51

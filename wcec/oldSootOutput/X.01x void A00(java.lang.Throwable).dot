@@ -1,0 +1,2 @@
+     staticinvoke X.01x.A01($r0)
+     $r1 = new java.lang.RuntimeException

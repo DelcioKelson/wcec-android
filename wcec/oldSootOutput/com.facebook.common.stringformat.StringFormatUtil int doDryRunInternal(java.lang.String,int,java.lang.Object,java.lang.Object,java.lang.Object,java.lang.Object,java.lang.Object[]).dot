@@ -1,0 +1,6 @@
+     label5: $i0 = staticinvoke com.facebook.common.stringformat.StringFormatUtil.doDryRun($r0)
+     label4: $i0 = staticinvoke com.facebook.common.stringformat.StringFormatUtil.doDryRun($r0 $r1)
+     label3: $i0 = staticinvoke com.facebook.common.stringformat.StringFormatUtil.doDryRun($r0 $r1 $r2)
+     label2: $i0 = staticinvoke com.facebook.common.stringformat.StringFormatUtil.doDryRun($r0 $r1 $r2 $r3)
+     $i0 = staticinvoke com.facebook.common.stringformat.StringFormatUtil.doFormatArray(null $r0 $r5)
+     label1: $i0 = staticinvoke com.facebook.common.stringformat.StringFormatUtil.doDryRun($r0 $r1 $r2 $r3 $r4)

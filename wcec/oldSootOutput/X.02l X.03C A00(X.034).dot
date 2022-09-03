@@ -1,0 +1,8 @@
+     $r4 = new X.03C
+     $r3 = X.03D.A4G
+     $r2 = new java.lang.StringBuilder
+     $r5 = $r1.A00
+     virtualinvoke $r2.append($r5)
+     virtualinvoke $r2.append(\soft_error\)
+     $r5 = virtualinvoke $r2.toString()
+     virtualinvoke $r4.A03($r3 $r5)

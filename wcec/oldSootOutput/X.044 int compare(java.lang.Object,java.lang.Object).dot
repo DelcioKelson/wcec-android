@@ -1,0 +1,6 @@
+     $r3 = (java.io.File) $r1
+     $r4 = (java.io.File) $r2
+     $l0 = virtualinvoke $r3.lastModified()
+     $l1 = virtualinvoke $r4.lastModified()
+     $l0 = $l0 - $l1
+     $i2 = (int) $l0

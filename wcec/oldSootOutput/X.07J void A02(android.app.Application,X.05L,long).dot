@@ -1,0 +1,219 @@
+     X.06w.A0B = 0
+     staticinvoke X.06o.A01(\LacrimaInit.getConfig\)
+     label01: $r2 = X.07J.A02
+     label02: if $r2 != null goto label49
+     label03: $r4 = new X.087
+     label49: staticinvoke X.06o.A00()
+     $r3 = new X.088
+     $r8 = new X.089
+     $r7 = new X.08A
+     $r6 = new X.08B
+     $r9 = new X.08C
+     $r2 = new X.05x
+     $r10 = staticinvoke X.05a.A00()
+     $r11 = new X.04S
+     $r2.A04 = $r11
+     staticinvoke X.06o.A01(\Config.createStartupConfig\)
+     label04: $r12 = X.05A.A00
+     label05: if $r12 == null goto label08
+     label06: staticinvoke X.07S.A06(\lacrima\ \ErrorReportingDiagnosticData.setInstance already set.\)
+     label08: $r13 = new X.07e
+     label07: goto label09
+     label09: $r14 = new X.066
+     X.05A.A00 = $r13
+     $r15 = new X.07x
+     $r14.A00 = $r15
+     $r16 = new X.08F
+     $r5 = $r14.A04
+     $r17 = $r5.A02
+     interfaceinvoke $r17.add($r16)
+     $r18 = new X.081
+     interfaceinvoke $r17.add($r18)
+     $r19 = new X.080
+     interfaceinvoke $r17.add($r19)
+     label10: staticinvoke X.06o.A00()
+     $r20 = new X.07j
+     $r21 = $r5.A03
+     interfaceinvoke $r21.add($r20)
+     interfaceinvoke $r17.add($r9)
+     $r22 = virtualinvoke $r14.A00()
+     $r17 = $r2.A09
+     interfaceinvoke $r17.add($r22)
+     staticinvoke X.06o.A01(\Config.createNavigationConfig\)
+     label11: $r14 = new X.066
+     $r23 = new X.07z
+     $r14.A00 = $r23
+     label12: staticinvoke X.06o.A00()
+     $r22 = virtualinvoke $r14.A00()
+     interfaceinvoke $r17.add($r22)
+     $r24 = newarray (X.09X)2
+     $r25 = new X.05v
+     X.06V.A03 = $r25
+     $r26 = new X.07n
+     $r240 = $r26
+     $r27 = new X.07m
+     $r241 = $r27
+     staticinvoke X.06o.A01(\Config.createLifecycleConfig\)
+     label13: $i1 = 0
+     label14: $r28 = $r24$i1
+     $r21 = X.05d.A00
+     interfaceinvoke $r21.add($r28)
+     label15: $i1 = $i1 + 1
+     label16: $r14 = new X.066
+     $r29 = new X.07y
+     $r14.A00 = $r29
+     $r30 = X.06W.A00
+     $r14.A02 = $r30
+     label17: staticinvoke X.06o.A00()
+     $r22 = virtualinvoke $r14.A00()
+     interfaceinvoke $r17.add($r22)
+     $r31 = new X.08V
+     $r32 = X.06N.A00
+     $r33 = com.facebook.errorreporting.lacrima.detector.javacrash.JavaCrashDetector.A05
+     staticinvoke X.08y.A00()
+     staticinvoke X.06o.A01(\Config.createJavaDetectionConfig\)
+     label18: $r14 = new X.066
+     $r34 = new X.08N
+     $r14.A00 = $r34
+     $r14.A02 = $r30
+     $r35 = new X.07s
+     $r5 = $r14.A04
+     $r36 = $r5.A02
+     interfaceinvoke $r36.add($r35)
+     $r37 = new X.07i
+     $r21 = $r5.A03
+     interfaceinvoke $r21.add($r37)
+     $r38 = new X.07k
+     $r39 = $r5.A08
+     interfaceinvoke $r39.add($r38)
+     label19: staticinvoke X.06o.A00()
+     $r14.A03 = 1
+     $r40 = new X.08I
+     $r14.A01 = $r40
+     $r41 = new X.07r
+     interfaceinvoke $r36.add($r41)
+     interfaceinvoke $r36.add($r4)
+     $r36 = $r5.A04
+     interfaceinvoke $r36.add($r8)
+     $r20 = new X.07j
+     interfaceinvoke $r21.add($r20)
+     $r21 = $r5.A07
+     interfaceinvoke $r21.add($r3)
+     $r22 = virtualinvoke $r14.A00()
+     interfaceinvoke $r17.add($r22)
+     $r42 = new X.08Q
+     interfaceinvoke $r17.add($r42)
+     $r43 = new X.08R
+     interfaceinvoke $r17.add($r43)
+     staticinvoke X.06o.A01(\Config.createUnexplainedConfig\)
+     label20: $r14 = new X.066
+     $r44 = new X.086
+     $r14.A00 = $r44
+     $r14.A02 = $r30
+     $r45 = new X.085
+     $r5 = $r14.A04
+     $r21 = $r5.A04
+     interfaceinvoke $r21.add($r45)
+     $r46 = new X.084
+     interfaceinvoke $r21.add($r46)
+     $r47 = new X.08M
+     $r14.A01 = $r47
+     label21: staticinvoke X.06o.A00()
+     interfaceinvoke $r21.add($r4)
+     $r36 = $r5.A09
+     interfaceinvoke $r36.add($r6)
+     interfaceinvoke $r21.add($r7)
+     $r22 = virtualinvoke $r14.A00()
+     interfaceinvoke $r17.add($r22)
+     staticinvoke X.06o.A01(\Config.createNativeConfig\)
+     label22: $r14 = new X.066
+     $r48 = new X.08G
+     $r14.A00 = $r48
+     $r49 = X.06W.A0C
+     $r14.A02 = $r49
+     $r50 = new X.083
+     $r5 = $r14.A04
+     $r21 = $r5.A04
+     interfaceinvoke $r21.add($r50)
+     $r51 = new X.082
+     interfaceinvoke $r21.add($r51)
+     $r52 = new X.08L
+     $r14.A01 = $r52
+     label23: staticinvoke X.06o.A00()
+     interfaceinvoke $r21.add($r4)
+     $r36 = $r5.A09
+     interfaceinvoke $r36.add($r6)
+     interfaceinvoke $r21.add($r7)
+     $r22 = virtualinvoke $r14.A00()
+     interfaceinvoke $r17.add($r22)
+     staticinvoke X.06o.A01(\Config.createSoftErrorConfig\)
+     label24: $r14 = new X.066
+     $r53 = new X.07w
+     $r14.A00 = $r53
+     $r14.A02 = $r49
+     $r54 = new X.07v
+     $r5 = $r14.A04
+     $r21 = $r5.A07
+     interfaceinvoke $r21.add($r54)
+     $r55 = new X.08K
+     $r14.A01 = $r55
+     label25: staticinvoke X.06o.A00()
+     interfaceinvoke $r21.add($r3)
+     $r14.A02 = $r30
+     $r22 = virtualinvoke $r14.A00()
+     interfaceinvoke $r17.add($r22)
+     $r2.A07 = 0
+     $r14 = new X.066
+     $r56 = new X.08E
+     $r14.A00 = $r56
+     $r14.A02 = $r30
+     $r57 = new X.07t
+     $r5 = $r14.A04
+     $r21 = $r5.A02
+     interfaceinvoke $r21.add($r57)
+     $r58 = new X.08J
+     $r14.A01 = $r58
+     $r14.A02 = $r49
+     interfaceinvoke $r21.add($r4)
+     $r21 = $r5.A07
+     interfaceinvoke $r21.add($r3)
+     $r22 = virtualinvoke $r14.A00()
+     interfaceinvoke $r17.add($r22)
+     staticinvoke X.06o.A01(\Config.createReportSourceConfig\)
+     label26: $r14 = new X.066
+     $r59 = new X.07u
+     $r14.A00 = $r59
+     $r14.A02 = $r30
+     label27: staticinvoke X.06o.A00()
+     $r22 = virtualinvoke $r14.A00()
+     interfaceinvoke $r17.add($r22)
+     staticinvoke X.06o.A01(\Config.createAnrAppDeathConfig\)
+     label28: $r14 = new X.066
+     $r60 = new X.07q
+     $r14.A00 = $r60
+     $r30 = X.06W.A01
+     $r14.A02 = $r30
+     $r61 = new X.07p
+     $r5 = $r14.A04
+     $r21 = $r5.A04
+     interfaceinvoke $r21.add($r61)
+     $r62 = new X.08H
+     $r14.A01 = $r62
+     label29: staticinvoke X.06o.A00()
+     $r22 = virtualinvoke $r14.A00()
+     interfaceinvoke $r17.add($r22)
+     $r63 = new X.08P
+     interfaceinvoke $r17.add($r63)
+     X.07J.A02 = $r2
+     X.07J.A07 = 1
+     label30: goto label49
+     label32: staticinvoke X.06o.A00()
+     label34: staticinvoke X.06o.A00()
+     label36: staticinvoke X.06o.A00()
+     label38: staticinvoke X.06o.A00()
+     label40: staticinvoke X.06o.A00()
+     label42: staticinvoke X.06o.A00()
+     label44: staticinvoke X.06o.A00()
+     label46: staticinvoke X.06o.A00()
+     label48: staticinvoke X.06o.A00()
+     staticinvoke X.06o.A00()

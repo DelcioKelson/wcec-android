@@ -1,0 +1,9 @@
+     label21: $i0 = -1
+     label03: $i0 = $i0 + -1
+     label06: if $i0 == -2147483647 goto label11
+     goto label11
+     goto label10
+     goto label10
+     goto label06
+     goto label09
+     goto label11

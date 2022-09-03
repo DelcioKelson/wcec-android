@@ -1,0 +1,7 @@
+     $r2 = r0.A00
+     $r3 = $r2.A00
+     $z0 = $r3.A0S
+     $r4 = new com.facebook.errorreporting.lacrima.common.mappedfile.mlocked.MLockedFile
+     label4: $r6 = new X.062
+     staticinvoke X.07S.A0A(\lacrima\ \Failed to initialize mlocked file using fallback\ $r5)
+     staticinvoke X.07S.A0A(\lacrima\ \Failed to initialize mapped file\ $r7)

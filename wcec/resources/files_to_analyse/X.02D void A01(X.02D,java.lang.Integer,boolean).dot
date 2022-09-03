@@ -1,0 +1,17 @@
+     goto label12
+     goto label05
+     goto label04
+     goto label09
+     goto label10
+     label23: $c1 = 32
+     goto label20
+     label20: $c1 = 33
+     $i0 = $i0 + 1
+     goto label21
+     goto label21
+     goto label24
+     label25: $c2 = 51
+     label29: $c2 = 50
+     label30: $c2 = 49
+     goto label26
+     goto label26

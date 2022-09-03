@@ -1,0 +1,20 @@
+     $r1 = X.01b.A1N
+     virtualinvoke r0.addAll($r1)
+     $r1 = X.01b.A1K
+     virtualinvoke r0.addAll($r1)
+     $r1 = X.01b.A1O
+     virtualinvoke r0.addAll($r1)
+     $r1 = X.01b.A1T
+     virtualinvoke r0.addAll($r1)
+     $r1 = X.01b.A1U
+     virtualinvoke r0.addAll($r1)
+     $r1 = X.01b.A1V
+     virtualinvoke r0.addAll($r1)
+     $r1 = X.01b.A1Z
+     virtualinvoke r0.addAll($r1)
+     $r1 = X.01b.A1a
+     virtualinvoke r0.addAll($r1)
+     $r1 = X.01b.A1Y
+     virtualinvoke r0.addAll($r1)
+     $r1 = X.01b.A1S
+     virtualinvoke r0.addAll($r1)

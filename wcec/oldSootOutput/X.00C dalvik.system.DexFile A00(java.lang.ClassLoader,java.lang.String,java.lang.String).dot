@@ -1,0 +1,34 @@
+     $r6 = null
+     $r7 = class \Ldalvik/system/DexFile\
+     label17: $z0 = 0
+     label01: $r8 = virtualinvoke $r7.getDeclaredMethods()
+     label02: $i0 = lengthof $r8
+     $i1 = 0
+     label03: if $i1 >= $i0 goto label11
+     $r9 = $r8$i1
+     label11: $r9 = null
+     label04: $r10 = virtualinvoke $r9.getName()
+     $z0 = virtualinvoke $r10.equals(\loadDex\)
+     label05: if $z0 == 0 goto label10
+     label06: $r11 = virtualinvoke $r9.getParameterTypes()
+     label10: $i1 = $i1 + 1
+     label07: $i2 = lengthof $r11
+     label08: virtualinvoke $r9.setAccessible(1)
+     label09: goto label12
+     label12: $z0 = 1
+     goto label03
+     $r12 = newarray (java.lang.Object)5
+     $r120 = $r1
+     $r121 = $r2
+     label13: $r13 = staticinvoke java.lang.Integer.valueOf(0)
+     label14: $r122 = $r13
+     $r123 = $r0
+     $r124 = null
+     label15: $r14 = virtualinvoke $r9.invoke(null $r12)
+     label16: $r6 = (dalvik.system.DexFile) $r14
+     goto label18
+     label18: if $z0 != 0 goto label22
+     $r6 = staticinvoke dalvik.system.DexFile.loadDex($r1 $r2 0)
+     goto label17
+     goto label17
+     goto label17

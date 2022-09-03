@@ -1,0 +1,5 @@
+     $z1 = interfaceinvoke $r2.isEmpty()
+     r0.A00 = $r1
+     label1: $r3 = new java.lang.IllegalArgumentException
+     r0.A01 = $r2
+     r0.A02 = $z0

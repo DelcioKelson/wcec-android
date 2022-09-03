@@ -1,0 +1,6 @@
+     $r2 = virtualinvoke r0.getClass()
+     $r3 = virtualinvoke $r1.getClass()
+     $r4 = (X.07A) $r1
+     $r5 = r0.A00
+     $r6 = $r4.A00
+     label1: $z0 = virtualinvoke $r5.equals($r6)

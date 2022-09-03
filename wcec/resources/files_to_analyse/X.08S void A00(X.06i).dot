@@ -1,0 +1,22 @@
+     label08: goto label78
+     label11: goto label14
+     label17: if $z0 == 0 goto label20
+     label19: goto label16
+     label22: if $z0 == 0 goto label27
+     label26: goto label21
+     label29: if $z0 == 0 goto label32
+     label31: goto label28
+     label34: if $z0 == 0 goto label37
+     label36: goto label33
+     label39: if $z0 == 0 goto label44
+     label43: goto label38
+     label46: if $z0 == 0 goto label49
+     label48: goto label45
+     label51: if $z0 == 0 goto label56
+     label55: goto label50
+     label58: if $z0 == 0 goto label63
+     label62: goto label57
+     label65: if $z0 == 0 goto label70
+     label69: goto label64
+     label72: if $z0 == 0 goto label77
+     label76: goto label71

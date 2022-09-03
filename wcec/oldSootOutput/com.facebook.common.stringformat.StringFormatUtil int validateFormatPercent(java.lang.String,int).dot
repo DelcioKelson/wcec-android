@@ -1,0 +1,6 @@
+     $i0 = $i0 + 1
+     $i1 = virtualinvoke $r0.length()
+     $c2 = virtualinvoke $r0.charAt($i0)
+     $i0 = (int) $c2
+     $i0 = (int) $c2
+     $i0 = (int) $c2

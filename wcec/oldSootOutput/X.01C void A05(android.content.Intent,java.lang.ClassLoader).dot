@@ -1,0 +1,30 @@
+     $r3 = virtualinvoke $r1.getComponent()
+     r0.A03 = $r3
+     $r4 = virtualinvoke $r1.getAction()
+     r0.A0A = $r4
+     $r5 = virtualinvoke $r1.getData()
+     r0.A06 = $r5
+     $r4 = virtualinvoke $r1.getType()
+     r0.A0C = $r4
+     $r6 = virtualinvoke $r1.getSourceBounds()
+     r0.A05 = $r6
+     $r7 = virtualinvoke $r1.getSelector()
+     r0.A04 = $r7
+     $i0 = android.os.Build$VERSION.SDK_INT
+     $r8 = staticinvoke X.01D.A00($r1)
+     label1: $r9 = virtualinvoke $r1.getCategories()
+     r0.A02 = $r8
+     $r10 = r0.A0E
+     label2: $i0 = virtualinvoke $r1.getFlags()
+     interfaceinvoke $r10.addAll($r9)
+     r0.A00 = $i0
+     $r11 = virtualinvoke $r1.getExtras()
+     virtualinvoke $r1.setExtrasClassLoader($r2)
+     label3: $r11 = virtualinvoke $r1.getExtras()
+     $r12 = r0.A07
+     $r12 = new android.os.Bundle
+     label4: if $r2 == null goto label5
+     r0.A07 = $r12
+     virtualinvoke $r12.setClassLoader($r2)
+     label5: $r12 = r0.A07
+     virtualinvoke $r12.putAll($r11)

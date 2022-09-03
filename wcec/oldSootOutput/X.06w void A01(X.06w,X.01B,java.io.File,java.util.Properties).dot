@@ -1,0 +1,197 @@
+     $r9 = $r3
+     $r10 = new java.io.File
+     $z0 = virtualinvoke $r10.exists()
+     $z1 = 0
+     $r11 = new X.01z
+     $r12 = virtualinvoke $r2.listFiles($r11)
+     label002: if $r12 == null goto label007
+     label003: $i0 = lengthof $r12
+     label007: $r10 = null
+     label004: if $i0 != 1 goto label007
+     label005: $r10 = $r120
+     label006: goto label008
+     label008: if $r10 != null goto label011
+     $r13 = newarray (java.lang.Object)1
+     label011: if $r3 != null goto label021
+     label009: $r14 = virtualinvoke $r2.getName()
+     $r130 = $r14
+     staticinvoke X.07S.A0I(\lacrima\ \Cannot find report in %s\ $r13)
+     $r9 = new java.util.Properties
+     label021: $r3 = new java.util.Properties
+     label013: $r15 = new java.io.FileInputStream
+     label015: virtualinvoke $r9.load($r15)
+     label016: goto label020
+     label020: virtualinvoke $r15.close()
+     label018: virtualinvoke $r15.close()
+     $r17 = virtualinvoke $r9.entrySet()
+     $r18 = interfaceinvoke $r17.iterator()
+     label023: $z0 = interfaceinvoke $r18.hasNext()
+     label024: if $z0 == 0 goto label029
+     label025: $r19 = interfaceinvoke $r18.next()
+     label029: $r22 = new java.util.HashMap
+     $r20 = (java.util.Map$Entry) $r19
+     $r19 = interfaceinvoke $r20.getKey()
+     $r14 = virtualinvoke $r19.toString()
+     $r19 = interfaceinvoke $r20.getValue()
+     $r21 = virtualinvoke $r19.toString()
+     label026: $r17 = X.03E.A01
+     label027: interfaceinvoke $r17.contains($r14)
+     virtualinvoke $r3.put($r14 $r21)
+     label028: goto label023
+     label031: $r11 = new X.01z
+     $r12 = virtualinvoke $r2.listFiles($r11)
+     label033: if $r12 == null goto label073
+     label034: $i0 = lengthof $r12
+     label073: $z0 = 0
+     label035: if $i0 != 1 goto label073
+     label036: $r23 = $r120
+     label037: if $r23 == null goto label073
+     $r24 = new java.util.Properties
+     label039: $r25 = new java.io.FileReader
+     label041: virtualinvoke $r24.load($r25)
+     $r17 = virtualinvoke $r24.stringPropertyNames()
+     $r18 = interfaceinvoke $r17.iterator()
+     label042: $z2 = 0
+     $z0 = 0
+     label043: $z1 = interfaceinvoke $r18.hasNext()
+     label044: if $z1 == 0 goto label063
+     label045: $r19 = interfaceinvoke $r18.next()
+     label063: virtualinvoke $r25.close()
+     $r21 = (java.lang.String) $r19
+     $r14 = virtualinvoke $r24.getProperty($r21)
+     label046: if $r14 == null goto label043
+     label047: $z1 = virtualinvoke $r21.startsWith(\__\)
+     $z3 = virtualinvoke $r21.startsWith(\_r_\)
+     $r21 = virtualinvoke $r21.replaceFirst(\__\ \\)
+     $r21 = virtualinvoke $r21.replaceFirst(\_r_\ \\)
+     $r23 = new java.io.File
+     label048: if $z3 == 0 goto label051
+     label049: $z3 = virtualinvoke $r23.exists()
+     label051: if $z1 == 0 goto label056
+     label050: if $z3 != 0 goto label051
+     $z0 = 1
+     goto label043
+     label052: $z1 = virtualinvoke $r23.exists()
+     label056: $z1 = virtualinvoke $r23.exists()
+     label053: if $z1 != 0 goto label056
+     label054: $r13 = newarray (java.lang.Object)2
+     $r130 = $r21
+     $r14 = virtualinvoke $r23.getPath()
+     $r131 = $r14
+     staticinvoke X.07S.A0I(\lacrima\ \Attachment missing cannot send: %s %s\ $r13)
+     label055: $z2 = 1
+     goto label043
+     label057: if $z1 != 0 goto label060
+     label058: $r13 = newarray (java.lang.Object)2
+     label060: $r17 = X.06d.A0H
+     $r130 = $r21
+     $r14 = virtualinvoke $r23.getPath()
+     $r131 = $r14
+     staticinvoke X.07S.A0I(\lacrima\ \Attachment missing: %s %s\ $r13)
+     label059: goto label043
+     interfaceinvoke $r17.contains($r21)
+     virtualinvoke $r22.put($r21 $r23)
+     label061: goto label043
+     $z1 = 1
+     goto label069
+     label069: virtualinvoke $r25.close()
+     label064: goto label066
+     label066: $z1 = $z2
+     $z1 = $z2
+     goto label074
+     label074: staticinvoke X.07S.A0A(\lacrima\ \Could not read attachment file\ $r27)
+     goto label075
+     label075: $r28 = $r0.A04
+     $z1 = $z2
+     goto label069
+     $z0 = 0
+     goto label074
+     $z0 = 0
+     goto label074
+     goto label075
+     $r29 = $r0.A01
+     $z2 = staticinvoke X.013.A01($r29)
+     label076: if $z2 != 0 goto label079
+     $r13 = newarray (java.lang.Object)2
+     label079: if $z1 == 0 goto label082
+     label077: $r14 = virtualinvoke $r10.getPath()
+     $r130 = $r14
+     $r131 = $r22
+     staticinvoke X.07S.A0I(\lacrima\ \Cannot send report: %s %s\ $r13)
+     $r13 = newarray (java.lang.Object)2
+     label082: if $z0 == 0 goto label094
+     label080: $r14 = virtualinvoke $r10.getPath()
+     $r130 = $r14
+     $r131 = $r22
+     staticinvoke X.07S.A0I(\lacrima\ \Cannot send report required attachment missing: %s %s\ $r13)
+     staticinvoke X.06w.A00($r2)
+     label083: $i0 = staticinvoke X.06w.A00($r2)
+     label094: virtualinvoke $r10.getPath()
+     label084: if $i0 >= 3 goto label093
+     label085: virtualinvoke $r10.getPath()
+     label093: virtualinvoke $r10.getPath()
+     $r30 = $r0.A00
+     label086: if $r30 != null goto label135
+     $r30 = X.05f.A05
+     label087: $r0.A00 = $r30
+     label088: $r31 = new X.08v
+     label090: $r32 = java.util.concurrent.TimeUnit.SECONDS
+     label091: interfaceinvoke $r30.schedule($r31 10L $r32)
+     $i0 = staticinvoke X.06w.A00($r2)
+     label095: virtualinvoke $r10.getName()
+     virtualinvoke $r10.getParentFile()
+     label096: $r33 = new java.util.HashMap
+     label098: $r17 = virtualinvoke $r22.entrySet()
+     $r18 = interfaceinvoke $r17.iterator()
+     label099: $z0 = interfaceinvoke $r18.hasNext()
+     label100: if $z0 == 0 goto label107
+     label101: $r19 = interfaceinvoke $r18.next()
+     label107: $z0 = virtualinvoke $r28.A02($r33 $r3 $i0)
+     $r20 = (java.util.Map$Entry) $r19
+     $r19 = interfaceinvoke $r20.getValue()
+     $r10 = (java.io.File) $r19
+     $z0 = virtualinvoke $r10.exists()
+     label102: if $z0 != 0 goto label105
+     label103: $r13 = newarray (java.lang.Object)2
+     label105: $r15 = new java.io.FileInputStream
+     $r19 = interfaceinvoke $r20.getKey()
+     $r130 = $r19
+     $r14 = virtualinvoke $r10.getPath()
+     $r131 = $r14
+     staticinvoke X.07S.A0I(\lacrima\ \Attachment missing: %s %s\ $r13)
+     label104: goto label099
+     $r19 = interfaceinvoke $r20.getKey()
+     $r14 = (java.lang.String) $r19
+     $l1 = virtualinvoke $r10.length()
+     $r34 = new X.05k
+     virtualinvoke $r33.put($r14 $r34)
+     label106: goto label099
+     label108: $r35 = virtualinvoke $r33.values()
+     $r18 = interfaceinvoke $r35.iterator()
+     label109: $z2 = interfaceinvoke $r18.hasNext()
+     label110: if $z2 == 0 goto label115
+     label111: $r19 = interfaceinvoke $r18.next()
+     label115: if $z0 == 0 goto label127
+     label112: $r34 = (X.05k) $r19
+     $r36 = $r34.A01
+     label113: virtualinvoke $r36.close()
+     label114: goto label109
+     $r10 = new java.io.File
+     label127: virtualinvoke $r0.A02()
+     virtualinvoke $r10.createNewFile()
+     virtualinvoke $r0.A02()
+     label119: $r35 = virtualinvoke $r33.values()
+     $r18 = interfaceinvoke $r35.iterator()
+     label120: $z0 = interfaceinvoke $r18.hasNext()
+     label121: if $z0 == 0 goto label126
+     label122: $r19 = interfaceinvoke $r18.next()
+     label123: $r34 = (X.05k) $r19
+     $r36 = $r34.A01
+     label124: virtualinvoke $r36.close()
+     label125: goto label120
+     staticinvoke X.07S.A08(\lacrima\ \Error while sending report\ $r38)
+     goto label019
+     goto label070
+     goto label127
+     goto label127
+     goto label127

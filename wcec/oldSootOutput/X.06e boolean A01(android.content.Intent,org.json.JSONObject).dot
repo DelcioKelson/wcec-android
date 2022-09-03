@@ -1,0 +1,146 @@
+     $r9 = r0.A00
+     label001: $r10 = interfaceinvoke $r9.entrySet()
+     $r11 = interfaceinvoke $r10.iterator()
+     label002: $z0 = interfaceinvoke $r11.hasNext()
+     label003: if $z0 == 0 goto label078
+     label004: $r12 = interfaceinvoke $r11.next()
+     label078: $r22 = r0.A01
+     label005: $r13 = (java.util.Map$Entry) $r12
+     label006: $r12 = interfaceinvoke $r13.getKey()
+     label007: $r14 = (java.lang.String) $r12
+     $r15 = \categories\
+     label008: $z0 = virtualinvoke $r15.equals($r14)
+     label009: if $z0 == 0 goto label022
+     label010: $z0 = virtualinvoke $r2.has($r14)
+     label022: $r15 = \extra_names\
+     label011: if $z0 == 0 goto label113
+     label012: $r16 = virtualinvoke $r2.getJSONArray($r14)
+     label013: if $r16 == null goto label113
+     label014: $r12 = interfaceinvoke $r13.getValue()
+     label015: $r17 = (X.06u) $r12
+     $i0 = 0
+     label016: $i1 = virtualinvoke $r16.length()
+     label017: if $i0 >= $i1 goto label113
+     label018: $r14 = virtualinvoke $r16.getString($i0)
+     label019: $r18 = $r17.A00
+     label020: $r19 = virtualinvoke $r18.matcher($r14)
+     $z0 = virtualinvoke $r19.matches()
+     label021: $z1 = $r17.A01
+     $z0 = $z0 ^ $z1
+     $i0 = $i0 + 1
+     goto label016
+     label023: $z0 = virtualinvoke $r15.equals($r14)
+     label024: if $z0 == 0 goto label056
+     label025: $z0 = virtualinvoke $r2.has($r14)
+     label056: $r15 = \extra_value_types\
+     label026: if $z0 == 0 goto label113
+     label027: $r16 = virtualinvoke $r2.getJSONArray($r14)
+     label028: if $r16 == null goto label113
+     label029: $r12 = interfaceinvoke $r13.getValue()
+     label030: $r17 = (X.06u) $r12
+     $r20 = null
+     label031: $z0 = interfaceinvoke $r9.containsKey(\extra_value_types\)
+     label032: if $z0 == 0 goto label035
+     label033: $r12 = interfaceinvoke $r9.get(\extra_value_types\)
+     label035: $i0 = 0
+     label034: $r20 = (X.06u) $r12
+     label036: $i1 = virtualinvoke $r16.length()
+     label037: if $i0 >= $i1 goto label113
+     label038: $r21 = virtualinvoke $r16.getJSONObject($i0)
+     $z0 = virtualinvoke $r21.has(\name\)
+     label039: if $z0 == 0 goto label055
+     label040: $r14 = virtualinvoke $r21.getString(\name\)
+     label055: $r14 = \\
+     label041: $z0 = virtualinvoke $r21.has(\value_type\)
+     label042: if $z0 == 0 goto label054
+     label043: $r15 = virtualinvoke $r21.getString(\value_type\)
+     label054: $r15 = \\
+     label044: $r18 = $r17.A00
+     label045: $r19 = virtualinvoke $r18.matcher($r14)
+     $z0 = virtualinvoke $r19.matches()
+     label046: $z1 = $r17.A01
+     $z0 = $z0 ^ $z1
+     label047: $z1 = virtualinvoke $r15.equals(\\)
+     label049: $r18 = $r20.A00
+     label048: goto label052
+     label052: if $z0 == 0 goto label053
+     label050: $r19 = virtualinvoke $r18.matcher($r15)
+     $z1 = virtualinvoke $r19.matches()
+     label051: $z2 = $r20.A01
+     $z1 = $z1 ^ $z2
+     label053: $i0 = $i0 + 1
+     goto label002
+     goto label036
+     goto label044
+     goto label041
+     label057: $z0 = virtualinvoke $r15.equals($r14)
+     label058: if $z0 != 0 goto label002
+     $r15 = \flags\
+     label059: $z0 = virtualinvoke $r15.equals($r14)
+     label060: if $z0 == 0 goto label069
+     label061: $z0 = virtualinvoke $r2.has($r14)
+     label069: $z0 = virtualinvoke $r2.has($r14)
+     label062: if $z0 == 0 goto label066
+     label063: $i0 = virtualinvoke $r2.getInt($r14)
+     label066: $i0 = 0
+     label064: $r12 = interfaceinvoke $r13.getValue()
+     label065: $r17 = (X.06u) $r12
+     $r18 = $r17.A00
+     goto label067
+     label067: $r14 = virtualinvoke $r18.toString()
+     goto label064
+     $i1 = staticinvoke java.lang.Integer.parseInt($r14)
+     label068: if $i0 == $i1 goto label002
+     $i0 = $i0 & $i1
+     goto label002
+     label070: if $z0 == 0 goto label077
+     label071: $r14 = virtualinvoke $r2.getString($r14)
+     label077: $r15 = \\
+     label072: $r15 = $r14
+     label073: $r12 = interfaceinvoke $r13.getValue()
+     label074: $r17 = (X.06u) $r12
+     $r18 = $r17.A00
+     label075: $r19 = virtualinvoke $r18.matcher($r15)
+     $z0 = virtualinvoke $r19.matches()
+     label076: $z1 = $r17.A01
+     $z0 = $z0 ^ $z1
+     goto label105
+     label105: if $z0 != 0 goto label002
+     goto label073
+     label079: $z0 = virtualinvoke $r2.has(\clip_data\)
+     label103: $r23 = r0.A02
+     label080: if $z0 == 0 goto label113
+     label081: $r16 = virtualinvoke $r2.getJSONArray(\clip_data\)
+     label082: if $r16 == null goto label113
+     $i0 = 0
+     label083: $i1 = virtualinvoke $r16.length()
+     label084: if $i0 >= $i1 goto label113
+     label085: $r2 = virtualinvoke $r16.getJSONObject($i0)
+     label086: $r9 = $r22.A00
+     label087: $r10 = interfaceinvoke $r9.entrySet()
+     $r11 = interfaceinvoke $r10.iterator()
+     label088: $z0 = interfaceinvoke $r11.hasNext()
+     label089: if $z0 == 0 goto label103
+     label090: $r12 = interfaceinvoke $r11.next()
+     label091: $r13 = (java.util.Map$Entry) $r12
+     label092: $r12 = interfaceinvoke $r13.getKey()
+     label093: $r14 = (java.lang.String) $r12
+     label094: $r12 = interfaceinvoke $r13.getValue()
+     label095: $r17 = (X.06u) $r12
+     label096: $z0 = virtualinvoke $r2.has($r14)
+     label097: if $z0 == 0 goto label102
+     label098: $r14 = virtualinvoke $r2.getString($r14)
+     label102: $i0 = $i0 + 1
+     label099: $r18 = $r17.A00
+     label100: $r19 = virtualinvoke $r18.matcher($r14)
+     $z0 = virtualinvoke $r19.matches()
+     label101: $z1 = $r17.A01
+     $z0 = $z0 ^ $z1
+     goto label083
+     $i0 = lengthof $r23
+     $i1 = 0
+     label104: $r24 = $r23$i1
+     $z0 = virtualinvoke $r24.A01($r1)
+     $i1 = $i1 + 1
+     goto label104
+     goto label102

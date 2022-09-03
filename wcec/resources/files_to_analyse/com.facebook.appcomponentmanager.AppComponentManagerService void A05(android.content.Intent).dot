@@ -1,0 +1,10 @@
+     entermonitor class \LX/02z\
+     goto label20
+     label20: exitmonitor class \LX/02z\
+     exitmonitor class \LX/02z\
+     label10: if $z0 == 0 goto label15
+     label12: if $z0 == 0 goto label15
+     label14: if $z0 == 0 goto label15
+     entermonitor class \LX/02z\
+     label18: exitmonitor class \LX/02z\
+     exitmonitor class \LX/02z\

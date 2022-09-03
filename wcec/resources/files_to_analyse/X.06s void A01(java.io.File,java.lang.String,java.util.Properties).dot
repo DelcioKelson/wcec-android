@@ -1,0 +1,21 @@
+     $z1 = 0
+     $z1 = 1
+     label02: if $z1 == 0 goto label64
+     label11: if $z0 == 0 goto label33
+     $l1 = $l1 + $l2
+     $l1 = $l1 + $l2
+     $l1 = $l1 + 25L
+     label21: goto label26
+     label25: goto label10
+     label29: goto label70
+     $l2 = $l2 + $l1
+     label39: goto label34
+     label41: $l2 = $l2 + $l1
+     label45: goto label40
+     label47: goto label70
+     label57: goto label71
+     goto label71
+     goto label32
+     goto label60
+     goto label63
+     goto label75

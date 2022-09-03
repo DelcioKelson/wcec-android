@@ -1,0 +1,8 @@
+     r0.A00 = $i0
+     $r5 = staticinvoke java.util.Collections.unmodifiableList($r4)
+     r0.A04 = $r5
+     r0.A01 = $r1
+     r0.A03 = $r2
+     r0.A02 = $r3
+     $z0 = interfaceinvoke $r4.isEmpty()
+     label1: $r6 = new java.lang.IllegalArgumentException

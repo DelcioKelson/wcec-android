@@ -1,0 +1,3 @@
+     X.073.A01 = $r0
+     $r1 = new java.io.PrintWriter
+     X.073.A00 = $r1

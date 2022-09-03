@@ -1,0 +1,9 @@
+     r0.mOomReservation = null
+     $r3 = new java.lang.Object
+     r0.A00 = $r3
+     $r4 = new java.util.ArrayList
+     $r2 = staticinvoke java.util.Collections.unmodifiableList($r4)
+     r0.A02 = $r2
+     r0.A01 = $r1
+     $r5 = newarray (byte)4096
+     r0.mOomReservation = $r5

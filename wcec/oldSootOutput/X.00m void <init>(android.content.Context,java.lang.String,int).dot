@@ -1,0 +1,7 @@
+     r0.A05 = $r1
+     r0.A06 = $r2
+     $r3 = X.06W.A00
+     r0.A02 = $r3
+     r0.A04 = $i0
+     $i0 = staticinvoke android.os.Process.myUid()
+     r0.A03 = $i0

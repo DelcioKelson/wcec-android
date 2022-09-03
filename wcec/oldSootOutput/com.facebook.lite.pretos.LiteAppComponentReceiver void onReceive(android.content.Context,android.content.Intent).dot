@@ -1,0 +1,20 @@
+     virtualinvoke $r2.getAction()
+     $r3 = virtualinvoke $r2.getAction()
+     $r4 = \android.intent.action.MY_PACKAGE_REPLACED\
+     $z0 = virtualinvoke $r4.equals($r3)
+     $r5 = virtualinvoke $r1.getApplicationInfo()
+     $r3 = $r5.dataDir
+     $r6 = new java.io.File
+     $r7 = new java.io.File
+     virtualinvoke $r7.mkdirs()
+     $r6 = new java.io.File
+     $r8 = virtualinvoke $r6.list()
+     $i0 = lengthof $r8
+     label1: $r9 = X.05p.A02
+     label2: $r2 = new android.content.Intent
+     $r10 = $r9.A00
+     $r3 = $r9.A01
+     $r11 = virtualinvoke $r10.getSharedPreferences($r3 0)
+     $l1 = interfaceinvoke $r11.getLong(\current_user_id\ 0L)
+     $b2 = $l1 cmp 0L
+     staticinvoke X.01m.A00($r1 $r2 class \Lcom/facebook/appcomponentmanager/AppComponentManagerService\ 137875812)

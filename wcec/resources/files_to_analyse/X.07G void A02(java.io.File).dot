@@ -1,0 +1,4 @@
+     $i0 = 0
+     $i0 = $i0 + 1
+     goto label01
+     goto label08

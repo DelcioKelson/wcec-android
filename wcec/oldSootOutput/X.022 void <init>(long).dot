@@ -1,0 +1,9 @@
+     $r1 = newarray (javax.net.ssl.X509TrustManager)1
+     r0.A00 = $r1
+     $i1 = android.os.Build$VERSION.SDK_INT
+     $r3 = new X.026
+     label2: $r4 = new X.045
+     $r2 = $r3
+     label1: $r10 = $r2
+     $r2 = $r4
+     goto label1

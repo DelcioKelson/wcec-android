@@ -1,0 +1,2 @@
+     label1: if $i1 != -2 goto label2
+     goto label3

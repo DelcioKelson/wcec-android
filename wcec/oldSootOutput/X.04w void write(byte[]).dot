@@ -1,0 +1,11 @@
+     $l1 = staticinvoke android.os.SystemClock.elapsedRealtime()
+     label1: $r2 = r0.A02
+     virtualinvoke $r2.write($r1)
+     label2: $r3 = r0.A01
+     $l2 = staticinvoke android.os.SystemClock.elapsedRealtime()
+     $i0 = lengthof $r1
+     interfaceinvoke $r3.ALo($l1 $l2 $i0)
+     $r3 = r0.A01
+     $l2 = staticinvoke android.os.SystemClock.elapsedRealtime()
+     $i0 = lengthof $r1
+     interfaceinvoke $r3.ALo($l1 $l2 $i0)

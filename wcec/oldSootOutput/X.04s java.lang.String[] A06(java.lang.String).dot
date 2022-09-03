@@ -1,0 +1,6 @@
+     $r4 = virtualinvoke r0.A04($r1)
+     label1: $r2 = new X.02q
+     label2: $r5 = staticinvoke X.04s.A01($r2 $r1)
+     label3: virtualinvoke $r2.close()
+     label5: virtualinvoke $r2.close()
+     goto label6

@@ -1,0 +1,7 @@
+     $i0 = staticinvoke com.facebook.common.stringformat.StringFormatUtil.doFormatArray(null $r1 $r2)
+     $r3 = new java.util.Formatter
+     label1: if $i0 != -2 goto label2
+     virtualinvoke $r3.format(null $r1 $r2)
+     virtualinvoke $r0.append($r1)
+     label2: virtualinvoke $r0.ensureCapacity($i0)
+     staticinvoke com.facebook.common.stringformat.StringFormatUtil.doFormatArray($r0 $r1 $r2)

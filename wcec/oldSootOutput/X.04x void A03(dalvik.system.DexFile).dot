@@ -1,0 +1,16 @@
+     $r3 = r0.A04
+     $i0 = lengthof $r3
+     $i1 = $i0 + 1
+     $r2 = new java.util.ArrayList
+     $i1 = 0
+     label1: if $i1 >= $i0 goto label2
+     $r4 = $r3$i1
+     label2: virtualinvoke $r2.add($r1)
+     virtualinvoke $r2.add($r4)
+     $i1 = $i1 + 1
+     goto label1
+     $i0 = virtualinvoke $r2.size()
+     $r3 = newarray (dalvik.system.DexFile)$i0
+     $r5 = virtualinvoke $r2.toArray($r3)
+     $r3 = (dalvik.system.DexFile) $r5
+     r0.A04 = $r3

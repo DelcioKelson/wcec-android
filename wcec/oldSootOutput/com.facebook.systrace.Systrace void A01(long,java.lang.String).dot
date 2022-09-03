@@ -1,0 +1,4 @@
+     $i1 = android.os.Build$VERSION.SDK_INT
+     staticinvoke X.01v.A00()
+     label1: $z0 = staticinvoke com.facebook.systrace.Systrace.A0G($l0)
+     staticinvoke com.facebook.systrace.TraceDirect.beginSection($r0)

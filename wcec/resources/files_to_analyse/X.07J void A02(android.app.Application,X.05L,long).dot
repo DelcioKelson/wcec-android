@@ -1,0 +1,4 @@
+     label07: goto label09
+     label13: $i1 = 0
+     label15: $i1 = $i1 + 1
+     label30: goto label49

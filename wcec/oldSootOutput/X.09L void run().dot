@@ -1,0 +1,6 @@
+     label1: $r2 = r0.A00
+     $i0 = $r2.A00
+     staticinvoke android.os.Process.setThreadPriority($i0)
+     label2: $r3 = r0.A01
+     interfaceinvoke $r3.run()
+     goto label2

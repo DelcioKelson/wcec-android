@@ -1,0 +1,74 @@
+     entermonitor r0
+     label01: $r3 = X.06W.A0d
+     r0.A02 = 1
+     label02: $r4 = X.06W.A0C
+     $i0 = r0.A03
+     label04: $r4 = X.06W.A0Y
+     $i0 = $i0 + 1
+     label03: r0.A03 = $i0
+     goto label05
+     label05: if $r1 == $r3 goto label22
+     $i0 = r0.A03
+     $i0 = $i0 - 1
+     goto label03
+     $r4 = X.06W.A0e
+     label22: $z0 = 0
+     label06: $r5 = r0.A01
+     $r6 = virtualinvoke $r5.get()
+     label10: $r5 = new java.lang.ref.WeakReference
+     $r7 = r0.A07
+     $r8 = virtualinvoke $r7.get($r6)
+     $r9 = (X.01G) $r8
+     $r3 = $r9.A00
+     $z0 = 0
+     $z0 = 1
+     label07: $i0 = virtualinvoke $r1.compareTo($r3)
+     $z1 = 0
+     $z1 = 1
+     label08: if $z0 == 0 goto label09
+     label09: if $z1 != 0 goto label10
+     label13: $r7 = r0.A07
+     goto label11
+     goto label13
+     goto label12
+     label12: r0.A01 = $r5
+     $r5 = new java.lang.ref.WeakReference
+     $r6 = virtualinvoke $r7.get($r2)
+     $r9 = (X.01G) $r6
+     $r10 = r0.A06
+     label14: $r10 = r0.A06
+     $r3 = $r9.A00
+     $i0 = virtualinvoke $r3.intValue()
+     $r6 = interfaceinvoke $r10.get($i0)
+     $r11 = (java.util.WeakHashMap) $r6
+     virtualinvoke $r11.remove($r2)
+     $i0 = virtualinvoke $r1.intValue()
+     $r6 = interfaceinvoke $r10.get($i0)
+     $r11 = (java.util.WeakHashMap) $r6
+     $r6 = r0.A04
+     virtualinvoke $r11.put($r2 $r6)
+     $r3 = X.06W.A0U
+     label15: if $r9 != null goto label18
+     goto label17
+     label16: $r9 = new X.01G
+     label17: $r9.A03 = 0
+     label18: $r9.A00 = $r1
+     goto label19
+     label19: virtualinvoke $r7.put($r2 $r9)
+     $r9.A04 = 0
+     goto label25
+     label25: exitmonitor r0
+     label23: $r5 = r0.A01
+     $r6 = virtualinvoke $r5.get()
+     label24: $r10 = r0.A06
+     r0.A01 = null
+     $z0 = 1
+     $r1 = X.06W.A01
+     $r6 = interfaceinvoke $r10.get(1)
+     $r7 = (java.util.WeakHashMap) $r6
+     virtualinvoke $r7.remove($r2)
+     $r7 = r0.A07
+     virtualinvoke $r7.remove($r2)
+     $r5 = new java.lang.ref.WeakReference
+     r0.A01 = $r5
+     exitmonitor r0

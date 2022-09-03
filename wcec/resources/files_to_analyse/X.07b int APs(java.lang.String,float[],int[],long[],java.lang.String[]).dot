@@ -1,0 +1,47 @@
+     label31: $i2 = 0
+     label30: $i3 = 0
+     $i5 = 0
+     $i6 = 0
+     $i7 = 0
+     label04: if $i6 >= $i1 goto label28
+     label23: $i5 = $i5 + 1
+     label06: $i9 = -1
+     $i9 = $i5
+     label07: if $i9 >= $i0 goto label11
+     label11: $i12 = $i9 + 1
+     $i9 = $i9 + 1
+     goto label07
+     $i9 = $i5
+     label10: $i12 = $i5
+     $i9 = $i9 + 1
+     goto label09
+     goto label12
+     label12: if $i12 >= $i0 goto label13
+     label13: if $i9 >= 0 goto label14
+     $i12 = $i12 + 1
+     goto label12
+     $i9 = $i12
+     label14: if $i12 >= $i0 goto label16
+     $i12 = $i12 + 1
+     label15: if $i12 >= $i0 goto label16
+     $i12 = $i12 + 1
+     goto label15
+     label29: $i6 = $i6 + 1
+     $z0 = 1
+     label22: $z0 = 0
+     label26: if $z0 == 0 goto label27
+     $i8 = $i5
+     label20: if $i8 >= 384 goto label24
+     label24: $i8 = 384
+     $i8 = $i8 + 1
+     label25: $i8 = $i8 - $i5
+     goto label20
+     goto label18
+     $b10 = 0
+     goto label17
+     goto label05
+     label27: $i7 = $i7 + 1
+     $i5 = $i12
+     goto label04
+     goto label03
+     goto label02

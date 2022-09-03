@@ -1,0 +1,64 @@
+     $i4 = $i1
+     $i2 = lengthof $r0
+     label01: $b5 = $r0$i4
+     $i4 = $i4 + 1
+     $c0 = (char) $b5
+     label03: if $b5 != 45 goto label15
+     $i1 = 0
+     label02: $r1 = X.06M.A00
+     $i6 = lengthof $r1
+     $c7 = $r1$i1
+     $i6 = (int) $c7
+     $i13 = (int) $c0
+     $i1 = $i1 + 1
+     goto label02
+     $b5 = $r0$i4
+     label15: if $b5 != 43 goto label16
+     $i4 = $i4 + 1
+     $z0 = 1
+     label04: if $i4 >= $i2 goto label20
+     $l8 = (long) 10
+     $l3 = 9223372036854775807L % $l8
+     $i1 = (int) $l3
+     $l3 = 9223372036854775807L / $l8
+     $l9 = 0L
+     $b10 = 0
+     label05: if $i4 > $i2 goto label17
+     $c0 = (char) $b5
+     label17: if $b10 >= 0 goto label18
+     $i6 = (int) $c0
+     $i6 = (int) $c0
+     $i6 = $b5 + -48
+     label12: $i6 = (int) $c0
+     label06: $b5 = (byte) $i6
+     $i6 = (int) $b5
+     $b10 = $l9 cmp $l3
+     label07: $b10 = -1
+     $i6 = (int) $b10
+     $b10 = $l9 cmp $l3
+     $i6 = (int) $b5
+     label11: $l9 = $l9 * $l8
+     label08: if $i4 >= $i2 goto label10
+     $b5 = $r0$i4
+     label10: $b5 = 0
+     label09: $i4 = $i4 + 1
+     goto label05
+     goto label09
+     $l11 = (long) $b5
+     $l9 = $l9 + $l11
+     $b10 = 1
+     goto label08
+     $i6 = (int) $c0
+     label14: $i6 = (int) $c0
+     $b12 = 87
+     label13: $i6 = $b5 - $b12
+     goto label06
+     $i6 = (int) $c0
+     $b12 = 55
+     goto label13
+     $b5 = $r0$i4
+     label16: $z0 = 0
+     $i4 = $i4 + 1
+     goto label04
+     label18: if $z0 == 0 goto label19
+     $l8 = neg $l9

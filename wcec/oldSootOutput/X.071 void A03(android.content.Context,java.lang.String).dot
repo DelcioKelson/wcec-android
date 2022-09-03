@@ -1,0 +1,106 @@
+     $r7 = virtualinvoke $r0.getPackageManager()
+     $r8 = staticinvoke java.lang.Integer.valueOf(3)
+     virtualinvoke $r0.getPackageName()
+     $l0 = staticinvoke java.lang.System.currentTimeMillis()
+     $r9 = newarray (java.lang.Integer)4
+     $r10 = staticinvoke java.lang.Integer.valueOf(1)
+     $r90 = $r10
+     $r10 = staticinvoke java.lang.Integer.valueOf(2)
+     $r91 = $r10
+     $r10 = staticinvoke java.lang.Integer.valueOf(8)
+     $r92 = $r10
+     $r10 = staticinvoke java.lang.Integer.valueOf(4)
+     $r93 = $r10
+     $i1 = staticinvoke X.071.A00($r0 $r7 $r9 4)
+     $l2 = staticinvoke java.lang.System.currentTimeMillis()
+     $l0 = $l2 - $l0
+     $r11 = virtualinvoke $r0.getApplicationInfo()
+     label35: $r32 = newarray (java.lang.Object)3
+     $r12 = $r11.dataDir
+     $r13 = new java.io.File
+     $r14 = new java.io.File
+     virtualinvoke $r14.mkdirs()
+     $r13 = new java.io.File
+     $r15 = virtualinvoke $r13.listFiles()
+     $i3 = lengthof $r15
+     label02: $i3 = staticinvoke X.06k.A00()
+     $i4 = 0
+     label01: if $i4 >= $i3 goto label02
+     $r14 = $r15$i4
+     virtualinvoke $r14.delete()
+     $i4 = $i4 + 1
+     goto label01
+     $r11 = virtualinvoke $r0.getApplicationInfo()
+     $r12 = $r11.dataDir
+     $r13 = new java.io.File
+     $r14 = new java.io.File
+     virtualinvoke $r14.mkdirs()
+     $r13 = new java.io.File
+     $i4 = staticinvoke X.06k.A00()
+     $r12 = staticinvoke java.lang.Integer.toString($i4)
+     $r14 = new java.io.File
+     $r13 = virtualinvoke $r14.getParentFile()
+     virtualinvoke $r13.mkdirs()
+     $r16 = new java.io.FileOutputStream
+     virtualinvoke $r16.close()
+     label04: if $i3 != 1 goto label09
+     $r7 = virtualinvoke $r0.getPackageManager()
+     label09: $r19 = new com.facebook.appcomponentmanager.AppComponentManagerProfiledRun
+     label05: $r12 = virtualinvoke $r0.getPackageName()
+     $r17 = virtualinvoke $r7.getPackageInfo($r12 0)
+     label06: $l2 = $r17.lastUpdateTime
+     goto label08
+     label08: virtualinvoke $r14.setLastModified($l2)
+     label07: $r18 = new java.lang.IllegalStateException
+     $r1 = virtualinvoke $r0.getPackageName()
+     $i1 = virtualinvoke $r1.hashCode()
+     label11: $r12 = \com.facebook.wakizashi\
+     $r12 = \com.facebook.katana\
+     label33: virtualinvoke $r0.getPackageName()
+     label10: $z0 = virtualinvoke $r1.equals($r12)
+     $r11 = virtualinvoke $r0.getApplicationInfo()
+     $r1 = $r11.dataDir
+     $r13 = new java.io.File
+     $r14 = new java.io.File
+     virtualinvoke $r14.mkdirs()
+     $r13 = new java.io.File
+     $r20 = new java.util.ArrayList
+     $z0 = virtualinvoke $r13.exists()
+     goto label12
+     label27: virtualinvoke $r20.add($r19)
+     label12: $r21 = new java.io.FileInputStream
+     goto label10
+     label14: $r22 = new java.io.ObjectInputStream
+     label16: $r23 = virtualinvoke $r22.readObject()
+     $r24 = (java.util.ArrayList) $r23
+     label17: virtualinvoke $r22.close()
+     label18: goto label24
+     label24: virtualinvoke $r20.addAll($r24)
+     label20: virtualinvoke $r22.close()
+     label22: $r24 = new java.util.ArrayList
+     label25: goto label27
+     staticinvoke X.07S.A09(\AppComponentManager\ \Error reading entries from existing analytics file.\ $r26)
+     $z0 = virtualinvoke $r20.isEmpty()
+     $r16 = new java.io.FileOutputStream
+     label29: $r27 = new java.io.ObjectOutputStream
+     virtualinvoke $r27.writeObject($r20)
+     virtualinvoke $r27.close()
+     label31: goto label33
+     staticinvoke X.07S.A09(\AppComponentManager\ \Error writing entries to logfile.\ $r28)
+     $r30 = new java.lang.StringBuilder
+     virtualinvoke $r30.append($r14)
+     $r1 = virtualinvoke $r30.toString()
+     $r31 = new java.lang.RuntimeException
+     $r320 = $r8
+     $r1 = virtualinvoke $r0.getPackageName()
+     $r321 = $r1
+     $l0 = $l0 / 1000L
+     $r33 = staticinvoke java.lang.Long.valueOf($l0)
+     $r322 = $r33
+     $r1 = staticinvoke java.lang.String.format(\Failed to set enable stage %d for pkg%s can\'t resume. Duration%s\ $r32)
+     $r31 = new java.lang.RuntimeException
+     goto label07
+     goto label22
+     goto label22
+     goto label21
+     goto label22

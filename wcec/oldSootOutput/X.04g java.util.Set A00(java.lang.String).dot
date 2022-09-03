@@ -1,0 +1,15 @@
+     $r2 = new java.util.HashSet
+     $r1 = staticinvoke X.05U.A00()
+     $r3 = virtualinvoke $r1.split(\:\)
+     $i0 = lengthof $r3
+     $i1 = 0
+     label1: if $i1 >= $i0 goto label3
+     $r1 = $r3$i1
+     $r4 = new java.lang.StringBuilder
+     virtualinvoke $r4.append($r0)
+     virtualinvoke $r4.append(\.apk!/\)
+     $r5 = virtualinvoke $r4.toString()
+     $z0 = virtualinvoke $r1.contains($r5)
+     virtualinvoke $r2.add($r1)
+     label2: $i1 = $i1 + 1
+     goto label1

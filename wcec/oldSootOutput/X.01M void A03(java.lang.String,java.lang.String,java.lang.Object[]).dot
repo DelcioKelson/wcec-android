@@ -1,0 +1,2 @@
+     $r1 = staticinvoke X.01o.A00($r1 $r2)
+     staticinvoke android.util.Log.w($r0 $r1)

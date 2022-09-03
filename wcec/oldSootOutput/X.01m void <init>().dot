@@ -1,0 +1,6 @@
+     r0.A02 = 0
+     $i0 = android.os.Build$VERSION.SDK_INT
+     $r1 = null
+     label2: $r1 = new java.util.ArrayList
+     label1: r0.A04 = $r1
+     goto label1

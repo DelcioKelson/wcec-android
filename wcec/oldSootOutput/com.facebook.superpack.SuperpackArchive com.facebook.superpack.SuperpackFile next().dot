@@ -1,0 +1,13 @@
+     entermonitor r0
+     label1: $l0 = r0.mPtr
+     $b1 = $l0 cmp 0L
+     $l0 = staticinvoke com.facebook.superpack.SuperpackArchive.nextNative($l0)
+     label4: $r5 = new java.lang.IllegalStateException
+     $b1 = $l0 cmp 0L
+     $i2 = r0.mDecompressedFiles
+     label3: $r4 = new java.util.NoSuchElementException
+     $i2 = $i2 + 1
+     r0.mDecompressedFiles = $i2
+     $r3 = new com.facebook.superpack.SuperpackFile
+     label2: exitmonitor r0
+     exitmonitor r0

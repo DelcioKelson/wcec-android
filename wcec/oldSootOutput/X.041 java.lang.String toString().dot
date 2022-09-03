@@ -1,0 +1,21 @@
+     $r1 = new java.lang.StringBuilder
+     $z0 = r0.A04
+     $r2 = \was not set\
+     label3: $z0 = r0.A03
+     label1: virtualinvoke $r1.append($r2)
+     label2: virtualinvoke $r1.append(\\)
+     $r2 = virtualinvoke $r1.toString()
+     virtualinvoke $r1.append(\was not valid with error code \)
+     label4: virtualinvoke $r1.append(\rel time \)
+     $l0 = r0.A01
+     virtualinvoke $r1.append($l0)
+     goto label2
+     $l0 = r0.A02
+     virtualinvoke $r1.append($l0)
+     $r2 = \ ms\
+     virtualinvoke $r1.append(\ ms\)
+     virtualinvoke $r1.append(\ and \)
+     virtualinvoke $r1.append(\abs time \)
+     $l0 = r0.A00
+     virtualinvoke $r1.append($l0)
+     goto label1

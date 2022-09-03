@@ -1,0 +1,16 @@
+     $r1 = new java.util.HashMap
+     label02: $r3 = X.06q.A01
+     label03: $r4 = interfaceinvoke $r3.iterator()
+     label04: $z0 = interfaceinvoke $r4.hasNext()
+     label05: if $z0 == 0 goto label12
+     label06: $r5 = interfaceinvoke $r4.next()
+     label12: $z0 = virtualinvoke $r1.isEmpty()
+     label07: $r6 = (java.lang.String) $r5
+     label08: $z0 = virtualinvoke $r0.has($r6)
+     label09: if $z0 == 0 goto label04
+     label10: $r5 = virtualinvoke $r0.get($r6)
+     $r7 = staticinvoke X.06u.A00($r5)
+     virtualinvoke $r1.put($r6 $r7)
+     label11: goto label04
+     label13: if $z0 != 0 goto label18
+     $r8 = new X.06q

@@ -1,0 +1,11 @@
+     $r2 = r0.A00
+     $r3 = interfaceinvoke $r2.A4i()
+     label1: $r1 = r0.A04
+     entermonitor $r1
+     label2: $i0 = virtualinvoke $r1.size()
+     $r4 = virtualinvoke $r1.remove(0)
+     label5: $r3 = null
+     $r3 = (X.03u) $r4
+     label3: exitmonitor $r1
+     goto label3
+     exitmonitor $r1

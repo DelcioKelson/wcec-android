@@ -1,0 +1,29 @@
+     staticinvoke X.06o.A01(\ReportSender\)
+     label01: $r3 = r0.A00
+     $r1 = $r3.A0I
+     $r4 = $r3.A03
+     label02: if $r4 != null goto label06
+     label03: $r11 = new X.00y
+     label06: $r5 = interfaceinvoke $r4.get()
+     label04: $r4 = $r11
+     $r3.A03 = $r11
+     $r6 = (X.013) $r5
+     $r4 = virtualinvoke $r3.A01()
+     $r7 = $r3.A02
+     label07: if $r7 != null goto label11
+     label08: $r12 = new X.04W
+     label11: $r5 = interfaceinvoke $r7.get()
+     label09: $r7 = $r12
+     $r3.A02 = $r12
+     $r8 = (X.06v) $r5
+     $r7 = $r3.A08
+     label12: if $r7 != null goto label16
+     label13: $r13 = new X.014
+     label16: $r5 = interfaceinvoke $r7.get()
+     label14: $r7 = $r13
+     $r3.A08 = $r13
+     $r9 = (java.util.concurrent.Executor) $r5
+     $r14 = new X.015
+     $r15 = new X.06w
+     label19: staticinvoke X.06o.A00()
+     staticinvoke X.06o.A00()

@@ -1,0 +1,3 @@
+     $r2 = r0.A02
+     $r4 = $r1.A00
+     $r3 = interfaceinvoke $r2.AGF($r4)

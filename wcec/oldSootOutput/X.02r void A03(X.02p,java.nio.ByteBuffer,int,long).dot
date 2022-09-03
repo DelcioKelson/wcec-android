@@ -1,0 +1,10 @@
+     virtualinvoke $r1.position(0)
+     virtualinvoke $r1.limit($i0)
+     label1: $i0 = virtualinvoke $r1.remaining()
+     $i0 = interfaceinvoke $r0.APh($r1 $l1)
+     label2: $i0 = virtualinvoke $r1.remaining()
+     $l2 = (long) $i0
+     $l1 = $l1 + $l2
+     goto label1
+     virtualinvoke $r1.position(0)
+     label3: $r2 = new X.09E

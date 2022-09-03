@@ -1,0 +1,11 @@
+     $r2 = r0.A04
+     entermonitor $r2
+     label1: $r3 = r0.A07
+     $r4 = interfaceinvoke $r3.iterator()
+     label2: $z0 = interfaceinvoke $r4.hasNext()
+     $r5 = interfaceinvoke $r4.next()
+     label4: exitmonitor $r2
+     $r6 = (X.09j) $r5
+     $z0 = virtualinvoke $r1.isInstance($r6)
+     exitmonitor $r2
+     exitmonitor $r2

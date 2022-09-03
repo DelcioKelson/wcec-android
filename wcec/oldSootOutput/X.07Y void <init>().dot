@@ -1,0 +1,23 @@
+     $r1 = new java.util.ArrayList
+     r0.A02 = $r1
+     $r2 = new java.util.HashSet
+     r0.A04 = $r2
+     $r3 = new java.util.HashMap
+     r0.A03 = $r3
+     $r4 = new X.05z
+     r0.A01 = $r4
+     $r5 = new android.text.format.Time
+     r0.A00 = $r5
+     $r6 = new java.util.concurrent.atomic.AtomicReference
+     r0.A06 = $r6
+     $r6 = new java.util.concurrent.atomic.AtomicReference
+     r0.A05 = $r6
+     $r7 = X.05A.A00
+     staticinvoke X.07S.A06(\ErrorReporter\ \ErrorReportingDiagnosticData.setInstance already set.\)
+     label1: $r8 = new X.07d
+     X.05A.A00 = $r8
+     $r9 = new X.07f
+     entermonitor class \LX/02z\
+     label2: X.02z.A00 = $r9
+     label3: exitmonitor class \LX/02z\
+     exitmonitor class \LX/02z\

@@ -1,0 +1,2 @@
+     $r2 = r0.A00
+     interfaceinvoke $r2.A56($r1)

@@ -1,0 +1,9 @@
+     $r3 = r0.A01
+     $r1 = interfaceinvoke $r3.get($r1)
+     $r4 = (java.lang.Number) $r1
+     $l0 = virtualinvoke $r4.longValue()
+     $r1 = interfaceinvoke $r3.get($r2)
+     $r4 = (java.lang.Number) $r1
+     $l1 = virtualinvoke $r4.longValue()
+     $l0 = $l0 - $l1
+     $i2 = (int) $l0

@@ -1,0 +1,23 @@
+     $f0 = (float) $l0
+     $b1 = $f0 cmpg 1024.0F
+     $i2 = (int) $b1
+     $r3 = new java.lang.StringBuilder
+     label1: $b1 = $f0 cmpg 1048576.0F
+     virtualinvoke $r3.append($l0)
+     virtualinvoke $r3.append(\B\)
+     $r1 = virtualinvoke $r3.toString()
+     $i2 = (int) $b1
+     $f0 = $f0 / 1024.0F
+     label3: $b1 = $f0 cmpg 1.07374182E9F
+     $r2 = staticinvoke java.lang.Float.valueOf($f0)
+     $r1 = \%.2fKB\
+     label2: $r1 = staticinvoke com.facebook.common.stringformat.StringFormatUtil.formatStrLocaleSafe($r1 $r2)
+     $i2 = (int) $b1
+     $f0 = $f0 / 1048576.0F
+     label4: $f0 = $f0 / 1.07374182E9F
+     $r2 = staticinvoke java.lang.Float.valueOf($f0)
+     $r1 = \%.2fMB\
+     goto label2
+     $r2 = staticinvoke java.lang.Float.valueOf($f0)
+     $r1 = \%.2fGB\
+     goto label2

@@ -1,0 +1,7 @@
+     $r00 = \scheme\
+     $r01 = \authority\
+     $r02 = \path\
+     $r03 = \query\
+     $r1 = staticinvoke java.util.Arrays.asList($r0)
+     $r1 = staticinvoke java.util.Collections.unmodifiableList($r1)
+     X.06q.A01 = $r1

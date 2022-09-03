@@ -1,0 +1,6 @@
+     $r3 = r0.A06
+     $r4 = new X.08i
+     $r2 = virtualinvoke $r3.listFiles($r4)
+     $r2 = newarray (java.io.File)0
+     label1: $r5 = new X.08z
+     staticinvoke java.util.Arrays.sort($r2 $r5)

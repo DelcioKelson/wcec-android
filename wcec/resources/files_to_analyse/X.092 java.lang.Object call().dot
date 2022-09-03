@@ -1,0 +1,10 @@
+     label09: if $z0 != 0 goto label18
+     label18: if $i0 != 1 goto label29
+     label13: if $i1 == $i0 goto label25
+     label15: goto label25
+     label22: $l2 = $l2 / 1000L
+     label24: $l3 = $l3 / 1000L
+     label26: goto label29
+     goto label16
+     goto label27
+     goto label32

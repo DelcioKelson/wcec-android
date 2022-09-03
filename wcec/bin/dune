@@ -1,7 +1,7 @@
 (executable
  (public_name wcec)
  (name main)
- (libraries bounds load_model load_cg str)
+ (libraries bounds load_model load_cg solve str)
  )
 (env
   (dev

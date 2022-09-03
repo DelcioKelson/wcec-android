@@ -1,0 +1,8 @@
+     $z0 = r0.A00
+     $r4 = X.05f.A00
+     label1: virtualinvoke r0.A0D($r2 $r3)
+     $r6 = new X.03I
+     interfaceinvoke $r4.execute($r6)
+     $r5 = interfaceinvoke $r3.A8v()
+     virtualinvoke r0.A09($r1 $r2 $r3 $r5 0)
+     virtualinvoke r0.A0C($r2 $r3)

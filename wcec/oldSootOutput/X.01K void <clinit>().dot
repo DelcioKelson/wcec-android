@@ -1,0 +1,2 @@
+     $l0 = virtualinvoke $r0.toMillis(2L)
+     X.01K.A08 = $l0

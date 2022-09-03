@@ -1,0 +1,10 @@
+     $r2 = X.07C.A01
+     $r1 = X.07C.A00
+     label6: $r2 = X.07C.A01
+     entermonitor $r1
+     label1: $r2 = X.07C.A01
+     $r2 = virtualinvoke $r0.getSharedPreferences(\primary_dex_features\ 0)
+     label2: exitmonitor $r1
+     X.07C.A01 = $r2
+     label3: goto label6
+     exitmonitor $r1

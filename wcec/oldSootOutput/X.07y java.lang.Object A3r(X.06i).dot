@@ -1,0 +1,24 @@
+     $r2 = $r1.A0I
+     $r5 = $r1.A01
+     staticinvoke X.02y.A01($r5 \Did you call earlyInit()?\)
+     $r3 = $r1.A00
+     staticinvoke X.02y.A01($r3 \Did you call earlyInit()?\)
+     entermonitor class \LX/03K\
+     label1: $r6 = X.03K.A08
+     $r12 = new X.03K
+     label2: exitmonitor class \LX/03K\
+     $r6 = $r12
+     X.03K.A08 = $r12
+     label3: $r7 = virtualinvoke $r1.A00()
+     $r8 = interfaceinvoke $r7.get()
+     $r9 = (X.03M) $r8
+     $r13 = new X.029
+     $r7 = $r1.A05
+     $r14 = new X.02A
+     label4: $r8 = interfaceinvoke $r7.get()
+     $r7 = $r14
+     $r1.A05 = $r14
+     $r10 = (X.02B) $r8
+     $r15 = new X.02C
+     $r16 = new X.02D
+     exitmonitor class \LX/03K\

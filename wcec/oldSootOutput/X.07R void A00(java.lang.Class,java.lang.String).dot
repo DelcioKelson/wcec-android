@@ -1,0 +1,4 @@
+     $r2 = X.07R.A00
+     $z0 = interfaceinvoke $r2.AEW(6)
+     $r3 = virtualinvoke $r0.getSimpleName()
+     interfaceinvoke $r2.A54($r3 $r1)

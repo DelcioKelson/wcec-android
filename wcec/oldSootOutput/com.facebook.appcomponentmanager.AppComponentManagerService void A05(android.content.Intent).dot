@@ -1,0 +1,86 @@
+     virtualinvoke $r1.getAction()
+     $r2 = virtualinvoke $r1.getAction()
+     $r3 = \com.facebook.appcomponentmanager.ACTION_ENABLE_COMPONENTS\
+     $z0 = virtualinvoke $r3.equals($r2)
+     label01: staticinvoke X.071.A03(r0 \app_update\)
+     label08: $r2 = virtualinvoke $r1.getAction()
+     label02: $r1 = new android.content.Intent
+     $r2 = virtualinvoke r0.getPackageName()
+     virtualinvoke $r1.setPackage($r2)
+     virtualinvoke r0.sendBroadcast($r1)
+     staticinvoke X.07S.A08(\AppComponentManagerService\ \Exception while enabling components. Aborting.\ $r4)
+     entermonitor class \LX/02z\
+     label06: $r5 = X.02z.A00
+     goto label20
+     label20: exitmonitor class \LX/02z\
+     exitmonitor class \LX/02z\
+     $r3 = \com.facebook.appcomponentmanager.ACTION_EFNORCE_MANIFEST_CONSISTENCY\
+     $z0 = virtualinvoke $r3.equals($r2)
+     $r7 = virtualinvoke r0.getPackageManager()
+     $r8 = new X.07E
+     $r9 = virtualinvoke r0.getApplicationInfo()
+     $r2 = $r9.sourceDir
+     $r10 = new java.io.File
+     label09: $r2 = virtualinvoke r0.getPackageName()
+     $r11 = virtualinvoke $r7.getPackageInfo($r2 0)
+     $r12 = virtualinvoke $r8.A04($r10)
+     $i0 = $r11.versionCode
+     $r3 = staticinvoke java.lang.Integer.toString($i0)
+     $r2 = $r12.A01
+     $z0 = virtualinvoke $r3.equals($r2)
+     label10: if $z0 == 0 goto label15
+     label11: $r3 = $r11.versionName
+     label15: $r14 = new java.lang.StringBuilder
+     $r13 = $r12.A02
+     $z0 = virtualinvoke $r3.equals($r13)
+     label12: if $z0 == 0 goto label15
+     label13: $r3 = $r11.packageName
+     $r13 = $r12.A00
+     $z0 = virtualinvoke $r3.equals($r13)
+     label14: if $z0 == 0 goto label15
+     $r3 = $r11.packageName
+     virtualinvoke $r14.append($r3)
+     virtualinvoke $r14.append(\\)
+     virtualinvoke $r14.append(\versionCode=\)
+     virtualinvoke $r14.append($i0)
+     virtualinvoke $r14.append(\\)
+     virtualinvoke $r14.append(\versionName=\)
+     $r3 = $r11.versionName
+     virtualinvoke $r14.append($r3)
+     $r3 = $r12.A00
+     virtualinvoke $r14.append($r3)
+     virtualinvoke $r14.append(\ \)
+     virtualinvoke $r14.append(\versionCode=\)
+     virtualinvoke $r14.append($r2)
+     virtualinvoke $r14.append(\ \)
+     virtualinvoke $r14.append(\versionName=\)
+     $r2 = $r12.A02
+     virtualinvoke $r14.append($r2)
+     virtualinvoke $r14.append(\ \)
+     virtualinvoke $r14.append(\activities=\)
+     $r15 = $r12.A03
+     $i0 = interfaceinvoke $r15.size()
+     virtualinvoke $r14.append($i0)
+     virtualinvoke $r14.append(\ \)
+     virtualinvoke $r14.append(\receivers=\)
+     $r15 = $r12.A05
+     $i0 = interfaceinvoke $r15.size()
+     virtualinvoke $r14.append($i0)
+     virtualinvoke $r14.append(\ \)
+     virtualinvoke $r14.append(\services=\)
+     $r15 = $r12.A06
+     $i0 = interfaceinvoke $r15.size()
+     virtualinvoke $r14.append($i0)
+     virtualinvoke $r14.append(\ \)
+     virtualinvoke $r14.append(\providers=\)
+     $r15 = $r12.A04
+     $i0 = interfaceinvoke $r15.size()
+     virtualinvoke $r14.append($i0)
+     $r2 = virtualinvoke $r14.toString()
+     $r16 = new java.lang.IllegalStateException
+     entermonitor class \LX/02z\
+     label17: $r5 = X.02z.A00
+     label18: exitmonitor class \LX/02z\
+     staticinvoke X.07S.A08(\AppComponentManagerService\ \enforceManifestConsistency failed\ $r4)
+     label21: interfaceinvoke $r5.ACy($r4)
+     exitmonitor class \LX/02z\

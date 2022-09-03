@@ -1,0 +1,15 @@
+     $z0 = 1
+     $i1 = 0
+     $i2 = -1
+     label01: if $i1 >= $i0 goto label06
+     label03: if $i3 <= $i2 goto label05
+     label05: $i1 = $i1 + 1
+     $i2 = $i3
+     goto label05
+     goto label01
+     label08: $l7 = $l7 / 1000L
+     $l7 = $l7 / 1000L
+     label12: $z0 = 0
+     goto label10
+     goto label10
+     goto label08

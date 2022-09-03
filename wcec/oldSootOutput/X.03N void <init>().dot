@@ -1,0 +1,27 @@
+     $r1 = newarray (X.01c)11
+     $r3 = X.01b.A0Z
+     $r10 = $r3
+     $r3 = X.01b.A0G
+     $r11 = $r3
+     $r3 = X.01b.A0H
+     $r12 = $r3
+     $r3 = X.01b.A0C
+     $r13 = $r3
+     $r3 = X.01b.A0B
+     $r14 = $r3
+     $r3 = X.01b.A0D
+     $r15 = $r3
+     $r3 = X.01b.A0A
+     $r16 = $r3
+     $r3 = X.01b.A0E
+     $r17 = $r3
+     $r3 = X.01b.A0L
+     $r18 = $r3
+     $r3 = X.01b.A0F
+     $r19 = $r3
+     $r3 = X.01b.A0M
+     $r110 = $r3
+     $r2 = staticinvoke java.util.Arrays.asList($r1)
+     virtualinvoke r0.addAll($r2)
+     $r4 = X.01b.A0V
+     virtualinvoke r0.addAll($r4)

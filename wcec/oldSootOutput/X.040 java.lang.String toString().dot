@@ -1,0 +1,12 @@
+     $r1 = new java.lang.StringBuilder
+     $z0 = r0.A01
+     $r2 = \Succeeded\
+     label3: $r2 = \Failed\
+     label1: virtualinvoke $r1.append($r2)
+     virtualinvoke $r1.append(\ Err Msg If Present: \)
+     $r2 = r0.A00
+     $r2 = \<none>\
+     label2: virtualinvoke $r1.append($r2)
+     virtualinvoke $r1.append(\\)
+     $r2 = virtualinvoke $r1.toString()
+     goto label1

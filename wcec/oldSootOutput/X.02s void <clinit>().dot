@@ -1,0 +1,22 @@
+     X.02s.A04 = $r1
+     virtualinvoke $r1.add(\msmnile\)
+     interfaceinvoke $r1.add(\trinket\)
+     interfaceinvoke $r1.add(\kona\)
+     interfaceinvoke $r1.add(\atoll\)
+     interfaceinvoke $r1.add(\lito\)
+     interfaceinvoke $r1.add(\bengal\)
+     interfaceinvoke $r1.add(\lahaina\)
+     interfaceinvoke $r1.add(\holi\)
+     interfaceinvoke $r1.add(\taro\)
+     $r1 = new java.util.ArrayList
+     X.02s.A02 = $r1
+     virtualinvoke $r1.add(\tensor\)
+     $r1 = new java.util.ArrayList
+     X.02s.A03 = $r1
+     virtualinvoke $r1.add(\orlando\)
+     $r0 = newarray (java.lang.String)4
+     $r00 = \ro.soc.model\
+     $r01 = \ro.board.platform\
+     $r02 = \ro.mediatek.platform\
+     $r03 = \ro.mediatek.hardware\
+     X.02s.A05 = $r0

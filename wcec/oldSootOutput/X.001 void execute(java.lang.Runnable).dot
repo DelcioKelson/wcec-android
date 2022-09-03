@@ -1,0 +1,2 @@
+     $r2 = X.05g.A0D
+     interfaceinvoke $r2.add($r1)

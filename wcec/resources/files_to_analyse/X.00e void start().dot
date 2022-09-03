@@ -1,0 +1,7 @@
+     entermonitor class \LX/00l\
+     label02: exitmonitor class \LX/00l\
+     goto label14
+     goto label13
+     $l2 = $l2 + 1L
+     goto label17
+     exitmonitor class \LX/00l\

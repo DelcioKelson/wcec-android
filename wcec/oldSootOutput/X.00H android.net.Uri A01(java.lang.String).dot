@@ -1,0 +1,65 @@
+     $r2 = staticinvoke android.net.Uri.parse($r0)
+     $r3 = $r2
+     $r4 = virtualinvoke $r2.getScheme()
+     $z0 = 1
+     label02: $r4 = virtualinvoke $r2.getScheme()
+     label01: if $z0 != 0 goto label07
+     goto label03
+     label07: $z0 = virtualinvoke $r2.isOpaque()
+     label03: $r5 = new java.net.URI
+     $z0 = virtualinvoke $r4.matches(\(a-zA-Za-zA-Z0-9+.-*)?\)
+     goto label01
+     label05: $z0 = virtualinvoke $r5.isOpaque()
+     $r6 = new android.net.Uri$Builder
+     label25: $r6 = new android.net.Uri$Builder
+     $r4 = virtualinvoke $r5.getScheme()
+     $r6 = virtualinvoke $r6.scheme($r4)
+     $r4 = virtualinvoke $r5.getRawSchemeSpecificPart()
+     $r6 = virtualinvoke $r6.encodedOpaquePart($r4)
+     $r4 = virtualinvoke $r5.getRawFragment()
+     $r6 = virtualinvoke $r6.encodedFragment($r4)
+     $r2 = virtualinvoke $r6.build()
+     staticinvoke X.00H.A03($r2 $r0 $r5)
+     $r8 = staticinvoke X.00H.A02($r0 $r7)
+     label08: $r4 = virtualinvoke $r2.getScheme()
+     label13: $r4 = virtualinvoke $r2.getScheme()
+     $r9 = virtualinvoke $r2.getSchemeSpecificPart()
+     $r10 = virtualinvoke $r2.getFragment()
+     label09: $r5 = new java.net.URI
+     label11: staticinvoke X.00H.A03($r2 $r0 $r5)
+     $r8 = staticinvoke X.00H.A02($r0 $r11)
+     $r9 = virtualinvoke $r2.getUserInfo()
+     $r10 = virtualinvoke $r2.getHost()
+     $i0 = virtualinvoke $r2.getPort()
+     $r12 = virtualinvoke $r2.getPath()
+     $r13 = virtualinvoke $r2.getQuery()
+     $r14 = virtualinvoke $r2.getFragment()
+     label14: $r5 = new java.net.URI
+     label16: goto label24
+     label24: $r4 = virtualinvoke $r2.getHost()
+     label18: $r4 = virtualinvoke $r2.toString()
+     label19: $r5 = new java.net.URI
+     $r4 = virtualinvoke $r2.getHost()
+     $r9 = virtualinvoke $r5.getHost()
+     label21: if $r9 != null goto label28
+     label28: $r8 = staticinvoke X.00H.A02($r0 $r15)
+     label22: $z0 = virtualinvoke $r4.contains(\_\)
+     label23: if $z0 == 0 goto label28
+     $r9 = virtualinvoke $r5.getHost()
+     label26: $z1 = 0
+     $z0 = virtualinvoke $r4.contains(\_\)
+     $z1 = 1
+     goto label26
+     label27: staticinvoke X.00H.A04($r3 $r0 $r5 $z1)
+     $r4 = virtualinvoke $r5.getScheme()
+     $r6 = virtualinvoke $r6.scheme($r4)
+     $r4 = virtualinvoke $r5.getRawAuthority()
+     $r6 = virtualinvoke $r6.encodedAuthority($r4)
+     $r4 = virtualinvoke $r5.getRawPath()
+     $r6 = virtualinvoke $r6.encodedPath($r4)
+     $r4 = virtualinvoke $r5.getRawQuery()
+     $r6 = virtualinvoke $r6.encodedQuery($r4)
+     $r4 = virtualinvoke $r5.getRawFragment()
+     $r6 = virtualinvoke $r6.encodedFragment($r4)
+     $r3 = virtualinvoke $r6.build()
+     goto label28

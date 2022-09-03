@@ -1,0 +1,7 @@
+     entermonitor class \LX/02z\
+     label2: exitmonitor class \LX/02z\
+     entermonitor class \LX/02z\
+     goto label5
+     label5: exitmonitor class \LX/02z\
+     exitmonitor class \LX/02z\
+     exitmonitor class \LX/02z\

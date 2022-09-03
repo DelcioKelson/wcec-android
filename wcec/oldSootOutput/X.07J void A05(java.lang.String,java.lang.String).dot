@@ -1,0 +1,8 @@
+     $z0 = X.07J.A07
+     $r3 = staticinvoke X.07l.A00()
+     $r2 = X.07l.A02
+     entermonitor $r2
+     label1: $r4 = $r3.A01
+     interfaceinvoke $r4.put($r0 $r1)
+     exitmonitor $r2
+     exitmonitor $r2

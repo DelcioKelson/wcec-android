@@ -1,0 +1,12 @@
+     $z0 = 0
+     $z1 = 0
+     $z1 = 1
+     goto label07
+     label08: goto label17
+     goto label16
+     $z0 = $z1
+     goto label12
+     $z1 = $z0
+     goto label16
+     $z1 = 0
+     goto label13

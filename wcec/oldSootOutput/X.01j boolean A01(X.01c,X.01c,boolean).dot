@@ -1,0 +1,9 @@
+     $z1 = virtualinvoke $r0.equals($r1)
+     $r3 = X.01b.A1F
+     $r4 = interfaceinvoke $r3.get($r1)
+     $r5 = (java.util.Set) $r4
+     $r2 = newarray (X.01c)1
+     label1: $z0 = interfaceinvoke $r5.contains($r0)
+     $r1 = X.01b.A0Z
+     $r20 = $r1
+     $r5 = staticinvoke X.01b.A00($r2)

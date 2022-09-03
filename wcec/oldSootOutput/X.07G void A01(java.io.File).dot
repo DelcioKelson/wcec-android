@@ -1,0 +1,22 @@
+     $z0 = virtualinvoke $r0.isDirectory()
+     $r1 = virtualinvoke $r0.listFiles()
+     label2: $r2 = virtualinvoke $r0.getParentFile()
+     $i0 = lengthof $r1
+     $i1 = 0
+     label1: if $i1 >= $i0 goto label2
+     $r2 = $r1$i1
+     staticinvoke X.07G.A01($r2)
+     $i1 = $i1 + 1
+     goto label1
+     $z0 = virtualinvoke $r2.canWrite()
+     label3: $z0 = virtualinvoke $r0.delete()
+     $z0 = virtualinvoke $r2.setWritable(1)
+     $r3 = new java.lang.StringBuilder
+     virtualinvoke $r3.append($r2)
+     $r4 = virtualinvoke $r3.toString()
+     staticinvoke android.util.Log.e(\SysUtil\ $r4)
+     $z0 = virtualinvoke $r0.exists()
+     $r3 = new java.lang.StringBuilder
+     virtualinvoke $r3.append($r0)
+     $r4 = virtualinvoke $r3.toString()
+     $r5 = new java.io.IOException

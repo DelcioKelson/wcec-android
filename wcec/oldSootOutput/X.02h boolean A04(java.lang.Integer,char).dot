@@ -1,0 +1,11 @@
+     $r2 = staticinvoke X.050.values()
+     $i1 = lengthof $r2
+     $i2 = 0
+     label1: if $i2 >= $i1 goto label3
+     $r1 = $r2$i2
+     $c3 = $r1.A01
+     $i4 = (int) $c3
+     $i5 = (int) $c0
+     $r3 = $r1.A00
+     label2: $i2 = $i2 + 1
+     goto label1

@@ -1,0 +1,20 @@
+     label5: $r5 = newarray (java.lang.Object)0
+     label4: $r5 = newarray (java.lang.Object)1
+     label3: $r5 = newarray (java.lang.Object)2
+     label2: $r5 = newarray (java.lang.Object)3
+     $r5 = newarray (java.lang.Object)4
+     label1: $r0 = staticinvoke com.facebook.common.stringformat.StringFormatUtil.doFallbackToSystem($r0 $r5)
+     $r50 = $r1
+     $r51 = $r2
+     $r52 = $r3
+     $r53 = $r4
+     $r50 = $r1
+     $r51 = $r2
+     $r52 = $r3
+     goto label1
+     $r50 = $r1
+     $r51 = $r2
+     goto label1
+     $r50 = $r1
+     goto label1
+     goto label1

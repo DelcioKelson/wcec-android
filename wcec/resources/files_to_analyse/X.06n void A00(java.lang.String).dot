@@ -1,0 +1,2 @@
+     label04: if $i1 == 0 goto label03
+     goto label09

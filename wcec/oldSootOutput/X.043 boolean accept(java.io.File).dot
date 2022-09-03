@@ -1,0 +1,10 @@
+     $r2 = virtualinvoke $r1.getName()
+     $r3 = r0.A00
+     $r4 = $r3.A00
+     $z0 = virtualinvoke $r2.startsWith($r4)
+     $r5 = X.034.A03
+     label1: $z0 = r0.A02
+     $r2 = virtualinvoke $r1.getName()
+     label2: $r2 = virtualinvoke $r1.getName()
+     $z0 = virtualinvoke $r2.contains(\suppl_\)
+     $z0 = virtualinvoke $r2.endsWith(\_attach.txt\)

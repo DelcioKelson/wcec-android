@@ -1,0 +1,14 @@
+     $r2 = staticinvoke X.055.A00($r2)
+     $r4 = $r2
+     r0.A03 = $r2
+     r0.A00 = $i0
+     r0.A01 = $r1
+     $r5 = $r1.A00
+     label3: $r5 = null
+     label1: if $r5 == null goto label2
+     $r3 = new java.lang.StringBuilder
+     label2: r0.A02 = $r4
+     virtualinvoke $r3.append($r5)
+     virtualinvoke $r3.append($r2)
+     $r4 = virtualinvoke $r3.toString()
+     goto label1

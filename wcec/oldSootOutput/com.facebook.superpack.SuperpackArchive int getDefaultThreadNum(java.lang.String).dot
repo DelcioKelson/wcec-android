@@ -1,0 +1,3 @@
+     $z0 = virtualinvoke $r0.equals(\spo\)
+     $r1 = staticinvoke java.lang.Runtime.getRuntime()
+     $i0 = virtualinvoke $r1.availableProcessors()

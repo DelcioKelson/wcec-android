@@ -1,0 +1,29 @@
+     label06: $z0 = 0
+     $l2 = $l1 - $l2
+     $z0 = 1
+     label03: if $z1 == 0 goto label07
+     goto label03
+     goto label01
+     goto label11
+     label15: $i4 = $i4 + $i5
+     label17: $i4 = $i4 + $i5
+     label19: $i4 = $i4 + $i5
+     label21: $i4 = $i4 + $i5
+     label23: if $i4 != 0 goto label24
+     goto label90
+     label26: if $z0 == 0 goto label46
+     label34: goto label41
+     label42: goto label25
+     goto label32
+     label47: $i4 = $i4 + $i5
+     label49: $i4 = $i4 + $i5
+     label51: $i4 = $i4 + $i5
+     label53: $i4 = $i4 + $i5
+     label59: $l1 = $l2 - $l1
+     goto label67
+     goto label69
+     goto label73
+     goto label74
+     label76: goto label87
+     label81: goto label87
+     label88: goto label90

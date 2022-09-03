@@ -1,0 +1,6 @@
+     $r2 = new java.util.concurrent.atomic.AtomicInteger
+     r0.A01 = $r2
+     $r3 = new java.util.concurrent.atomic.AtomicReference
+     r0.A02 = $r3
+     $r1 = virtualinvoke $r1.getApplicationContext()
+     r0.A00 = $r1

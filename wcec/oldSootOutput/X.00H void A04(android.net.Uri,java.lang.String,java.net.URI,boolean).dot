@@ -1,0 +1,56 @@
+     $r3 = virtualinvoke $r2.getScheme()
+     $r4 = virtualinvoke $r0.getScheme()
+     $z1 = staticinvoke X.00H.A05($r3 $r4)
+     $r3 = virtualinvoke $r2.getAuthority()
+     $r4 = virtualinvoke $r0.getAuthority()
+     $z2 = staticinvoke X.00H.A05($r3 $r4)
+     $r3 = virtualinvoke $r2.getPath()
+     $r4 = virtualinvoke $r0.getPath()
+     $z3 = staticinvoke X.00H.A05($r3 $r4)
+     $r3 = \\
+     $r5 = new java.lang.StringBuilder
+     label1: if $z0 != 0 goto label2
+     virtualinvoke $r5.append(\\)
+     $r6 = java.util.Locale.US
+     $r7 = newarray (java.lang.Object)2
+     $r3 = virtualinvoke $r2.getScheme()
+     $r70 = $r3
+     $r3 = virtualinvoke $r0.getScheme()
+     $r71 = $r3
+     $r3 = staticinvoke java.lang.String.format($r6 \javaUri scheme: \\\%s\\\. androidUri scheme: \\\%s\\\.\ $r7)
+     virtualinvoke $r5.append($r3)
+     $r3 = virtualinvoke $r5.toString()
+     label2: if $z3 != 0 goto label3
+     $r5 = new java.lang.StringBuilder
+     virtualinvoke $r5.append($r3)
+     $r6 = java.util.Locale.US
+     $r7 = newarray (java.lang.Object)2
+     $r3 = virtualinvoke $r2.getAuthority()
+     $r70 = $r3
+     $r3 = virtualinvoke $r0.getAuthority()
+     $r71 = $r3
+     $r3 = staticinvoke java.lang.String.format($r6 \javaUri authority: \\\%s\\\. androidUri authority: \\\%s\\\.\ $r7)
+     virtualinvoke $r5.append($r3)
+     $r3 = virtualinvoke $r5.toString()
+     $r5 = new java.lang.StringBuilder
+     label3: if $z1 == 0 goto label4
+     virtualinvoke $r5.append($r3)
+     $r6 = java.util.Locale.US
+     $r7 = newarray (java.lang.Object)2
+     $r3 = virtualinvoke $r2.getPath()
+     $r70 = $r3
+     $r3 = virtualinvoke $r0.getPath()
+     $r71 = $r3
+     $r3 = staticinvoke java.lang.String.format($r6 \javaUri path: \\\%s\\\. androidUri path: \\\%s\\\.\ $r7)
+     virtualinvoke $r5.append($r3)
+     $r3 = virtualinvoke $r5.toString()
+     label4: $r6 = java.util.Locale.US
+     $r7 = newarray (java.lang.Object)4
+     $r4 = virtualinvoke $r2.toString()
+     $r70 = $r4
+     $r4 = virtualinvoke $r0.toString()
+     $r71 = $r4
+     $r72 = $r3
+     $r73 = $r1
+     $r1 = staticinvoke java.lang.String.format($r6 \java uri \\\%s\\\ not equal to android uri \\\%s\\\. Debug info: %s. Original uri: %s\ $r7)
+     $r8 = new java.lang.SecurityException

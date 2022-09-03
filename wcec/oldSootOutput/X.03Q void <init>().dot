@@ -1,0 +1,5 @@
+     $r2 = newarray (X.01c)1
+     $r1 = X.01b.A0h
+     $r20 = $r1
+     $r3 = staticinvoke java.util.Arrays.asList($r2)
+     virtualinvoke r0.addAll($r3)

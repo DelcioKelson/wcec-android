@@ -1,0 +1,5 @@
+     $r4 = X.034.A03
+     entermonitor class \LX/00e\
+     label1: $z0 = X.00e.A0B
+     label2: exitmonitor class \LX/00e\
+     exitmonitor class \LX/00e\

@@ -1,0 +1,17 @@
+     label1: $l1 = X.06m.A00
+     $b2 = $l1 cmp 1L
+     $r0 = staticinvoke android.os.Environment.getDataDirectory()
+     label4: exitmonitor class \LX/06m\
+     $r1 = virtualinvoke $r0.getPath()
+     $r2 = new android.os.StatFs
+     $i0 = android.os.Build$VERSION.SDK_INT
+     $l1 = staticinvoke X.06E.A01($r2)
+     label3: $i0 = virtualinvoke $r2.getBlockSize()
+     label2: X.06m.A00 = $l1
+     goto label4
+     $l1 = (long) $i0
+     $i0 = virtualinvoke $r2.getBlockCount()
+     $l3 = (long) $i0
+     $l1 = $l1 * $l3
+     goto label2
+     exitmonitor class \LX/06m\

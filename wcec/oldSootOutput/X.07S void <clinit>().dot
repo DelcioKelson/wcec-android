@@ -1,0 +1,7 @@
+     X.07S.A01 = $r1
+     $r2 = new java.util.ArrayList
+     X.07S.A00 = $r2
+     $r0 = X.07S.A01
+     interfaceinvoke $r0.ASe(5)
+     $r0 = X.07S.A01
+     X.07R.A00 = $r0

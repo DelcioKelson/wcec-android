@@ -1,0 +1,10 @@
+     $r2 = $r0.A00
+     $r1 = $r0.A01
+     $r3 = virtualinvoke $r2.getSharedPreferences($r1 0)
+     $i0 = interfaceinvoke $r3.getInt(\early_connection_default_timeout_mills\ 0)
+     $r3 = virtualinvoke $r2.getSharedPreferences($r1 0)
+     $r4 = interfaceinvoke $r3.getString(\early_socket_connection_host\ null)
+     $r3 = virtualinvoke $r2.getSharedPreferences($r1 0)
+     $i1 = interfaceinvoke $r3.getInt(\early_socket_connection_port\ -1)
+     $r5 = new X.06g
+     $r6 = new X.05l

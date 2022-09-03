@@ -1,0 +1,15 @@
+     $r4 = new java.io.File
+     $r5 = staticinvoke java.security.MessageDigest.getInstance(\MD5\)
+     label02: $r2 = new java.io.FileInputStream
+     label04: $r6 = newarray (byte)4096
+     label05: $i0 = virtualinvoke $r2.read($r6)
+     label06: if $i0 <= 0 goto label09
+     label07: virtualinvoke $r5.update($r6 0 $i0)
+     label09: $r6 = virtualinvoke $r5.digest()
+     label08: goto label05
+     $r7 = new java.math.BigInteger
+     $r1 = staticinvoke com.facebook.common.stringformat.StringFormatUtil.formatStrLocaleSafe(\%32x\ $r7)
+     label10: virtualinvoke $r2.close()
+     label13: virtualinvoke $r2.close()
+     $r1 = virtualinvoke $r9.toString()
+     goto label14

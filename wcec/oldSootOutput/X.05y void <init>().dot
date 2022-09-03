@@ -1,0 +1,16 @@
+     $r1 = new java.util.HashMap
+     r0.A09 = $r1
+     r0.A00 = 0
+     r0.A0B = 0
+     r0.A0A = 0
+     r0.A02 = null
+     r0.A03 = null
+     r0.A04 = null
+     $r2 = new java.util.ArrayList
+     r0.A05 = $r2
+     $r2 = new java.util.ArrayList
+     r0.A07 = $r2
+     $r2 = new java.util.ArrayList
+     r0.A06 = $r2
+     $r2 = new java.util.ArrayList
+     r0.A08 = $r2

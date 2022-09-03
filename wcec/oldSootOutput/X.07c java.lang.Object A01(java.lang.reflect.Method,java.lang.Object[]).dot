@@ -1,0 +1,17 @@
+     label1: $r2 = virtualinvoke $r0.invoke(null $r1)
+     label5: r7 = java.lang.Boolean.FALSE
+     $z0 = staticinvoke android.util.Log.isLoggable(\OldProcReader\ 6)
+     $r4 = new java.lang.StringBuilder
+     $r5 = virtualinvoke $r3.getLocalizedMessage()
+     virtualinvoke $r4.append($r5)
+     virtualinvoke $r4.append(\)\)
+     $r5 = virtualinvoke $r4.toString()
+     staticinvoke android.util.Log.e(\OldProcReader\ $r5 $r3)
+     goto label5
+     $z0 = staticinvoke android.util.Log.isLoggable(\OldProcReader\ 6)
+     $r4 = new java.lang.StringBuilder
+     $r5 = virtualinvoke $r6.getLocalizedMessage()
+     virtualinvoke $r4.append($r5)
+     virtualinvoke $r4.append(\)\)
+     $r5 = virtualinvoke $r4.toString()
+     staticinvoke android.util.Log.e(\OldProcReader\ $r5 $r6)

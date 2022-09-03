@@ -1,0 +1,10 @@
+     $r1 = r0.A01
+     $r2 = $r1.A00
+     $i0 = r0.A00
+     $i1 = $i0 + 1
+     r0.A00 = $i1
+     $r3 = $r2$i0
+     $r4 = $r3.A00
+     $r5 = new java.io.FileInputStream
+     label1: $r6 = new X.03k
+     virtualinvoke $r5.close()

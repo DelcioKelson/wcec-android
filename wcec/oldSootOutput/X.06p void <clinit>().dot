@@ -1,0 +1,14 @@
+     $r1 = $r0.A00
+     label2: $z0 = 0
+     X.06p.A00 = $r1
+     $r1 = $r0.A02
+     X.06p.A03 = $r1
+     $r1 = $r0.A01
+     X.06p.A02 = $r1
+     $r1 = $r0.A03
+     X.06p.A01 = $r1
+     $r1 = $r0.A04
+     X.06p.A04 = $r1
+     $z0 = 1
+     label1: X.06p.A05 = $z0
+     goto label1

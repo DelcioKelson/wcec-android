@@ -1,0 +1,17 @@
+     entermonitor class \LX/06V\
+     label02: exitmonitor class \LX/06V\
+     goto label05
+     goto label06
+     $z2 = 1
+     label09: $z2 = 0
+     label10: if $z1 != 0 goto label11
+     label11: if $z2 == 0 goto label15
+     goto label14
+     $l3 = $l3 - $l4
+     $l4 = $l4 + 1L
+     $l3 = $l4 + $l3
+     $l0 = $l1 + 1L
+     goto label15
+     $l0 = $l0 - $l3
+     $l0 = $l1 + $l0
+     exitmonitor class \LX/06V\

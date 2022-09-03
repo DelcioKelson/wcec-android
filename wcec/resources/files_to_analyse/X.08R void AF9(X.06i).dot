@@ -1,0 +1,3 @@
+     label04: if $z0 != 0 goto label08
+     label06: if $z0 != 0 goto label08
+     label10: goto label13

@@ -1,0 +1,7 @@
+     label1: $r2 = r0.A01
+     label2: if $r2 == null goto label4
+     label3: virtualinvoke $r2.release()
+     label4: $r3 = r0.A00
+     virtualinvoke $r3.close()
+     $r3 = r0.A00
+     virtualinvoke $r3.close()

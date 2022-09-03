@@ -1,0 +1,4 @@
+     $r1 = r0.mCloseWhenInputStreamIsClosed
+     $z0 = virtualinvoke $r1.booleanValue()
+     $r2 = r0.mSuperpackFile
+     virtualinvoke $r2.close()

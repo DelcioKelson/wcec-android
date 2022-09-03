@@ -1,0 +1,13 @@
+     $r5 = new java.util.ArrayList
+     r0.A0K = $r5
+     r0.A01 = 0
+     r0.A0J = $r1
+     r0.A0L = $r2
+     $r3 = $r1.A05
+     staticinvoke X.02y.A01($r3 \Did you call SessionManager.init()?\)
+     $r6 = new java.lang.StringBuilder
+     virtualinvoke $r6.append(0)
+     virtualinvoke $r6.append(\.dmp\)
+     $r4 = virtualinvoke $r6.toString()
+     $r7 = new java.io.File
+     r0.A09 = $r7

@@ -1,0 +1,8 @@
+     $r4 = r0.A02
+     $r5 = r0.A03
+     $r3 = interfaceinvoke $r4.A3r($r5)
+     $r6 = (X.09f) $r3
+     $r7 = r0.A00
+     staticinvoke X.02y.A00($r2)
+     $r1 = X.034.A03
+     virtualinvoke $r7.A06($r6 $r1 $r2)

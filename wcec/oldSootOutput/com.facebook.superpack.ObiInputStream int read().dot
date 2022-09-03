@@ -1,0 +1,4 @@
+     entermonitor r0
+     label1: virtualinvoke r0.read(null)
+     r2 = new java.lang.NullPointerException
+     exitmonitor r0

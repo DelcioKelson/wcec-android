@@ -1,0 +1,34 @@
+     $r2 = r0.A00
+     entermonitor $r2
+     label01: $r3 = r0.A01
+     $r5 = interfaceinvoke $r3.get($r1)
+     $r6 = (java.lang.Long) $r5
+     exitmonitor $r2
+     label02: if $r6 != null goto label03
+     $r6 = staticinvoke java.lang.Long.valueOf(0L)
+     label03: $l1 = staticinvoke android.os.SystemClock.uptimeMillis()
+     $l2 = virtualinvoke $r6.longValue()
+     $b3 = $l2 cmp 0L
+     entermonitor $r2
+     label08: $b3 = $l2 cmp $l1
+     label04: $r6 = staticinvoke java.lang.Long.valueOf($l1)
+     interfaceinvoke $r3.put($r1 $r6)
+     exitmonitor $r2
+     label05: goto label08
+     exitmonitor $r2
+     $i4 = (int) $b3
+     label09: $l0 = $l1 - $l2
+     $b3 = $l0 cmp 3000L
+     $i4 = (int) $b3
+     $l0 = $l2 + 3000L
+     $l0 = $l0 - $l1
+     entermonitor $r2
+     label10: $l1 = $l1 + $l0
+     $r6 = staticinvoke java.lang.Long.valueOf($l1)
+     interfaceinvoke $r3.put($r1 $r6)
+     exitmonitor $r2
+     label11: staticinvoke java.lang.Thread.sleep($l0)
+     label12: goto label16
+     label14: exitmonitor $r2
+     label18: exitmonitor $r2
+     goto label16

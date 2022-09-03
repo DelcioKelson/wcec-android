@@ -1,0 +1,35 @@
+     $r2 = X.02r.A00
+     $i1 = interfaceinvoke $r2.size()
+     label1: $r2 = X.02r.A00
+     $r3 = interfaceinvoke $r2.get($i0)
+     $r4 = (java.lang.Number) $r3
+     $i0 = virtualinvoke $r4.intValue()
+     $i1 = $i0
+     label2: $r1 = X.02r.A02
+     $i2 = lengthof $r1
+     $b3 = $r1$i1
+     label3: $i1 = $i1 - $i0
+     $i2 = (int) $b3
+     $i1 = $i1 + 1
+     goto label2
+     $i1 = $i1 + 6
+     $r0 = newarray (char)$i1
+     $i2 = 0
+     $r00 = 108
+     $r01 = 105
+     $r02 = 98
+     label4: $i4 = $i1 - 6
+     $i4 = $i2 + 3
+     label5: $i0 = $i1 + -3
+     $i5 = $i0 + $i2
+     $b3 = $r1$i5
+     $c6 = (char) $b3
+     $r0$i4 = $c6
+     $i2 = $i2 + 1
+     goto label4
+     $r0$i0 = 46
+     $i0 = $i1 + -2
+     $r0$i0 = 115
+     $i0 = $i1 - 1
+     $r0$i0 = 111
+     $r5 = new java.lang.String

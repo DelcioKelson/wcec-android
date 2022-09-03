@@ -1,0 +1,12 @@
+     $r4 = newarray (java.lang.Object)3
+     $r40 = $r3
+     $r41 = \form-data name=\
+     $r42 = $r1
+     $r1 = staticinvoke java.lang.String.format(\--%s\r\nContent-Disposition: %s\\\%s\\\\r\nContent-Type: application/binary\r\nContent-Transfer-Encoding: binary\r\n\r\n\ $r4)
+     $r5 = virtualinvoke $r1.getBytes()
+     virtualinvoke $r0.write($r5)
+     $r5 = virtualinvoke $r2.getBytes(\UTF-8\)
+     virtualinvoke $r0.write($r5)
+     $r1 = \\r\n\
+     $r5 = virtualinvoke $r1.getBytes()
+     virtualinvoke $r0.write($r5)

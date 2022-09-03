@@ -1,0 +1,44 @@
+     $r4 = X.06V.A03
+     $r3 = $r4.A00
+     $r5 = X.03D.A2B
+     entermonitor $r3
+     label01: $l0 = $r3.A02
+     label02: exitmonitor $r3
+     $r6 = staticinvoke java.lang.Long.valueOf($l0)
+     virtualinvoke $r1.A02($r5 $r6)
+     $r5 = X.03D.A2C
+     entermonitor $r3
+     label03: $l0 = $r3.A04
+     entermonitor $r3
+     label04: $z0 = $r3.A07
+     $l1 = 0L
+     $z0 = $r3.A06
+     label05: exitmonitor $r3
+     $l1 = staticinvoke android.os.SystemClock.uptimeMillis()
+     $l2 = $r3.A01
+     $l1 = $l1 - $l2
+     label06: $l0 = $l0 + $l1
+     exitmonitor $r3
+     $r6 = staticinvoke java.lang.Long.valueOf($l0)
+     virtualinvoke $r1.A02($r5 $r6)
+     $r5 = X.03D.A10
+     entermonitor $r3
+     label07: $l0 = $r3.A03
+     label08: exitmonitor $r3
+     $r6 = staticinvoke java.lang.Long.valueOf($l0)
+     virtualinvoke $r1.A02($r5 $r6)
+     $r5 = X.03D.A1g
+     $r6 = staticinvoke java.lang.Long.valueOf(0L)
+     virtualinvoke $r1.A02($r5 $r6)
+     $r5 = X.03D.A2J
+     entermonitor $r3
+     label09: $l0 = $r3.A05
+     goto label15
+     label15: exitmonitor $r3
+     exitmonitor $r3
+     exitmonitor $r3
+     exitmonitor $r3
+     exitmonitor $r3
+     exitmonitor $r3
+     $r6 = staticinvoke java.lang.Long.valueOf($l0)
+     virtualinvoke $r1.A02($r5 $r6)

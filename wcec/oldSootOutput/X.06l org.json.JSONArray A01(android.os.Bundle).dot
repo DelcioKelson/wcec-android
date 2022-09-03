@@ -1,0 +1,17 @@
+     $r2 = new org.json.JSONArray
+     $r3 = virtualinvoke $r0.keySet()
+     $r4 = interfaceinvoke $r3.iterator()
+     label1: $z0 = interfaceinvoke $r4.hasNext()
+     $r5 = interfaceinvoke $r4.next()
+     $r6 = (java.lang.String) $r5
+     $r1 = new org.json.JSONObject
+     $r5 = virtualinvoke $r0.get($r6)
+     $r7 = \\
+     $r8 = virtualinvoke $r5.getClass()
+     label2: virtualinvoke $r1.put(\name\ $r6)
+     $r7 = virtualinvoke $r8.getCanonicalName()
+     virtualinvoke $r1.put(\value_type\ $r7)
+     $r6 = virtualinvoke $r5.toString()
+     label3: virtualinvoke $r2.put($r1)
+     staticinvoke android.webkit.URLUtil.isValidUrl($r6)
+     goto label1

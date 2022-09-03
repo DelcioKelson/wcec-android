@@ -1,0 +1,18 @@
+     $i0 = $i0 + 1
+     goto label05
+     $i0 = $i0 - 1
+     goto label03
+     label22: $z0 = 0
+     $z0 = 0
+     $z0 = 1
+     $z1 = 0
+     $z1 = 1
+     label08: if $z0 == 0 goto label09
+     label09: if $z1 != 0 goto label10
+     goto label11
+     goto label13
+     goto label12
+     goto label17
+     goto label19
+     goto label25
+     $z0 = 1

@@ -1,0 +1,37 @@
+     $r6 = new java.util.ArrayList
+     $r8 = interfaceinvoke $r1.iterator()
+     label01: $z0 = interfaceinvoke $r8.hasNext()
+     $r9 = interfaceinvoke $r8.next()
+     label02: $r5 = r0.A03
+     $r10 = (X.04E) $r9
+     $r11 = new X.04H
+     virtualinvoke $r6.add($r11)
+     goto label01
+     $r4 = r0.A00
+     $r3 = new java.util.concurrent.ExecutorCompletionService
+     $i0 = virtualinvoke $r6.size()
+     $r2 = new java.util.ArrayList
+     label03: $r8 = virtualinvoke $r6.iterator()
+     label04: $z0 = interfaceinvoke $r8.hasNext()
+     label05: if $z0 == 0 goto label08
+     label06: $r9 = interfaceinvoke $r8.next()
+     label08: $i0 = 0
+     $r12 = (java.util.concurrent.Callable) $r9
+     $r13 = virtualinvoke $r3.submit($r12)
+     virtualinvoke $r2.add($r13)
+     label07: goto label04
+     label09: $i1 = virtualinvoke $r6.size()
+     label10: if $i0 >= $i1 goto label14
+     label11: $r13 = virtualinvoke $r3.take()
+     label14: $r14 = null
+     $r9 = interfaceinvoke $r13.get()
+     label12: $r14 = $r9
+     goto label15
+     label13: $i0 = $i0 + 1
+     label15: $r15 = new X.01Y
+     goto label09
+     goto label16
+     label16: $r16 = (X.01Z) $r14
+     interfaceinvoke $r5.execute($r15)
+     label17: $r17 = new java.io.IOException
+     goto label13

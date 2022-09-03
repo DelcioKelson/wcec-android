@@ -1,0 +1,47 @@
+     entermonitor $r0
+     $b1 = $l0 cmp 0L
+     $i3 = (int) $b1
+     label01: $r4 = $r0.A00
+     label19: $r13 = new java.lang.IllegalArgumentException
+     $z0 = virtualinvoke $r4.exists()
+     $l2 = virtualinvoke $r4.length()
+     label18: exitmonitor $r0
+     $b1 = $l2 cmp $l0
+     $i3 = (int) $b1
+     label02: $r11 = new java.io.RandomAccessFile
+     label04: virtualinvoke $r11.seek($l0)
+     $b1 = virtualinvoke $r11.readByte()
+     $r12 = new X.041
+     label05: $l0 = virtualinvoke $r11.readLong()
+     $r5 = $r12
+     goto label08
+     label08: virtualinvoke $r11.close()
+     $b1 = $l0 cmp 0L
+     $i3 = (int) $b1
+     $r12 = new X.041
+     label06: $l2 = virtualinvoke $r11.readLong()
+     $r5 = $r12
+     goto label08
+     $b1 = $l2 cmp 0L
+     $i3 = (int) $b1
+     $r12 = new X.041
+     label07: $r12 = new X.041
+     $r5 = $r12
+     goto label08
+     $r5 = $r12
+     label09: goto label17
+     label17: exitmonitor $r0
+     label11: virtualinvoke $r11.close()
+     label14: $r8 = newarray (java.lang.Object)1
+     $r80 = $r1
+     staticinvoke X.07S.A0F(\lacrima\ \Could not read %s\ $r7 $r8)
+     $r12 = new X.041
+     $r5 = $r12
+     goto label17
+     label16: $r8 = newarray (java.lang.Object)1
+     $r80 = $r1
+     staticinvoke X.07S.A0F(\lacrima\ \Could not read %s due to IO issue\ $r9 $r8)
+     $r12 = new X.041
+     $r5 = $r12
+     exitmonitor $r0
+     goto label12

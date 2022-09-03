@@ -1,0 +1,2 @@
+     $r1 = r0.A00
+     $i0 = virtualinvoke $r1.hashCode()

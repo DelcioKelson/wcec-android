@@ -1,0 +1,47 @@
+     $r3 = $r1.A00
+     $r4 = X.07l.A02
+     label18: $r4 = X.07l.A02
+     entermonitor $r4
+     label01: $r5 = r0.A00
+     $r6 = new java.util.HashMap
+     exitmonitor $r4
+     label02: $r7 = virtualinvoke $r6.entrySet()
+     $r8 = interfaceinvoke $r7.iterator()
+     label03: $z0 = interfaceinvoke $r8.hasNext()
+     $r9 = interfaceinvoke $r8.next()
+     $r10 = (java.util.Map$Entry) $r9
+     $r9 = interfaceinvoke $r10.getKey()
+     label04: $r11 = interfaceinvoke $r10.getValue()
+     $r12 = (X.09U) $r11
+     $r13 = interfaceinvoke $r12.A7e($r3)
+     entermonitor $r4
+     label09: entermonitor $r4
+     label05: $r5 = r0.A01
+     interfaceinvoke $r5.remove($r9)
+     exitmonitor $r4
+     label06: goto label03
+     exitmonitor $r4
+     label10: $r5 = r0.A01
+     interfaceinvoke $r5.put($r9 $r13)
+     exitmonitor $r4
+     label11: goto label03
+     exitmonitor $r4
+     staticinvoke X.07S.A0A(\lacrima\ \Failed to apply lazy supplier: %s\ $r16)
+     goto label03
+     label16: exitmonitor $r4
+     entermonitor $r4
+     label19: $r5 = r0.A01
+     $r6 = new java.util.HashMap
+     exitmonitor $r4
+     label20: $r7 = virtualinvoke $r6.entrySet()
+     $r8 = interfaceinvoke $r7.iterator()
+     label21: $z0 = interfaceinvoke $r8.hasNext()
+     $r4 = interfaceinvoke $r8.next()
+     $r10 = (java.util.Map$Entry) $r4
+     $r4 = interfaceinvoke $r10.getKey()
+     $r13 = (java.lang.String) $r4
+     $r4 = interfaceinvoke $r10.getValue()
+     $r17 = (java.lang.String) $r4
+     virtualinvoke $r1.A04($r13 $r17)
+     goto label21
+     label24: exitmonitor $r4

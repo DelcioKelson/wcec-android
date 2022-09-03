@@ -1,0 +1,9 @@
+     $r1 = $r0.signatures
+     $i0 = lengthof $r1
+     label3: $r3 = $r0.packageName
+     $r2 = $r10
+     label2: $r3 = $r0.packageName
+     label1: $r3 = $r0.packageName
+     $r4 = new X.09K
+     $r5 = new X.09G
+     $r6 = new X.09J

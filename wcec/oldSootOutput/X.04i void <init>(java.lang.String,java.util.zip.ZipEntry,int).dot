@@ -1,0 +1,15 @@
+     $r3 = newarray (java.lang.Object)4
+     $r4 = virtualinvoke $r2.getName()
+     $r30 = $r4
+     $l1 = virtualinvoke $r2.getSize()
+     $r5 = staticinvoke java.lang.Long.valueOf($l1)
+     $r31 = $r5
+     $l1 = virtualinvoke $r2.getCompressedSize()
+     $r5 = staticinvoke java.lang.Long.valueOf($l1)
+     $r32 = $r5
+     $l1 = virtualinvoke $r2.getCrc()
+     $r5 = staticinvoke java.lang.Long.valueOf($l1)
+     $r33 = $r5
+     $r4 = staticinvoke java.lang.String.format(\pseudo-zip-hash-1-%s-%s-%s-%s\ $r3)
+     r0.A01 = $r2
+     r0.A00 = $i0

@@ -1,0 +1,20 @@
+     $r3 = virtualinvoke $r2.getApplicationContext()
+     r0.A02 = $r3
+     $r4 = virtualinvoke $r2.getSystemService(\power\)
+     $r5 = (android.os.PowerManager) $r4
+     $r6 = new java.lang.StringBuilder
+     $r7 = virtualinvoke $r1.getClassName()
+     virtualinvoke $r6.append($r7)
+     virtualinvoke $r6.append(\:launch\)
+     $r7 = virtualinvoke $r6.toString()
+     $r8 = virtualinvoke $r5.newWakeLock(1 $r7)
+     r0.A03 = $r8
+     virtualinvoke $r8.setReferenceCounted(0)
+     $r6 = new java.lang.StringBuilder
+     $r7 = virtualinvoke $r1.getClassName()
+     virtualinvoke $r6.append($r7)
+     virtualinvoke $r6.append(\:run\)
+     $r7 = virtualinvoke $r6.toString()
+     $r8 = virtualinvoke $r5.newWakeLock(1 $r7)
+     r0.A04 = $r8
+     virtualinvoke $r8.setReferenceCounted(0)

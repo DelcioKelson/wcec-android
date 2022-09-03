@@ -1,0 +1,15 @@
+     $r5 = new java.lang.Object
+     r0.A04 = $r5
+     $r6 = new java.util.HashMap
+     r0.A09 = $r6
+     $r7 = new java.util.HashSet
+     r0.A07 = $r7
+     $r6 = new java.util.HashMap
+     r0.A06 = $r6
+     $r6 = new java.util.HashMap
+     r0.A05 = $r6
+     r0.A08 = $r1
+     r0.A03 = $r4
+     r0.A02 = $r3
+     r0.A01 = $r2
+     r0.A00 = $z0

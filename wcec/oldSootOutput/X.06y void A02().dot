@@ -1,0 +1,43 @@
+     $r3 = r0.A02
+     virtualinvoke $r3.mkdirs()
+     $r3 = r0.A02
+     $r4 = virtualinvoke $r3.listFiles()
+     $i0 = r0.A00
+     $l1 = (long) $i0
+     $i2 = lengthof $r4
+     label01: $l3 = staticinvoke X.06m.A00()
+     $i0 = $i0 - $i2
+     $l1 = (long) $i0
+     $i0 = r0.A01
+     $l4 = (long) $i0
+     $l3 = $l3 / $l4
+     $l1 = staticinvoke java.lang.Math.min($l3 $l1)
+     $i0 = 0
+     label02: $l3 = (long) $i0
+     $b5 = $l3 cmp $l1
+     $i2 = (int) $b5
+     $r3 = r0.A02
+     $r11 = new java.lang.StringBuilder
+     $r6 = staticinvoke java.util.UUID.randomUUID()
+     $r7 = virtualinvoke $r6.toString()
+     virtualinvoke $r11.append($r7)
+     virtualinvoke $r11.append(\_prop.txt\)
+     $r7 = virtualinvoke $r11.toString()
+     label04: $r12 = new java.io.File
+     label06: $r13 = new java.io.RandomAccessFile
+     label08: $l3 = 0L
+     label09: $i2 = r0.A01
+     label10: $l4 = (long) $i2
+     $b5 = $l3 cmp $l4
+     $i2 = (int) $b5
+     label11: virtualinvoke $r13.seek($l3)
+     label13: virtualinvoke $r13.setLength($l4)
+     virtualinvoke $r13.writeByte(32)
+     label12: $l3 = $l3 + 4096L
+     goto label09
+     label14: virtualinvoke $r13.close()
+     label15: $i0 = $i0 + 1
+     goto label02
+     label17: virtualinvoke $r13.close()
+     staticinvoke X.07S.A0A(\lacrima\ \Initialization failed.\ $r10)
+     goto label18

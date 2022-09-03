@@ -1,0 +1,12 @@
+     $r1 = r0.A00
+     label1: $r2 = staticinvoke java.lang.Class.forName(\com.facebook.lite.LeanClientApplication\)
+     label2: $r3 = newarray (java.lang.Class)1
+     label3: $r30 = class \Landroid/app/Application\
+     $r4 = virtualinvoke $r2.getConstructor($r3)
+     label4: $r5 = newarray (java.lang.Object)1
+     label5: $r50 = r0
+     $r6 = virtualinvoke $r4.newInstance($r5)
+     $r1 = (X.00D) $r6
+     label6: goto label8
+     label8: r0.A00 = $r1
+     $r8 = new java.lang.RuntimeException

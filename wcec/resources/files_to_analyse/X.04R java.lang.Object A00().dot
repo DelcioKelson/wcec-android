@@ -1,0 +1,10 @@
+     label16: $i0 = 0
+     $i1 = 0
+     label20: $i1 = $i1 + $i2
+     $i1 = $i1 + 1
+     goto label17
+     label24: if $i0 >= $i1 goto label32
+     label28: $i0 = $i0 + 1
+     goto label23
+     goto label31
+     goto label33

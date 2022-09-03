@@ -1,0 +1,1 @@
+     $r2 = virtualinvoke $r3.loadClassBinaryName($r1 $r0)

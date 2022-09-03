@@ -1,0 +1,7 @@
+     $r0 = X.07C.A00
+     entermonitor $r0
+     label1: $r1 = X.07C.A02
+     $r1 = new X.07C
+     label2: exitmonitor $r0
+     X.07C.A02 = $r1
+     exitmonitor $r0

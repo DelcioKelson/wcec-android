@@ -1,0 +1,32 @@
+     label03: if $z0 == 0 goto label20
+     $i0 = 0
+     $i1 = 0
+     $i2 = $i2 + -1
+     label09: if $i0 >= $i2 goto label13
+     $i2 = $i1 + -1
+     $i1 = $i1 + 1
+     goto label07
+     $i1 = $i0 + -1
+     goto label12
+     label12: $i0 = $i0 + 1
+     goto label10
+     goto label09
+     label15: goto label02
+     label27: if $z0 == 0 goto label46
+     $i0 = 0
+     $i1 = $i1 - 3
+     goto label41
+     label41: $i0 = $i0 + 1
+     goto label33
+     label43: goto label26
+     $l5 = $l3 - 259200000L
+     label52: $i0 = 0
+     label58: $i2 = 0
+     label59: if $i2 >= $i1 goto label62
+     label61: $i2 = $i2 + 1
+     goto label59
+     label64: $i2 = $i1 - 3
+     label71: $i0 = $i0 + 1
+     $l5 = $l3 - 259200000L
+     goto label64
+     goto label31

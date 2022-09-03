@@ -1,0 +1,11 @@
+     entermonitor $r1
+     label1: $r2 = X.07K.A06
+     $r0 = newarray (java.lang.String)2
+     label2: exitmonitor $r1
+     $r00 = \mobile\
+     $r01 = \reliability_event_log_upload\
+     $r3 = staticinvoke X.05M.A00($r0)
+     $r4 = virtualinvoke $r3.toString()
+     $r2 = new X.07K
+     X.07K.A06 = $r2
+     exitmonitor $r1

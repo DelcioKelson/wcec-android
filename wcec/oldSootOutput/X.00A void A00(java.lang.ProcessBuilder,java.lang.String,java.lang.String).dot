@@ -1,0 +1,9 @@
+     $r3 = staticinvoke X.06p.A01($r3)
+     $z0 = virtualinvoke $r3.isEmpty()
+     $r4 = virtualinvoke $r2.command()
+     $r1 = new java.lang.StringBuilder
+     virtualinvoke $r1.append($r0)
+     virtualinvoke $r1.append(\=\)
+     virtualinvoke $r1.append($r3)
+     $r3 = virtualinvoke $r1.toString()
+     interfaceinvoke $r4.add($r3)

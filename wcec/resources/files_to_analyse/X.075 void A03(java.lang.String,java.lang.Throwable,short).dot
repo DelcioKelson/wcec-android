@@ -1,0 +1,28 @@
+     label02: $z0 = 0
+     $l1 = $l1 - $l2
+     $z0 = 1
+     $l1 = $l2 % $l1
+     label07: $z0 = 1
+     goto label05
+     label05: $l1 = 0L
+     goto label06
+     $l1 = $l1 % $l2
+     label09: if $z0 == 0 goto label10
+     $l1 = 0L
+     goto label23
+     label23: $l1 = $l1 + 1L
+     $l1 = 0L
+     goto label12
+     label12: $l1 = $l1 + 1L
+     $l1 = 0L
+     goto label14
+     label14: $l1 = $l1 + 1L
+     $l1 = 0L
+     goto label16
+     $l1 = $l1 / 1000L
+     $l1 = $l1 - $l2
+     goto label18
+     goto label19
+     $i4 = $i4 + 1
+     goto label24
+     goto label20

@@ -1,0 +1,22 @@
+     $z0 = 0
+     $z0 = 1
+     label11: if $z0 != 0 goto label16
+     label13: if $z1 != 0 goto label15
+     $i1 = 0
+     label39: if $z0 != 0 goto label55
+     label22: if $z1 != 0 goto label25
+     label24: goto label30
+     label28: goto label30
+     label38: $i1 = $i1 + 1
+     label32: if $z1 == 0 goto label35
+     label35: if $z0 != 0 goto label37
+     label34: if $z1 == 0 goto label35
+     goto label39
+     goto label18
+     label45: $i2 = 0
+     $z1 = 0
+     label46: if $i2 >= $i1 goto label53
+     label52: $i2 = $i2 + 1
+     label51: $z1 = 1
+     goto label46
+     label56: goto label08

@@ -1,0 +1,3 @@
+     $r3 = r0.A02
+     $r2 = new android.net.http.X509TrustManagerExtensions
+     r0.A00 = $r2

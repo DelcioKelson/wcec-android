@@ -1,0 +1,23 @@
+     $z0 = r0.A06
+     $r1 = r0.A01
+     interfaceinvoke $r1.lock()
+     label1: $z0 = r0.A06
+     label2: if $z0 != 0 goto label6
+     label3: $r2 = staticinvoke android.os.Environment.getDataDirectory()
+     label6: interfaceinvoke $r1.unlock()
+     r0.A05 = $r2
+     $r2 = staticinvoke android.os.Environment.getExternalStorageDirectory()
+     r0.A04 = $r2
+     $r3 = r0.A03
+     $r2 = r0.A05
+     $r3 = staticinvoke X.01K.A00($r3 $r2)
+     r0.A03 = $r3
+     $r3 = r0.A02
+     $r2 = r0.A04
+     $r3 = staticinvoke X.01K.A00($r3 $r2)
+     r0.A02 = $r3
+     $l0 = staticinvoke android.os.SystemClock.uptimeMillis()
+     r0.A00 = $l0
+     r0.A06 = 1
+     label4: goto label6
+     interfaceinvoke $r1.unlock()

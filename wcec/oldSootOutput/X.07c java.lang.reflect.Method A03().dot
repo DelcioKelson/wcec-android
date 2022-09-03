@@ -1,0 +1,8 @@
+     $r0 = newarray (java.lang.Class)3
+     label1: $r1 = X.07c.A03
+     $r00 = class \Ljava/lang/String\
+     $r01 = class \Ljava/lang/String\
+     $r02 = class \J\
+     $r1 = staticinvoke X.07c.A04(\readProcLines\ $r0)
+     X.07c.A03 = $r1
+     X.07c.A05 = 1

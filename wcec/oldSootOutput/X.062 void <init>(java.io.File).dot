@@ -1,0 +1,20 @@
+     r0.A01 = $r1
+     $r3 = new java.io.RandomAccessFile
+     label01: $r7 = virtualinvoke $r3.getChannel()
+     label02: $r4 = java.nio.channels.FileChannel$MapMode.READ_WRITE
+     label03: $l0 = (long) 4096
+     label04: $r8 = virtualinvoke $r7.map($r4 0L $l0)
+     r0.A00 = $r8
+     $r9 = virtualinvoke $r7.tryLock()
+     label05: if $r9 == null goto label08
+     label06: virtualinvoke $r7.close()
+     label08: $r2 = newarray (java.lang.Object)1
+     label07: virtualinvoke $r3.close()
+     $r10 = virtualinvoke $r1.getCanonicalPath()
+     $r20 = $r10
+     $r10 = staticinvoke java.lang.String.format(\Unable to acquire lock for app state log aslFile: %s\ $r2)
+     $r11 = new java.io.IOException
+     label10: virtualinvoke $r7.close()
+     label13: virtualinvoke $r3.close()
+     goto label11
+     goto label14

@@ -1,0 +1,20 @@
+     $l0 = $l0 / 1000L
+     $z0 = 0
+     goto label04
+     goto label01
+     goto label01
+     label05: entermonitor class \LX/073\
+     goto label08
+     label08: exitmonitor class \LX/073\
+     label11: if $z1 == 0 goto label14
+     label13: goto label18
+     goto label18
+     exitmonitor class \LX/073\
+     goto label20
+     goto label21
+     $l0 = $l0 - $l2
+     goto label23
+     goto label26
+     goto label17
+     goto label17
+     goto label17

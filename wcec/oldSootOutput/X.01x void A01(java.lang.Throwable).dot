@@ -1,0 +1,8 @@
+     $r1 = class \Ljava/lang/Error\
+     $z0 = virtualinvoke $r1.isInstance($r0)
+     $r1 = class \Ljava/lang/RuntimeException\
+     label2: $r2 = virtualinvoke $r1.cast($r0)
+     $z0 = virtualinvoke $r1.isInstance($r0)
+     label1: $r2 = virtualinvoke $r1.cast($r0)
+     $r0 = (java.lang.Throwable) $r2
+     $r0 = (java.lang.Throwable) $r2

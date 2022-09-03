@@ -1,0 +1,12 @@
+     $r0 = staticinvoke X.06p.A01(\fb.running_e2e\)
+     label4: $z0 = com.facebook.endtoend.EndToEnd.A06
+     $r1 = \true\
+     $z0 = virtualinvoke $r1.equals($r0)
+     $r0 = staticinvoke java.lang.System.getProperty(\fb.running_e2e\)
+     label1: $z1 = 1
+     $z0 = virtualinvoke $r1.equals($r0)
+     $z1 = 0
+     label2: com.facebook.endtoend.EndToEnd.A06 = $z1
+     $z0 = com.facebook.endtoend.EndToEnd.A06
+     staticinvoke android.util.Log.w(\EndToEnd-Test\ \Is running E2E test\)
+     label3: com.facebook.endtoend.EndToEnd.A05 = 1

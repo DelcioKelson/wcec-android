@@ -1,0 +1,8 @@
+     $r0 = staticinvoke X.03c.A02()
+     label1: if $i0 < 21 goto label2
+     $r0 = staticinvoke com.facebook.soloader.SysUtil$LollipopSysdeps.getSupportedAbis()
+     label2: $r0 = newarray (java.lang.String)2
+     $r1 = android.os.Build.CPU_ABI
+     $r00 = $r1
+     $r1 = android.os.Build.CPU_ABI2
+     $r01 = $r1

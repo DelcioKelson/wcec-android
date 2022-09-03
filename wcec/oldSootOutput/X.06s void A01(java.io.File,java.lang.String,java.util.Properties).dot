@@ -1,0 +1,142 @@
+     $r31 = new java.lang.StringBuilder
+     $r10 = virtualinvoke $r1.getPath()
+     virtualinvoke $r31.append($r10)
+     virtualinvoke $r31.append(\_tmp\)
+     $r10 = virtualinvoke $r31.toString()
+     $r13 = new java.io.File
+     $r4 = $r13
+     $r11 = staticinvoke X.06y.A00($r2)
+     label67: $r33 = new java.io.FileOutputStream
+     $r12 = $r11.A03
+     entermonitor $r12
+     label01: $r13 = $r11.A02
+     $r31 = new java.lang.StringBuilder
+     virtualinvoke $r31.append(\Did you call FixedLengthFiles.init()? - pool: \)
+     $r10 = $r11.A04
+     virtualinvoke $r31.append($r10)
+     $r10 = virtualinvoke $r31.toString()
+     staticinvoke X.02y.A01($r13 $r10)
+     $r10 = virtualinvoke $r13.getPath()
+     $r14 = virtualinvoke $r4.getParent()
+     $z0 = virtualinvoke $r10.equals($r14)
+     $z1 = 0
+     $z1 = 1
+     label02: if $z1 == 0 goto label64
+     $r13 = $r11.A02
+     label64: $r2 = staticinvoke java.lang.String.valueOf(\Destination file cannot be in the pool directory\)
+     $r15 = virtualinvoke $r13.listFiles()
+     $i0 = lengthof $r15
+     label49: exitmonitor $r12
+     $r13 = $r150
+     $z0 = virtualinvoke $r13.renameTo($r4)
+     label03: $r32 = new java.io.RandomAccessFile
+     $r16 = $r32
+     label05: exitmonitor $r12
+     label06: $r10 = \# \
+     label07: $r17 = virtualinvoke $r10.getBytes(\Ascii\)
+     virtualinvoke $r32.write($r17)
+     $r17 = virtualinvoke $r2.getBytes(\Ascii\)
+     virtualinvoke $r32.write($r17)
+     label08: $r14 = \\n\
+     label09: $r17 = virtualinvoke $r14.getBytes(\Ascii\)
+     virtualinvoke $r32.write($r17)
+     $r18 = virtualinvoke $r3.entrySet()
+     $r19 = interfaceinvoke $r18.iterator()
+     label10: $z0 = interfaceinvoke $r19.hasNext()
+     label11: if $z0 == 0 goto label33
+     label12: $r12 = interfaceinvoke $r19.next()
+     label33: $r17 = virtualinvoke $r10.getBytes(\Ascii\)
+     $r20 = (java.util.Map$Entry) $r12
+     $r12 = interfaceinvoke $r20.getKey()
+     $r21 = virtualinvoke $r12.toString()
+     $r12 = interfaceinvoke $r20.getValue()
+     $r22 = virtualinvoke $r12.toString()
+     $r21 = staticinvoke X.06s.A00($r21 1)
+     $r23 = virtualinvoke $r21.getBytes(\Ascii\)
+     $r22 = staticinvoke X.06s.A00($r22 0)
+     $r17 = virtualinvoke $r22.getBytes(\Ascii\)
+     $l1 = virtualinvoke $r32.getFilePointer()
+     $i0 = lengthof $r23
+     label13: $l2 = (long) $i0
+     $l1 = $l1 + $l2
+     label14: $i0 = lengthof $r17
+     label15: $l2 = (long) $i0
+     $l1 = $l1 + $l2
+     $l1 = $l1 + 25L
+     label16: $l2 = virtualinvoke $r32.length()
+     label17: $b3 = $l1 cmp $l2
+     $i0 = (int) $b3
+     $r10 = \trimmed_report=true\n#\
+     label22: virtualinvoke $r32.write($r23)
+     label18: $r17 = virtualinvoke $r10.getBytes(\Ascii\)
+     virtualinvoke $r32.write($r17)
+     virtualinvoke $r32.close()
+     $r33 = new java.io.FileOutputStream
+     label19: $r24 = $r33
+     label21: goto label26
+     label26: $r31 = new java.lang.StringBuilder
+     label23: $r22 = \=\
+     label24: $r23 = virtualinvoke $r22.getBytes(\Ascii\)
+     virtualinvoke $r32.write($r23)
+     virtualinvoke $r32.write($r17)
+     $r17 = virtualinvoke $r14.getBytes(\Ascii\)
+     virtualinvoke $r32.write($r17)
+     label25: goto label10
+     virtualinvoke $r31.append(\ store (too large) \)
+     virtualinvoke $r31.append($r2)
+     $r2 = virtualinvoke $r31.toString()
+     virtualinvoke $r3.store($r33 $r2)
+     label28: virtualinvoke $r33.close()
+     label29: goto label70
+     label70: virtualinvoke $r32.close()
+     label31: virtualinvoke $r24.close()
+     virtualinvoke $r32.write($r17)
+     label34: $l2 = virtualinvoke $r32.getFilePointer()
+     $r17 = X.06s.A00
+     $i0 = lengthof $r17
+     label35: $l1 = (long) $i0
+     $l2 = $l2 + $l1
+     label36: $l4 = virtualinvoke $r32.length()
+     label37: $b3 = $l2 cmp $l4
+     $i0 = (int) $b3
+     label38: virtualinvoke $r32.write($r17)
+     label40: $l2 = virtualinvoke $r32.getFilePointer()
+     label39: goto label34
+     label41: $l2 = $l2 + $l1
+     label42: $l4 = virtualinvoke $r32.length()
+     label43: $b3 = $l2 cmp $l4
+     $i0 = (int) $b3
+     label44: virtualinvoke $r32.writeByte(0)
+     label46: virtualinvoke $r32.close()
+     label45: goto label40
+     label47: goto label70
+     staticinvoke X.07S.A0A(\lacrima\ \Cannot reserve file\ $r26)
+     label50: $r16 = null
+     label51: $r33 = new java.io.FileOutputStream
+     label52: $r24 = $r33
+     label54: $r31 = new java.lang.StringBuilder
+     virtualinvoke $r31.append(\ store (reserve)\)
+     virtualinvoke $r31.append($r2)
+     $r2 = virtualinvoke $r31.toString()
+     virtualinvoke $r3.store($r33 $r2)
+     label56: virtualinvoke $r33.close()
+     label57: goto label71
+     label71: $z0 = virtualinvoke $r4.renameTo($r1)
+     label59: virtualinvoke $r24.close()
+     label62: virtualinvoke $r16.close()
+     $r34 = new java.lang.IllegalArgumentException
+     exitmonitor $r12
+     $r24 = $r33
+     label68: virtualinvoke $r3.store($r33 \no pool\)
+     label69: virtualinvoke $r33.close()
+     goto label71
+     label72: $r31 = new java.lang.StringBuilder
+     $r2 = virtualinvoke $r1.getName()
+     virtualinvoke $r31.append($r2)
+     $r2 = virtualinvoke $r31.toString()
+     $r35 = new java.io.IOException
+     label74: virtualinvoke $r24.close()
+     goto label32
+     goto label60
+     goto label63
+     goto label75

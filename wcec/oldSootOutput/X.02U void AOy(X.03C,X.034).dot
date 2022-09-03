@@ -1,0 +1,518 @@
+     $r21 = r0.A02
+     $r57 = new java.io.File
+     $z0 = virtualinvoke $r57.exists()
+     $r101 = new X.02g
+     $c0 = virtualinvoke $r101.A02()
+     $z0 = staticinvoke X.02h.A01($c0)
+     $r23 = r0.A01
+     $r24 = virtualinvoke $r101.A04($r23)
+     $r25 = X.03D.A32
+     $r26 = virtualinvoke $r21.getName()
+     virtualinvoke $r1.A03($r25 $r26)
+     $r27 = X.03D.A1v
+     $l1 = staticinvoke X.06z.A00($r21 \\)
+     $r28 = staticinvoke java.lang.Long.valueOf($l1)
+     virtualinvoke $r1.A02($r27 $r28)
+     $r29 = X.03D.A03
+     virtualinvoke $r1.A01($r29 $z0)
+     $r25 = X.03D.A2w
+     $c0 = virtualinvoke $r101.A02()
+     $r26 = staticinvoke java.lang.String.valueOf($c0)
+     virtualinvoke $r1.A03($r25 $r26)
+     $r25 = X.03D.A2z
+     virtualinvoke $r1.A03($r25 $r24)
+     $r27 = X.03D.A0j
+     entermonitor $r101
+     label001: $r22 = $r101.A00
+     $z0 = virtualinvoke $r22.exists()
+     $l1 = virtualinvoke $r22.length()
+     label015: exitmonitor $r101
+     $b2 = $l1 cmp 180L
+     $i3 = (int) $b2
+     label002: $r102 = new java.io.RandomAccessFile
+     $r30 = $r102
+     label004: virtualinvoke $r102.seek(180L)
+     $b2 = virtualinvoke $r102.readByte()
+     label005: virtualinvoke $r102.close()
+     label007: $i3 = (int) $b2
+     label006: goto label015
+     $r31 = newarray (byte)$i3
+     $i3 = (int) $b2
+     virtualinvoke $r102.readFully($r31 0 $i3)
+     $r26 = new java.lang.String
+     $l1 = staticinvoke java.lang.Long.parseLong($r26)
+     label008: virtualinvoke $r102.close()
+     label009: goto label016
+     label016: exitmonitor $r101
+     label011: virtualinvoke $r30.close()
+     label014: staticinvoke X.07S.A0A(\lacrima\ \Could not read end point\ $r33)
+     $l1 = 0L
+     goto label017
+     label017: $r28 = staticinvoke java.lang.Long.valueOf($l1)
+     virtualinvoke $r1.A02($r27 $r28)
+     $r25 = X.03D.A2v
+     entermonitor $r101
+     label018: $z0 = virtualinvoke $r22.exists()
+     $l1 = virtualinvoke $r22.length()
+     label031: $c0 = 48
+     $b2 = $l1 cmp 196L
+     $i3 = (int) $b2
+     label019: $r102 = new java.io.RandomAccessFile
+     $r30 = $r102
+     label021: virtualinvoke $r102.seek(196L)
+     $b2 = virtualinvoke $r102.readByte()
+     $c0 = (char) $b2
+     label022: virtualinvoke $r102.close()
+     label023: goto label032
+     label032: exitmonitor $r101
+     label025: virtualinvoke $r30.close()
+     label028: staticinvoke X.07S.A0A(\lacrima\ \Could not read activity callback stage\ $r35)
+     goto label031
+     $r24 = staticinvoke java.lang.String.valueOf($c0)
+     virtualinvoke $r1.A03($r25 $r24)
+     $r29 = X.03D.A02
+     entermonitor $r101
+     label033: $z0 = virtualinvoke $r22.exists()
+     $l1 = virtualinvoke $r22.length()
+     label046: exitmonitor $r101
+     $b2 = $l1 cmp 198L
+     $i3 = (int) $b2
+     label034: $r102 = new java.io.RandomAccessFile
+     $r30 = $r102
+     label036: virtualinvoke $r102.seek(198L)
+     $b2 = virtualinvoke $r102.readByte()
+     $c0 = (char) $b2
+     $z0 = 0
+     $i3 = (int) $c0
+     $z0 = 1
+     label037: virtualinvoke $r30.close()
+     label038: goto label047
+     label047: exitmonitor $r101
+     label040: virtualinvoke $r30.close()
+     label043: staticinvoke X.07S.A0A(\lacrima\ \Could not read activity finishing byte\ $r38)
+     goto label046
+     $z0 = 0
+     goto label048
+     label048: virtualinvoke $r1.A01($r29 $z0)
+     $r27 = X.03D.A0i
+     entermonitor $r101
+     label049: $z0 = virtualinvoke $r22.exists()
+     $l1 = virtualinvoke $r22.length()
+     label062: $i3 = 0
+     $b2 = $l1 cmp 200L
+     $i3 = (int) $b2
+     label050: $r102 = new java.io.RandomAccessFile
+     $r30 = $r102
+     label052: virtualinvoke $r102.seek(200L)
+     $b2 = virtualinvoke $r102.readByte()
+     $i3 = (int) $b2
+     $i3 = $i3 + -48
+     label053: virtualinvoke $r102.close()
+     label054: goto label063
+     label063: exitmonitor $r101
+     label056: virtualinvoke $r30.close()
+     label059: staticinvoke X.07S.A0A(\lacrima\ \Could not read activity callback state byte\ $r41)
+     goto label062
+     $l1 = (long) $i3
+     $r28 = staticinvoke java.lang.Long.valueOf($l1)
+     virtualinvoke $r1.A02($r27 $r28)
+     $r27 = X.03D.A0k
+     entermonitor $r101
+     label064: $z0 = virtualinvoke $r22.exists()
+     $l1 = virtualinvoke $r22.length()
+     label077: $b2 = 0
+     $b2 = $l1 cmp 203L
+     $i3 = (int) $b2
+     label065: $r102 = new java.io.RandomAccessFile
+     $r30 = $r102
+     label067: virtualinvoke $r102.seek(203L)
+     $b2 = virtualinvoke $r102.readByte()
+     label068: virtualinvoke $r102.close()
+     label069: goto label078
+     label078: exitmonitor $r101
+     label071: virtualinvoke $r30.close()
+     label074: staticinvoke X.07S.A0A(\lacrima\ \Could not read number of stopped activities byte\ $r44)
+     goto label077
+     $l1 = (long) $b2
+     $r28 = staticinvoke java.lang.Long.valueOf($l1)
+     virtualinvoke $r1.A02($r27 $r28)
+     $r29 = X.03D.A04
+     entermonitor $r101
+     label079: $z0 = virtualinvoke $r22.exists()
+     $l1 = virtualinvoke $r22.length()
+     label092: exitmonitor $r101
+     $b2 = $l1 cmp 202L
+     $i3 = (int) $b2
+     label080: $r102 = new java.io.RandomAccessFile
+     $r30 = $r102
+     label082: virtualinvoke $r102.seek(202L)
+     $b2 = virtualinvoke $r102.readByte()
+     $c0 = (char) $b2
+     $z0 = 0
+     $i3 = (int) $c0
+     $z0 = 1
+     label083: virtualinvoke $r30.close()
+     label084: goto label093
+     label093: exitmonitor $r101
+     label086: virtualinvoke $r30.close()
+     label089: staticinvoke X.07S.A0A(\lacrima\ \Could not read home task switcher pressed byte\ $r47)
+     goto label092
+     $z0 = 0
+     goto label094
+     label094: virtualinvoke $r1.A01($r29 $z0)
+     $r27 = X.03D.A27
+     $r49 = r0.A00
+     $l1 = $r49.A00
+     $l4 = $r49.A01
+     $l1 = $l1 - $l4
+     $r28 = staticinvoke java.lang.Long.valueOf($l1)
+     virtualinvoke $r1.A02($r27 $r28)
+     $r25 = X.03D.A4O
+     entermonitor $r101
+     label095: $z0 = virtualinvoke $r22.exists()
+     $l1 = virtualinvoke $r22.length()
+     label107: $r24 = \unknown\
+     $b2 = $l1 cmp 3L
+     $i3 = (int) $b2
+     label096: $r102 = new java.io.RandomAccessFile
+     $r30 = $r102
+     label098: virtualinvoke $r102.seek(3L)
+     $b2 = virtualinvoke $r102.readByte()
+     $r24 = \unknown\
+     label099: $i3 = (int) $b2
+     goto label100
+     label100: virtualinvoke $r30.close()
+     $r31 = newarray (byte)$i3
+     $i3 = (int) $b2
+     virtualinvoke $r102.readFully($r31 0 $i3)
+     $r26 = new java.lang.String
+     $r24 = $r26
+     label101: goto label108
+     label108: exitmonitor $r101
+     label103: virtualinvoke $r30.close()
+     label106: staticinvoke X.07S.A0A(\lacrima\ \Could not read nav module\ $r51)
+     virtualinvoke $r1.A03($r25 $r24)
+     $r25 = X.03D.A3P
+     entermonitor $r101
+     label109: $r103 = new java.lang.StringBuilder
+     entermonitor $r101
+     label110: $z0 = virtualinvoke $r22.exists()
+     $l1 = virtualinvoke $r22.length()
+     label122: $r24 = \unknown\
+     $b2 = $l1 cmp 85L
+     $i3 = (int) $b2
+     label111: $r102 = new java.io.RandomAccessFile
+     $r30 = $r102
+     label113: virtualinvoke $r102.seek(85L)
+     $b2 = virtualinvoke $r102.readByte()
+     $r24 = \unknown\
+     label114: $i3 = (int) $b2
+     goto label115
+     label115: virtualinvoke $r30.close()
+     $r31 = newarray (byte)$i3
+     $i3 = (int) $b2
+     virtualinvoke $r102.readFully($r31 0 $i3)
+     $r26 = new java.lang.String
+     $r24 = $r26
+     label116: goto label123
+     label123: exitmonitor $r101
+     label118: virtualinvoke $r30.close()
+     label121: staticinvoke X.07S.A0A(\lacrima\ \Could not read end point\ $r54)
+     virtualinvoke $r103.append($r24)
+     entermonitor $r101
+     label124: $z0 = virtualinvoke $r22.exists()
+     $l1 = virtualinvoke $r22.length()
+     label136: $r24 = \\
+     $b2 = $l1 cmp 621L
+     $i3 = (int) $b2
+     label125: $r102 = new java.io.RandomAccessFile
+     $r30 = $r102
+     label127: virtualinvoke $r102.seek(621L)
+     $b2 = virtualinvoke $r102.readByte()
+     $r24 = \\
+     label128: $i3 = (int) $b2
+     goto label129
+     label129: virtualinvoke $r30.close()
+     $r31 = newarray (byte)$i3
+     $i3 = (int) $b2
+     virtualinvoke $r102.readFully($r31 0 $i3)
+     $r26 = new java.lang.String
+     $r24 = $r26
+     label130: goto label137
+     label137: exitmonitor $r101
+     label132: virtualinvoke $r30.close()
+     label135: staticinvoke X.07S.A0A(\lacrima\ \Could not read end point\ $r56)
+     virtualinvoke $r103.append($r24)
+     $r24 = virtualinvoke $r103.toString()
+     label138: exitmonitor $r101
+     virtualinvoke $r1.A03($r25 $r24)
+     $r104 = new java.io.File
+     $r105 = new X.02i
+     $c0 = virtualinvoke $r105.A00()
+     $r104 = new java.io.File
+     $r105 = new X.02i
+     $c5 = virtualinvoke $r105.A00()
+     $r25 = X.03D.A30
+     $c6 = virtualinvoke $r101.A03()
+     $r24 = staticinvoke java.lang.String.valueOf($c6)
+     virtualinvoke $r1.A03($r25 $r24)
+     $r25 = X.03D.A31
+     $r24 = staticinvoke java.lang.String.valueOf($c0)
+     virtualinvoke $r1.A03($r25 $r24)
+     $r25 = X.03D.A2x
+     $r24 = staticinvoke java.lang.String.valueOf($c5)
+     virtualinvoke $r1.A03($r25 $r24)
+     $r25 = X.03D.A2y
+     $c6 = virtualinvoke $r101.A03()
+     $c0 = staticinvoke X.02h.A00($c6 $c0 $c5)
+     $r24 = staticinvoke java.lang.String.valueOf($c0)
+     virtualinvoke $r1.A03($r25 $r24)
+     $r25 = X.03D.A3J
+     $r104 = new java.io.File
+     $z0 = virtualinvoke $r104.exists()
+     $r24 = staticinvoke java.lang.String.valueOf($z0)
+     virtualinvoke $r1.A03($r25 $r24)
+     $r25 = X.03D.A3A
+     entermonitor $r101
+     label139: $z0 = virtualinvoke $r22.exists()
+     $l1 = virtualinvoke $r22.length()
+     label150: $c0 = 32
+     $b2 = $l1 cmp 166L
+     $i3 = (int) $b2
+     label140: $r102 = new java.io.RandomAccessFile
+     $r30 = $r102
+     label142: virtualinvoke $r102.seek(166L)
+     $b2 = virtualinvoke $r102.readByte()
+     $c0 = (char) $b2
+     label143: virtualinvoke $r102.close()
+     label144: goto label151
+     label151: exitmonitor $r101
+     label146: virtualinvoke $r30.close()
+     label149: staticinvoke X.07S.A0A(\lacrima\ \Could not read cold start mode\ $r59)
+     $r24 = staticinvoke java.lang.String.valueOf($c0)
+     virtualinvoke $r1.A03($r25 $r24)
+     $r27 = X.03D.A28
+     entermonitor $r101
+     label152: $z0 = virtualinvoke $r22.exists()
+     $l1 = virtualinvoke $r22.length()
+     label166: exitmonitor $r101
+     $b2 = $l1 cmp 167L
+     $i3 = (int) $b2
+     label153: $r102 = new java.io.RandomAccessFile
+     $r30 = $r102
+     label155: virtualinvoke $r102.seek(167L)
+     $b2 = virtualinvoke $r102.readByte()
+     label156: virtualinvoke $r102.close()
+     label158: $i3 = (int) $b2
+     label157: goto label166
+     $r31 = newarray (byte)$i3
+     $i3 = (int) $b2
+     virtualinvoke $r102.readFully($r31 0 $i3)
+     $r26 = new java.lang.String
+     $l1 = staticinvoke java.lang.Long.parseLong($r26)
+     label159: virtualinvoke $r102.close()
+     label160: goto label167
+     label167: exitmonitor $r101
+     label162: virtualinvoke $r30.close()
+     label165: staticinvoke X.07S.A0A(\lacrima\ \Could not read time to first activity transition\ $r61)
+     $l1 = 0L
+     goto label168
+     label168: $r28 = staticinvoke java.lang.Long.valueOf($l1)
+     virtualinvoke $r1.A02($r27 $r28)
+     $r25 = X.03D.A3X
+     entermonitor $r101
+     label169: $z0 = virtualinvoke $r22.exists()
+     $l1 = virtualinvoke $r22.length()
+     label180: exitmonitor $r101
+     $b2 = $l1 cmp 178L
+     $i3 = (int) $b2
+     label170: $r102 = new java.io.RandomAccessFile
+     $r30 = $r102
+     label172: virtualinvoke $r102.seek(178L)
+     $b2 = virtualinvoke $r102.readByte()
+     $c0 = (char) $b2
+     $z0 = 0
+     $i3 = (int) $c0
+     $z0 = 1
+     label173: virtualinvoke $r30.close()
+     label174: goto label181
+     label181: exitmonitor $r101
+     label176: virtualinvoke $r30.close()
+     label179: staticinvoke X.07S.A0A(\lacrima\ \Could not read foreground until first activity transition\ $r63)
+     $z0 = 0
+     goto label182
+     label182: $r24 = staticinvoke java.lang.String.valueOf($z0)
+     virtualinvoke $r1.A03($r25 $r24)
+     entermonitor $r101
+     label183: $z0 = virtualinvoke $r22.exists()
+     $l1 = virtualinvoke $r22.length()
+     label198: $r64 = staticinvoke java.lang.Boolean.valueOf(0)
+     $b2 = $l1 cmp 204L
+     $i3 = (int) $b2
+     label184: $r102 = new java.io.RandomAccessFile
+     $r30 = $r102
+     label186: virtualinvoke $r102.seek(204L)
+     $b2 = virtualinvoke $r102.readByte()
+     $c0 = (char) $b2
+     $i3 = (int) $c0
+     $r64 = null
+     label187: $z0 = 0
+     goto label189
+     label189: virtualinvoke $r30.close()
+     $i3 = (int) $c0
+     $z0 = 1
+     label188: $r64 = staticinvoke java.lang.Boolean.valueOf($z0)
+     label190: goto label199
+     label199: exitmonitor $r101
+     label192: virtualinvoke $r30.close()
+     label195: staticinvoke X.07S.A0A(\lacrima\ \Could not read lock screen byte\ $r66)
+     goto label198
+     $r25 = X.03D.A5U
+     label200: $r25 = X.03D.A5f
+     $r24 = virtualinvoke $r64.toString()
+     virtualinvoke $r1.A03($r25 $r24)
+     entermonitor $r101
+     label201: $z0 = virtualinvoke $r22.exists()
+     $l1 = virtualinvoke $r22.length()
+     label214: exitmonitor $r101
+     $b2 = $l1 cmp 205L
+     $i3 = (int) $b2
+     label202: $r102 = new java.io.RandomAccessFile
+     $r30 = $r102
+     label204: virtualinvoke $r102.seek(205L)
+     $b2 = virtualinvoke $r102.readByte()
+     $c0 = (char) $b2
+     $z0 = 0
+     $i3 = (int) $c0
+     $z0 = 1
+     label205: virtualinvoke $r30.close()
+     label206: goto label215
+     label215: exitmonitor $r101
+     label208: virtualinvoke $r30.close()
+     label211: staticinvoke X.07S.A0A(\lacrima\ \Could not read system binder died byte\ $r69)
+     goto label214
+     $z0 = 0
+     goto label216
+     label216: $r24 = staticinvoke java.lang.String.valueOf($z0)
+     virtualinvoke $r1.A03($r25 $r24)
+     $r71 = staticinvoke X.02g.A01($r101 363 364)
+     staticinvoke X.02U.A01($r1 $r71 \on_pause_recv_hook_setup\)
+     $r72 = staticinvoke X.02g.A00($r101 \last OnPause request received time ms\ 206L)
+     staticinvoke X.02U.A00($r1 $r72 \last_on_pause_request_recv\)
+     $r72 = staticinvoke X.02g.A00($r101 \last OnPause request to leave app received time ms\ 223L)
+     staticinvoke X.02U.A00($r1 $r72 \last_on_pause_request_to_leave_app_recv\)
+     $r71 = staticinvoke X.02g.A01($r101 492 493)
+     staticinvoke X.02U.A01($r1 $r71 \on_pause_exec_hook_setup\)
+     $r72 = staticinvoke X.02g.A00($r101 \last OnPause request execute start time ms\ 240L)
+     staticinvoke X.02U.A00($r1 $r72 \last_on_pause_request_exec\)
+     $r72 = staticinvoke X.02g.A00($r101 \last OnPause request to leave app execute start time ms\ 257L)
+     staticinvoke X.02U.A00($r1 $r72 \last_on_pause_request_to_leave_app_exec\)
+     entermonitor $r101
+     label217: $z0 = virtualinvoke $r22.exists()
+     $l1 = virtualinvoke $r22.length()
+     label230: exitmonitor $r101
+     $b2 = $l1 cmp 274L
+     $i3 = (int) $b2
+     label218: $r102 = new java.io.RandomAccessFile
+     $r30 = $r102
+     label220: virtualinvoke $r102.seek(274L)
+     $b2 = virtualinvoke $r102.readByte()
+     $c0 = (char) $b2
+     $z0 = 0
+     $i3 = (int) $c0
+     $z0 = 1
+     label221: virtualinvoke $r30.close()
+     label222: goto label231
+     label231: exitmonitor $r101
+     label224: virtualinvoke $r30.close()
+     label227: staticinvoke X.07S.A0A(\lacrima\ \Could not read content provider died byte\ $r74)
+     goto label230
+     $z0 = 0
+     goto label232
+     label232: $r25 = X.03D.A3C
+     $r24 = staticinvoke java.lang.String.valueOf($z0)
+     virtualinvoke $r1.A03($r25 $r24)
+     $r25 = X.03D.A3E
+     label282: $r100 = X.06V.A03
+     entermonitor $r101
+     label233: $z0 = virtualinvoke $r22.exists()
+     $l1 = virtualinvoke $r22.length()
+     label246: $l1 = 0L
+     $b2 = $l1 cmp 274L
+     $i3 = (int) $b2
+     label234: $r102 = new java.io.RandomAccessFile
+     $r30 = $r102
+     label236: virtualinvoke $r102.seek(275L)
+     $l1 = virtualinvoke $r102.readLong()
+     label237: virtualinvoke $r102.close()
+     label238: goto label247
+     label247: exitmonitor $r101
+     label240: virtualinvoke $r30.close()
+     label243: staticinvoke X.07S.A0A(\lacrima\ \Could not read content provider died time\ $r77)
+     goto label246
+     $r24 = staticinvoke java.lang.String.valueOf($l1)
+     virtualinvoke $r1.A03($r25 $r24)
+     $r25 = X.03D.A3D
+     entermonitor $r101
+     label248: $z0 = virtualinvoke $r22.exists()
+     $l1 = virtualinvoke $r22.length()
+     label280: $r24 = \\
+     $b2 = $l1 cmp 274L
+     $i3 = (int) $b2
+     label249: $r102 = new java.io.RandomAccessFile
+     $r30 = $r102
+     label251: virtualinvoke $r102.seek(283L)
+     $b2 = virtualinvoke $r102.readByte()
+     $r24 = \unknown\
+     label252: $i3 = (int) $b2
+     goto label253
+     label253: virtualinvoke $r30.close()
+     $r31 = newarray (byte)$i3
+     $i3 = (int) $b2
+     virtualinvoke $r102.readFully($r31 0 $i3)
+     $r26 = new java.lang.String
+     $r24 = $r26
+     label254: goto label281
+     label281: exitmonitor $r101
+     label256: virtualinvoke $r30.close()
+     label259: staticinvoke X.07S.A0A(\lacrima\ \Could not read content provider died name\ $r80)
+     goto label280
+     exitmonitor $r101
+     exitmonitor $r101
+     exitmonitor $r101
+     exitmonitor $r101
+     exitmonitor $r101
+     exitmonitor $r101
+     exitmonitor $r101
+     exitmonitor $r101
+     exitmonitor $r101
+     exitmonitor $r101
+     exitmonitor $r101
+     exitmonitor $r101
+     exitmonitor $r101
+     exitmonitor $r101
+     exitmonitor $r101
+     exitmonitor $r101
+     exitmonitor $r101
+     exitmonitor $r101
+     $r24 = staticinvoke java.lang.String.valueOf($r24)
+     virtualinvoke $r1.A03($r25 $r24)
+     $r29 = X.03D.A0H
+     virtualinvoke $r1.A01($r29 0)
+     goto label012
+     goto label026
+     goto label041
+     goto label057
+     goto label072
+     goto label087
+     goto label104
+     goto label119
+     goto label133
+     goto label147
+     goto label163
+     goto label177
+     goto label193
+     goto label209
+     goto label225
+     goto label241
+     goto label257

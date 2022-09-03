@@ -1,0 +1,5 @@
+     $r3 = new java.lang.StringBuilder
+     virtualinvoke $r3.append($r1)
+     virtualinvoke $r3.append(\ was=\)
+     virtualinvoke $r3.append($r2)
+     $r1 = virtualinvoke $r3.toString()

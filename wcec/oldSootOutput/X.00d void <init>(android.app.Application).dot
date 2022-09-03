@@ -1,0 +1,4 @@
+     r0.A01 = $r1
+     r0.A02 = 1
+     $i0 = staticinvoke java.lang.Math.max(500 2000)
+     r0.A00 = $i0

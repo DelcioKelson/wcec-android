@@ -1,0 +1,7 @@
+     $z0 = virtualinvoke $r0.exists()
+     label1: $r3 = virtualinvoke $r0.getAbsolutePath()
+     label5: $r3 = virtualinvoke $r0.getAbsolutePath()
+     label2: $r2 = new android.os.StatFs
+     virtualinvoke $r2.restat($r3)
+     staticinvoke X.01x.A00($r4)
+     r5 = new java.lang.NullPointerException

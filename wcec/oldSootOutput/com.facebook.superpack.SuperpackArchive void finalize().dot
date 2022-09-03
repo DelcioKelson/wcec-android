@@ -1,0 +1,5 @@
+     $l0 = r0.mPtr
+     $b1 = $l0 cmp 0L
+     label1: staticinvoke com.facebook.superpack.SuperpackArchive.closeNative($l0)
+     r0.mPtr = 0L
+     $r1 = new java.lang.IllegalStateException

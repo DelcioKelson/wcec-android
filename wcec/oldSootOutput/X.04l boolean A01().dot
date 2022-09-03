@@ -1,0 +1,5 @@
+     $r1 = r0.A01
+     virtualinvoke $r1.A03()
+     $i1 = r0.A00
+     $r2 = $r1.A00
+     $i0 = lengthof $r2

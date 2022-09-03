@@ -1,0 +1,4 @@
+     $r2 = virtualinvoke $r4.getFilesDir()
+     $r1 = new java.io.File
+     label1: virtualinvoke $r1.createNewFile()
+     label3: virtualinvoke $r1.delete()

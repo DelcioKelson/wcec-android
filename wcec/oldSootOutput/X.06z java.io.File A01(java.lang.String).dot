@@ -1,0 +1,4 @@
+     $r2 = virtualinvoke r0.A03($r1)
+     $i0 = lengthof $r2
+     label1: $i0 = $i0 - 2
+     $r3 = $r2$i0

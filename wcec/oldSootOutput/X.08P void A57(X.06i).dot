@@ -1,0 +1,8 @@
+     $r2 = $r1.A00
+     staticinvoke X.02y.A01($r2 \Did you call earlyInit()?\)
+     $r3 = staticinvoke X.07l.A00()
+     $r4 = X.034.A03
+     $r5 = virtualinvoke $r2.A04(class \LX/00U\)
+     $r6 = (X.09j) $r5
+     staticinvoke X.07S.A06(\lacrima\ \Cannot find registered detector\)
+     label1: virtualinvoke $r2.A06($r3 $r4 $r6)

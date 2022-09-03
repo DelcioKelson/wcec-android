@@ -1,0 +1,5 @@
+     $r3 = $r1.A0B
+     $r4 = new X.03A
+     label1: $r2 = interfaceinvoke $r3.get()
+     $r3 = $r4
+     $r1.A0B = $r4

@@ -1,0 +1,5 @@
+     $r3 = virtualinvoke $r1.getPackageName()
+     $r4 = staticinvoke X.01e.A03($r1 $r3)
+     $r5 = X.01b.A1G
+     $z0 = interfaceinvoke $r5.contains($r4)
+     $z0 = virtualinvoke r0.A04($r2 $z0)

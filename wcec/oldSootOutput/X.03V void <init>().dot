@@ -1,0 +1,170 @@
+     $r2 = X.01b.A0b
+     $r3 = newarray (X.01c)2
+     $r1 = X.01b.A0Z
+     $r30 = $r1
+     $r4 = X.01b.A0G
+     $r31 = $r4
+     $r5 = staticinvoke X.01b.A00($r3)
+     virtualinvoke r0.put($r2 $r5)
+     $r2 = X.01b.A0d
+     $r3 = newarray (X.01c)2
+     $r30 = $r1
+     $r1 = X.01b.A0H
+     $r31 = $r1
+     $r5 = staticinvoke X.01b.A00($r3)
+     virtualinvoke r0.put($r2 $r5)
+     $r1 = X.01b.A0i
+     $r3 = newarray (X.01c)1
+     $r2 = X.01b.A00
+     $r30 = $r2
+     $r5 = staticinvoke X.01b.A00($r3)
+     virtualinvoke r0.put($r1 $r5)
+     $r1 = X.01b.A0k
+     $r3 = newarray (X.01c)1
+     $r2 = X.01b.A02
+     $r30 = $r2
+     $r5 = staticinvoke X.01b.A00($r3)
+     virtualinvoke r0.put($r1 $r5)
+     $r1 = X.01b.A0j
+     $r3 = newarray (X.01c)1
+     $r2 = X.01b.A01
+     $r30 = $r2
+     $r5 = staticinvoke X.01b.A00($r3)
+     virtualinvoke r0.put($r1 $r5)
+     $r1 = X.01b.A0l
+     $r3 = newarray (X.01c)1
+     $r2 = X.01b.A03
+     $r30 = $r2
+     $r5 = staticinvoke X.01b.A00($r3)
+     virtualinvoke r0.put($r1 $r5)
+     $r1 = X.01b.A0m
+     $r3 = newarray (X.01c)1
+     $r2 = X.01b.A04
+     $r30 = $r2
+     $r5 = staticinvoke X.01b.A00($r3)
+     virtualinvoke r0.put($r1 $r5)
+     $r1 = X.01b.A11
+     $r3 = newarray (X.01c)1
+     $r2 = X.01b.A0C
+     $r30 = $r2
+     $r5 = staticinvoke X.01b.A00($r3)
+     virtualinvoke r0.put($r1 $r5)
+     $r1 = X.01b.A10
+     $r3 = newarray (X.01c)1
+     $r2 = X.01b.A0B
+     $r30 = $r2
+     $r5 = staticinvoke X.01b.A00($r3)
+     virtualinvoke r0.put($r1 $r5)
+     $r1 = X.01b.A12
+     $r3 = newarray (X.01c)1
+     $r2 = X.01b.A0D
+     $r30 = $r2
+     $r5 = staticinvoke X.01b.A00($r3)
+     virtualinvoke r0.put($r1 $r5)
+     $r1 = X.01b.A0y
+     $r3 = newarray (X.01c)1
+     $r2 = X.01b.A0A
+     $r30 = $r2
+     $r5 = staticinvoke X.01b.A00($r3)
+     virtualinvoke r0.put($r1 $r5)
+     $r2 = X.01b.A19
+     $r3 = newarray (X.01c)2
+     $r1 = X.01b.A0L
+     $r30 = $r1
+     $r1 = X.01b.A0g
+     $r31 = $r1
+     $r5 = staticinvoke X.01b.A00($r3)
+     virtualinvoke r0.put($r2 $r5)
+     $r2 = X.01b.A15
+     $r3 = newarray (X.01c)1
+     $r4 = X.01b.A0F
+     $r30 = $r4
+     $r5 = staticinvoke X.01b.A00($r3)
+     virtualinvoke r0.put($r2 $r5)
+     $r2 = X.01b.A1A
+     $r3 = newarray (X.01c)1
+     $r4 = X.01b.A0M
+     $r30 = $r4
+     $r5 = staticinvoke X.01b.A00($r3)
+     virtualinvoke r0.put($r2 $r5)
+     $r2 = X.01b.A16
+     $r3 = newarray (X.01c)1
+     $r4 = X.01b.A0I
+     $r30 = $r4
+     $r5 = staticinvoke X.01b.A00($r3)
+     virtualinvoke r0.put($r2 $r5)
+     $r2 = X.01b.A17
+     $r3 = newarray (X.01c)1
+     $r4 = X.01b.A0J
+     $r30 = $r4
+     $r5 = staticinvoke X.01b.A00($r3)
+     virtualinvoke r0.put($r2 $r5)
+     $r2 = X.01b.A18
+     $r3 = newarray (X.01c)1
+     $r4 = X.01b.A0K
+     $r30 = $r4
+     $r5 = staticinvoke X.01b.A00($r3)
+     virtualinvoke r0.put($r2 $r5)
+     $r2 = X.01b.A13
+     $r3 = newarray (X.01c)1
+     $r4 = X.01b.A0E
+     $r30 = $r4
+     $r5 = staticinvoke X.01b.A00($r3)
+     virtualinvoke r0.put($r2 $r5)
+     $r2 = X.01b.A0h
+     $r3 = newarray (X.01c)1
+     $r30 = $r1
+     $r5 = staticinvoke X.01b.A00($r3)
+     virtualinvoke r0.put($r2 $r5)
+     $r1 = X.01b.A0w
+     $r3 = newarray (X.01c)1
+     $r2 = X.01b.A08
+     $r30 = $r2
+     $r5 = staticinvoke X.01b.A00($r3)
+     virtualinvoke r0.put($r1 $r5)
+     $r1 = X.01b.A0v
+     $r3 = newarray (X.01c)1
+     $r2 = X.01b.A07
+     $r30 = $r2
+     $r5 = staticinvoke X.01b.A00($r3)
+     virtualinvoke r0.put($r1 $r5)
+     $r1 = X.01b.A0x
+     $r3 = newarray (X.01c)1
+     $r2 = X.01b.A09
+     $r30 = $r2
+     $r5 = staticinvoke X.01b.A00($r3)
+     virtualinvoke r0.put($r1 $r5)
+     $r1 = X.01b.A1B
+     $r3 = newarray (X.01c)1
+     $r2 = X.01b.A0N
+     $r30 = $r2
+     $r5 = staticinvoke X.01b.A00($r3)
+     virtualinvoke r0.put($r1 $r5)
+     $r1 = X.01b.A1E
+     $r3 = newarray (X.01c)1
+     $r2 = X.01b.A0O
+     $r30 = $r2
+     $r5 = staticinvoke X.01b.A00($r3)
+     virtualinvoke r0.put($r1 $r5)
+     $r2 = X.01b.A0u
+     $r3 = newarray (X.01c)1
+     $r1 = X.01b.A06
+     $r30 = $r1
+     $r5 = staticinvoke X.01b.A00($r3)
+     virtualinvoke r0.put($r2 $r5)
+     $r2 = X.01b.A0t
+     $r3 = newarray (X.01c)1
+     $r30 = $r1
+     $r5 = staticinvoke X.01b.A00($r3)
+     virtualinvoke r0.put($r2 $r5)
+     $r2 = X.01b.A0q
+     $r3 = newarray (X.01c)1
+     $r30 = $r1
+     $r5 = staticinvoke X.01b.A00($r3)
+     virtualinvoke r0.put($r2 $r5)
+     $r1 = X.01b.A0n
+     $r3 = newarray (X.01c)1
+     $r2 = X.01b.A05
+     $r30 = $r2
+     $r5 = staticinvoke X.01b.A00($r3)
+     virtualinvoke r0.put($r1 $r5)

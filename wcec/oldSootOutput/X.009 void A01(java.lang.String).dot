@@ -1,0 +1,169 @@
+     $z0 = virtualinvoke r0.A02()
+     $r3 = r0.A03
+     $z0 = virtualinvoke $r3.isEmpty()
+     $r2 = r0.A04
+     $i0 = virtualinvoke $r2.lastIndexOf(47)
+     $r4 = \\
+     $i0 = $i0 + 1
+     label01: $z0 = virtualinvoke $r4.isEmpty()
+     $i1 = virtualinvoke $r2.lastIndexOf(46)
+     $r4 = virtualinvoke $r2.substring($i0 $i1)
+     label02: $r6 = virtualinvoke r0.A00(1)
+     label03: $r31 = new java.lang.StringBuilder
+     virtualinvoke $r31.append($r6)
+     virtualinvoke $r31.append($r4)
+     virtualinvoke $r31.append(\.odex\)
+     $r5 = virtualinvoke $r31.toString()
+     $r31 = new java.lang.StringBuilder
+     virtualinvoke $r31.append($r6)
+     virtualinvoke $r31.append($r4)
+     virtualinvoke $r31.append(\.vdex\)
+     $r6 = virtualinvoke $r31.toString()
+     $r31 = new java.lang.StringBuilder
+     virtualinvoke $r31.append($r3)
+     virtualinvoke $r31.append(\/\)
+     virtualinvoke $r31.append($r4)
+     virtualinvoke $r31.append(\_tmp.odex\)
+     $r8 = virtualinvoke $r31.toString()
+     $r31 = new java.lang.StringBuilder
+     virtualinvoke $r31.append($r3)
+     virtualinvoke $r31.append(\/\)
+     virtualinvoke $r31.append($r4)
+     virtualinvoke $r31.append(\_tmp.vdex\)
+     $r3 = virtualinvoke $r31.toString()
+     $r9 = newarray (java.lang.String)4
+     $r90 = \/system/bin/dex2oat\
+     $r31 = new java.lang.StringBuilder
+     virtualinvoke $r31.append($r2)
+     $r4 = virtualinvoke $r31.toString()
+     $r91 = $r4
+     $r31 = new java.lang.StringBuilder
+     virtualinvoke $r31.append($r8)
+     $r4 = virtualinvoke $r31.toString()
+     $r92 = $r4
+     $r93 = \--no-watch-dog\
+     $r32 = new java.lang.ProcessBuilder
+     $i0 = staticinvoke X.007.A00()
+     $r4 = staticinvoke X.007.A01()
+     label04: if $r1 == null goto label05
+     $z0 = virtualinvoke $r4.isEmpty()
+     $r11 = virtualinvoke $r32.command()
+     $r31 = new java.lang.StringBuilder
+     virtualinvoke $r31.append($r4)
+     $r12 = virtualinvoke $r31.toString()
+     interfaceinvoke $r11.add($r12)
+     $r31 = new java.lang.StringBuilder
+     virtualinvoke $r31.append($r4)
+     virtualinvoke $r31.append(\.features\)
+     $r12 = virtualinvoke $r31.toString()
+     staticinvoke X.00A.A00($r32 $r12 \--instruction-set-features\)
+     $r31 = new java.lang.StringBuilder
+     virtualinvoke $r31.append(\dalvik.vm.isa.\)
+     virtualinvoke $r31.append($r4)
+     virtualinvoke $r31.append(\.variant\)
+     $r4 = virtualinvoke $r31.toString()
+     staticinvoke X.00A.A00($r32 $r4 \--instruction-set-variant\)
+     $i0 = staticinvoke X.007.A00()
+     label05: $r1 = staticinvoke X.06p.A01(\dalvik.vm.dex2oat-Xms\)
+     label09: $r11 = virtualinvoke $r32.command()
+     $r13 = virtualinvoke $r32.environment()
+     interfaceinvoke $r13.put(\CLASSPATH\ $r1)
+     $r1 = staticinvoke java.lang.System.getenv(\BOOTCLASSPATH\)
+     interfaceinvoke $r13.put(\BOOTCLASSPATH\ $r1)
+     $z0 = virtualinvoke $r1.isEmpty()
+     $r11 = virtualinvoke $r32.command()
+     label06: $r1 = staticinvoke X.06p.A01(\dalvik.vm.dex2oat-Xmx\)
+     interfaceinvoke $r11.add(\--runtime-arg\)
+     $r11 = virtualinvoke $r32.command()
+     $r31 = new java.lang.StringBuilder
+     virtualinvoke $r31.append($r1)
+     $r1 = virtualinvoke $r31.toString()
+     interfaceinvoke $r11.add($r1)
+     $z0 = virtualinvoke $r1.isEmpty()
+     $r11 = virtualinvoke $r32.command()
+     label07: staticinvoke X.00A.A00($r32 \dalvik.vm.dex2oat-filter\ \--compiler-filter\)
+     interfaceinvoke $r11.add(\--runtime-arg\)
+     $r11 = virtualinvoke $r32.command()
+     $r31 = new java.lang.StringBuilder
+     virtualinvoke $r31.append($r1)
+     $r1 = virtualinvoke $r31.toString()
+     interfaceinvoke $r11.add($r1)
+     $r1 = staticinvoke X.06p.A01(\dalvik.vm.dex2oat-flags\)
+     $z0 = virtualinvoke $r1.isEmpty()
+     $r33 = new android.text.TextUtils$SimpleStringSplitter
+     label10: $i0 = -1
+     virtualinvoke $r33.setString($r1)
+     label08: $z0 = virtualinvoke $r33.hasNext()
+     $r11 = virtualinvoke $r32.command()
+     $r1 = virtualinvoke $r33.next()
+     interfaceinvoke $r11.add($r1)
+     goto label08
+     $r31 = new java.lang.StringBuilder
+     virtualinvoke $r31.append($r1)
+     $r1 = virtualinvoke $r31.toString()
+     interfaceinvoke $r11.add($r1)
+     goto label05
+     label11: $r15 = virtualinvoke $r32.start()
+     label12: $i1 = virtualinvoke $r15.waitFor()
+     label13: $i0 = $i1
+     $i0 = staticinvoke X.007.A00()
+     label26: $r31 = new java.lang.StringBuilder
+     label14: $r9 = newarray (java.lang.String)0
+     label17: $r25 = new java.io.File
+     $r16 = staticinvoke java.nio.file.Paths.get($r8 $r9)
+     $r9 = newarray (java.lang.String)0
+     $r17 = staticinvoke java.nio.file.Paths.get($r5 $r9)
+     $r9 = newarray (java.lang.String)0
+     $r18 = staticinvoke java.nio.file.Paths.get($r3 $r9)
+     $r9 = newarray (java.lang.String)0
+     $r19 = staticinvoke java.nio.file.Paths.get($r6 $r9)
+     $r20 = newarray (java.nio.file.CopyOption)2
+     $r21 = java.nio.file.StandardCopyOption.REPLACE_EXISTING
+     $r200 = $r21
+     $r21 = java.nio.file.StandardCopyOption.ATOMIC_MOVE
+     $r201 = $r21
+     staticinvoke java.nio.file.Files.move($r16 $r17 $r20)
+     $r20 = newarray (java.nio.file.CopyOption)2
+     $r22 = java.nio.file.StandardCopyOption.REPLACE_EXISTING
+     $r200 = $r22
+     $r201 = $r21
+     staticinvoke java.nio.file.Files.move($r18 $r19 $r20)
+     label15: goto label18
+     label18: $r31 = new java.lang.StringBuilder
+     staticinvoke X.008.A00(\Exception when moving file using Path APIs\ $r23)
+     virtualinvoke $r25.delete()
+     $r34 = new java.io.File
+     $z0 = virtualinvoke $r34.renameTo($r25)
+     $i0 = staticinvoke X.007.A00()
+     label27: $r29 = newarray (java.lang.Object)4
+     $r25 = new java.io.File
+     virtualinvoke $r25.delete()
+     $r34 = new java.io.File
+     $z0 = virtualinvoke $r34.renameTo($r25)
+     virtualinvoke $r31.append($r2)
+     virtualinvoke $r31.append(\_compiled\)
+     $r1 = virtualinvoke $r31.toString()
+     label20: $r25 = new java.io.File
+     virtualinvoke $r25.createNewFile()
+     $r31 = new java.lang.StringBuilder
+     virtualinvoke $r31.append($r2)
+     $r1 = virtualinvoke $r31.toString()
+     staticinvoke X.008.A00($r1 $r26)
+     staticinvoke X.008.A00(\Waiting for dex2oat failed\ $r27)
+     goto label26
+     staticinvoke X.008.A00(\Starting dex2oat failed\ $r28)
+     virtualinvoke $r31.append($i0)
+     $r1 = virtualinvoke $r31.toString()
+     $r2 = \Failed to generate odex\
+     goto label28
+     label28: $r35 = new java.lang.IllegalStateException
+     $r290 = $r8
+     $r291 = $r5
+     $r292 = $r3
+     $r293 = $r6
+     $r2 = \Failed to move odex or vdex\
+     staticinvoke X.008.A00($r1 $r35)
+     $r31 = new java.lang.StringBuilder
+     virtualinvoke $r31.append($r3)
+     $r1 = virtualinvoke $r31.toString()
+     staticinvoke X.008.A00($r1 $r30)

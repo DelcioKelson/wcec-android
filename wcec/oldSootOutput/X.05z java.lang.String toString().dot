@@ -1,0 +1,10 @@
+     entermonitor r0
+     label1: $r1 = new java.lang.StringBuilder
+     $r2 = r0.A00
+     $r3 = interfaceinvoke $r2.iterator()
+     $z0 = interfaceinvoke $r3.hasNext()
+     interfaceinvoke $r3.next()
+     label2: $r5 = virtualinvoke $r1.toString()
+     $r4 = new java.lang.NullPointerException
+     label3: exitmonitor r0
+     exitmonitor r0

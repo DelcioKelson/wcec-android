@@ -1,0 +1,14 @@
+     $z0 = 0
+     $z0 = 1
+     label01: $b1 = 0
+     $b1 = -1
+     label02: $i2 = $b1
+     $i3 = 0
+     $i4 = 0
+     label03: if $i2 >= $i0 goto label09
+     $i4 = $i4 + $i5
+     $i3 = $i5
+     label06: if $i5 >= 0 goto label08
+     label08: $i2 = $i2 + 1
+     label07: if $z0 == 0 goto label05
+     goto label03

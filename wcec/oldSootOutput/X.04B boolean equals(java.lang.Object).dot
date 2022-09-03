@@ -1,0 +1,10 @@
+     $z0 = $r1 instanceof X.04B
+     $r2 = (X.04B) $r1
+     $r3 = r0.A01
+     $r4 = $r2.A01
+     $z0 = interfaceinvoke $r3.equals($r4)
+     $r5 = r0.A00
+     $r6 = $r5.A01
+     $r5 = $r2.A00
+     $r7 = $r5.A01
+     $z0 = virtualinvoke $r6.A00($r7)

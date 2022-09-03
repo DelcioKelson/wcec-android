@@ -1,0 +1,9 @@
+     $r4 = staticinvoke X.07c.A03()
+     $r5 = newarray (java.lang.Object)3
+     $r50 = $r1
+     $r51 = $r3
+     $r52 = $r2
+     $r6 = staticinvoke X.07c.A01($r4 $r5)
+     $r7 = java.lang.Boolean.FALSE
+     $z0 = virtualinvoke $r7.equals($r6)
+     $z0 = $z0 ^ 1

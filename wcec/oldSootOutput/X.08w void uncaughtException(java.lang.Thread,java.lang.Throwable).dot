@@ -1,0 +1,6 @@
+     $r3 = r0.A00
+     $r4 = $r3.A01
+     $z0 = interfaceinvoke $r4.A1d($r1 $r2)
+     virtualinvoke $r3.A00($r1 $r2)
+     label1: $r5 = r0.A01
+     interfaceinvoke $r5.uncaughtException($r1 $r2)

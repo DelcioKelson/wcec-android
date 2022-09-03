@@ -1,0 +1,2 @@
+     $r2 = r0.A02
+     $i1 = virtualinvoke $r2.read($r1 $l0)

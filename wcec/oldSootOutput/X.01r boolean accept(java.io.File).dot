@@ -1,0 +1,2 @@
+     $r2 = virtualinvoke $r1.getName()
+     $z0 = virtualinvoke $r2.matches(\cpu0-9+\)

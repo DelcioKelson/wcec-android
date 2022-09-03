@@ -1,0 +1,8 @@
+     $r4 = new java.util.HashMap
+     $r5 = X.03D.A39
+     $r6 = staticinvoke X.073.A01($r3)
+     staticinvoke X.07K.A02($r5 $r6 $r4)
+     staticinvoke X.07K.A03($r0 $r1 $r4)
+     staticinvoke X.07K.A04(\lacrima\ $r2 $r4)
+     $r7 = staticinvoke X.07K.A00()
+     virtualinvoke $r7.A06(\android_large_soft_error\ $r4)

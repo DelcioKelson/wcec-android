@@ -1,0 +1,12 @@
+     $i0 = r0.A00
+     $i0 = $i0 + 4
+     r0.A00 = $i0
+     $r1 = r0.A03
+     $i0 = virtualinvoke $r1.readInt()
+     label1: r0 = r0.A02
+     $r2 = staticinvoke java.nio.ByteOrder.nativeOrder()
+     $r3 = java.nio.ByteOrder.LITTLE_ENDIAN
+     $z0 = virtualinvoke $r2.equals($r3)
+     $i0 = staticinvoke java.lang.Integer.reverseBytes($i0)
+     $i0 = virtualinvoke r0.A02()
+     label2: $r4 = new java.lang.NullPointerException

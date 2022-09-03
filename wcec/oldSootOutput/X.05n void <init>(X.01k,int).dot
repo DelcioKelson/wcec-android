@@ -1,0 +1,2 @@
+     r0.A00 = $r1
+     label1: $r2 = new java.lang.IllegalArgumentException

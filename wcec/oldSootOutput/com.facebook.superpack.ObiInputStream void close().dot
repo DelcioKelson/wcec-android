@@ -1,0 +1,4 @@
+     entermonitor r0
+     label1: staticinvoke com.facebook.superpack.ObiInputStream.closeNative(0L)
+     label2: exitmonitor r0
+     exitmonitor r0

@@ -1,0 +1,2 @@
+     $z0 = staticinvoke android.text.TextUtils.isEmpty($r0)
+     label1: $r1 = new java.lang.IllegalArgumentException

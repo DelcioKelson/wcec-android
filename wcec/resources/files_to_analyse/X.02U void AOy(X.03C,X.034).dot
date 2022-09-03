@@ -1,0 +1,84 @@
+     label006: goto label015
+     label009: goto label016
+     $l1 = 0L
+     goto label017
+     label031: $c0 = 48
+     label023: goto label032
+     goto label031
+     $z0 = 0
+     $z0 = 1
+     label038: goto label047
+     goto label046
+     $z0 = 0
+     goto label048
+     label062: $i3 = 0
+     $i3 = $i3 + -48
+     label054: goto label063
+     goto label062
+     label077: $b2 = 0
+     label069: goto label078
+     goto label077
+     $z0 = 0
+     $z0 = 1
+     label084: goto label093
+     goto label092
+     $z0 = 0
+     goto label094
+     $l1 = $l1 - $l4
+     goto label100
+     label101: goto label108
+     goto label115
+     label116: goto label123
+     goto label129
+     label130: goto label137
+     label150: $c0 = 32
+     label144: goto label151
+     label157: goto label166
+     label160: goto label167
+     $l1 = 0L
+     goto label168
+     $z0 = 0
+     $z0 = 1
+     label174: goto label181
+     $z0 = 0
+     goto label182
+     label187: $z0 = 0
+     goto label189
+     $z0 = 1
+     label190: goto label199
+     goto label198
+     $z0 = 0
+     $z0 = 1
+     label206: goto label215
+     goto label214
+     $z0 = 0
+     goto label216
+     $z0 = 0
+     $z0 = 1
+     label222: goto label231
+     goto label230
+     $z0 = 0
+     goto label232
+     label246: $l1 = 0L
+     label238: goto label247
+     goto label246
+     goto label253
+     label254: goto label281
+     goto label280
+     goto label012
+     goto label026
+     goto label041
+     goto label057
+     goto label072
+     goto label087
+     goto label104
+     goto label119
+     goto label133
+     goto label147
+     goto label163
+     goto label177
+     goto label193
+     goto label209
+     goto label225
+     goto label241
+     goto label257

@@ -1,0 +1,4 @@
+     $r1 = newarray (java.lang.Object)0
+     r0.A01 = $r1
+     $r2 = new java.util.ArrayList
+     r0.A02 = $r2

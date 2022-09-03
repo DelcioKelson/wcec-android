@@ -1,0 +1,14 @@
+     $r2 = X.06W.A00
+     $r3 = r0.A03
+     label4: $r3 = r0.A02
+     label1: if $r3 == null goto label5
+     $i0 = android.os.Build$VERSION.SDK_INT
+     $l1 = virtualinvoke $r3.getBlockSizeLong()
+     label3: $i0 = virtualinvoke $r3.getBlockSize()
+     $l2 = virtualinvoke $r3.getAvailableBlocksLong()
+     label2: $l1 = $l1 * $l2
+     $l1 = (long) $i0
+     $i0 = virtualinvoke $r3.getAvailableBlocks()
+     $l2 = (long) $i0
+     goto label2
+     goto label1

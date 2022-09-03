@@ -1,0 +1,2 @@
+     $i0 = virtualinvoke $r0.hashCode()
+     $r1 = staticinvoke java.lang.Integer.toHexString($i0)

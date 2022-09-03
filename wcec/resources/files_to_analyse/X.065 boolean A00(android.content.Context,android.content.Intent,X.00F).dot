@@ -1,0 +1,122 @@
+     $i3 = 2147483647
+     goto label002
+     $i3 = 60000
+     $i3 = 86400000
+     label006: if $i3 == $i4 goto label022
+     label016: if $z0 != 0 goto label018
+     label024: if $z0 != 0 goto label049
+     label026: if $z0 != 0 goto label049
+     label031: if $i3 != $i4 goto label041
+     label033: if $z0 != 0 goto label035
+     label037: if $z0 != 0 goto label039
+     label048: goto label022
+     label053: if $z0 != 0 goto label056
+     label055: if $z0 == 0 goto label059
+     goto label335
+     entermonitor class \LX/05R\
+     label061: exitmonitor class \LX/05R\
+     label062: goto label065
+     exitmonitor class \LX/05R\
+     label068: if $z0 == 0 goto label075
+     goto label080
+     label079: goto label074
+     $z0 = 0
+     goto label083
+     label085: if $z1 != 0 goto label089
+     label091: if $z1 != 0 goto label332
+     $z1 = 0
+     $z1 = 1
+     label092: if $z0 == 0 goto label102
+     $i4 = 0
+     label097: if $i4 >= $i3 goto label103
+     label101: $i4 = $i4 + 1
+     goto label097
+     entermonitor class \LX/06X\
+     label110: entermonitor class \LX/06X\
+     goto label112
+     label112: exitmonitor class \LX/06X\
+     exitmonitor class \LX/06X\
+     label114: $z2 = 0
+     label116: if $z3 == 0 goto label325
+     label325: if $z2 == 0 goto label326
+     label118: if $z0 == 0 goto label121
+     label121: $z3 = 0
+     label120: $z3 = 1
+     $z2 = 0
+     $z2 = 1
+     label123: if $z3 != 0 goto label324
+     label324: $z2 = 1
+     label131: $i5 = 0
+     $z3 = 0
+     label132: if $i5 >= $i4 goto label310
+     label310: if $z3 != 0 goto label324
+     label136: if $z4 == 0 goto label139
+     goto label309
+     label309: $i5 = $i5 + 1
+     $i7 = 0
+     label141: if $i7 >= $i6 goto label309
+     label143: if $z4 != 0 goto label144
+     $i7 = $i7 + 1
+     goto label141
+     label159: goto label156
+     label161: if $i6 != 0 goto label164
+     label163: goto label305
+     label167: if $z4 == 0 goto label305
+     label169: if $i6 != 0 goto label172
+     label172: $i6 = 0
+     label171: goto label305
+     label174: if $i6 >= $i7 goto label177
+     label176: $i6 = $i6 + 1
+     goto label173
+     label178: if $z4 == 0 goto label181
+     label180: goto label183
+     label183: $i6 = 0
+     label185: if $i6 >= $i7 goto label194
+     label193: $i6 = $i6 + 1
+     goto label184
+     label195: if $z4 != 0 goto label198
+     goto label306
+     label199: if $z4 == 0 goto label200
+     goto label306
+     label206: if $z4 == 0 goto label309
+     label210: if $z4 != 0 goto label285
+     label212: if $z4 != 0 goto label285
+     label222: if $i6 > 255 goto label277
+     label225: if $z4 == 0 goto label235
+     label231: goto label224
+     label239: if $z4 == 0 goto label244
+     label243: goto label238
+     label264: if $z4 == 0 goto label205
+     goto label308
+     label308: $z3 = 1
+     goto label289
+     goto label289
+     goto label289
+     goto label289
+     goto label289
+     label287: goto label289
+     label290: goto label205
+     goto label306
+     label294: goto label309
+     goto label304
+     label300: goto label305
+     label307: goto label309
+     goto label132
+     goto label320
+     label323: if $z2 != 0 goto label324
+     $z2 = 0
+     goto label326
+     goto label332
+     goto label332
+     exitmonitor class \LX/06X\
+     label333: if $z0 == 0 goto label335
+     goto label309
+     goto label309
+     goto label298
+     goto label292
+     goto label284
+     goto label283
+     goto label282
+     goto label281
+     goto label288
+     goto label280

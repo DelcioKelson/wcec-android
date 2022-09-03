@@ -1,0 +1,11 @@
+     $r1 = new java.util.HashMap
+     $r2 = interfaceinvoke $r0.iterator()
+     label1: $z0 = interfaceinvoke $r2.hasNext()
+     $r3 = interfaceinvoke $r2.next()
+     label2: $r6 = staticinvoke java.util.Collections.unmodifiableMap($r1)
+     $r4 = staticinvoke java.util.Collections.singletonList(\*|all_packages|*\)
+     $r5 = new java.util.HashSet
+     $r0 = staticinvoke java.util.Collections.unmodifiableSet($r5)
+     virtualinvoke $r1.put($r3 $r0)
+     goto label1
+     $r7 = new X.01j

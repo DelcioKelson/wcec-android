@@ -1,0 +1,2 @@
+     $i0 = android.os.Build$VERSION.SDK_INT
+     staticinvoke android.os.Trace.beginSection($r0)

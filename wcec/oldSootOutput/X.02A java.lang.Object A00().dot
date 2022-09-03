@@ -1,0 +1,6 @@
+     $r3 = r0.A00
+     $r1 = $r3.A0I
+     $r4 = $r3.A0M
+     $r2 = interfaceinvoke $r4.get()
+     $r5 = (java.lang.String) $r2
+     $r6 = new X.02B

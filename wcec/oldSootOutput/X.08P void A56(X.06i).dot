@@ -1,0 +1,16 @@
+     $r3 = $r1.A00
+     staticinvoke X.02y.A01($r3 \Did you call earlyInit()?\)
+     $r4 = staticinvoke X.07l.A00()
+     $r2 = X.034.A03
+     $r5 = virtualinvoke $r3.A04(class \Lcom/facebook/errorreporting/lacrima/detector/javacrash/JavaCrashDetector\)
+     $r6 = (X.09j) $r5
+     staticinvoke X.07S.A06(\lacrima\ \Cannot find registered detector\)
+     label2: virtualinvoke $r3.A06($r4 $r2 $r6)
+     label1: $r3 = $r1.A00
+     staticinvoke X.02y.A01($r3 \Did you call earlyInit()?\)
+     $r4 = staticinvoke X.07l.A00()
+     $r5 = virtualinvoke $r3.A04(class \LX/02k\)
+     $r6 = (X.09j) $r5
+     staticinvoke X.07S.A06(\lacrima\ \Cannot find registered detector\)
+     label3: virtualinvoke $r3.A06($r4 $r2 $r6)
+     goto label1

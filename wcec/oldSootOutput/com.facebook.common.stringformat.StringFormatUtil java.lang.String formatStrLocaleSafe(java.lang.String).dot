@@ -1,0 +1,1 @@
+     $r0 = staticinvoke com.facebook.common.stringformat.StringFormatUtil.formatStrLocaleSafeInner($r0 0 null null null null null)

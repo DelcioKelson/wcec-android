@@ -1,0 +1,8 @@
+     $r2 = r0.A01
+     $r3 = $r2.A03
+     virtualinvoke $r3.cancel(0)
+     label1: $r4 = r0.A02
+     entermonitor $r4
+     label2: r0.A00 = null
+     exitmonitor $r4
+     exitmonitor $r4

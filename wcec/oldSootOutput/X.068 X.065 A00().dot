@@ -1,0 +1,9 @@
+     $r1 = r0.A01
+     $r2 = r0.A04
+     label1: $r2 = r0.A04
+     $z0 = interfaceinvoke $r2.isEmpty()
+     $r3 = new java.lang.IllegalArgumentException
+     $z0 = interfaceinvoke $r2.isEmpty()
+     $r1 = new X.01j
+     label2: $r4 = new X.065
+     r0.A01 = $r1

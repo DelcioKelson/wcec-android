@@ -1,0 +1,11 @@
+     $r2 = r0.A00
+     $r1 = $r2.A03
+     $r3 = staticinvoke X.01K.A01()
+     $r4 = X.06W.A00
+     $l0 = virtualinvoke $r3.A05($r4)
+     $l0 = $l0 >> 10
+     virtualinvoke $r1.set($l0)
+     $r5 = $r2.A00
+     virtualinvoke $r5.open()
+     $r6 = $r2.A02
+     virtualinvoke $r6.set(0)

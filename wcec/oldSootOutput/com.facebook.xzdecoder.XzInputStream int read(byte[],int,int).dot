@@ -1,0 +1,34 @@
+     $i2 = 0
+     label5: $r3 = newarray (java.lang.Object)3
+     $i3 = $i1 + $i0
+     $i4 = lengthof $r1
+     $l5 = r0.state
+     $b6 = $l5 cmp 0L
+     $i3 = $i0
+     label4: $r6 = new java.io.IOException
+     label1: if $i2 >= $i0 goto label6
+     $i4 = r0.clientOutPos
+     $i7 = r0.outPos
+     $i7 = $i7 - $i4
+     label2: $i4 = r0.inPos
+     $i7 = staticinvoke java.lang.Math.min($i3 $i7)
+     $r2 = r0.outBuf
+     staticinvoke java.lang.System.arraycopy($r2 $i4 $r1 $i1 $i7)
+     $i4 = r0.clientOutPos
+     $i4 = $i4 + $i7
+     r0.clientOutPos = $i4
+     $i3 = $i3 - $i7
+     $i1 = $i1 + $i7
+     $i2 = $i2 + $i7
+     goto label1
+     $i7 = r0.inSize
+     goto label1
+     $i2 = lengthof $r1
+     $r4 = staticinvoke java.lang.Integer.valueOf($i2)
+     $r30 = $r4
+     $r4 = staticinvoke java.lang.Integer.valueOf($i1)
+     $r31 = $r4
+     $r4 = staticinvoke java.lang.Integer.valueOf($i0)
+     $r32 = $r4
+     $r5 = staticinvoke java.lang.String.format(\buf.length = %d off = %d len = %d\ $r3)
+     $r7 = new java.lang.IndexOutOfBoundsException

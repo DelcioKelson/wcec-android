@@ -1,0 +1,2 @@
+     $r1 = staticinvoke X.00E.A00(r0)
+     r0 = $r1.A00

@@ -1,0 +1,12 @@
+     $r5 = new java.io.File
+     $r6 = new java.io.RandomAccessFile
+     label1: virtualinvoke $r6.seek(0L)
+     label2: $i2 = (int) $b0
+     label3: virtualinvoke $r6.write($i2)
+     $l1 = virtualinvoke $r6.getFilePointer()
+     virtualinvoke $r6.setLength($l1)
+     $r3 = virtualinvoke $r6.getFD()
+     virtualinvoke $r3.sync()
+     label4: virtualinvoke $r6.close()
+     label6: virtualinvoke $r6.close()
+     goto label7

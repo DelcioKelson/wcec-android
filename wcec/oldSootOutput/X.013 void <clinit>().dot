@@ -1,0 +1,7 @@
+     $r00 = \log_type\
+     $r01 = \build_id\
+     $r02 = \app_id\
+     $r03 = \user_id\
+     $r04 = \device_id\
+     $r1 = staticinvoke java.util.Arrays.asList($r0)
+     X.013.A03 = $r1

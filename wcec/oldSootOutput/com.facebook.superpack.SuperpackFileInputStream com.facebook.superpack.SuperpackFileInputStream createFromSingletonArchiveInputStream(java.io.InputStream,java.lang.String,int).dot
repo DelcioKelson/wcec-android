@@ -1,0 +1,12 @@
+     $z0 = virtualinvoke $r1.matches(\spo\)
+     label8: r6 = new java.lang.NullPointerException
+     $l1 = 0L
+     label2: $l1 = staticinvoke com.facebook.superpack.SuperpackArchive.getThreadNumOption($i0)
+     label1: $l1 = staticinvoke com.facebook.superpack.SuperpackArchive.readNative($r0 $r1 $l1)
+     $r2 = new com.facebook.superpack.SuperpackArchive
+     goto label3
+     label3: $r4 = staticinvoke com.facebook.superpack.SuperpackFileInputStream.createFromSingletonArchive($r2 $r1)
+     goto label1
+     label4: virtualinvoke $r2.close()
+     label6: virtualinvoke $r2.close()
+     goto label7

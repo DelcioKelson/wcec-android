@@ -1,0 +1,12 @@
+     $r4 = new java.lang.StringBuilder
+     $r5 = virtualinvoke $r1.getApplicationInfo()
+     $r6 = $r5.dataDir
+     virtualinvoke $r4.append($r6)
+     virtualinvoke $r4.append(\/\)
+     virtualinvoke $r4.append($r2)
+     $r2 = virtualinvoke $r4.toString()
+     $r3 = new java.io.File
+     $r7 = newarray (java.lang.String)0
+     $r8 = new java.util.HashMap
+     r0.A03 = $r8
+     r0.A04 = $r1

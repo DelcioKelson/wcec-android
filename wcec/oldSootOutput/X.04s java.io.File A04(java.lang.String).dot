@@ -1,0 +1,3 @@
+     $r2 = r0.A00
+     $r3 = new java.io.File
+     $z0 = virtualinvoke $r3.exists()

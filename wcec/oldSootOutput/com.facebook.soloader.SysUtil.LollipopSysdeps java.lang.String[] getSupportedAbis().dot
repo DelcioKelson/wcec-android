@@ -1,0 +1,36 @@
+     $r1 = new java.util.TreeSet
+     $i0 = 0
+     label01: $z0 = staticinvoke com.facebook.soloader.SysUtil$LollipopSysdeps.is64Bit()
+     label02: if $z0 == 0 goto label07
+     $r2 = X.06W.A0U
+     label07: $r2 = X.06W.A0C
+     label03: virtualinvoke $r1.add(\arm64-v8a\)
+     label04: $r2 = X.06W.A0N
+     label05: virtualinvoke $r1.add(\x86_64\)
+     label06: goto label11
+     label11: $r3 = new java.util.ArrayList
+     label08: virtualinvoke $r1.add(\armeabi-v7a\)
+     label09: $r2 = X.06W.A01
+     label10: virtualinvoke $r1.add(\x86\)
+     $i1 = lengthof $r0
+     label12: if $i0 >= $i1 goto label14
+     $r4 = $r0$i0
+     label14: $i0 = virtualinvoke $r3.size()
+     $z0 = virtualinvoke $r1.contains($r4)
+     virtualinvoke $r3.add($r4)
+     label13: $i0 = $i0 + 1
+     goto label12
+     $r0 = newarray (java.lang.String)$i0
+     $r5 = virtualinvoke $r3.toArray($r0)
+     $r0 = (java.lang.String) $r5
+     $r5 = newarray (java.lang.Object)3
+     $r4 = staticinvoke java.util.Arrays.toString($r0)
+     $r50 = $r4
+     $i0 = $r6.errno
+     $r2 = staticinvoke java.lang.Integer.valueOf($i0)
+     $r51 = $r2
+     $r4 = virtualinvoke $r6.getMessage()
+     $r52 = $r4
+     $r4 = staticinvoke java.lang.String.format(\Could not read /proc/self/exe. Falling back to default ABI list: %s. errno: %d Err msg: %s\ $r5)
+     staticinvoke android.util.Log.e(\SysUtil\ $r4)
+     $r7 = android.os.Build.SUPPORTED_ABIS

@@ -1,0 +1,55 @@
+     $z0 = r0.A04
+     $i0 = $i0 & 4
+     label31: staticinvoke java.lang.System.load($r1)
+     $r5 = r0.A01
+     label02: $r5 = r0.A02
+     label01: $r6 = null
+     goto label03
+     label03: $r7 = r0.A00
+     goto label01
+     entermonitor $r7
+     label04: $r8 = r0.A03
+     $r9 = newarray (java.lang.Object)3
+     $r90 = $r1
+     $r10 = class \LX/07P\
+     $r11 = virtualinvoke $r10.getClassLoader()
+     $r91 = $r11
+     $r92 = $r5
+     $r12 = virtualinvoke $r8.invoke($r7 $r9)
+     $r13 = (java.lang.String) $r12
+     label05: exitmonitor $r7
+     label07: $r14 = new java.lang.UnsatisfiedLinkError
+     $r6 = $r13
+     goto label10
+     label10: exitmonitor $r7
+     label13: $r17 = new java.lang.StringBuilder
+     virtualinvoke $r17.append(\Error: Cannot load \)
+     virtualinvoke $r17.append($r1)
+     $r13 = virtualinvoke $r17.toString()
+     label14: $r6 = $r13
+     label15: $r18 = new java.lang.RuntimeException
+     $r17 = new java.lang.StringBuilder
+     virtualinvoke $r17.append($r6)
+     virtualinvoke $r17.append(\ lib hash: \)
+     $r19 = new java.io.File
+     $r20 = staticinvoke java.security.MessageDigest.getInstance(\MD5\)
+     label18: $r2 = new java.io.FileInputStream
+     label20: $r21 = newarray (byte)4096
+     label21: $i0 = virtualinvoke $r2.read($r21)
+     virtualinvoke $r20.update($r21 0 $i0)
+     label22: $r9 = newarray (java.lang.Object)1
+     goto label21
+     $r21 = virtualinvoke $r20.digest()
+     $r22 = new java.math.BigInteger
+     $r90 = $r22
+     $r1 = staticinvoke java.lang.String.format(\%32x\ $r9)
+     label23: virtualinvoke $r2.close()
+     label24: goto label29
+     label29: virtualinvoke $r17.append($r1)
+     label26: virtualinvoke $r2.close()
+     $r1 = virtualinvoke $r24.toString()
+     virtualinvoke $r17.append(\ search path is \)
+     virtualinvoke $r17.append($r5)
+     $r1 = virtualinvoke $r17.toString()
+     staticinvoke android.util.Log.e(\SoLoader\ $r1)
+     goto label27

@@ -1,0 +1,315 @@
+     entermonitor class \LX/077\
+     label001: $r16 = newarray (X.06A)1
+     $r160 = null
+     label002: $z0 = X.077.A03
+     $i1 = $i0 & 65535
+     label186: exitmonitor class \LX/077\
+     $i0 = $i0 & -65536
+     $i2 = $i0 & 65536
+     $z1 = 0
+     $z1 = 1
+     label003: $i0 = $i0 & 131072
+     $z0 = 0
+     $z0 = 1
+     label004: $z2 = X.05e.A01
+     X.05e.A01 = 1
+     label005: $r17 = staticinvoke android.os.StrictMode.allowThreadDiskWrites()
+     X.05e.A00 = $z1
+     label006: entermonitor class \Lcom/facebook/endtoend/EndToEnd\
+     label007: $z1 = com.facebook.endtoend.EndToEnd.A02
+     $r18 = \true\
+     label009: $z1 = com.facebook.endtoend.EndToEnd.A04
+     $r19 = staticinvoke X.06p.A01(\fb.running_mobilelab\)
+     $z1 = virtualinvoke $r18.equals($r19)
+     com.facebook.endtoend.EndToEnd.A04 = $z1
+     staticinvoke android.util.Log.w(\Mobilelab\ \Is running Mobilelab test\)
+     label008: com.facebook.endtoend.EndToEnd.A02 = 1
+     label010: exitmonitor class \Lcom/facebook/endtoend/EndToEnd\
+     label011: if $z1 == 0 goto label012
+     $i1 = $i1 & -3
+     label012: $r69 = new java.lang.StringBuilder
+     $r21 = virtualinvoke $r0.getApplicationInfo()
+     label014: $r18 = $r21.dataDir
+     label015: virtualinvoke $r69.append($r18)
+     virtualinvoke $r69.append(\/app_libs\)
+     $r18 = virtualinvoke $r69.toString()
+     label016: $r29 = new java.io.File
+     staticinvoke X.07G.A01($r29)
+     label018: $r23 = newarray (java.lang.String)5
+     label019: $r230 = \lib-xzs\
+     $r231 = \lib-zstd\
+     $r232 = \lib-superpack-xz\
+     $r233 = \lib-superpack-zstd\
+     $r234 = \lib-superpack-br\
+     label020: $i0 = 0
+     label021: $r18 = $r23$i0
+     label022: $r69 = new java.lang.StringBuilder
+     $r21 = virtualinvoke $r0.getApplicationInfo()
+     label024: $r19 = $r21.dataDir
+     label025: virtualinvoke $r69.append($r19)
+     label026: $r19 = java.io.File.separator
+     label027: virtualinvoke $r69.append($r19)
+     virtualinvoke $r69.append($r18)
+     $r18 = virtualinvoke $r69.toString()
+     label028: $r29 = new java.io.File
+     staticinvoke X.07G.A01($r29)
+     label030: $i0 = $i0 + 1
+     $r18 = \.spk.xz\
+     $r19 = \.xzs\
+     label031: $z1 = virtualinvoke $r18.isEmpty()
+     label032: if $z1 == 0 goto label037
+     label033: $z1 = virtualinvoke $r19.isEmpty()
+     label037: $r25 = virtualinvoke $r0.getAssets()
+     label034: if $z1 == 0 goto label037
+     label035: staticinvoke android.util.Log.w(\FbSoLoader\ \Native libs file not compressed. Skipping initializing compressed asset sosource directories.\)
+     label036: $r24 = null
+     goto label045
+     label045: $z1 = staticinvoke X.05e.A00($r0 $r24)
+     $r26 = staticinvoke X.077.A00($r25 \.spk.xz\)
+     label038: $r24 = $r26
+     label039: $r26 = staticinvoke X.077.A00($r25 \.xzs\)
+     label040: $r24 = $r26
+     $r69 = new java.lang.StringBuilder
+     virtualinvoke $r69.append(\FbSoLoader unable to determine primary compression type \)
+     virtualinvoke $r69.append(\.spk.xz\)
+     virtualinvoke $r69.append(\ or fallback compression type \)
+     virtualinvoke $r69.append(\.xzs\)
+     virtualinvoke $r69.append(\of native libs file\)
+     $r18 = virtualinvoke $r69.toString()
+     label042: $r70 = new java.lang.RuntimeException
+     label046: if $z1 == 0 goto label050
+     label047: $r28 = staticinvoke com.facebook.superpack.SuperpackFileLoader.getInstance()
+     label050: $r28 = null
+     label048: staticinvoke X.07P.A03($r0 $r28 $i1)
+     label049: goto label051
+     label051: if $z0 == 0 goto label116
+     goto label048
+     label052: $z1 = staticinvoke X.02r.A04($r0)
+     label116: $r77 = new java.util.ArrayList
+     label053: $z0 = $z1
+     goto label055
+     label055: $r21 = virtualinvoke $r0.getApplicationInfo()
+     label054: $z0 = 0
+     label056: $r18 = $r21.dataDir
+     label057: $r29 = new java.io.File
+     $r22 = $r29
+     $z1 = virtualinvoke $r29.exists()
+     label059: if $z1 == 0 goto label063
+     label060: $z1 = virtualinvoke $r29.isDirectory()
+     label063: $z1 = virtualinvoke $r22.exists()
+     label061: if $z1 != 0 goto label063
+     label062: virtualinvoke $r29.delete()
+     label064: if $z1 != 0 goto label066
+     label065: virtualinvoke $r22.mkdir()
+     label066: $z1 = virtualinvoke $r22.isDirectory()
+     label067: if $z1 == 0 goto label112
+     $r37 = new java.io.File
+     label112: $z1 = staticinvoke X.02r.A04($r0)
+     $r30 = staticinvoke X.07G.A00($r22 $r37 1)
+     label069: $r37 = new java.io.File
+     $r71 = new java.io.RandomAccessFile
+     $r31 = $r71
+     $z1 = 0
+     label070: $b3 = virtualinvoke $r71.readByte()
+     label071: if $b3 != 1 goto label072
+     $z1 = 1
+     label072: virtualinvoke $r31.close()
+     $r37 = new java.io.File
+     label079: staticinvoke X.077.A02($r22 0)
+     $r71 = new java.io.RandomAccessFile
+     $r31 = $r71
+     label073: $l4 = virtualinvoke $r71.length()
+     $i0 = (int) $l4
+     $r1 = newarray (byte)$i0
+     $i1 = virtualinvoke $r71.read($r1)
+     $r1 = null
+     label074: virtualinvoke $r31.close()
+     $r21 = virtualinvoke $r0.getApplicationInfo()
+     $r18 = $r21.sourceDir
+     $r37 = new java.io.File
+     $r32 = staticinvoke X.07G.A04($r0 $r37)
+     goto label078
+     label078: $i0 = lengthof $r1
+     label076: virtualinvoke $r31.close()
+     $i1 = lengthof $r32
+     $z1 = staticinvoke java.util.Arrays.equals($r1 $r32)
+     $z1 = $z1 ^ 1
+     label104: if $r30 == null goto label112
+     $r21 = virtualinvoke $r0.getApplicationInfo()
+     $r18 = $r21.sourceDir
+     $r37 = new java.io.File
+     $r72 = new java.util.zip.ZipFile
+     label080: $r35 = virtualinvoke $r72.getEntry(\assets/native_deps.txt\)
+     $r36 = virtualinvoke $r72.getInputStream($r35)
+     label100: $r76 = new java.io.FileNotFoundException
+     label081: $l4 = virtualinvoke $r35.getSize()
+     label096: $r76 = new java.io.FileNotFoundException
+     $i0 = (int) $l4
+     $r1 = newarray (byte)$i0
+     $i1 = 0
+     label082: if $i1 >= $i0 goto label084
+     $i2 = $i0 - $i1
+     label084: virtualinvoke $r36.close()
+     $i2 = virtualinvoke $r36.read($r1 $i1 $i2)
+     $i1 = $i1 + $i2
+     label083: $r74 = new java.io.EOFException
+     $r73 = new java.lang.IllegalStateException
+     label085: virtualinvoke $r72.close()
+     $r21 = virtualinvoke $r0.getApplicationInfo()
+     $r18 = $r21.sourceDir
+     $r37 = new java.io.File
+     $r32 = staticinvoke X.07G.A04($r0 $r37)
+     $r21 = virtualinvoke $r0.getApplicationInfo()
+     $r18 = $r21.dataDir
+     $r37 = new java.io.File
+     $r75 = new java.io.File
+     $r71 = new java.io.RandomAccessFile
+     $r31 = $r71
+     label086: virtualinvoke $r71.write($r32)
+     virtualinvoke $r71.writeInt($i0)
+     virtualinvoke $r71.write($r1)
+     $l4 = virtualinvoke $r71.getFilePointer()
+     virtualinvoke $r71.setLength($l4)
+     label087: virtualinvoke $r71.close()
+     $r37 = new java.io.File
+     $r21 = virtualinvoke $r0.getApplicationInfo()
+     $r18 = $r21.sourceDir
+     $r75 = new java.io.File
+     $r1 = staticinvoke X.07G.A04($r0 $r75)
+     $r71 = new java.io.RandomAccessFile
+     $r31 = $r71
+     label088: virtualinvoke $r71.write($r1)
+     $l4 = virtualinvoke $r71.getFilePointer()
+     virtualinvoke $r71.setLength($l4)
+     label089: virtualinvoke $r71.close()
+     staticinvoke X.07G.A02($r22)
+     staticinvoke X.077.A02($r22 1)
+     goto label104
+     label091: virtualinvoke $r31.close()
+     label094: virtualinvoke $r31.close()
+     label098: virtualinvoke $r36.close()
+     label102: virtualinvoke $r72.close()
+     goto label111
+     label111: virtualinvoke $r30.close()
+     label106: virtualinvoke $r31.close()
+     label109: virtualinvoke $r30.close()
+     label113: $z0 = $z1
+     label114: if $z0 != 0 goto label116
+     label115: staticinvoke android.util.Log.w(\NativeDeps\ \Failed to extract native deps from APK falling back to using MinElf to get library dependencies.\)
+     label118: X.077.A02 = $r77
+     label119: $r45 = $r160
+     label120: if $r45 == null goto label124
+     label121: staticinvoke X.07P.A04($r45)
+     label124: $r78 = new X.04d
+     label122: $r44 = X.077.A02
+     label123: $r18 = virtualinvoke $r45.toString()
+     virtualinvoke $r44.add($r18)
+     staticinvoke X.07P.A04($r78)
+     label126: $r44 = X.077.A02
+     label127: virtualinvoke $r44.add(\lib-assets\)
+     label128: goto label131
+     label131: if $r24 == null goto label176
+     label130: staticinvoke android.util.Log.w(\FbSoLoader\ \prepend SoSource lib-assets failed\ $r47)
+     label132: $z0 = staticinvoke X.05e.A00($r0 $r24)
+     label176: X.077.A00 = $r0
+     $r48 = newarray (java.lang.Object)1
+     label164: $r80 = new X.04q
+     $r18 = $r24.A00
+     $r480 = $r18
+     staticinvoke X.07S.A0I(\CompactSoSource\ \CompactSoSource is enabled for %s in APK\ $r48)
+     label133: $r49 = staticinvoke X.07D.A01()
+     label134: if $r49 == null goto label139
+     $r50 = newarray (java.lang.Class)1
+     label139: $r53 = null
+     $r500 = class \Landroid/content/Context\
+     label135: $r51 = virtualinvoke $r49.getMethod(\getConfig\ $r50)
+     label136: $r48 = newarray (java.lang.Object)1
+     $r480 = $r0
+     label137: $r52 = virtualinvoke $r51.invoke(null $r48)
+     label138: $r53 = (X.06Y) $r52
+     goto label140
+     label140: $r48 = newarray (java.lang.Object)2
+     $r480 = $r18
+     goto label142
+     label141: $r18 = \experiment config is invalid\
+     label142: $r18 = \experiment config is null\
+     goto label143
+     label143: $r481 = $r18
+     staticinvoke X.07S.A0I(\CompactSoSource\ \Using default CompactSoSource config for %s because %s\ $r48)
+     $r79 = new X.06Y
+     $r54 = X.07D.A00
+     entermonitor class \LX/07D\
+     label159: $r55 = X.07D.A01
+     label144: $r54 = X.07D.A00
+     label145: $r49 = staticinvoke java.lang.Class.forName(\com.facebook.sosource.compactso.CompactSoSource\)
+     label156: exitmonitor class \LX/07D\
+     label146: $r50 = newarray (java.lang.Class)3
+     $r500 = class \Landroid/content/Context\
+     $r501 = class \LX/053\
+     $r502 = class \LX/06Y\
+     label147: $r55 = virtualinvoke $r49.getConstructor($r50)
+     label148: X.07D.A01 = $r55
+     label149: $r54 = staticinvoke java.lang.Boolean.valueOf(1)
+     label150: X.07D.A00 = $r54
+     goto label156
+     label152: $r18 = virtualinvoke $r56.toString()
+     $r54 = staticinvoke java.lang.Boolean.valueOf(0)
+     X.07D.A00 = $r54
+     goto label155
+     label155: if $r18 == null goto label156
+     $r18 = virtualinvoke $r57.toString()
+     $r54 = staticinvoke java.lang.Boolean.valueOf(0)
+     X.07D.A00 = $r54
+     goto label155
+     $r18 = virtualinvoke $r58.toString()
+     $r54 = staticinvoke java.lang.Boolean.valueOf(0)
+     X.07D.A00 = $r54
+     $r48 = newarray (java.lang.Object)1
+     $r480 = $r18
+     staticinvoke X.07S.A0H(\CompactSoSource\ \Failed to find CompactSoSource constructor: %s\ $r48)
+     goto label159
+     exitmonitor class \LX/07D\
+     label160: $r48 = newarray (java.lang.Object)3
+     $r480 = $r0
+     $r481 = $r24
+     $r482 = $r79
+     label161: $r52 = virtualinvoke $r55.newInstance($r48)
+     label162: $r45 = (X.06A) $r52
+     goto label165
+     label165: $i0 = virtualinvoke $r24.ordinal()
+     $r18 = virtualinvoke $r60.toString()
+     $r48 = newarray (java.lang.Object)1
+     $r480 = $r18
+     staticinvoke X.07S.A0H(\CompactSoSource\ \Failed to instantiate CompactSoSource: %s\ $r48)
+     $r45 = $r80
+     label166: $r70 = new java.lang.RuntimeException
+     label167: staticinvoke X.07P.A04($r45)
+     label168: staticinvoke X.07P.A04($r45)
+     goto label169
+     label169: $r44 = X.077.A02
+     virtualinvoke $r44.add(\lib-compressed\)
+     goto label176
+     label177: staticinvoke android.os.StrictMode.setThreadPolicy($r17)
+     X.077.A03 = 1
+     goto label186
+     label179: exitmonitor class \Lcom/facebook/endtoend/EndToEnd\
+     label182: staticinvoke android.util.Log.e(\FbSoLoader\ \RuntimeException during init\ $r27)
+     staticinvoke android.util.Log.e(\FbSoLoader\ \IOException during init\ $r65)
+     $r70 = new java.lang.RuntimeException
+     label185: staticinvoke android.os.StrictMode.setThreadPolicy($r17)
+     X.077.A03 = 1
+     exitmonitor class \LX/077\
+     goto label054
+     goto label114
+     goto label072
+     goto label077
+     goto label092
+     goto label095
+     goto label099
+     goto label103
+     goto label107
+     goto label110
+     goto label114
+     goto label139
+     goto label139
+     goto label139

@@ -1,0 +1,6 @@
+     label1: $r4 = virtualinvoke $r0.getPackageManager()
+     $r5 = virtualinvoke $r4.getPackageInfo($r1 0)
+     label2: $i0 = android.os.Build$VERSION.SDK_INT
+     $l1 = staticinvoke X.05S.A00($r5)
+     label3: $i0 = $r5.versionCode
+     $l1 = (long) $i0

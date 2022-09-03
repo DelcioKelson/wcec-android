@@ -1,0 +1,23 @@
+     $r1 = staticinvoke android.os.Looper.myLooper()
+     $r2 = virtualinvoke $r0.getLooper()
+     $r3 = virtualinvoke $r1.getThread()
+     label2: $r4 = \null current looper\
+     $r4 = virtualinvoke $r3.getName()
+     label1: $r1 = virtualinvoke $r0.getLooper()
+     $r3 = virtualinvoke $r1.getThread()
+     $r5 = virtualinvoke $r3.getName()
+     $r6 = staticinvoke java.lang.String.valueOf($r5)
+     $i0 = virtualinvoke $r6.length()
+     $r6 = staticinvoke java.lang.String.valueOf($r4)
+     $i1 = virtualinvoke $r6.length()
+     $i0 = $i0 + 36
+     $i1 = $i0 + $i1
+     $r7 = new java.lang.StringBuilder
+     virtualinvoke $r7.append(\Must be called on \)
+     virtualinvoke $r7.append($r5)
+     virtualinvoke $r7.append(\ thread but got \)
+     virtualinvoke $r7.append($r4)
+     virtualinvoke $r7.append(\.\)
+     $r4 = virtualinvoke $r7.toString()
+     $r8 = new java.lang.IllegalStateException
+     goto label1

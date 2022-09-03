@@ -1,0 +1,13 @@
+     $l0 = r0.state
+     $b1 = $l0 cmp 0L
+     $i2 = r0.clientOutPos
+     label3: $r2 = new java.io.IOException
+     $i3 = r0.outPos
+     $i2 = r0.inPos
+     label2: $r1 = r0.outBuf
+     $i3 = r0.inSize
+     $i2 = r0.clientOutPos
+     $i3 = $i2 + 1
+     r0.clientOutPos = $i3
+     $b1 = $r1$i2
+     $i2 = (int) $b1

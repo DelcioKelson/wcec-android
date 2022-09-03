@@ -1,0 +1,24 @@
+     $r1 = X.06T.A01
+     entermonitor $r1
+     label1: $r2 = X.06T.A00
+     $i0 = staticinvoke android.os.Process.myPid()
+     label4: exitmonitor $r1
+     $r3 = virtualinvoke $r0.getSystemService(\activity\)
+     $r4 = (android.app.ActivityManager) $r3
+     $r5 = virtualinvoke $r4.getRunningAppProcesses()
+     $r6 = interfaceinvoke $r5.iterator()
+     label3: $r2 = X.06T.A00
+     label2: $z0 = interfaceinvoke $r6.hasNext()
+     $r3 = interfaceinvoke $r6.next()
+     $r7 = (android.app.ActivityManager$RunningAppProcessInfo) $r3
+     $i1 = $r7.pid
+     $r2 = $r7.processName
+     X.06T.A00 = $r2
+     $r8 = staticinvoke X.06S.A00()
+     $r3 = $r8.first
+     $r2 = (java.lang.String) $r3
+     X.06T.A00 = $r2
+     $r9 = virtualinvoke $r2.trim()
+     $r2 = $r9
+     X.06T.A00 = $r9
+     exitmonitor $r1

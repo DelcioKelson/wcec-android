@@ -1,0 +1,8 @@
+     $r8 = virtualinvoke $r1.getApplicationInfo()
+     $r7 = $r8.sourceDir
+     $r3 = new java.io.File
+     r0.A01 = $r3
+     r0.A02 = $r4
+     r0.A00 = $r2
+     r0.A04 = $r5
+     r0.A03 = $r6

@@ -1,0 +1,16 @@
+     $r2 = r0.A01
+     entermonitor $r2
+     label1: staticinvoke com.facebook.systrace.Systrace.A01(1L \Run Trace Listeners\)
+     label2: r0.A00 = 1
+     $i0 = 0
+     label3: $r1 = r0.A02
+     $i1 = interfaceinvoke $r1.size()
+     $r3 = interfaceinvoke $r1.get($i0)
+     label4: staticinvoke com.facebook.systrace.Systrace.A00(1L)
+     $r4 = (X.09h) $r3
+     interfaceinvoke $r4.ANo()
+     $i0 = $i0 + 1
+     goto label3
+     exitmonitor $r2
+     staticinvoke com.facebook.systrace.Systrace.A00(1L)
+     exitmonitor $r2

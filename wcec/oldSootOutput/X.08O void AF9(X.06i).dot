@@ -1,0 +1,6 @@
+     staticinvoke X.06o.A01(\NativeJvmStreamConfig.jvmStreamEnabled\)
+     label1: staticinvoke com.facebook.breakpad.BreakpadManager.setJvmStreamEnabled(1)
+     label2: goto label5
+     label5: staticinvoke X.06o.A00()
+     label4: staticinvoke X.07S.A0A(\lacrima\ \Error enabling jvm stream\ $r2)
+     staticinvoke X.06o.A00()

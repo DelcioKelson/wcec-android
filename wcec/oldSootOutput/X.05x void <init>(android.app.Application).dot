@@ -1,0 +1,5 @@
+     r0.A07 = 1
+     r0.A00 = 0
+     $r2 = new java.util.ArrayList
+     r0.A09 = $r2
+     r0.A08 = $r1

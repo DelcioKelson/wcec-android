@@ -1,0 +1,5 @@
+     com.facebook.systrace.SystraceMessage.A00 = $r0
+     $r1 = new X.09M
+     com.facebook.systrace.SystraceMessage.A01 = $r1
+     $r2 = new X.05Y
+     com.facebook.systrace.SystraceMessage.A02 = $r2

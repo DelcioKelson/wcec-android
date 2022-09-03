@@ -1,0 +1,3 @@
+     X.02M.A02 = $r0
+     $r1 = new com.facebook.analytics.appstatelogger.foregroundstate.EntityAppState$ForegroundInit
+     X.02M.A01 = $r1

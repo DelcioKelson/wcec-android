@@ -1,0 +1,6 @@
+     $l0 = X.00M.A01
+     $l0 = $l1 & $l0
+     $b2 = $l0 cmp 0L
+     $l0 = com.facebook.systrace.Systrace.A00
+     $l1 = $l1 & $l0
+     $b2 = $l1 cmp 0L

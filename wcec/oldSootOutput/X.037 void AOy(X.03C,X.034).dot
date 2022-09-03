@@ -1,0 +1,46 @@
+     $r3 = X.03D.A3I
+     $r4 = (X.038) r0
+     $r5 = $r4.A01
+     $r6 = $r5.A0L
+     $r7 = interfaceinvoke $r6.get()
+     $r8 = (java.lang.String) $r7
+     virtualinvoke $r1.A03($r3 $r8)
+     $r3 = X.03D.A3K
+     $r8 = android.os.Build.MODEL
+     virtualinvoke $r1.A03($r3 $r8)
+     $r3 = X.03D.A3L
+     $r8 = android.os.Build.DEVICE
+     virtualinvoke $r1.A03($r3 $r8)
+     $r3 = X.03D.A3G
+     $r8 = android.os.Build.BRAND
+     virtualinvoke $r1.A03($r3 $r8)
+     $r3 = X.03D.A3N
+     $r8 = android.os.Build$VERSION.RELEASE
+     virtualinvoke $r1.A03($r3 $r8)
+     $r3 = X.03D.A3M
+     virtualinvoke $r1.A03($r3 \Android\)
+     $r3 = X.03D.A2P
+     $i0 = android.os.Build$VERSION.SDK_INT
+     $r8 = \DALVIK\
+     $r9 = staticinvoke java.lang.System.getProperty(\java.boot.class.path\)
+     label1: virtualinvoke $r1.A03($r3 $r8)
+     $z0 = virtualinvoke $r9.contains(\/system/framework/core-libart.jar\)
+     label3: $r8 = \UNKNOWN\
+     $r8 = \ART\
+     label2: $z0 = virtualinvoke $r9.contains(\/system/framework/core.jar\)
+     $r3 = X.03D.A2Q
+     $r8 = android.os.Build$VERSION.RELEASE
+     virtualinvoke $r1.A03($r3 $r8)
+     $r3 = X.03D.A5X
+     $r10 = new X.02s
+     $r11 = new java.lang.StringBuilder
+     $r8 = $r10.A00
+     virtualinvoke $r11.append($r8)
+     virtualinvoke $r11.append(\:\)
+     $r8 = $r10.A01
+     virtualinvoke $r11.append($r8)
+     $r8 = virtualinvoke $r11.toString()
+     virtualinvoke $r1.A03($r3 $r8)
+     staticinvoke X.02t.A00($r1)
+     goto label1
+     goto label1

@@ -1,0 +1,2 @@
+     $r0 = virtualinvoke $r1.clone()
+     $r1 = (X.055) $r0

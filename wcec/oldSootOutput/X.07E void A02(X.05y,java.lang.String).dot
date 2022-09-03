@@ -1,0 +1,7 @@
+     $r2 = new java.lang.StringBuilder
+     $r3 = $r0.A01
+     virtualinvoke $r2.append($r3)
+     virtualinvoke $r2.append(\: \)
+     virtualinvoke $r2.append($r1)
+     $r1 = virtualinvoke $r2.toString()
+     $r4 = new X.04v

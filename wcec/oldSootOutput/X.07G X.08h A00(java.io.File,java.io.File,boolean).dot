@@ -1,0 +1,31 @@
+     label01: $r2 = new X.08h
+     label04: $r2 = new X.08h
+     label06: $r3 = $r2.A01
+     label07: if $r3 != null goto label25
+     label08: virtualinvoke $r2.close()
+     label09: goto label20
+     label11: $z1 = virtualinvoke $r0.setWritable(1)
+     label12: if $z1 == 0 goto label21
+     label13: $r2 = new X.08h
+     label15: $r2 = new X.08h
+     label14: goto label19
+     label19: $z0 = virtualinvoke $r0.setWritable(0)
+     $r3 = $r2.A01
+     label16: if $r3 != null goto label19
+     label17: virtualinvoke $r2.close()
+     label18: $r2 = null
+     $r5 = new java.lang.StringBuilder
+     virtualinvoke $r5.append(\error removing \)
+     $r6 = virtualinvoke $r0.getCanonicalPath()
+     virtualinvoke $r5.append($r6)
+     virtualinvoke $r5.append(\ write permission\)
+     $r6 = virtualinvoke $r5.toString()
+     staticinvoke android.util.Log.w(\SysUtil\ $r6)
+     $z0 = virtualinvoke $r0.setWritable(0)
+     $r5 = new java.lang.StringBuilder
+     virtualinvoke $r5.append(\error removing \)
+     $r6 = virtualinvoke $r0.getCanonicalPath()
+     virtualinvoke $r5.append($r6)
+     virtualinvoke $r5.append(\ write permission\)
+     $r6 = virtualinvoke $r5.toString()
+     staticinvoke android.util.Log.w(\SysUtil\ $r6)

@@ -1,0 +1,2 @@
+     $r1 = staticinvoke X.076.A00()
+     $z0 = interfaceinvoke $r1.ATn()

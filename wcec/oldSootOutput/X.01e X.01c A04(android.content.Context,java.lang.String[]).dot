@@ -1,0 +1,17 @@
+     $r2 = $r10
+     $r3 = staticinvoke X.01e.A01($r0 $r2)
+     $r4 = staticinvoke X.01e.A02($r3)
+     $i0 = lengthof $r1
+     $i1 = 1
+     label1: $r2 = $r1$i1
+     label3: $r8 = staticinvoke X.01e.A05($r4)
+     $r3 = staticinvoke X.01e.A01($r0 $r2)
+     $r5 = staticinvoke X.01e.A02($r3)
+     $z0 = virtualinvoke $r4.equals($r5)
+     $i1 = $i1 + 1
+     label2: $r6 = new java.lang.StringBuilder
+     goto label1
+     $r2 = staticinvoke java.util.Arrays.toString($r1)
+     virtualinvoke $r6.append($r2)
+     $r2 = virtualinvoke $r6.toString()
+     $r7 = new X.09G

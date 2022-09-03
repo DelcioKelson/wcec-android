@@ -1,0 +1,8 @@
+     $r0 = \true\
+     $z0 = virtualinvoke $r0.equals($r1)
+     com.facebook.systrace.TraceDirect.sForceJavaImpl = $z0
+     $r1 = staticinvoke X.06p.A01(\debug.fbsystrace.trace_load\)
+     $z0 = virtualinvoke $r0.equals($r1)
+     com.facebook.systrace.TraceDirect.sTraceLoad = $z0
+     $r2 = X.00I.A02
+     com.facebook.systrace.TraceDirect.sNativeAvailable = $r2

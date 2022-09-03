@@ -1,0 +1,4 @@
+     $r0 = new java.lang.StringBuilder
+     virtualinvoke $r0.append($i0)
+     virtualinvoke $r0.append(\)\)
+     $r1 = virtualinvoke $r0.toString()

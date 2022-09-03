@@ -1,0 +1,4 @@
+     $r3 = X.07S.A01
+     $z0 = interfaceinvoke $r3.AEW(5)
+     $r1 = staticinvoke com.facebook.common.stringformat.StringFormatUtil.formatStrLocaleSafe($r1 $r2)
+     staticinvoke X.07S.A06($r0 $r1)

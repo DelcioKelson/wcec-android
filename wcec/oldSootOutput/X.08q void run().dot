@@ -1,0 +1,7 @@
+     label1: staticinvoke X.07J.A01()
+     label2: $r1 = newarray (java.lang.Object)1
+     label3: $r2 = r0.A01
+     $r10 = $r2
+     staticinvoke X.07B.A04(\EarlyErrorReporting\ \Lacrima init executor done in EarlyErrorReporting for: %s\ $r1)
+     $r4 = r0.A00
+     staticinvoke X.075.A02($r4 $r3 \Failed earlyJavaInit\)

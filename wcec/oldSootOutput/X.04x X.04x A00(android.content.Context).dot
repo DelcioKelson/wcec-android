@@ -1,0 +1,14 @@
+     entermonitor class \LX/04x\
+     label01: $r1 = X.04x.A09
+     label02: staticinvoke java.lang.Class.forName(\com.facebook.common.dextricks.DexFileLoadOld\)
+     label10: exitmonitor class \LX/04x\
+     staticinvoke java.lang.Class.forName(\com.facebook.common.dextricks.DexFileLoadNew\)
+     label03: $r1 = new X.04x
+     label04: $r2 = X.04x.A0B
+     $r3 = $r1.A05
+     label05: virtualinvoke $r2.set($r3 $r1)
+     label06: X.04x.A09 = $r1
+     goto label10
+     label08: $r5 = new java.lang.RuntimeException
+     $r5 = new java.lang.RuntimeException
+     exitmonitor class \LX/04x\

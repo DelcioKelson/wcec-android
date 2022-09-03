@@ -1,0 +1,2 @@
+     $r1 = r0.A02
+     virtualinvoke $r1.A02($i0)

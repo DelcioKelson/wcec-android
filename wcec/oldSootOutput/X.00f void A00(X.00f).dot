@@ -1,0 +1,151 @@
+     $r3 = null
+     $r1 = new X.03C
+     label01: $r4 = $r0.A0D
+     label02: if $r4 != null goto label11
+     label03: $r5 = $r0.A0A
+     label11: $r6 = $r0.A0J
+     label04: if $r5 == null goto label07
+     label05: $r0.A0D = $r5
+     label07: $z0 = $r0.A0F
+     label06: $r4 = $r5
+     goto label11
+     label08: if $z0 == 0 goto label11
+     label09: $r0.A09 = null
+     $r7 = $r6.A05
+     staticinvoke X.02y.A01($r7 \Did you call SessionManager.init()?\)
+     $r8 = new java.lang.StringBuilder
+     virtualinvoke $r8.append(\anr_report_\)
+     $i0 = $r0.A01
+     virtualinvoke $r8.append($i0)
+     virtualinvoke $r8.append(\.dmp\)
+     $r5 = virtualinvoke $r8.toString()
+     $r9 = new java.io.File
+     $r0.A09 = $r9
+     $z0 = $r0.A0F
+     label12: if $z0 != 0 goto label14
+     label13: $r10 = X.03D.A5B
+     label14: if $r4 == null goto label26
+     virtualinvoke $r1.A03($r10 \true\)
+     label15: $r10 = X.03D.A5W
+     label26: $r10 = X.03D.A2o
+     $i0 = virtualinvoke $r4.length()
+     label16: if $i0 == 0 goto label25
+     label17: $r11 = virtualinvoke $r4.getBytes(\UTF-8\)
+     label25: virtualinvoke $r1.A03($r10 $r3)
+     label18: $r12 = new java.io.ByteArrayOutputStream
+     label20: $r13 = new java.util.zip.GZIPOutputStream
+     virtualinvoke $r13.write($r11)
+     virtualinvoke $r13.close()
+     $r11 = virtualinvoke $r12.toByteArray()
+     $r4 = staticinvoke android.util.Base64.encodeToString($r11 2)
+     label22: $r3 = $r4
+     goto label25
+     label24: staticinvoke X.07S.A09(\lacrima\ \Failed to compress string\ $r14)
+     virtualinvoke $r1.A03($r10 \0\)
+     $l1 = $r0.A03
+     $l2 = $r6.A01
+     label27: $l2 = $l1 - $l2
+     label28: $r15 = X.03D.A0L
+     $r16 = staticinvoke java.lang.Long.valueOf($l1)
+     virtualinvoke $r1.A02($r15 $r16)
+     $r15 = X.03D.A0Q
+     $r16 = staticinvoke java.lang.Long.valueOf($l2)
+     virtualinvoke $r1.A02($r15 $r16)
+     $r10 = X.03D.A2S
+     $z0 = $r0.A0I
+     $r3 = staticinvoke java.lang.Boolean.toString($z0)
+     virtualinvoke $r1.A03($r10 $r3)
+     $r15 = X.03D.A0N
+     $i0 = $r0.A00
+     label29: $l1 = (long) $i0
+     label30: $r16 = staticinvoke java.lang.Long.valueOf($l1)
+     virtualinvoke $r1.A02($r15 $r16)
+     $r15 = X.03D.A0O
+     $r16 = staticinvoke java.lang.Long.valueOf(0L)
+     virtualinvoke $r1.A02($r15 $r16)
+     $r17 = X.03D.A00
+     $z0 = $r0.A0G
+     virtualinvoke $r1.A01($r17 $z0)
+     $r17 = X.03D.A01
+     $z0 = $r0.A0H
+     virtualinvoke $r1.A01($r17 $z0)
+     $r15 = X.03D.A0T
+     virtualinvoke $r1.A02($r15 null)
+     $r15 = X.03D.A0S
+     virtualinvoke $r1.A02($r15 null)
+     $r15 = X.03D.A0b
+     virtualinvoke $r1.A02($r15 null)
+     $r15 = X.03D.A0a
+     virtualinvoke $r1.A02($r15 null)
+     $r10 = X.03D.A2h
+     $r3 = $r0.A0C
+     virtualinvoke $r1.A03($r10 $r3)
+     $r10 = X.03D.A2g
+     $r3 = $r0.A0B
+     virtualinvoke $r1.A03($r10 $r3)
+     $r15 = X.03D.A0K
+     $l1 = $r0.A02
+     $r18 = staticinvoke java.lang.Long.valueOf($l1)
+     virtualinvoke $r1.A02($r15 $r18)
+     $r15 = X.03D.A0X
+     $l1 = $r0.A07
+     $r18 = staticinvoke java.lang.Long.valueOf($l1)
+     virtualinvoke $r1.A02($r15 $r18)
+     $r15 = X.03D.A0W
+     label31: $l1 = (long) 0
+     label32: $r18 = staticinvoke java.lang.Long.valueOf($l1)
+     virtualinvoke $r1.A02($r15 $r18)
+     $r15 = X.03D.A0Y
+     virtualinvoke $r1.A02($r15 $r16)
+     $r15 = X.03D.A0R
+     $l1 = $r0.A04
+     $r16 = staticinvoke java.lang.Long.valueOf($l1)
+     virtualinvoke $r1.A02($r15 $r16)
+     $r15 = X.03D.A0V
+     $l1 = $r0.A06
+     $r16 = staticinvoke java.lang.Long.valueOf($l1)
+     virtualinvoke $r1.A02($r15 $r16)
+     $r15 = X.03D.A0U
+     $l1 = $r0.A05
+     $r16 = staticinvoke java.lang.Long.valueOf($l1)
+     virtualinvoke $r1.A02($r15 $r16)
+     $r10 = X.03D.A5i
+     $r3 = $r0.A0E
+     virtualinvoke $r1.A03($r10 $r3)
+     $r10 = X.03D.A35
+     virtualinvoke $r1.A03($r10 null)
+     $r10 = X.03D.A4H
+     virtualinvoke $r1.A03($r10 null)
+     $r15 = X.03D.A0Z
+     $l1 = $r0.A08
+     $r16 = staticinvoke java.lang.Long.valueOf($l1)
+     virtualinvoke $r1.A02($r15 $r16)
+     label33: $i0 = 0
+     label34: $r19 = $r0.A0K
+     $r20 = interfaceinvoke $r19.iterator()
+     label35: $z0 = interfaceinvoke $r20.hasNext()
+     label36: if $z0 == 0 goto label41
+     label37: $r21 = interfaceinvoke $r20.next()
+     label41: $r7 = $r0.A09
+     $r3 = (java.lang.String) $r21
+     $r8 = new java.lang.StringBuilder
+     $r10 = X.03D.A2Y
+     $r4 = $r10.A00
+     virtualinvoke $r8.append($r4)
+     label38: virtualinvoke $r8.append($i0)
+     $r4 = virtualinvoke $r8.toString()
+     virtualinvoke $r1.A04($r4 $r3)
+     label39: $i0 = $i0 + 1
+     goto label35
+     $r10 = X.03D.A3e
+     $r3 = virtualinvoke $r22.getMessage()
+     virtualinvoke $r1.A03($r10 $r3)
+     $r23 = new java.util.Properties
+     virtualinvoke $r1.A05($r23)
+     label43: $r7 = $r0.A09
+     $r24 = new java.io.FileOutputStream
+     label45: virtualinvoke $r23.store($r24 \no pool\)
+     label46: virtualinvoke $r24.close()
+     label49: virtualinvoke $r24.close()
+     staticinvoke X.07S.A0A(\lacrima\ \Could not save ANR report file\ $r26)
+     goto label50

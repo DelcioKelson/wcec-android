@@ -1,0 +1,6 @@
+     entermonitor class \LX/024\
+     label1: $r1 = X.024.A02
+     $r1 = new X.024
+     label2: exitmonitor class \LX/024\
+     X.024.A02 = $r1
+     exitmonitor class \LX/024\

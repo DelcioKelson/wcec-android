@@ -1,0 +1,18 @@
+     $r3 = virtualinvoke $r1.getApplicationContext()
+     $r4 = $r3
+     r0.A01 = $r3
+     $r5 = new java.lang.StringBuilder
+     label1: r0.A00 = $i0
+     $r6 = virtualinvoke $r1.getApplicationInfo()
+     $r7 = $r6.nativeLibraryDir
+     virtualinvoke $r5.append($r7)
+     $r7 = virtualinvoke $r5.toString()
+     staticinvoke android.util.Log.w(\SoLoader\ $r7)
+     r0.A01 = $r1
+     $r4 = $r1
+     $r6 = virtualinvoke $r4.getApplicationInfo()
+     $r7 = $r6.nativeLibraryDir
+     $r2 = new java.io.File
+     $r8 = newarray (java.lang.String)0
+     $r9 = new X.04s
+     r0.A02 = $r9

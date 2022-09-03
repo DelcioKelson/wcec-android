@@ -1,0 +1,13 @@
+     $l0 = r0.state
+     $r1 = r0.inBuf
+     $i4 = r0.inPos
+     $i1 = r0.inSize
+     $r2 = r0.outBuf
+     $i2 = lengthof $r2
+     $l3 = staticinvoke com.facebook.xzdecoder.XzInputStream.decompressStream($l0 $r1 $i4 $i1 $r2 0 $i2)
+     $l0 = $l3 >>> 32
+     $i1 = (int) $l0
+     r0.inPos = $i1
+     $i1 = (int) $l3
+     r0.outPos = $i1
+     r0.clientOutPos = 0

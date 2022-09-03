@@ -1,0 +1,2 @@
+     $z0 = staticinvoke com.facebook.systrace.TraceDirect.checkNative()
+     staticinvoke com.facebook.systrace.TraceDirect.nativeSetEnabledTags($l0)

@@ -1,0 +1,52 @@
+     $i1 = $i0
+     label002: if $i2 != 0 goto label005
+     $i2 = 1
+     $i2 = 2
+     $i2 = 3
+     label011: entermonitor class \LX/07P\
+     label008: if $i3 < 23 goto label011
+     label010: if $z0 == 0 goto label011
+     $i1 = $i0 | 72
+     label021: exitmonitor class \LX/07P\
+     label017: $z0 = 0
+     label015: goto label018
+     goto label019
+     $z0 = 1
+     label028: if $i0 < 23 goto label031
+     label031: if $i0 < 21 goto label036
+     label030: goto label033
+     label033: if $z0 == 0 goto label036
+     goto label037
+     goto label038
+     label041: if $z0 != 0 goto label044
+     label047: if $z0 == 0 goto label052
+     label051: goto label046
+     label055: goto label104
+     label060: $i2 = 0
+     label061: if $i2 >= $i1 goto label066
+     label065: $i2 = $i2 + 1
+     goto label061
+     label069: $b5 = 1
+     label072: $b5 = 0
+     label073: if $i0 > 17 goto label074
+     $b5 = $b5 | 1
+     label082: goto label104
+     label087: if $i0 < 21 goto label099
+     label091: $i1 = 0
+     $i2 = 0
+     label092: if $i1 >= $i0 goto label099
+     label098: $i1 = $i1 + 1
+     $i2 = $i2 + 1
+     goto label092
+     label100: goto label104
+     label105: $i2 = $i1 + -1
+     label107: if $z0 == 0 goto label109
+     label110: if $z0 == 0 goto label112
+     label112: $i1 = $i2
+     goto label105
+     label114: goto label117
+     entermonitor class \LX/06P\
+     label125: exitmonitor class \LX/06P\
+     goto label125
+     exitmonitor class \LX/06P\
+     exitmonitor class \LX/07P\

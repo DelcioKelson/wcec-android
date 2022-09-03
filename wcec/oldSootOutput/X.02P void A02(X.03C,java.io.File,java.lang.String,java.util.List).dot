@@ -1,0 +1,64 @@
+     staticinvoke X.06o.A01(\combineIntoReport\)
+     label01: $r6 = X.02P.A06
+     entermonitor $r6
+     label02: staticinvoke X.06o.A01(\combineIntoProperties\)
+     label03: virtualinvoke $r2.getName()
+     $r8 = new X.044
+     staticinvoke java.util.Collections.sort($r4 $r8)
+     $r9 = new java.util.Properties
+     $r10 = interfaceinvoke $r4.iterator()
+     label04: $z0 = interfaceinvoke $r10.hasNext()
+     $r11 = interfaceinvoke $r10.next()
+     label18: staticinvoke X.06o.A00()
+     $r12 = (java.io.File) $r11
+     $r13 = new java.lang.StringBuilder
+     virtualinvoke $r13.append(\include property file: \)
+     $r14 = virtualinvoke $r12.getName()
+     virtualinvoke $r13.append($r14)
+     $r14 = virtualinvoke $r13.toString()
+     staticinvoke X.06o.A01($r14)
+     $r15 = new java.util.Properties
+     label05: $r16 = new java.io.FileInputStream
+     label07: virtualinvoke $r15.load($r16)
+     virtualinvoke $r9.putAll($r15)
+     label08: virtualinvoke $r16.close()
+     label09: goto label15
+     label15: staticinvoke X.06o.A00()
+     label11: virtualinvoke $r16.close()
+     label14: $r18 = newarray (java.lang.Object)2
+     $r14 = virtualinvoke $r12.getName()
+     $r180 = $r14
+     $r181 = $r5
+     staticinvoke X.07S.A0H(\lacrima\ \Could not read property file %s\ $r18)
+     goto label04
+     label17: staticinvoke X.06o.A00()
+     $r20 = X.03D.A5N
+     label19: $r12 = new java.io.File
+     $r14 = $r20.A00
+     $r21 = virtualinvoke $r2.getName()
+     virtualinvoke $r9.put($r14 $r21)
+     virtualinvoke $r1.A05($r9)
+     label20: $r22 = r0.A00
+     $r23 = X.034.A02
+     $r14 = $r23.A00
+     label21: $z0 = virtualinvoke $r3.startsWith($r14)
+     label22: if $z0 != 0 goto label25
+     label23: $z0 = virtualinvoke $r3.contains(\java\)
+     label25: $r14 = \reports\
+     label24: if $z0 != 0 goto label25
+     $r14 = null
+     goto label26
+     label26: virtualinvoke $r22.A01($r12 $r14 $r9)
+     label27: goto label30
+     label30: exitmonitor $r6
+     label29: $r18 = newarray (java.lang.Object)3
+     $r14 = virtualinvoke $r2.getName()
+     $r180 = $r14
+     $r181 = $r3
+     $r182 = $r24
+     staticinvoke X.07S.A0H(\lacrima\ \Assembling report failed: %s %s\ $r18)
+     label31: staticinvoke X.06o.A00()
+     staticinvoke X.06o.A00()
+     label36: exitmonitor $r6
+     staticinvoke X.06o.A00()
+     goto label12

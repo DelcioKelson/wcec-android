@@ -1,0 +1,45 @@
+     $r2 = null
+     $r1 = new java.util.ArrayList
+     virtualinvoke $r1.add(\logcat\)
+     virtualinvoke $r1.add(\-d\)
+     virtualinvoke $r1.add(\-t\)
+     $r3 = staticinvoke java.lang.String.valueOf(200)
+     virtualinvoke $r1.add($r3)
+     $r4 = staticinvoke java.lang.Runtime.getRuntime()
+     $i0 = virtualinvoke $r1.size()
+     label02: $r5 = newarray (java.lang.String)$i0
+     label03: $r6 = virtualinvoke $r1.toArray($r5)
+     label04: $r5 = (java.lang.String) $r6
+     label05: $r7 = virtualinvoke $r4.exec($r5)
+     label06: if $r7 == null goto label33
+     label07: $r8 = virtualinvoke $r7.getInputStream()
+     label33: if $r2 != null goto label34
+     label08: if $r8 == null goto label33
+     label09: $r8 = virtualinvoke $r7.getInputStream()
+     label10: $r9 = new java.io.InputStreamReader
+     label12: $r10 = new java.io.BufferedReader
+     label14: $r1 = new java.util.ArrayList
+     label16: $i0 = 0
+     $i1 = 0
+     label17: $r3 = virtualinvoke $r10.readLine()
+     label18: if $r3 == null goto label21
+     label19: virtualinvoke $r1.add($r3)
+     label21: $r11 = new java.lang.StringBuilder
+     $i2 = virtualinvoke $r3.length()
+     label20: $i1 = $i1 + $i2
+     $i1 = $i1 + 1
+     goto label17
+     label23: $i1 = virtualinvoke $r1.size()
+     label24: if $i0 >= $i1 goto label32
+     label25: $r12 = virtualinvoke $r1.get($i0)
+     label32: $r2 = $r11
+     label26: $r3 = (java.lang.String) $r12
+     label27: virtualinvoke $r11.append($r3)
+     virtualinvoke $r11.append(\\n\)
+     label28: $i0 = $i0 + 1
+     goto label23
+     goto label31
+     label31: staticinvoke X.07S.A08(\lacrima\ \ErrorReportingCheck.collectLogcat could not retrieve data.\ $r13)
+     $r2 = $r11
+     goto label33
+     label34: $r3 = virtualinvoke $r2.toString()

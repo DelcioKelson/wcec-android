@@ -1,0 +1,1 @@
+     label2: if $z1 != 0 goto label3

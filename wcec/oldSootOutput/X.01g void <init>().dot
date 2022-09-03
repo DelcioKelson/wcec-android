@@ -1,0 +1,19 @@
+     label01: $r5 = staticinvoke java.lang.Class.forName(\com.android.org.conscrypt.OpenSSLSocketImpl\)
+     label02: $r6 = $r5
+     r0.A00 = $r5
+     goto label05
+     label05: $r7 = newarray (java.lang.Class)1
+     label03: $r5 = staticinvoke java.lang.Class.forName(\org.apache.harmony.xnet.provider.jsse.OpenSSLSocketImpl\)
+     label04: $r6 = $r5
+     r0.A00 = $r5
+     $r5 = java.lang.Boolean.TYPE
+     $r70 = $r5
+     label06: $r8 = virtualinvoke $r6.getMethod(\setUseSessionTickets\ $r7)
+     label07: r0.A02 = $r8
+     $r6 = r0.A00
+     $r7 = newarray (java.lang.Class)1
+     $r70 = class \Ljava/lang/String\
+     label08: $r8 = virtualinvoke $r6.getMethod(\setHostname\ $r7)
+     label09: r0.A01 = $r8
+     r0.A03 = 1
+     goto label03

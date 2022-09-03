@@ -1,0 +1,8 @@
+     $z0 = $r1 instanceof X.01c
+     $r2 = (X.01c) $r1
+     $r3 = r0.A01
+     $r4 = $r2.A01
+     label1: $r3 = r0.A00
+     $z0 = virtualinvoke $r3.equals($r4)
+     $r4 = $r2.A00
+     $z0 = virtualinvoke $r3.equals($r4)

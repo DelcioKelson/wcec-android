@@ -1,0 +1,47 @@
+     $r3 = r0.A02
+     $r4 = interfaceinvoke $r3.iterator()
+     $r5 = null
+     label01: $z0 = interfaceinvoke $r4.hasNext()
+     $r6 = interfaceinvoke $r4.next()
+     $r7 = (java.lang.String) $r6
+     $z0 = staticinvoke android.text.TextUtils.isEmpty($r7)
+     $i0 = virtualinvoke $r7.indexOf(33)
+     label02: $z0 = staticinvoke android.text.TextUtils.isEmpty($r5)
+     $i0 = $i0 + 2
+     $i1 = virtualinvoke $r7.length()
+     $r5 = virtualinvoke $r7.substring($i0)
+     $r8 = r0.A00
+     $r1 = new java.util.zip.ZipFile
+     label03: $r9 = virtualinvoke $r1.entries()
+     label04: $z0 = interfaceinvoke $r9.hasMoreElements()
+     label05: if $z0 == 0 goto label21
+     label06: $r6 = interfaceinvoke $r9.nextElement()
+     label21: virtualinvoke $r1.close()
+     $r10 = (java.util.zip.ZipEntry) $r6
+     label07: if $r10 == null goto label04
+     label08: $r11 = virtualinvoke $r10.getName()
+     $z0 = virtualinvoke $r11.startsWith($r5)
+     label09: if $z0 == 0 goto label04
+     label10: $r11 = virtualinvoke $r10.getName()
+     $z0 = virtualinvoke $r11.endsWith(\.so\)
+     label11: if $z0 == 0 goto label04
+     label12: $i0 = virtualinvoke $r10.getMethod()
+     label13: if $i0 != 0 goto label04
+     label14: $r11 = virtualinvoke $r10.getName()
+     $i0 = virtualinvoke $r5.length()
+     label15: $i0 = $i0 + 1
+     label16: $r11 = virtualinvoke $r11.substring($i0)
+     entermonitor r0
+     label17: $r12 = r0.A01
+     $z0 = interfaceinvoke $r12.containsKey($r7)
+     $r13 = new java.util.HashSet
+     label18: $r6 = interfaceinvoke $r12.get($r7)
+     interfaceinvoke $r12.put($r7 $r13)
+     $r3 = (java.util.Set) $r6
+     interfaceinvoke $r3.add($r11)
+     label19: exitmonitor r0
+     label20: goto label04
+     goto label01
+     exitmonitor r0
+     label24: virtualinvoke $r1.close()
+     goto label25

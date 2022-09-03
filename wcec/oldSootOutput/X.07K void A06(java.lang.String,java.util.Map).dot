@@ -1,0 +1,8 @@
+     entermonitor r0
+     label1: $r3 = r0.A02
+     $r3 = X.05f.A04
+     label2: $r4 = new X.08s
+     r0.A02 = $r3
+     interfaceinvoke $r3.execute($r4)
+     label3: exitmonitor r0
+     exitmonitor r0

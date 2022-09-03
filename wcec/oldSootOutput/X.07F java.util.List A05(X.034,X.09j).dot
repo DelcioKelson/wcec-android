@@ -1,0 +1,15 @@
+     $r3 = r0.A04
+     entermonitor $r3
+     label1: $r4 = r0.A09
+     $r5 = interfaceinvoke $r4.get($r1)
+     $r6 = (java.util.Map) $r5
+     $r9 = new java.util.HashMap
+     label2: $r5 = interfaceinvoke $r6.get($r2)
+     $r6 = $r9
+     interfaceinvoke $r4.put($r1 $r9)
+     $r7 = (java.util.List) $r5
+     $r10 = new java.util.ArrayList
+     label3: exitmonitor $r3
+     $r7 = $r10
+     interfaceinvoke $r6.put($r2 $r10)
+     exitmonitor $r3

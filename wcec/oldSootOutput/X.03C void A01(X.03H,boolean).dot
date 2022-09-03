@@ -1,0 +1,3 @@
+     $r2 = r0.A01
+     $r3 = staticinvoke java.lang.Boolean.valueOf($z0)
+     interfaceinvoke $r2.put($r1 $r3)

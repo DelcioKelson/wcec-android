@@ -1,0 +1,2 @@
+     $r1 = r0.A01
+     virtualinvoke $r1.close()

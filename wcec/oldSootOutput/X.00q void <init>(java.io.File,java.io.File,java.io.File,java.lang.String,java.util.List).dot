@@ -1,0 +1,7 @@
+     $r6 = new java.util.ArrayList
+     r0.A04 = $r6
+     r0.A03 = $r4
+     r0.A00 = $r1
+     r0.A02 = $r2
+     r0.A01 = $r3
+     virtualinvoke $r6.addAll($r5)

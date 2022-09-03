@@ -1,0 +1,9 @@
+     $r1 = class \Ljava/lang/Runtime\
+     $r0 = newarray (java.lang.Class)3
+     $r00 = class \Ljava/lang/String\
+     $r01 = class \Ljava/lang/ClassLoader\
+     $r02 = class \Ljava/lang/String\
+     label1: $r2 = virtualinvoke $r1.getDeclaredMethod(\nativeLoad\ $r0)
+     virtualinvoke $r2.setAccessible(1)
+     $r4 = com.facebook.superpack.SuperpackFileLoader.TAG
+     staticinvoke X.07S.A0A($r4 \Cannot get nativeLoad method\ $r3)

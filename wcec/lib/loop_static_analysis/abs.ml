@@ -1,40 +1,38 @@
 (*the condition operations are translated in reverse in jimple. eg: '==' is translated to '!=' *
  Thus, is cneg is applied in reverse*)
+open Ast
+exception Varible of string
 
- open Ast
+type val_abs = 
+  | Abot
+  | Ainter of int * int
+  | Aposinf of int
+  | Aneginf of int 
+  | Anegposinf
 
- type val_abs = 
-   | Abot
-   | Ainter of int * int
-   | Aposinf of int
-   | Aneginf of int 
-   | Anegposinf
- 
-
- type side =
-   | R
-   | L
+type side =
+  | R
+  | L
   
  (*global complete variables*)
  
- let binop o v1 v2 = 
-  match o with
-  | Badd -> v1 + v2
-  | Bsub -> v1 - v2 
-  | Bmul-> v1 * v2 
-  | Bdiv -> v1 / v2
-  | _ -> 0
+let binop o v1 v2 = 
+ match o with
+ | Badd -> v1 + v2
+ | Bsub -> v1 - v2 
+ | Bmul-> v1 * v2 
+ | Bdiv -> v1 / v2
+ | _ -> 0
 
 let rec sem_expr e = 
   match e with
   | Ecst n -> n
-  | Eident _ -> 0
+  | Eident _ -> 20
   | Ebinop (o, e0, e1) ->
     binop o 
         (sem_expr e0)
         (sem_expr e1) 
  
- let loop_bounds : (ident, int) Hashtbl.t= Hashtbl.create 16 
  let val_bot = Abot
 
  let read var m = try Hashtbl.find m var with Not_found -> Anegposinf
@@ -90,16 +88,16 @@ let val_sat side o n v =
   |L, Bgt, Aneginf x  |L, Bge, Aneginf x -> if x<n then Abot else Ainter(n,x)
   |L, Bgt, Anegposinf |L, Bge, Anegposinf ->  Aneginf (n)
   
- let val_join a0 a1 = 
-   match a0,a1 with
-   | Abot, a | a, Abot -> a
-   | Anegposinf, _ | _, Anegposinf | Aneginf _ ,Aposinf _ | Aposinf _, Aneginf _-> Anegposinf
-   | (Aposinf x), (Ainter (y1 , y2)) | (Ainter (y1 , y2)),(Aposinf x)  -> if x>y1 then Aposinf y1 else Aposinf x
-   | (Aneginf x), (Ainter (y1 , y2)) | (Ainter (y1 , y2)),(Aneginf x)  -> if x<y1 then Aposinf y1 else Aposinf x
-   | (Ainter (x1,x2)), (Ainter (y1 , y2)) -> 
-       if x1<=y1 && x2 >= y2 then Ainter(x1,x2) else Ainter(y1,y2)
-   | Aneginf x, Aneginf y -> if x<y then Aneginf y else Aneginf x
-   | Aposinf x, Aposinf y -> if x>y then Aposinf y else Aposinf x
+let val_join a0 a1 = 
+  match a0,a1 with
+  | Abot, a | a, Abot -> a
+  | Anegposinf, _ | _, Anegposinf | Aneginf _ ,Aposinf _ | Aposinf _, Aneginf _-> Anegposinf
+  | (Aposinf x), (Ainter (y1 , y2)) | (Ainter (y1 , y2)),(Aposinf x)  -> if x>y1 then Aposinf y1 else Aposinf x
+  | (Aneginf x), (Ainter (y1 , y2)) | (Ainter (y1 , y2)),(Aneginf x)  -> if x<y1 then Aposinf y1 else Aposinf x
+  | (Ainter (x1,x2)), (Ainter (y1 , y2)) -> 
+      if x1<=y1 && x2 >= y2 then Ainter(x1,x2) else Ainter(y1,y2)
+  | Aneginf x, Aneginf y -> if x<y then Aneginf y else Aneginf x
+  | Aposinf x, Aposinf y -> if x>y then Aposinf y else Aposinf x
  
    
  let val_binop o v0 v1 =
@@ -136,10 +134,10 @@ let val_sat side o n v =
    | _, _, Anegposinf | _, Anegposinf , _ | _ ,_ ,_-> Anegposinf
 
 
- let nr_bot aenv = 
- Hashtbl.iter  (fun x a0 ->
-   Hashtbl.replace aenv x (val_join a0 Abot)) aenv;
-   aenv
+let nr_bot aenv = 
+Hashtbl.iter  (fun x a0 ->
+  Hashtbl.replace aenv x (val_join a0 Abot)) aenv;
+  aenv
  
  let nr_is_bot aenv = 
    let r = ref false in 
@@ -238,17 +236,17 @@ let rec number_acurr x1 x2 total_inc mod_result =
      | _ -> max_int
 
 (*static analysis*)
-let rec ai_stmt  s aenv_abs = 
+let rec ai_stmt  s aenv_abs loop_bounds = 
    if nr_is_bot aenv_abs then aenv_abs
    else 
      match s with
      | Sassign (x,e) -> write x (ai_expr e aenv_abs) aenv_abs
      | Sblock([]) | Sskip -> aenv_abs
-     | Sblock (s1::sl) -> ai_stmt (Sblock sl) (ai_stmt s1 aenv_abs)
+     | Sblock (s1::sl) -> ai_stmt (Sblock sl) (ai_stmt s1 aenv_abs loop_bounds) loop_bounds
      | Sgoto (label,b, s) ->
        let id_cmp = get_id_cmp b in
        let start_value = read id_cmp aenv_abs in
-       let f_loop = fun a -> ai_stmt s (ai_cond (cneg b) a) in
+       let f_loop = fun a -> ai_stmt s (ai_cond (cneg b) a) loop_bounds in
        let aenv = ai_cond b (abs_iter f_loop aenv_abs) in
        let () = match start_value with
        | Ainter(x,y) -> 
@@ -257,6 +255,7 @@ let rec ai_stmt  s aenv_abs =
        aenv 
 
 let get_bounds s = 
+  let loop_bounds = Hashtbl.create 10 in
   let aenv = Hashtbl.create 1000 in
-  let _ = ai_stmt s aenv in
+  let _ = ai_stmt s aenv loop_bounds in
   loop_bounds

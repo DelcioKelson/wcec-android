@@ -1,0 +1,55 @@
+     $r7 = X.04x.A0D
+     r0.A01 = 0
+     r0.A02 = 0
+     $r8 = new java.util.concurrent.ConcurrentLinkedQueue
+     r0.A06 = $r8
+     $r3 = new java.util.ArrayList
+     r0.A00 = $r3
+     $r9 = newarray (dalvik.system.DexFile)0
+     r0.A04 = $r9
+     $r7 = X.04x.A0C
+     r0.A05 = $r7
+     $r4 = new java.util.ArrayList
+     $r3 = new java.util.ArrayList
+     label01: $r10 = staticinvoke java.lang.Class.forName(\dalvik.system.BaseDexClassLoader\)
+     $r11 = virtualinvoke $r10.getDeclaredField(\pathList\)
+     virtualinvoke $r11.setAccessible(1)
+     label02: $r7 = r0.A05
+     label03: $r12 = virtualinvoke $r11.get($r7)
+     $r10 = staticinvoke java.lang.Class.forName(\dalvik.system.DexPathList\)
+     $r11 = virtualinvoke $r10.getDeclaredField(\dexElements\)
+     virtualinvoke $r11.setAccessible(1)
+     $r12 = virtualinvoke $r11.get($r12)
+     label04: $r13 = (java.lang.Object) $r12
+     label05: $r10 = staticinvoke java.lang.Class.forName(\dalvik.system.DexPathList$Element\)
+     $r11 = virtualinvoke $r10.getDeclaredField(\dexFile\)
+     virtualinvoke $r11.setAccessible(1)
+     $r14 = virtualinvoke $r1.getApplicationInfo()
+     label06: $r2 = $r14.sourceDir
+     $i0 = lengthof $r13
+     label07: $i1 = 0
+     label08: if $i1 >= $i0 goto label20
+     label09: $r12 = $r13$i1
+     label20: $i0 = virtualinvoke $r4.size()
+     label10: $r12 = virtualinvoke $r11.get($r12)
+     label11: $r15 = (dalvik.system.DexFile) $r12
+     label12: $r16 = virtualinvoke $r15.getName()
+     $z0 = virtualinvoke $r2.equals($r16)
+     label13: if $z0 == 0 goto label16
+     label14: virtualinvoke $r4.add($r15)
+     label16: virtualinvoke $r3.add($r15)
+     label15: goto label17
+     label17: $i1 = $i1 + 1
+     goto label08
+     $r18 = new java.lang.RuntimeException
+     $r9 = newarray (dalvik.system.DexFile)$i0
+     $r13 = virtualinvoke $r4.toArray($r9)
+     $r9 = (dalvik.system.DexFile) $r13
+     r0.A08 = $r9
+     $i0 = virtualinvoke $r3.size()
+     $r9 = newarray (dalvik.system.DexFile)$i0
+     $r13 = virtualinvoke $r3.toArray($r9)
+     $r9 = (dalvik.system.DexFile) $r13
+     r0.A07 = $r9
+     goto label20
+     goto label20

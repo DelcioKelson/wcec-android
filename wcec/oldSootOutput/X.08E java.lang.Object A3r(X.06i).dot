@@ -1,0 +1,15 @@
+     $r5 = $r1.A01
+     staticinvoke X.02y.A01($r5 \Did you call earlyInit()?\)
+     $r3 = $r1.A00
+     staticinvoke X.02y.A01($r3 \Did you call earlyInit()?\)
+     $r7 = r0.A00
+     $r4 = new X.00d
+     $r6 = $r1.A0M
+     $r8 = interfaceinvoke $r6.get()
+     $r9 = (java.lang.String) $r8
+     $r6 = $r1.A0Q
+     $r10 = virtualinvoke $r1.A00()
+     $r8 = interfaceinvoke $r10.get()
+     $r11 = (X.03M) $r8
+     $r2 = new X.02T
+     $r12 = new X.00e

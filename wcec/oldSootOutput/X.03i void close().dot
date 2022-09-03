@@ -1,0 +1,4 @@
+     label1: $i0 = r0.A00
+     $l1 = (long) $i0
+     virtualinvoke r0.skip($l1)
+     goto label1

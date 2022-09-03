@@ -1,0 +1,8 @@
+     $r3 = $r1.A01
+     staticinvoke X.02y.A01($r3 \Did you call earlyInit()?\)
+     $r2 = $r1.A00
+     staticinvoke X.02y.A01($r2 \Did you call earlyInit()?\)
+     $r4 = virtualinvoke $r1.A00()
+     $r5 = interfaceinvoke $r4.get()
+     $r6 = (X.03M) $r5
+     $r7 = new X.02d

@@ -1,0 +1,6 @@
+     $r1 = X.01b.A1L
+     virtualinvoke r0.addAll($r1)
+     $r1 = X.01b.A1N
+     virtualinvoke r0.addAll($r1)
+     $r1 = X.01b.A1K
+     virtualinvoke r0.addAll($r1)

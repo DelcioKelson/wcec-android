@@ -1,0 +1,13 @@
+     $r4 = r0.A00
+     $r3 = $r4.A0C
+     entermonitor $r3
+     label1: $i0 = android.os.Build$VERSION.SDK_INT
+     $r5 = X.06W.A01
+     label2: staticinvoke X.02D.A00($r4)
+     $z0 = virtualinvoke $r2.equals($r5)
+     label3: staticinvoke X.02D.A01($r4 $r2 0)
+     $r6 = $r4.A06
+     $r5 = X.06W.A0C
+     virtualinvoke $r6.A01($r5 $r1)
+     exitmonitor $r3
+     exitmonitor $r3

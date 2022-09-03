@@ -1,0 +1,48 @@
+     $l0 = X.00M.A01
+     $l0 = 64L & $l0
+     $b1 = $l0 cmp 0L
+     $i2 = staticinvoke android.os.Process.myTid()
+     label1: $l0 = X.00M.A01
+     $r1 = staticinvoke java.lang.Thread.currentThread()
+     $r2 = virtualinvoke $r1.getName()
+     staticinvoke com.facebook.systrace.Systrace.A0D(\thread_name\ $i2 $r2)
+     $l0 = 1L & $l0
+     $b1 = $l0 cmp 0L
+     $r3 = new java.lang.StringBuilder
+     label3: $l0 = X.00M.A01
+     virtualinvoke $r3.append(\Android trace tags: \)
+     $l0 = 0L
+     $z0 = X.06p.A05
+     $r4 = X.06p.A01
+     label2: virtualinvoke $r3.append($l0)
+     $r5 = newarray (java.lang.Object)2
+     $r50 = \debug.atrace.tags.enableflags\
+     $r6 = staticinvoke java.lang.Long.valueOf(0L)
+     $r51 = $r6
+     $r7 = staticinvoke X.06p.A00($r4 $r5)
+     $r8 = (java.lang.Number) $r7
+     $l0 = virtualinvoke $r8.longValue()
+     virtualinvoke $r3.append(\ Facebook trace tags: \)
+     $l0 = X.00M.A01
+     virtualinvoke $r3.append($l0)
+     $r2 = virtualinvoke $r3.toString()
+     staticinvoke com.facebook.systrace.Systrace.A0D(\process_labels\ 0 $r2)
+     $l0 = 64L & $l0
+     $b1 = $l0 cmp 0L
+     $r2 = staticinvoke X.05X.A00()
+     staticinvoke com.facebook.systrace.Systrace.A0D(\process_name\ 0 $r2)
+     $r2 = staticinvoke X.06p.A01(\dalvik.vm.heapgrowthlimit\)
+     $r9 = staticinvoke X.06p.A01(\dalvik.vm.heapmaxfree\)
+     $r10 = staticinvoke X.06p.A01(\dalvik.vm.heapminfree\)
+     $r11 = staticinvoke X.06p.A01(\dalvik.vm.heapstartsize\)
+     $r12 = staticinvoke X.06p.A01(\dalvik.vm.heaptargetutilization\)
+     $r13 = android.os.Build.MODEL
+     $r5 = newarray (java.lang.Object)6
+     $r50 = $r13
+     $r51 = $r2
+     $r52 = $r11
+     $r53 = $r9
+     $r54 = $r10
+     $r55 = $r12
+     $r2 = staticinvoke java.lang.String.format(\device=%sheapgrowthlimit=%sheapstartsize=%sheapminfree=%sheapmaxfree=%sheaptargetutilization=%s\ $r5)
+     staticinvoke com.facebook.systrace.Systrace.A0D(\process_labels\ 0 $r2)

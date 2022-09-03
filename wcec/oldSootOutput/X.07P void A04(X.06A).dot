@@ -1,0 +1,24 @@
+     $r2 = X.07P.A07
+     $r3 = virtualinvoke $r2.writeLock()
+     virtualinvoke $r3.lock()
+     label1: $z0 = staticinvoke X.07P.A05()
+     label2: if $z0 == 0 goto label7
+     label3: $i0 = staticinvoke X.07P.A00()
+     label7: $r7 = new java.lang.IllegalStateException
+     virtualinvoke $r0.A02($i0)
+     $r1 = X.07P.A0C
+     $i0 = lengthof $r1
+     label4: $i0 = $i0 + 1
+     label5: $r1 = newarray (X.06A)$i0
+     $r10 = $r0
+     $r4 = X.07P.A0C
+     $r5 = X.07P.A0C
+     $i0 = lengthof $r5
+     staticinvoke java.lang.System.arraycopy($r4 0 $r1 1 $i0)
+     X.07P.A0C = $r1
+     $r6 = X.07P.A06
+     virtualinvoke $r6.getAndIncrement()
+     label6: $r3 = virtualinvoke $r2.writeLock()
+     virtualinvoke $r3.unlock()
+     $r3 = virtualinvoke $r2.writeLock()
+     virtualinvoke $r3.unlock()

@@ -1,0 +1,5 @@
+     $r1 = r0.A00
+     $r2 = virtualinvoke $r1.iterator()
+     $z0 = interfaceinvoke $r2.hasNext()
+     interfaceinvoke $r2.next()
+     $r3 = new java.lang.NullPointerException

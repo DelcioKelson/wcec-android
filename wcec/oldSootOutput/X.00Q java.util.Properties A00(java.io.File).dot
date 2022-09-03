@@ -1,0 +1,7 @@
+     $r2 = new java.util.Properties
+     $r4 = new java.io.FileInputStream
+     label02: virtualinvoke $r2.load($r4)
+     label03: virtualinvoke $r4.close()
+     label06: virtualinvoke $r4.close()
+     staticinvoke X.07S.A0A(\lacrima\ \Error while reading Anr report\ $r1)
+     goto label07

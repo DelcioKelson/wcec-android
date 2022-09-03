@@ -1,0 +1,13 @@
+     label1: $r1 = r0.A01
+     $r2 = r0.A03
+     $r3 = r0.A02
+     virtualinvoke $r1.A0D($r3 $r2)
+     $r4 = r0.A00
+     $r5 = interfaceinvoke $r2.A8v()
+     virtualinvoke $r1.A09($r4 $r3 $r2 $r5 0)
+     virtualinvoke $r1.A0C($r3 $r2)
+     $r7 = newarray (java.lang.Object)1
+     $r2 = r0.A03
+     $r8 = interfaceinvoke $r2.A9b()
+     $r70 = $r8
+     staticinvoke X.07S.A0F(\lacrima\ \Failed to apply collectors: %s\ $r6 $r7)

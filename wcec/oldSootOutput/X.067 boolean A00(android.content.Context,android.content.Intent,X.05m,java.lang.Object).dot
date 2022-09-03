@@ -1,0 +1,56 @@
+     $r7 = r0.A00
+     $z0 = interfaceinvoke $r7.ATn()
+     $r8 = interfaceinvoke $r7.A7f()
+     $z0 = 0
+     $i0 = lengthof $r8
+     label23: if $z0 != 0 goto label32
+     $i1 = 0
+     label01: $r5 = $r8$i1
+     $r9 = $r5.A03
+     $r10 = virtualinvoke $r4.getClass()
+     label02: $r13 = staticinvoke X.072.A00($r1 $r2 null 60000)
+     $r11 = virtualinvoke $r10.getName()
+     $r12 = virtualinvoke $r9.matcher($r11)
+     $z1 = virtualinvoke $r12.matches()
+     label29: $i1 = $i1 + 1
+     label03: $r14 = $r5.A00
+     label22: $z1 = virtualinvoke $r5.A01($r2)
+     $r24 = new org.json.JSONObject
+     label05: $i2 = $r13.A00
+     label06: virtualinvoke $r24.put(\caller_uid\ $i2)
+     label07: $r16 = $r13.A04
+     label08: $z1 = interfaceinvoke $r16.isEmpty()
+     label09: if $z1 != 0 goto label19
+     label10: $r17 = interfaceinvoke $r16.iterator()
+     label19: $r25 = new java.lang.IllegalStateException
+     $r18 = interfaceinvoke $r17.next()
+     label11: if $r18 == null goto label13
+     label12: virtualinvoke $r24.put(\caller_package_name\ $r18)
+     label13: $r11 = $r13.A03
+     label14: virtualinvoke $r24.put(\caller_version_name\ $r11)
+     label15: $r11 = $r13.A02
+     label16: virtualinvoke $r24.put(\caller_domain\ $r11)
+     label17: $z1 = virtualinvoke $r14.A01(null $r24)
+     label18: if $z1 != 0 goto label22
+     goto label29
+     $z0 = 1
+     $r19 = interfaceinvoke $r7.A8g()
+     $i0 = lengthof $r19
+     $i1 = 0
+     label24: if $i1 >= $i0 goto label30
+     $r20 = $r19$i1
+     $r11 = $r20.A02
+     $r10 = virtualinvoke $r4.getClass()
+     label25: $r22 = $r20.A01
+     $r21 = virtualinvoke $r10.getName()
+     $z0 = virtualinvoke $r11.equals($r21)
+     label28: $i1 = $i1 + 1
+     $r23 = $r20.A00
+     $i2 = virtualinvoke $r22.match($r23 $r2 0 \TAG\)
+     $z0 = 0
+     $z0 = 1
+     label26: $z1 = $r20.A03
+     label27: if $z0 == 0 goto label28
+     goto label24
+     goto label01
+     goto label29

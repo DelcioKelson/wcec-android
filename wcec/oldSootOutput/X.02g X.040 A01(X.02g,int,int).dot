@@ -1,0 +1,44 @@
+     entermonitor $r0
+     label01: $r1 = $r0.A00
+     $z0 = virtualinvoke $r1.exists()
+     $l2 = virtualinvoke $r1.length()
+     label19: exitmonitor $r0
+     $l3 = (long) $i0
+     $b4 = $l2 cmp $l3
+     $i0 = (int) $b4
+     $l5 = virtualinvoke $r1.length()
+     $l2 = (long) $i1
+     $b4 = $l5 cmp $l2
+     $i0 = (int) $b4
+     $z0 = 0
+     label02: $r10 = new java.io.RandomAccessFile
+     label04: virtualinvoke $r10.seek($l3)
+     $b4 = virtualinvoke $r10.readByte()
+     $z1 = 0
+     $z1 = 1
+     label05: virtualinvoke $r10.seek($l2)
+     $b4 = virtualinvoke $r10.readByte()
+     $i0 = (int) $b4
+     label06: $r5 = null
+     $r4 = newarray (byte)$i0
+     $i0 = (int) $b4
+     virtualinvoke $r10.readFully($r4 0 $i0)
+     $r11 = new java.lang.String
+     $r5 = $r11
+     goto label07
+     label07: virtualinvoke $r10.close()
+     label08: goto label17
+     label17: $r12 = new X.040
+     goto label16
+     label16: virtualinvoke $r6.getMessage()
+     $z0 = $z1
+     goto label12
+     label12: virtualinvoke $r10.close()
+     $z1 = $z0
+     $r5 = null
+     goto label16
+     $r5 = null
+     $z1 = 0
+     label18: exitmonitor $r0
+     exitmonitor $r0
+     goto label13

@@ -1,0 +1,7 @@
+     $r0 = X.06W.A01
+     $z0 = staticinvoke X.02h.A04($r0 $c0)
+     $r0 = X.06W.A0N
+     $z0 = staticinvoke X.02h.A04($r0 $c0)
+     $r1 = X.06W.A0C
+     $z0 = staticinvoke X.02h.A04($r1 $c1)
+     $z0 = staticinvoke X.02h.A04($r0 $c2)

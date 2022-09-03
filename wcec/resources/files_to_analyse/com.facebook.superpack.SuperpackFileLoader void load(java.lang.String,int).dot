@@ -1,0 +1,3 @@
+     label01: goto label03
+     goto label01
+     goto label10

@@ -1,0 +1,4 @@
+     entermonitor r0
+     label1: r0.A00 = 0
+     exitmonitor r0
+     exitmonitor r0

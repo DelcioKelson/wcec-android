@@ -1,0 +1,11 @@
+     $z0 = 1
+     $r0 = X.07P.A07
+     $r2 = virtualinvoke $r0.readLock()
+     virtualinvoke $r2.lock()
+     label1: $r1 = X.07P.A0C
+     label2: if $r1 != null goto label3
+     $z0 = 0
+     label3: $r2 = virtualinvoke $r0.readLock()
+     virtualinvoke $r2.unlock()
+     $r2 = virtualinvoke $r0.readLock()
+     virtualinvoke $r2.unlock()

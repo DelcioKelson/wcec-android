@@ -1,0 +1,65 @@
+     $r1 = r0.A00
+     $r2 = new java.util.LinkedHashSet
+     $r3 = new java.util.HashMap
+     $r4 = r0.A03
+     $r5 = $r4.A01
+     $r6 = staticinvoke java.util.regex.Pattern.compile($r5)
+     $r7 = staticinvoke X.07G.A05()
+     $r8 = r0.A01
+     $r9 = virtualinvoke $r8.entries()
+     label01: $z0 = interfaceinvoke $r9.hasMoreElements()
+     $r10 = interfaceinvoke $r9.nextElement()
+     label05: $r16 = r0.A02
+     $r11 = (java.util.zip.ZipEntry) $r10
+     $r5 = virtualinvoke $r11.getName()
+     $r12 = virtualinvoke $r6.matcher($r5)
+     $z0 = virtualinvoke $r12.matches()
+     $r5 = virtualinvoke $r12.group(1)
+     $r13 = virtualinvoke $r12.group(2)
+     $i0 = 0
+     label02: $i1 = lengthof $r7
+     $r14 = $r7$i0
+     $r14 = $r7$i0
+     label04: $i0 = $i0 + 1
+     $z0 = virtualinvoke $r5.equals($r14)
+     virtualinvoke $r2.add($r5)
+     $r10 = virtualinvoke $r3.get($r13)
+     $r15 = (X.04i) $r10
+     $i1 = $r15.A00
+     label03: $r15 = new X.04i
+     virtualinvoke $r3.put($r13 $r15)
+     goto label01
+     goto label02
+     $i0 = virtualinvoke $r2.size()
+     $r7 = newarray (java.lang.String)$i0
+     $r17 = virtualinvoke $r2.toArray($r7)
+     $r7 = (java.lang.String) $r17
+     $r16.A01 = $r7
+     $r18 = virtualinvoke $r3.values()
+     $i0 = virtualinvoke $r3.size()
+     $r1 = newarray (X.04i)$i0
+     $r17 = interfaceinvoke $r18.toArray($r1)
+     $r1 = (X.04i) $r17
+     staticinvoke java.util.Arrays.sort($r1)
+     $i0 = 0
+     $i2 = 0
+     $i3 = 0
+     label06: $i1 = lengthof $r1
+     $r15 = $r1$i2
+     label09: $r19 = newarray (X.04i)$i3
+     $r11 = $r15.A01
+     $r5 = $r15.A01
+     $z0 = virtualinvoke r0.A02($r5 $r11)
+     $i3 = $i3 + 1
+     label08: $r1$i2 = null
+     label07: $i2 = $i2 + 1
+     goto label06
+     goto label07
+     $i2 = 0
+     label10: if $i0 >= $i1 goto label12
+     $r15 = $r1$i0
+     label12: r0.A00 = $r19
+     $r19$i2 = $r15
+     label11: $i0 = $i0 + 1
+     $i2 = $i2 + 1
+     goto label10

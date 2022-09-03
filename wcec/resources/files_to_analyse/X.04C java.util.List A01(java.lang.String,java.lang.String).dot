@@ -1,0 +1,11 @@
+     $i1 = 0
+     label02: if $i1 >= $i0 goto label09
+     label09: if $i0 != 1 goto label18
+     goto label08
+     label08: $i1 = $i1 + 1
+     goto label02
+     goto label06
+     goto label08
+     goto label08
+     goto label08
+     goto label12

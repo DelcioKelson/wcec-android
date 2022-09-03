@@ -1,0 +1,12 @@
+     $r1 = staticinvoke X.074.A01($r0)
+     $r2 = $r1.A00
+     label6: r3 = X.06W.A00
+     $z0 = virtualinvoke $r2.isConnected()
+     $i0 = virtualinvoke $r2.getType()
+     r3 = X.06W.A0Y
+     label1: $i0 = virtualinvoke $r2.getType()
+     $i0 = virtualinvoke $r2.getSubtype()
+     label2: r3 = X.06W.A01
+     label3: r3 = X.06W.A0C
+     label4: r3 = X.06W.A0N
+     label5: r3 = X.06W.A0U

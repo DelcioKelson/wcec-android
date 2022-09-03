@@ -1,0 +1,217 @@
+     $r4 = $r3
+     $i1 = $i0
+     $r0 = X.07P.A0B
+     $z0 = staticinvoke X.07P.A05()
+     $r5 = staticinvoke android.os.StrictMode.allowThreadDiskWrites()
+     label001: $i2 = X.07P.A00
+     label002: if $i2 != 0 goto label005
+     $i3 = $i0 & 32
+     label005: X.07P.A00 = $i2
+     $i2 = 1
+     label003: $r6 = virtualinvoke $r2.getApplicationInfo()
+     $i3 = $r6.flags
+     label004: $i4 = $i3 & 1
+     $i3 = $i3 & 128
+     $i2 = 2
+     $i2 = 3
+     label006: $i3 = $i0 & 128
+     label007: $i3 = android.os.Build$VERSION.SDK_INT
+     label011: entermonitor class \LX/07P\
+     label008: if $i3 < 23 goto label011
+     label009: $z0 = staticinvoke X.03c.A01($r2 $i2)
+     label010: if $z0 == 0 goto label011
+     $i1 = $i0 | 72
+     label012: $r3 = X.07P.A03
+     label020: X.07P.A03 = $r4
+     $r7 = staticinvoke java.lang.Runtime.getRuntime()
+     label021: exitmonitor class \LX/07P\
+     $i0 = android.os.Build$VERSION.SDK_INT
+     $r8 = null
+     label017: $z0 = 0
+     label013: $r9 = class \Ljava/lang/Runtime\
+     $r10 = newarray (java.lang.Class)3
+     $r100 = class \Ljava/lang/String\
+     $r101 = class \Ljava/lang/ClassLoader\
+     $r102 = class \Ljava/lang/String\
+     label014: $r11 = virtualinvoke $r9.getDeclaredMethod(\nativeLoad\ $r10)
+     virtualinvoke $r11.setAccessible(1)
+     label015: goto label018
+     label018: $r8 = $r11
+     staticinvoke android.util.Log.w(\SoLoader\ \Cannot get nativeLoad method\ $r12)
+     $r13 = null
+     goto label019
+     label019: $r14 = staticinvoke X.07P.A02($r13)
+     $z0 = 1
+     $r13 = staticinvoke X.05U.A00()
+     $r46 = new X.08c
+     $r4 = $r46
+     $r15 = X.07P.A0C
+     label022: if $r15 != null goto label118
+     label023: $r1 = X.07P.A07
+     label118: $r40 = new X.05T
+     $r16 = virtualinvoke $r1.writeLock()
+     virtualinvoke $r16.lock()
+     $r15 = X.07P.A0C
+     label024: if $r15 != null goto label117
+     label025: X.07P.A01 = $i1
+     label117: $r16 = virtualinvoke $r1.writeLock()
+     $r32 = new java.util.ArrayList
+     label026: $r17 = $r32
+     $i0 = android.os.Build$VERSION.SDK_INT
+     label028: if $i0 < 23 goto label031
+     label029: $z0 = staticinvoke X.03c.A00()
+     label031: if $i0 < 21 goto label036
+     label030: goto label033
+     label033: if $z0 == 0 goto label036
+     label032: $z0 = staticinvoke com.facebook.soloader.SysUtil$LollipopSysdeps.is64Bit()
+     label036: $r13 = \/system/lib:/vendor/lib\
+     goto label037
+     label037: $r13 = \/system/lib64:/vendor/lib64\
+     label035: $r19 = newarray (java.lang.Object)1
+     $r13 = virtualinvoke $r18.getMessage()
+     $r190 = $r13
+     $r13 = staticinvoke java.lang.String.format(\Could not read /proc/self/exe. Err msg: %s\ $r19)
+     staticinvoke android.util.Log.e(\SysUtil\ $r13)
+     goto label038
+     label038: $r14 = staticinvoke java.lang.System.getenv(\LD_LIBRARY_PATH\)
+     label039: if $r14 == null goto label044
+     label040: $z0 = virtualinvoke $r14.equals(\\)
+     label044: $r21 = virtualinvoke $r13.split(\:\)
+     label041: if $z0 != 0 goto label044
+     label042: $r47 = new java.lang.StringBuilder
+     virtualinvoke $r47.append($r13)
+     virtualinvoke $r47.append(\:\)
+     virtualinvoke $r47.append($r14)
+     $r13 = virtualinvoke $r47.toString()
+     $r22 = staticinvoke java.util.Arrays.asList($r21)
+     $r48 = new java.util.HashSet
+     $r24 = virtualinvoke $r48.iterator()
+     label046: $z0 = interfaceinvoke $r24.hasNext()
+     label047: if $z0 == 0 goto label052
+     label048: $r25 = interfaceinvoke $r24.next()
+     label052: $i2 = $i1 & 1
+     $r13 = (java.lang.String) $r25
+     $r49 = new java.io.File
+     $r50 = new X.04s
+     virtualinvoke $r17.add($r50)
+     label051: goto label046
+     label053: X.07P.A04 = null
+     label056: $i1 = $i1 & 64
+     $r51 = new X.04o
+     virtualinvoke $r17.add(0 $r51)
+     label055: goto label104
+     label104: $i0 = virtualinvoke $r17.size()
+     label068: $i1 = X.07P.A00
+     label057: $r6 = virtualinvoke $r2.getApplicationInfo()
+     label066: $r52 = new X.04g
+     $r0 = $r6.splitSourceDirs
+     label058: if $r0 == null goto label066
+     label059: $r6 = virtualinvoke $r2.getApplicationInfo()
+     $r0 = $r6.splitSourceDirs
+     $i1 = lengthof $r0
+     label060: $i2 = 0
+     label061: if $i2 >= $i1 goto label066
+     label062: $r13 = $r0$i2
+     $r49 = new java.io.File
+     $r52 = new X.04g
+     virtualinvoke $r17.add(0 $r52)
+     label065: $i2 = $i2 + 1
+     goto label061
+     virtualinvoke $r17.add(0 $r52)
+     label069: $b5 = 1
+     label072: $b5 = 0
+     label073: if $i0 > 17 goto label074
+     label070: $r53 = new java.lang.RuntimeException
+     $b5 = $b5 | 1
+     label074: $r54 = new X.04f
+     X.07P.A02 = $r54
+     virtualinvoke $r17.add(0 $r54)
+     $i1 = X.07P.A01
+     label076: $i1 = $i1 & 8
+     label077: X.07P.A04 = null
+     label083: $r6 = virtualinvoke $r2.getApplicationInfo()
+     $r47 = new java.lang.StringBuilder
+     $r6 = virtualinvoke $r2.getApplicationInfo()
+     $r13 = $r6.dataDir
+     virtualinvoke $r47.append($r13)
+     virtualinvoke $r47.append(\/\)
+     virtualinvoke $r47.append(\lib-main\)
+     $r13 = virtualinvoke $r47.toString()
+     $r49 = new java.io.File
+     label079: $r26 = $r49
+     label081: staticinvoke X.07G.A01($r49)
+     label082: goto label104
+     $r13 = $r6.sourceDir
+     $r49 = new java.io.File
+     $r55 = new java.util.ArrayList
+     $r56 = new X.04e
+     virtualinvoke $r55.add($r56)
+     label087: if $i0 < 21 goto label099
+     label088: $r6 = virtualinvoke $r2.getApplicationInfo()
+     label099: $i0 = virtualinvoke $r55.size()
+     $r0 = $r6.splitSourceDirs
+     label089: if $r0 == null goto label099
+     label090: $r6 = virtualinvoke $r2.getApplicationInfo()
+     $r0 = $r6.splitSourceDirs
+     $i0 = lengthof $r0
+     label091: $i1 = 0
+     $i2 = 0
+     label092: if $i1 >= $i0 goto label099
+     label093: $r13 = $r0$i1
+     $r49 = new java.io.File
+     $r47 = new java.lang.StringBuilder
+     virtualinvoke $r47.append(\lib-\)
+     label096: virtualinvoke $r47.append($i2)
+     $r13 = virtualinvoke $r47.toString()
+     $r56 = new X.04e
+     virtualinvoke $r55.add($r56)
+     label098: $i1 = $i1 + 1
+     $i2 = $i2 + 1
+     goto label092
+     $r34 = newarray (X.04r)$i0
+     $r19 = virtualinvoke $r55.toArray($r34)
+     $r34 = (X.04r) $r19
+     X.07P.A04 = $r34
+     virtualinvoke $r17.addAll(0 $r55)
+     label100: goto label104
+     label102: $r47 = new java.lang.StringBuilder
+     virtualinvoke $r47.append(\Failed to delete \)
+     $r13 = virtualinvoke $r26.getCanonicalPath()
+     virtualinvoke $r47.append($r13)
+     $r13 = virtualinvoke $r47.toString()
+     staticinvoke android.util.Log.w(\SoLoader\ $r13 $r35)
+     $r15 = newarray (X.06A)$i0
+     $r19 = virtualinvoke $r17.toArray($r15)
+     $r15 = (X.06A) $r19
+     $i0 = staticinvoke X.07P.A00()
+     $i1 = lengthof $r15
+     label105: $i2 = $i1 + -1
+     label106: $z0 = X.07P.A08
+     label113: X.07P.A0C = $r15
+     label107: if $z0 == 0 goto label109
+     label108: $r36 = $r15$i2
+     label109: $r36 = $r15$i2
+     $r9 = virtualinvoke $r36.getClass()
+     $r13 = virtualinvoke $r9.getSimpleName()
+     staticinvoke X.06H.A01(\SoLoader\ \_\ $r13)
+     virtualinvoke $r36.A02($i0)
+     label110: if $z0 == 0 goto label112
+     label111: staticinvoke X.06H.A00()
+     label112: $i1 = $i2
+     goto label105
+     $r37 = X.07P.A06
+     virtualinvoke $r37.getAndIncrement()
+     label114: goto label117
+     label116: $r16 = virtualinvoke $r1.writeLock()
+     virtualinvoke $r16.unlock()
+     virtualinvoke $r16.unlock()
+     label119: $r39 = $r40
+     entermonitor class \LX/06P\
+     label121: $r40 = X.06P.A00
+     label122: X.06P.A00 = $r39
+     label125: exitmonitor class \LX/06P\
+     goto label125
+     label126: staticinvoke android.os.StrictMode.setThreadPolicy($r5)
+     exitmonitor class \LX/06P\
+     exitmonitor class \LX/07P\
+     staticinvoke android.os.StrictMode.setThreadPolicy($r5)

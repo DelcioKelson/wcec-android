@@ -1,0 +1,7 @@
+     $i0 = virtualinvoke $r1.length()
+     label3: $r3 = new java.lang.SecurityException
+     r0.A00 = $r1
+     label2: $r3 = new java.lang.SecurityException
+     $i0 = virtualinvoke $r2.length()
+     r0.A01 = $r2
+     label1: $r3 = new java.lang.SecurityException

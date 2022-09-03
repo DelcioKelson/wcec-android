@@ -1,0 +1,8 @@
+     $r4 = interfaceinvoke $r2.iterator()
+     label1: $z0 = interfaceinvoke $r4.hasNext()
+     $r5 = interfaceinvoke $r4.next()
+     $r6 = (X.02S) $r5
+     label2: interfaceinvoke $r6.AKi($r0 $r1)
+     label3: goto label1
+     staticinvoke X.07S.A0A(\lacrima\ \onNotify failed...\ $r3)
+     goto label1

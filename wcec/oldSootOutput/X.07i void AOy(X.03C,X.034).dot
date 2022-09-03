@@ -1,0 +1,8 @@
+     $r4 = r0.A01
+     $i0 = lengthof $r4
+     $i1 = 0
+     label1: if $i1 >= $i0 goto label2
+     $r3 = $r4$i1
+     interfaceinvoke $r3.AOy($r1 $r2)
+     $i1 = $i1 + 1
+     goto label1

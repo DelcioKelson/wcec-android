@@ -1,0 +1,8 @@
+     $i1 = r0.A01
+     $i0 = r0.A00
+     $r2 = new java.lang.StringBuilder
+     virtualinvoke $r2.append($i1)
+     virtualinvoke $r2.append(\ consumed=\)
+     virtualinvoke $r2.append($i0)
+     $r1 = virtualinvoke $r2.toString()
+     $r3 = new java.io.EOFException

@@ -1,0 +1,5 @@
+     $l1 = 0L
+     goto label02
+     label05: goto label09
+     goto label13
+     goto label16

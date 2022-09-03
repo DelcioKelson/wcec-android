@@ -1,0 +1,10 @@
+     $i0 = lengthof $r0
+     $i1 = 0
+     label1: if $i1 >= $i0 goto label4
+     $r2 = $r0$i1
+     $r3 = virtualinvoke $r2.toString()
+     label3: $r3 = \null\
+     $r3 = staticinvoke java.util.regex.Matcher.quoteReplacement($r3)
+     $i1 = $i1 + 1
+     goto label1
+     goto label2

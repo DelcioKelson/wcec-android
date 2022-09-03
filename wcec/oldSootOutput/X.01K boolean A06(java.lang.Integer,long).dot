@@ -1,0 +1,5 @@
+     $l1 = virtualinvoke r0.A05($r1)
+     $b2 = $l1 cmp 0L
+     $i3 = (int) $b2
+     $b2 = $l1 cmp $l0
+     $i3 = (int) $b2

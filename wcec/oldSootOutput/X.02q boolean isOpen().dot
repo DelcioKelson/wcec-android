@@ -1,0 +1,2 @@
+     $r1 = r0.A02
+     $z0 = virtualinvoke $r1.isOpen()

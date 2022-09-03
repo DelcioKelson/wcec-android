@@ -1,0 +1,103 @@
+     $z0 = 1
+     $r3 = newarray (java.lang.Object)1
+     $r4 = virtualinvoke r0.getClass()
+     $r5 = virtualinvoke $r4.getName()
+     $r30 = $r5
+     staticinvoke X.07S.A0I(\lacrima\ \Start AnrAppDeathDetector... %s\ $r3)
+     $r6 = r0.A01
+     $r5 = $r6.A07
+     $r7 = virtualinvoke $r6.A01($r5)
+     $r2 = new java.io.File
+     $r22 = new X.02g
+     $r23 = new X.00T
+     $r9 = virtualinvoke $r7.listFiles($r23)
+     $r8 = null
+     $i0 = lengthof $r9
+     label06: $r11 = null
+     $i1 = 0
+     $i2 = -1
+     label01: if $i1 >= $i0 goto label06
+     $r2 = $r9$i1
+     label02: $r5 = virtualinvoke $r2.getName()
+     $r5 = virtualinvoke $r5.replace(\anr_report_\ \\)
+     $r5 = virtualinvoke $r5.replace(\.dmp\ \\)
+     $i3 = staticinvoke java.lang.Integer.parseInt($r5)
+     label03: if $i3 <= $i2 goto label05
+     $r8 = $r2
+     label05: $i1 = $i1 + 1
+     $i2 = $i3
+     goto label05
+     $r3 = newarray (java.lang.Object)2
+     $r5 = virtualinvoke $r2.getName()
+     $r30 = $r5
+     $r31 = $r10
+     staticinvoke X.07S.A0I(\lacrima\ \Invalid anr report name %s\ $r3)
+     goto label01
+     $z1 = r0.A02
+     $c4 = virtualinvoke $r22.A02()
+     label07: $r24 = new java.io.File
+     $z1 = staticinvoke X.02h.A01($c4)
+     $r12 = staticinvoke X.00Q.A00($r8)
+     $r11 = $r12
+     $r13 = X.03D.A01
+     $r5 = $r13.A00
+     $r5 = virtualinvoke $r12.getProperty($r5)
+     $r14 = \true\
+     $z1 = virtualinvoke $r14.equals($r5)
+     $r25 = new X.02i
+     $c4 = virtualinvoke $r25.A00()
+     $r24 = new java.io.File
+     $r25 = new X.02i
+     $c5 = virtualinvoke $r25.A00()
+     virtualinvoke $r22.A03()
+     virtualinvoke $r22.A02()
+     $c6 = virtualinvoke $r22.A03()
+     staticinvoke X.02h.A02($c6 $c4 $c5)
+     $c6 = virtualinvoke $r22.A03()
+     $z1 = staticinvoke X.02h.A02($c6 $c4 $c5)
+     $r26 = new X.03C
+     $r16 = X.03D.A26
+     $l7 = virtualinvoke $r8.lastModified()
+     label13: $l7 = virtualinvoke $r24.lastModified()
+     label08: $l7 = $l7 / 1000L
+     $r17 = staticinvoke java.lang.Long.valueOf($l7)
+     virtualinvoke $r26.A02($r16 $r17)
+     $r16 = X.03D.A0t
+     $l7 = staticinvoke java.lang.System.currentTimeMillis()
+     $l7 = $l7 / 1000L
+     $r17 = staticinvoke java.lang.Long.valueOf($l7)
+     virtualinvoke $r26.A02($r16 $r17)
+     $r18 = X.06d.A02
+     label12: $z0 = 0
+     $r19 = X.034.A02
+     virtualinvoke $r26.A00($r18 $r19 $r8)
+     $r19 = X.034.A03
+     virtualinvoke $r26.A00($r18 $r19 $r8)
+     $r11 = staticinvoke X.00Q.A00($r8)
+     label09: $c4 = virtualinvoke $r22.A02()
+     $z1 = staticinvoke X.02h.A01($c4)
+     $r20 = X.03D.A5B
+     label11: $r13 = X.03D.A01
+     $r5 = $r20.A00
+     $r5 = virtualinvoke $r11.getProperty($r5)
+     $r14 = \true\
+     $z0 = virtualinvoke $r14.equals($r5)
+     $z0 = 1 ^ $z0
+     label10: $r13 = X.03D.A07
+     virtualinvoke $r26.A01($r13 $z0)
+     $r21 = r0.A00
+     $r19 = X.034.A02
+     virtualinvoke $r21.A08($r26 $r19 r0)
+     $r19 = X.034.A03
+     virtualinvoke $r21.A08($r26 $r19 r0)
+     $r5 = $r13.A00
+     $r14 = virtualinvoke $r11.getProperty($r5)
+     $r5 = \true\
+     $z1 = virtualinvoke $r5.equals($r14)
+     $r20 = X.03D.A5B
+     $r14 = $r20.A00
+     $r14 = virtualinvoke $r11.getProperty($r14)
+     $z1 = virtualinvoke $r5.equals($r14)
+     goto label10
+     goto label10
+     goto label08

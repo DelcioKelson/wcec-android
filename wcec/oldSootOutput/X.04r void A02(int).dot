@@ -1,0 +1,295 @@
+     $r1 = r0.A00
+     staticinvoke X.07G.A03($r1)
+     $z0 = virtualinvoke $r1.canWrite()
+     label001: $z1 = virtualinvoke $r1.setWritable(1)
+     label005: $r4 = new java.io.File
+     label002: if $z1 != 0 goto label005
+     label003: $r53 = new java.lang.StringBuilder
+     virtualinvoke $r53.append(\error adding \)
+     $r15 = virtualinvoke $r1.getCanonicalPath()
+     virtualinvoke $r53.append($r15)
+     virtualinvoke $r53.append(\ write permission\)
+     $r15 = virtualinvoke $r53.toString()
+     staticinvoke android.util.Log.w(\fb-UnpackingSoSource\ $r15)
+     $r16 = staticinvoke X.07G.A00($r1 $r4 1)
+     label007: $r17 = $r16
+     label008: $r18 = r0.A02
+     label009: if $r18 != null goto label012
+     label010: $r4 = new java.io.File
+     label012: $r19 = virtualinvoke r0.A09()
+     $r18 = staticinvoke X.07G.A00($r1 $r4 0)
+     r0.A02 = $r18
+     $r4 = new java.io.File
+     label013: $r5 = $r4
+     $r2 = new java.io.RandomAccessFile
+     label015: $r3 = $r2
+     label017: $b1 = virtualinvoke $r2.readByte()
+     label018: $b2 = $b1
+     label019: $b2 = 0
+     label020: virtualinvoke $r3.close()
+     $r25 = new java.io.File
+     label021: $r4 = $r25
+     label023: $r20 = null
+     label024: $r2 = new java.io.RandomAccessFile
+     label025: $r3 = $r2
+     label027: $l3 = virtualinvoke $r2.length()
+     label028: $i4 = (int) $l3
+     label029: $r21 = newarray (byte)$i4
+     $i5 = virtualinvoke $r2.read($r21)
+     label030: if $i5 == $i4 goto label031
+     $b2 = 0
+     label031: $z1 = staticinvoke java.util.Arrays.equals($r21 $r19)
+     label032: $z1 = $z1 ^ 1
+     $b2 = 0
+     label033: if $b2 == 0 goto label034
+     goto label034
+     label034: staticinvoke X.04r.A00($r5 0)
+     $i4 = $i0 & 2
+     label182: virtualinvoke $r3.close()
+     $r22 = virtualinvoke r0.A08($b2)
+     label035: $r23 = virtualinvoke $r22.A00()
+     label036: $r20 = $r23
+     label037: $r24 = virtualinvoke $r22.A01()
+     label038: $r54 = new java.io.File
+     $r35 = new java.io.RandomAccessFile
+     label040: $r2 = $r35
+     label042: if $b2 != 1 goto label063
+     label043: $b1 = virtualinvoke $r35.readByte()
+     label063: $r26 = newarray (X.03d)0
+     label044: if $b1 != 1 goto label061
+     label045: $i4 = virtualinvoke $r35.readInt()
+     label061: $r56 = new java.lang.RuntimeException
+     label046: if $i4 < 0 goto label059
+     label047: $r26 = newarray (X.03d)$i4
+     label059: $r56 = new java.lang.RuntimeException
+     label048: $i5 = 0
+     label049: if $i5 >= $i4 goto label055
+     label050: $r15 = virtualinvoke $r2.readUTF()
+     label055: $r55 = new X.03f
+     $r27 = virtualinvoke $r2.readUTF()
+     label051: $r34 = new X.03d
+     label053: $r26$i5 = $r34
+     label054: $i5 = $i5 + 1
+     goto label049
+     label056: $r29 = $r55
+     label058: goto label066
+     label066: $r26 = $r23.A00
+     $r55 = new X.03f
+     label064: $r29 = $r55
+     $r31 = virtualinvoke $r1.list()
+     label067: if $r31 == null goto label195
+     $i4 = 0
+     label195: $r53 = new java.lang.StringBuilder
+     label068: $i5 = lengthof $r31
+     label069: if $i4 >= $i5 goto label087
+     label070: $r15 = $r31$i4
+     label087: $r21 = newarray (byte)32768
+     $z1 = virtualinvoke $r15.equals(\dso_state\)
+     label071: if $z1 != 0 goto label086
+     label072: $z1 = virtualinvoke $r15.equals(\dso_lock\)
+     label086: $i4 = $i4 + 1
+     label073: if $z1 != 0 goto label086
+     label074: $z1 = virtualinvoke $r15.equals(\dso_instance_lock\)
+     label075: if $z1 != 0 goto label086
+     label076: $z1 = virtualinvoke $r15.equals(\dso_deps\)
+     label077: if $z1 != 0 goto label086
+     label078: $z1 = virtualinvoke $r15.equals(\dso_manifest\)
+     label079: if $z1 != 0 goto label086
+     $i5 = 0
+     label080: $i6 = lengthof $r26
+     label081: if $i5 >= $i6 goto label084
+     label082: $r28 = $r26$i5
+     label084: $r54 = new java.io.File
+     $r27 = $r28.A01
+     $z1 = virtualinvoke $r27.equals($r15)
+     label083: if $z1 != 0 goto label086
+     $i5 = $i5 + 1
+     goto label080
+     staticinvoke X.07G.A01($r54)
+     goto label068
+     label088: $z1 = virtualinvoke $r24.A01()
+     label089: if $z1 == 0 goto label179
+     label090: $r32 = virtualinvoke $r24.A00()
+     label179: virtualinvoke $r2.close()
+     label091: $z1 = 1
+     $i4 = 0
+     label092: $r26 = $r29.A00
+     $i5 = lengthof $r26
+     label093: if $i4 >= $i5 goto label100
+     label094: $r33 = (X.03k) $r32
+     label100: $r33 = (X.03k) $r32
+     $r28 = $r33.A00
+     $r15 = $r28.A01
+     $r34 = $r26$i4
+     $r27 = $r34.A01
+     $z2 = virtualinvoke $r27.equals($r15)
+     label095: if $z2 == 0 goto label098
+     label096: $r34 = $r26$i4
+     label098: $i4 = $i4 + 1
+     $r15 = $r34.A00
+     $r27 = $r28.A00
+     $z2 = virtualinvoke $r15.equals($r27)
+     label097: if $z2 == 0 goto label098
+     goto label099
+     label099: $z1 = 0
+     goto label092
+     $r28 = $r33.A00
+     $r15 = $r28.A01
+     $r54 = new java.io.File
+     $z2 = virtualinvoke $r54.exists()
+     label102: if $z2 == 0 goto label103
+     label103: $z1 = virtualinvoke $r1.setWritable(1)
+     label151: interfaceinvoke $r32.close()
+     label104: if $z1 == 0 goto label167
+     label105: $r54 = new java.io.File
+     label167: $r53 = new java.lang.StringBuilder
+     label106: $r25 = $r54
+     label108: $r35 = null
+     label109: $z1 = virtualinvoke $r54.exists()
+     label110: if $z1 == 0 goto label115
+     label111: $z1 = virtualinvoke $r54.setWritable(1)
+     label115: $r57 = new java.io.RandomAccessFile
+     label112: if $z1 != 0 goto label115
+     label113: $r53 = new java.lang.StringBuilder
+     virtualinvoke $r53.append(\error adding write permission to: \)
+     virtualinvoke $r53.append($r54)
+     $r15 = virtualinvoke $r53.toString()
+     staticinvoke android.util.Log.w(\fb-UnpackingSoSource\ $r15)
+     label116: $r36 = $r57
+     label118: goto label125
+     label125: $r35 = $r36
+     label120: $r53 = new java.lang.StringBuilder
+     virtualinvoke $r53.append(\error overwriting \)
+     virtualinvoke $r53.append($r25)
+     virtualinvoke $r53.append(\ trying to delete and start over\)
+     $r15 = virtualinvoke $r53.toString()
+     staticinvoke android.util.Log.w(\fb-UnpackingSoSource\ $r15 $r37)
+     staticinvoke X.07G.A01($r25)
+     label122: $r57 = new java.io.RandomAccessFile
+     label123: $r36 = $r57
+     label126: $r38 = $r33.A01
+     label127: $i4 = virtualinvoke $r38.available()
+     label128: if $i4 <= 1 goto label134
+     label129: $r39 = virtualinvoke $r36.getFD()
+     label134: $i4 = 0
+     label130: $l3 = (long) $i4
+     label131: $i4 = android.os.Build$VERSION.SDK_INT
+     label132: if $i4 < 21 goto label134
+     label133: staticinvoke com.facebook.soloader.SysUtil$LollipopSysdeps.fallocateIfSupported($r39 $l3)
+     label135: $i5 = 2147483647 - $i4
+     label136: $i5 = staticinvoke java.lang.Math.min(32768 $i5)
+     $i5 = virtualinvoke $r38.read($r21 0 $i5)
+     label137: if $i5 == -1 goto label140
+     label138: virtualinvoke $r36.write($r21 0 $i5)
+     label140: $l3 = virtualinvoke $r36.getFilePointer()
+     label139: $i4 = $i4 + $i5
+     goto label135
+     virtualinvoke $r36.setLength($l3)
+     $z1 = virtualinvoke $r25.setExecutable(1 0)
+     label141: if $z1 == 0 goto label153
+     label142: $z1 = virtualinvoke $r25.setWritable(0)
+     label153: $r53 = new java.lang.StringBuilder
+     label143: if $z1 != 0 goto label146
+     label144: $r53 = new java.lang.StringBuilder
+     label146: virtualinvoke $r36.close()
+     virtualinvoke $r53.append(\error removing \)
+     virtualinvoke $r53.append($r25)
+     virtualinvoke $r53.append(\ write permission\)
+     $r15 = virtualinvoke $r53.toString()
+     staticinvoke android.util.Log.w(\fb-UnpackingSoSource\ $r15)
+     label147: $z1 = virtualinvoke $r1.setWritable(0)
+     label148: if $z1 != 0 goto label151
+     label149: $r53 = new java.lang.StringBuilder
+     virtualinvoke $r53.append(\error removing \)
+     $r15 = virtualinvoke $r1.getCanonicalPath()
+     virtualinvoke $r53.append($r15)
+     virtualinvoke $r53.append(\ write permission\)
+     $r15 = virtualinvoke $r53.toString()
+     staticinvoke android.util.Log.w(\fb-UnpackingSoSource\ $r15)
+     label152: goto label088
+     virtualinvoke $r53.append(\cannot make file executable: \)
+     virtualinvoke $r53.append($r25)
+     $r15 = virtualinvoke $r53.toString()
+     label155: $r40 = new java.io.IOException
+     label158: staticinvoke X.07G.A01($r25)
+     label160: $z1 = virtualinvoke $r25.setWritable(0)
+     label161: if $z1 != 0 goto label164
+     label162: $r53 = new java.lang.StringBuilder
+     label164: if $r35 == null goto label166
+     virtualinvoke $r53.append(\error removing \)
+     virtualinvoke $r53.append($r25)
+     virtualinvoke $r53.append(\ write permission\)
+     $r15 = virtualinvoke $r53.toString()
+     staticinvoke android.util.Log.w(\fb-UnpackingSoSource\ $r15)
+     label165: virtualinvoke $r35.close()
+     virtualinvoke $r53.append(\cannot make directory writable for us: \)
+     virtualinvoke $r53.append($r1)
+     $r15 = virtualinvoke $r53.toString()
+     $r40 = new java.io.IOException
+     label171: $z1 = virtualinvoke $r1.setWritable(0)
+     label172: if $z1 != 0 goto label175
+     label173: $r53 = new java.lang.StringBuilder
+     virtualinvoke $r53.append(\error removing \)
+     $r15 = virtualinvoke $r1.getCanonicalPath()
+     virtualinvoke $r53.append($r15)
+     virtualinvoke $r53.append(\ write permission\)
+     $r15 = virtualinvoke $r53.toString()
+     staticinvoke android.util.Log.w(\fb-UnpackingSoSource\ $r15)
+     label177: interfaceinvoke $r32.close()
+     label180: virtualinvoke $r24.close()
+     label181: virtualinvoke $r22.close()
+     label183: if $r20 == null goto label193
+     label184: $r44 = staticinvoke java.lang.Boolean.valueOf(0)
+     label193: if $z0 != 0 goto label194
+     $r58 = new X.03m
+     label186: $i0 = $i0 & 1
+     label187: $r53 = new java.lang.StringBuilder
+     label191: virtualinvoke $r58.run()
+     virtualinvoke $r53.append(\SoSync:\)
+     $r15 = virtualinvoke $r1.getName()
+     virtualinvoke $r53.append($r15)
+     $r15 = virtualinvoke $r53.toString()
+     $r59 = new java.lang.Thread
+     virtualinvoke $r59.start()
+     label190: goto label192
+     label192: $r17 = null
+     $z0 = virtualinvoke $r1.setWritable(0)
+     label194: if $r17 == null goto label226
+     $r53 = new java.lang.StringBuilder
+     virtualinvoke $r53.append(\error removing \)
+     $r15 = virtualinvoke $r1.getCanonicalPath()
+     virtualinvoke $r53.append($r15)
+     virtualinvoke $r53.append(\ write permission\)
+     $r15 = virtualinvoke $r53.toString()
+     staticinvoke android.util.Log.w(\fb-UnpackingSoSource\ $r15)
+     virtualinvoke $r17.close()
+     virtualinvoke $r53.append(\unable to list directory \)
+     virtualinvoke $r53.append($r1)
+     $r15 = virtualinvoke $r53.toString()
+     $r40 = new java.io.IOException
+     label199: virtualinvoke $r2.close()
+     label202: virtualinvoke $r24.close()
+     label205: virtualinvoke $r22.close()
+     label208: virtualinvoke $r3.close()
+     label211: virtualinvoke $r3.close()
+     $r17 = null
+     goto label215
+     label215: if $z0 != 0 goto label216
+     $z0 = virtualinvoke $r1.setWritable(0)
+     label216: if $r17 == null goto label217
+     $r53 = new java.lang.StringBuilder
+     virtualinvoke $r53.append(\error removing \)
+     $r15 = virtualinvoke $r1.getCanonicalPath()
+     virtualinvoke $r53.append($r15)
+     virtualinvoke $r53.append(\ write permission\)
+     $r15 = virtualinvoke $r53.toString()
+     staticinvoke android.util.Log.w(\fb-UnpackingSoSource\ $r15)
+     virtualinvoke $r17.close()
+     goto label019
+     goto label063
+     goto label178
+     goto label200
+     goto label203
+     goto label206
+     goto label209
+     goto label212

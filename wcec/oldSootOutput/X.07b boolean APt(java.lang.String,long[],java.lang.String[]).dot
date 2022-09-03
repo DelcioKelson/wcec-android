@@ -1,0 +1,78 @@
+     $i0 = lengthof $r3
+     label25: $r6 = new java.lang.NullPointerException
+     $i1 = lengthof $r2
+     $i1 = 0
+     label24: $r5 = new java.lang.IllegalArgumentException
+     label01: if $i1 >= $i0 goto label02
+     $r2$i1 = 0L
+     label02: $r4 = newarray (byte)2048
+     $i1 = $i1 + 1
+     goto label01
+     $i1 = $i2
+     $z0 = 0
+     label22: $z0 = 1
+     $i1 = 0
+     label03: $r4$i1 = 0
+     label04: $i3 = 0
+     $i2 = 0
+     label05: if $i3 >= $i1 goto label23
+     $b4 = $r4$i3
+     $i5 = 0
+     label06: if $i5 >= $i0 goto label14
+     $r1 = $r3$i5
+     label14: $i6 = $i3
+     $i6 = $i3
+     $i7 = virtualinvoke $r1.length()
+     $i8 = 0
+     label07: if $i6 >= 2048 goto label08
+     label08: if $i8 != $i7 goto label13
+     $b4 = $r4$i6
+     $c9 = virtualinvoke $r1.charAt($i8)
+     $i11 = (int) $b4
+     $i12 = (int) $c9
+     $i6 = $i6 + 1
+     label13: $i5 = $i5 + 1
+     $i8 = $i8 + 1
+     goto label07
+     $i6 = virtualinvoke $r1.length()
+     $i3 = $i3 + $i6
+     label09: if $i3 >= 2048 goto label11
+     $b4 = $r4$i3
+     label11: $i6 = $i3
+     $b4 = $r4$i3
+     label10: $i3 = $i3 + 1
+     $i6 = (int) $b4
+     $b4 = $r4$i3
+     $i6 = (int) $b4
+     goto label09
+     label12: if $i6 >= 2048 goto label16
+     $b4 = $r4$i6
+     label16: $z1 = 1
+     $i7 = (int) $b4
+     $b4 = $r4$i6
+     label15: $b4 = $r4$i6
+     $i7 = (int) $b4
+     $i6 = $i6 + 1
+     goto label12
+     goto label06
+     goto label19
+     label19: if $i6 >= $i1 goto label20
+     $z1 = 0
+     $i7 = (int) $b4
+     label17: $b4 = $r4$i6
+     label18: $l10 = staticinvoke X.06M.A00($r4 $i3)
+     $r4$i6 = 0
+     $i6 = $i6 + 1
+     $r2$i5 = $l10
+     $i2 = $i2 + 1
+     label21: $i3 = $i6
+     $b4 = $r4$i6
+     label20: if $i6 >= 2048 goto label21
+     $i5 = (int) $b4
+     $i6 = $i6 + 1
+     goto label19
+     $b4 = $r4$i6
+     $i5 = (int) $b4
+     $i6 = $i6 + 1
+     goto label05
+     goto label03

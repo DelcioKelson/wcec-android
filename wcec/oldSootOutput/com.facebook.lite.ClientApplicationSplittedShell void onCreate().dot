@@ -1,0 +1,2 @@
+     $r1 = r0.A00
+     interfaceinvoke $r1.onCreate()

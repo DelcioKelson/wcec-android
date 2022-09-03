@@ -1,0 +1,12 @@
+     $r6 = new java.io.RandomAccessFile
+     label02: virtualinvoke $r6.seek(0L)
+     label03: $i2 = (int) $b0
+     label04: virtualinvoke $r6.write($i2)
+     $l1 = virtualinvoke $r6.getFilePointer()
+     virtualinvoke $r6.setLength($l1)
+     $r3 = virtualinvoke $r6.getFD()
+     virtualinvoke $r3.sync()
+     label05: virtualinvoke $r6.close()
+     label08: virtualinvoke $r6.close()
+     staticinvoke android.util.Log.w(\fb-UnpackingSoSource\ \state file sync failed\ $r5)
+     goto label09

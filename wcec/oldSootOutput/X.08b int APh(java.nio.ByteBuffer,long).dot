@@ -1,0 +1,57 @@
+     $r2 = r0.A01
+     $i1 = virtualinvoke $r1.remaining()
+     label11: $r9 = new java.io.IOException
+     $i2 = $i1
+     $l3 = r0.A03
+     $l4 = $l3 - $l0
+     $b5 = $l4 cmp 0L
+     $i6 = (int) $b5
+     label01: $i6 = (int) $l4
+     $i2 = $i6
+     label02: $r2 = r0.A01
+     $l4 = r0.A00
+     label10: $r8 = new java.lang.StringBuilder
+     $b5 = $l0 cmp $l4
+     $b5 = $l0 cmp $l3
+     label05: $z0 = virtualinvoke $r1.hasArray()
+     $i1 = (int) $b5
+     $l0 = $l3
+     label03: $b5 = $l0 cmp $l4
+     $i1 = (int) $b5
+     $l3 = $l0 - $l4
+     label08: virtualinvoke $r2.close()
+     virtualinvoke $r2.skip($l3)
+     label04: r0.A00 = $l0
+     $r2 = r0.A01
+     label07: $r3 = newarray (byte)$i2
+     $r3 = virtualinvoke $r1.array()
+     virtualinvoke $r2.read($r3 0 $i2)
+     $i1 = virtualinvoke $r1.position()
+     $i1 = $i1 + $i2
+     virtualinvoke $r1.position($i1)
+     label06: $l0 = r0.A00
+     $l3 = (long) $i2
+     $l0 = $l0 + $l3
+     r0.A00 = $l0
+     $r2 = r0.A01
+     virtualinvoke $r2.read($r3 0 $i2)
+     virtualinvoke $r1.put($r3 0 $i2)
+     goto label06
+     $r4 = r0.A05
+     $r5 = r0.A04
+     $r2 = virtualinvoke $r4.getInputStream($r5)
+     r0.A01 = $r2
+     virtualinvoke $r2.skip($l0)
+     label09: $r8 = new java.lang.StringBuilder
+     goto label04
+     $r7 = virtualinvoke $r5.getName()
+     virtualinvoke $r8.append($r7)
+     virtualinvoke $r8.append(\\'s InputStream is null\)
+     $r7 = virtualinvoke $r8.toString()
+     $r9 = new java.io.IOException
+     $r5 = r0.A04
+     $r7 = virtualinvoke $r5.getName()
+     virtualinvoke $r8.append($r7)
+     virtualinvoke $r8.append(\\'s InputStream is null\)
+     $r7 = virtualinvoke $r8.toString()
+     $r9 = new java.io.IOException

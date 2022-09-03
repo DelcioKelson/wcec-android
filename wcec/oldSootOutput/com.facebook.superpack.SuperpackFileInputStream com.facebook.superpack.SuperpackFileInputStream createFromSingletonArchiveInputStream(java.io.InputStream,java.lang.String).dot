@@ -1,0 +1,2 @@
+     $i0 = staticinvoke com.facebook.superpack.SuperpackArchive.getDefaultThreadNum($r1)
+     $r2 = staticinvoke com.facebook.superpack.SuperpackFileInputStream.createFromSingletonArchiveInputStream($r0 $r1 $i0)

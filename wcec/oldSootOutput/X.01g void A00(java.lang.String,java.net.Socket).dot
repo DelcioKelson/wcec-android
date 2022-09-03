@@ -1,0 +1,14 @@
+     $z0 = r0.A03
+     $r4 = r0.A00
+     $z0 = virtualinvoke $r4.isInstance($r2)
+     $r3 = r0.A02
+     $r5 = newarray (java.lang.Object)1
+     label1: $r6 = staticinvoke java.lang.Boolean.valueOf(1)
+     label2: $r50 = $r6
+     label3: virtualinvoke $r3.invoke($r2 $r5)
+     label4: $r3 = r0.A01
+     $r5 = newarray (java.lang.Object)1
+     $r50 = $r1
+     label5: virtualinvoke $r3.invoke($r2 $r5)
+     $r8 = new java.lang.AssertionError
+     $r10 = new java.lang.RuntimeException

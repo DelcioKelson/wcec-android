@@ -1,0 +1,9 @@
+     $i2 = $i1
+     $l4 = $l3 - $l0
+     $i2 = $i6
+     $l0 = $l3
+     $l3 = $l0 - $l4
+     $i1 = $i1 + $i2
+     $l0 = $l0 + $l3
+     goto label06
+     goto label04

@@ -1,0 +1,2 @@
+     label1: $l1 = $l1 * $l2
+     goto label1

@@ -1,0 +1,128 @@
+     $r7 = virtualinvoke r0.A02()
+     $r8 = X.06W.A00
+     $r9 = $r2
+     $r9 = $r3
+     label01: if $r9 == null goto label34
+     $r4 = r0.A02
+     $r10 = virtualinvoke r0.A01()
+     $r6 = X.02P.A06
+     entermonitor $r6
+     label02: $r11 = new X.00v
+     $r12 = virtualinvoke $r2.listFiles($r11)
+     $r13 = $r12
+     $r13 = X.02P.A07
+     label03: exitmonitor $r6
+     label04: $i0 = lengthof $r13
+     $i1 = 0
+     label05: $r3 = $r13$i1
+     $r14 = virtualinvoke $r3.getName()
+     $z0 = staticinvoke X.02P.A01($r2 $r14)
+     virtualinvoke $r3.getName()
+     label25: $i1 = $i1 + 1
+     $r14 = virtualinvoke $r3.getName()
+     $r15 = X.02P.A05
+     $r15 = staticinvoke X.05a.A00()
+     label06: $r16 = new java.lang.StringBuilder
+     X.02P.A05 = $r15
+     $r14 = virtualinvoke $r14.replace(\_prop.txt\ \_\)
+     virtualinvoke $r16.append($r14)
+     $r14 = X.02P.A05
+     virtualinvoke $r16.append($r14)
+     $r14 = virtualinvoke $r16.toString()
+     $r17 = $r4.A03
+     $r18 = new java.io.File
+     virtualinvoke $r18.mkdirs()
+     entermonitor $r6
+     label07: $r19 = new X.042
+     $r12 = virtualinvoke $r9.listFiles($r19)
+     $r20 = $r12
+     $r20 = X.02P.A07
+     label08: exitmonitor $r6
+     label09: $r21 = virtualinvoke r0.A00($r1)
+     $r22 = X.03D.A1q
+     $i2 = staticinvoke X.06k.A00()
+     $l3 = (long) $i2
+     $r23 = staticinvoke java.lang.Long.valueOf($l3)
+     virtualinvoke $r21.A02($r22 $r23)
+     $r22 = X.03D.A1r
+     $i2 = staticinvoke X.06k.A01()
+     $l3 = (long) $i2
+     $r23 = staticinvoke java.lang.Long.valueOf($l3)
+     virtualinvoke $r21.A02($r22 $r23)
+     $r24 = X.03D.A05
+     virtualinvoke $r21.A01($r24 1)
+     $r25 = r0.A00
+     $r14 = virtualinvoke $r25.getPackageName()
+     $r26 = virtualinvoke $r25.getPackageManager()
+     $r14 = virtualinvoke $r26.getInstallerPackageName($r14)
+     $r27 = X.03D.A5O
+     label10: $r28 = staticinvoke java.util.Arrays.asList($r20)
+     virtualinvoke $r21.A03($r27 $r14)
+     $r5 = new java.util.ArrayList
+     $z0 = virtualinvoke $r5.contains($r3)
+     virtualinvoke $r5.add($r3)
+     label11: $r29 = new java.util.ArrayList
+     entermonitor $r6
+     label12: $r30 = new X.043
+     $r12 = virtualinvoke $r9.listFiles($r30)
+     $r20 = $r12
+     $r20 = X.02P.A07
+     label13: exitmonitor $r6
+     label14: $i2 = lengthof $r20
+     $i4 = 0
+     label15: if $i4 >= $i2 goto label17
+     $r17 = $r20$i4
+     label17: $i2 = 0
+     $r14 = virtualinvoke $r17.getName()
+     $z0 = staticinvoke X.02P.A01($r2 $r14)
+     virtualinvoke $r29.add($r17)
+     label16: $i4 = $i4 + 1
+     goto label15
+     entermonitor $r6
+     label18: $r30 = new X.043
+     $r12 = virtualinvoke $r2.listFiles($r30)
+     $r20 = $r12
+     $r20 = X.02P.A07
+     label19: exitmonitor $r6
+     label20: $i4 = lengthof $r20
+     label21: if $i2 >= $i4 goto label23
+     $r17 = $r20$i2
+     label23: $z0 = virtualinvoke $r29.isEmpty()
+     $r14 = virtualinvoke $r17.getName()
+     $z0 = staticinvoke X.02P.A01($r2 $r14)
+     virtualinvoke $r29.add($r17)
+     label22: $i2 = $i2 + 1
+     goto label21
+     $r16 = new java.lang.StringBuilder
+     label24: virtualinvoke $r5.addAll($r29)
+     $r14 = $r1.A00
+     virtualinvoke $r16.append($r14)
+     $r31 = new java.lang.StringBuilder
+     $r14 = $r10.A00
+     virtualinvoke $r31.append($r14)
+     virtualinvoke $r31.append(\_attach.txt\)
+     $r14 = virtualinvoke $r31.toString()
+     virtualinvoke $r16.append($r14)
+     $r14 = virtualinvoke $r16.toString()
+     virtualinvoke $r4.A02(null $r18 $r14 $r29)
+     $r16 = new java.lang.StringBuilder
+     $r14 = $r1.A00
+     virtualinvoke $r16.append($r14)
+     $r31 = new java.lang.StringBuilder
+     $r14 = $r10.A00
+     virtualinvoke $r31.append($r14)
+     virtualinvoke $r31.append(\_report.txt\)
+     $r14 = virtualinvoke $r31.toString()
+     virtualinvoke $r16.append($r14)
+     $r14 = virtualinvoke $r16.toString()
+     virtualinvoke $r4.A02($r21 $r18 $r14 $r5)
+     $r14 = virtualinvoke $r3.getName()
+     staticinvoke X.02P.A00($r2 $r14)
+     $r14 = virtualinvoke $r3.getName()
+     $r14 = virtualinvoke $r14.replace(\_prop.txt\ \_attach.txt\)
+     staticinvoke X.02P.A00($r2 $r14)
+     goto label05
+     exitmonitor $r6
+     exitmonitor $r6
+     exitmonitor $r6
+     exitmonitor $r6

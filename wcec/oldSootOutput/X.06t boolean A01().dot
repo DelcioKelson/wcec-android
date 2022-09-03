@@ -1,0 +1,67 @@
+     $r1 = r0.A00
+     $z0 = virtualinvoke $r1.booleanValue()
+     label01: $i0 = android.os.Build$VERSION.SDK_INT
+     label02: $r2 = staticinvoke android.os.Looper.getMainLooper()
+     label07: $r5 = class \Landroid/os/Looper\
+     $r3 = virtualinvoke $r2.getQueue()
+     label03: $r4 = $r3
+     label04: $r5 = class \Landroid/os/MessageQueue\
+     label05: $r6 = virtualinvoke $r5.getDeclaredField(\mMessages\)
+     virtualinvoke $r6.setAccessible(1)
+     $r4 = virtualinvoke $r6.get($r4)
+     $r7 = (android.os.Message) $r4
+     label06: $s1 = 159
+     goto label10
+     label11: $r6 = null
+     label10: $s1 = 100
+     label08: $r6 = virtualinvoke $r5.getDeclaredField(\mQueue\)
+     virtualinvoke $r6.setAccessible(1)
+     $r2 = staticinvoke android.os.Looper.getMainLooper()
+     $r4 = virtualinvoke $r6.get($r2)
+     label09: goto label04
+     label12: if $r7 == null goto label31
+     $i2 = $r7.what
+     label31: $z0 = 1
+     label26: if $r6 != null goto label29
+     $z0 = 0
+     label14: $r5 = staticinvoke java.lang.Class.forName(\android.app.servertransaction.ClientTransaction\)
+     label13: $r1 = staticinvoke java.lang.Boolean.valueOf($z0)
+     r0.A00 = $r1
+     label15: $r8 = newarray (java.lang.Class)0
+     label16: $r9 = virtualinvoke $r5.getDeclaredMethod(\getCallbacks\ $r8)
+     virtualinvoke $r9.setAccessible(1)
+     $r10 = staticinvoke java.lang.Class.forName(\android.app.servertransaction.LaunchActivityItem\)
+     $r11 = virtualinvoke $r10.getDeclaredField(\mInfo\)
+     virtualinvoke $r11.setAccessible(1)
+     label17: $r4 = $r7.obj
+     $z0 = virtualinvoke $r5.isInstance($r4)
+     $r1 = staticinvoke java.lang.Boolean.valueOf(1)
+     label19: $r4 = $r7.obj
+     label18: $z0 = virtualinvoke $r1.booleanValue()
+     goto label13
+     label20: $r12 = newarray (java.lang.Object)0
+     label21: $r4 = virtualinvoke $r9.invoke($r4 $r12)
+     $r13 = (java.util.List) $r4
+     label22: $r14 = interfaceinvoke $r13.iterator()
+     label23: $z0 = interfaceinvoke $r14.hasNext()
+     $r4 = interfaceinvoke $r14.next()
+     $z0 = virtualinvoke $r10.isInstance($r4)
+     label24: $r4 = virtualinvoke $r11.get($r4)
+     label25: $r15 = (android.content.pm.ActivityInfo) $r4
+     $i2 = $r15.launchMode
+     $r1 = staticinvoke java.lang.Boolean.valueOf(0)
+     goto label18
+     $r5 = class \Landroid/os/Message\
+     label29: $r4 = virtualinvoke $r6.get($r7)
+     label27: $r11 = virtualinvoke $r5.getDeclaredField(\next\)
+     label28: $r6 = $r11
+     virtualinvoke $r11.setAccessible(1)
+     label30: $r7 = (android.os.Message) $r4
+     goto label12
+     goto label13
+     $r17 = new X.04I
+     $r17 = new X.04I
+     $r17 = new X.04I
+     $r17 = new X.04I
+     $r17 = new X.04I
+     $r17 = new X.04I

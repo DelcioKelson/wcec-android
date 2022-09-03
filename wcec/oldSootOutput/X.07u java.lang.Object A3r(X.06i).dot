@@ -1,0 +1,6 @@
+     $r4 = $r1.A0I
+     $r3 = $r1.A01
+     staticinvoke X.02y.A01($r3 \Did you call earlyInit()?\)
+     $r2 = $r1.A00
+     staticinvoke X.02y.A01($r2 \Did you call earlyInit()?\)
+     $r5 = new X.02m

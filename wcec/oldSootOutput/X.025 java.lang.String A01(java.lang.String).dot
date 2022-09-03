@@ -1,0 +1,70 @@
+     label01: $r3 = r0.A02
+     $i0 = r0.A01
+     label02: $l1 = (long) $i0
+     label03: virtualinvoke $r3.seek($l1)
+     label04: $i0 = 0
+     label05: $i2 = r0.A00
+     label06: if $i0 >= $i2 goto label17
+     label07: $i2 = staticinvoke X.025.A00(r0)
+     label17: $r5 = null
+     $i3 = staticinvoke X.025.A00(r0)
+     $i4 = staticinvoke X.025.A00(r0)
+     label08: if $i2 != -87110918 goto label16
+     label09: $r3 = r0.A02
+     label16: $i0 = $i0 + 1
+     label10: $l1 = (long) $i4
+     label11: virtualinvoke $r3.seek($l1)
+     $r4 = newarray (byte)$i3
+     virtualinvoke $r3.read($r4)
+     label12: $r5 = new java.lang.String
+     label14: $z0 = staticinvoke android.text.TextUtils.isEmpty($r5)
+     label15: if $z0 == 0 goto label19
+     goto label18
+     label19: if $r5 == null goto label60
+     label18: $r5 = null
+     goto label05
+     goto label14
+     $r6 = new java.io.StringReader
+     label21: $r7 = new android.util.JsonReader
+     label23: virtualinvoke $r7.beginObject()
+     label24: $z0 = virtualinvoke $r7.hasNext()
+     label25: if $z0 == 0 goto label32
+     label26: $r8 = virtualinvoke $r7.nextName()
+     label32: virtualinvoke $r7.endObject()
+     $r9 = virtualinvoke $r7.peek()
+     $r10 = android.util.JsonToken.NULL
+     label27: if $r9 == $r10 goto label24
+     label28: $z0 = virtualinvoke $r8.equals(\global\)
+     label29: if $z0 == 0 goto label30
+     goto label34
+     label30: virtualinvoke $r7.skipValue()
+     label34: $r11 = $r7
+     label31: goto label24
+     label33: $r11 = null
+     goto label35
+     label35: if $r11 == null goto label46
+     label36: virtualinvoke $r11.beginObject()
+     label46: $r11 = null
+     label37: $z0 = virtualinvoke $r11.hasNext()
+     label38: if $z0 == 0 goto label45
+     label39: $r8 = virtualinvoke $r11.nextName()
+     label45: virtualinvoke $r11.endObject()
+     $r9 = virtualinvoke $r11.peek()
+     $r10 = android.util.JsonToken.NULL
+     label40: if $r9 == $r10 goto label37
+     label41: $z0 = virtualinvoke $r8.equals($r1)
+     label42: if $z0 != 0 goto label47
+     label43: virtualinvoke $r11.skipValue()
+     label47: if $r11 == null goto label50
+     label44: goto label37
+     label48: $r1 = virtualinvoke $r11.nextString()
+     label50: $r1 = null
+     label49: goto label51
+     label51: virtualinvoke $r7.close()
+     label54: virtualinvoke $r7.close()
+     goto label58
+     label58: $r14 = newarray (java.lang.Object)1
+     $r5 = \\
+     $r140 = $r5
+     staticinvoke X.07S.A0E(\MinidumpReader\ \getCustomData error: %s\ $r13 $r14)
+     goto label55

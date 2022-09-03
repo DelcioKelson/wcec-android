@@ -1,0 +1,3 @@
+     $r1 = com.facebook.acra.util.NativeProcFileReader.A00
+     $z0 = virtualinvoke $r1.get()
+     label1: $r2 = new java.lang.IllegalStateException

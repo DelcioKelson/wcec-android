@@ -1,0 +1,5 @@
+     $z0 = X.06p.A05
+     $r1 = X.06p.A00
+     $r0 = newarray (java.lang.Object)1
+     $r00 = $r2
+     staticinvoke X.06p.A00($r1 $r0)

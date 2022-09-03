@@ -1,0 +1,8 @@
+     $r3 = new java.util.HashMap
+     r0.A01 = $r3
+     $r4 = staticinvoke X.04g.A00(\\)
+     r0.A02 = $r4
+     $r5 = virtualinvoke $r1.getApplicationInfo()
+     $r2 = $r5.sourceDir
+     $r6 = new java.io.File
+     r0.A00 = $r6

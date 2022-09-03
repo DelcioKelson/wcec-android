@@ -1,0 +1,3 @@
+     $r1 = staticinvoke X.074.A00($r0)
+     $r2 = virtualinvoke $r1.getActiveNetworkInfo()
+     label1: $r3 = new X.061

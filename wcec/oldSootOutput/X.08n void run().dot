@@ -1,0 +1,64 @@
+     $r4 = X.07J.A09
+     label01: virtualinvoke $r4.await()
+     label02: $r5 = X.07J.A08
+     label03: entermonitor $r5
+     label04: $z0 = X.07J.A05
+     exitmonitor $r5
+     label06: X.07J.A05 = 1
+     exitmonitor $r5
+     label07: $r6 = staticinvoke X.07J.A00()
+     $r7 = $r6.A01
+     label08: if $r7 == null goto label46
+     label09: staticinvoke X.06o.A01(\earlyNativeInit\)
+     label10: $z0 = $r6.A0S
+     label11: if $z0 == 0 goto label20
+     label12: $z0 = com.facebook.errorreporting.lacrima.common.mappedfile.mlocked.MLockedFile.A00
+     label20: $r7 = $r6.A01
+     label13: if $z0 != 0 goto label20
+     $z0 = 1
+     label14: staticinvoke X.07P.A07(\appstatelogger2\)
+     label15: goto label19
+     label19: com.facebook.errorreporting.lacrima.common.mappedfile.mlocked.MLockedFile.A00 = $z0
+     label17: com.facebook.errorreporting.lacrima.common.mappedfile.mlocked.MLockedFile.A00 = 1
+     label18: $z0 = 0
+     staticinvoke X.02y.A01($r7 \Did you call earlyInit()?\)
+     $r9 = $r7.A04
+     staticinvoke X.02y.A01($r9 \Did you call SessionManager.init()?\)
+     $z0 = $r9.A01
+     label21: if $z0 == 0 goto label27
+     label22: $r5 = $r9.A02
+     label27: $r12 = $r6.A0K
+     entermonitor $r5
+     label23: $r10 = $r9.A00
+     virtualinvoke $r10.A00()
+     exitmonitor $r5
+     label24: goto label27
+     exitmonitor $r5
+     $r13 = interfaceinvoke $r12.iterator()
+     label28: $z0 = interfaceinvoke $r13.hasNext()
+     label29: if $z0 == 0 goto label32
+     label30: $r5 = interfaceinvoke $r13.next()
+     label32: $r7 = $r6.A01
+     $r14 = (X.09i) $r5
+     interfaceinvoke $r14.A57($r6)
+     label31: goto label28
+     staticinvoke X.02y.A01($r7 \Did you call earlyInit()?\)
+     $l0 = staticinvoke android.os.SystemClock.uptimeMillis()
+     $r7.A00 = $l0
+     label33: staticinvoke X.06o.A00()
+     label36: $d0 = staticinvoke java.lang.Math.random()
+     $b1 = $d0 cmpg 0.001
+     $i2 = (int) $b1
+     $r15 = $r6.A0Q
+     $r5 = interfaceinvoke $r15.get()
+     $r16 = (java.lang.String) $r5
+     $r15 = $r6.A0P
+     $r5 = interfaceinvoke $r15.get()
+     $r17 = (java.lang.String) $r5
+     staticinvoke X.01p.A00($r16 $r17 \earlyNativeInit exception\ $r1)
+     label39: staticinvoke X.06o.A00()
+     label41: exitmonitor $r5
+     $r21 = r0.A00
+     staticinvoke X.075.A02($r21 $r20 \Failed earlyNativeInit\)
+     goto label18
+     goto label18

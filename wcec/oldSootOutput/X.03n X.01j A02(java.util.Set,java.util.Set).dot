@@ -1,0 +1,9 @@
+     $r2 = new java.util.HashMap
+     $r3 = interfaceinvoke $r0.iterator()
+     label1: $z0 = interfaceinvoke $r3.hasNext()
+     $r4 = interfaceinvoke $r3.next()
+     label2: $r5 = staticinvoke java.util.Collections.unmodifiableMap($r2)
+     $r0 = staticinvoke java.util.Collections.unmodifiableSet($r1)
+     virtualinvoke $r2.put($r4 $r0)
+     goto label1
+     $r6 = new X.01j

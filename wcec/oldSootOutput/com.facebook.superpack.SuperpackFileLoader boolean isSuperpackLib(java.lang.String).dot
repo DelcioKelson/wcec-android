@@ -1,0 +1,5 @@
+     $c1 = java.io.File.separatorChar
+     $i0 = (int) $c1
+     $i0 = virtualinvoke $r0.lastIndexOf($i0)
+     $i0 = $i0 + 1
+     $z0 = virtualinvoke $r0.regionMatches($i0 \libsuperpack-jni.so\ 0 19)

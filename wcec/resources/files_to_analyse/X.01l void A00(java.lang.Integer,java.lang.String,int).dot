@@ -1,0 +1,4 @@
+     entermonitor class \LX/01l\
+     $i2 = $i1 + 1
+     label2: exitmonitor class \LX/01l\
+     label6: exitmonitor class \LX/01l\

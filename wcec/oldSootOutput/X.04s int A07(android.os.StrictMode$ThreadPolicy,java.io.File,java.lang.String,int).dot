@@ -1,0 +1,47 @@
+     $r5 = X.07P.A03
+     $r6 = r0.A02
+     label26: $r13 = new java.lang.IllegalStateException
+     $z0 = interfaceinvoke $r6.contains($r3)
+     $z1 = 0
+     $r7 = virtualinvoke r0.A04($r3)
+     label25: virtualinvoke $r2.getCanonicalPath()
+     virtualinvoke $r2.getCanonicalPath()
+     $i1 = $i0 & 1
+     $i1 = r0.A01
+     label01: $r8 = null
+     $i1 = $i1 & 2
+     $i1 = r0.A01
+     $i1 = $i1 & 1
+     $z1 = 1
+     label02: $r9 = virtualinvoke $r7.getName()
+     $z0 = virtualinvoke $r9.equals($r3)
+     label03: $r4 = new X.02q
+     label15: $r5 = X.07P.A03
+     label04: $r8 = $r4
+     label05: $r10 = staticinvoke X.04s.A01($r4 $r3)
+     label12: if $z0 != 0 goto label15
+     staticinvoke java.util.Arrays.toString($r10)
+     $i1 = lengthof $r10
+     label06: $i2 = 0
+     label07: if $i2 >= $i1 goto label12
+     label08: $r3 = $r10$i2
+     $z1 = virtualinvoke $r3.startsWith(\/\)
+     label09: if $z1 != 0 goto label11
+     $i3 = $i0 | 1
+     label11: $i2 = $i2 + 1
+     label10: staticinvoke X.07P.A06($r1 $r3 null null $i3)
+     goto label07
+     label13: $r5 = X.07P.A03
+     $r3 = virtualinvoke $r7.getAbsolutePath()
+     interfaceinvoke $r5.loadBytes($r3 $r4 $i0)
+     label14: goto label21
+     label21: virtualinvoke $r8.close()
+     $r3 = virtualinvoke $r7.getAbsolutePath()
+     interfaceinvoke $r5.load($r3 $i0)
+     label16: goto label20
+     label20: if $r8 == null goto label28
+     label18: $r3 = virtualinvoke $r11.getMessage()
+     $z1 = virtualinvoke $r3.contains(\bad ELF magic\)
+     label19: if $z1 == 0 goto label22
+     virtualinvoke $r8.close()
+     virtualinvoke $r8.close()

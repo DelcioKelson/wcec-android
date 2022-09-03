@@ -1,0 +1,5 @@
+     $z0 = 0
+     label2: if $i0 < 18 goto label3
+     $z0 = 1
+     goto label3
+     goto label3

@@ -1,0 +1,10 @@
+     entermonitor r0
+     label1: $z0 = r0.A01
+     $z0 = r0.A00
+     label3: exitmonitor r0
+     $r1 = r0.A03
+     label2: r0.A01 = 0
+     virtualinvoke $r1.acquire(60000L)
+     $r1 = r0.A04
+     virtualinvoke $r1.release()
+     exitmonitor r0

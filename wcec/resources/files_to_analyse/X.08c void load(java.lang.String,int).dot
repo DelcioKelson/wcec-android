@@ -1,0 +1,6 @@
+     goto label03
+     goto label01
+     goto label10
+     goto label21
+     label24: goto label29
+     goto label27

@@ -1,0 +1,12 @@
+     $r0 = X.02r.A00
+     $r1 = staticinvoke java.lang.Integer.valueOf($i1)
+     interfaceinvoke $r0.add($r1)
+     $r2 = X.02r.A01
+     $r3 = staticinvoke java.lang.Integer.valueOf($i0)
+     $r4 = interfaceinvoke $r2.get($r3)
+     $r0 = (java.util.List) $r4
+     $r5 = new java.util.ArrayList
+     label1: interfaceinvoke $r0.add($r1)
+     $r0 = $r5
+     $r2 = X.02r.A01
+     interfaceinvoke $r2.put($r3 $r5)

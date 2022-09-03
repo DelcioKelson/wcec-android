@@ -1,0 +1,12 @@
+     $r2 = virtualinvoke $r1.getName()
+     $r3 = r0.A00
+     $r4 = $r3.A00
+     $z0 = virtualinvoke $r2.startsWith($r4)
+     $r2 = virtualinvoke $r1.getName()
+     $r5 = new java.lang.StringBuilder
+     $r6 = r0.A01
+     $r4 = $r6.A00
+     virtualinvoke $r5.append($r4)
+     virtualinvoke $r5.append(\_prop.txt\)
+     $r4 = virtualinvoke $r5.toString()
+     $z0 = virtualinvoke $r2.endsWith($r4)

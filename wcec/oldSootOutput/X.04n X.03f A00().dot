@@ -1,0 +1,2 @@
+     $r2 = virtualinvoke r0.A03()
+     $r1 = new X.03f

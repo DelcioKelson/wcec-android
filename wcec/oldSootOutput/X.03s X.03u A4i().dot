@@ -1,0 +1,13 @@
+     $r1 = r0.A02
+     entermonitor $r1
+     label1: $r2 = r0.A00
+     exitmonitor $r1
+     label3: $r3 = virtualinvoke $r2.dequeueWork()
+     exitmonitor $r1
+     label4: if $r3 == null goto label8
+     $r4 = virtualinvoke $r3.getIntent()
+     $r5 = r0.A01
+     $r6 = virtualinvoke $r5.getClassLoader()
+     virtualinvoke $r4.setExtrasClassLoader($r6)
+     $r7 = new X.03v
+     label6: exitmonitor $r1

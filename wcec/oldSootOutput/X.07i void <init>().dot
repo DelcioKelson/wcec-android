@@ -1,0 +1,8 @@
+     $r2 = X.06W.A0A
+     $r1 = newarray (X.09f)2
+     $r3 = new X.07g
+     $r10 = $r3
+     $r4 = new X.07h
+     $r11 = $r4
+     r0.A00 = $r2
+     r0.A01 = $r1

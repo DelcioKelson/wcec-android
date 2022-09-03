@@ -1,0 +1,19 @@
+     $i3 = $i2 + $i1
+     $i3 = $i3 + $i0
+     $i3 = $i3 + 1
+     $i3 = 0
+     $i4 = 0
+     $i5 = 1
+     label2: if $i4 >= $i2 goto label3
+     label3: $i2 = 0
+     $i4 = $i4 + 1
+     $i5 = $i5 + 1
+     goto label2
+     label4: if $i2 >= $i1 goto label5
+     label5: if $i3 >= $i0 goto label6
+     $i2 = $i2 + 1
+     $i5 = $i5 + 1
+     goto label4
+     $i3 = $i3 + 1
+     $i5 = $i5 + 1
+     goto label5

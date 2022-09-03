@@ -1,0 +1,3 @@
+     $r1 = staticinvoke android.os.Looper.getMainLooper()
+     $r2 = staticinvoke android.os.Looper.myLooper()
+     $r3 = new java.lang.IllegalStateException

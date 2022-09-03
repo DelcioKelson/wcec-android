@@ -1,0 +1,7 @@
+     $r5 = null
+     label2: $r5 = staticinvoke java.util.regex.Pattern.compile($r4 32)
+     label1: r0.A03 = $r5
+     r0.A01 = $r2
+     r0.A00 = $r1
+     r0.A02 = $r3
+     goto label1

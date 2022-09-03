@@ -1,0 +1,21 @@
+     $r2 = new java.lang.Object
+     r0.A04 = $r2
+     $i1 = 0
+     r0.A02 = 0
+     $r2 = new java.lang.Object
+     r0.A05 = $r2
+     $r3 = new java.util.WeakHashMap
+     r0.A07 = $r3
+     $r4 = new java.util.ArrayList
+     r0.A06 = $r4
+     r0.A00 = null
+     $r5 = staticinvoke X.06W.A00(12)
+     $i0 = lengthof $r5
+     label1: if $i1 >= $i0 goto label2
+     $r6 = $r5$i1
+     $r1 = r0.A06
+     $i2 = virtualinvoke $r6.intValue()
+     $r3 = new java.util.WeakHashMap
+     interfaceinvoke $r1.add($i2 $r3)
+     $i1 = $i1 + 1
+     goto label1

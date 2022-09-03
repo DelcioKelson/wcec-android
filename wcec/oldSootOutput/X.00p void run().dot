@@ -1,0 +1,145 @@
+     $l0 = 4000L
+     $r3 = r0.A05
+     entermonitor $r3
+     label01: $z0 = r0.A02
+     $z1 = 0
+     $z1 = 1
+     label02: $l1 = staticinvoke android.os.SystemClock.uptimeMillis()
+     goto label06
+     label04: exitmonitor $r3
+     label06: virtualinvoke $r3.wait($l0)
+     label03: $l0 = staticinvoke android.os.SystemClock.uptimeMillis()
+     $l0 = $l0 - $l1
+     $l0 = 4000L - $l0
+     $b2 = $l0 cmp 1L
+     $i3 = (int) $b2
+     label05: goto label13
+     label13: if $z0 != 0 goto label59
+     label07: $b2 = $l0 cmp 0L
+     $i3 = (int) $b2
+     label08: $z0 = r0.A02
+     label09: $r4 = r0.A07
+     goto label10
+     label11: $z1 = 0
+     label10: $z1 = 1
+     goto label12
+     label12: $z0 = r0.A02
+     $b2 = $l0 cmp 0L
+     $i3 = (int) $b2
+     goto label03
+     $z0 = 0
+     label14: $r5 = r0.A08
+     $r6 = r0.A04
+     $r7 = virtualinvoke $r6.getProcessesInErrorState()
+     label15: $r21 = new java.util.LinkedList
+     label17: if $r7 == null goto label31
+     label18: $r9 = interfaceinvoke $r7.iterator()
+     label31: $z1 = r0.A00
+     label19: $z1 = interfaceinvoke $r9.hasNext()
+     label20: if $z1 == 0 goto label31
+     label21: $r10 = interfaceinvoke $r9.next()
+     $r11 = (android.app.ActivityManager$ProcessErrorStateInfo) $r10
+     $i3 = $r11.condition
+     label22: if $i3 != 2 goto label19
+     label23: $i3 = $r11.uid
+     $i4 = $r5.A03
+     label24: if $i3 != $i4 goto label19
+     $r22 = new X.05q
+     $r13 = $r11.shortMsg
+     $r22.A00 = $r13
+     $r13 = $r11.tag
+     $r22.A02 = $r13
+     $r13 = $r11.processName
+     $r22.A01 = $r13
+     $r14 = $r5.A06
+     $z1 = virtualinvoke $r14.equals($r13)
+     label26: if $z1 == 0 goto label29
+     label27: virtualinvoke $r21.addFirst($r22)
+     label29: virtualinvoke $r21.addLast($r22)
+     label28: goto label19
+     label30: goto label19
+     label32: if $z1 == 0 goto label36
+     $r15 = newarray (java.lang.Object)1
+     label36: $z1 = virtualinvoke $r21.isEmpty()
+     label33: $r13 = $r5.A06
+     $r150 = $r13
+     staticinvoke X.07S.A0I(\ProcessAnrErrorMonitor\ \Starting process monitor checks for process \'%s\'\ $r15)
+     r0.A00 = 0
+     label34: $r16 = X.06W.A00
+     label35: $r4 = r0.A07
+     virtualinvoke $r5.A01($r4 $r16 null null)
+     $r10 = virtualinvoke $r21.getFirst()
+     label39: if $z0 == 0 goto label37
+     $r12 = (X.05q) $r10
+     $r13 = $r5.A06
+     $r14 = $r12.A01
+     $z1 = virtualinvoke $r13.equals($r14)
+     $z0 = 1
+     label37: $z1 = virtualinvoke $r21.isEmpty()
+     $r15 = newarray (java.lang.Object)2
+     $r13 = $r12.A00
+     $r150 = $r13
+     $r13 = $r12.A02
+     $r151 = $r13
+     staticinvoke X.07S.A0I(\ProcessAnrErrorMonitor\ \ANR detected Short msg: %s Tag: %s\ $r15)
+     $r16 = X.06W.A0C
+     $r4 = r0.A07
+     $r13 = $r12.A00
+     $r14 = $r12.A02
+     virtualinvoke $r5.A01($r4 $r16 $r13 $r14)
+     $r13 = $r5.A06
+     label40: entermonitor $r3
+     $r4 = r0.A07
+     $r9 = virtualinvoke $r21.iterator()
+     label38: $z1 = interfaceinvoke $r9.hasNext()
+     $r10 = interfaceinvoke $r9.next()
+     $r12 = (X.05q) $r10
+     $r14 = $r12.A01
+     $z1 = virtualinvoke $r13.equals($r14)
+     $r15 = newarray (java.lang.Object)2
+     $r150 = $r14
+     $r151 = $r13
+     staticinvoke X.07S.A0I(\ProcessAnrErrorMonitor\ \Error found in process \'%s\' different from process being searched \'%s\'\ $r15)
+     $r14 = $r12.A01
+     $r17 = r0.A06
+     $z1 = interfaceinvoke $r17.contains($r14)
+     $r14 = $r12.A01
+     interfaceinvoke $r17.add($r14)
+     goto label38
+     staticinvoke X.07S.A06(\ProcessAnrErrorMonitor\ \On error cleared\)
+     $r16 = X.06W.A01
+     $r4 = r0.A07
+     virtualinvoke $r5.A01($r4 $r16 null null)
+     $z0 = 0
+     goto label37
+     label41: $z1 = r0.A02
+     $i3 = $r5.A04
+     label47: exitmonitor $r3
+     label42: $z1 = r0.A01
+     $i3 = 0
+     label43: $l1 = (long) $i3
+     label44: virtualinvoke $r3.wait($l1)
+     label45: $z1 = r0.A01
+     $z1 = r0.A02
+     label46: $z1 = r0.A02
+     label48: if $z1 == 0 goto label14
+     $r16 = X.06W.A0Y
+     $r4 = r0.A07
+     virtualinvoke $r5.A01($r4 $r16 null null)
+     label50: exitmonitor $r3
+     $r18 = virtualinvoke $r19.getCause()
+     $z0 = $r18 instanceof android.os.DeadObjectException
+     $r18 = virtualinvoke $r19.getCause()
+     label53: $r5 = r0.A08
+     $z0 = $r18 instanceof android.os.RemoteException
+     $r16 = X.06W.A0c
+     $r4 = r0.A07
+     virtualinvoke $r5.A01($r4 $r16 null null)
+     $r15 = newarray (java.lang.Object)2
+     $r13 = $r5.A06
+     $r150 = $r13
+     $r151 = $r19
+     staticinvoke X.07S.A0H(\ProcessAnrErrorMonitor\ \Stopping checks for \'%s\' because of ERROR_QUERYING_ACTIVITY_MANAGER\ $r15)
+     label55: exitmonitor $r3
+     goto label07
+     goto label45

@@ -1,0 +1,17 @@
+     $r1 = new java.lang.StringBuilder
+     $r2 = r0.A03
+     $z0 = staticinvoke android.text.TextUtils.isEmpty($r2)
+     virtualinvoke $r1.append($r2)
+     label1: $r2 = r0.A00
+     virtualinvoke $r1.append(58)
+     $z0 = staticinvoke android.text.TextUtils.isEmpty($r2)
+     virtualinvoke $r1.append(\//\)
+     label2: $r2 = r0.A01
+     virtualinvoke $r1.append($r2)
+     $z0 = staticinvoke android.text.TextUtils.isEmpty($r2)
+     virtualinvoke $r1.append($r2)
+     label3: $r2 = r0.A02
+     $z0 = staticinvoke android.text.TextUtils.isEmpty($r2)
+     virtualinvoke $r1.append(63)
+     label4: $r2 = virtualinvoke $r1.toString()
+     virtualinvoke $r1.append($r2)

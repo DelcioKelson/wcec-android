@@ -1,0 +1,13 @@
+     staticinvoke X.08y.A00()
+     staticinvoke X.06o.A01(\BreakpadManager.start\)
+     label1: $r4 = r0.A00
+     staticinvoke com.facebook.breakpad.BreakpadManager.start($r4)
+     $r5 = X.03D.A33
+     $r2 = $r5.A00
+     $r6 = $r1.A0O
+     $r3 = interfaceinvoke $r6.get()
+     $r7 = (java.lang.String) $r3
+     $r8 = newarray (java.lang.Object)0
+     staticinvoke com.facebook.breakpad.BreakpadManager.setCustomData($r2 $r7 $r8)
+     label2: staticinvoke X.06o.A00()
+     staticinvoke X.06o.A00()

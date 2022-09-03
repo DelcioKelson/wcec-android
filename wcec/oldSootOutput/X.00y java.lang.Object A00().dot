@@ -1,0 +1,23 @@
+     $r1 = r0.A00
+     $r2 = $r1.A07
+     $r11 = new X.00z
+     label1: $r3 = interfaceinvoke $r2.get()
+     $r2 = $r11
+     $r1.A07 = $r11
+     $r4 = (X.010) $r3
+     $r5 = X.02x.A00
+     $r6 = X.06i.A0U
+     $r7 = staticinvoke X.00H.A01($r6)
+     $r8 = $r7
+     $r9 = virtualinvoke $r7.buildUpon()
+     label4: $r5 = \b-www.facebook.com\
+     $r5 = X.02x.A00
+     $r9 = virtualinvoke $r9.authority($r5)
+     $r8 = virtualinvoke $r9.build()
+     label2: $r12 = new X.07W
+     $r10 = $r12
+     label3: $r13 = new X.013
+     $z0 = virtualinvoke $r5.equals(\b-www.facebook.com\)
+     $r14 = new X.012
+     $r10 = $r14
+     goto label3

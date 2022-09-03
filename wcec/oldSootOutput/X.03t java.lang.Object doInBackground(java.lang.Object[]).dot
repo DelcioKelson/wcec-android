@@ -1,0 +1,10 @@
+     label1: $r2 = r0.A00
+     $r3 = virtualinvoke $r2.A02()
+     $r4 = interfaceinvoke $r3.A8f()
+     virtualinvoke $r2.A05($r4)
+     label2: interfaceinvoke $r3.A3S()
+     label3: goto label1
+     $r6 = virtualinvoke $r5.getMessage()
+     $z0 = virtualinvoke $r6.contains(\Caller no longer running\)
+     staticinvoke android.util.Log.e(\JobIntentService\ \Captured a \\\Caller no longer running\\\\ $r5)
+     goto label1

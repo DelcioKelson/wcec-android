@@ -1,0 +1,14 @@
+     $r3 = r0.A00
+     virtualinvoke $r3.append(124)
+     $i1 = 1
+     label1: if $i1 >= $i0 goto label3
+     $i2 = $i1 + -1
+     $r4 = $r1$i2
+     $r2 = $r1$i1
+     virtualinvoke $r3.append($r4)
+     virtualinvoke $r3.append(61)
+     virtualinvoke $r3.append($r2)
+     $i2 = $i0 + -1
+     virtualinvoke $r3.append(59)
+     label2: $i1 = $i1 + 2
+     goto label1

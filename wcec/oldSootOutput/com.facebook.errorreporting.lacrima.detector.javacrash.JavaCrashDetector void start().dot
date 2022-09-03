@@ -1,0 +1,9 @@
+     $r1 = staticinvoke X.08y.A01()
+     $r2 = new X.02b
+     label2: $r4 = staticinvoke java.lang.Thread.getDefaultUncaughtExceptionHandler()
+     staticinvoke X.08y.A03($r2 100)
+     label1: $r3 = newarray (byte)65536
+     r0.mOomReservation = $r3
+     $r5 = new X.08w
+     staticinvoke java.lang.Thread.setDefaultUncaughtExceptionHandler($r5)
+     goto label1

@@ -1,0 +1,6 @@
+     entermonitor class \LX/07D\
+     label07: exitmonitor class \LX/07D\
+     goto label07
+     label08: goto label11
+     exitmonitor class \LX/07D\
+     goto label06

@@ -1,0 +1,20 @@
+     $z0 = virtualinvoke $r0.isDirectory()
+     $r2 = virtualinvoke $r0.listFiles()
+     label03: $r4 = virtualinvoke $r0.getPath()
+     $i0 = 0
+     label02: $r3 = new java.lang.StringBuilder
+     label01: $i1 = lengthof $r2
+     $r0 = $r2$i0
+     staticinvoke X.07G.A02($r0)
+     $i0 = $i0 + 1
+     goto label01
+     virtualinvoke $r3.append($r0)
+     $r4 = virtualinvoke $r3.toString()
+     $r5 = new java.io.IOException
+     $z0 = virtualinvoke $r4.endsWith(\_lock\)
+     $r6 = new java.io.RandomAccessFile
+     label04: $r7 = virtualinvoke $r6.getFD()
+     virtualinvoke $r7.sync()
+     label05: virtualinvoke $r6.close()
+     label07: virtualinvoke $r6.close()
+     goto label08

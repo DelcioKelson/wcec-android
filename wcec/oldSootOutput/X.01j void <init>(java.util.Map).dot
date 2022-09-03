@@ -1,0 +1,24 @@
+     $r3 = new java.util.HashSet
+     $r2 = new java.util.HashMap
+     $r4 = interfaceinvoke $r1.entrySet()
+     $r5 = interfaceinvoke $r4.iterator()
+     label1: $z0 = interfaceinvoke $r5.hasNext()
+     $r6 = interfaceinvoke $r5.next()
+     label4: $r4 = staticinvoke java.util.Collections.unmodifiableSet($r3)
+     $r7 = (java.util.Map$Entry) $r6
+     $r6 = interfaceinvoke $r7.getKey()
+     $r8 = interfaceinvoke $r7.getValue()
+     $r4 = (java.util.Set) $r8
+     $z0 = interfaceinvoke $r4.contains(\*|all_packages|*\)
+     label2: $z0 = virtualinvoke $r2.containsKey($r6)
+     virtualinvoke $r3.add($r6)
+     goto label1
+     $r9 = new java.util.HashSet
+     label3: $r6 = virtualinvoke $r2.get($r6)
+     virtualinvoke $r2.put($r6 $r9)
+     $r10 = (java.util.Set) $r6
+     interfaceinvoke $r10.addAll($r4)
+     goto label1
+     r0.A01 = $r4
+     $r1 = staticinvoke java.util.Collections.unmodifiableMap($r2)
+     r0.A00 = $r1

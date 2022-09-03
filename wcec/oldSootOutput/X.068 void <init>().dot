@@ -1,0 +1,7 @@
+     r0.A00 = 0L
+     $r1 = new java.util.ArrayList
+     r0.A02 = $r1
+     $r1 = new java.util.ArrayList
+     r0.A03 = $r1
+     $r2 = new java.util.HashMap
+     r0.A04 = $r2

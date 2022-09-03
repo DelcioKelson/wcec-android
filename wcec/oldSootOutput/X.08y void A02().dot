@@ -1,0 +1,7 @@
+     staticinvoke android.os.Process.killProcess($i0)
+     label2: goto label4
+     label4: staticinvoke java.lang.System.exit(10)
+     staticinvoke android.util.Log.e(\ExceptionHandlerManager\ \Error during exception handling\ $r0)
+     label5: goto label7
+     label7: goto label7
+     staticinvoke android.util.Log.e(\ExceptionHandlerManager\ \Error during exception handling\ $r1)

@@ -1,0 +1,10 @@
+     virtualinvoke r0.A03($i0)
+     $r1 = r0.A02
+     $r3 = new android.app.job.JobInfo$Builder
+     $r3 = virtualinvoke $r3.setOverrideDeadline(0L)
+     $r4 = virtualinvoke $r3.build()
+     r0.A00 = $r4
+     $r2 = virtualinvoke $r2.getApplicationContext()
+     $r5 = virtualinvoke $r2.getSystemService(\jobscheduler\)
+     $r6 = (android.app.job.JobScheduler) $r5
+     r0.A01 = $r6

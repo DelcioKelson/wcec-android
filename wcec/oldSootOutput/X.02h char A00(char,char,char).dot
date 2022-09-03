@@ -1,0 +1,15 @@
+     $i3 = (int) $c1
+     $i3 = (int) $c1
+     label1: $i3 = (int) $c2
+     $i3 = (int) $c1
+     $i3 = (int) $c0
+     label2: $i3 = (int) $c0
+     $i3 = (int) $c2
+     $i3 = (int) $c0
+     label3: $i3 = (int) $c1
+     $i3 = (int) $c0
+     $i3 = (int) $c0
+     $i3 = (int) $c0
+     $i3 = (int) $c0
+     $i3 = (int) $c0
+     $i3 = (int) $c0

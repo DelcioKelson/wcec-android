@@ -1,0 +1,11 @@
+     label1: $r2 = virtualinvoke $r0.split(\:\)
+     $i0 = lengthof $r2
+     $r1 = new java.util.ArrayList
+     $i1 = 0
+     label2: if $i1 >= $i0 goto label4
+     $r0 = $r2$i1
+     label4: $r0 = staticinvoke android.text.TextUtils.join(\:\ $r1)
+     $z0 = virtualinvoke $r0.contains(\!\)
+     virtualinvoke $r1.add($r0)
+     label3: $i1 = $i1 + 1
+     goto label2

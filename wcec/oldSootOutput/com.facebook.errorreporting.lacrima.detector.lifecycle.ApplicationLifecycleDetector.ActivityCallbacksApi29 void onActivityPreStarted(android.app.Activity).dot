@@ -1,0 +1,2 @@
+     $r2 = X.06W.A01
+     virtualinvoke r0.A04($r1 $r2)

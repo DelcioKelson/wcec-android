@@ -1,0 +1,171 @@
+     $r2 = staticinvoke java.nio.ByteBuffer.allocate(8)
+     $r3 = java.nio.ByteOrder.LITTLE_ENDIAN
+     virtualinvoke $r2.order($r3)
+     $l0 = staticinvoke X.02r.A00($r1 $r2 0L)
+     $b1 = $l0 cmp 1179403647L
+     staticinvoke X.02r.A03($r1 $r2 1 4L)
+     label42: $r6 = new java.lang.StringBuilder
+     $b1 = virtualinvoke $r2.get()
+     $s2 = (short) $b1
+     $s2 = $s2 & 255
+     $z0 = 1
+     $z0 = 0
+     label01: staticinvoke X.02r.A03($r1 $r2 1 5L)
+     $b1 = virtualinvoke $r2.get()
+     $s2 = (short) $b1
+     $s2 = $s2 & 255
+     $i4 = (int) $s2
+     $r3 = java.nio.ByteOrder.BIG_ENDIAN
+     label02: if $z0 == 0 goto label35
+     virtualinvoke $r2.order($r3)
+     $l3 = staticinvoke X.02r.A00($r1 $r2 28L)
+     label35: staticinvoke X.02r.A03($r1 $r2 8 32L)
+     staticinvoke X.02r.A03($r1 $r2 2 44L)
+     $s2 = virtualinvoke $r2.getShort()
+     $i4 = (int) $s2
+     $i4 = $i4 & 65535
+     $l5 = (long) $i4
+     $l0 = 42L
+     label03: staticinvoke X.02r.A03($r1 $r2 2 $l0)
+     $s2 = virtualinvoke $r2.getShort()
+     $i4 = (int) $s2
+     $i4 = $i4 & 65535
+     $b1 = $l5 cmp 65535L
+     label05: $l0 = $l3
+     $l0 = staticinvoke X.02r.A00($r1 $r2 32L)
+     label34: staticinvoke X.02r.A03($r1 $r2 8 40L)
+     $l0 = $l0 + 28L
+     label04: $l5 = staticinvoke X.02r.A00($r1 $r2 $l0)
+     $l6 = 0L
+     label06: $b1 = $l6 cmp $l5
+     $i8 = (int) $b1
+     $l7 = $l0 + 0L
+     label41: $r7 = new X.09E
+     $l7 = staticinvoke X.02r.A00($r1 $r2 $l7)
+     $b1 = $l7 cmp 2L
+     label33: $l7 = (long) $i4
+     $l0 = $l0 + 4L
+     label32: $l0 = $l0 + 8L
+     $l0 = staticinvoke X.02r.A00($r1 $r2 $l0)
+     label07: $b1 = $l0 cmp 0L
+     $l7 = $l0
+     $l6 = 0L
+     $i8 = 0
+     label08: $l9 = $l7 + 0L
+     $l9 = staticinvoke X.02r.A00($r1 $r2 $l9)
+     label31: staticinvoke X.02r.A03($r1 $r2 8 $l9)
+     label09: $b1 = $l9 cmp 1L
+     label29: $b1 = $l9 cmp 5L
+     $i8 = $i8 + 1
+     label40: $r7 = new X.09E
+     label10: if $z0 == 0 goto label28
+     $l10 = 8L
+     label28: $l10 = 16L
+     label11: $l7 = $l7 + $l10
+     $b1 = $l9 cmp 0L
+     $b1 = $l6 cmp 0L
+     $i11 = 0
+     label39: $r7 = new X.09E
+     label12: $l7 = (long) $i11
+     $b1 = $l7 cmp $l5
+     $i13 = (int) $b1
+     $l7 = $l3 + 0L
+     label38: $r7 = new X.09E
+     $l7 = staticinvoke X.02r.A00($r1 $r2 $l7)
+     $b1 = $l7 cmp 1L
+     label27: $l7 = (long) $i4
+     $l7 = $l3 + 8L
+     label26: $l7 = $l3 + 16L
+     $l7 = staticinvoke X.02r.A00($r1 $r2 $l7)
+     $l9 = $l3 + 20L
+     $l9 = staticinvoke X.02r.A00($r1 $r2 $l9)
+     label13: $b1 = $l7 cmp $l6
+     $i13 = (int) $b1
+     $l9 = $l9 + $l7
+     $b1 = $l6 cmp $l9
+     $i13 = (int) $b1
+     $l3 = $l3 + 4L
+     label25: $l3 = $l3 + 8L
+     $l3 = staticinvoke X.02r.A00($r1 $r2 $l3)
+     label14: $l5 = $l6 - $l7
+     $l3 = $l3 + $l5
+     $b1 = $l3 cmp 0L
+     $r4 = newarray (java.lang.String)$i8
+     $i4 = 0
+     label15: $l5 = $l0 + 0L
+     $l5 = staticinvoke X.02r.A00($r1 $r2 $l5)
+     label24: staticinvoke X.02r.A03($r1 $r2 8 $l5)
+     label16: $b1 = $l5 cmp 1L
+     label21: if $z0 == 0 goto label23
+     $l6 = $l0 + 4L
+     label19: $l6 = $l0 + 8L
+     $l6 = staticinvoke X.02r.A00($r1 $r2 $l6)
+     label17: $l6 = $l6 + $l3
+     $r6 = new java.lang.StringBuilder
+     $r0 = $r6
+     label18: staticinvoke X.02r.A03($r1 $r2 1 $l6)
+     $b1 = virtualinvoke $r2.get()
+     $s2 = (short) $b1
+     $s2 = $s2 & 255
+     $c12 = (char) $s2
+     label20: $r5 = virtualinvoke $r0.toString()
+     virtualinvoke $r0.append($c12)
+     $l6 = 1L + $l6
+     goto label18
+     staticinvoke X.02r.A03($r1 $r2 8 $l6)
+     $l6 = virtualinvoke $r2.getLong()
+     goto label17
+     $r4$i4 = $r5
+     $i4 = $i4 + 1
+     label37: $r7 = new X.09E
+     $l6 = 8L
+     label23: $l6 = 16L
+     label22: $l0 = $l0 + $l6
+     $b1 = $l5 cmp 0L
+     label36: $r7 = new X.09E
+     goto label22
+     $l5 = virtualinvoke $r2.getLong()
+     goto label16
+     staticinvoke X.02r.A03($r1 $r2 8 $l3)
+     $l3 = virtualinvoke $r2.getLong()
+     goto label14
+     staticinvoke X.02r.A03($r1 $r2 8 $l7)
+     $l7 = virtualinvoke $r2.getLong()
+     $l9 = $l3 + 40L
+     staticinvoke X.02r.A03($r1 $r2 8 $l9)
+     $l9 = virtualinvoke $r2.getLong()
+     goto label13
+     $l3 = $l3 + $l7
+     $i11 = $i11 + 1
+     goto label12
+     goto label11
+     $l6 = $l7 + 4L
+     label30: $l6 = $l7 + 8L
+     $l6 = staticinvoke X.02r.A00($r1 $r2 $l6)
+     goto label10
+     staticinvoke X.02r.A03($r1 $r2 8 $l6)
+     $l6 = virtualinvoke $r2.getLong()
+     goto label10
+     $l9 = virtualinvoke $r2.getLong()
+     goto label09
+     staticinvoke X.02r.A03($r1 $r2 8 $l0)
+     $l0 = virtualinvoke $r2.getLong()
+     goto label07
+     $l0 = $l0 + $l7
+     $l6 = $l6 + 1L
+     goto label06
+     $l0 = virtualinvoke $r2.getLong()
+     $l0 = $l0 + 44L
+     goto label04
+     $l3 = virtualinvoke $r2.getLong()
+     staticinvoke X.02r.A03($r1 $r2 2 56L)
+     $s2 = virtualinvoke $r2.getShort()
+     $i4 = (int) $s2
+     $i4 = $i4 & 65535
+     $l5 = (long) $i4
+     $l0 = 54L
+     goto label03
+     $r5 = staticinvoke java.lang.Long.toHexString($l0)
+     virtualinvoke $r6.append($r5)
+     $r5 = virtualinvoke $r6.toString()
+     $r7 = new X.09E

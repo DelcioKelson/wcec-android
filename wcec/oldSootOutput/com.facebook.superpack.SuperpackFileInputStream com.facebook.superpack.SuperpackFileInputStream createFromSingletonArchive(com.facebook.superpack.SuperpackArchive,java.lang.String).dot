@@ -1,0 +1,7 @@
+     $z0 = virtualinvoke $r0.hasNext()
+     $r2 = virtualinvoke $r0.next()
+     label2: $r5 = new java.lang.IllegalArgumentException
+     $z0 = virtualinvoke $r0.hasNext()
+     $r3 = staticinvoke java.lang.Boolean.valueOf(1)
+     label1: $r5 = new java.lang.IllegalArgumentException
+     $r4 = new com.facebook.superpack.SuperpackFileInputStream

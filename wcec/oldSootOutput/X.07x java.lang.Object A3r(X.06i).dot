@@ -1,0 +1,15 @@
+     entermonitor class \LX/02z\
+     label1: $r3 = X.02z.A00
+     label2: exitmonitor class \LX/02z\
+     $r4 = new X.031
+     label6: $r2 = $r1.A01
+     entermonitor class \LX/02z\
+     label3: X.02z.A00 = $r4
+     goto label5
+     label5: exitmonitor class \LX/02z\
+     exitmonitor class \LX/02z\
+     staticinvoke X.02y.A01($r2 \Did you call earlyInit()?\)
+     $r6 = $r1.A00
+     staticinvoke X.02y.A01($r6 \Did you call earlyInit()?\)
+     $r7 = new X.032
+     exitmonitor class \LX/02z\

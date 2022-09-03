@@ -1,0 +1,4 @@
+     $r2 = new java.util.concurrent.CountDownLatch
+     $r1 = X.05f.A01
+     $r3 = new X.01L
+     interfaceinvoke $r1.execute($r3)

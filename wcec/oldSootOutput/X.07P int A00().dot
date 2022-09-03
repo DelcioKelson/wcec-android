@@ -1,0 +1,10 @@
+     $r1 = virtualinvoke $r0.writeLock()
+     virtualinvoke $r1.lock()
+     label1: $i0 = X.07P.A01
+     label2: $i0 = $i0 & 2
+     $b1 = 0
+     $b1 = 1
+     label3: $r1 = virtualinvoke $r0.writeLock()
+     virtualinvoke $r1.unlock()
+     $r1 = virtualinvoke $r0.writeLock()
+     virtualinvoke $r1.unlock()

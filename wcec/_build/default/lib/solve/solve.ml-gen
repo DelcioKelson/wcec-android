@@ -1,0 +1,6 @@
+(** @canonical Solve.Cg_ilp *)
+module Cg_ilp = Solve__Cg_ilp
+
+
+(** @canonical Solve.Heavist_path *)
+module Heavist_path = Solve__Heavist_path

@@ -1,0 +1,15 @@
+     label02: $z0 = $r1 instanceof java.lang.Integer
+     virtualinvoke $r0.append(\null\)
+     label03: $z0 = $r1 instanceof java.lang.Short
+     label05: $r2 = (java.lang.Number) $r1
+     label04: $z0 = $r1 instanceof java.lang.Byte
+     label06: $z0 = $r1 instanceof java.lang.Long
+     $i0 = virtualinvoke $r2.intValue()
+     virtualinvoke $r0.append($i0)
+     goto label01
+     label08: if $r0 != null goto label09
+     label07: $r2 = (java.lang.Number) $r1
+     $l1 = virtualinvoke $r2.longValue()
+     virtualinvoke $r0.append($l1)
+     goto label01
+     label09: $r3 = new java.lang.AssertionError

@@ -1,0 +1,47 @@
+     label01: $r8 = X.07J.A02
+     $r9 = X.07J.A01
+     label11: $r14 = new java.lang.IllegalStateException
+     $r2 = $r8.A04
+     label10: exitmonitor class \LX/07J\
+     $r10 = staticinvoke X.05a.A00()
+     label02: $r2 = $r8.A01
+     $r11 = new X.04S
+     $r8.A04 = $r11
+     staticinvoke X.07S.A06(\lacrima\ \LacrimaConfigBuilder.setDeviceId not called using 0\)
+     label03: $r2 = $r8.A06
+     $r11 = new X.04S
+     $r8.A01 = $r11
+     staticinvoke X.07S.A06(\lacrima\ \LacrimaConfigBuilder.setUserId not called using 0\)
+     label04: $r2 = $r8.A03
+     $r11 = new X.04S
+     $r8.A06 = $r11
+     $i0 = 0
+     staticinvoke X.07S.A06(\lacrima\ \LacrimaConfigBuilder.setIsEmployee not called using false\)
+     label05: $r2 = $r8.A05
+     $r12 = staticinvoke java.lang.Boolean.valueOf(0)
+     $r11 = new X.04S
+     $r8.A03 = $r11
+     staticinvoke X.07S.A06(\lacrima\ \LacrimaConfigBuilder.setShortProcessName not called using \\\\\\\)
+     label06: $r2 = $r8.A02
+     $r11 = new X.04S
+     $r8.A05 = $r11
+     staticinvoke X.07S.A06(\lacrima\ \LacrimaConfigBuilder.setFullProcessName not called using \\\\\\\)
+     label07: $i1 = $r8.A00
+     $r11 = new X.04S
+     $r8.A02 = $r11
+     $r0 = $r8.A08
+     label09: $r0 = $r8.A08
+     $r13 = virtualinvoke $r0.getApplicationInfo()
+     label08: $r8.A00 = $i0
+     $i0 = $r13.targetSdkVersion
+     $r2 = $r8.A04
+     $r3 = $r8.A01
+     $r4 = $r8.A06
+     $r5 = $r8.A03
+     $r1 = $r8.A09
+     $r6 = $r8.A05
+     $r7 = $r8.A02
+     $z0 = $r8.A07
+     $r9 = new X.06i
+     X.07J.A01 = $r9
+     exitmonitor class \LX/07J\

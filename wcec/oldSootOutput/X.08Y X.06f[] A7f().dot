@@ -1,0 +1,2 @@
+     $r1 = staticinvoke X.076.A00()
+     $r2 = interfaceinvoke $r1.A7f()

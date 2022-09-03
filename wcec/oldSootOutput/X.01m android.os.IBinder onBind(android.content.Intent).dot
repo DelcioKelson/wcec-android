@@ -1,0 +1,2 @@
+     $r3 = r0.A00
+     $r2 = interfaceinvoke $r3.A3R()

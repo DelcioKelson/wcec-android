@@ -1,0 +1,113 @@
+     staticinvoke X.07K.A01()
+     $l0 = staticinvoke java.lang.System.currentTimeMillis()
+     $l0 = $l0 / 1000L
+     $r3 = X.03D.A26
+     $r4 = staticinvoke java.lang.Long.toString($l0)
+     staticinvoke X.07K.A02($r3 $r4 $r0)
+     $r3 = X.03D.A0t
+     staticinvoke X.07K.A02($r3 $r4 $r0)
+     $r5 = X.03D.A5i
+     label01: $r5 = X.03D.A3P
+     staticinvoke X.07K.A02($r5 $r1 $r0)
+     staticinvoke X.07K.A02($r5 \lacrima_direct_report\ $r0)
+     $r3 = X.03D.A2D
+     $l0 = staticinvoke X.06m.A01()
+     $r1 = staticinvoke java.lang.Long.toString($l0)
+     staticinvoke X.07K.A02($r3 $r1 $r0)
+     $r3 = X.03D.A12
+     $l0 = staticinvoke X.06m.A00()
+     $r1 = staticinvoke java.lang.Long.toString($l0)
+     staticinvoke X.07K.A02($r3 $r1 $r0)
+     $r5 = X.03D.A2w
+     staticinvoke X.07K.A02($r5 \r\ $r0)
+     $r3 = X.03D.A1r
+     $i1 = staticinvoke X.06k.A01()
+     $l0 = (long) $i1
+     $r1 = staticinvoke java.lang.Long.toString($l0)
+     staticinvoke X.07K.A02($r3 $r1 $r0)
+     $r6 = X.07K.A0D
+     entermonitor $r6
+     label02: $r5 = X.03D.A2q
+     $r1 = X.07K.A03
+     staticinvoke X.07K.A02($r5 $r1 $r0)
+     $r5 = X.03D.A3I
+     $r1 = X.07K.A04
+     staticinvoke X.07K.A02($r5 $r1 $r0)
+     $r5 = X.03D.A33
+     $r1 = X.07K.A05
+     staticinvoke X.07K.A02($r5 $r1 $r0)
+     $r7 = X.07K.A07
+     $r1 = virtualinvoke $r7.getPackageName()
+     label06: exitmonitor $r6
+     $r2 = \\
+     label03: $r5 = X.03D.A2t
+     $r8 = new java.lang.StringBuilder
+     virtualinvoke $r8.append($r1)
+     $r1 = \\
+     $z0 = virtualinvoke $r1.equals($r2)
+     $r9 = new java.lang.StringBuilder
+     label04: virtualinvoke $r8.append($r1)
+     virtualinvoke $r9.append(\:\)
+     virtualinvoke $r9.append($r2)
+     $r1 = virtualinvoke $r9.toString()
+     $r1 = virtualinvoke $r8.toString()
+     staticinvoke X.07K.A02($r5 $r1 $r0)
+     $r5 = X.03D.A5h
+     $r7 = X.07K.A07
+     $r10 = virtualinvoke $r7.getApplicationInfo()
+     $r1 = \n/a\
+     label08: $i1 = $r10.targetSdkVersion
+     label05: staticinvoke X.07K.A02($r5 $r1 $r0)
+     label07: goto label09
+     label09: $r11 = X.03D.A08
+     $r1 = staticinvoke java.lang.Integer.toString($i1)
+     goto label05
+     $r1 = \armv7\
+     $z0 = virtualinvoke $r1.contains(\64\)
+     $r1 = staticinvoke java.lang.Boolean.toString($z0)
+     staticinvoke X.07K.A02($r11 $r1 $r0)
+     $r3 = X.03D.A1c
+     $i1 = staticinvoke android.os.Process.myPid()
+     $l0 = (long) $i1
+     $r1 = staticinvoke java.lang.Long.toString($l0)
+     staticinvoke X.07K.A02($r3 $r1 $r0)
+     $r11 = X.03D.A0F
+     $z0 = staticinvoke X.06k.A02()
+     $r1 = staticinvoke java.lang.Boolean.toString($z0)
+     staticinvoke X.07K.A02($r11 $r1 $r0)
+     $r5 = X.03D.A3K
+     $r1 = android.os.Build.MODEL
+     staticinvoke X.07K.A02($r5 $r1 $r0)
+     $r5 = X.03D.A3L
+     $r1 = android.os.Build.DEVICE
+     staticinvoke X.07K.A02($r5 $r1 $r0)
+     $r5 = X.03D.A3G
+     $r1 = android.os.Build.BRAND
+     staticinvoke X.07K.A02($r5 $r1 $r0)
+     $r5 = X.03D.A3N
+     $r1 = android.os.Build$VERSION.RELEASE
+     staticinvoke X.07K.A02($r5 $r1 $r0)
+     $r5 = X.03D.A3O
+     staticinvoke X.07K.A02($r5 \true\ $r0)
+     $r5 = X.03D.A5N
+     $r8 = new java.lang.StringBuilder
+     $d0 = staticinvoke java.lang.Math.random()
+     virtualinvoke $r8.append($d0)
+     virtualinvoke $r8.append(\-\)
+     $l0 = staticinvoke java.lang.System.currentTimeMillis()
+     virtualinvoke $r8.append($l0)
+     $r1 = virtualinvoke $r8.toString()
+     staticinvoke X.07K.A02($r5 $r1 $r0)
+     $i1 = staticinvoke X.06k.A01()
+     $l0 = (long) $i1
+     $r3 = X.03D.A0s
+     $r1 = staticinvoke java.lang.Long.toString($l0)
+     staticinvoke X.07K.A02($r3 $r1 $r0)
+     $r3 = X.03D.A1O
+     staticinvoke X.07K.A02($r3 $r1 $r0)
+     $r5 = X.03D.A4K
+     staticinvoke X.07K.A02($r5 \319.0.0.0.23\ $r0)
+     $r11 = X.03D.A05
+     $r1 = staticinvoke java.lang.Boolean.toString(1)
+     staticinvoke X.07K.A02($r11 $r1 $r0)
+     label11: exitmonitor $r6
