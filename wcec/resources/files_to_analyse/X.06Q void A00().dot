@@ -1,3 +1,0 @@
-     $i1 = 0
-     label3: $i1 = $i1 + 1
-     goto label1

@@ -1,4 +1,0 @@
-     label02: goto label05
-     label05: $z0 = 1
-     $z0 = 0
-     goto label06

@@ -1,7 +1,0 @@
-     entermonitor class \Lcom/facebook/superpack/SuperpackUnloader\
-     label02: exitmonitor class \Lcom/facebook/superpack/SuperpackUnloader\
-     label03: goto label06
-     exitmonitor class \Lcom/facebook/superpack/SuperpackUnloader\
-     $l0 = $l0 - $l1
-     $l0 = 0L
-     goto label10

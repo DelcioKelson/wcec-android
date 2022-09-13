@@ -1,8 +1,0 @@
-     $i0 = $i0 + 1
-     label10: $i0 = -1
-     goto label08
-     goto label05
-     label13: $i0 = $i1
-     label15: goto label18
-     goto label26
-     goto label28

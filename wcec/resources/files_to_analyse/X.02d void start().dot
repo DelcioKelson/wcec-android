@@ -1,6 +1,0 @@
-     $z0 = 0
-     goto label04
-     label09: if $z1 == 0 goto label10
-     $l4 = $l4 / 1000L
-     $l4 = $l4 / 1000L
-     goto label08

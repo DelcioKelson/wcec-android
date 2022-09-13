@@ -144,8 +144,7 @@ Hashtbl.iter  (fun x a0 ->
    Hashtbl.fold (fun x a r-> r && a = val_bot) aenv true
  
  let nr_is_le aenv0 aenv1 =
-   Hashtbl.fold
-     (fun x a0 r-> r && val_incl a0 (read x aenv1)) aenv0 true
+   Hashtbl.fold(fun x a0 r-> r && val_incl a0 (read x aenv1)) aenv0 true
  
  let nr_join aenv0 aenv1 =
    Hashtbl.iter  (fun x a0 ->

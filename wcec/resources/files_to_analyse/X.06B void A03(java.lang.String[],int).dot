@@ -1,6 +1,0 @@
-     $i1 = 1
-     label1: if $i1 >= $i0 goto label3
-     $i2 = $i1 + -1
-     $i2 = $i0 + -1
-     label2: $i1 = $i1 + 2
-     goto label1

@@ -144,7 +144,7 @@ and __ocaml_lex_read_rec lexbuf __ocaml_lex_state =
   match Lexing.engine __ocaml_lex_tables __ocaml_lex_state lexbuf with
       | 0 ->
 # 16 "lib/load_model/lexer.mll"
-             ( read lexbuf )
+              ( read lexbuf )
 # 149 "lib/load_model/lexer.ml"
 
   | 1 ->

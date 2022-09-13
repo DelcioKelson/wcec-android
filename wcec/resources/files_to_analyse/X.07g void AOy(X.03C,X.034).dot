@@ -1,4 +1,0 @@
-     $l1 = 0L
-     $l1 = $l1 - $l2
-     label06: $l0 = $l0 + $l1
-     goto label15

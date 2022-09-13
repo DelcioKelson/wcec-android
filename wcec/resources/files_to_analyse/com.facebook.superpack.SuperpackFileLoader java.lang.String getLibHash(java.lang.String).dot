@@ -1,3 +1,0 @@
-     label06: if $i0 <= 0 goto label09
-     label08: goto label05
-     goto label14

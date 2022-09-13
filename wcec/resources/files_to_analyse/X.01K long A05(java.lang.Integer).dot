@@ -1,3 +1,0 @@
-     label2: $l1 = $l1 * $l2
-     goto label2
-     goto label1

@@ -10,6 +10,7 @@ let cg_file = "resources/cg.txt"
 (*Loads*)
 let methods_bounds = Bounds.get_bounds()
 
+
 let model = Load_model.Load.load_model model_file
 
 let method_files_list = Sys.readdir method_files

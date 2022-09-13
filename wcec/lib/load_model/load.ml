@@ -1,6 +1,5 @@
 open Lexer
 open Lexing
-open Parser
 open Printf
 open Ast
 open List
@@ -20,9 +19,11 @@ let parse_with_error lexbuf =
     printf "%a: model syntax error\n" print_position lexbuf;
     exit (-1)
 
+
+(* e = p*t *)
 let rec load s = 
   match s with
-  | Sline (Inst (inst,v)::l) -> (inst,v) ::load (Sline (l)) 
+  | Sline (Inst (inst,p,t)::l) -> print_endline inst ; (inst,Float.mul p t) ::load (Sline (l)) 
   | Sline ([]) | _ -> []
   
 

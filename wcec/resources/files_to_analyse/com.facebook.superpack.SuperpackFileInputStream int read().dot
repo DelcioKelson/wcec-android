@@ -1,3 +1,0 @@
-     $i1 = -1
-     goto label4
-     label4: $i1 = $i1 + 256

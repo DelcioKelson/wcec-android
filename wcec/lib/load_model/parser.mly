@@ -19,5 +19,5 @@ file:
 ;
 
 stmt:
-| inst = STRING VERTICALBAR  v = FLOAT
-        {Inst (inst , v) }
+| inst = STRING VERTICALBAR  p = FLOAT VERTICALBAR t = FLOAT 
+        {Inst (inst , p,t) }

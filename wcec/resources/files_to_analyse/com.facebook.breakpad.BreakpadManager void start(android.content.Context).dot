@@ -1,6 +1,0 @@
-     entermonitor class \Lcom/facebook/breakpad/BreakpadManager\
-     label3: exitmonitor class \Lcom/facebook/breakpad/BreakpadManager\
-     $l1 = 0L | $l1
-     $l1 = $l1 | 2L
-     $l1 = $l1 | 4L
-     exitmonitor class \Lcom/facebook/breakpad/BreakpadManager\

@@ -1,4 +1,0 @@
-     entermonitor class \LX/04x\
-     label10: exitmonitor class \LX/04x\
-     goto label10
-     exitmonitor class \LX/04x\

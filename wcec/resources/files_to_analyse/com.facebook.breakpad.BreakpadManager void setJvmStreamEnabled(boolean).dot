@@ -1,7 +1,0 @@
-     entermonitor class \Lcom/facebook/breakpad/BreakpadManager\
-     label2: $z1 = 0
-     $z1 = 1
-     goto label3
-     goto label4
-     label5: exitmonitor class \Lcom/facebook/breakpad/BreakpadManager\
-     exitmonitor class \Lcom/facebook/breakpad/BreakpadManager\

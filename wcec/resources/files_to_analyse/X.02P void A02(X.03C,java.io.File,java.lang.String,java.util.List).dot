@@ -1,7 +1,0 @@
-     label09: goto label15
-     goto label04
-     label22: if $z0 != 0 goto label25
-     label24: if $z0 != 0 goto label25
-     goto label26
-     label27: goto label30
-     goto label12

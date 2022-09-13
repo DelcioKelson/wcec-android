@@ -1,9 +1,0 @@
-     $i0 = $i0 + 2
-     label05: if $z0 == 0 goto label21
-     label09: if $z0 == 0 goto label04
-     label11: if $z0 == 0 goto label04
-     label13: if $i0 != 0 goto label04
-     label15: $i0 = $i0 + 1
-     label20: goto label04
-     goto label01
-     goto label25

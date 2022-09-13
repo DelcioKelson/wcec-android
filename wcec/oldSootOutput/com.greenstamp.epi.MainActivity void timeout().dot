@@ -1,0 +1,14 @@
+     $l0 = staticinvoke java.lang.System.currentTimeMillis()
+     $r1 = r0.startTime
+     $l1 = virtualinvoke $r1.longValue()
+     $l0 = $l0 - $l1
+     $b2 = $l0 cmp 61000L
+     $i3 = (int) $b2
+     $r2 = r0.timerLoop
+     virtualinvoke $r2.cancel()
+     $r3 = r0.executorService
+     interfaceinvoke $r3.shutdown()
+     staticinvoke android.util.Log.i(\currentEPI\ \stop\)
+     $r4 = r0.v
+     $r5 = staticinvoke android.os.VibrationEffect.createOneShot(500L 5)
+     virtualinvoke $r4.vibrate($r5)

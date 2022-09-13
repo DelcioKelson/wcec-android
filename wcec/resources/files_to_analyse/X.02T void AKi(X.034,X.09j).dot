@@ -1,4 +1,0 @@
-     $i0 = $i0 + -1
-     $i0 = $i0 + -1
-     label06: goto label08
-     goto label04

@@ -1,9 +1,0 @@
-     $i0 = $i0 - $i2
-     $l3 = $l3 / $l4
-     $i0 = 0
-     label08: $l3 = 0L
-     label12: $l3 = $l3 + 4096L
-     goto label09
-     label15: $i0 = $i0 + 1
-     goto label02
-     goto label18

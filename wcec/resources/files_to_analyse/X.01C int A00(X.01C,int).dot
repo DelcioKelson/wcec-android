@@ -1,4 +1,0 @@
-     label2: $i0 = 67108864
-     $i0 = 33554432
-     label1: $i1 = $i1 | $i0
-     goto label1
