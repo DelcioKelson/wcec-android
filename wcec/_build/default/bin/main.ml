@@ -1,21 +1,21 @@
-
 open String
 
 let _ = Sys.command "./prepare.sh"
-   
 let model_file = "resources/model.txt"
 let method_files = "resources/method_files/"
 let cg_file = "resources/cg.txt"
 
+let () = print_endline "specify a loop bound for unknow bounds"
+let lb_standard = try read_int() with int_of_string -> 
+  print_endline "unknow bounds not speficated, set to 1000 "; 1000 
+
 (*Loads*)
 let methods_bounds = Bounds.get_bounds()
-
 
 let model = Load_model.Load.load_model model_file
 
 let method_files_list = Sys.readdir method_files
 
-let energy_per_method = Hashtbl.create (Array.length method_files_list)
 
 let rec read_file ch = match input_line ch with
     | x -> x ::(read_file ch)
@@ -43,7 +43,7 @@ match lines,in_loop with
 | l::ls,false -> 
   let energy_inst = inst_value l model in
   if (energy_inst = 0.0 ) then 
-    let times_try = try (get_loop_bound l (Hashtbl.find methods_bounds method_name)) with Not_found-> 1 in 
+    let times_try = try (get_loop_bound l (Hashtbl.find methods_bounds method_name)) with Not_found-> lb_standard in 
     apply_model method_name ls times_try true 
   else
     Float.add energy_inst (apply_model method_name ls 1 false)
@@ -53,7 +53,11 @@ match lines,in_loop with
 | [],_ -> 0.0
 
 
-let () =  
+(*put the weights in the cg*)
+let edges = 
+  let energy_per_method = Hashtbl.create (Array.length method_files_list)
+  in
+  let () =  
    Array.iter (
     fun method_file_name -> let file_path = (String.concat method_files [""; method_file_name]) in
     let method_name = Filename.remove_extension method_file_name in
@@ -61,20 +65,14 @@ let () =
     let () = Hashtbl.add energy_per_method method_name (apply_model method_file_name (read_file (file_channel)) 1 false) in
     close_in file_channel    
     ) method_files_list
-
-
-(*let () = Hashtbl.iter (fun x a -> print_string x; print_float a) energy_per_method *)
-
-(*put the weights in the cg*)
-let edges = 
+  in
   let cg_temp = Load_cg.Load.load_cg cg_file in
   List.map (fun edge ->  
     let edge_weight = try Hashtbl.find energy_per_method (snd edge) with Not_found -> 1.0  in
     ((fst edge),(snd edge), edge_weight))cg_temp
 
 
+
 let () = Solve.Cg_ilp.solve_ilp edges ()
 
-
 let () = Solve.Heavist_path.cal_heaviest_path edges ()
-

@@ -23,7 +23,7 @@ let parse_with_error lexbuf =
 (* e = p*t *)
 let rec load s = 
   match s with
-  | Sline (Inst (inst,p,t)::l) -> print_endline inst ; (inst,Float.mul p t) ::load (Sline (l)) 
+  | Sline (Inst (inst,p,t)::l) -> (inst,Float.mul p t) ::load (Sline (l)) 
   | Sline ([]) | _ -> []
   
 
