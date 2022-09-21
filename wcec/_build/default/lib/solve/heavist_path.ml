@@ -33,9 +33,9 @@ let tsort seed edges =
     sort [] [] [seed]      
 
 (*shortest path(negative values)*)
-let longest_path edges entry_node topologicalOrder = 
+let shortest_path edges entry_node topologicalOrder = 
   let cg_paths_weights =  Hashtbl.create (List.length topologicalOrder) in
-  let () = Hashtbl.add cg_paths_weights entry_node 0.0 in
+  let () = Hashtbl.add cg_paths_weights entry_node (-1.0) in
   let () = List.iter (fun node -> 
     (List.iter (fun edge -> 
       let edge_to = get_snd_3 edge in
@@ -60,13 +60,13 @@ let rec step_back visited edges cg_paths_weights = function
     [] -> visited
   | n::nodes -> step_back ((heaviest (n::nodes) cg_paths_weights)::visited)  edges cg_paths_weights (anteccessors n edges)
 
-let cal_heaviest_path edges() = 
+let heaviest_path edges () = 
   let edges = 
   List.map (fun edge ->  
     ((get_fst_3 edge),(get_snd_3 edge), Float.mul (get_trd_3 edge) (-1.0) ))edges in 
   let entry_node =  get_fst_3 (List.hd edges) in
   let topologicalOrder = tsort entry_node edges in
-  let cg_paths_weights = longest_path edges entry_node topologicalOrder in 
+  let cg_paths_weights = shortest_path edges entry_node topologicalOrder in 
   let final_node = heaviest topologicalOrder cg_paths_weights in
   let () = print_endline "\nheaviest path:" in
   let () = Printf.printf " Initial" in

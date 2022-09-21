@@ -1,9 +1,9 @@
-# dune exec wcec
+# dune exec wcec new
 # OCAMLPARAM: unset
 # Shared cache: disabled
 # Workspace root: /home/ferramenta/wcec-android/wcec
 # Auto-detected concurrency: 8
-$ /usr/bin/ocamlc.opt -config > /tmp/dune_c82dd8_output
+$ /usr/bin/ocamlc.opt -config > /tmp/dune_7fc630_output
 # Dune context:
 #  { name = "default"
 #  ; kind = "default"

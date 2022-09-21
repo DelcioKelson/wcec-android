@@ -1,17 +1,18 @@
 #!/bin/sh
 
-if [ -z  "$(ls -A resources/method_files/)" ]; then
+if [ "new" = $1 ] || [ -z  "$(ls -A sootOutput/)" ]; then
     echo "Preparing..."
 
     mv resources/*.apk resources/app.apk
+
+    java -cp soot-infoflow-cmd-jar-with-dependencies.jar CFG.java resources/app.apk > resources/cg.txt
+    clear
 
     while [ -z  "$(ls -A sootOutput/)" ]
     do
         java -cp soot-infoflow-cmd-jar-with-dependencies.jar soot.tools.CFGViewer -w -allow-phantom-refs -android-jars "/home/ferramenta/Android/Sdk/platforms" -process-multiple-dex -output-format jimple -src-prec apk -process-dir resources/app.apk
         clear
     done
-    java -cp soot-infoflow-cmd-jar-with-dependencies.jar CFG.java resources/app.apk > resources/cg.txt
-    clear
 
     #Call graph refinements
     sed -i '/Exception/d' resources/cg.txt
@@ -67,9 +68,8 @@ if [ -z  "$(ls -A resources/method_files/)" ]; then
     sed -i 's/]//g' sootOutput/*.dot
     sed -i 's/,//g' sootOutput/*.dot
 
-    cp sootOutput/*.dot resources/method_files/
-    cp sootOutput/*.dot resources/files_to_analyse/
-    mv sootOutput/*.dot oldSootOutput
+
+    find sootOutput/ -type f -name "*.dot" -exec cp {} resources/files_to_analyse/ \;
 
     #delete more lines
     sed -i '/\^/d' resources/files_to_analyse/*.dot
