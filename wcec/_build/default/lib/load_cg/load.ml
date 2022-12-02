@@ -21,14 +21,14 @@ let parse_with_error lexbuf =
 
 let rec load s = 
   match s with
-  | Cg (Edge (from,node)::l) -> (from,node) :: (load (Cg (l))) 
+  | Cg (Edge (from_node,to_node)::l) -> (from_node,to_node) :: (load (Cg (l))) 
   | Cg ([]) | _-> []
   
 
-let load_cg model_file =
-  let inx = open_in model_file in
-  let lexbuf = Lexing.from_channel inx in
+let load_cg cg_file =
+  let file = open_in cg_file in
+  let lexbuf = Lexing.from_channel file in
   let blocks = parse_with_error lexbuf in
   let edges = load blocks in 
-   let () = close_in inx in
+  let () = close_in file in
    edges

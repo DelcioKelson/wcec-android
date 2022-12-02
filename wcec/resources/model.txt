@@ -94,7 +94,7 @@ getAllowedCapturePolicy |8.7865|0.0871
 cancelAll |9.3089|0.0919 
 getFactory |3.3582|0.0027 
 getDhcpInfo |9.7697|0.1287 
-makeText  |10.17|0.0038 
+makeText |10.17|0.0038 
 getGnssYearOfHardware |9.0997|0.0894 
 write |6.7779|0.215 
 isKeyguardLocked |8.8309|0.0901 
@@ -106,6 +106,7 @@ start |17.1337|0.1806
 isEnabled |3.3601|0.003 
 getPrimaryClip |9.9649|0.4527 
 make |10.5272|1.7695 
+show |15.0038|0.0119 
 getAccounts |9.9012|0.5976 
 iseractive |3.755|0.006 
 hasShortcutHostPermission |8.8221|0.6647 

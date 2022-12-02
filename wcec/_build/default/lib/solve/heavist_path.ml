@@ -4,10 +4,6 @@ let get_fst_3 (s1,_,_) = s1
 let get_snd_3 (_,s2,_) = s2 
 let get_trd_3 (_,_,v) = v 
 
-let get_snd_4 (_,s2,_,_) = s2 
-let get_trd_4 (_,_,v,_) = v 
-let get_fth_4 (_,_,_,d) = d
-
 
 let successors n edges=
   let matching (s,_,_) = s = n in
@@ -54,13 +50,15 @@ let shortest_path edges entry_node topologicalOrder =
 (*let () = Hashtbl.iter  (fun x a0 -> print_string x; print_float a0) cg_paths_weights*)
 
 let heaviest node_list cg_paths_weights= 
-  List.fold_left (fun x y ->  if (Hashtbl.find cg_paths_weights x) < (Hashtbl.find cg_paths_weights y) then y else x) (List.hd node_list) node_list
+  List.fold_left (fun x y ->  if (Hashtbl.find cg_paths_weights x) < (Hashtbl.find cg_paths_weights y) 
+    then y else x) (List.hd node_list) node_list
 
 let rec step_back visited edges cg_paths_weights = function
     [] -> visited
-  | n::nodes -> step_back ((heaviest (n::nodes) cg_paths_weights)::visited)  edges cg_paths_weights (anteccessors n edges)
+  | n::nodes -> 
+    step_back ((heaviest (n::nodes) cg_paths_weights)::visited)  edges cg_paths_weights (anteccessors n edges)
 
-let heaviest_path edges () = 
+let heaviest_path edges = 
   let edges = 
   List.map (fun edge ->  
     ((get_fst_3 edge),(get_snd_3 edge), Float.mul (get_trd_3 edge) (-1.0) ))edges in 
@@ -68,8 +66,4 @@ let heaviest_path edges () =
   let topologicalOrder = tsort entry_node edges in
   let cg_paths_weights = shortest_path edges entry_node topologicalOrder in 
   let final_node = heaviest topologicalOrder cg_paths_weights in
-  let () = print_endline "\nheaviest path:" in
-  let () = Printf.printf " Initial" in
-  let () = List.iter (fun name -> Printf.printf "==> %s\n" name) (step_back [] edges cg_paths_weights [final_node] ) in 
-  let () = Printf.printf "\ntotal path weight : %f\n" (Hashtbl.find cg_paths_weights final_node) in 
-  Printf.printf "\ntime, in seconds, used by the program: %f\n" (Sys.time())
+    Printf.printf "\ntotal path weight : %f\n" (Hashtbl.find cg_paths_weights final_node) 

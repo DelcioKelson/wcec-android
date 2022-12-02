@@ -18,5 +18,5 @@ file:
 ;
 
 edge:
-| from = STRING EQUAL  node = STRING
-        {Edge (from , node) }
+| from_node = STRING EQUAL  to_node = STRING
+        {Edge (from_node , to_node) }

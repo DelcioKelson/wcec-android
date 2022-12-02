@@ -40,51 +40,60 @@ if [ "new" = $1 ] || [ -z  "$(ls -A sootOutput/)" ]; then
 
     # get *.dot files (or any pattern you like) into one place
     find sootOutput/ -name "androidx.*" -print0 | xargs -0 rm
+    find sootOutput/ -name "org.*" -print0 | xargs -0 rm
     find sootOutput/ -name "android.*" -print0 | xargs -0 rm
     find sootOutput/ -name "com.google.*" -print0 | xargs -0 rm
     find sootOutput/ -name "*.R.*" -print0 | xargs -0 rm
     find sootOutput/ -name "*.BuildConfig*" -print0 | xargs -0 rm
     find sootOutput/ -name "*.jimple" -print0 | xargs -0 rm
+    find sootOutput/ -name "kotlin.*" -print0 | xargs -0 rm
+    find sootOutput/ -name "kotlinx.*" -print0 | xargs -0 rm
     find sootOutput/ -name "*.sun.*" -print0 | xargs -0 rm
 
 
     #delete lines
-    sed -i '/->/d' sootOutput/*.dot
-    sed -i '/specialinvoke/d' sootOutput/*.dot
-    sed -i '/style/d' sootOutput/*.dot
-    sed -i '/node/d' sootOutput/*.dot
-    sed -i '/\@/d' sootOutput/*.dot
-    sed -i -e '/{/d' sootOutput/*.dot
-    sed -i -e '/}/d' sootOutput/*.dot
-    sed -i '/[^\[]label=/d' sootOutput/*.dot
-    sed -i '/\"if/d' sootOutput/*.dot
+    echo 'delete lines'
+    find sootOutput/ -type f  -exec  sed -i '/->/d' {} \;
+    find sootOutput/ -type f  -exec  sed -i '/specialinvoke/d' {} \;
+    find sootOutput/ -type f  -exec  sed -i '/style/d' {} \;
+    find sootOutput/ -type f  -exec  sed -i '/node/d' {} \;
+    find sootOutput/ -type f  -exec  sed -i '/\@/d' {} \;
+    find sootOutput/ -type f  -exec  sed -i '/[^\[]label=/d' {} \;
+    find sootOutput/ -type f  -exec  sed -i '/\"if/d' {} \;
+    find sootOutput/ -type f  -exec  sed -i -e '/{/d' {} \;
+    find sootOutput/ -type f  -exec  sed -i -e '/}/d' {} \;
+
 
     #replace strings
-    sed -i 's/;//g' sootOutput/*.dot
-    sed -i -E 's/"[0-9]+"//g' sootOutput/*.dot
-    sed -i -E 's/"//g' sootOutput/*.dot
-    sed -i 's/label=//g' sootOutput/*.dot
-    sed -i 's/\[//g' sootOutput/*.dot
-    sed -i 's/]//g' sootOutput/*.dot
-    sed -i 's/,//g' sootOutput/*.dot
+    find sootOutput/ -type f  -exec  sed -i 's/,//g' {} \;
+    find sootOutput/ -type f  -exec  sed -i 's/]//g' {} \;
+    find sootOutput/ -type f  -exec  sed -i 's/\[//g' {} \;
+    find sootOutput/ -type f  -exec  sed -i 's/label=//g' {} \;
+    find sootOutput/ -type f  -exec  sed -i 's/;//g' {} \;
+    find sootOutput/ -type f  -exec  sed -i -E 's/"[0-9]+"//g' {} \;
+    find sootOutput/ -type f  -exec  sed -i -E 's/"//g' {} \;
+
 
 
     find sootOutput/ -type f -name "*.dot" -exec cp {} resources/files_to_analyse/ \;
 
     #delete more lines
-    sed -i '/\^/d' resources/files_to_analyse/*.dot
-    sed -i '/\\\"/d' resources/files_to_analyse/*.dot
-    sed -i '/new/d' resources/files_to_analyse/*.dot
-    sed -i '/\./d' resources/files_to_analyse/*.dot
-    sed -i '/(/d' resources/files_to_analyse/*.dot
-    sed -i '/&/d' resources/files_to_analyse/*.dot
-    sed -i '/)/d' resources/files_to_analyse/*.dot
-    sed -i -E '/r[0-9]+/d' resources/files_to_analyse/*.dot
-    sed -i '/cmp/d' resources/files_to_analyse/*.dot
+
+    find resources/files_to_analyse/ -type f  -exec  sed -i '/(/d' {} \;
+    find resources/files_to_analyse/ -type f  -exec  sed -i '/&/d' {} \;
+    find resources/files_to_analyse/ -type f  -exec  sed -i '/)/d' {} \;
+    find resources/files_to_analyse/ -type f  -exec  sed -i '/\./d' {} \;
+    find resources/files_to_analyse/ -type f  -exec  sed -i '/cmp/d' {} \;
+    find resources/files_to_analyse/ -type f  -exec  sed -i '/\|/d' {} \;
+    find resources/files_to_analyse/ -type f  -exec  sed -i '/\^/d' {} \;
+    find resources/files_to_analyse/ -type f  -exec  sed -i '/\\\"/d' {} \;
+    find resources/files_to_analyse/ -type f  -exec  sed -i '/new/d' {} \;
+    find resources/files_to_analyse/ -type f  -exec  sed -i -E '/r[0-9]+/d' {} \;
+
 
 
     find resources/files_to_analyse/ -size 0 -print -delete
-    find resources/method_files/ -size 0 -print -delete
+    find sootOutput/ -size 0 -print -delete
     clear
 
 else

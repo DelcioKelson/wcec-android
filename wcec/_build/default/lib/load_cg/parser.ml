@@ -45,10 +45,10 @@ and _menhir_box_file =
   | MenhirBox_file of (Ast.edge) [@@unboxed]
 
 let _menhir_action_1 =
-  fun from node ->
+  fun from_node to_node ->
     (
 # 22 "lib/load_cg/parser.mly"
-        (Edge (from , node) )
+        (Edge (from_node , to_node) )
 # 53 "lib/load_cg/parser.ml"
      : (Ast.edge))
 
@@ -125,8 +125,8 @@ include struct
           (match (_tok : MenhirBasics.token) with
           | STRING _v_0 ->
               let _tok = _menhir_lexer _menhir_lexbuf in
-              let (node, from) = (_v_0, _v) in
-              let _v = _menhir_action_1 from node in
+              let (to_node, from_node) = (_v_0, _v) in
+              let _v = _menhir_action_1 from_node to_node in
               (match (_tok : MenhirBasics.token) with
               | STRING _v_0 ->
                   let _menhir_stack = MenhirCell1_edge (_menhir_stack, _menhir_s, _v) in

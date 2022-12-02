@@ -5,24 +5,18 @@ import soot.jimple.infoflow.android.InfoflowAndroidConfiguration;
 import soot.jimple.toolkits.callgraph.CallGraph;
 import soot.options.Options;
 import soot.jimple.infoflow.InfoflowConfiguration;
-
 import soot.jimple.infoflow.android.SetupApplication;
 import soot.jimple.infoflow.android.config.SootConfigForAndroid;
-
 import java.util.Arrays;
 import java.util.List;
 
-
 public class CFG {
   
-    public CFG() {
-
-
-    }
+    public CFG() {}
 
     public static void main(String[] args) {
 
-        String packages[] = {"*.sdk.*","java.*", "androidx.*","javax.*", "com.google.*", "com.android.*","*.BuildConfig*"}; 
+        String packages[] = {"org.*","kotlin.*", "*.sdk.*","java.*", "androidx.*","javax.*", "com.google.*", "com.android.*","*.BuildConfig*"}; 
 
         List<String> excludePackagesList = Arrays.asList(packages);
 

@@ -6,8 +6,6 @@ let lb_standard =
     try read_int() with int_of_string -> 
       print_endline "unknow bounds not speficated, set to 1000 "; 1000 
 
-
-
 let _ = 
    try (let arg = Sys.argv.(1) in 
     if arg = "new" then 
@@ -63,7 +61,6 @@ match lines,in_loop with
                 Float.add (Float.mul (float times) (inst_value l model) )  (apply_model method_name ls 1 false)
 | [],_ -> 0.0
 
-
 (*put the weights in the cg*)
 let edges = 
   let energy_per_method = Hashtbl.create (Array.length method_files_list)
@@ -82,8 +79,7 @@ let edges =
     let edge_weight = try Hashtbl.find energy_per_method (snd edge) with Not_found -> 1.0  in
     ((fst edge),(snd edge), edge_weight))cg_temp
 
-
-
-let () = Solve.Cg_ilp.solve_ilp edges ()
-
-let () = Solve.Heavist_path.heaviest_path edges ()
+let () =    
+    let () = Solve.Cg_ilp.solve_ilp edges in
+    let () = Solve.Heavist_path.heaviest_path edges in 
+      Printf.printf "\ntime, in seconds, used by the program: %f\n" (Sys.time())

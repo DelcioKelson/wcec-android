@@ -20,17 +20,17 @@ let parse_with_error lexbuf =
     exit (-1)
 
 
-(* e = p*t *)
+(* energy = power * time *)
 let rec load s = 
-  match s with
-  | Sline (Inst (inst,p,t)::l) -> (inst,Float.mul p t) ::load (Sline (l)) 
-  | Sline ([]) | _ -> []
+  match s with 
+  | Lines (Inst (inst, power, time)::l) -> (inst,Float.mul power time) ::load (Lines (l)) 
+  | Lines ([]) | _ -> []
   
 
 let load_model model_file =
-  let inx = open_in model_file in
-  let lexbuf = Lexing.from_channel inx in
+  let file = open_in model_file in
+  let lexbuf = Lexing.from_channel file in
   let blocks = parse_with_error lexbuf in
   let model = load blocks in 
-   let () = close_in inx in
+   let () = close_in file in
    model

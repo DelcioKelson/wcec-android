@@ -49,25 +49,25 @@ and (xv_stmt, xv_nonempty_list_stmt_, xv_file) =
      : 'tv_nonempty_list_stmt_) in
   let _ = fun (_startpos : Lexing.position) (_endpos : Lexing.position) (_endpos__0_ : Lexing.position) (_symbolstartpos : Lexing.position) (_startofs : int) (_endofs : int) (_endofs__0_ : int) (_symbolstartofs : int) (_sloc : Lexing.position * Lexing.position) (_loc : Lexing.position * Lexing.position) (
 # 22 "lib/load_model/parser.mly"
-                                                   t
+                                                       time
 # 54 "lib/load_model/parser__mock.ml.mock"
    : (
 # 6 "lib/load_model/parser.mly"
        (float)
 # 58 "lib/load_model/parser__mock.ml.mock"
-  )) (_startpos_t_ : Lexing.position) (_endpos_t_ : Lexing.position) (_startofs_t_ : int) (_endofs_t_ : int) (_loc_t_ : Lexing.position * Lexing.position) (
+  )) (_startpos_time_ : Lexing.position) (_endpos_time_ : Lexing.position) (_startofs_time_ : int) (_endofs_time_ : int) (_loc_time_ : Lexing.position * Lexing.position) (
 # 22 "lib/load_model/parser.mly"
-                                      _4
+                                          _4
 # 62 "lib/load_model/parser__mock.ml.mock"
    : unit) (_startpos__4_ : Lexing.position) (_endpos__4_ : Lexing.position) (_startofs__4_ : int) (_endofs__4_ : int) (_loc__4_ : Lexing.position * Lexing.position) (
 # 22 "lib/load_model/parser.mly"
-                             p
+                             power
 # 66 "lib/load_model/parser__mock.ml.mock"
    : (
 # 6 "lib/load_model/parser.mly"
        (float)
 # 70 "lib/load_model/parser__mock.ml.mock"
-  )) (_startpos_p_ : Lexing.position) (_endpos_p_ : Lexing.position) (_startofs_p_ : int) (_endofs_p_ : int) (_loc_p_ : Lexing.position * Lexing.position) (
+  )) (_startpos_power_ : Lexing.position) (_endpos_power_ : Lexing.position) (_startofs_power_ : int) (_endofs_power_ : int) (_loc_power_ : Lexing.position * Lexing.position) (
 # 22 "lib/load_model/parser.mly"
                _2
 # 74 "lib/load_model/parser__mock.ml.mock"
@@ -82,21 +82,21 @@ and (xv_stmt, xv_nonempty_list_stmt_, xv_file) =
   )) (_startpos_inst_ : Lexing.position) (_endpos_inst_ : Lexing.position) (_startofs_inst_ : int) (_endofs_inst_ : int) (_loc_inst_ : Lexing.position * Lexing.position) ->
     (
 # 23 "lib/load_model/parser.mly"
-        (Inst (inst , p,t) )
+        (Inst (inst, power, time) )
 # 87 "lib/load_model/parser__mock.ml.mock"
      : 'tv_stmt) in
   let _ = fun (_startpos : Lexing.position) (_endpos : Lexing.position) (_endpos__0_ : Lexing.position) (_symbolstartpos : Lexing.position) (_startofs : int) (_endofs : int) (_endofs__0_ : int) (_symbolstartofs : int) (_sloc : Lexing.position * Lexing.position) (_loc : Lexing.position * Lexing.position) (
 # 18 "lib/load_model/parser.mly"
-                         _2
+                             _2
 # 92 "lib/load_model/parser__mock.ml.mock"
    : unit) (_startpos__2_ : Lexing.position) (_endpos__2_ : Lexing.position) (_startofs__2_ : int) (_endofs__2_ : int) (_loc__2_ : Lexing.position * Lexing.position) (
 # 18 "lib/load_model/parser.mly"
-  b
+  lines
 # 96 "lib/load_model/parser__mock.ml.mock"
-   : 'tv_nonempty_list_stmt_) (_startpos_b_ : Lexing.position) (_endpos_b_ : Lexing.position) (_startofs_b_ : int) (_endofs_b_ : int) (_loc_b_ : Lexing.position * Lexing.position) ->
+   : 'tv_nonempty_list_stmt_) (_startpos_lines_ : Lexing.position) (_endpos_lines_ : Lexing.position) (_startofs_lines_ : int) (_endofs_lines_ : int) (_loc_lines_ : Lexing.position * Lexing.position) ->
     ((
 # 18 "lib/load_model/parser.mly"
-                              ( Sline b )
+                                  ( Lines lines )
 # 101 "lib/load_model/parser__mock.ml.mock"
      : 'tv_file) : (
 # 13 "lib/load_model/parser.mly"

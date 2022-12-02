@@ -15,9 +15,9 @@
 %%
 
 file:
-| b = nonempty_list(stmt) EOF { Sline b }
+| lines = nonempty_list(stmt) EOF { Lines lines }
 ;
 
 stmt:
-| inst = STRING VERTICALBAR  p = FLOAT VERTICALBAR t = FLOAT 
-        {Inst (inst , p,t) }
+| inst = STRING VERTICALBAR  power = FLOAT VERTICALBAR time = FLOAT 
+        {Inst (inst, power, time) }
