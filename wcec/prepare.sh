@@ -3,14 +3,12 @@
 if [ "new" = $1 ] || [ -z  "$(ls -A sootOutput/)" ]; then
     echo "Preparing..."
 
-    mv resources/*.apk resources/app.apk
-
-    java -cp soot-infoflow-cmd-jar-with-dependencies.jar CFG.java resources/app.apk > resources/cg.txt
+    java -cp soot-infoflow-cmd-jar-with-dependencies.jar CFG.java $2 > resources/cg.txt
     clear
 
     while [ -z  "$(ls -A sootOutput/)" ]
     do
-        java -cp soot-infoflow-cmd-jar-with-dependencies.jar soot.tools.CFGViewer -w -allow-phantom-refs -android-jars "/home/ferramenta/Android/Sdk/platforms" -process-multiple-dex -output-format jimple -src-prec apk -process-dir resources/app.apk
+        java -cp soot-infoflow-cmd-jar-with-dependencies.jar soot.tools.CFGViewer -w -allow-phantom-refs -android-jars "/home/ferramenta/Android/Sdk/platforms" -process-multiple-dex -output-format jimple -src-prec apk -process-dir $2
         clear
     done
 

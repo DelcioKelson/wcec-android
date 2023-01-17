@@ -9,10 +9,10 @@ let lb_standard =
 let _ = 
    try (let arg = Sys.argv.(1) in 
     if arg = "new" then 
-      ignore (Sys.command "./prepare.sh new")
+      ignore (Sys.command ("./prepare.sh new " ^ Sys.argv.(2) ))
       ) 
     with Invalid_argument "index out of bounds" -> 
-        ignore (Sys.command " ./prepare.sh ignore")
+        ignore (Sys.command (" ./prepare.sh " ^ Sys.argv.(2)) )
 
 let model_file = "resources/model.txt"
 let method_files = "sootOutput/"
@@ -62,7 +62,7 @@ match lines,in_loop with
 | [],_ -> 0.0
 
 (*put the weights in the cg*)
-let edges = 
+let get_edges method_files_list = 
   let energy_per_method = Hashtbl.create (Array.length method_files_list)
   in
   let () =  
@@ -80,6 +80,7 @@ let edges =
     ((fst edge),(snd edge), edge_weight))cg_temp
 
 let () =    
+    let edges = get_edges method_files_list in
     let () = Solve.Cg_ilp.solve_ilp edges in
     let () = Solve.Heavist_path.heaviest_path edges in 
       Printf.printf "\ntime, in seconds, used by the program: %f\n" (Sys.time())

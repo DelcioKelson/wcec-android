@@ -10,7 +10,7 @@ let get_trd_4 (_,_,v,_) = v
 let get_fth_4 (_,_,_,d) = d
 
 (*enumerar edges*)
-let enumerate_nodes edges nodes = 
+let enumerate_nodes ~edges ~nodes = 
   List.fold_right(fun edge edge_list -> 
                     let i = List.length edge_list in 
                     if not (Hashtbl.mem nodes (get_fst_3 edge)) then Hashtbl.add nodes (get_fst_3 edge) ("x" ^ (string_of_int i));
@@ -52,8 +52,8 @@ let rec prind_list edges =
 
 let solve_ilp edges =
   let oc = open_out problem_file in
-  let nodes =  Hashtbl.create 10000 in 
-  let edges_enumerated = enumerate_nodes edges nodes in
+  let nodes =  Hashtbl.create 100000 in 
+  let edges_enumerated = enumerate_nodes ~edges:edges ~nodes:nodes in
   let () = Printf.fprintf oc "max: %s;\n" (obj_fun edges_enumerated nodes);
            Printf.fprintf oc "x0 = 1 ; \n%s\n" (equations edges_enumerated nodes); 
            Printf.fprintf oc "%s\n" (max_node_repetetion nodes) in 
