@@ -8,7 +8,7 @@ if [ "new" = $1 ] || [ -z  "$(ls -A sootOutput/)" ]; then
 
     while [ -z  "$(ls -A sootOutput/)" ]
     do
-        java -cp soot-infoflow-cmd-jar-with-dependencies.jar soot.tools.CFGViewer -w -allow-phantom-refs -android-jars "/home/ferramenta/Android/Sdk/platforms" -process-multiple-dex -output-format jimple -src-prec apk -process-dir $2
+        java -cp soot-infoflow-cmd-jar-with-dependencies.jar soot.tools.CFGViewer -w -allow-phantom-refs -android-jars "/opt/android-sdk/platforms" -process-multiple-dex -output-format jimple -src-prec apk -process-dir $2
         clear
     done
 
