@@ -32,7 +32,7 @@ public class CFG {
             }
         };
         InfoflowAndroidConfiguration config = new InfoflowAndroidConfiguration();
-        config.getAnalysisFileConfig().setAndroidPlatformDir("/home/ferramenta/Android/Sdk/platforms");
+        config.getAnalysisFileConfig().setAndroidPlatformDir("/opt/android-sdk/platforms");
         config.getAnalysisFileConfig().setTargetAPKFile(args[0]);
         config.setMergeDexFiles(true);
         config.setCodeEliminationMode(InfoflowConfiguration.CodeEliminationMode.NoCodeElimination);
