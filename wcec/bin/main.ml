@@ -83,4 +83,5 @@ let () =
     let edges = get_edges method_files_list in
     let () = Solve.Cg_ilp.solve_ilp edges in
     let () = Solve.Heavist_path.heaviest_path edges in 
-      Printf.printf "\ntime, in seconds, used by the program: %f\n" (Sys.time())
+    let () = Printf.printf "\ntime, in seconds, used by the program: %f\n" (Sys.time()) in 
+      ignore (Sys.command ("./clean.sh") )

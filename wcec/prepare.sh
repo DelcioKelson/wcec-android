@@ -5,6 +5,12 @@ if [ "new" = $1 ] || [ -z  "$(ls -A sootOutput/)" ]; then
 
     java -cp soot-infoflow-cmd-jar-with-dependencies.jar CFG.java $2 > resources/cg.txt
     clear
+    if [ ! -s resources/cg.txt ]; then
+        java -cp soot-infoflow-cmd-jar-with-dependencies.jar CFG.java $2 > resources/cg.txt
+        clear
+    fi
+
+    mkdir sootOutput
 
     while [ -z  "$(ls -A sootOutput/)" ]
     do
@@ -33,7 +39,6 @@ if [ "new" = $1 ] || [ -z  "$(ls -A sootOutput/)" ]; then
     sed -i 's/\sclinit/ <clinit>/g' resources/cg.txt
     sed -i 's/\sinit/ <init>/g' resources/cg.txt
 
-    
     #################
 
     # get *.dot files (or any pattern you like) into one place
@@ -71,7 +76,7 @@ if [ "new" = $1 ] || [ -z  "$(ls -A sootOutput/)" ]; then
     find sootOutput/ -type f  -exec  sed -i -E 's/"[0-9]+"//g' {} \;
     find sootOutput/ -type f  -exec  sed -i -E 's/"//g' {} \;
 
-
+    mkdir resources/files_to_analyse/
 
     find sootOutput/ -type f -name "*.dot" -exec cp {} resources/files_to_analyse/ \;
 
