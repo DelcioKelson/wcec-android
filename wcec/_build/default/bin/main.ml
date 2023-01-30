@@ -1,18 +1,8 @@
 open String
 
-let lb_standard = 
-  let () = print_endline "specify a loop bound for unknow bounds"
-  in 
-    try read_int() with int_of_string -> 
-      print_endline "unknow bounds not speficated, set to 1000 "; 1000 
+let lb_standard = 1000 
 
-let _ = 
-   try (let arg = Sys.argv.(1) in 
-    if arg = "new" then 
-      ignore (Sys.command ("./prepare.sh new " ^ Sys.argv.(2) ))
-      ) 
-    with Invalid_argument "index out of bounds" -> 
-        ignore (Sys.command (" ./prepare.sh " ^ Sys.argv.(2)) )
+let _ =  ignore (Sys.command (" ./prepare.sh " ^ Sys.argv.(1)) )
 
 let model_file = "resources/model.txt"
 let method_files = "sootOutput/"
@@ -83,4 +73,5 @@ let () =
     let edges = get_edges method_files_list in
     let () = Solve.Cg_ilp.solve_ilp edges in
     let () = Solve.Heavist_path.heaviest_path edges in 
-      Printf.printf "\ntime, in seconds, used by the program: %f\n" (Sys.time())
+    let () = Printf.printf "\ntime, in seconds, used by the program: %f\n" (Sys.time()) in 
+      ignore (Sys.command ("./clean.sh") )
