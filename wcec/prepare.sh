@@ -15,10 +15,8 @@ if [ -s resources/cg.txt ]; then
 
     #Call graph refinements
 
-    echo '|-->                  |'
+    #echo '|-->                  |'
 
-    
-    echo 'Call graph refinements'
     sed -i '/Exception/d' resources/cg.txt
     # cg refine
     sed -i 's/.*\sin\s//g' resources/cg.txt
@@ -36,7 +34,7 @@ if [ -s resources/cg.txt ]; then
 
     #################
 
-    echo '|---->                |'
+    #echo '|---->                |'
 
 
     # get *.dot files (or any pattern you like) into one place
@@ -55,7 +53,6 @@ if [ -s resources/cg.txt ]; then
     echo '|------->             |'
 
     #delete lines
-    echo 'delete lines'
     find sootOutput/ -type f  -exec  sed -i '/->/d' {} \;
     find sootOutput/ -type f  -exec  sed -i '/specialinvoke/d' {} \;
     find sootOutput/ -type f  -exec  sed -i '/style/d' {} \;
@@ -63,7 +60,7 @@ if [ -s resources/cg.txt ]; then
     find sootOutput/ -type f  -exec  sed -i '/\@/d' {} \;
     
     clear   
-    echo '|------------>        |'
+    #echo '|------------>        |'
 
     find sootOutput/ -type f  -exec  sed -i '/[^\[]label=/d' {} \;
     find sootOutput/ -type f  -exec  sed -i '/\"if/d' {} \;
@@ -71,7 +68,6 @@ if [ -s resources/cg.txt ]; then
     find sootOutput/ -type f  -exec  sed -i -e '/}/d' {} \;
 
     #replace strings
-    echo 'Replace lines'
     find sootOutput/ -type f  -exec  sed -i 's/,//g' {} \;
     find sootOutput/ -type f  -exec  sed -i 's/]//g' {} \;
     find sootOutput/ -type f  -exec  sed -i 's/\[//g' {} \;
@@ -80,13 +76,11 @@ if [ -s resources/cg.txt ]; then
     find sootOutput/ -type f  -exec  sed -i -E 's/"[0-9]+"//g' {} \;
     find sootOutput/ -type f  -exec  sed -i -E 's/"//g' {} \;
 
-    #move files to sootOutput
-    echo 'move sootOutput files to files_to_analyse folder'
+    #move sootOutput files to files_to_analyse folder
     find sootOutput/ -type f -name "*.dot" -exec cp {} resources/files_to_analyse/ \;
-    echo '|--------------->     |'
+    #echo '|--------------->     |'
 
     #delete more lines
-    echo 'delete more lines'
     find resources/files_to_analyse/ -type f  -exec  sed -i '/(/d' {} \;
     find resources/files_to_analyse/ -type f  -exec  sed -i '/&/d' {} \;
     find resources/files_to_analyse/ -type f  -exec  sed -i '/)/d' {} \;
@@ -98,10 +92,10 @@ if [ -s resources/cg.txt ]; then
     find resources/files_to_analyse/ -type f  -exec  sed -i '/new/d' {} \;
     find resources/files_to_analyse/ -type f  -exec  sed -i -E '/r[0-9]+/d' {} \;
     clear
-    echo '|------------------> |'
+    
+    #echo '|------------------> |'
 
     #delete empty files
-    echo 'delete empty files'
     find resources/files_to_analyse/ -size 0 -print -delete
     find sootOutput/ -size 0 -print -delete
     clear
