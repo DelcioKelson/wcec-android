@@ -58,4 +58,4 @@ let solve_ilp edges =
            Printf.fprintf oc "x0 = 1 ; \n%s\n" (equations edges_enumerated nodes); 
            Printf.fprintf oc "%s\n" (max_node_repetetion nodes) in 
   let () = close_out oc in 
-  ignore( Sys.command "lp_solve -S1 problem.lp ")
+  ignore( Sys.command "lp_solve -S1 problem.lp | awk -F'[ ]' '{ print $5 }'")
