@@ -1,8 +1,8 @@
 open String
 
 let lb_standard = 1000 
-
-let _ =  ignore (Sys.command (" ./prepare.sh " ^ Sys.argv.(1)) )
+  
+let _ =  ignore (Sys.command (" ./prepare.sh " ^ Sys.argv.(1) ^ " 2> /dev/null ")  )
 
 let model_file = "resources/model.txt"
 let method_files = "sootOutput/"
