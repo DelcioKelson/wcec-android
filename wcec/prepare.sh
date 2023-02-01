@@ -34,9 +34,6 @@ if [ -s resources/cg.txt ]; then
 
     #################
 
-    #echo '|---->                |'
-
-
     # get *.dot files (or any pattern you like) into one place
     find sootOutput/ -name "androidx.*" -print0 | xargs -0 rm
     find sootOutput/ -name "org.*" -print0 | xargs -0 rm
@@ -50,8 +47,6 @@ if [ -s resources/cg.txt ]; then
     find sootOutput/ -name "*.sun.*" -print0 | xargs -0 rm
     clear
     
-    echo '|------->             |'
-
     #delete lines
     find sootOutput/ -type f  -exec  sed -i '/->/d' {} \;
     find sootOutput/ -type f  -exec  sed -i '/specialinvoke/d' {} \;
@@ -60,7 +55,6 @@ if [ -s resources/cg.txt ]; then
     find sootOutput/ -type f  -exec  sed -i '/\@/d' {} \;
     
     clear   
-    #echo '|------------>        |'
 
     find sootOutput/ -type f  -exec  sed -i '/[^\[]label=/d' {} \;
     find sootOutput/ -type f  -exec  sed -i '/\"if/d' {} \;
@@ -78,7 +72,6 @@ if [ -s resources/cg.txt ]; then
 
     #move sootOutput files to files_to_analyse folder
     find sootOutput/ -type f -name "*.dot" -exec cp {} resources/files_to_analyse/ \;
-    #echo '|--------------->     |'
 
     #delete more lines
     find resources/files_to_analyse/ -type f  -exec  sed -i '/(/d' {} \;
@@ -93,8 +86,6 @@ if [ -s resources/cg.txt ]; then
     find resources/files_to_analyse/ -type f  -exec  sed -i -E '/r[0-9]+/d' {} \;
     clear
     
-    #echo '|------------------> |'
-
     #delete empty files
     find resources/files_to_analyse/ -size 0 -print -delete
     find sootOutput/ -size 0 -print -delete
