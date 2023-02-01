@@ -2,7 +2,7 @@
 
 mkdir sootOutput
 mkdir resources/files_to_analyse/
-
+clear
 
 java -cp soot-infoflow-cmd-jar-with-dependencies.jar CFG.java $1 > resources/cg.txt
 if [ -s resources/cg.txt ]; then
@@ -14,6 +14,9 @@ if [ -s resources/cg.txt ]; then
     done
 
     #Call graph refinements
+
+    echo '|-->                  |'
+
     
     echo 'Call graph refinements'
     sed -i '/Exception/d' resources/cg.txt
@@ -33,6 +36,9 @@ if [ -s resources/cg.txt ]; then
 
     #################
 
+    echo '|---->                |'
+
+
     # get *.dot files (or any pattern you like) into one place
     find sootOutput/ -name "androidx.*" -print0 | xargs -0 rm
     find sootOutput/ -name "org.*" -print0 | xargs -0 rm
@@ -46,6 +52,8 @@ if [ -s resources/cg.txt ]; then
     find sootOutput/ -name "*.sun.*" -print0 | xargs -0 rm
     clear
     
+    echo '|------->             |'
+
     #delete lines
     echo 'delete lines'
     find sootOutput/ -type f  -exec  sed -i '/->/d' {} \;
@@ -53,6 +61,10 @@ if [ -s resources/cg.txt ]; then
     find sootOutput/ -type f  -exec  sed -i '/style/d' {} \;
     find sootOutput/ -type f  -exec  sed -i '/node/d' {} \;
     find sootOutput/ -type f  -exec  sed -i '/\@/d' {} \;
+    
+    clear   
+    echo '|------------>        |'
+
     find sootOutput/ -type f  -exec  sed -i '/[^\[]label=/d' {} \;
     find sootOutput/ -type f  -exec  sed -i '/\"if/d' {} \;
     find sootOutput/ -type f  -exec  sed -i -e '/{/d' {} \;
@@ -71,6 +83,7 @@ if [ -s resources/cg.txt ]; then
     #move files to sootOutput
     echo 'move sootOutput files to files_to_analyse folder'
     find sootOutput/ -type f -name "*.dot" -exec cp {} resources/files_to_analyse/ \;
+    echo '|--------------->     |'
 
     #delete more lines
     echo 'delete more lines'
@@ -84,6 +97,8 @@ if [ -s resources/cg.txt ]; then
     find resources/files_to_analyse/ -type f  -exec  sed -i '/\\\"/d' {} \;
     find resources/files_to_analyse/ -type f  -exec  sed -i '/new/d' {} \;
     find resources/files_to_analyse/ -type f  -exec  sed -i -E '/r[0-9]+/d' {} \;
+    clear
+    echo '|------------------> |'
 
     #delete empty files
     echo 'delete empty files'
