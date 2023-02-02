@@ -1,12 +1,11 @@
 #!/bin/sh
 
 mkdir sootOutput
-mkdir resources
-mkdir resources/files_to_analyse/
+mkdir /tmp/files_to_analyse
 clear
 
-java -cp soot-infoflow-cmd-jar-with-dependencies.jar CFG.java $1 > resources/cg.txt
-if [ -s resources/cg.txt ]; then
+java -cp soot-infoflow-cmd-jar-with-dependencies.jar CFG.java $1 > /tmp/cg.txt
+if [ -s /tmp/cg.txt ]; then
     clear
     while [ -z  "$(ls -A sootOutput/)" ]
     do
@@ -18,20 +17,20 @@ if [ -s resources/cg.txt ]; then
 
     #echo '|-->                  |'
 
-    sed -i '/Exception/d' resources/cg.txt
+    sed -i '/Exception/d' /tmp/cg.txt
     # cg refine
-    sed -i 's/.*\sin\s//g' resources/cg.txt
-    sed -i 's/ ==> /=/g' resources/cg.txt
-    sed -i 's/\$\$/../g' resources/cg.txt
-    sed -i 's/://g' resources/cg.txt
-    sed -i 's/\$1/.1/g' resources/cg.txt
+    sed -i 's/.*\sin\s//g' /tmp/cg.txt
+    sed -i 's/ ==> /=/g' /tmp/cg.txt
+    sed -i 's/\$\$/../g' /tmp/cg.txt
+    sed -i 's/://g' /tmp/cg.txt
+    sed -i 's/\$1/.1/g' /tmp/cg.txt
     #Replace <> in text
-    sed -i 's/<init>/init/g' resources/cg.txt
-    sed -i 's/<clinit>/clinit/g' resources/cg.txt
-    sed -i 's/<//g' resources/cg.txt
-    sed -i 's/>//g' resources/cg.txt
-    sed -i 's/\sclinit/ <clinit>/g' resources/cg.txt
-    sed -i 's/\sinit/ <init>/g' resources/cg.txt
+    sed -i 's/<init>/init/g' /tmp/cg.txt
+    sed -i 's/<clinit>/clinit/g' /tmp/cg.txt
+    sed -i 's/<//g' /tmp/cg.txt
+    sed -i 's/>//g' /tmp/cg.txt
+    sed -i 's/\sclinit/ <clinit>/g' /tmp/cg.txt
+    sed -i 's/\sinit/ <init>/g' /tmp/cg.txt
 
     #################
 
@@ -72,23 +71,23 @@ if [ -s resources/cg.txt ]; then
     find sootOutput/ -type f  -exec  sed -i -E 's/"//g' {} \;
 
     #move sootOutput files to files_to_analyse folder
-    find sootOutput/ -type f -name "*.dot" -exec cp {} resources/files_to_analyse/ \;
+    find sootOutput/ -type f -name "*.dot" -exec cp {} /tmp/files_to_analyse/ \;
 
     #delete more lines
-    find resources/files_to_analyse/ -type f  -exec  sed -i '/(/d' {} \;
-    find resources/files_to_analyse/ -type f  -exec  sed -i '/&/d' {} \;
-    find resources/files_to_analyse/ -type f  -exec  sed -i '/)/d' {} \;
-    find resources/files_to_analyse/ -type f  -exec  sed -i '/\./d' {} \;
-    find resources/files_to_analyse/ -type f  -exec  sed -i '/cmp/d' {} \;
-    find resources/files_to_analyse/ -type f  -exec  sed -i '/\|/d' {} \;
-    find resources/files_to_analyse/ -type f  -exec  sed -i '/\^/d' {} \;
-    find resources/files_to_analyse/ -type f  -exec  sed -i '/\\\"/d' {} \;
-    find resources/files_to_analyse/ -type f  -exec  sed -i '/new/d' {} \;
-    find resources/files_to_analyse/ -type f  -exec  sed -i -E '/r[0-9]+/d' {} \;
+    find /tmp/files_to_analyse/ -type f  -exec  sed -i '/(/d' {} \;
+    find /tmp/files_to_analyse/ -type f  -exec  sed -i '/&/d' {} \;
+    find /tmp/files_to_analyse/ -type f  -exec  sed -i '/)/d' {} \;
+    find /tmp/files_to_analyse/ -type f  -exec  sed -i '/\./d' {} \;
+    find /tmp/files_to_analyse/ -type f  -exec  sed -i '/cmp/d' {} \;
+    find /tmp/files_to_analyse/ -type f  -exec  sed -i '/\|/d' {} \;
+    find /tmp/files_to_analyse/ -type f  -exec  sed -i '/\^/d' {} \;
+    find /tmp/files_to_analyse/ -type f  -exec  sed -i '/\\\"/d' {} \;
+    find /tmp/files_to_analyse/ -type f  -exec  sed -i '/new/d' {} \;
+    find /tmp/files_to_analyse/ -type f  -exec  sed -i -E '/r[0-9]+/d' {} \;
     clear
     
     #delete empty files
-    find resources/files_to_analyse/ -size 0 -print -delete
+    find /tmp/files_to_analyse/ -size 0 -print -delete
     find sootOutput/ -size 0 -print -delete
     clear
 
