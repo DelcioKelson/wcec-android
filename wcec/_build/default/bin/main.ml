@@ -1,8 +1,8 @@
 open String
 
 let lb_standard = 1000 
-
-let _ =  ignore (Sys.command (" ./prepare.sh " ^ Sys.argv.(1)) )
+  
+let _ =  ignore (Sys.command (" ./prepare.sh " ^ Sys.argv.(1) ^ " 2> /dev/null ")  )
 
 let model_file = "resources/model.txt"
 let method_files = "sootOutput/"
@@ -72,6 +72,6 @@ let get_edges method_files_list =
 let () =    
     let edges = get_edges method_files_list in
     let () = Solve.Cg_ilp.solve_ilp edges in
-    let () = Solve.Heavist_path.heaviest_path edges in 
-    let () = Printf.printf "\ntime, in seconds, used by the program: %f\n" (Sys.time()) in 
+    (*let () = Solve.Heavist_path.heaviest_path edges in *)
+    (*let () = Printf.printf "\ntime, in seconds, used by the program: %f\n" (Sys.time()) in *)
       ignore (Sys.command ("./clean.sh") )

@@ -1,9 +1,9 @@
-# dune exec wcec /home/ferramenta/Downloads/uber_lite.apk
+# dune exec wcec /home/ferramenta/apks/facebook_lite.apk
 # OCAMLPARAM: unset
 # Shared cache: disabled
 # Workspace root: /home/ferramenta/wcec-android/wcec
-# Auto-detected concurrency: 8
-$ /usr/bin/ocamlc.opt -config > /tmp/dune_22e46f_output
+# Auto-detected concurrency: 2
+$ /usr/bin/ocamlc.opt -config > /tmp/dune_236e92_output
 # Dune context:
 #  { name = "default"
 #  ; kind = "default"
@@ -15,7 +15,7 @@ $ /usr/bin/ocamlc.opt -config > /tmp/dune_22e46f_output
 #  ; toplevel_path =
 #      Some External "/home/ferramenta/.opam/default/lib/toplevel"
 #  ; ocaml_bin = External "/usr/bin"
-#  ; ocaml = Ok External "/home/ferramenta/.opam/default/bin/ocaml"
+#  ; ocaml = Ok External "/usr/bin/ocaml"
 #  ; ocamlc = External "/usr/bin/ocamlc.opt"
 #  ; ocamlopt = Ok External "/usr/bin/ocamlopt.opt"
 #  ; ocamldep = Ok External "/usr/bin/ocamldep.opt"
