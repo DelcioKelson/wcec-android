@@ -2,5 +2,7 @@
 
 (name wcec)
 
+(generate_opam_files true)
+
 (using menhir 2.1)
 

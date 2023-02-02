@@ -1,9 +1,9 @@
-# dune exec wcec /home/ferramenta/Downloads/uber_lite.apk
+# dune build @install
 # OCAMLPARAM: unset
 # Shared cache: disabled
 # Workspace root: /home/ferramenta/wcec-android/wcec
 # Auto-detected concurrency: 8
-$ /usr/bin/ocamlc.opt -config > /tmp/dune_5c6c71_output
+$ /usr/bin/ocamlc.opt -config > /tmp/dune_1c56b1_output
 # Dune context:
 #  { name = "default"
 #  ; kind = "default"
