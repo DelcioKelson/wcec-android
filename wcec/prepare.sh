@@ -1,6 +1,7 @@
 #!/bin/sh
 
 mkdir sootOutput
+mkdir resources
 mkdir resources/files_to_analyse/
 clear
 
