@@ -1,7 +1,7 @@
 #!/bin/sh
 
-find /tmp/sootOutput/  -delete
-find /tmp/files_to_analyse/  -delete
-rm /tmp/cg.txt
-rm /tmp/problem.lp
+find sootOutput/  -delete
+find files_to_analyse/  -delete
+rm cg.txt
+rm problem.lp
 
