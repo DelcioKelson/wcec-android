@@ -5,8 +5,8 @@ let lb_standard = 1000
 let _ =  ignore (Sys.command (" ./prepare.sh " ^ Sys.argv.(1) ^ " 2> /dev/null ")  )
 
 let model_file = "model.txt"
-let method_files = "sootOutput/"
-let cg_file = "cg.txt"
+let method_files = "/tmp/sootOutput/"
+let cg_file = "/tmp/cg.txt"
 
 (*Loads*)
 let methods_bounds = Bounds.get_bounds()

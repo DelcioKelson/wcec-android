@@ -36,7 +36,7 @@ let loop_bounds method_file =
   bounds
 
 let get_bounds () = 
-  let files_path = "files_to_analyse/" in 
+  let files_path = "/tmp/files_to_analyse/" in 
   let method_files_list = Sys.readdir files_path in 
   let method_bounds = Hashtbl.create (Array.length method_files_list) in
   let () = Array.iter (fun file_name -> let bounds = loop_bounds (String.concat files_path [""; file_name]) in 

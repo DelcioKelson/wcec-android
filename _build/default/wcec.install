@@ -6,3 +6,6 @@ lib: [
 bin: [
   "_build/install/default/bin/wcec"
 ]
+doc: [
+  "_build/install/default/doc/wcec/README.md"
+]

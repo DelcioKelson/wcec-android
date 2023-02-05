@@ -1,4 +1,4 @@
 (lang dune 3.6)
 (name wcec)
-(sections (lib .) (bin ../../bin))
-(files (lib (META dune-package opam)) (bin (wcec)))
+(sections (lib .) (bin ../../bin) (doc ../../doc/wcec))
+(files (lib (META dune-package opam)) (bin (wcec)) (doc (README.md)))
