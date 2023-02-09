@@ -1,9 +1,9 @@
-# dune build
+# dune exec wcec /home/ferramenta/Downloads/App_para_testar/A1_app-release.apk
 # OCAMLPARAM: unset
 # Shared cache: disabled
 # Workspace root: /home/ferramenta/wcec-android
 # Auto-detected concurrency: 8
-$ /usr/bin/ocamlc.opt -config > /tmp/dune_b35e62_output
+$ /usr/bin/ocamlc.opt -config > /tmp/dune_9e59b4_output
 # Dune context:
 #  { name = "default"
 #  ; kind = "default"
@@ -151,15 +151,3 @@ $ /usr/bin/ocamlc.opt -config > /tmp/dune_b35e62_output
 #      ; windows_unicode = false
 #      }
 #  }
-# Promoting "_build/default/wcec.opam" to "wcec.opam"
-$ (cd _build/default && /usr/bin/ocamldep.opt -modules -impl lib/solve/cg_ilp.ml) > _build/default/lib/solve/.solve.objs/cg_ilp.ml.d
-$ (cd _build/default && /usr/bin/ocamldep.opt -modules -impl lib/loop_static_analysis/bounds.ml) > _build/default/lib/loop_static_analysis/.bounds.objs/bounds.ml.d
-$ (cd _build/default && /usr/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I lib/solve/.solve.objs/byte -no-alias-deps -opaque -open Solve -o lib/solve/.solve.objs/byte/solve__Cg_ilp.cmo -c -impl lib/solve/cg_ilp.ml)
-$ (cd _build/default && /usr/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -bin-annot -I lib/loop_static_analysis/.bounds.objs/byte -no-alias-deps -opaque -open Bounds__ -o lib/loop_static_analysis/.bounds.objs/byte/bounds.cmo -c -impl lib/loop_static_analysis/bounds.ml)
-$ (cd _build/default && /usr/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -bin-annot -I bin/.main.eobjs/byte -I lib/load_cg/.load_cg.objs/byte -I lib/load_model/.load_model.objs/byte -I lib/loop_static_analysis/.bounds.objs/byte -I lib/solve/.solve.objs/byte -no-alias-deps -opaque -o bin/.main.eobjs/byte/dune__exe__Main.cmi -c -intf bin/main.mli)
-$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -I lib/loop_static_analysis/.bounds.objs/byte -I lib/loop_static_analysis/.bounds.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Bounds__ -o lib/loop_static_analysis/.bounds.objs/native/bounds.cmx -c -impl lib/loop_static_analysis/bounds.ml)
-$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I lib/solve/.solve.objs/byte -I lib/solve/.solve.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Solve -o lib/solve/.solve.objs/native/solve__Cg_ilp.cmx -c -impl lib/solve/cg_ilp.ml)
-$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I lib/load_cg/.load_cg.objs/byte -I lib/load_cg/.load_cg.objs/native -I lib/load_model/.load_model.objs/byte -I lib/load_model/.load_model.objs/native -I lib/loop_static_analysis/.bounds.objs/byte -I lib/loop_static_analysis/.bounds.objs/native -I lib/solve/.solve.objs/byte -I lib/solve/.solve.objs/native -intf-suffix .ml -no-alias-deps -opaque -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
-$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -a -o lib/loop_static_analysis/bounds.cmxa lib/loop_static_analysis/.bounds.objs/native/bounds__.cmx lib/loop_static_analysis/.bounds.objs/native/bounds__Parser.cmx lib/loop_static_analysis/.bounds.objs/native/bounds__Lexer.cmx lib/loop_static_analysis/.bounds.objs/native/bounds__Abs.cmx lib/loop_static_analysis/.bounds.objs/native/bounds.cmx)
-$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o lib/solve/solve.cmxa lib/solve/.solve.objs/native/solve.cmx lib/solve/.solve.objs/native/solve__Heavist_path.cmx lib/solve/.solve.objs/native/solve__Cg_ilp.cmx)
-$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -o bin/main.exe lib/loop_static_analysis/bounds.cmxa lib/load_model/load_model.cmxa lib/load_cg/load_cg.cmxa lib/solve/solve.cmxa /usr/lib/ocaml/str.cmxa -I /usr/lib/ocaml bin/.main.eobjs/native/dune__exe__Main.cmx)
