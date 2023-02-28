@@ -1,13 +1,21 @@
 # wcec-android
 
 
-Static analysis (Abstract Interpretation) tool for WCEC android app analysis.
+A tool for WCEC android app analysis.
 
 
-dependecies:
+## dependecies:
 
 
 lp_solve;
 dune;
 java:
 sdkmanager "platform-tools" "platforms;android-31"
+
+
+## How to execute:
+
+dune exec wcec path
+
+### Example:
+dune exec wcec /home/ferramenta/Downloads/APKS/2_DELCIO_app-debug.apk
