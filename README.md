@@ -15,7 +15,7 @@ sdkmanager "platform-tools" "platforms;android-31"
 
 ## How to execute:
 
-dune exec wcec path
+dune exec wcec apk_path
 
 ### Example:
 dune exec wcec /home/ferramenta/Downloads/APKS/2_DELCIO_app-debug.apk
