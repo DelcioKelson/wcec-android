@@ -1,8 +1,6 @@
 # wcec-android
 
-
 A tool for WCEC android app analysis.
-
 
 ## dependecies:
 
@@ -10,7 +8,7 @@ A tool for WCEC android app analysis.
 lp_solve;
 dune;
 java:
-sdkmanager "platform-tools" "platforms;android-31"
+sudo sdkmanager "platform-tools" "platforms;android-31"
 
 
 ## How to execute:
