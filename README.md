@@ -6,8 +6,11 @@ A tool for WCEC android app analysis.
 
 
 lp_solve;
+
 dune;
-java:
+
+java;
+
 sudo sdkmanager "platform-tools" "platforms;android-31"
 
 
