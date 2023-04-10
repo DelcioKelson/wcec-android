@@ -23,31 +23,31 @@ let menhir_begin_marker =
   0
 
 and (xv_stmt, xv_nonempty_list_stmt_, xv_file) =
-  let _ = fun (_startpos : Lexing.position) (_endpos : Lexing.position) (_endpos__0_ : Lexing.position) (_symbolstartpos : Lexing.position) (_startofs : int) (_endofs : int) (_endofs__0_ : int) (_symbolstartofs : int) (_sloc : Lexing.position * Lexing.position) (_loc : Lexing.position * Lexing.position) (
-# 219 "<standard.mly>"
+  let _ = fun (_eRR : exn) (_startpos : Lexing.position) (_endpos : Lexing.position) (_endpos__0_ : Lexing.position) (_symbolstartpos : Lexing.position) (_startofs : int) (_endofs : int) (_endofs__0_ : int) (_symbolstartofs : int) (_sloc : Lexing.position * Lexing.position) (_loc : Lexing.position * Lexing.position) (
+# 222 "<standard.mly>"
          xs
 # 30 "lib/load_model/parser__mock.ml.mock"
    : 'tv_nonempty_list_stmt_) (_startpos_xs_ : Lexing.position) (_endpos_xs_ : Lexing.position) (_startofs_xs_ : int) (_endofs_xs_ : int) (_loc_xs_ : Lexing.position * Lexing.position) (
-# 219 "<standard.mly>"
+# 222 "<standard.mly>"
   x
 # 34 "lib/load_model/parser__mock.ml.mock"
    : 'tv_stmt) (_startpos_x_ : Lexing.position) (_endpos_x_ : Lexing.position) (_startofs_x_ : int) (_endofs_x_ : int) (_loc_x_ : Lexing.position * Lexing.position) ->
     (
-# 220 "<standard.mly>"
+# 223 "<standard.mly>"
     ( x :: xs )
 # 39 "lib/load_model/parser__mock.ml.mock"
      : 'tv_nonempty_list_stmt_) in
-  let _ = fun (_startpos : Lexing.position) (_endpos : Lexing.position) (_endpos__0_ : Lexing.position) (_symbolstartpos : Lexing.position) (_startofs : int) (_endofs : int) (_endofs__0_ : int) (_symbolstartofs : int) (_sloc : Lexing.position * Lexing.position) (_loc : Lexing.position * Lexing.position) (
-# 217 "<standard.mly>"
+  let _ = fun (_eRR : exn) (_startpos : Lexing.position) (_endpos : Lexing.position) (_endpos__0_ : Lexing.position) (_symbolstartpos : Lexing.position) (_startofs : int) (_endofs : int) (_endofs__0_ : int) (_symbolstartofs : int) (_sloc : Lexing.position * Lexing.position) (_loc : Lexing.position * Lexing.position) (
+# 220 "<standard.mly>"
   x
 # 44 "lib/load_model/parser__mock.ml.mock"
    : 'tv_stmt) (_startpos_x_ : Lexing.position) (_endpos_x_ : Lexing.position) (_startofs_x_ : int) (_endofs_x_ : int) (_loc_x_ : Lexing.position * Lexing.position) ->
     (
-# 218 "<standard.mly>"
+# 221 "<standard.mly>"
     ( [ x ] )
 # 49 "lib/load_model/parser__mock.ml.mock"
      : 'tv_nonempty_list_stmt_) in
-  let _ = fun (_startpos : Lexing.position) (_endpos : Lexing.position) (_endpos__0_ : Lexing.position) (_symbolstartpos : Lexing.position) (_startofs : int) (_endofs : int) (_endofs__0_ : int) (_symbolstartofs : int) (_sloc : Lexing.position * Lexing.position) (_loc : Lexing.position * Lexing.position) (
+  let _ = fun (_eRR : exn) (_startpos : Lexing.position) (_endpos : Lexing.position) (_endpos__0_ : Lexing.position) (_symbolstartpos : Lexing.position) (_startofs : int) (_endofs : int) (_endofs__0_ : int) (_symbolstartofs : int) (_sloc : Lexing.position * Lexing.position) (_loc : Lexing.position * Lexing.position) (
 # 22 "lib/load_model/parser.mly"
                                                        time
 # 54 "lib/load_model/parser__mock.ml.mock"
@@ -85,7 +85,7 @@ and (xv_stmt, xv_nonempty_list_stmt_, xv_file) =
         (Inst (inst, power, time) )
 # 87 "lib/load_model/parser__mock.ml.mock"
      : 'tv_stmt) in
-  let _ = fun (_startpos : Lexing.position) (_endpos : Lexing.position) (_endpos__0_ : Lexing.position) (_symbolstartpos : Lexing.position) (_startofs : int) (_endofs : int) (_endofs__0_ : int) (_symbolstartofs : int) (_sloc : Lexing.position * Lexing.position) (_loc : Lexing.position * Lexing.position) (
+  let _ = fun (_eRR : exn) (_startpos : Lexing.position) (_endpos : Lexing.position) (_endpos__0_ : Lexing.position) (_symbolstartpos : Lexing.position) (_startofs : int) (_endofs : int) (_endofs__0_ : int) (_symbolstartofs : int) (_sloc : Lexing.position * Lexing.position) (_loc : Lexing.position * Lexing.position) (
 # 18 "lib/load_model/parser.mly"
                              _2
 # 92 "lib/load_model/parser__mock.ml.mock"
@@ -103,7 +103,12 @@ and (xv_stmt, xv_nonempty_list_stmt_, xv_file) =
       (Ast.stmt)
 # 105 "lib/load_model/parser__mock.ml.mock"
     )) in
-  ((let rec diverge() = diverge() in diverge()) : 'tv_stmt * 'tv_nonempty_list_stmt_ * 'tv_file)
+  (raise Not_found : 'tv_stmt * 'tv_nonempty_list_stmt_ * 'tv_file)
 
 and menhir_end_marker =
   0
+
+# 269 "<standard.mly>"
+  
+
+# 115 "lib/load_model/parser__mock.ml.mock"

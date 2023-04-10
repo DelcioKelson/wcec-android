@@ -9,6 +9,8 @@ import soot.jimple.infoflow.android.SetupApplication;
 import soot.jimple.infoflow.android.config.SootConfigForAndroid;
 import java.util.Arrays;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class CFG {
   
@@ -25,12 +27,14 @@ public class CFG {
             @Override
             public void setSootOptions(Options options, InfoflowConfiguration config) {
                 super.setSootOptions(options, config);
-                Options.v().set_exclude(excludePackagesList);
-                Options.v().set_allow_phantom_refs(true);
-                Options.v().set_no_bodies_for_excluded(true);
-                Options.v().set_whole_program(true);
+                options.v().set_exclude(excludePackagesList);
+                options.v().set_allow_phantom_refs(true);
+                options.v().set_no_bodies_for_excluded(true);
+                options.v().set_whole_program(true);
             }
         };
+
+
         InfoflowAndroidConfiguration config = new InfoflowAndroidConfiguration();
         config.getAnalysisFileConfig().setAndroidPlatformDir("/opt/android-sdk/platforms");
         config.getAnalysisFileConfig().setTargetAPKFile(args[0]);
@@ -41,6 +45,7 @@ public class CFG {
         SetupApplication analyzer = new SetupApplication(config);
         analyzer.setSootConfig(sootConf);
         analyzer.constructCallgraph();
+
         CallGraph cg = Scene.v().getCallGraph();
 
         System.out.println(cg);

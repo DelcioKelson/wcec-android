@@ -18,7 +18,9 @@ RUN opam install dune -y
 
 RUN opam install menhir -y
 
-RUN eval $(opam env)
+RUN opam switch create 5.1.0+trunk
+
+RUN eval $(opam env --switch=5.1.0+trunk)
 
 WORKDIR wcec
 

@@ -18,31 +18,31 @@ let menhir_begin_marker =
   0
 
 and (xv_nonempty_list_edge_, xv_file, xv_edge) =
-  let _ = fun (_startpos : Lexing.position) (_endpos : Lexing.position) (_endpos__0_ : Lexing.position) (_symbolstartpos : Lexing.position) (_startofs : int) (_endofs : int) (_endofs__0_ : int) (_symbolstartofs : int) (_sloc : Lexing.position * Lexing.position) (_loc : Lexing.position * Lexing.position) (
-# 219 "<standard.mly>"
+  let _ = fun (_eRR : exn) (_startpos : Lexing.position) (_endpos : Lexing.position) (_endpos__0_ : Lexing.position) (_symbolstartpos : Lexing.position) (_startofs : int) (_endofs : int) (_endofs__0_ : int) (_symbolstartofs : int) (_sloc : Lexing.position * Lexing.position) (_loc : Lexing.position * Lexing.position) (
+# 222 "<standard.mly>"
          xs
 # 25 "lib/load_cg/parser__mock.ml.mock"
    : 'tv_nonempty_list_edge_) (_startpos_xs_ : Lexing.position) (_endpos_xs_ : Lexing.position) (_startofs_xs_ : int) (_endofs_xs_ : int) (_loc_xs_ : Lexing.position * Lexing.position) (
-# 219 "<standard.mly>"
+# 222 "<standard.mly>"
   x
 # 29 "lib/load_cg/parser__mock.ml.mock"
    : 'tv_edge) (_startpos_x_ : Lexing.position) (_endpos_x_ : Lexing.position) (_startofs_x_ : int) (_endofs_x_ : int) (_loc_x_ : Lexing.position * Lexing.position) ->
     (
-# 220 "<standard.mly>"
+# 223 "<standard.mly>"
     ( x :: xs )
 # 34 "lib/load_cg/parser__mock.ml.mock"
      : 'tv_nonempty_list_edge_) in
-  let _ = fun (_startpos : Lexing.position) (_endpos : Lexing.position) (_endpos__0_ : Lexing.position) (_symbolstartpos : Lexing.position) (_startofs : int) (_endofs : int) (_endofs__0_ : int) (_symbolstartofs : int) (_sloc : Lexing.position * Lexing.position) (_loc : Lexing.position * Lexing.position) (
-# 217 "<standard.mly>"
+  let _ = fun (_eRR : exn) (_startpos : Lexing.position) (_endpos : Lexing.position) (_endpos__0_ : Lexing.position) (_symbolstartpos : Lexing.position) (_startofs : int) (_endofs : int) (_endofs__0_ : int) (_symbolstartofs : int) (_sloc : Lexing.position * Lexing.position) (_loc : Lexing.position * Lexing.position) (
+# 220 "<standard.mly>"
   x
 # 39 "lib/load_cg/parser__mock.ml.mock"
    : 'tv_edge) (_startpos_x_ : Lexing.position) (_endpos_x_ : Lexing.position) (_startofs_x_ : int) (_endofs_x_ : int) (_loc_x_ : Lexing.position * Lexing.position) ->
     (
-# 218 "<standard.mly>"
+# 221 "<standard.mly>"
     ( [ x ] )
 # 44 "lib/load_cg/parser__mock.ml.mock"
      : 'tv_nonempty_list_edge_) in
-  let _ = fun (_startpos : Lexing.position) (_endpos : Lexing.position) (_endpos__0_ : Lexing.position) (_symbolstartpos : Lexing.position) (_startofs : int) (_endofs : int) (_endofs__0_ : int) (_symbolstartofs : int) (_sloc : Lexing.position * Lexing.position) (_loc : Lexing.position * Lexing.position) (
+  let _ = fun (_eRR : exn) (_startpos : Lexing.position) (_endpos : Lexing.position) (_endpos__0_ : Lexing.position) (_symbolstartpos : Lexing.position) (_startofs : int) (_endofs : int) (_endofs__0_ : int) (_symbolstartofs : int) (_sloc : Lexing.position * Lexing.position) (_loc : Lexing.position * Lexing.position) (
 # 17 "lib/load_cg/parser.mly"
                           _2
 # 49 "lib/load_cg/parser__mock.ml.mock"
@@ -60,7 +60,7 @@ and (xv_nonempty_list_edge_, xv_file, xv_edge) =
       (Ast.edge)
 # 62 "lib/load_cg/parser__mock.ml.mock"
     )) in
-  let _ = fun (_startpos : Lexing.position) (_endpos : Lexing.position) (_endpos__0_ : Lexing.position) (_symbolstartpos : Lexing.position) (_startofs : int) (_endofs : int) (_endofs__0_ : int) (_symbolstartofs : int) (_sloc : Lexing.position * Lexing.position) (_loc : Lexing.position * Lexing.position) (
+  let _ = fun (_eRR : exn) (_startpos : Lexing.position) (_endpos : Lexing.position) (_endpos__0_ : Lexing.position) (_symbolstartpos : Lexing.position) (_startofs : int) (_endofs : int) (_endofs__0_ : int) (_symbolstartofs : int) (_sloc : Lexing.position * Lexing.position) (_loc : Lexing.position * Lexing.position) (
 # 21 "lib/load_cg/parser.mly"
                             to_node
 # 67 "lib/load_cg/parser__mock.ml.mock"
@@ -86,7 +86,12 @@ and (xv_nonempty_list_edge_, xv_file, xv_edge) =
         (Edge (from_node , to_node) )
 # 88 "lib/load_cg/parser__mock.ml.mock"
      : 'tv_edge) in
-  ((let rec diverge() = diverge() in diverge()) : 'tv_nonempty_list_edge_ * 'tv_file * 'tv_edge)
+  (raise Not_found : 'tv_nonempty_list_edge_ * 'tv_file * 'tv_edge)
 
 and menhir_end_marker =
   0
+
+# 269 "<standard.mly>"
+  
+
+# 98 "lib/load_cg/parser__mock.ml.mock"

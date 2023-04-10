@@ -4,6 +4,7 @@ A tool for WCEC android app analysis.
 
 ## dependecies:
 
+ocaml 5.0,0
 
 lp_solve;
 

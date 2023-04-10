@@ -1,9 +1,9 @@
-# dune exec wcec /home/ferramenta/Downloads/4_CS3_app-debug.apk
+# dune exec wcec /home/ferramenta/Downloads/App_para_testar/A1_app-release.apk
 # OCAMLPARAM: unset
 # Shared cache: disabled
 # Workspace root: /home/ferramenta/wcec-android
 # Auto-detected concurrency: 8
-$ /usr/bin/ocamlc.opt -config > /tmp/dune_d76161_output
+$ /home/ferramenta/.opam/5.1.0+trunk/bin/ocamlc.opt -config > /tmp/dune_fe5de3_output
 # Dune context:
 #  { name = "default"
 #  ; kind = "default"
@@ -11,19 +11,23 @@ $ /usr/bin/ocamlc.opt -config > /tmp/dune_d76161_output
 #  ; merlin = true
 #  ; for_host = None
 #  ; fdo_target_exe = None
-#  ; build_dir = "default"
+#  ; build_dir = In_build_dir "default"
 #  ; toplevel_path =
-#      Some External "/home/ferramenta/.opam/default/lib/toplevel"
-#  ; ocaml_bin = External "/usr/bin"
-#  ; ocaml = Ok External "/home/ferramenta/.opam/default/bin/ocaml"
-#  ; ocamlc = External "/usr/bin/ocamlc.opt"
-#  ; ocamlopt = Ok External "/usr/bin/ocamlopt.opt"
-#  ; ocamldep = Ok External "/usr/bin/ocamldep.opt"
-#  ; ocamlmklib = Ok External "/usr/bin/ocamlmklib.opt"
+#      Some External "/home/ferramenta/.opam/5.1.0+trunk/lib/toplevel"
+#  ; ocaml_bin = External "/home/ferramenta/.opam/5.1.0+trunk/bin"
+#  ; ocaml = Ok External "/home/ferramenta/.opam/5.1.0+trunk/bin/ocaml"
+#  ; ocamlc = External "/home/ferramenta/.opam/5.1.0+trunk/bin/ocamlc.opt"
+#  ; ocamlopt =
+#      Ok External "/home/ferramenta/.opam/5.1.0+trunk/bin/ocamlopt.opt"
+#  ; ocamldep =
+#      Ok External "/home/ferramenta/.opam/5.1.0+trunk/bin/ocamldep.opt"
+#  ; ocamlmklib =
+#      Ok External "/home/ferramenta/.opam/5.1.0+trunk/bin/ocamlmklib"
 #  ; env =
 #      map
-#        { "DUNE_OCAML_HARDCODED" : "/home/ferramenta/.opam/default/lib"
-#        ; "DUNE_OCAML_STDLIB" : "/usr/lib/ocaml"
+#        { "DUNE_OCAML_HARDCODED" :
+#            "/home/ferramenta/.opam/5.1.0+trunk/lib/ocaml:/home/ferramenta/.opam/5.1.0+trunk/lib"
+#        ; "DUNE_OCAML_STDLIB" : "/home/ferramenta/.opam/5.1.0+trunk/lib/ocaml"
 #        ; "DUNE_SOURCEROOT" : "/home/ferramenta/wcec-android"
 #        ; "INSIDE_DUNE" : "/home/ferramenta/wcec-android/_build/default"
 #        ; "OCAMLFIND_IGNORE_DUPS_IN" :
@@ -35,91 +39,55 @@ $ /usr/bin/ocamlc.opt -config > /tmp/dune_d76161_output
 #        ; "OCAML_COLOR" : "always"
 #        ; "OPAMCOLOR" : "always"
 #        }
-#  ; findlib_paths = [ External "/home/ferramenta/.opam/default/lib" ]
+#  ; findlib_paths =
+#      [ External "/home/ferramenta/.opam/5.1.0+trunk/lib/ocaml"
+#      ; External "/home/ferramenta/.opam/5.1.0+trunk/lib"
+#      ]
 #  ; arch_sixtyfour = true
 #  ; natdynlink_supported = true
 #  ; supports_shared_libraries = true
 #  ; ocaml_config =
-#      { version = "4.13.1"
-#      ; standard_library_default = "/usr/lib/ocaml"
-#      ; standard_library = "/usr/lib/ocaml"
+#      { version = "5.1.0+dev1-2022-06-09"
+#      ; standard_library_default =
+#          "/home/ferramenta/.opam/5.1.0+trunk/lib/ocaml"
+#      ; standard_library = "/home/ferramenta/.opam/5.1.0+trunk/lib/ocaml"
 #      ; standard_runtime = "the_standard_runtime_variable_was_deleted"
 #      ; ccomp_type = "cc"
-#      ; c_compiler = "x86_64-linux-gnu-gcc"
+#      ; c_compiler = "gcc"
 #      ; ocamlc_cflags =
-#          [ "-O2"
-#          ; "-fno-strict-aliasing"
-#          ; "-fwrapv"
-#          ; "-pthread"
-#          ; "-fPIC"
-#          ; "-g"
-#          ; "-O2"
-#          ; "-ffile-prefix-map=/build/ocaml-SC7b9w/ocaml-4.13.1=."
-#          ; "-fstack-protector-strong"
-#          ; "-Wformat"
-#          ; "-Werror=format-security"
-#          ]
-#      ; ocamlc_cppflags =
-#          [ "-D_FILE_OFFSET_BITS=64"; "-Wdate-time"; "-D_FORTIFY_SOURCE=2" ]
+#          [ "-O2"; "-fno-strict-aliasing"; "-fwrapv"; "-pthread"; "-fPIC" ]
+#      ; ocamlc_cppflags = [ "-D_FILE_OFFSET_BITS=64" ]
 #      ; ocamlopt_cflags =
-#          [ "-O2"
-#          ; "-fno-strict-aliasing"
-#          ; "-fwrapv"
-#          ; "-pthread"
-#          ; "-fPIC"
-#          ; "-g"
-#          ; "-O2"
-#          ; "-ffile-prefix-map=/build/ocaml-SC7b9w/ocaml-4.13.1=."
-#          ; "-fstack-protector-strong"
-#          ; "-Wformat"
-#          ; "-Werror=format-security"
-#          ]
-#      ; ocamlopt_cppflags =
-#          [ "-D_FILE_OFFSET_BITS=64"; "-Wdate-time"; "-D_FORTIFY_SOURCE=2" ]
+#          [ "-O2"; "-fno-strict-aliasing"; "-fwrapv"; "-pthread"; "-fPIC" ]
+#      ; ocamlopt_cppflags = [ "-D_FILE_OFFSET_BITS=64" ]
 #      ; bytecomp_c_compiler =
-#          [ "x86_64-linux-gnu-gcc"
+#          [ "gcc"
 #          ; "-O2"
 #          ; "-fno-strict-aliasing"
 #          ; "-fwrapv"
 #          ; "-pthread"
 #          ; "-fPIC"
-#          ; "-g"
-#          ; "-O2"
-#          ; "-ffile-prefix-map=/build/ocaml-SC7b9w/ocaml-4.13.1=."
-#          ; "-fstack-protector-strong"
-#          ; "-Wformat"
-#          ; "-Werror=format-security"
 #          ; "-D_FILE_OFFSET_BITS=64"
-#          ; "-Wdate-time"
-#          ; "-D_FORTIFY_SOURCE=2"
 #          ]
 #      ; bytecomp_c_libraries = [ "-lm"; "-lpthread" ]
 #      ; native_c_compiler =
-#          [ "x86_64-linux-gnu-gcc"
+#          [ "gcc"
 #          ; "-O2"
 #          ; "-fno-strict-aliasing"
 #          ; "-fwrapv"
 #          ; "-pthread"
 #          ; "-fPIC"
-#          ; "-g"
-#          ; "-O2"
-#          ; "-ffile-prefix-map=/build/ocaml-SC7b9w/ocaml-4.13.1=."
-#          ; "-fstack-protector-strong"
-#          ; "-Wformat"
-#          ; "-Werror=format-security"
 #          ; "-D_FILE_OFFSET_BITS=64"
-#          ; "-Wdate-time"
-#          ; "-D_FORTIFY_SOURCE=2"
 #          ]
-#      ; native_c_libraries = [ "-lm" ]
-#      ; native_pack_linker = [ "x86_64-linux-gnu-ld"; "-r"; "-o" ]
+#      ; native_c_libraries = [ "-lm"; "-lpthread" ]
+#      ; native_pack_linker = [ "ld"; "-r"; "-o" ]
 #      ; cc_profile = []
 #      ; architecture = "amd64"
 #      ; model = "default"
 #      ; int_size = 63
 #      ; word_size = 64
 #      ; system = "linux"
-#      ; asm = [ "x86_64-linux-gnu-as" ]
+#      ; asm = [ "as" ]
 #      ; asm_cfi_supported = true
 #      ; with_frame_pointers = false
 #      ; ext_exe = ""
@@ -136,16 +104,16 @@ $ /usr/bin/ocamlc.opt -config > /tmp/dune_d76161_output
 #      ; flambda = false
 #      ; spacetime = false
 #      ; safe_string = true
-#      ; exec_magic_number = "Caml1999X030"
-#      ; cmi_magic_number = "Caml1999I030"
-#      ; cmo_magic_number = "Caml1999O030"
-#      ; cma_magic_number = "Caml1999A030"
-#      ; cmx_magic_number = "Caml1999Y030"
-#      ; cmxa_magic_number = "Caml1999Z030"
-#      ; ast_impl_magic_number = "Caml1999M030"
-#      ; ast_intf_magic_number = "Caml1999N030"
-#      ; cmxs_magic_number = "Caml1999D030"
-#      ; cmt_magic_number = "Caml1999T030"
+#      ; exec_magic_number = "Caml1999X032"
+#      ; cmi_magic_number = "Caml1999I032"
+#      ; cmo_magic_number = "Caml1999O032"
+#      ; cma_magic_number = "Caml1999A032"
+#      ; cmx_magic_number = "Caml1999Y032"
+#      ; cmxa_magic_number = "Caml1999Z032"
+#      ; ast_impl_magic_number = "Caml1999M032"
+#      ; ast_intf_magic_number = "Caml1999N032"
+#      ; cmxs_magic_number = "Caml1999D032"
+#      ; cmt_magic_number = "Caml1999T032"
 #      ; natdynlink_supported = true
 #      ; supports_shared_libraries = true
 #      ; windows_unicode = false
