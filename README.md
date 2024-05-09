@@ -1,6 +1,6 @@
 # wcec-android
 
-A tool for WCEC android app analysis.
+A tool for static WCEC analysis of android apps.
 
 ## dependecies:
 
